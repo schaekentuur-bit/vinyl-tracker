@@ -1,0 +1,106 @@
+{
+  "612780_VG": {
+    "price": 8.0,
+    "currency": "GBP",
+    "disc": 46.666666666666664,
+    "seller": "wibetribe",
+    "title": "A Night at the Opera (EMTC 103, UK 1975)",
+    "group": "Queen"
+  },
+  "223127_VG+": {
+    "price": 70.0,
+    "currency": "USD",
+    "disc": 24.852388620504566,
+    "seller": "EatRecords",
+    "title": "Mobb Deep - The Infamous (07863 66480-1, US 1995)",
+    "group": "Overige"
+  },
+  "14186441_VG+": {
+    "price": 23.0,
+    "currency": "EUR",
+    "disc": 17.857142857142858,
+    "seller": "Black_Sails",
+    "title": "Abbey Road 50th Anniversary (0602577915123, 2019)",
+    "group": "Beatles"
+  },
+  "7541569_M": {
+    "price": 20.0,
+    "currency": "EUR",
+    "disc": 17.695473251028808,
+    "seller": "flo.tafeur",
+    "title": "A Night at the Opera half-speed (00602547202697, EU 2015)",
+    "group": "Queen"
+  },
+  "459606_G+": {
+    "price": 20.0,
+    "currency": "USD",
+    "disc": 15.96638655462185,
+    "seller": "royaltsound",
+    "title": "Bad (E 40600, Carrollton, US 1987)",
+    "group": "Michael Jackson"
+  },
+  "1238431_VG": {
+    "price": 29.75,
+    "currency": "GBP",
+    "disc": 14.829659318637272,
+    "seller": "Rev_RecordsLDN",
+    "title": "Appetite for Destruction (924 148-1, EU uncensored 1987)",
+    "group": "Guns N' Roses"
+  },
+  "939519_M": {
+    "price": 380.0,
+    "currency": "GBP",
+    "disc": 9.346819981869366,
+    "seller": "adicko5253",
+    "title": "Morning Glory (CRE LP 189, Damont, UK 1995)",
+    "group": "Oasis"
+  },
+  "375491_VG+": {
+    "price": 47.0,
+    "currency": "EUR",
+    "disc": 6.0,
+    "seller": "Herk1975",
+    "title": "Blood Sugar Sex Magik (7599-26681-1, EU 1991)",
+    "group": "RHCP"
+  },
+  "1203470_M": {
+    "price": 20.32,
+    "currency": "GBP",
+    "disc": 3.1919961886612587,
+    "seller": "ship_option_1",
+    "title": "American Idiot (9362-48777-1, EU 2004)",
+    "group": "Green Day"
+  },
+  "15276024_NM": {
+    "price": 22.0,
+    "currency": "GBP",
+    "disc": 3.1263760457948075,
+    "seller": "-A-M-",
+    "title": "By The Way reissue (093624814016, EU 2020)",
+    "group": "RHCP"
+  },
+  "223127_NM": {
+    "price": 150.0,
+    "currency": "EUR",
+    "disc": 1.9607843137254901,
+    "seller": "zimpala",
+    "title": "Mobb Deep - The Infamous (07863 66480-1, US 1995)",
+    "group": "Overige"
+  },
+  "15276024_M": {
+    "price": 18.4,
+    "currency": "EUR",
+    "disc": 1.6042780748663141,
+    "seller": "Soulonrotation",
+    "title": "By The Way reissue (093624814016, EU 2020)",
+    "group": "RHCP"
+  },
+  "14186441_M": {
+    "price": 21.95,
+    "currency": "GBP",
+    "disc": 1.4369106421194444,
+    "seller": "AvalancheWaverley",
+    "title": "Abbey Road 50th Anniversary (0602577915123, 2019)",
+    "group": "Beatles"
+  }
+}

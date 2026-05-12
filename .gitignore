@@ -1,0 +1,10 @@
+cookies_www.discogs.com.txt
+config.py
+cookies_b64.txt
+tracker.log
+tracker_err.log
+vinyl_tracker_run.log
+__pycache__/
+*.pyc
+vinyl_prijzen_*.html
+vinyl_prijzen_*.xlsx
