@@ -5,7 +5,7 @@ Scrapet Discogs, genereert docs/index.html en stuurt email bij nieuwe deals.
 import os, base64, tempfile
 
 # Cookies uit GitHub Secret decoderen naar tijdelijk bestand
-_cookies_b64 = os.getenv("DISCOGS_COOKIES_B64", "")
+_cookies_b64 = os.getenv("DISCOGS_COOKIES_B64", "").lstrip("﻿").strip()
 if _cookies_b64:
     _tmp = tempfile.NamedTemporaryFile(mode="w", suffix=".txt",
                                        delete=False, encoding="utf-8")
