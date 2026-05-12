@@ -34,6 +34,12 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/ vinyl_deals_seen.json vinyl_sales_cache.json vinyl_listings_cache.json vinyl_history_cache.json user_releases.json 2>/dev/null || true
+          git add docs/ 2>/dev/null || true
+          git add vinyl_deals_seen.json 2>/dev/null || true
+          git add vinyl_sales_cache.json 2>/dev/null || true
+          git add vinyl_listings_cache.json 2>/dev/null || true
+          git add vinyl_history_cache.json 2>/dev/null || true
+          git add user_releases.json 2>/dev/null || true
+          git status --short
           git diff --staged --quiet || git commit -m "Vinyl rapport $(date +'%Y-%m-%d %H:%M')"
           git push
