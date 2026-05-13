@@ -1940,7 +1940,7 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
     """Scrapes alle releases en geeft results terug. Respecteert cache tenzij force=True."""
     sales_cache    = load_cache(SALES_CACHE)
     stats_cache    = load_cache(STATS_CACHE)
-    listings_cache = {} if force_listings else load_cache(LISTINGS_CACHE)
+    listings_cache = load_cache(LISTINGS_CACHE)  # altijd laden als fallback
     if force_stats:
         stats_cache = {}
     today = datetime.now().strftime("%Y-%m-%d")
@@ -1973,7 +1973,8 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
 
         # Marketplace listings (gecached 7 dagen; fresh scrape bij force of verlopen cache)
         lc_entry = listings_cache.get(release_id, {})
-        if cache_is_fresh(lc_entry, max_days=7) and lc_entry.get("listings"):
+        use_cache = (not force_listings) and cache_is_fresh(lc_entry, max_days=7) and lc_entry.get("listings")
+        if use_cache:
             raw_listings = lc_entry["listings"]
             print(f"  Listings cache: {len(raw_listings)} listings")
         else:
@@ -1983,9 +1984,9 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
                 save_cache(LISTINGS_CACHE, listings_cache)
                 print(f"  Listings gescraped: {len(raw_listings)} listings")
             else:
-                old = lc_entry.get("listings", [])
-                raw_listings = old
-                print(f"  Listings scrape leeg (Cloudflare?), cache bewaard: {len(old)} listings")
+                # Cloudflare geblokkeerd — bewaar bestaande cache-data (disk of eerder geladen)
+                raw_listings = lc_entry.get("listings", [])
+                print(f"  Listings scrape leeg (Cloudflare?), cache bewaard: {len(raw_listings)} listings")
             time.sleep(2)
 
         results.append({
