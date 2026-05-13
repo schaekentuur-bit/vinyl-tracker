@@ -347,6 +347,45 @@ def get_market_stats(release_id):
     except Exception:
         return {}
 
+def scrape_listings_api(release_id):
+    """Listings ophalen via officiële Discogs API — werkt ook vanuit GitHub Actions."""
+    try:
+        r = std_requests.get(
+            "https://api.discogs.com/marketplace/search",
+            headers=DISCOGS_HEADERS,
+            params={
+                "release_id": release_id,
+                "status": "For Sale",
+                "sort": "price",
+                "sort_order": "asc",
+                "per_page": 50,
+            },
+            timeout=15,
+        )
+        r.raise_for_status()
+        data = r.json()
+    except Exception as e:
+        print(f"  Listings API fout: {e}")
+        return []
+
+    listings = []
+    for item in data.get("listings", []):
+        media  = CONDITION_MAP.get(item.get("condition", ""),        item.get("condition", ""))
+        sleeve = CONDITION_MAP.get(item.get("sleeve_condition", ""), item.get("sleeve_condition", "Generic"))
+        price_obj    = item.get("price", {})
+        price        = float(price_obj.get("value", 0))
+        currency     = price_obj.get("currency", "EUR")
+        seller_obj   = item.get("seller", {})
+        seller       = seller_obj.get("username", "?")
+        rating_count = int(seller_obj.get("stats", {}).get("total", 0))
+        if price > 0:
+            listings.append({
+                "media": media, "sleeve": sleeve,
+                "price": price, "currency": currency,
+                "rating_count": rating_count, "seller": seller,
+            })
+    return listings
+
 # ─── HTML OPBOUW ──────────────────────────────────────────────────────────────
 
 GROUP_COLORS = [
@@ -1174,17 +1213,22 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
                 save_cache(STATS_CACHE, stats_cache)
             time.sleep(0.5)
 
-        # Marketplace listings (gecached, 1 dag TTL; altijd vers bij force)
+        # Marketplace listings via Discogs API (gecached, 1 dag TTL; altijd vers bij force)
         lc_entry = listings_cache.get(release_id, {})
-        if cache_is_fresh(lc_entry, max_days=1):
+        if cache_is_fresh(lc_entry, max_days=1) and lc_entry.get("listings"):
             raw_listings = lc_entry["listings"]
             print(f"  Listings cache: {len(raw_listings)} listings")
         else:
-            raw_listings = scrape_listings(release_id, cookies, session)
-            listings_cache[release_id] = {"fetched_at": today, "listings": raw_listings}
-            save_cache(LISTINGS_CACHE, listings_cache)
-            print(f"  Listings gescraped: {len(raw_listings)} listings")
-            time.sleep(2)
+            raw_listings = scrape_listings_api(release_id)
+            if raw_listings:
+                listings_cache[release_id] = {"fetched_at": today, "listings": raw_listings}
+                save_cache(LISTINGS_CACHE, listings_cache)
+                print(f"  Listings API: {len(raw_listings)} listings")
+            else:
+                old = lc_entry.get("listings", [])
+                raw_listings = old
+                print(f"  Listings API leeg, cache bewaard: {len(old)} listings")
+            time.sleep(0.5)
 
         results.append({
             "id":       release_id,
