@@ -207,6 +207,11 @@ RELEASE_INFO = {
     "13318697": ("🏆 First pressing", "Originele US Slaughter Gang-persing 2018 (19075923521) — dit IS de first pressing van I Am > I Was."),
     "15624365": ("🎵 Luisterversie", "EU persing 2019 (19075922121) — voor dagelijks afspelen."),
     "17277640": ("🏆 First pressing", "Gelimiteerde US Slaughter Gang-persing 2020 (19439818631) — enige officiële vinyluitgave van Savage Mode II."),
+    # U2
+    "10456142": ("🏆 First pressing", "Originele UK Island Records-persing 1987 (U26) — dit IS de first pressing van The Joshua Tree. Gatefold hoes met zwart binnenhoesje en gouden labels. Bevat With or Without You en I Still Haven't Found What I'm Looking For."),
+    "10395824": ("🎵 Luisterversie", "EU Island Records 30th Anniversary reissue 2017 (5749844) — geremasterd 180g vinyl, ideaal voor dagelijks afspelen."),
+    "676619":   ("🏆 First pressing", "Originele EU Island Records-persing 2000 (U212 / 524 653-1) — dit IS de first pressing van All That You Can't Leave Behind. Matte hoes met 16-pagina's boekje en ansichtkaart. Bevat Beautiful Day."),
+    "11846916": ("🎵 Luisterversie", "EU/UK/US Island Records remaster 2018 (5796988) — 180g reissue, ideaal voor dagelijks afspelen."),
 }
 
 # ─── ALBUM PAIRINGS ─────────────────────────────────────────────────────────────
@@ -272,6 +277,9 @@ RELEASE_PAIRS = [
     ("10597886", "10752389"),  # 21 Savage — Savage Mode
     ("10873523", "13876606"),  # 21 Savage — Issa Album
     ("13318697", "15624365"),  # 21 Savage — I Am > I Was
+    # U2
+    ("10456142", "10395824"),  # U2 — The Joshua Tree
+    ("676619",   "11846916"),  # U2 — All That You Can't Leave Behind
 ]
 # Snelle lookup: id → partner_id
 _PAIR_MAP = {a: b for a, b in RELEASE_PAIRS} | {b: a for a, b in RELEASE_PAIRS}
@@ -441,6 +449,12 @@ RELEASES = {
     "13318697": ("21 Savage", "I Am > I Was (19075923521, Slaughter Gang, US 2018)"),
     "15624365": ("21 Savage", "I Am > I Was (19075922121, Slaughter Gang, EU 2019)"),
     "17277640": ("21 Savage", "Savage Mode II (19439818631, Slaughter Gang, US 2020)"),
+
+    # ── U2 ──
+    "10456142": ("U2", "The Joshua Tree (U26, Island Records UK 1987)"),
+    "10395824": ("U2", "The Joshua Tree (5749844, Island Records EU 2017, 30th Anniversary)"),
+    "676619":   ("U2", "All That You Can't Leave Behind (U212 / 524 653-1, Island Records EU 2000)"),
+    "11846916": ("U2", "All That You Can't Leave Behind (5796988, Island Records EU 2018 remaster)"),
 }
 
 # ─── GENRE CATEGORISATIE ──────────────────────────────────────────────────────
@@ -481,6 +495,7 @@ GROUP_GENRES = {
     "Rolling Stones":    "Rock",
     "Led Zeppelin":      "Rock",
     "The Police":        "Rock",
+    "U2":                "Rock",
 }
 GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Soul / R&B", "Reggae", "Hip-Hop", "Rock & Roll"]
 
