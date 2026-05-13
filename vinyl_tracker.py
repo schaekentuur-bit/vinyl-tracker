@@ -77,13 +77,13 @@ RELEASE_INFO = {
     "33663000": ("🎁 Limited edition", "Record Store Day 2025 box set — beperkte oplage, goed voor verzamelaars."),
     "12864584": ("🎵 Luisterversie", "Moderne reissue — ideaal om af te spelen zonder origineel te slijten."),
     # RHCP
-    "375491":   ("🏆 First pressing", "Originele EU persing uit 1991 — collector's item, steeds schaarser."),
+    "375491":   ("📀 EU origineel (niet first)", "Originele EU persing 1991 — collector's item, maar de ware first pressing is de US Warner Bros (9 26681-1) die je niet hebt."),
     "12042641": ("🎵 Luisterversie", "US remaster 2012 — beste keuze voor dagelijks afspelen."),
-    "9899740":  ("📀 Origineel", "Originele EU persing uit het releasejaar — solide collector's waarde."),
+    "9899740":  ("📀 EU origineel (niet first)", "Originele EU persing 1999 — collector's waarde, maar US first pressing (Warner Bros. 9362-47386-1) ontbreekt in je collectie."),
     "31323387": ("🎁 Jubileumeditie", "25th Anniversary persing 2024 — beperkte oplage, goed geluid."),
-    "420718":   ("📀 Origineel", "Originele US persing 2002 — redelijke collector's waarde."),
+    "420718":   ("🏆 First pressing", "Originele US Warner Bros-persing 2002 — dit IS de first pressing van By The Way."),
     "15276024": ("🎵 Luisterversie", "EU reissue 2020 — voor dagelijks gebruik."),
-    "1629020":  ("📀 Origineel", "Originele US dubbel-LP uit het releasejaar."),
+    "1629020":  ("🏆 First pressing", "Originele US Warner Bros dubbel-LP 2006 — dit IS de first pressing van Stadium Arcadium."),
     "8519678":  ("🎵 Luisterversie", "EU reissue 2016 — prima afspeelkopie."),
     # Beatles
     "7801798":  ("🏆 First pressing", "UK first pressing PCS 7088 uit 1969 — een van de meest begeerde platen ter wereld. Nooit afspelen."),
@@ -94,8 +94,8 @@ RELEASE_INFO = {
     "459606":   ("🏆 First pressing", "Originele US persing Carrollton-plant 1987 — first pressing, iets minder gezocht dan Pitman maar zeker een collector's item."),
     # Metallica
     "1549636":  ("🏆 First pressing", "Originele US Allied-persing 1986 — heilige graal voor metalverzamelaars. Niet afspelen."),
-    "381988":   ("📀 Origineel", "Originele US Elektra-persing 1991 — solide collector's waarde."),
-    "439599":   ("📀 Origineel", "Originele EU Vertigo-persing 1991 — goede tegenhanger van de US-versie."),
+    "381988":   ("🏆 First pressing", "Originele US Elektra-persing 1991 — dit IS de first pressing van het Black Album."),
+    "439599":   ("📀 EU origineel (niet first)", "Originele EU Vertigo-persing 1991 — tegelijk uitgebracht met de US, maar US Elektra geldt als 'the' first pressing."),
     # Queen
     "612780":   ("🏆 First pressing", "Originele UK persing 1975 — topstuk, consistent stijgend in waarde. Met zorg bewaren."),
     "7541569":  ("🎵 Audiofiele versie", "Half-speed remaster EU 2015 — uitstekend geluid, ideaal voor afspelen."),
@@ -104,10 +104,10 @@ RELEASE_INFO = {
     "1949857":  ("🎵 Luisterversie", "EU reissue 2009 — voor dagelijks gebruik, geen collector's waarde."),
     "400587":   ("🏆 First pressing", "Australisch origineel Bon Scott-era 1979 — zeldzamer dan Back in Black. Topstuk."),
     # Linkin Park
-    "534020":   ("📀 Origineel", "Originele US persing 2001 — waarde gestegen na Chester Bennington (2017)."),
-    "3336797":  ("📀 Origineel", "Originele US persing 2003 — stijgende collector's markt."),
+    "534020":   ("🏆 First pressing", "Originele US Warner Bros-persing 2001 — dit IS de first pressing van Hybrid Theory."),
+    "3336797":  ("🏆 First pressing", "Originele US Warner Bros-persing 2003 — dit IS de first pressing van Meteora."),
     # Green Day
-    "1203470":  ("📀 Origineel", "Originele EU persing 2004 — redelijke collector's waarde."),
+    "1203470":  ("📀 EU origineel (niet first)", "Originele EU Warner persing 2004 — collector's waarde, maar US Reprise first pressing (9362-48723-1) ontbreekt."),
     # Guns N' Roses
     "383777":   ("🏆 First pressing", "Originele US Allied-persing 1987 — meest gezochte GNR-variant. Topstuk."),
     "1238431":  ("🏆 First pressing", "Originele EU persing met ongecensureerd Robert Williams-artwork 1987 — zeldzame variant."),
@@ -115,19 +115,19 @@ RELEASE_INFO = {
     # Notorious B.I.G.
     "317356":   ("🏆 First pressing", "Originele US persing 1994 — waardevolle klassieker van klassieke hiphop. Stijgende markt."),
     # Kendrick Lamar
-    "3975953":  ("📀 Origineel", "Originele US persing 2012 — groeiende collector's waarde."),
-    "8814849":  ("📀 Origineel", "Originele US persing 2015, RTI-plant — best klinkende versie van TPAB."),
-    "10559651": ("📀 Origineel", "Originele US persing 2017 — Pulitzer Prize-winnaar, historisch uniek voor hiphop."),
+    "3975953":  ("🏆 First pressing", "Originele US TDE/Aftermath-persing 2012 — dit IS de first pressing van GKMC."),
+    "8814849":  ("🏆 First pressing", "Originele US TDE-persing 2015, RTI-plant — dit IS de first pressing van TPAB."),
+    "10559651": ("🏆 First pressing", "Originele US TDE-persing 2017 — dit IS de first pressing van DAMN. (Pulitzer Prize-winnaar)."),
     # The Killers
-    "397167":   ("🎁 Zeldzame variant", "Zeldzame blue marbled UK-persing 2004 — moeilijk te vinden in goede staat."),
+    "397167":   ("🏆 First pressing", "Originele UK Lizard King-persing 2004, blue marbled vinyl — dit IS de first pressing van Hot Fuss (UK-release)."),
     # Doe Maar
-    "402227":   ("📀 Origineel", "Originele NL persing 1981 — zeldzamer van de twee Doe Maar-albums."),
-    "382601":   ("📀 Origineel", "Originele NL persing 1982 — bekendste Doe Maar-album, stabiele NL/BE markt."),
+    "402227":   ("🏆 First pressing", "Originele NL Killroy-persing 1981 — dit IS de first pressing van Skunk."),
+    "382601":   ("🏆 First pressing", "Originele NL Killroy-persing 1982 — dit IS de first pressing van Doris Day."),
     # Eagles
     "1934367":  ("🏆 First pressing", "Originele US Elektra-persing 1976 — consistent in waarde, iconisch album."),
     # Amy Winehouse
-    "2848009":  ("📀 Origineel", "Originele US persing 2006 — minder gezocht dan de UK-versie."),
-    "34780535": ("📀 Origineel", "Originele UK Island-persing 2006 — de meest gewilde Amy Winehouse-versie."),
+    "2848009":  ("📀 US origineel (niet first)", "Originele US persing 2006 — Back to Black was een UK Island-release, dus de UK pressing geldt als the first pressing."),
+    "34780535": ("🏆 First pressing", "Originele UK Island-persing 2006 — dit IS de first pressing van Back to Black."),
     # Bob Marley
     "4418438":  ("🎵 Luisterversie", "EU reissue compilatie 2015 — veelgeperste plaat, weinig collector's waarde maar geweldig geluid."),
     "3660230":  ("🏆 First pressing", "Originele Jamaicaanse Tuff Gong-persing 1977 — zeldzame authentieke Bob Marley. Topstuk."),
@@ -143,9 +143,9 @@ RELEASE_INFO = {
     # Beast Coast
     "13672908": ("🎁 Gekleurd vinyl", "Limited blue vinyl 2019 — collectors editie."),
     # Mobb Deep
-    "223127":   ("🏆 First pressing", "Originele US persing 1995 — klassieke hiphop, groeiende collector's markt."),
+    "223127":   ("🏆 First pressing", "Originele US Loud Records-persing 1995 — dit IS de first pressing van The Infamous."),
     # Sticks
-    "16170729": ("📀 Origineel", "Originele NL persing 2020 — Nederlandse hiphop, niche markt."),
+    "16170729": ("🏆 First pressing", "Originele NL persing 2020 — dit IS de (enige) pressing van Stickmatic."),
 }
 
 RELEASES = {
@@ -684,13 +684,15 @@ def _build_release_cards(group_results):
             f' &nbsp;<a href="https://www.discogs.com/sell/history/{r["id"]}" target="_blank">Historie &rarr;</a>'
         )
         _badge_map = {
-            "🏆 First pressing":   "rb-badge-first",
-            "🎵 Luisterversie":    "rb-badge-listen",
-            "🎵 Audiofiele versie":"rb-badge-listen",
-            "🎁 Limited edition":  "rb-badge-limited",
-            "🎁 Jubileumeditie":   "rb-badge-limited",
-            "🎁 Zeldzame variant": "rb-badge-limited",
-            "🎁 Gekleurd vinyl":   "rb-badge-limited",
+            "🏆 First pressing":            "rb-badge-first",
+            "🎵 Luisterversie":             "rb-badge-listen",
+            "🎵 Audiofiele versie":          "rb-badge-listen",
+            "🎁 Limited edition":            "rb-badge-limited",
+            "🎁 Jubileumeditie":             "rb-badge-limited",
+            "🎁 Zeldzame variant":           "rb-badge-limited",
+            "🎁 Gekleurd vinyl":             "rb-badge-limited",
+            "📀 EU origineel (niet first)":  "rb-badge-missing",
+            "📀 US origineel (niet first)":  "rb-badge-missing",
         }
         info = RELEASE_INFO.get(r["id"])
         if info:
@@ -1203,6 +1205,7 @@ def build_html(results, static=False):
   .rb-badge-listen{{background:#d1fae5;color:#065f46}}
   .rb-badge-limited{{background:#ede9fe;color:#4c1d95}}
   .rb-badge-orig{{background:#e0f2fe;color:#0c4a6e}}
+  .rb-badge-missing{{background:#fff7ed;color:#9a3412}}
   .rb-desc{{font-size:12px;color:var(--muted);margin:2px 0 8px;line-height:1.4}}
   .market{{font-size:12px;color:var(--muted);margin-bottom:14px}}
   .market a{{color:#3B82F6;text-decoration:none}}
