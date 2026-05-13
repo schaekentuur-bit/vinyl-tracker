@@ -164,6 +164,9 @@ RELEASE_INFO = {
     "7753999":  ("🎵 Luisterversie", "Music on Vinyl EU reissue 2015 (MOVLP1463) — kwalitatieve herpers voor dagelijks afspelen."),
     # Sticks
     "16170729": ("🏆 First pressing", "Originele NL persing 2020 — dit IS de (enige) pressing van Stickmatic."),
+    # Led Zeppelin
+    "2893139":  ("🏆 First pressing", "Originele UK Atlantic-persing 1971 (2401012) — dit IS de first pressing van Led Zeppelin IV. Een van de meest iconische platen aller tijden."),
+    "22645229": ("🎵 Luisterversie", "US Atlantic remaster 2022 (8122-79657-7) — 180g gatefold reissue, ideaal voor dagelijks afspelen."),
     # Rolling Stones
     "7264539":  ("🏆 First pressing (stereo)", "Originele UK Decca stereo-persing 1968 (SKL 4955) — zeldzaamste en meest gewaardeerde versie van Beggars Banquet."),
     "1137475":  ("📀 UK mono origineel", "Originele UK Decca mono-persing 1968 (LK 4955) — andere masterband dan stereo, zeer gezocht door audiofilen."),
@@ -226,6 +229,8 @@ RELEASE_PAIRS = [
     ("3975953",  "30551209"),  # Kendrick Lamar — GKMC
     ("8814849",  "23398166"),  # Kendrick Lamar — TPAB
     ("10559651", "25683820"),  # Kendrick Lamar — DAMN.
+    # Led Zeppelin
+    ("2893139",  "22645229"),  # Led Zeppelin — IV
     # Rolling Stones
     ("7264539",  "1137475"),   # Rolling Stones — Beggars Banquet (stereo ↔ mono)
     ("765072",   "6003779"),   # Rolling Stones — Aftermath (US ↔ UK)
@@ -356,6 +361,10 @@ RELEASES = {
     # ── STICKS ──
     "16170729": ("Sticks", "Stickmatic (350 405-3, NL 2020)"),
 
+    # ── LED ZEPPELIN ──
+    "2893139":  ("Led Zeppelin", "Led Zeppelin IV (2401012, Atlantic UK 1971)"),
+    "22645229": ("Led Zeppelin", "Led Zeppelin IV (8122-79657-7, Atlantic US 2022 remaster)"),
+
     # ── ROLLING STONES ──
     "7264539":  ("Rolling Stones", "Beggars Banquet (SKL 4955, Decca UK 1968) [stereo]"),
     "1137475":  ("Rolling Stones", "Beggars Banquet (LK 4955, Decca UK 1968) [mono]"),
@@ -414,6 +423,7 @@ GROUP_GENRES = {
     # Rock & Roll
     "Elvis Presley":     "Rock & Roll",
     "Rolling Stones":    "Rock",
+    "Led Zeppelin":      "Rock",
 }
 GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Soul / R&B", "Reggae", "Hip-Hop", "Rock & Roll"]
 
