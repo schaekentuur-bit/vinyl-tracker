@@ -1463,6 +1463,36 @@ def run_server(initial_results, cookies, session):
 
 # ─── HOOFDLOGICA ──────────────────────────────────────────────────────────────
 
+def build_from_cache():
+    """Bouw results direct uit cache zonder netwerk — voor snelle startup."""
+    sales_cache    = load_cache(SALES_CACHE)
+    stats_cache    = load_cache(STATS_CACHE)
+    listings_cache = load_cache(LISTINGS_CACHE)
+    today = datetime.now().strftime("%Y-%m-%d")
+    results = []
+    for release_id, (group, title) in RELEASES.items():
+        sales        = sales_cache.get(release_id, {}).get("sales", [])
+        stats_key    = f"{release_id}_{today}"
+        # Probeer eerst vandaag, daarna meest recente beschikbare stats
+        stats = stats_cache.get(stats_key)
+        if not stats:
+            candidates = {k: v for k, v in stats_cache.items()
+                          if k.startswith(release_id + "_")}
+            if candidates:
+                stats = candidates[max(candidates)]
+        lc_entry     = listings_cache.get(release_id, {})
+        raw_listings = lc_entry.get("listings", [])
+        results.append({
+            "id":       release_id,
+            "group":    group,
+            "title":    title,
+            "sales":    sales,
+            "stats":    stats or {},
+            "listings": raw_listings,
+        })
+    return results
+
+
 def main():
     print(f"\nVinyl Tracker - {datetime.now().strftime('%d/%m/%Y %H:%M')}")
 
@@ -1476,9 +1506,11 @@ def main():
     session.headers.update({"Accept-Language": "nl-BE,nl;q=0.9"})
 
     print(f"{len(cookies)} browser-cookies geladen")
-    print(f"{len(RELEASES)} releases te verwerken\n")
+    print(f"{len(RELEASES)} releases te verwerken")
+    print("Cache laden en server starten...\n")
 
-    results = scrape_all(cookies, session)
+    # Snelle start: cache inlezen, geen netwerk
+    results = build_from_cache()
     run_server(results, cookies, session)
 
 if __name__ == "__main__":
