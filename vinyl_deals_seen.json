@@ -1,4 +1,15 @@
 {
+  "1813006_G+": {
+    "price": 120.0,
+    "currency": "AUD",
+    "shipping": 0.0,
+    "total_eur": 73.83706620723603,
+    "disc": 68.73959940421844,
+    "tier": "beste",
+    "seller": "soundsforspace",
+    "title": "Nevermind (DGC-24425, US origineel 1991)",
+    "group": "Nirvana"
+  },
   "3183667_VG": {
     "price": 75.0,
     "currency": "CAD",
@@ -42,6 +53,17 @@
     "seller": "mrgrandprix",
     "title": "Nevermind (424 425-1, EU reissue 2015)",
     "group": "Nirvana"
+  },
+  "534020_NM": {
+    "price": 164.0,
+    "currency": "USD",
+    "shipping": 28.0,
+    "total_eur": 163.57130686658715,
+    "disc": 25.30888237437629,
+    "tier": "goed",
+    "seller": "circuitbreaker",
+    "title": "Hybrid Theory (9 47755-1, US 2001)",
+    "group": "Linkin Park"
   },
   "1203470_M": {
     "price": 39.99,

@@ -487,11 +487,16 @@ def parse_listings_html(html):
     return listings
 
 
+_NEUTRAL_SLEEVES = {"Generic", "No Cover", ""}
+
 def _effective_cond(media: str, sleeve: str) -> str:
-    """Neem de slechtste van disc en sleeve als effectieve conditie voor dealvergelijking."""
+    """Slechtste van disc en sleeve als vergelijkingsconditie.
+    Generic/No Cover hoezen tellen niet mee — die zijn neutraal."""
+    if sleeve in _NEUTRAL_SLEEVES:
+        return media
     rank = {c: i for i, c in enumerate(CONDITION_ORDER)}
-    r_m = rank.get(media, len(CONDITION_ORDER))
-    r_s = rank.get(sleeve, len(CONDITION_ORDER))
+    r_m = rank.get(media, 0)   # onbekende disc → beste rank (voorzichtig)
+    r_s = rank.get(sleeve, 0)  # onbekende sleeve → beste rank (voorzichtig)
     return media if r_m >= r_s else sleeve
 
 
