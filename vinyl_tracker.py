@@ -564,9 +564,9 @@ def compute_deals(results):
             cond_sales = by_cond.get(cond, [])
             if not cond_sales:
                 continue
-            mn       = min(s["price"] for s in cond_sales)   # historical (assumed EUR)
-            best_eur = best.get("total_eur", best["price"])
-            disc     = (mn - best_eur) / mn * 100
+            mn        = min(s["price"] for s in cond_sales)        # historisch (assumed EUR)
+            item_eur  = _to_eur(best["price"], best["currency"])    # listing itemprijs in EUR, zonder verzend
+            disc      = (mn - item_eur) / mn * 100
             if disc > 0:
                 deals.append({"r": r, "cond": cond, "best": best, "mn": mn, "disc": disc})
     deals.sort(key=lambda x: x["disc"], reverse=True)
