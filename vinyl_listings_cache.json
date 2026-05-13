@@ -679,7 +679,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 40.540000000000006,
-        "rating_count": 237944,
+        "rating_count": 237945,
         "seller": "groovesland"
       },
       {
@@ -1584,7 +1584,7 @@
         "currency": "EUR",
         "shipping": 20.0,
         "total_eur": 60.0,
-        "rating_count": 3213,
+        "rating_count": 3214,
         "seller": "MonoRecordStore"
       },
       {
@@ -2749,7 +2749,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 35.14,
-        "rating_count": 237944,
+        "rating_count": 237945,
         "seller": "groovesland"
       },
       {
@@ -2909,7 +2909,7 @@
         "currency": "GBP",
         "shipping": 20.9,
         "total_eur": 55.03266016151515,
-        "rating_count": 6507,
+        "rating_count": 6508,
         "seller": "Punktofunkheaven."
       },
       {
@@ -2949,7 +2949,7 @@
         "currency": "GBP",
         "shipping": 9.0,
         "total_eur": 41.461700632466616,
-        "rating_count": 56685,
+        "rating_count": 56686,
         "seller": "Juno_Records"
       },
       {
@@ -3299,7 +3299,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 185.17000000000002,
-        "rating_count": 377291,
+        "rating_count": 377293,
         "seller": "recordsale-de"
       },
       {
@@ -4539,7 +4539,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 30.740000000000002,
-        "rating_count": 377291,
+        "rating_count": 377293,
         "seller": "recordsale-de"
       },
       {
@@ -5129,7 +5129,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 677.0799999999999,
-        "rating_count": 377291,
+        "rating_count": 377293,
         "seller": "recordsale-de"
       },
       {
@@ -5464,7 +5464,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 125.07000000000001,
-        "rating_count": 377291,
+        "rating_count": 377293,
         "seller": "recordsale-de"
       },
       {
@@ -7843,16 +7843,6 @@
         "seller": "Plattenkontrolle"
       },
       {
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 40.0,
-        "currency": "EUR",
-        "shipping": 15.95,
-        "total_eur": 55.95,
-        "rating_count": 1621,
-        "seller": "SteinmejerNorgaard"
-      },
-      {
         "media": "VG+",
         "sleeve": "Generic",
         "price": 40.0,
@@ -7861,6 +7851,16 @@
         "total_eur": 55.0,
         "rating_count": 7851,
         "seller": "cosmicmusicshop"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 40.0,
+        "currency": "EUR",
+        "shipping": 15.95,
+        "total_eur": 55.95,
+        "rating_count": 1621,
+        "seller": "SteinmejerNorgaard"
       },
       {
         "media": "VG",
@@ -8959,7 +8959,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 328.46999999999997,
-        "rating_count": 377291,
+        "rating_count": 377293,
         "seller": "recordsale-de"
       },
       {
@@ -10034,7 +10034,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 156.92000000000002,
-        "rating_count": 377291,
+        "rating_count": 377293,
         "seller": "recordsale-de"
       },
       {
@@ -10144,7 +10144,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 247.52,
-        "rating_count": 377291,
+        "rating_count": 377293,
         "seller": "recordsale-de"
       },
       {
