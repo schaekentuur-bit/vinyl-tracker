@@ -1257,6 +1257,29 @@ def _log(msg):
 def run_server(initial_results, cookies, session):
     state = {"results": initial_results, "refreshing": False}
 
+    def _push_to_github():
+        """Push verse cache naar GitHub zodat GitHub Pages automatisch bijwerkt."""
+        import subprocess
+        repo = os.path.dirname(os.path.abspath(__file__))
+        files = [SALES_CACHE, STATS_CACHE, LISTINGS_CACHE, DEALS_SEEN_FILE, USER_RELEASES_FILE]
+        existing = [f for f in files if os.path.exists(os.path.join(repo, f))]
+        try:
+            subprocess.run(["git", "-C", repo, "add"] + existing, check=True,
+                           capture_output=True)
+            r = subprocess.run(["git", "-C", repo, "diff", "--staged", "--quiet"],
+                               capture_output=True)
+            if r.returncode == 0:
+                _log("GitHub: geen wijzigingen om te pushen")
+                return
+            ts = datetime.now().strftime("%Y-%m-%d %H:%M")
+            subprocess.run(["git", "-C", repo, "commit", "-m",
+                            f"Lokale refresh {ts}"], check=True, capture_output=True)
+            subprocess.run(["git", "-C", repo, "push", "origin", "HEAD"],
+                           check=True, capture_output=True)
+            _log("Cache gepushed naar GitHub — live site wordt bijgewerkt")
+        except subprocess.CalledProcessError as e:
+            _log(f"GitHub push mislukt: {e.stderr.decode(errors='replace').strip()}")
+
     def do_refresh():
         try:
             _log("Vernieuwen gestart")
@@ -1280,6 +1303,7 @@ def run_server(initial_results, cookies, session):
                 "group":    d["r"]["group"],
             } for d in deals})
             _log("Vernieuwen klaar")
+            _push_to_github()
         except Exception as e:
             import traceback
             _log(f"FOUT bij vernieuwen: {e}")
