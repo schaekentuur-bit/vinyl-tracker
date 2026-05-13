@@ -74,14 +74,12 @@ RELEASE_INFO = {
     "939519":   ("🏆 First pressing", "Originele UK Damont-persing — de meest gezochte Oasis-versie. Bewaren."),
     "517224":   ("🏆 First pressing", "Originele UK Damont-persing van het debuut — zeldzamer dan Morning Glory. Top collector's item."),
     "6127871":  ("🎵 Luisterversie", "Moderne EU reissue — prima geluid voor dagelijks gebruik."),
-    "33663000": ("🎁 Limited edition", "Record Store Day 2025 box set — beperkte oplage, goed voor verzamelaars."),
     "12864584": ("🎵 Luisterversie", "Moderne reissue — ideaal om af te spelen zonder origineel te slijten."),
     # RHCP
     "375491":   ("🏆 First pressing", "Originele EU Warner Bros-persing 1991 — BSSM werd niet commercieel op vinyl uitgebracht in de US in 1991; dit IS de first pressing vinyl."),
     "12042641": ("🎵 Luisterversie", "US remaster 2012 — beste keuze voor dagelijks afspelen."),
     "14914560": ("🏆 First pressing", "Originele US Warner Bros-persing 1999 — dit IS de first pressing van Californication (catno 9 47386-1)."),
-    "9899740":  ("📀 EU origineel (niet first)", "Originele EU persing 1999 — zelfde catno-reeks maar EU-geperst; de US first pressing zit nu ook in je collectie."),
-    "31323387": ("🎁 Jubileumeditie", "25th Anniversary persing 2024 — beperkte oplage, goed geluid."),
+    "31323387": ("🎵 Luisterversie", "25th Anniversary persing 2024 — beperkte oplage, goed geluid voor dagelijks afspelen."),
     "420718":   ("🏆 First pressing", "Originele US Warner Bros-persing 2002 — dit IS de first pressing van By The Way."),
     "15276024": ("🎵 Luisterversie", "EU reissue 2020 — voor dagelijks gebruik."),
     "1629020":  ("🏆 First pressing", "Originele US Warner Bros dubbel-LP 2006 — dit IS de first pressing van Stadium Arcadium."),
@@ -95,6 +93,7 @@ RELEASE_INFO = {
     "459606":   ("🏆 First pressing", "Originele US persing Carrollton-plant 1987 — first pressing, iets minder gezocht dan Pitman maar zeker een collector's item."),
     # Metallica
     "1549636":  ("🏆 First pressing", "Originele US Allied-persing 1986 — heilige graal voor metalverzamelaars. Niet afspelen."),
+    "11118447": ("🎵 Luisterversie", "Blackened Records reissue US 2017 (BLCKND005R-1) — hoge kwaliteitspers voor dagelijks afspelen."),
     "381988":   ("🏆 First pressing", "Originele US Elektra-persing 1991 — dit IS de first pressing van het Black Album."),
     "439599":   ("📀 EU origineel (niet first)", "Originele EU Vertigo-persing 1991 — tegelijk uitgebracht met de US, maar US Elektra geldt als 'the' first pressing."),
     # Queen
@@ -104,29 +103,39 @@ RELEASE_INFO = {
     "400591":   ("🏆 First pressing", "Australisch origineel 1980 — absolute heilige graal voor AC/DC-verzamelaars."),
     "1949857":  ("🎵 Luisterversie", "EU reissue 2009 — voor dagelijks gebruik, geen collector's waarde."),
     "400587":   ("🏆 First pressing", "Australisch origineel Bon Scott-era 1979 — zeldzamer dan Back in Black. Topstuk."),
+    "2520300":  ("🎵 Luisterversie", "EU reissue 2009 (5107641) — voor dagelijks afspelen, geen collector's waarde."),
     # Linkin Park
     "534020":   ("🏆 First pressing", "Originele US Warner Bros-persing 2001 — dit IS de first pressing van Hybrid Theory."),
+    "21054706": ("🎵 Luisterversie", "20th Anniversary reissue US 2021 (093624941422) — jubileumeditie voor dagelijks afspelen."),
     "3336797":  ("🏆 First pressing", "Originele US Warner Bros-persing 2003 — dit IS de first pressing van Meteora."),
+    "28403278": ("🎵 Luisterversie", "20th Anniversary reissue US 2023 (093624853343) — jubileumeditie voor dagelijks afspelen."),
     # Green Day
     "9452213":  ("🏆 First pressing", "Originele US Reprise-persing 2004 — dit IS de first pressing van American Idiot (catno 9362-48777-1)."),
     "1203470":  ("📀 EU origineel (niet first)", "Originele EU Warner persing 2004 — zelfde catno-reeks maar EU-geperst; de US first pressing zit nu ook in je collectie."),
     # Guns N' Roses
     "383777":   ("🏆 First pressing", "Originele US Allied-persing 1987 — meest gezochte GNR-variant. Topstuk."),
-    "1238431":  ("🏆 First pressing", "Originele EU persing met ongecensureerd Robert Williams-artwork 1987 — zeldzame variant."),
     "7492229":  ("🎵 Luisterversie", "EU reissue 2015 — voor dagelijks afspelen."),
     # Notorious B.I.G.
     "317356":   ("🏆 First pressing", "Originele US persing 1994 — waardevolle klassieker van klassieke hiphop. Stijgende markt."),
+    "34578556": ("🎵 Luisterversie", "Rhino reissue US 2004 (RR1 285201) — voor dagelijks afspelen."),
     # Kendrick Lamar
     "3975953":  ("🏆 First pressing", "Originele US TDE/Aftermath-persing 2012 — dit IS de first pressing van GKMC."),
+    "30551209": ("🎵 Luisterversie", "US reissue 2022 (B0036420-01) — voor dagelijks afspelen."),
     "8814849":  ("🏆 First pressing", "Originele US TDE-persing 2015, RTI-plant — dit IS de first pressing van TPAB."),
+    "23398166": ("🎵 Luisterversie", "US repress 2022 (B0023464-01) — voor dagelijks afspelen."),
     "10559651": ("🏆 First pressing", "Originele US TDE-persing 2017 — dit IS de first pressing van DAMN. (Pulitzer Prize-winnaar)."),
+    "25683820": ("🎵 Luisterversie", "EU reissue 2022 (00602557618280) — voor dagelijks afspelen."),
     # The Killers
     "397167":   ("🏆 First pressing", "Originele UK Lizard King-persing 2004, blue marbled vinyl — dit IS de first pressing van Hot Fuss (UK-release)."),
+    "20298550": ("🎵 Luisterversie", "US reissue 2017 (B0026979-01) — voor dagelijks afspelen."),
     # Doe Maar
     "402227":   ("🏆 First pressing", "Originele NL Killroy-persing 1981 — dit IS de first pressing van Skunk."),
+    "22712903": ("🎵 Luisterversie", "Music on Vinyl EU reissue 2022 (MOVLP2295) — kwalitatieve herpers voor dagelijks afspelen."),
     "382601":   ("🏆 First pressing", "Originele NL Killroy-persing 1982 — dit IS de first pressing van Doris Day."),
+    "22494431": ("🎵 Luisterversie", "Music on Vinyl NL reissue 2022 (MOVLP2297) — kwalitatieve herpers voor dagelijks afspelen."),
     # Eagles
     "1934367":  ("🏆 First pressing", "Originele US Elektra-persing 1976 — consistent in waarde, iconisch album."),
+    "9847048":  ("🎵 Luisterversie", "Rhino remaster Worldwide 2015 (RRM1-1084) — heldere remaster voor dagelijks afspelen."),
     # Amy Winehouse
     "2848009":  ("📀 US origineel (niet first)", "Originele US persing 2006 — Back to Black was een UK Island-release, dus de UK pressing geldt als the first pressing."),
     "34780535": ("🏆 First pressing", "Originele UK Island-persing 2006 — dit IS de first pressing van Back to Black."),
@@ -134,12 +143,14 @@ RELEASE_INFO = {
     "12927816": ("🏆 First pressing", "Originele UK Island-persing 1984 — dit IS de first pressing van Legend (catno BMW 1). Stijgende collector's waarde."),
     "4418438":  ("🎵 Luisterversie", "EU reissue compilatie 2015 — veelgeperste plaat, weinig collector's waarde maar geweldig geluid."),
     "3660230":  ("🏆 First pressing", "Originele Jamaicaanse Tuff Gong-persing 1977 — zeldzame authentieke Bob Marley. Topstuk."),
+    "1862215":  ("🎵 Luisterversie", "Island EU reissue 2009 (0600753184196) — voor dagelijks afspelen."),
     "65845":    ("🏆 First pressing", "Originele UK Island-persing 1976 — collectors item uit het releasejaar."),
+    "746135":   ("🎵 Luisterversie", "Tuff Gong EU reissue 2001 (TGLLP 6) — voor dagelijks afspelen."),
     # Fleetwood Mac
     "526351":   ("🏆 First pressing", "Originele US Warner Bros-persing 1977 — sterk gestegen in waarde door TikTok-hype."),
+    "3229870":  ("🎵 Luisterversie", "Worldwide reissue 2023 (R1 567113) — moderne herpers voor dagelijks afspelen."),
     # Nirvana
     "1813006":  ("🏆 First pressing", "Originele US DGC-persing 1991 — de meest gewilde Nevermind-versie."),
-    "7097051":  ("🎵 Luisterversie", "EU reissue 2015 — voor dagelijks afspelen."),
     "3183667":  ("🎵 Audiofiele versie", "20th Anniversary remaster US 2011 — beste klankkwaliteit voor Nevermind."),
     # Flatbush Zombies
     "12895130": ("🎁 Gekleurd vinyl", "Limited clear/black smoke vinyl 2018 — collectors editie, beperkte oplage."),
@@ -147,23 +158,68 @@ RELEASE_INFO = {
     "13672908": ("🎁 Gekleurd vinyl", "Limited blue vinyl 2019 — collectors editie."),
     # Mobb Deep
     "223127":   ("🏆 First pressing", "Originele US Loud Records-persing 1995 — dit IS de first pressing van The Infamous."),
+    "7753999":  ("🎵 Luisterversie", "Music on Vinyl EU reissue 2015 (MOVLP1463) — kwalitatieve herpers voor dagelijks afspelen."),
     # Sticks
     "16170729": ("🏆 First pressing", "Originele NL persing 2020 — dit IS de (enige) pressing van Stickmatic."),
 }
+
+# ─── ALBUM PAIRINGS ─────────────────────────────────────────────────────────────
+# Elk tupel: (belegging_id, luister_id) — links=belegging, rechts=luisteren
+RELEASE_PAIRS = [
+    # Rock
+    ("939519",   "6127871"),   # Oasis — Morning Glory
+    ("517224",   "12864584"),  # Oasis — Definitely Maybe
+    ("375491",   "12042641"),  # RHCP — Blood Sugar Sex Magik
+    ("14914560", "31323387"),  # RHCP — Californication
+    ("420718",   "15276024"),  # RHCP — By The Way
+    ("1629020",  "8519678"),   # RHCP — Stadium Arcadium
+    ("7801798",  "14186441"),  # Beatles — Abbey Road
+    ("612780",   "7541569"),   # Queen — A Night at the Opera
+    ("9452213",  "1203470"),   # Green Day — American Idiot
+    ("397167",   "20298550"),  # The Killers — Hot Fuss
+    ("1934367",  "9847048"),   # Eagles — Hotel California
+    ("526351",   "3229870"),   # Fleetwood Mac — Rumours
+    # Hard Rock / Metal
+    ("1813006",  "3183667"),   # Nirvana — Nevermind
+    ("400591",   "1949857"),   # AC/DC — Back in Black
+    ("400587",   "2520300"),   # AC/DC — Highway to Hell
+    ("383777",   "7492229"),   # Guns N' Roses — Appetite for Destruction
+    ("381988",   "439599"),    # Metallica — Black Album (US ↔ EU)
+    ("1549636",  "11118447"),  # Metallica — Master of Puppets
+    ("534020",   "21054706"),  # Linkin Park — Hybrid Theory
+    ("3336797",  "28403278"),  # Linkin Park — Meteora
+    # Pop
+    ("2911293",  "152946"),    # Michael Jackson — Thriller (Pitman ↔ EU)
+    ("402227",   "22712903"),  # Doe Maar — Skunk
+    ("382601",   "22494431"),  # Doe Maar — Doris Day
+    # Soul / R&B
+    ("34780535", "2848009"),   # Amy Winehouse — Back to Black
+    # Reggae
+    ("12927816", "4418438"),   # Bob Marley — Legend
+    ("3660230",  "1862215"),   # Bob Marley — Exodus
+    ("65845",    "746135"),    # Bob Marley — Rastaman Vibration
+    # Hip-Hop
+    ("317356",   "34578556"),  # Notorious B.I.G. — Ready to Die
+    ("223127",   "7753999"),   # Mobb Deep — The Infamous
+    ("3975953",  "30551209"),  # Kendrick Lamar — GKMC
+    ("8814849",  "23398166"),  # Kendrick Lamar — TPAB
+    ("10559651", "25683820"),  # Kendrick Lamar — DAMN.
+]
+# Snelle lookup: id → partner_id
+_PAIR_MAP = {a: b for a, b in RELEASE_PAIRS} | {b: a for a, b in RELEASE_PAIRS}
+_LEFT_IDS = {a for a, b in RELEASE_PAIRS}
 
 RELEASES = {
     # ── OASIS ──
     "939519":   ("Oasis", "Morning Glory (CRE LP 189, Damont, UK 1995)"),
     "517224":   ("Oasis", "Definitely Maybe (CRE LP 169, Damont, UK 1994)"),
     "6127871":  ("Oasis", "Morning Glory (RKIDLP73, EU reissue 2014)"),
-    "33663000": ("Oasis", "Time Flies RSD Box Set (RKIDLP150RSD, 2025)"),
     "12864584": ("Oasis", "Definitely Maybe reissue (RKIDLP70, 2014)"),
 
     # ── RED HOT CHILI PEPPERS ──
     "375491":   ("RHCP", "Blood Sugar Sex Magik (7599-26681-1, EU first pressing 1991)"),
     "12042641": ("RHCP", "Blood Sugar Sex Magik (468348-1, US 2012 remaster)"),
     "14914560": ("RHCP", "Californication (9 47386-1, US first pressing 1999)"),
-    "9899740":  ("RHCP", "Californication (9362-47386-1, EU 1999)"),
     "31323387": ("RHCP", "Californication 25th Anniversary (93624843276, 2024)"),
     "420718":   ("RHCP", "By The Way (9 48140-1, US 2002)"),
     "15276024": ("RHCP", "By The Way reissue (093624814016, EU 2020)"),
@@ -181,6 +237,7 @@ RELEASES = {
 
     # ── METALLICA ──
     "1549636":  ("Metallica", "Master of Puppets (60439-1, Allied, US 1986)"),
+    "11118447": ("Metallica", "Master of Puppets (BLCKND005R-1, Blackened, US 2017)"),
     "381988":   ("Metallica", "Black Album (61113-1, Elektra, US 1991)"),
     "439599":   ("Metallica", "Black Album (510 022-1, Vertigo, EU 1991)"),
 
@@ -192,10 +249,13 @@ RELEASES = {
     "400591":   ("AC/DC", "Back in Black (APLP-046, Australisch origineel 1980)"),
     "1949857":  ("AC/DC", "Back in Black (5107651, EU reissue 2009)"),
     "400587":   ("AC/DC", "Highway to Hell (APLP-040, Australisch origineel 1979)"),
+    "2520300":  ("AC/DC", "Highway to Hell (5107641, EU reissue 2009)"),
 
     # ── LINKIN PARK ──
     "534020":   ("Linkin Park", "Hybrid Theory (9 47755-1, US 2001)"),
+    "21054706": ("Linkin Park", "Hybrid Theory 20th Anniversary (093624941422, US 2021)"),
     "3336797":  ("Linkin Park", "Meteora (48186-1, US 2003)"),
+    "28403278": ("Linkin Park", "Meteora 20th Anniversary (093624853343, US 2023)"),
 
     # ── GREEN DAY ──
     "9452213":  ("Green Day", "American Idiot (9362-48777-1, US first pressing 2004)"),
@@ -203,26 +263,33 @@ RELEASES = {
 
     # ── GUNS N' ROSES ──
     "383777":   ("Guns N' Roses", "Appetite for Destruction (XXXG 24148, US Allied 1987)"),
-    "1238431":  ("Guns N' Roses", "Appetite for Destruction (924 148-1, EU uncensored 1987)"),
     "7492229":  ("Guns N' Roses", "Appetite for Destruction (00720642414811, reissue EU 2015)"),
 
     # ── NOTORIOUS B.I.G. ──
     "317356":   ("Notorious B.I.G.", "Ready to Die (78612-73000-1, US 1994)"),
+    "34578556": ("Notorious B.I.G.", "Ready to Die (RR1 285201, Rhino reissue US 2004)"),
 
     # ── KENDRICK LAMAR ──
     "3975953":  ("Kendrick Lamar", "Good Kid M.A.A.D City (B0017695-01, US 2012)"),
+    "30551209": ("Kendrick Lamar", "Good Kid M.A.A.D City (B0036420-01, US reissue 2022)"),
     "8814849":  ("Kendrick Lamar", "To Pimp A Butterfly (B0023464-01, US 2015)"),
+    "23398166": ("Kendrick Lamar", "To Pimp A Butterfly (B0023464-01, US repress 2022)"),
     "10559651": ("Kendrick Lamar", "DAMN. (B0026745-01, US 2017)"),
+    "25683820": ("Kendrick Lamar", "DAMN. (00602557618280, EU reissue 2022)"),
 
     # ── THE KILLERS ──
     "397167":   ("The Killers", "Hot Fuss (LIZARD011X, blue marbled, UK 2004)"),
+    "20298550": ("The Killers", "Hot Fuss (B0026979-01, US reissue 2017)"),
 
     # ── DOE MAAR ──
     "402227":   ("Doe Maar", "Skunk (Kil 19934 Kl, NL 1981)"),
+    "22712903": ("Doe Maar", "Skunk (MOVLP2295, Music on Vinyl EU 2022)"),
     "382601":   ("Doe Maar", "Doris Day En Andere Stukken (Kil 21032 Kl, NL 1982)"),
+    "22494431": ("Doe Maar", "Doris Day En Andere Stukken (MOVLP2297, Music on Vinyl NL 2022)"),
 
     # ── EAGLES ──
     "1934367":  ("Eagles", "Hotel California (7E-1084, US origineel 1976)"),
+    "9847048":  ("Eagles", "Hotel California (RRM1-1084, Rhino remaster Worldwide 2015)"),
 
     # ── AMY WINEHOUSE ──
     "2848009":  ("Amy Winehouse", "Back To Black (B0008994-01, US 2006)"),
@@ -232,14 +299,16 @@ RELEASES = {
     "12927816": ("Bob Marley", "Legend (BMW 1, Island UK first pressing 1984)"),
     "4418438":  ("Bob Marley", "Legend (0600753030523, EU reissue 2015)"),
     "3660230":  ("Bob Marley", "Exodus (ILPS 9498, Tuff Gong, Jamaica 1977)"),
+    "1862215":  ("Bob Marley", "Exodus (0600753184196, Island EU reissue 2009)"),
     "65845":    ("Bob Marley", "Rastaman Vibration (ILPS 9383, Island UK 1976)"),
+    "746135":   ("Bob Marley", "Rastaman Vibration (TGLLP 6, Tuff Gong EU reissue 2001)"),
 
     # ── FLEETWOOD MAC ──
     "526351":   ("Fleetwood Mac", "Rumours (BSK 3010, US origineel 1977)"),
+    "3229870":  ("Fleetwood Mac", "Rumours (R1 567113, Worldwide reissue 2023)"),
 
     # ── NIRVANA ──
     "1813006":  ("Nirvana", "Nevermind (DGC-24425, US origineel 1991)"),
-    "7097051":  ("Nirvana", "Nevermind (424 425-1, EU reissue 2015)"),
     "3183667":  ("Nirvana", "Nevermind 20th Anniversary (B0015884-01, US 2011)"),
 
     # ── FLATBUSH ZOMBIES ──
@@ -250,6 +319,7 @@ RELEASES = {
 
     # ── MOBB DEEP ──
     "223127":   ("Mobb Deep", "The Infamous (07863 66480-1, US 1995)"),
+    "7753999":  ("Mobb Deep", "The Infamous (MOVLP1463, Music on Vinyl EU 2015)"),
 
     # ── STICKS ──
     "16170729": ("Sticks", "Stickmatic (350 405-3, NL 2020)"),
@@ -629,61 +699,71 @@ def _gid(group):
     """Sanitize group name to a safe HTML id."""
     return "grp-" + re.sub(r'[^a-z0-9]+', '-', group.lower()).strip('-')
 
-def _build_release_cards(group_results):
-    """Build the detailed condition cards for a list of releases."""
-    cards = ""
-    for r in group_results:
-        sales = r["sales"]
-        stats = r["stats"]
-        lowest = stats.get("lowest_price", {})
-        lowest_val = lowest.get("value") if isinstance(lowest, dict) else lowest
-        best_for_release = get_best_listings(r.get("listings", []))
+_BADGE_MAP = {
+    "🏆 First pressing":            "rb-badge-first",
+    "🎵 Luisterversie":             "rb-badge-listen",
+    "🎵 Audiofiele versie":          "rb-badge-listen",
+    "🎁 Limited edition":            "rb-badge-limited",
+    "🎁 Jubileumeditie":             "rb-badge-limited",
+    "🎁 Zeldzame variant":           "rb-badge-limited",
+    "🎁 Gekleurd vinyl":             "rb-badge-limited",
+    "📀 EU origineel (niet first)":  "rb-badge-missing",
+    "📀 US origineel (niet first)":  "rb-badge-missing",
+}
 
-        by_cond = {}
-        for s in sales:
-            by_cond.setdefault(s["media"], []).append(s)
-        for cond in by_cond:
-            by_cond[cond].sort(key=lambda x: x["date"], reverse=True)
+def _render_single_rb(r):
+    """Render één release card (<div class='rb'>)."""
+    sales = r["sales"]
+    stats = r["stats"]
+    lowest = stats.get("lowest_price", {})
+    lowest_val = lowest.get("value") if isinstance(lowest, dict) else lowest
+    best_for_release = get_best_listings(r.get("listings", []))
 
-        cond_blocks = ""
-        for cond in CONDITION_ORDER:
-            cond_sales = by_cond.get(cond, [])[:10]
-            if not cond_sales:
-                continue
-            prices = [s["price"] for s in cond_sales]
-            avg = sum(prices) / len(prices)
-            mn  = min(prices)
-            mx  = max(prices)
-            rows = "".join(
-                f'<tr>'
-                f'<td>{s["date"]}</td>'
-                f'<td><span class="badge bd-{s["media"].replace("+","p").replace("-","m")}">{s["media"]}</span></td>'
-                f'<td><span class="badge bd-{s["sleeve"].replace("+","p").replace("-","m")}">{s["sleeve"]}</span></td>'
-                f'<td style="text-align:right;font-weight:bold">{fmt(s["price"])}</td>'
-                f'</tr>'
-                for s in cond_sales
+    by_cond = {}
+    for s in sales:
+        by_cond.setdefault(s["media"], []).append(s)
+    for cond in by_cond:
+        by_cond[cond].sort(key=lambda x: x["date"], reverse=True)
+
+    cond_blocks = ""
+    for cond in CONDITION_ORDER:
+        cond_sales = by_cond.get(cond, [])[:10]
+        if not cond_sales:
+            continue
+        prices = [s["price"] for s in cond_sales]
+        avg = sum(prices) / len(prices)
+        mn  = min(prices)
+        mx  = max(prices)
+        rows = "".join(
+            f'<tr>'
+            f'<td>{s["date"]}</td>'
+            f'<td><span class="badge bd-{s["media"].replace("+","p").replace("-","m")}">{s["media"]}</span></td>'
+            f'<td><span class="badge bd-{s["sleeve"].replace("+","p").replace("-","m")}">{s["sleeve"]}</span></td>'
+            f'<td style="text-align:right;font-weight:bold">{fmt(s["price"])}</td>'
+            f'</tr>'
+            for s in cond_sales
+        )
+        best = best_for_release.get(cond)
+        if best:
+            mc      = best["media"].replace("+","p").replace("-","m")
+            sc      = best["sleeve"].replace("+","p").replace("-","m")
+            lhref   = f"https://www.discogs.com/sell/release/{r['id']}?sort=price%2Casc&limit=50"
+            eur_tot = best.get("total_eur", best["price"])
+            brkdwn  = _shipping_breakdown(best)
+            best_html = (
+                f'<div class="best-listing">'
+                f'<span class="best-label">Beste listing:</span> '
+                f'<strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}'
+                f' &mdash; {best["seller"]} ({best["rating_count"]:,} ratings)'
+                f' | Disc: <span class="badge bd-{mc}">{best["media"]}</span>'
+                f' Hoes: <span class="badge bd-{sc}">{best["sleeve"]}</span>'
+                f' | <a href="{lhref}" target="_blank">Koop &rarr;</a>'
+                f'</div>'
             )
-            best = best_for_release.get(cond)
-            if best:
-                mc      = best["media"].replace("+","p").replace("-","m")
-                sc      = best["sleeve"].replace("+","p").replace("-","m")
-                lhref   = f"https://www.discogs.com/sell/release/{r['id']}?sort=price%2Casc&limit=50"
-                eur_tot = best.get("total_eur", best["price"])
-                brkdwn  = _shipping_breakdown(best)
-                best_html = (
-                    f'<div class="best-listing">'
-                    f'<span class="best-label">Beste listing:</span> '
-                    f'<strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}'
-                    f' &mdash; {best["seller"]} ({best["rating_count"]:,} ratings)'
-                    f' | Disc: <span class="badge bd-{mc}">{best["media"]}</span>'
-                    f' Hoes: <span class="badge bd-{sc}">{best["sleeve"]}</span>'
-                    f' | <a href="{lhref}" target="_blank">Koop &rarr;</a>'
-                    f'</div>'
-                )
-            else:
-                best_html = ""
+        else:
+            best_html = ""
 
-            cond_blocks += f"""
+        cond_blocks += f"""
             <div class="cb">
               <div class="cb-head">{cond} <span class="cb-n">({len(cond_sales)} verkopen)</span></div>
               <div class="cb-stats">Gem {fmt(avg)} &nbsp;|&nbsp; Min {fmt(mn)} &nbsp;|&nbsp; Max {fmt(mx)}</div>
@@ -694,46 +774,73 @@ def _build_release_cards(group_results):
               </table>
             </div>"""
 
-        if not cond_blocks:
-            cond_blocks = '<p class="no-data">Geen verkoopdata op Discogs.</p>'
+    if not cond_blocks:
+        cond_blocks = '<p class="no-data">Geen verkoopdata op Discogs.</p>'
 
-        market = (
-            f'Laagste nu: <strong>{fmt(lowest_val)}</strong> &nbsp;|&nbsp; '
-            f'{stats.get("num_for_sale","?")} te koop &nbsp;&nbsp;'
-            f'<a href="https://www.discogs.com/sell/release/{r["id"]}" target="_blank">Listings &rarr;</a>'
-            f' &nbsp;<a href="https://www.discogs.com/sell/history/{r["id"]}" target="_blank">Historie &rarr;</a>'
-        )
-        _badge_map = {
-            "🏆 First pressing":            "rb-badge-first",
-            "🎵 Luisterversie":             "rb-badge-listen",
-            "🎵 Audiofiele versie":          "rb-badge-listen",
-            "🎁 Limited edition":            "rb-badge-limited",
-            "🎁 Jubileumeditie":             "rb-badge-limited",
-            "🎁 Zeldzame variant":           "rb-badge-limited",
-            "🎁 Gekleurd vinyl":             "rb-badge-limited",
-            "📀 EU origineel (niet first)":  "rb-badge-missing",
-            "📀 US origineel (niet first)":  "rb-badge-missing",
-        }
-        info = RELEASE_INFO.get(r["id"])
-        if info:
-            label, desc = info
-            badge_cls  = _badge_map.get(label, "rb-badge-orig")
-            badge_html = f'<span class="rb-badge {badge_cls}">{label}</span>'
-            desc_html  = f'<p class="rb-desc">{desc}</p>'
+    market = (
+        f'Laagste nu: <strong>{fmt(lowest_val)}</strong> &nbsp;|&nbsp; '
+        f'{stats.get("num_for_sale","?")} te koop &nbsp;&nbsp;'
+        f'<a href="https://www.discogs.com/sell/release/{r["id"]}" target="_blank">Listings &rarr;</a>'
+        f' &nbsp;<a href="https://www.discogs.com/sell/history/{r["id"]}" target="_blank">Historie &rarr;</a>'
+    )
+    info = RELEASE_INFO.get(r["id"])
+    if info:
+        label, desc = info
+        badge_cls  = _BADGE_MAP.get(label, "rb-badge-orig")
+        badge_html = f'<span class="rb-badge {badge_cls}">{label}</span>'
+        desc_html  = f'<p class="rb-desc">{desc}</p>'
+    else:
+        badge_html = ""
+        desc_html  = ""
+
+    return (
+        f'<div class="rb">'
+        f'<div class="rb-head"><span class="rb-title">{r["title"]}</span>{badge_html}</div>'
+        f'{desc_html}'
+        f'<p class="market">{market}</p>'
+        f'<div class="conds">{cond_blocks}</div>'
+        f'</div>'
+    )
+
+
+def _build_release_cards(group_results):
+    """Render release cards; gepaarde releases (belegging + luister) naast elkaar."""
+    by_id = {r["id"]: r for r in group_results}
+    processed = set()
+    html = ""
+
+    for r in group_results:
+        rid = r["id"]
+        if rid in processed:
+            continue
+
+        partner_id = _PAIR_MAP.get(rid)
+        if partner_id and partner_id in by_id:
+            # Bepaal welke links (belegging) en welke rechts (luisteren) staat
+            if rid in _LEFT_IDS:
+                left_r, right_r = r, by_id[partner_id]
+            else:
+                left_r, right_r = by_id[partner_id], r
+
+            left_html  = _render_single_rb(left_r)
+            right_html = _render_single_rb(right_r)
+            html += (
+                f'<div class="rb-pair">'
+                f'<div class="rb-pair-col">'
+                f'<div class="rb-pair-role rb-role-invest">💎 Belegging</div>'
+                f'{left_html}</div>'
+                f'<div class="rb-pair-col">'
+                f'<div class="rb-pair-role rb-role-listen">🎧 Luisteren</div>'
+                f'{right_html}</div>'
+                f'</div>'
+            )
+            processed.add(rid)
+            processed.add(partner_id)
         else:
-            badge_html = ""
-            desc_html  = ""
+            html += _render_single_rb(r)
+            processed.add(rid)
 
-        cards += f"""
-        <div class="rb">
-          <div class="rb-head">
-            <span class="rb-title">{r["title"]}</span>{badge_html}
-          </div>
-          {desc_html}
-          <p class="market">{market}</p>
-          <div class="conds">{cond_blocks}</div>
-        </div>"""
-    return cards
+    return html
 
 def compute_deals(results):
     """Bereken deals in twee tiers:
@@ -1246,6 +1353,14 @@ def build_html(results, static=False):
   .rb-badge-orig{{background:#e0f2fe;color:#0c4a6e}}
   .rb-badge-missing{{background:#fff7ed;color:#9a3412}}
   .rb-desc{{font-size:12px;color:var(--muted);margin:2px 0 8px;line-height:1.4}}
+  /* ── Pair layout ── */
+  .rb-pair{{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}}
+  .rb-pair-col{{flex:1;min-width:0;display:flex;flex-direction:column}}
+  .rb-pair-col .rb{{margin-bottom:0;border-radius:0 0 10px 10px;flex:1}}
+  .rb-pair-role{{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;
+                 padding:5px 14px;border-radius:10px 10px 0 0;border:1px solid transparent}}
+  .rb-role-invest{{background:#fef3c7;color:#92400e;border-color:#fde68a}}
+  .rb-role-listen{{background:#d1fae5;color:#065f46;border-color:#a7f3d0}}
   .market{{font-size:12px;color:var(--muted);margin-bottom:14px}}
   .market a{{color:#3B82F6;text-decoration:none}}
   .market a:hover{{text-decoration:underline}}
@@ -1328,6 +1443,7 @@ def build_html(results, static=False):
     .card{{overflow-x:auto;-webkit-overflow-scrolling:touch}}
     .card table{{min-width:500px}}
     .rb{{padding:14px 12px;overflow-x:auto;-webkit-overflow-scrolling:touch}}
+    .rb-pair{{flex-direction:column}}
     .conds{{flex-direction:column}}
     .cb{{min-width:0;width:100%}}
     .cb table{{min-width:280px}}
