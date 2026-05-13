@@ -27,7 +27,7 @@ import requests as std_requests
 
 # ─── CONFIGURATIE ─────────────────────────────────────────────────────────────
 
-DISCOGS_TOKEN      = os.getenv("DISCOGS_TOKEN", "")
+DISCOGS_TOKEN      = os.getenv("DISCOGS_TOKEN", "").lstrip("﻿").strip()
 COOKIES_FILE       = "cookies_www.discogs.com.txt"
 SALES_CACHE        = "vinyl_sales_cache.json"
 STATS_CACHE        = "vinyl_history_cache.json"
@@ -38,9 +38,9 @@ MIN_SELLER_RATINGS = 50  # minimaal aantal ratings voor een verkoper
 PORT               = 8765
 USER_RELEASES_FILE = "user_releases.json"
 
-EMAIL_FROM = os.getenv("EMAIL_FROM", "")
-EMAIL_TO   = os.getenv("EMAIL_TO",   "")
-EMAIL_PASS = os.getenv("EMAIL_PASS", "")
+EMAIL_FROM = os.getenv("EMAIL_FROM", "").lstrip("﻿").strip()
+EMAIL_TO   = os.getenv("EMAIL_TO",   "").lstrip("﻿").strip()
+EMAIL_PASS = os.getenv("EMAIL_PASS", "").lstrip("﻿").strip()
 
 # Lokale overrides uit config.py (staat in .gitignore, nooit op GitHub)
 try:
