@@ -346,9 +346,12 @@ def get_best_listings(listings):
     for listing in listings:
         if listing["rating_count"] < MIN_SELLER_RATINGS:
             continue
+        # Compute total_eur on-the-fly for cache entries that predate this field
+        if "total_eur" not in listing:
+            listing = dict(listing)
+            listing["total_eur"] = _to_eur(listing["price"] + listing.get("shipping", 0.0), listing["currency"])
         cond = listing["media"]
-        eur  = listing.get("total_eur", listing["price"])
-        if cond not in best or eur < best[cond].get("total_eur", best[cond]["price"]):
+        if cond not in best or listing["total_eur"] < best[cond]["total_eur"]:
             best[cond] = listing
     return best
 
