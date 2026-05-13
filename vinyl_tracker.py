@@ -945,6 +945,9 @@ def build_html(results, static=False):
   .btn-add:hover{{background:var(--purple2)}}
   .btn-refresh{{background:var(--accent);color:#fff}}
   .btn-refresh:hover{{background:var(--accent-dim)}}
+  .btn-push{{background:#16a34a;color:#fff}}
+  .btn-push:hover{{background:#15803d}}
+  .btn-push:disabled{{background:var(--muted2);color:#fff;cursor:not-allowed;opacity:.7}}
   .btn-refresh:disabled,.btn-add:disabled{{background:var(--muted2);color:#fff;cursor:not-allowed;opacity:.7}}
   .btn-link{{color:#3B82F6;text-decoration:none;font-size:12px;font-weight:500;
              white-space:nowrap;padding:3px 8px;border-radius:4px;
@@ -1108,6 +1111,7 @@ def build_html(results, static=False):
       <button class="btn btn-pdf" onclick="window.print()">&#128438; PDF</button>
       <button class="btn btn-add" id="abtn" onclick="toggleAdd()">&#43; Toevoegen</button>
       <button class="btn btn-refresh" id="rbtn" onclick="doRefresh()">&#8635; Vernieuwen</button>
+      <button class="btn btn-push" id="pbtn" onclick="doPush()">&#8679; Push GitHub</button>
     </div>
     <div class="add-panel" id="add-panel">
       <input type="text" id="add-url" class="add-input" placeholder="Plak een Discogs release-URL..." />
@@ -1147,6 +1151,24 @@ function doRefresh(){{
   var b=document.getElementById('rbtn');
   b.disabled=true; b.textContent='Bezig...';
   window.location.href='/refresh';
+}}
+function doPush(){{
+  var b=document.getElementById('pbtn');
+  b.disabled=true; b.textContent='Pushen...';
+  fetch('/push').then(function(){{
+    var t=0;
+    var iv=setInterval(function(){{
+      fetch('/status').then(function(r){{return r.json();}}).then(function(d){{
+        t++;
+        if(!d.pushing||t>30){{
+          clearInterval(iv);
+          b.disabled=false; b.textContent='♹ Push GitHub';
+          b.textContent='✓ Gepushed!';
+          setTimeout(function(){{b.textContent='♹ Push GitHub';}},3000);
+        }}
+      }});
+    }},1000);
+  }});
 }}
 function toggleAdd(){{
   var p=document.getElementById('add-panel');
@@ -1397,8 +1419,17 @@ def run_server(initial_results, cookies, session):
             elif self.path == "/refreshing":
                 self._respond(200, "text/html; charset=utf-8",
                               LOADING_HTML.encode("utf-8"))
+            elif self.path == "/push":
+                def _do_push_bg():
+                    _push_to_github()
+                    state["pushing"] = False
+                if not state.get("pushing"):
+                    state["pushing"] = True
+                    threading.Thread(target=_do_push_bg, daemon=True).start()
+                body = json.dumps({"ok": True}).encode()
+                self._respond(200, "application/json", body)
             elif self.path == "/status":
-                body = json.dumps({"refreshing": state["refreshing"]}).encode()
+                body = json.dumps({"refreshing": state["refreshing"], "pushing": state.get("pushing", False)}).encode()
                 self._respond(200, "application/json", body)
             elif self.path.startswith("/add"):
                 from urllib.parse import urlparse, parse_qs, unquote
