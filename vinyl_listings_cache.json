@@ -1,158 +1,8301 @@
 {
   "939519": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG+",
+        "sleeve": "G",
+        "price": 175.0,
+        "currency": "GBP",
+        "rating_count": 477,
+        "seller": "SwayzeRecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 175.0,
+        "currency": "GBP",
+        "rating_count": 1441,
+        "seller": "domino-man"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 210.0,
+        "currency": "GBP",
+        "rating_count": 4,
+        "seller": "redjakeyboy"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 250.0,
+        "currency": "EUR",
+        "rating_count": 359,
+        "seller": "2ralle"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 250.0,
+        "currency": "EUR",
+        "rating_count": 14456,
+        "seller": "zaharias-records-cd"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 250.0,
+        "currency": "EUR",
+        "rating_count": 6,
+        "seller": "TheaPolina"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 250.0,
+        "currency": "EUR",
+        "rating_count": 208,
+        "seller": "Shebangstherecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 3000.0,
+        "currency": "SEK",
+        "rating_count": 117,
+        "seller": "MonoVaxjo"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 280.0,
+        "currency": "EUR",
+        "rating_count": 671,
+        "seller": "mplou"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 250.0,
+        "currency": "GBP",
+        "rating_count": 51,
+        "seller": "bill2232"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 350.0,
+        "currency": "USD",
+        "rating_count": 1664,
+        "seller": "Hunt3d"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 299.0,
+        "currency": "EUR",
+        "rating_count": 37,
+        "seller": "gepposta"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 300.0,
+        "currency": "EUR",
+        "rating_count": 735,
+        "seller": "RoughTrade_EU"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 330.0,
+        "currency": "EUR",
+        "rating_count": 46,
+        "seller": "ULTRAMAN-RECORDS"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 290.0,
+        "currency": "GBP",
+        "rating_count": 149,
+        "seller": "AP-M"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 300.0,
+        "currency": "GBP",
+        "rating_count": 3590,
+        "seller": "NavaronUk"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 325.0,
+        "currency": "GBP",
+        "rating_count": 40315,
+        "seller": "johnmanshiprecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 462.0,
+        "currency": "USD",
+        "rating_count": 2435,
+        "seller": "BIG.DAWG.RECORDS"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 468.0,
+        "currency": "USD",
+        "rating_count": 2435,
+        "seller": "BIG.DAWG.RECORDS"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 400.0,
+        "currency": "EUR",
+        "rating_count": 7468,
+        "seller": "leclub33"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 352.0,
+        "currency": "GBP",
+        "rating_count": 53,
+        "seller": "paulrdarville"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 700.0,
+        "currency": "AUD",
+        "rating_count": 13,
+        "seller": "funkynotstinky"
+      },
+      {
+        "media": "NM",
+        "sleeve": "M",
+        "price": 380.0,
+        "currency": "GBP",
+        "rating_count": 107,
+        "seller": "totallywiredso"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 380.0,
+        "currency": "GBP",
+        "rating_count": 453,
+        "seller": "adicko5253"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 450.0,
+        "currency": "EUR",
+        "rating_count": 51,
+        "seller": "niallcolgan"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 400.0,
+        "currency": "GBP",
+        "rating_count": 5758,
+        "seller": "Avidrecords"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 477.6,
+        "currency": "EUR",
+        "rating_count": 1510,
+        "seller": "Best_offer"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 500.0,
+        "currency": "EUR",
+        "rating_count": 145,
+        "seller": "bavone1"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 480.0,
+        "currency": "GBP",
+        "rating_count": 780,
+        "seller": "jtaylor80000"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 752.39,
+        "currency": "EUR",
+        "rating_count": 968,
+        "seller": "headxon"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 790.0,
+        "currency": "EUR",
+        "rating_count": 4,
+        "seller": "paolozigliara"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 699.99,
+        "currency": "GBP",
+        "rating_count": 312,
+        "seller": "Backroom.Music"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 1499.0,
+        "currency": "EUR",
+        "rating_count": 16,
+        "seller": "mr_preston"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 1700.0,
+        "currency": "EUR",
+        "rating_count": 61,
+        "seller": "clubkitten"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 2500.0,
+        "currency": "EUR",
+        "rating_count": 145,
+        "seller": "bavone1"
+      }
+    ]
   },
   "517224": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 160.0,
+        "currency": "GBP",
+        "rating_count": 7201,
+        "seller": "SoundRecordsStroud"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 249.99,
+        "currency": "GBP",
+        "rating_count": 15971,
+        "seller": "r.brown600"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 250.0,
+        "currency": "GBP",
+        "rating_count": 39084,
+        "seller": "vinylexchange.co.uk"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG",
+        "price": 290.0,
+        "currency": "EUR",
+        "rating_count": 26,
+        "seller": "HENKIES"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 358.0,
+        "currency": "USD",
+        "rating_count": 2435,
+        "seller": "BIG.DAWG.RECORDS"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 330.0,
+        "currency": "EUR",
+        "rating_count": 115,
+        "seller": "garytormento"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 330.0,
+        "currency": "EUR",
+        "rating_count": 166,
+        "seller": "mercu80"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 410.0,
+        "currency": "USD",
+        "rating_count": 2435,
+        "seller": "BIG.DAWG.RECORDS"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 390.0,
+        "currency": "EUR",
+        "rating_count": 355,
+        "seller": "Slartibartslow"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 400.0,
+        "currency": "EUR",
+        "rating_count": 880,
+        "seller": "arteusada"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 400.0,
+        "currency": "EUR",
+        "rating_count": 319,
+        "seller": "Bloom-Records"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 350.0,
+        "currency": "GBP",
+        "rating_count": 1043,
+        "seller": "vallasrecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 350.0,
+        "currency": "GBP",
+        "rating_count": 459,
+        "seller": "thevinylfrontierltd"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 350.0,
+        "currency": "GBP",
+        "rating_count": 347,
+        "seller": "urbangenie"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 439.9,
+        "currency": "EUR",
+        "rating_count": 3775,
+        "seller": "nondas"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 390.0,
+        "currency": "GBP",
+        "rating_count": 88,
+        "seller": "Tomoid"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 459.0,
+        "currency": "EUR",
+        "rating_count": 752,
+        "seller": "vicenza48"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 572.58,
+        "currency": "USD",
+        "rating_count": 374,
+        "seller": "Origami_Records"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 450.0,
+        "currency": "GBP",
+        "rating_count": 347,
+        "seller": "urbangenie"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 530.0,
+        "currency": "EUR",
+        "rating_count": 4,
+        "seller": "paolozigliara"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 477.55,
+        "currency": "GBP",
+        "rating_count": 845,
+        "seller": "demolition23"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 550.0,
+        "currency": "EUR",
+        "rating_count": 207,
+        "seller": "djpekingman1"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 800.0,
+        "currency": "USD",
+        "rating_count": 15,
+        "seller": "molokodiscoclub"
+      }
+    ]
   },
   "6127871": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 29.95,
+        "currency": "EUR",
+        "rating_count": 202,
+        "seller": "JolietJakesJukebox"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.0,
+        "currency": "EUR",
+        "rating_count": 14,
+        "seller": "Kommerzgandalf"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 27.0,
+        "currency": "GBP",
+        "rating_count": 8,
+        "seller": "Zuko30000"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 6000.0,
+        "currency": "JPY",
+        "rating_count": 25394,
+        "seller": "recordshopshibuya"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 29.99,
+        "currency": "GBP",
+        "rating_count": 35250,
+        "seller": "dempster13"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 30.0,
+        "currency": "GBP",
+        "rating_count": 396,
+        "seller": "allenh"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 30.0,
+        "currency": "GBP",
+        "rating_count": 261,
+        "seller": "RetroRecordsWales"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 30.0,
+        "currency": "GBP",
+        "rating_count": 8528,
+        "seller": "BlueSkyVinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 34.59,
+        "currency": "EUR",
+        "rating_count": 237939,
+        "seller": "groovesland"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 35.0,
+        "currency": "EUR",
+        "rating_count": 541,
+        "seller": "rjwissink66"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.95,
+        "currency": "GBP",
+        "rating_count": 2200,
+        "seller": "Floyd1964"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 31.0,
+        "currency": "GBP",
+        "rating_count": 2508,
+        "seller": "oldschoolraver55"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 36.0,
+        "currency": "EUR",
+        "rating_count": 726,
+        "seller": "AngelitaRecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.95,
+        "currency": "GBP",
+        "rating_count": 2200,
+        "seller": "Floyd1964"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.95,
+        "currency": "GBP",
+        "rating_count": 2200,
+        "seller": "Floyd1964"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.95,
+        "currency": "GBP",
+        "rating_count": 2200,
+        "seller": "Floyd1964"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.99,
+        "currency": "GBP",
+        "rating_count": 3807,
+        "seller": "vinylbside"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 36.89,
+        "currency": "EUR",
+        "rating_count": 38577,
+        "seller": "Lot.Of.Music"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 36.99,
+        "currency": "EUR",
+        "rating_count": 629,
+        "seller": "tnt-recordstore.de"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 37.0,
+        "currency": "EUR",
+        "rating_count": 119,
+        "seller": "vinyl-jungle"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 32.54,
+        "currency": "GBP",
+        "rating_count": 727,
+        "seller": "warwickmusic"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 33.0,
+        "currency": "GBP",
+        "rating_count": 58796,
+        "seller": "FlashbackLondon"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 37.95,
+        "currency": "EUR",
+        "rating_count": 20,
+        "seller": "israsbd"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 38.0,
+        "currency": "EUR",
+        "rating_count": 8247,
+        "seller": "Palace-Records"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 33.22,
+        "currency": "GBP",
+        "rating_count": 13,
+        "seller": "Reza.mazloom"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 45.0,
+        "currency": "USD",
+        "rating_count": 3,
+        "seller": "alfredomu"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 33.66,
+        "currency": "GBP",
+        "rating_count": 727,
+        "seller": "warwickmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 33.66,
+        "currency": "GBP",
+        "rating_count": 727,
+        "seller": "warwickmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 33.66,
+        "currency": "GBP",
+        "rating_count": 727,
+        "seller": "warwickmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 33.95,
+        "currency": "GBP",
+        "rating_count": 270,
+        "seller": "cruisedigital"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 34.0,
+        "currency": "GBP",
+        "rating_count": 9470,
+        "seller": "StevecaptainKirk"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 34.22,
+        "currency": "GBP",
+        "rating_count": 3,
+        "seller": "andygn7"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 39.9,
+        "currency": "EUR",
+        "rating_count": 179,
+        "seller": "intro_p"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 39.99,
+        "currency": "EUR",
+        "rating_count": 10211,
+        "seller": "fonorama.be"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 39.99,
+        "currency": "EUR",
+        "rating_count": 16498,
+        "seller": "oldschool-berlin"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 40.0,
+        "currency": "EUR",
+        "rating_count": 55,
+        "seller": "Arno-W"
+      }
+    ]
   },
   "33663000": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 99.9,
+        "currency": "EUR",
+        "rating_count": 3770,
+        "seller": "retrotain"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 99.9,
+        "currency": "EUR",
+        "rating_count": 3770,
+        "seller": "retrotain"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 99.9,
+        "currency": "EUR",
+        "rating_count": 3770,
+        "seller": "retrotain"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 100.0,
+        "currency": "EUR",
+        "rating_count": 3174,
+        "seller": "COSMONOTES"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 103.0,
+        "currency": "EUR",
+        "rating_count": 921,
+        "seller": "VHV-Beauvais"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 109.99,
+        "currency": "EUR",
+        "rating_count": 9925,
+        "seller": "RecordPusher-com"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 110.0,
+        "currency": "EUR",
+        "rating_count": 1115,
+        "seller": "Noiretfeu"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 113.99,
+        "currency": "EUR",
+        "rating_count": 357,
+        "seller": "Needle.on.da.record"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 114.95,
+        "currency": "EUR",
+        "rating_count": 19680,
+        "seller": "DisCover_KA"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 118.0,
+        "currency": "EUR",
+        "rating_count": 616,
+        "seller": "ModellDoo"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 22000.0,
+        "currency": "JPY",
+        "rating_count": 684,
+        "seller": "MorphoRecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 109.0,
+        "currency": "CHF",
+        "rating_count": 5077,
+        "seller": "transfertmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 119.9,
+        "currency": "EUR",
+        "rating_count": 9744,
+        "seller": "Perfect_Vinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 119.95,
+        "currency": "EUR",
+        "rating_count": 1559,
+        "seller": "VinylViperHolland"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 119.99,
+        "currency": "EUR",
+        "rating_count": 4798,
+        "seller": "HugosPlattenkiste"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 120.0,
+        "currency": "EUR",
+        "rating_count": 39,
+        "seller": "MickeyCo"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 120.0,
+        "currency": "EUR",
+        "rating_count": 683,
+        "seller": "progrecordstw"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 105.0,
+        "currency": "GBP",
+        "rating_count": 559,
+        "seller": "RMCRECORDS"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 124.99,
+        "currency": "EUR",
+        "rating_count": 7745,
+        "seller": "dodo-beach"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 125.0,
+        "currency": "EUR",
+        "rating_count": 551,
+        "seller": "Brynslack"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 126.5,
+        "currency": "EUR",
+        "rating_count": 608,
+        "seller": "Eponyme_Vinyle"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 126.5,
+        "currency": "EUR",
+        "rating_count": 608,
+        "seller": "Eponyme_Vinyle"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 126.5,
+        "currency": "EUR",
+        "rating_count": 608,
+        "seller": "Eponyme_Vinyle"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 128.8,
+        "currency": "EUR",
+        "rating_count": 273,
+        "seller": "East-German-Records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 129.99,
+        "currency": "EUR",
+        "rating_count": 10211,
+        "seller": "fonorama.be"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 129.99,
+        "currency": "EUR",
+        "rating_count": 87,
+        "seller": "maxengelsman1"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 129.99,
+        "currency": "EUR",
+        "rating_count": 1605,
+        "seller": "Plattenjunks"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 129.99,
+        "currency": "EUR",
+        "rating_count": 355,
+        "seller": "GypsyBiker"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 114.99,
+        "currency": "GBP",
+        "rating_count": 58,
+        "seller": "Styleiseternal"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 115.0,
+        "currency": "GBP",
+        "rating_count": 137,
+        "seller": "West.Yorkshire.Wax"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 115.0,
+        "currency": "GBP",
+        "rating_count": 2002,
+        "seller": "Quality_VinylRecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 133.0,
+        "currency": "EUR",
+        "rating_count": 15602,
+        "seller": "r66"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 135.0,
+        "currency": "EUR",
+        "rating_count": 4,
+        "seller": "Justmatthew"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 136.9,
+        "currency": "EUR",
+        "rating_count": 7396,
+        "seller": "MusicMediaCorner"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 119.99,
+        "currency": "GBP",
+        "rating_count": 890,
+        "seller": "Tiverton10"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 137.99,
+        "currency": "EUR",
+        "rating_count": 3221,
+        "seller": "Pixie23"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 139.0,
+        "currency": "EUR",
+        "rating_count": 369,
+        "seller": "ItsOnlyRennes"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 139.0,
+        "currency": "EUR",
+        "rating_count": 267,
+        "seller": "MusicShopDungarvan"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 139.31,
+        "currency": "EUR",
+        "rating_count": 986,
+        "seller": "Il_Ladro_Di_Anime"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 140.0,
+        "currency": "EUR",
+        "rating_count": 367,
+        "seller": "kandinskirecords"
+      }
+    ]
   },
   "12864584": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 33.66,
+        "currency": "EUR",
+        "rating_count": 3558,
+        "seller": "allcitydublin"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.49,
+        "currency": "GBP",
+        "rating_count": 9066,
+        "seller": "Beautiful-Vinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.95,
+        "currency": "GBP",
+        "rating_count": 2140,
+        "seller": "madhouse319"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.0,
+        "currency": "GBP",
+        "rating_count": 14,
+        "seller": "davestansbie"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.0,
+        "currency": "GBP",
+        "rating_count": 1938,
+        "seller": "llmod1"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG",
+        "price": 30.0,
+        "currency": "GBP",
+        "rating_count": 8573,
+        "seller": "punkdeville"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 30.0,
+        "currency": "GBP",
+        "rating_count": 1530,
+        "seller": "Electric_Wax_Box"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.99,
+        "currency": "GBP",
+        "rating_count": 8601,
+        "seller": "MERLIN-MOOSIK"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 36.8,
+        "currency": "EUR",
+        "rating_count": 38577,
+        "seller": "Lot.Of.Music"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 39.99,
+        "currency": "EUR",
+        "rating_count": 10211,
+        "seller": "fonorama.be"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 34.99,
+        "currency": "GBP",
+        "rating_count": 5685,
+        "seller": "Vinyl__Hunter"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 42.5,
+        "currency": "EUR",
+        "rating_count": 2110,
+        "seller": "woodstock-ef"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 45.0,
+        "currency": "EUR",
+        "rating_count": 8504,
+        "seller": "BarcelonaCityRecord"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 45.0,
+        "currency": "EUR",
+        "rating_count": 1024,
+        "seller": "takeatrip"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 45.99,
+        "currency": "EUR",
+        "rating_count": 3598,
+        "seller": "MusikhausKietz"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 41.26,
+        "currency": "GBP",
+        "rating_count": 47,
+        "seller": "swim44"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 49.0,
+        "currency": "EUR",
+        "rating_count": 740,
+        "seller": "Musicale_Experience"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 80.0,
+        "currency": "AUD",
+        "rating_count": 28,
+        "seller": "jamie_df"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 95.0,
+        "currency": "AUD",
+        "rating_count": 436,
+        "seller": "My-Vinyl-Revolution"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 59.5,
+        "currency": "EUR",
+        "rating_count": 3702,
+        "seller": "musicaddictstore"
+      }
+    ]
   },
   "375491": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "G+",
+        "sleeve": "F",
+        "price": 36.86,
+        "currency": "EUR",
+        "rating_count": 86,
+        "seller": "RareVinylss"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 40.0,
+        "currency": "EUR",
+        "rating_count": 3213,
+        "seller": "MonoRecordStore"
+      },
+      {
+        "media": "G+",
+        "sleeve": "G+",
+        "price": 50.0,
+        "currency": "USD",
+        "rating_count": 10,
+        "seller": "LeroyGemma"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 47.0,
+        "currency": "EUR",
+        "rating_count": 124,
+        "seller": "Herk1975"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 50.0,
+        "currency": "EUR",
+        "rating_count": 203,
+        "seller": "musikologist"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 50.0,
+        "currency": "EUR",
+        "rating_count": 8,
+        "seller": "devoydi"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 59.0,
+        "currency": "EUR",
+        "rating_count": 273,
+        "seller": "controller26"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 59.89,
+        "currency": "EUR",
+        "rating_count": 855,
+        "seller": "Plattenkontrolle"
+      },
+      {
+        "media": "G+",
+        "sleeve": "G+",
+        "price": 59.9,
+        "currency": "EUR",
+        "rating_count": 979,
+        "seller": "Boogie_Balou"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 60.0,
+        "currency": "EUR",
+        "rating_count": 66,
+        "seller": "Lavamund"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 60.0,
+        "currency": "EUR",
+        "rating_count": 84,
+        "seller": "Winkypoez"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 60.0,
+        "currency": "EUR",
+        "rating_count": 2,
+        "seller": "xadnight"
+      },
+      {
+        "media": "G+",
+        "sleeve": "P",
+        "price": 67.85,
+        "currency": "EUR",
+        "rating_count": 5693,
+        "seller": "MION.DE"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 69.69,
+        "currency": "EUR",
+        "rating_count": 1227,
+        "seller": "foryouvinyl"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 69.99,
+        "currency": "EUR",
+        "rating_count": 14456,
+        "seller": "zaharias-records-cd"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 69.99,
+        "currency": "EUR",
+        "rating_count": 6393,
+        "seller": "tippydodds"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 77.98,
+        "currency": "EUR",
+        "rating_count": 1572,
+        "seller": "djmad-professor"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 90.0,
+        "currency": "EUR",
+        "rating_count": 2,
+        "seller": "72soul"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 85.0,
+        "currency": "GBP",
+        "rating_count": 5712,
+        "seller": "Weston_House"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 99.0,
+        "currency": "EUR",
+        "rating_count": 775,
+        "seller": "greenfinneddemon"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 99.94,
+        "currency": "EUR",
+        "rating_count": 41222,
+        "seller": "ZARDOZ-RECORDS"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 99.98,
+        "currency": "EUR",
+        "rating_count": 124,
+        "seller": "masterboy90"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 99.99,
+        "currency": "EUR",
+        "rating_count": 921,
+        "seller": "HHVinylExpress"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 100.0,
+        "currency": "EUR",
+        "rating_count": 9617,
+        "seller": "vinylstore.italy"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 101.7,
+        "currency": "EUR",
+        "rating_count": 1090,
+        "seller": "fatcap"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 103.95,
+        "currency": "EUR",
+        "rating_count": 581,
+        "seller": "deliarecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 107.76,
+        "currency": "EUR",
+        "rating_count": 44,
+        "seller": "hoegh64"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 131.25,
+        "currency": "USD",
+        "rating_count": 9,
+        "seller": "kasi.records"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG",
+        "price": 115.0,
+        "currency": "EUR",
+        "rating_count": 59,
+        "seller": "rotesikeasofa"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 119.95,
+        "currency": "EUR",
+        "rating_count": 901,
+        "seller": "HelFi.de"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG",
+        "price": 119.95,
+        "currency": "EUR",
+        "rating_count": 44,
+        "seller": "hoegh64"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 119.99,
+        "currency": "EUR",
+        "rating_count": 914,
+        "seller": "alt-neu.shop"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 120.0,
+        "currency": "EUR",
+        "rating_count": 16,
+        "seller": "LibroLibri_Noale"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 120.0,
+        "currency": "EUR",
+        "rating_count": 11,
+        "seller": "Dargna"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 120.0,
+        "currency": "EUR",
+        "rating_count": 4068,
+        "seller": "analogue74"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 125.0,
+        "currency": "EUR",
+        "rating_count": 6694,
+        "seller": "from.the.vaults"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 125.0,
+        "currency": "EUR",
+        "rating_count": 1032,
+        "seller": "Horst.Mueller"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 125.5,
+        "currency": "EUR",
+        "rating_count": 420,
+        "seller": "Scrigno-dei-vinili"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 129.95,
+        "currency": "EUR",
+        "rating_count": 5722,
+        "seller": "CARLOSPUZZLERO"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 130.0,
+        "currency": "EUR",
+        "rating_count": 3576,
+        "seller": "SmokeCityRecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 130.0,
+        "currency": "EUR",
+        "rating_count": 72,
+        "seller": "Musica-Solida"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 140.0,
+        "currency": "EUR",
+        "rating_count": 8725,
+        "seller": "DeepRecords-DigDeep"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 140.0,
+        "currency": "EUR",
+        "rating_count": 616,
+        "seller": "RevolverRecordsBCN"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 143.87,
+        "currency": "EUR",
+        "rating_count": 4804,
+        "seller": "runecosmic"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 850.0,
+        "currency": "BRL",
+        "rating_count": 5,
+        "seller": "bolachariadiscos"
+      }
+    ]
   },
   "12042641": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 28.0,
+        "currency": "USD",
+        "rating_count": 7,
+        "seller": "georgesproul"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 40.0,
+        "currency": "USD",
+        "rating_count": 112,
+        "seller": "SlowLifeRecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 59.0,
+        "currency": "AUD",
+        "rating_count": 380,
+        "seller": "console01"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 39.0,
+        "currency": "EUR",
+        "rating_count": 399,
+        "seller": "Wit_ko"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 46.55,
+        "currency": "USD",
+        "rating_count": 168,
+        "seller": "Millpond_vinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 49.99,
+        "currency": "USD",
+        "rating_count": 597,
+        "seller": "evo88"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 50.0,
+        "currency": "USD",
+        "rating_count": 554,
+        "seller": "empire122"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 42.95,
+        "currency": "EUR",
+        "rating_count": 161,
+        "seller": "DePlatenAap"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 330.0,
+        "currency": "DKK",
+        "rating_count": 592,
+        "seller": "skanderborg-vinyl"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 39.99,
+        "currency": "GBP",
+        "rating_count": 35250,
+        "seller": "dempster13"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 64.8,
+        "currency": "CHF",
+        "rating_count": 10320,
+        "seller": "oldiesshopbern"
+      }
+    ]
   },
   "9899740": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG",
+        "sleeve": "G",
+        "price": 75.0,
+        "currency": "EUR",
+        "rating_count": 5,
+        "seller": "JakobAmWasser3"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 119.0,
+        "currency": "EUR",
+        "rating_count": 253,
+        "seller": "mizo72"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 129.9,
+        "currency": "CHF",
+        "rating_count": 2837,
+        "seller": "hiphopchef"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 159.9,
+        "currency": "EUR",
+        "rating_count": 50,
+        "seller": "valelaz"
+      },
+      {
+        "media": "NM",
+        "sleeve": "G+",
+        "price": 195.0,
+        "currency": "EUR",
+        "rating_count": 59,
+        "seller": "rotesikeasofa"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 195.5,
+        "currency": "EUR",
+        "rating_count": 870,
+        "seller": "recordorium"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 200.0,
+        "currency": "EUR",
+        "rating_count": 31,
+        "seller": "Mfgzeno"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 220.0,
+        "currency": "EUR",
+        "rating_count": 4,
+        "seller": "Yankukai"
+      },
+      {
+        "media": "M",
+        "sleeve": "VG+",
+        "price": 225.0,
+        "currency": "EUR",
+        "rating_count": 36,
+        "seller": "Ezaus"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 250.0,
+        "currency": "EUR",
+        "rating_count": 4,
+        "seller": "okonnAT"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 274.19,
+        "currency": "EUR",
+        "rating_count": 1097,
+        "seller": "TimeTunnel_GR"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 500.0,
+        "currency": "AUD",
+        "rating_count": 28,
+        "seller": "jamie_df"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 369.0,
+        "currency": "USD",
+        "rating_count": 69,
+        "seller": "corinthians1910"
+      }
+    ]
   },
   "31323387": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 35.98,
+        "currency": "USD",
+        "rating_count": 35953,
+        "seller": "tonevendor"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 40.0,
+        "currency": "USD",
+        "rating_count": 10686,
+        "seller": "AndrewRocco"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 40.0,
+        "currency": "USD",
+        "rating_count": 10686,
+        "seller": "AndrewRocco"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 32.0,
+        "currency": "CHF",
+        "rating_count": 62,
+        "seller": "dasas"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 60.0,
+        "currency": "CAD",
+        "rating_count": 977,
+        "seller": "GoldMarkVinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 49.0,
+        "currency": "USD",
+        "rating_count": 1242,
+        "seller": "MIKE0101"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 50.0,
+        "currency": "USD",
+        "rating_count": 168,
+        "seller": "Millpond_vinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 54.99,
+        "currency": "USD",
+        "rating_count": 743,
+        "seller": "purelivereords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 8800.0,
+        "currency": "JPY",
+        "rating_count": 25394,
+        "seller": "recordshopshibuya"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 49.0,
+        "currency": "EUR",
+        "rating_count": 7606,
+        "seller": "polishculture.shop"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 49.9,
+        "currency": "EUR",
+        "rating_count": 3817,
+        "seller": "cellar.door"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 50.0,
+        "currency": "EUR",
+        "rating_count": 217,
+        "seller": "Phonc"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 51.99,
+        "currency": "EUR",
+        "rating_count": 2718,
+        "seller": "CNO_records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 52.0,
+        "currency": "EUR",
+        "rating_count": 2686,
+        "seller": "rogge100"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 53.99,
+        "currency": "EUR",
+        "rating_count": 891,
+        "seller": "Ippodromo"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 59.99,
+        "currency": "EUR",
+        "rating_count": 355,
+        "seller": "GypsyBiker"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 100.0,
+        "currency": "EUR",
+        "rating_count": 1032,
+        "seller": "Horst.Mueller"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 129.0,
+        "currency": "EUR",
+        "rating_count": 400,
+        "seller": "Vinylalix"
+      }
+    ]
   },
   "420718": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 149.99,
+        "currency": "USD",
+        "rating_count": 14653,
+        "seller": "SignalRecordsChicago"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 24000.0,
+        "currency": "JPY",
+        "rating_count": 25394,
+        "seller": "recordshopshibuya"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 182.0,
+        "currency": "USD",
+        "rating_count": 3,
+        "seller": "nobirecords"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 263.99,
+        "currency": "CAD",
+        "rating_count": 500,
+        "seller": "33s"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 235.2,
+        "currency": "USD",
+        "rating_count": 423,
+        "seller": "Absolute-Records"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 200.0,
+        "currency": "EUR",
+        "rating_count": 1021,
+        "seller": "4everlp"
+      },
+      {
+        "media": "NM",
+        "sleeve": "M",
+        "price": 342.68,
+        "currency": "CAD",
+        "rating_count": 3,
+        "seller": "Battys_Attic"
+      }
+    ]
   },
   "15276024": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "M",
+        "sleeve": "VG+",
+        "price": 18.4,
+        "currency": "EUR",
+        "rating_count": 463,
+        "seller": "Soulonrotation"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 24.95,
+        "currency": "EUR",
+        "rating_count": 13515,
+        "seller": "Freakyrecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.99,
+        "currency": "EUR",
+        "rating_count": 1854,
+        "seller": "kalanidoo"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.0,
+        "currency": "EUR",
+        "rating_count": 588,
+        "seller": "MARKHARYS"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 22.0,
+        "currency": "GBP",
+        "rating_count": 5083,
+        "seller": "-A-M-"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.1,
+        "currency": "EUR",
+        "rating_count": 11993,
+        "seller": "Music.ShopLT"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.0,
+        "currency": "CHF",
+        "rating_count": 32117,
+        "seller": "waltbartlome"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 1289,
+        "seller": "vesselyak"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 1220,
+        "seller": "Sorovinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 6577,
+        "seller": "cieslukmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 6577,
+        "seller": "cieslukmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 6577,
+        "seller": "cieslukmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 44.0,
+        "currency": "CAD",
+        "rating_count": 49,
+        "seller": "Fabs1978"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.5,
+        "currency": "EUR",
+        "rating_count": 714,
+        "seller": "devinylgarage"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.8,
+        "currency": "EUR",
+        "rating_count": 65324,
+        "seller": "green_hell"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 45.0,
+        "currency": "CAD",
+        "rating_count": 977,
+        "seller": "GoldMarkVinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 45.0,
+        "currency": "CAD",
+        "rating_count": 813,
+        "seller": "Le_33_45"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.0,
+        "currency": "EUR",
+        "rating_count": 738,
+        "seller": "Palmela_records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.31,
+        "currency": "EUR",
+        "rating_count": 33688,
+        "seller": "decks.de"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.5,
+        "currency": "EUR",
+        "rating_count": 189,
+        "seller": "mrobi9"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.99,
+        "currency": "GBP",
+        "rating_count": 266,
+        "seller": "Polestar_Records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 1096,
+        "seller": "Mint_and_Sealed"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.19,
+        "currency": "EUR",
+        "rating_count": 237939,
+        "seller": "groovesland"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.55,
+        "currency": "GBP",
+        "rating_count": 3060,
+        "seller": "ship_option_1"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.5,
+        "currency": "EUR",
+        "rating_count": 630,
+        "seller": "MonosHeemskerk"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.5,
+        "currency": "EUR",
+        "rating_count": 5912,
+        "seller": "activevinyls"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "Generic",
+        "price": 35.0,
+        "currency": "USD",
+        "rating_count": 2,
+        "seller": "cgramentz"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.9,
+        "currency": "EUR",
+        "rating_count": 27561,
+        "seller": "diebrotfrau.de"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.9,
+        "currency": "EUR",
+        "rating_count": 7967,
+        "seller": "vinylschrat"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.98,
+        "currency": "EUR",
+        "rating_count": 4961,
+        "seller": "Plattebox"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.99,
+        "currency": "EUR",
+        "rating_count": 15000,
+        "seller": "the_sound_of_metal"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.99,
+        "currency": "EUR",
+        "rating_count": 213,
+        "seller": "wax_track"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.99,
+        "currency": "EUR",
+        "rating_count": 15000,
+        "seller": "the_sound_of_metal"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.0,
+        "currency": "EUR",
+        "rating_count": 921,
+        "seller": "VHV-Beauvais"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.0,
+        "currency": "EUR",
+        "rating_count": 3425,
+        "seller": "Aligator-Tim"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.0,
+        "currency": "EUR",
+        "rating_count": 167,
+        "seller": "vhv-amiens"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 35.71,
+        "currency": "USD",
+        "rating_count": 168,
+        "seller": "Millpond_vinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.75,
+        "currency": "EUR",
+        "rating_count": 74405,
+        "seller": "vinyldigital.de"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.87,
+        "currency": "GBP",
+        "rating_count": 6507,
+        "seller": "Punktofunkheaven."
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.99,
+        "currency": "EUR",
+        "rating_count": 11791,
+        "seller": "SoundsHaarlem"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.99,
+        "currency": "EUR",
+        "rating_count": 6577,
+        "seller": "cieslukmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.99,
+        "currency": "EUR",
+        "rating_count": 1350,
+        "seller": "GROOVESPINcom"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.99,
+        "currency": "GBP",
+        "rating_count": 56685,
+        "seller": "Juno_Records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.28,
+        "currency": "EUR",
+        "rating_count": 13638,
+        "seller": "Sonic_Boom_Greece"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.49,
+        "currency": "GBP",
+        "rating_count": 22572,
+        "seller": "SEISMIC_RECORDS"
+      }
+    ]
   },
   "1629020": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 375.0,
+        "currency": "EUR",
+        "rating_count": 12923,
+        "seller": "minty-vinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 499.99,
+        "currency": "USD",
+        "rating_count": 1464,
+        "seller": "recordfanatics"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 400.0,
+        "currency": "GBP",
+        "rating_count": 237,
+        "seller": "Vintagevinylandhifi"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 549.99,
+        "currency": "USD",
+        "rating_count": 33,
+        "seller": "burketop"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 703.91,
+        "currency": "EUR",
+        "rating_count": 4810,
+        "seller": "musikdrehscheibe"
+      }
+    ]
   },
   "8519678": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 85.0,
+        "currency": "EUR",
+        "rating_count": 59,
+        "seller": "ProjectEbi"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 74.99,
+        "currency": "GBP",
+        "rating_count": 8601,
+        "seller": "MERLIN-MOOSIK"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 74.99,
+        "currency": "GBP",
+        "rating_count": 8601,
+        "seller": "MERLIN-MOOSIK"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 145.0,
+        "currency": "CAD",
+        "rating_count": 977,
+        "seller": "GoldMarkVinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 89.99,
+        "currency": "EUR",
+        "rating_count": 5289,
+        "seller": "ISDA"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 700.0,
+        "currency": "DKK",
+        "rating_count": 592,
+        "seller": "skanderborg-vinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 96.0,
+        "currency": "EUR",
+        "rating_count": 13638,
+        "seller": "Sonic_Boom_Greece"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 99.99,
+        "currency": "EUR",
+        "rating_count": 13677,
+        "seller": "schallhandel"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 101.99,
+        "currency": "EUR",
+        "rating_count": 7737,
+        "seller": "matrix00"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 105.6,
+        "currency": "EUR",
+        "rating_count": 50,
+        "seller": "east_end_records"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 110.0,
+        "currency": "EUR",
+        "rating_count": 5227,
+        "seller": "vg-records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 130.0,
+        "currency": "USD",
+        "rating_count": 697,
+        "seller": "deepconcentration"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 120.0,
+        "currency": "EUR",
+        "rating_count": 179,
+        "seller": "hudel"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 124.9,
+        "currency": "EUR",
+        "rating_count": 1191,
+        "seller": "grizzly2004"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 126.5,
+        "currency": "EUR",
+        "rating_count": 97,
+        "seller": "Vinyl_Dreams1"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 132.95,
+        "currency": "EUR",
+        "rating_count": 9925,
+        "seller": "RecordPusher-com"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 138.99,
+        "currency": "EUR",
+        "rating_count": 284095,
+        "seller": "www.hhv.de"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 139.0,
+        "currency": "EUR",
+        "rating_count": 6577,
+        "seller": "cieslukmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 139.9,
+        "currency": "EUR",
+        "rating_count": 1892,
+        "seller": "musicstorersm"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 150.0,
+        "currency": "EUR",
+        "rating_count": 89,
+        "seller": "recordsaftersunrise"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 154.99,
+        "currency": "EUR",
+        "rating_count": 891,
+        "seller": "Ippodromo"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 160.0,
+        "currency": "EUR",
+        "rating_count": 2718,
+        "seller": "CNO_records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 169.0,
+        "currency": "EUR",
+        "rating_count": 509,
+        "seller": "Raimondrecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 175.0,
+        "currency": "EUR",
+        "rating_count": 1423,
+        "seller": "Move.On"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 176.95,
+        "currency": "EUR",
+        "rating_count": 19680,
+        "seller": "DisCover_KA"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 178.9,
+        "currency": "EUR",
+        "rating_count": 2636,
+        "seller": "Poptones_Records"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 179.27,
+        "currency": "EUR",
+        "rating_count": 377288,
+        "seller": "recordsale-de"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 189.75,
+        "currency": "EUR",
+        "rating_count": 608,
+        "seller": "Eponyme_Vinyle"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 222.0,
+        "currency": "EUR",
+        "rating_count": 26997,
+        "seller": "vinyl-reservat"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 259.0,
+        "currency": "EUR",
+        "rating_count": 67,
+        "seller": "tazmanevil"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 289.0,
+        "currency": "EUR",
+        "rating_count": 13,
+        "seller": "JODOGAWA"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 290.0,
+        "currency": "EUR",
+        "rating_count": 3,
+        "seller": "AndreRandsdorp"
+      }
+    ]
   },
   "7801798": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "F",
+        "sleeve": "VG",
+        "price": 19.99,
+        "currency": "GBP",
+        "rating_count": 8058,
+        "seller": "Real_Sir_Real"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG+",
+        "price": 20.0,
+        "currency": "GBP",
+        "rating_count": 19001,
+        "seller": "Retro-Rarity"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 24.0,
+        "currency": "EUR",
+        "rating_count": 312,
+        "seller": "DirtyFingers."
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 25.0,
+        "currency": "EUR",
+        "rating_count": 16800,
+        "seller": "SpeakNoEvil.io"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG+",
+        "price": 26.0,
+        "currency": "GBP",
+        "rating_count": 1745,
+        "seller": "KBKBKBKB"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 40.0,
+        "currency": "EUR",
+        "rating_count": 349,
+        "seller": "Plademesser.dk"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 34.95,
+        "currency": "GBP",
+        "rating_count": 2532,
+        "seller": "cherrywavesvinyl"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 44.0,
+        "currency": "GBP",
+        "rating_count": 621,
+        "seller": "chrisogg"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 55.0,
+        "currency": "EUR",
+        "rating_count": 639,
+        "seller": "Maugof"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 60.0,
+        "currency": "EUR",
+        "rating_count": 3216,
+        "seller": "Luckywolfrecords"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 69.95,
+        "currency": "EUR",
+        "rating_count": 1383,
+        "seller": "theragedublin"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 70.0,
+        "currency": "EUR",
+        "rating_count": 16800,
+        "seller": "SpeakNoEvil.io"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 80.1,
+        "currency": "EUR",
+        "rating_count": 1238,
+        "seller": "worldton"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 70.0,
+        "currency": "GBP",
+        "rating_count": 8186,
+        "seller": "Vinyljunkpunk"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 70.0,
+        "currency": "GBP",
+        "rating_count": 537,
+        "seller": "jackfinrecords"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 80.0,
+        "currency": "CHF",
+        "rating_count": 67,
+        "seller": "mr.complete"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 77.0,
+        "currency": "GBP",
+        "rating_count": 21,
+        "seller": "Love-your-music"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 86.0,
+        "currency": "GBP",
+        "rating_count": 5624,
+        "seller": "boblilley1"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 99.99,
+        "currency": "EUR",
+        "rating_count": 1616,
+        "seller": "musicdesigner"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 100.0,
+        "currency": "EUR",
+        "rating_count": 461,
+        "seller": "heuperman"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 125.0,
+        "currency": "USD",
+        "rating_count": 295,
+        "seller": "ahartig"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 99.95,
+        "currency": "GBP",
+        "rating_count": 510,
+        "seller": "ZardozRecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 100.0,
+        "currency": "GBP",
+        "rating_count": 7607,
+        "seller": "Thicket"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 100.0,
+        "currency": "GBP",
+        "rating_count": 6446,
+        "seller": "slabrecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 100.0,
+        "currency": "GBP",
+        "rating_count": 4146,
+        "seller": "Flip_Sides..."
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 1300.0,
+        "currency": "SEK",
+        "rating_count": 1356,
+        "seller": "norrenorre"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 104.99,
+        "currency": "GBP",
+        "rating_count": 20,
+        "seller": "mtthwlmnt"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 162.04,
+        "currency": "EUR",
+        "rating_count": 22,
+        "seller": "tubeblower"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 144.99,
+        "currency": "GBP",
+        "rating_count": 7204,
+        "seller": "Marrsplectrum"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 145.0,
+        "currency": "GBP",
+        "rating_count": 40315,
+        "seller": "johnmanshiprecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 150.0,
+        "currency": "GBP",
+        "rating_count": 2493,
+        "seller": "paultaylor4"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 224.99,
+        "currency": "USD",
+        "rating_count": 7963,
+        "seller": "Bananas_Records"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 194.18,
+        "currency": "EUR",
+        "rating_count": 20,
+        "seller": "9LivesRecords"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 190.0,
+        "currency": "GBP",
+        "rating_count": 537,
+        "seller": "jackfinrecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 195.0,
+        "currency": "GBP",
+        "rating_count": 2493,
+        "seller": "paultaylor4"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 211.21,
+        "currency": "GBP",
+        "rating_count": 11910,
+        "seller": "Petesmusic_UK"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 250.0,
+        "currency": "EUR",
+        "rating_count": 2833,
+        "seller": "vinyltribes"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 230.22,
+        "currency": "GBP",
+        "rating_count": 20,
+        "seller": "VinylRecordsOnline"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 240.0,
+        "currency": "GBP",
+        "rating_count": 453,
+        "seller": "adicko5253"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 260.0,
+        "currency": "GBP",
+        "rating_count": 1035,
+        "seller": "siekierny44"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 260.0,
+        "currency": "GBP",
+        "rating_count": 1035,
+        "seller": "siekierny44"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 260.0,
+        "currency": "GBP",
+        "rating_count": 916,
+        "seller": "Daloja"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 299.98,
+        "currency": "EUR",
+        "rating_count": 9,
+        "seller": "RealDealVinyl"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 283.5,
+        "currency": "CHF",
+        "rating_count": 141,
+        "seller": "johnnyjules"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 280.0,
+        "currency": "GBP",
+        "rating_count": 780,
+        "seller": "jtaylor80000"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 399.99,
+        "currency": "EUR",
+        "rating_count": 3703,
+        "seller": "vinylpussycat"
+      }
+    ]
   },
   "14186441": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 19.0,
+        "currency": "EUR",
+        "rating_count": 71,
+        "seller": "gatefold"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 20.0,
+        "currency": "EUR",
+        "rating_count": 3065,
+        "seller": "EL-ECTRO-TONE"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 22.0,
+        "currency": "EUR",
+        "rating_count": 246,
+        "seller": "Dis777"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "USD",
+        "rating_count": 27,
+        "seller": "johnbraden"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 23.0,
+        "currency": "EUR",
+        "rating_count": 527,
+        "seller": "Black_Sails"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.0,
+        "currency": "USD",
+        "rating_count": 22153,
+        "seller": "Gruffsvinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.0,
+        "currency": "USD",
+        "rating_count": 22153,
+        "seller": "Gruffsvinyl"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 28.0,
+        "currency": "USD",
+        "rating_count": 362,
+        "seller": "fullcontactrocknroll"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 24.0,
+        "currency": "EUR",
+        "rating_count": 108,
+        "seller": "Disc-O-ZoOne"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 4560.0,
+        "currency": "JPY",
+        "rating_count": 25394,
+        "seller": "recordshopshibuya"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.99,
+        "currency": "EUR",
+        "rating_count": 298,
+        "seller": "adversam"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 21.95,
+        "currency": "GBP",
+        "rating_count": 7748,
+        "seller": "AvalancheWaverley"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 26.0,
+        "currency": "EUR",
+        "rating_count": 145,
+        "seller": "Collectors_Only"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 26.0,
+        "currency": "EUR",
+        "rating_count": 1434,
+        "seller": "earlybirdvinyl"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 42.79,
+        "currency": "AUD",
+        "rating_count": 7048,
+        "seller": "Mezabel"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 23.0,
+        "currency": "GBP",
+        "rating_count": 302,
+        "seller": "JoeiSupernova"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.99,
+        "currency": "EUR",
+        "rating_count": 1033,
+        "seller": "FredWat"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.99,
+        "currency": "EUR",
+        "rating_count": 2062,
+        "seller": "Independent_Market"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 143,
+        "seller": "karavanselecta"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 208,
+        "seller": "stigchel"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.99,
+        "currency": "USD",
+        "rating_count": 59,
+        "seller": "PSA_records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 43.99,
+        "currency": "CAD",
+        "rating_count": 317,
+        "seller": "RecordCollectorEssa"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 44.99,
+        "currency": "CAD",
+        "rating_count": 1003,
+        "seller": "Pusher_de_Vinyles"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.0,
+        "currency": "EUR",
+        "rating_count": 1289,
+        "seller": "vesselyak"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.0,
+        "currency": "EUR",
+        "rating_count": 220,
+        "seller": "sanouchev"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 28.04,
+        "currency": "EUR",
+        "rating_count": 3558,
+        "seller": "allcitydublin"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 33.0,
+        "currency": "USD",
+        "rating_count": 48,
+        "seller": "sandbar-sounds"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.99,
+        "currency": "GBP",
+        "rating_count": 9066,
+        "seller": "Beautiful-Vinyl"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 47,
+        "seller": "jhnwgaturner"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.8,
+        "currency": "EUR",
+        "rating_count": 11993,
+        "seller": "Music.ShopLT"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.8,
+        "currency": "EUR",
+        "rating_count": 11993,
+        "seller": "Music.ShopLT"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.95,
+        "currency": "EUR",
+        "rating_count": 456,
+        "seller": "Jomarax.be"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.99,
+        "currency": "EUR",
+        "rating_count": 344,
+        "seller": "vernon72"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.0,
+        "currency": "EUR",
+        "rating_count": 1426,
+        "seller": "JeConsoleSgms"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.0,
+        "currency": "EUR",
+        "rating_count": 732,
+        "seller": "pal1216"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.49,
+        "currency": "GBP",
+        "rating_count": 22572,
+        "seller": "SEISMIC_RECORDS"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.34,
+        "currency": "EUR",
+        "rating_count": 101303,
+        "seller": "vinyl.eu"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 35.0,
+        "currency": "USD",
+        "rating_count": 5609,
+        "seller": "extendedplay19971"
+      }
+    ]
   },
   "2911293": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG",
+        "sleeve": "No Cover",
+        "price": 9.95,
+        "currency": "USD",
+        "rating_count": 5,
+        "seller": "Longn204"
+      },
+      {
+        "media": "F",
+        "sleeve": "G",
+        "price": 10.0,
+        "currency": "USD",
+        "rating_count": 152,
+        "seller": "rare_finds_etc"
+      },
+      {
+        "media": "F",
+        "sleeve": "F",
+        "price": 10.0,
+        "currency": "EUR",
+        "rating_count": 101303,
+        "seller": "vinyl.eu"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 16.98,
+        "currency": "USD",
+        "rating_count": 878,
+        "seller": "drbossman"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 20.0,
+        "currency": "USD",
+        "rating_count": 2270,
+        "seller": "TeesLPs"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 20.0,
+        "currency": "USD",
+        "rating_count": 61,
+        "seller": "RevC"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 20.0,
+        "currency": "USD",
+        "rating_count": 51458,
+        "seller": "Boom_Service"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 20.2,
+        "currency": "USD",
+        "rating_count": 222,
+        "seller": "PriceOfMusic"
+      },
+      {
+        "media": "G",
+        "sleeve": "NM",
+        "price": 20.5,
+        "currency": "USD",
+        "rating_count": 764,
+        "seller": "miarecordshop"
+      },
+      {
+        "media": "VG",
+        "sleeve": "No Cover",
+        "price": 22.0,
+        "currency": "USD",
+        "rating_count": 22,
+        "seller": "pjryan75"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 24.0,
+        "currency": "USD",
+        "rating_count": 180,
+        "seller": "DefWitRecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 24.99,
+        "currency": "USD",
+        "rating_count": 1488,
+        "seller": "AnnapolisRecx"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 25.0,
+        "currency": "USD",
+        "rating_count": 128,
+        "seller": "jwburns"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 25.0,
+        "currency": "USD",
+        "rating_count": 520,
+        "seller": "NJEastGlobalSales"
+      },
+      {
+        "media": "G+",
+        "sleeve": "No Cover",
+        "price": 26.98,
+        "currency": "USD",
+        "rating_count": 6065,
+        "seller": "nivessa"
+      },
+      {
+        "media": "G",
+        "sleeve": "F",
+        "price": 20.0,
+        "currency": "GBP",
+        "rating_count": 109,
+        "seller": "djdannym43"
+      },
+      {
+        "media": "G",
+        "sleeve": "G",
+        "price": 24.5,
+        "currency": "EUR",
+        "rating_count": 101303,
+        "seller": "vinyl.eu"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 40.0,
+        "currency": "CAD",
+        "rating_count": 10,
+        "seller": "echostudiocollective"
+      },
+      {
+        "media": "G",
+        "sleeve": "F",
+        "price": 30.0,
+        "currency": "USD",
+        "rating_count": 493,
+        "seller": "herm1996"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 30.0,
+        "currency": "USD",
+        "rating_count": 51458,
+        "seller": "Boom_Service"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 30.0,
+        "currency": "USD",
+        "rating_count": 11824,
+        "seller": "BullTrax"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 30.28,
+        "currency": "USD",
+        "rating_count": 149,
+        "seller": "LPshopping"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 30.6,
+        "currency": "USD",
+        "rating_count": 362,
+        "seller": "fullcontactrocknroll"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 31.39,
+        "currency": "USD",
+        "rating_count": 51458,
+        "seller": "Boom_Service"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 32.99,
+        "currency": "USD",
+        "rating_count": 1488,
+        "seller": "AnnapolisRecx"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 34.62,
+        "currency": "USD",
+        "rating_count": 11824,
+        "seller": "BullTrax"
+      }
+    ]
   },
   "459606": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "G+",
+        "sleeve": "P",
+        "price": 10.0,
+        "currency": "USD",
+        "rating_count": 13,
+        "seller": "kuhlrecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "Generic",
+        "price": 15.0,
+        "currency": "USD",
+        "rating_count": 890,
+        "seller": "circuitbreaker"
+      },
+      {
+        "media": "G+",
+        "sleeve": "F",
+        "price": 20.0,
+        "currency": "USD",
+        "rating_count": 271,
+        "seller": "royaltsound"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 22.0,
+        "currency": "USD",
+        "rating_count": 709,
+        "seller": "wiggs"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 28.0,
+        "currency": "USD",
+        "rating_count": 362,
+        "seller": "fullcontactrocknroll"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 24.5,
+        "currency": "EUR",
+        "rating_count": 3853,
+        "seller": "SVpeter"
+      },
+      {
+        "media": "G",
+        "sleeve": "F",
+        "price": 24.84,
+        "currency": "EUR",
+        "rating_count": 377288,
+        "seller": "recordsale-de"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 30.0,
+        "currency": "USD",
+        "rating_count": 74,
+        "seller": "rnaudio"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 30.0,
+        "currency": "USD",
+        "rating_count": 2038,
+        "seller": "RoundTripRecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 30.0,
+        "currency": "USD",
+        "rating_count": 1144,
+        "seller": "IITIGHTMUSIC"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 30.6,
+        "currency": "USD",
+        "rating_count": 362,
+        "seller": "fullcontactrocknroll"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 35.0,
+        "currency": "USD",
+        "rating_count": 271,
+        "seller": "royaltsound"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 29.99,
+        "currency": "EUR",
+        "rating_count": 1655,
+        "seller": "nebulagris"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 36.0,
+        "currency": "USD",
+        "rating_count": 2105,
+        "seller": "audiophileusa"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 38.23,
+        "currency": "USD",
+        "rating_count": 207,
+        "seller": "smooth87"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 40.0,
+        "currency": "USD",
+        "rating_count": 1121,
+        "seller": "Milwaukee_Vintage"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 34.5,
+        "currency": "EUR",
+        "rating_count": 3853,
+        "seller": "SVpeter"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 34.99,
+        "currency": "EUR",
+        "rating_count": 3999,
+        "seller": "One-Music-EU"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 44.99,
+        "currency": "USD",
+        "rating_count": 1239,
+        "seller": "Raisedonrecords"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 47.64,
+        "currency": "USD",
+        "rating_count": 713,
+        "seller": "Kens.Lost.n.Found"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 50.0,
+        "currency": "USD",
+        "rating_count": 11824,
+        "seller": "BullTrax"
+      },
+      {
+        "media": "VG",
+        "sleeve": "NM",
+        "price": 50.0,
+        "currency": "USD",
+        "rating_count": 24388,
+        "seller": "Armo-15"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 52.0,
+        "currency": "USD",
+        "rating_count": 563,
+        "seller": "cactuscowboy"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 44.55,
+        "currency": "EUR",
+        "rating_count": 50,
+        "seller": "muranodj"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 55.0,
+        "currency": "USD",
+        "rating_count": 816,
+        "seller": "Silveradoseller"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG",
+        "price": 8800.0,
+        "currency": "JPY",
+        "rating_count": 4248,
+        "seller": "RecordJungle"
+      },
+      {
+        "media": "NM",
+        "sleeve": "F",
+        "price": 56.46,
+        "currency": "USD",
+        "rating_count": 11824,
+        "seller": "BullTrax"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 60.0,
+        "currency": "USD",
+        "rating_count": 4671,
+        "seller": "climate_ctrl"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 64.99,
+        "currency": "USD",
+        "rating_count": 3714,
+        "seller": "AbrodosMusic_Detroit"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 65.0,
+        "currency": "USD",
+        "rating_count": 70,
+        "seller": "ErikD3670"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 56.72,
+        "currency": "EUR",
+        "rating_count": 864,
+        "seller": "Posti"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 69.99,
+        "currency": "USD",
+        "rating_count": 576,
+        "seller": "Fullhausrecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 69.99,
+        "currency": "USD",
+        "rating_count": 1066,
+        "seller": "sabinovinyl"
+      }
+    ]
   },
   "1549636": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 70.0,
+        "currency": "USD",
+        "rating_count": 3192,
+        "seller": "feelitrecordshop"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 108.0,
+        "currency": "USD",
+        "rating_count": 258,
+        "seller": "sarious"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 159.99,
+        "currency": "USD",
+        "rating_count": 10276,
+        "seller": "MediumRareLA"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 170.0,
+        "currency": "USD",
+        "rating_count": 1664,
+        "seller": "Hunt3d"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 199.98,
+        "currency": "USD",
+        "rating_count": 102,
+        "seller": "Vinylxrevival"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 225.0,
+        "currency": "USD",
+        "rating_count": 65,
+        "seller": "bvaughn"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 288.75,
+        "currency": "USD",
+        "rating_count": 9,
+        "seller": "kasi.records"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 300.0,
+        "currency": "USD",
+        "rating_count": 628,
+        "seller": "discomano40"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 355.99,
+        "currency": "USD",
+        "rating_count": 19,
+        "seller": "I.N.T_CORPSE"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 379.99,
+        "currency": "USD",
+        "rating_count": 3380,
+        "seller": "mortal90125"
+      },
+      {
+        "media": "NM",
+        "sleeve": "G+",
+        "price": 300.0,
+        "currency": "CHF",
+        "rating_count": 2,
+        "seller": "berther.roman"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 385.0,
+        "currency": "USD",
+        "rating_count": 4839,
+        "seller": "sound_messenger"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 499.99,
+        "currency": "USD",
+        "rating_count": 17,
+        "seller": "jents71"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 500.0,
+        "currency": "USD",
+        "rating_count": 2310,
+        "seller": "todd.magnuson.12"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 555.99,
+        "currency": "USD",
+        "rating_count": 19,
+        "seller": "I.N.T_CORPSE"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 599.0,
+        "currency": "USD",
+        "rating_count": 280,
+        "seller": "Almost-Human"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 5000.0,
+        "currency": "USD",
+        "rating_count": 10,
+        "seller": "astromidknight"
+      }
+    ]
   },
   "381988": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 340.0,
+        "currency": "EUR",
+        "rating_count": 25,
+        "seller": "Urbanlegend"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 400.0,
+        "currency": "USD",
+        "rating_count": 1664,
+        "seller": "Hunt3d"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 340.99,
+        "currency": "EUR",
+        "rating_count": 2326,
+        "seller": "Disconutshot"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 429.99,
+        "currency": "USD",
+        "rating_count": 2733,
+        "seller": "PennyLaneRecords"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 750.0,
+        "currency": "NZD",
+        "rating_count": 189,
+        "seller": "ItaDapeeza"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 505.62,
+        "currency": "USD",
+        "rating_count": 373,
+        "seller": "mordrid"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 440.0,
+        "currency": "EUR",
+        "rating_count": 68,
+        "seller": "Jochen99"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 5000.0,
+        "currency": "SEK",
+        "rating_count": 29,
+        "seller": "FuntimeRec"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 550.0,
+        "currency": "USD",
+        "rating_count": 219,
+        "seller": "AstoriaVinyl"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 649.99,
+        "currency": "USD",
+        "rating_count": 9847,
+        "seller": "SignalWickerPark"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 560.0,
+        "currency": "EUR",
+        "rating_count": 569,
+        "seller": "HUNTER_RECORDS"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 570.0,
+        "currency": "EUR",
+        "rating_count": 7850,
+        "seller": "cosmicmusicshop"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 599.99,
+        "currency": "EUR",
+        "rating_count": 3535,
+        "seller": "dicatrentatre"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 749.99,
+        "currency": "USD",
+        "rating_count": 51458,
+        "seller": "Boom_Service"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 671.18,
+        "currency": "EUR",
+        "rating_count": 377288,
+        "seller": "recordsale-de"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 794.0,
+        "currency": "USD",
+        "rating_count": 2419,
+        "seller": "Jessuproad"
+      },
+      {
+        "media": "M",
+        "sleeve": "VG",
+        "price": 999.95,
+        "currency": "USD",
+        "rating_count": 12894,
+        "seller": "SoundInvestmentVinyl"
+      }
+    ]
   },
   "439599": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG",
+        "sleeve": "G",
+        "price": 65.0,
+        "currency": "EUR",
+        "rating_count": 61,
+        "seller": "Nina580314"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 750.0,
+        "currency": "SEK",
+        "rating_count": 12,
+        "seller": "NiklasGbg"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 70.0,
+        "currency": "EUR",
+        "rating_count": 12,
+        "seller": "hogenhav"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 75.0,
+        "currency": "EUR",
+        "rating_count": 26,
+        "seller": "ChrisPluma"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 85.0,
+        "currency": "EUR",
+        "rating_count": 377,
+        "seller": "Growls666"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 85.0,
+        "currency": "EUR",
+        "rating_count": 1004,
+        "seller": "AnnikaSP"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 85.98,
+        "currency": "EUR",
+        "rating_count": 1381,
+        "seller": "cossali.paolo"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 86.47,
+        "currency": "EUR",
+        "rating_count": 5688,
+        "seller": "mc2boogie1974"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 90.0,
+        "currency": "EUR",
+        "rating_count": 47,
+        "seller": "ExLab"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 90.0,
+        "currency": "EUR",
+        "rating_count": 1696,
+        "seller": "afondorecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 90.0,
+        "currency": "EUR",
+        "rating_count": 314,
+        "seller": "xander007"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 1000.0,
+        "currency": "SEK",
+        "rating_count": 888,
+        "seller": "stockholm808"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 95.0,
+        "currency": "EUR",
+        "rating_count": 463,
+        "seller": "volksladen"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 95.0,
+        "currency": "EUR",
+        "rating_count": 6,
+        "seller": "larsb"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 95.0,
+        "currency": "EUR",
+        "rating_count": 2745,
+        "seller": "FunWithMusic"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 95.0,
+        "currency": "EUR",
+        "rating_count": 2389,
+        "seller": "ciakky70"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 85.0,
+        "currency": "GBP",
+        "rating_count": 807,
+        "seller": "sunup7"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 98.0,
+        "currency": "EUR",
+        "rating_count": 664,
+        "seller": "TRENDMUSICWORLD"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 99.0,
+        "currency": "EUR",
+        "rating_count": 893,
+        "seller": "slavder"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 99.0,
+        "currency": "EUR",
+        "rating_count": 2469,
+        "seller": "flexi_wax_italy"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 99.0,
+        "currency": "EUR",
+        "rating_count": 2785,
+        "seller": "duffysmurf"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 100.0,
+        "currency": "EUR",
+        "rating_count": 12,
+        "seller": "Opa-Loka"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 100.0,
+        "currency": "EUR",
+        "rating_count": 2458,
+        "seller": "kaster1202"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 104.03,
+        "currency": "EUR",
+        "rating_count": 44,
+        "seller": "hoegh64"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 109.0,
+        "currency": "EUR",
+        "rating_count": 402,
+        "seller": "iSHES"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 110.0,
+        "currency": "EUR",
+        "rating_count": 772,
+        "seller": "wolfram-discogs"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 110.0,
+        "currency": "EUR",
+        "rating_count": 2536,
+        "seller": "suhaid"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 112.99,
+        "currency": "EUR",
+        "rating_count": 734,
+        "seller": "pascaldj_vinyl1"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 119.0,
+        "currency": "EUR",
+        "rating_count": 84,
+        "seller": "Winkypoez"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 119.0,
+        "currency": "EUR",
+        "rating_count": 2797,
+        "seller": "Kohli"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G",
+        "price": 119.17,
+        "currency": "EUR",
+        "rating_count": 377288,
+        "seller": "recordsale-de"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 119.98,
+        "currency": "EUR",
+        "rating_count": 1572,
+        "seller": "djmad-professor"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 120.0,
+        "currency": "EUR",
+        "rating_count": 587,
+        "seller": "MakGen"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 120.0,
+        "currency": "EUR",
+        "rating_count": 893,
+        "seller": "slavder"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 120.0,
+        "currency": "EUR",
+        "rating_count": 490,
+        "seller": "heybrook"
+      },
+      {
+        "media": "G+",
+        "sleeve": "G+",
+        "price": 120.0,
+        "currency": "EUR",
+        "rating_count": 3,
+        "seller": "mikolo73"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 124.41,
+        "currency": "EUR",
+        "rating_count": 15,
+        "seller": "blackckrack"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 125.0,
+        "currency": "EUR",
+        "rating_count": 652,
+        "seller": "cancer2003"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 128.6,
+        "currency": "EUR",
+        "rating_count": 26099,
+        "seller": "spacehall.de"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 129.99,
+        "currency": "EUR",
+        "rating_count": 1081,
+        "seller": "2011frits"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 130.0,
+        "currency": "EUR",
+        "rating_count": 38,
+        "seller": "DrKazoo"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 135.99,
+        "currency": "EUR",
+        "rating_count": 1350,
+        "seller": "GROOVESPINcom"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 137.75,
+        "currency": "EUR",
+        "rating_count": 26,
+        "seller": "ROCKMKKID"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 140.0,
+        "currency": "EUR",
+        "rating_count": 2,
+        "seller": "richravn"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 140.56,
+        "currency": "EUR",
+        "rating_count": 26099,
+        "seller": "spacehall.de"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG",
+        "price": 144.98,
+        "currency": "EUR",
+        "rating_count": 4961,
+        "seller": "Plattebox"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG",
+        "price": 145.0,
+        "currency": "EUR",
+        "rating_count": 13,
+        "seller": "Gramo72"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 149.99,
+        "currency": "EUR",
+        "rating_count": 1148,
+        "seller": "CKROCKS"
+      }
+    ]
   },
   "612780": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 8.0,
+        "currency": "GBP",
+        "rating_count": 2014,
+        "seller": "wibetribe"
+      },
+      {
+        "media": "VG",
+        "sleeve": "P",
+        "price": 10.0,
+        "currency": "GBP",
+        "rating_count": 376,
+        "seller": "CraigButler66"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 11.99,
+        "currency": "GBP",
+        "rating_count": 4636,
+        "seller": "vinylstream.shop"
+      },
+      {
+        "media": "G",
+        "sleeve": "F",
+        "price": 12.0,
+        "currency": "GBP",
+        "rating_count": 27,
+        "seller": "Proper_Sound"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 14.99,
+        "currency": "GBP",
+        "rating_count": 710,
+        "seller": "imanmark"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 14.99,
+        "currency": "GBP",
+        "rating_count": 504,
+        "seller": "redmoorvinyl"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 14.99,
+        "currency": "GBP",
+        "rating_count": 3226,
+        "seller": "Tunes_Emporium"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 15.0,
+        "currency": "GBP",
+        "rating_count": 57,
+        "seller": "g.blackford"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 20.0,
+        "currency": "EUR",
+        "rating_count": 566,
+        "seller": "Valhal_Vinyl"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 20.0,
+        "currency": "EUR",
+        "rating_count": 556,
+        "seller": "Schaldemose"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 17.5,
+        "currency": "GBP",
+        "rating_count": 2322,
+        "seller": "eriverpipe"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 18.0,
+        "currency": "GBP",
+        "rating_count": 1504,
+        "seller": "Funkybearcave"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 18.0,
+        "currency": "GBP",
+        "rating_count": 130,
+        "seller": "annab4028"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 18.28,
+        "currency": "GBP",
+        "rating_count": 807,
+        "seller": "sunup7"
+      },
+      {
+        "media": "G+",
+        "sleeve": "G+",
+        "price": 19.0,
+        "currency": "GBP",
+        "rating_count": 30,
+        "seller": "trevorbartlett"
+      },
+      {
+        "media": "VG",
+        "sleeve": "No Cover",
+        "price": 19.99,
+        "currency": "GBP",
+        "rating_count": 251,
+        "seller": "waxheadrec"
+      },
+      {
+        "media": "VG",
+        "sleeve": "F",
+        "price": 19.99,
+        "currency": "GBP",
+        "rating_count": 213,
+        "seller": "MC-JB"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 20.0,
+        "currency": "GBP",
+        "rating_count": 318,
+        "seller": "shirecurios"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 20.12,
+        "currency": "GBP",
+        "rating_count": 807,
+        "seller": "sunup7"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 24.0,
+        "currency": "EUR",
+        "rating_count": 931,
+        "seller": "NORAVILLOSO"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 21.0,
+        "currency": "GBP",
+        "rating_count": 235,
+        "seller": "Kolossusuk"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 22.0,
+        "currency": "GBP",
+        "rating_count": 58796,
+        "seller": "FlashbackLondon"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 23.0,
+        "currency": "GBP",
+        "rating_count": 40,
+        "seller": "keyringrecords"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 23.0,
+        "currency": "GBP",
+        "rating_count": 807,
+        "seller": "sunup7"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 25.0,
+        "currency": "CHF",
+        "rating_count": 98,
+        "seller": "VinylCafeBern"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 24.0,
+        "currency": "GBP",
+        "rating_count": 371,
+        "seller": "ewitz"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 24.0,
+        "currency": "GBP",
+        "rating_count": 5624,
+        "seller": "boblilley1"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 24.94,
+        "currency": "GBP",
+        "rating_count": 1328,
+        "seller": "PHOENIX_MUSIC"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 24.99,
+        "currency": "GBP",
+        "rating_count": 15324,
+        "seller": "Electricity_Records"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG+",
+        "price": 24.99,
+        "currency": "GBP",
+        "rating_count": 35250,
+        "seller": "dempster13"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 24.99,
+        "currency": "GBP",
+        "rating_count": 1676,
+        "seller": "Bustersrecords.uk"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 2679,
+        "seller": "strummerroom"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 1429,
+        "seller": "madpunkandy"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 204,
+        "seller": "sixandnine"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 3223,
+        "seller": "Disc-Connected"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 272,
+        "seller": "TheVinylFilter"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 4271,
+        "seller": "parrotproduce"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 17738,
+        "seller": "Hobdensrecords"
+      }
+    ]
   },
   "7541569": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 19.99,
+        "currency": "USD",
+        "rating_count": 1140,
+        "seller": "brianh44"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 20.0,
+        "currency": "EUR",
+        "rating_count": 95,
+        "seller": "flo.tafeur"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 20.0,
+        "currency": "EUR",
+        "rating_count": 37,
+        "seller": "wrightrecordsIE"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 25.0,
+        "currency": "USD",
+        "rating_count": 38981,
+        "seller": "recordsbymail"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 22.0,
+        "currency": "EUR",
+        "rating_count": 42,
+        "seller": "DJ-Auriga"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 19.99,
+        "currency": "GBP",
+        "rating_count": 5486,
+        "seller": "jimmyjazz"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 23.45,
+        "currency": "EUR",
+        "rating_count": 236,
+        "seller": "Elzulan"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.3,
+        "currency": "EUR",
+        "rating_count": 9666,
+        "seller": "sonic-vinyls"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 254,
+        "seller": "bobmoccia"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 2726,
+        "seller": "BlackMarmaladeRecord"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.49,
+        "currency": "EUR",
+        "rating_count": 5501,
+        "seller": "ROCKTOM60"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.5,
+        "currency": "EUR",
+        "rating_count": 177,
+        "seller": "cdvinyl13"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.15,
+        "currency": "EUR",
+        "rating_count": 664,
+        "seller": "We.Love.ProgMusic"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 227,
+        "seller": "CollectSurvive"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 1938,
+        "seller": "llmod1"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 371,
+        "seller": "ewitz"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 12324,
+        "seller": "revolutionrecords1"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 25.0,
+        "currency": "GBP",
+        "rating_count": 5758,
+        "seller": "Avidrecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.79,
+        "currency": "EUR",
+        "rating_count": 5599,
+        "seller": "nicherecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.9,
+        "currency": "EUR",
+        "rating_count": 2636,
+        "seller": "Poptones_Records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.9,
+        "currency": "EUR",
+        "rating_count": 5401,
+        "seller": "poshopping"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.04,
+        "currency": "GBP",
+        "rating_count": 3060,
+        "seller": "ship_option_1"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.99,
+        "currency": "EUR",
+        "rating_count": 1131,
+        "seller": "cartman"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 30.0,
+        "currency": "EUR",
+        "rating_count": 10,
+        "seller": "infrableu"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.0,
+        "currency": "EUR",
+        "rating_count": 496,
+        "seller": "MondoBizzarro"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.0,
+        "currency": "EUR",
+        "rating_count": 738,
+        "seller": "Palmela_records"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 30.56,
+        "currency": "EUR",
+        "rating_count": 3576,
+        "seller": "SmokeCityRecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.95,
+        "currency": "GBP",
+        "rating_count": 7748,
+        "seller": "AvalancheWaverley"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.99,
+        "currency": "EUR",
+        "rating_count": 4358,
+        "seller": "Vinylnerds"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 32.0,
+        "currency": "EUR",
+        "rating_count": 5199,
+        "seller": "Laplaquetournante08"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 27.99,
+        "currency": "GBP",
+        "rating_count": 114,
+        "seller": "RaymondoRecordsStore"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 27.99,
+        "currency": "GBP",
+        "rating_count": 3637,
+        "seller": "SHADOWPLAYSOUNDS"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.0,
+        "currency": "GBP",
+        "rating_count": 3890,
+        "seller": "Secretbeach"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 37.99,
+        "currency": "USD",
+        "rating_count": 1116,
+        "seller": "muzzon"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.49,
+        "currency": "GBP",
+        "rating_count": 9066,
+        "seller": "Beautiful-Vinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 33.0,
+        "currency": "EUR",
+        "rating_count": 400,
+        "seller": "SpaceRecordShop"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 33.0,
+        "currency": "EUR",
+        "rating_count": 167,
+        "seller": "vhv-amiens"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 33.0,
+        "currency": "EUR",
+        "rating_count": 1696,
+        "seller": "StarsOnForty5"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 33.0,
+        "currency": "EUR",
+        "rating_count": 254,
+        "seller": "bobmoccia"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 33.0,
+        "currency": "EUR",
+        "rating_count": 33013,
+        "seller": "la-face-cachee"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.89,
+        "currency": "GBP",
+        "rating_count": 31,
+        "seller": "DoubleShotRecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 39.54,
+        "currency": "USD",
+        "rating_count": 368858,
+        "seller": "C.C.Music"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 33.9,
+        "currency": "EUR",
+        "rating_count": 1654,
+        "seller": "one.armed.scissor"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 34.0,
+        "currency": "EUR",
+        "rating_count": 94,
+        "seller": "ziedonis"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 34.0,
+        "currency": "EUR",
+        "rating_count": 672,
+        "seller": "PereOriol"
+      }
+    ]
   },
   "400591": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "F",
+        "sleeve": "G",
+        "price": 2.0,
+        "currency": "EUR",
+        "rating_count": 99,
+        "seller": "ivlad77"
+      },
+      {
+        "media": "G",
+        "sleeve": "F",
+        "price": 55.99,
+        "currency": "AUD",
+        "rating_count": 7048,
+        "seller": "Mezabel"
+      },
+      {
+        "media": "VG",
+        "sleeve": "F",
+        "price": 80.0,
+        "currency": "AUD",
+        "rating_count": 143,
+        "seller": "Barney19"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 88.4,
+        "currency": "AUD",
+        "rating_count": 59,
+        "seller": "crunkdout"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 90.0,
+        "currency": "AUD",
+        "rating_count": 384,
+        "seller": "pauly1"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 99.95,
+        "currency": "AUD",
+        "rating_count": 542,
+        "seller": "AmiciMusic"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 100.0,
+        "currency": "AUD",
+        "rating_count": 716,
+        "seller": "CrazyAcresRecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 110.0,
+        "currency": "AUD",
+        "rating_count": 2159,
+        "seller": "rubymusic808"
+      },
+      {
+        "media": "G",
+        "sleeve": "F",
+        "price": 80.0,
+        "currency": "USD",
+        "rating_count": 52,
+        "seller": "ozzycollectibles"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 115.0,
+        "currency": "AUD",
+        "rating_count": 382,
+        "seller": "franklycollectible"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 89.76,
+        "currency": "EUR",
+        "rating_count": 156,
+        "seller": "Vedra_Media"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 165.0,
+        "currency": "AUD",
+        "rating_count": 49,
+        "seller": "spruik"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 179.95,
+        "currency": "AUD",
+        "rating_count": 6721,
+        "seller": "Timewarprecordss"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G",
+        "price": 199.95,
+        "currency": "AUD",
+        "rating_count": 542,
+        "seller": "AmiciMusic"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 205.0,
+        "currency": "AUD",
+        "rating_count": 45,
+        "seller": "tasalco"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 170.0,
+        "currency": "USD",
+        "rating_count": 52,
+        "seller": "ozzycollectibles"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 250.0,
+        "currency": "AUD",
+        "rating_count": 5,
+        "seller": "OnceOffRecords"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 250.0,
+        "currency": "AUD",
+        "rating_count": 826,
+        "seller": "clockworkculture"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 159.0,
+        "currency": "EUR",
+        "rating_count": 217,
+        "seller": "Batistuta1972"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 199.0,
+        "currency": "USD",
+        "rating_count": 52,
+        "seller": "ozzycollectibles"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G",
+        "price": 221.16,
+        "currency": "USD",
+        "rating_count": 100,
+        "seller": "Bleedrecords"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G",
+        "price": 338.0,
+        "currency": "AUD",
+        "rating_count": 190,
+        "seller": "ziri_plays"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 350.0,
+        "currency": "AUD",
+        "rating_count": 826,
+        "seller": "clockworkculture"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G",
+        "price": 317.32,
+        "currency": "USD",
+        "rating_count": 100,
+        "seller": "Bleedrecords"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 475.0,
+        "currency": "AUD",
+        "rating_count": 37,
+        "seller": "mirodoba"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 488.0,
+        "currency": "AUD",
+        "rating_count": 190,
+        "seller": "ziri_plays"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 800.0,
+        "currency": "AUD",
+        "rating_count": 746,
+        "seller": "zat"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 700.0,
+        "currency": "EUR",
+        "rating_count": 489,
+        "seller": "elementarywatson1"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 1300.0,
+        "currency": "EUR",
+        "rating_count": 145,
+        "seller": "bavone1"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 1200.0,
+        "currency": "GBP",
+        "rating_count": 29,
+        "seller": "ChetwodE80"
+      }
+    ]
   },
   "400587": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "F",
+        "sleeve": "F",
+        "price": 160.0,
+        "currency": "USD",
+        "rating_count": 52,
+        "seller": "ozzycollectibles"
+      },
+      {
+        "media": "G+",
+        "sleeve": "G",
+        "price": 200.0,
+        "currency": "USD",
+        "rating_count": 2208,
+        "seller": "salzersrecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 350.0,
+        "currency": "AUD",
+        "rating_count": 2979,
+        "seller": "FootscrayRecords"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G",
+        "price": 240.0,
+        "currency": "EUR",
+        "rating_count": 896,
+        "seller": "dgrenzi"
+      },
+      {
+        "media": "G+",
+        "sleeve": "G+",
+        "price": 414.98,
+        "currency": "AUD",
+        "rating_count": 52,
+        "seller": "MikesRetroGameVinyl"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G",
+        "price": 320.0,
+        "currency": "USD",
+        "rating_count": 52,
+        "seller": "ozzycollectibles"
+      },
+      {
+        "media": "NM",
+        "sleeve": "G",
+        "price": 550.0,
+        "currency": "AUD",
+        "rating_count": 5325,
+        "seller": "vicious_sloth"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 400.0,
+        "currency": "USD",
+        "rating_count": 121,
+        "seller": "bigfunrecords"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 589.0,
+        "currency": "AUD",
+        "rating_count": 186,
+        "seller": "trend7"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 650.0,
+        "currency": "AUD",
+        "rating_count": 2511,
+        "seller": "GlitterRecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 499.0,
+        "currency": "USD",
+        "rating_count": 52,
+        "seller": "ozzycollectibles"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 499.99,
+        "currency": "USD",
+        "rating_count": 102,
+        "seller": "born-late-records"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 800.0,
+        "currency": "AUD",
+        "rating_count": 109,
+        "seller": "MissionJules"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 850.0,
+        "currency": "AUD",
+        "rating_count": 826,
+        "seller": "clockworkculture"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 890.0,
+        "currency": "AUD",
+        "rating_count": 436,
+        "seller": "My-Vinyl-Revolution"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 699.0,
+        "currency": "USD",
+        "rating_count": 391,
+        "seller": "ReallyDopeRecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 780.0,
+        "currency": "USD",
+        "rating_count": 52,
+        "seller": "ozzycollectibles"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 1150.0,
+        "currency": "AUD",
+        "rating_count": 436,
+        "seller": "My-Vinyl-Revolution"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 1199.5,
+        "currency": "AUD",
+        "rating_count": 1925,
+        "seller": "Splendid-Spin"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 1369.52,
+        "currency": "AUD",
+        "rating_count": 68,
+        "seller": "ththt"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 1400.0,
+        "currency": "AUD",
+        "rating_count": 746,
+        "seller": "zat"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 1550.0,
+        "currency": "AUD",
+        "rating_count": 37,
+        "seller": "mirodoba"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 999.0,
+        "currency": "EUR",
+        "rating_count": 217,
+        "seller": "Batistuta1972"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 1200.0,
+        "currency": "USD",
+        "rating_count": 52,
+        "seller": "ozzycollectibles"
+      },
+      {
+        "media": "NM",
+        "sleeve": "M",
+        "price": 1100.0,
+        "currency": "EUR",
+        "rating_count": 1332,
+        "seller": "WearAndMusic"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 1300.0,
+        "currency": "USD",
+        "rating_count": 52,
+        "seller": "ozzycollectibles"
+      }
+    ]
   },
   "534020": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 149.99,
+        "currency": "USD",
+        "rating_count": 1558,
+        "seller": "Fuji_Records"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 25000.0,
+        "currency": "JPY",
+        "rating_count": 830,
+        "seller": "cook_kawasaki"
+      },
+      {
+        "media": "NM",
+        "sleeve": "Generic",
+        "price": 164.0,
+        "currency": "USD",
+        "rating_count": 890,
+        "seller": "circuitbreaker"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 195.0,
+        "currency": "USD",
+        "rating_count": 110,
+        "seller": "landow"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 234.0,
+        "currency": "USD",
+        "rating_count": 20,
+        "seller": "VSCR"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 180.0,
+        "currency": "GBP",
+        "rating_count": 39084,
+        "seller": "vinylexchange.co.uk"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 290.0,
+        "currency": "EUR",
+        "rating_count": 1237,
+        "seller": "obscuretheme"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 850.0,
+        "currency": "EUR",
+        "rating_count": 19,
+        "seller": "shorty0165"
+      }
+    ]
   },
   "3336797": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "G+",
+        "sleeve": "No Cover",
+        "price": 98.0,
+        "currency": "USD",
+        "rating_count": 271,
+        "seller": "royaltsound"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 249.98,
+        "currency": "USD",
+        "rating_count": 4506,
+        "seller": "jackniferecordstapes"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 350.0,
+        "currency": "USD",
+        "rating_count": 347,
+        "seller": "S.Champ"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 999.99,
+        "currency": "USD",
+        "rating_count": 5,
+        "seller": "dr.dust"
+      }
+    ]
   },
   "1203470": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 20.99,
+        "currency": "EUR",
+        "rating_count": 6451,
+        "seller": "recordshopx"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 23.0,
+        "currency": "EUR",
+        "rating_count": 1637,
+        "seller": "WAXrecshop"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 20.32,
+        "currency": "GBP",
+        "rating_count": 3060,
+        "seller": "ship_option_1"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 23.4,
+        "currency": "EUR",
+        "rating_count": 6577,
+        "seller": "cieslukmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 23.4,
+        "currency": "EUR",
+        "rating_count": 6577,
+        "seller": "cieslukmusic"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 23.99,
+        "currency": "EUR",
+        "rating_count": 1350,
+        "seller": "GROOVESPINcom"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.0,
+        "currency": "EUR",
+        "rating_count": 27,
+        "seller": "Nalla"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.44,
+        "currency": "EUR",
+        "rating_count": 6577,
+        "seller": "cieslukmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 270.0,
+        "currency": "SEK",
+        "rating_count": 3679,
+        "seller": "beyonder2000"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 39.99,
+        "currency": "CAD",
+        "rating_count": 1476,
+        "seller": "vinyl.dude"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 40.0,
+        "currency": "CAD",
+        "rating_count": 1682,
+        "seller": "djmpire"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.9,
+        "currency": "EUR",
+        "rating_count": 9547,
+        "seller": "priced-to-move"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.0,
+        "currency": "EUR",
+        "rating_count": 5912,
+        "seller": "activevinyls"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.91,
+        "currency": "EUR",
+        "rating_count": 664,
+        "seller": "We.Love.ProgMusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.99,
+        "currency": "EUR",
+        "rating_count": 5594,
+        "seller": "zulu_zulu"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.99,
+        "currency": "EUR",
+        "rating_count": 1854,
+        "seller": "kalanidoo"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.99,
+        "currency": "EUR",
+        "rating_count": 7737,
+        "seller": "matrix00"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.0,
+        "currency": "EUR",
+        "rating_count": 726,
+        "seller": "AngelitaRecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.0,
+        "currency": "EUR",
+        "rating_count": 726,
+        "seller": "AngelitaRecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.0,
+        "currency": "CHF",
+        "rating_count": 32117,
+        "seller": "waltbartlome"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 22.99,
+        "currency": "GBP",
+        "rating_count": 9066,
+        "seller": "Beautiful-Vinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.9,
+        "currency": "EUR",
+        "rating_count": 35185,
+        "seller": "vinylism"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.95,
+        "currency": "EUR",
+        "rating_count": 5722,
+        "seller": "CARLOSPUZZLERO"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.95,
+        "currency": "EUR",
+        "rating_count": 948,
+        "seller": "Dondiscolugo"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.99,
+        "currency": "EUR",
+        "rating_count": 6577,
+        "seller": "cieslukmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 231,
+        "seller": "VinylfreaksNL"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 8216,
+        "seller": "Silver-Tentacle"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 8271,
+        "seller": "HDS-COLLECTORS"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 8271,
+        "seller": "HDS-COLLECTORS"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 8271,
+        "seller": "HDS-COLLECTORS"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 8271,
+        "seller": "HDS-COLLECTORS"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 8271,
+        "seller": "HDS-COLLECTORS"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR",
+        "rating_count": 8271,
+        "seller": "HDS-COLLECTORS"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.99,
+        "currency": "USD",
+        "rating_count": 10840,
+        "seller": "vancouversouthpaw"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 23.95,
+        "currency": "GBP",
+        "rating_count": 12324,
+        "seller": "revolutionrecords1"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 23.99,
+        "currency": "GBP",
+        "rating_count": 8601,
+        "seller": "MERLIN-MOOSIK"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.8,
+        "currency": "EUR",
+        "rating_count": 33688,
+        "seller": "decks.de"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.9,
+        "currency": "EUR",
+        "rating_count": 2877,
+        "seller": "Head-Records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 44.99,
+        "currency": "CAD",
+        "rating_count": 1003,
+        "seller": "Pusher_de_Vinyles"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 45.0,
+        "currency": "CAD",
+        "rating_count": 813,
+        "seller": "Le_33_45"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.98,
+        "currency": "EUR",
+        "rating_count": 9745,
+        "seller": "Pasku"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.99,
+        "currency": "EUR",
+        "rating_count": 284095,
+        "seller": "www.hhv.de"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.0,
+        "currency": "EUR",
+        "rating_count": 5199,
+        "seller": "Laplaquetournante08"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 45.99,
+        "currency": "CAD",
+        "rating_count": 1162,
+        "seller": "PerfectCircleMusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.95,
+        "currency": "GBP",
+        "rating_count": 5216,
+        "seller": "coreofthepoodle"
+      }
+    ]
   },
   "383777": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "G",
+        "sleeve": "G",
+        "price": 150.0,
+        "currency": "EUR",
+        "rating_count": 2,
+        "seller": "franzasc70"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 225.0,
+        "currency": "USD",
+        "rating_count": 12224,
+        "seller": "rasputin_rarities"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 296.93,
+        "currency": "USD",
+        "rating_count": 14441,
+        "seller": "GoingUndergroundrex"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 272.56,
+        "currency": "EUR",
+        "rating_count": 110,
+        "seller": "SQUINT111"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 380.0,
+        "currency": "USD",
+        "rating_count": 71,
+        "seller": "cacotone"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 569.99,
+        "currency": "USD",
+        "rating_count": 1558,
+        "seller": "Fuji_Records"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 549.0,
+        "currency": "EUR",
+        "rating_count": 2586,
+        "seller": "slam-records-hamburg"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 675.99,
+        "currency": "USD",
+        "rating_count": 19,
+        "seller": "I.N.T_CORPSE"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 700.0,
+        "currency": "USD",
+        "rating_count": 637,
+        "seller": "mariosmedia"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 800.0,
+        "currency": "USD",
+        "rating_count": 57,
+        "seller": "matt.buckmaster"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 769.0,
+        "currency": "EUR",
+        "rating_count": 217,
+        "seller": "Batistuta1972"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 1100.0,
+        "currency": "USD",
+        "rating_count": 116,
+        "seller": "johnnywhassup"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 950.0,
+        "currency": "EUR",
+        "rating_count": 17,
+        "seller": "originalvinyl75"
+      }
+    ]
   },
   "1238431": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "F",
+        "sleeve": "VG",
+        "price": 14.95,
+        "currency": "GBP",
+        "rating_count": 2532,
+        "seller": "cherrywavesvinyl"
+      },
+      {
+        "media": "G",
+        "sleeve": "P",
+        "price": 23.0,
+        "currency": "GBP",
+        "rating_count": 896,
+        "seller": "losttapesleeds"
+      },
+      {
+        "media": "G+",
+        "sleeve": "F",
+        "price": 28.67,
+        "currency": "EUR",
+        "rating_count": 27561,
+        "seller": "diebrotfrau.de"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 29.0,
+        "currency": "EUR",
+        "rating_count": 176,
+        "seller": "Ringstroem"
+      },
+      {
+        "media": "G+",
+        "sleeve": "G+",
+        "price": 29.99,
+        "currency": "EUR",
+        "rating_count": 2203,
+        "seller": "MUZIKCITY"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 29.75,
+        "currency": "GBP",
+        "rating_count": 1225,
+        "seller": "Rev_RecordsLDN"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 39.99,
+        "currency": "EUR",
+        "rating_count": 855,
+        "seller": "Plattenkontrolle"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "Generic",
+        "price": 40.0,
+        "currency": "EUR",
+        "rating_count": 7850,
+        "seller": "cosmicmusicshop"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 40.0,
+        "currency": "EUR",
+        "rating_count": 1621,
+        "seller": "SteinmejerNorgaard"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 44.1,
+        "currency": "EUR",
+        "rating_count": 404,
+        "seller": "VLR"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 45.0,
+        "currency": "EUR",
+        "rating_count": 128,
+        "seller": "CK84"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 39.99,
+        "currency": "GBP",
+        "rating_count": 401,
+        "seller": "My_Vinyl_Rock_Box"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 40.0,
+        "currency": "GBP",
+        "rating_count": 8340,
+        "seller": "nizbit."
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 40.0,
+        "currency": "GBP",
+        "rating_count": 706,
+        "seller": "MildredRaineyRecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 41.81,
+        "currency": "GBP",
+        "rating_count": 3538,
+        "seller": "2622"
+      },
+      {
+        "media": "G",
+        "sleeve": "G",
+        "price": 48.47,
+        "currency": "EUR",
+        "rating_count": 27561,
+        "seller": "diebrotfrau.de"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 49.0,
+        "currency": "EUR",
+        "rating_count": 1083,
+        "seller": "Die-Tonabnehmer"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 49.95,
+        "currency": "EUR",
+        "rating_count": 4750,
+        "seller": "TotemTanz"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 49.99,
+        "currency": "EUR",
+        "rating_count": 2261,
+        "seller": "ChickenRecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 50.0,
+        "currency": "EUR",
+        "rating_count": 244,
+        "seller": "metalmania66"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 50.0,
+        "currency": "EUR",
+        "rating_count": 125,
+        "seller": "Paradisiaque"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 50.0,
+        "currency": "EUR",
+        "rating_count": 14390,
+        "seller": "SEAWOLF_RECORDS"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 50.5,
+        "currency": "EUR",
+        "rating_count": 366,
+        "seller": "marcbodo777"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 44.54,
+        "currency": "GBP",
+        "rating_count": 3890,
+        "seller": "Secretbeach"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 45.0,
+        "currency": "GBP",
+        "rating_count": 5049,
+        "seller": "Music_SoulutioN"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 53.36,
+        "currency": "EUR",
+        "rating_count": 1619,
+        "seller": "Brule_Au_Paradis"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 54.0,
+        "currency": "EUR",
+        "rating_count": 1016,
+        "seller": "amagerrecords.dk"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 50.0,
+        "currency": "CHF",
+        "rating_count": 1745,
+        "seller": "faetze"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 595.0,
+        "currency": "SEK",
+        "rating_count": 436,
+        "seller": "Mardamaniac"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 54.98,
+        "currency": "EUR",
+        "rating_count": 4361,
+        "seller": "checkpoint-charly"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 55.0,
+        "currency": "EUR",
+        "rating_count": 566,
+        "seller": "Valhal_Vinyl"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 55.0,
+        "currency": "EUR",
+        "rating_count": 10922,
+        "seller": "Vinylkatten"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 55.0,
+        "currency": "EUR",
+        "rating_count": 89,
+        "seller": "recordsaftersunrise"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 55.0,
+        "currency": "EUR",
+        "rating_count": 37159,
+        "seller": "Black-Plastic"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 48.5,
+        "currency": "GBP",
+        "rating_count": 2222,
+        "seller": "superscootertrash"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 56.95,
+        "currency": "EUR",
+        "rating_count": 1170,
+        "seller": "Makev08"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 50.0,
+        "currency": "GBP",
+        "rating_count": 2679,
+        "seller": "strummerroom"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 50.0,
+        "currency": "GBP",
+        "rating_count": 5758,
+        "seller": "Avidrecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 58.1,
+        "currency": "EUR",
+        "rating_count": 366,
+        "seller": "marcbodo777"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 59.06,
+        "currency": "EUR",
+        "rating_count": 3576,
+        "seller": "SmokeCityRecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 51.68,
+        "currency": "GBP",
+        "rating_count": 807,
+        "seller": "sunup7"
+      }
+    ]
   },
   "7492229": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 20.1,
+        "currency": "USD",
+        "rating_count": 347,
+        "seller": "S.Champ"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 19.99,
+        "currency": "EUR",
+        "rating_count": 112,
+        "seller": "knorretje"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 23.99,
+        "currency": "EUR",
+        "rating_count": 4610,
+        "seller": "dj20100"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 25.0,
+        "currency": "EUR",
+        "rating_count": 2,
+        "seller": "girolax"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.0,
+        "currency": "EUR",
+        "rating_count": 848,
+        "seller": "opornik"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 25.0,
+        "currency": "EUR",
+        "rating_count": 1958,
+        "seller": "Vinileria"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.76,
+        "currency": "EUR",
+        "rating_count": 5134,
+        "seller": "Sensationrecords"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 26.9,
+        "currency": "EUR",
+        "rating_count": 18,
+        "seller": "RIDROSS"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 27.9,
+        "currency": "EUR",
+        "rating_count": 404,
+        "seller": "VLR"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 33.0,
+        "currency": "USD",
+        "rating_count": 151,
+        "seller": "Joel401"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.95,
+        "currency": "GBP",
+        "rating_count": 7748,
+        "seller": "AvalancheWaverley"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.7,
+        "currency": "EUR",
+        "rating_count": 1715,
+        "seller": "chafouin62"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.7,
+        "currency": "EUR",
+        "rating_count": 11993,
+        "seller": "Music.ShopLT"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.7,
+        "currency": "EUR",
+        "rating_count": 11993,
+        "seller": "Music.ShopLT"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.9,
+        "currency": "EUR",
+        "rating_count": 600,
+        "seller": "MtMdiscos"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 30.0,
+        "currency": "EUR",
+        "rating_count": 7,
+        "seller": "merfre"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.0,
+        "currency": "EUR",
+        "rating_count": 2718,
+        "seller": "CNO_records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "GBP",
+        "rating_count": 9470,
+        "seller": "StevecaptainKirk"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.5,
+        "currency": "GBP",
+        "rating_count": 56685,
+        "seller": "Juno_Records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.99,
+        "currency": "EUR",
+        "rating_count": 14788,
+        "seller": "underworld_records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.99,
+        "currency": "EUR",
+        "rating_count": 284095,
+        "seller": "www.hhv.de"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 32.08,
+        "currency": "EUR",
+        "rating_count": 913,
+        "seller": "winkrecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 32.09,
+        "currency": "EUR",
+        "rating_count": 2191,
+        "seller": "3345.nl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 32.5,
+        "currency": "EUR",
+        "rating_count": 2238,
+        "seller": "MusicShopKore"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.0,
+        "currency": "GBP",
+        "rating_count": 504,
+        "seller": "redmoorvinyl"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 33.39,
+        "currency": "EUR",
+        "rating_count": 1738,
+        "seller": "mickeymau"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 33.88,
+        "currency": "EUR",
+        "rating_count": 38577,
+        "seller": "Lot.Of.Music"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 34.49,
+        "currency": "EUR",
+        "rating_count": 6911,
+        "seller": "TOPSELECTION"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 34.95,
+        "currency": "EUR",
+        "rating_count": 4122,
+        "seller": "Art-Music"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 34.99,
+        "currency": "EUR",
+        "rating_count": 6512,
+        "seller": "City_Music_Odense"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 34.99,
+        "currency": "EUR",
+        "rating_count": 1350,
+        "seller": "GROOVESPINcom"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 35.0,
+        "currency": "EUR",
+        "rating_count": 447,
+        "seller": "kgierski"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 35.0,
+        "currency": "EUR",
+        "rating_count": 1637,
+        "seller": "WAXrecshop"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 35.0,
+        "currency": "EUR",
+        "rating_count": 5023,
+        "seller": "KagoshimaRecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.0,
+        "currency": "GBP",
+        "rating_count": 58796,
+        "seller": "FlashbackLondon"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 36.11,
+        "currency": "EUR",
+        "rating_count": 1685,
+        "seller": "b_side_records"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.59,
+        "currency": "GBP",
+        "rating_count": 3060,
+        "seller": "ship_option_1"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 60.0,
+        "currency": "AUD",
+        "rating_count": 28,
+        "seller": "jamie_df"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 37.9,
+        "currency": "EUR",
+        "rating_count": 1654,
+        "seller": "one.armed.scissor"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 37.9,
+        "currency": "EUR",
+        "rating_count": 2249,
+        "seller": "Good_Things_Gmunden"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 38.0,
+        "currency": "EUR",
+        "rating_count": 734,
+        "seller": "SHDR_Post_Synth"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 45.0,
+        "currency": "USD",
+        "rating_count": 308,
+        "seller": "LEGOxCORE"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 38.97,
+        "currency": "EUR",
+        "rating_count": 9745,
+        "seller": "Pasku"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 39.5,
+        "currency": "EUR",
+        "rating_count": 509,
+        "seller": "MelodyMakerGreece"
+      }
+    ]
   },
   "317356": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "G",
+        "sleeve": "VG+",
+        "price": 8000.0,
+        "currency": "JPY",
+        "rating_count": 592,
+        "seller": "ExpatJPN_Music"
+      },
+      {
+        "media": "G+",
+        "sleeve": "G+",
+        "price": 50.0,
+        "currency": "GBP",
+        "rating_count": 3533,
+        "seller": "TimArto"
+      },
+      {
+        "media": "G",
+        "sleeve": "G+",
+        "price": 81.75,
+        "currency": "EUR",
+        "rating_count": 101303,
+        "seller": "vinyl.eu"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 73.0,
+        "currency": "GBP",
+        "rating_count": 118046,
+        "seller": "crazybeatrecords"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG+",
+        "price": 99.99,
+        "currency": "USD",
+        "rating_count": 775,
+        "seller": "nekonrecord"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 100.0,
+        "currency": "USD",
+        "rating_count": 1664,
+        "seller": "Hunt3d"
+      },
+      {
+        "media": "F",
+        "sleeve": "VG",
+        "price": 100.99,
+        "currency": "USD",
+        "rating_count": 1489,
+        "seller": "Omind"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 109.0,
+        "currency": "USD",
+        "rating_count": 102,
+        "seller": "djkebi"
+      },
+      {
+        "media": "G+",
+        "sleeve": "VG+",
+        "price": 100.0,
+        "currency": "EUR",
+        "rating_count": 6346,
+        "seller": "rekords_cph"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 90.0,
+        "currency": "GBP",
+        "rating_count": 84,
+        "seller": "suzduzpruzrecords"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 110.0,
+        "currency": "EUR",
+        "rating_count": 6346,
+        "seller": "rekords_cph"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 21600.0,
+        "currency": "JPY",
+        "rating_count": 25395,
+        "seller": "recordshopshibuya"
+      },
+      {
+        "media": "G+",
+        "sleeve": "G+",
+        "price": 119.0,
+        "currency": "EUR",
+        "rating_count": 5350,
+        "seller": "CopenhagenVinyl.eu"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 120.0,
+        "currency": "EUR",
+        "rating_count": 69,
+        "seller": "Grow760"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 120.0,
+        "currency": "EUR",
+        "rating_count": 1705,
+        "seller": "_Krispijn"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 152.99,
+        "currency": "USD",
+        "rating_count": 4759,
+        "seller": "Peaceful_Records"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 160.0,
+        "currency": "USD",
+        "rating_count": 21,
+        "seller": "CTLWD_Records"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 172.5,
+        "currency": "USD",
+        "rating_count": 4671,
+        "seller": "climate_ctrl"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 149.9,
+        "currency": "CHF",
+        "rating_count": 2837,
+        "seller": "hiphopchef"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 199.95,
+        "currency": "USD",
+        "rating_count": 837,
+        "seller": "djpozitiv"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 200.0,
+        "currency": "USD",
+        "rating_count": 20037,
+        "seller": "FlooderNYC"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 200.0,
+        "currency": "USD",
+        "rating_count": 508,
+        "seller": "Harman_Vinyl"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 200.0,
+        "currency": "USD",
+        "rating_count": 29,
+        "seller": "wmrecordshopsd"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 200.0,
+        "currency": "USD",
+        "rating_count": 926,
+        "seller": "yesterdaysnewrecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 190.0,
+        "currency": "GBP",
+        "rating_count": 1137,
+        "seller": "TRSAS"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 260.0,
+        "currency": "USD",
+        "rating_count": 106,
+        "seller": "porscheporsche"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 199.99,
+        "currency": "GBP",
+        "rating_count": 6689,
+        "seller": "pussclod"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 229.89,
+        "currency": "EUR",
+        "rating_count": 55204,
+        "seller": "MION.Berlin"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 250.0,
+        "currency": "EUR",
+        "rating_count": 366,
+        "seller": "Josenoguera01"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 220.0,
+        "currency": "GBP",
+        "rating_count": 174,
+        "seller": "EdgeleySounds"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 299.0,
+        "currency": "EUR",
+        "rating_count": 174,
+        "seller": "premiumdj"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 295.0,
+        "currency": "CHF",
+        "rating_count": 1106,
+        "seller": "soundcave.ch"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 322.57,
+        "currency": "EUR",
+        "rating_count": 377288,
+        "seller": "recordsale-de"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 349.9,
+        "currency": "EUR",
+        "rating_count": 1364,
+        "seller": "plattenladen.one"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 349.9,
+        "currency": "CHF",
+        "rating_count": 2837,
+        "seller": "hiphopchef"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 550.0,
+        "currency": "EUR",
+        "rating_count": 2783,
+        "seller": "owenscarlet"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 105000.0,
+        "currency": "JPY",
+        "rating_count": 49,
+        "seller": "T.A.-Records"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 626.57,
+        "currency": "EUR",
+        "rating_count": 31,
+        "seller": "DKANBIER"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 690.0,
+        "currency": "EUR",
+        "rating_count": 179,
+        "seller": "greenonions"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 637.91,
+        "currency": "GBP",
+        "rating_count": 688,
+        "seller": "markomono"
+      }
+    ]
   },
   "3975953": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 33.0,
+        "currency": "CAD",
+        "rating_count": 2,
+        "seller": "Brando4"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 25.0,
+        "currency": "USD",
+        "rating_count": 313,
+        "seller": "Reset_303"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 26.99,
+        "currency": "USD",
+        "rating_count": 185,
+        "seller": "aestheticreligion"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 29.99,
+        "currency": "USD",
+        "rating_count": 3,
+        "seller": "kqmlev"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 30.0,
+        "currency": "USD",
+        "rating_count": 10,
+        "seller": "ramnik.sekhon98"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 30.0,
+        "currency": "USD",
+        "rating_count": 306,
+        "seller": "RecordPicker97"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 32.98,
+        "currency": "USD",
+        "rating_count": 563,
+        "seller": "MrShocktime"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 34.0,
+        "currency": "USD",
+        "rating_count": 10,
+        "seller": "myersd15"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 36.99,
+        "currency": "USD",
+        "rating_count": 193,
+        "seller": "Elmhurstrecords13"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 38.99,
+        "currency": "USD",
+        "rating_count": 1075,
+        "seller": "StateStreetrecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 39.99,
+        "currency": "USD",
+        "rating_count": 12493,
+        "seller": "gethiprecordings"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 40.0,
+        "currency": "USD",
+        "rating_count": 1779,
+        "seller": "mostchill"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 40.0,
+        "currency": "USD",
+        "rating_count": 228,
+        "seller": "fred_walker"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 40.0,
+        "currency": "USD",
+        "rating_count": 2,
+        "seller": "GarfieldBiotch"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 55.99,
+        "currency": "CAD",
+        "rating_count": 500,
+        "seller": "33s"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 41.05,
+        "currency": "USD",
+        "rating_count": 168,
+        "seller": "Millpond_vinyl"
+      }
+    ]
   },
   "397167": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 280.0,
+        "currency": "EUR",
+        "rating_count": 738,
+        "seller": "Blonde65"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 599.0,
+        "currency": "EUR",
+        "rating_count": 491,
+        "seller": "CORRECAMINOS-MUSIC"
+      }
+    ]
   },
   "402227": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "G+",
+        "sleeve": "VG+",
+        "price": 10.0,
+        "currency": "EUR",
+        "rating_count": 3216,
+        "seller": "Luckywolfrecords"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 17.1,
+        "currency": "USD",
+        "rating_count": 15806,
+        "seller": "Econo_Jam_Records"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 16.0,
+        "currency": "EUR",
+        "rating_count": 84,
+        "seller": "elluch"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 25.0,
+        "currency": "EUR",
+        "rating_count": 70,
+        "seller": "313-Winged-Wheel"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 26.0,
+        "currency": "EUR",
+        "rating_count": 2083,
+        "seller": "andresdiamond"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 26.92,
+        "currency": "EUR",
+        "rating_count": 41222,
+        "seller": "ZARDOZ-RECORDS"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 25.0,
+        "currency": "CHF",
+        "rating_count": 8358,
+        "seller": "tondomusic"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 27.5,
+        "currency": "EUR",
+        "rating_count": 111,
+        "seller": "willypeelen"
+      },
+      {
+        "media": "NM",
+        "sleeve": "G",
+        "price": 28.0,
+        "currency": "EUR",
+        "rating_count": 60,
+        "seller": "jordi.caamano"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 28.0,
+        "currency": "EUR",
+        "rating_count": 11658,
+        "seller": "second-hand-records"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 30.0,
+        "currency": "EUR",
+        "rating_count": 52,
+        "seller": "RPSFRL"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 30.0,
+        "currency": "EUR",
+        "rating_count": 693,
+        "seller": "RightRecord"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 30.0,
+        "currency": "EUR",
+        "rating_count": 1741,
+        "seller": "Thelonelywolf"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 30.68,
+        "currency": "EUR",
+        "rating_count": 650,
+        "seller": "sdakad"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 32.0,
+        "currency": "EUR",
+        "rating_count": 1741,
+        "seller": "Thelonelywolf"
+      },
+      {
+        "media": "M",
+        "sleeve": "VG+",
+        "price": 32.95,
+        "currency": "EUR",
+        "rating_count": 7875,
+        "seller": "12sDELUXE"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 35.95,
+        "currency": "EUR",
+        "rating_count": 231,
+        "seller": "antoinine"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 38.0,
+        "currency": "EUR",
+        "rating_count": 32,
+        "seller": "astikkers"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 40.0,
+        "currency": "EUR",
+        "rating_count": 284,
+        "seller": "Search4Serge"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 59.9,
+        "currency": "EUR",
+        "rating_count": 494,
+        "seller": "henry"
+      }
+    ]
   },
   "382601": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG",
+        "sleeve": "G",
+        "price": 3.99,
+        "currency": "EUR",
+        "rating_count": 2051,
+        "seller": "Vinylvili"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 19.0,
+        "currency": "CAD",
+        "rating_count": 846,
+        "seller": "Sconevinyl"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 12.21,
+        "currency": "EUR",
+        "rating_count": 174,
+        "seller": "Antiek_Co"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 13.94,
+        "currency": "EUR",
+        "rating_count": 222,
+        "seller": "HILARIS_BUG"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 14.95,
+        "currency": "EUR",
+        "rating_count": 25883,
+        "seller": "RenewRecords.nl"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 15.0,
+        "currency": "EUR",
+        "rating_count": 52,
+        "seller": "RPSFRL"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 15.45,
+        "currency": "EUR",
+        "rating_count": 2424,
+        "seller": "Livity-records"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 16.39,
+        "currency": "EUR",
+        "rating_count": 39,
+        "seller": "RUNDFAHRT"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 16.99,
+        "currency": "EUR",
+        "rating_count": 1408,
+        "seller": "FanaticVinyl"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 17.51,
+        "currency": "EUR",
+        "rating_count": 338,
+        "seller": "Guido410"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG",
+        "price": 19.9,
+        "currency": "EUR",
+        "rating_count": 567,
+        "seller": "ElTopo77"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 19.99,
+        "currency": "EUR",
+        "rating_count": 213,
+        "seller": "eljee"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 20.0,
+        "currency": "EUR",
+        "rating_count": 307,
+        "seller": "provadya"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 20.0,
+        "currency": "EUR",
+        "rating_count": 2318,
+        "seller": "sebadoh"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 20.0,
+        "currency": "EUR",
+        "rating_count": 582,
+        "seller": "funkyfinyl"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 22.0,
+        "currency": "EUR",
+        "rating_count": 22,
+        "seller": "Drop-Records"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 22.0,
+        "currency": "EUR",
+        "rating_count": 284,
+        "seller": "Search4Serge"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 22.5,
+        "currency": "EUR",
+        "rating_count": 4514,
+        "seller": "Hungrytown"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 23.0,
+        "currency": "EUR",
+        "rating_count": 571,
+        "seller": "LexiGrooves"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 24.99,
+        "currency": "EUR",
+        "rating_count": 2061,
+        "seller": "NoMountains-TheHague"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG",
+        "price": 25.0,
+        "currency": "EUR",
+        "rating_count": 14,
+        "seller": "abonneemp"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 39.95,
+        "currency": "EUR",
+        "rating_count": 4122,
+        "seller": "Art-Music"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 89.9,
+        "currency": "EUR",
+        "rating_count": 8219,
+        "seller": "frank3x"
+      }
+    ]
   },
   "12895130": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 149.99,
+        "currency": "USD",
+        "rating_count": 2910,
+        "seller": "VaccaRossa"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 169.98,
+        "currency": "USD",
+        "rating_count": 23052,
+        "seller": "zero.street"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 150.0,
+        "currency": "GBP",
+        "rating_count": 36,
+        "seller": "Conwel"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 199.49,
+        "currency": "EUR",
+        "rating_count": 3692,
+        "seller": "zilent"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 240.0,
+        "currency": "USD",
+        "rating_count": 4,
+        "seller": "m900mwk"
+      }
+    ]
   },
   "13672908": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "VG+",
+        "sleeve": "G",
+        "price": 55.0,
+        "currency": "AUD",
+        "rating_count": 16,
+        "seller": "PenginMinion"
+      },
+      {
+        "media": "M",
+        "sleeve": "VG+",
+        "price": 60.0,
+        "currency": "USD",
+        "rating_count": 2208,
+        "seller": "salzersrecords"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 60.0,
+        "currency": "USD",
+        "rating_count": 105,
+        "seller": "WaxMage808"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 75.0,
+        "currency": "USD",
+        "rating_count": 95,
+        "seller": "DEEBO187"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 110.4,
+        "currency": "CAD",
+        "rating_count": 4223,
+        "seller": "groovesrecords"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 70.0,
+        "currency": "EUR",
+        "rating_count": 496,
+        "seller": "tontonloop"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 75.0,
+        "currency": "EUR",
+        "rating_count": 228,
+        "seller": "fischio"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 99.99,
+        "currency": "USD",
+        "rating_count": 4238,
+        "seller": "mercy-mercy89"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 149.99,
+        "currency": "CAD",
+        "rating_count": 34,
+        "seller": "CDBGO"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 150.0,
+        "currency": "CAD",
+        "rating_count": 175,
+        "seller": "MixMasterC"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 110.0,
+        "currency": "EUR",
+        "rating_count": 109,
+        "seller": "colleguetorz"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 189.05,
+        "currency": "USD",
+        "rating_count": 19,
+        "seller": "Squat420"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 209.9,
+        "currency": "EUR",
+        "rating_count": 133,
+        "seller": "Duruk"
+      }
+    ]
   },
   "223127": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "G+",
+        "sleeve": "G",
+        "price": 50.0,
+        "currency": "USD",
+        "rating_count": 15,
+        "seller": "Varras"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 70.0,
+        "currency": "USD",
+        "rating_count": 3279,
+        "seller": "EatRecords"
+      },
+      {
+        "media": "G",
+        "sleeve": "VG",
+        "price": 60.0,
+        "currency": "GBP",
+        "rating_count": 243,
+        "seller": "Masakazu"
+      },
+      {
+        "media": "G+",
+        "sleeve": "No Cover",
+        "price": 75.04,
+        "currency": "EUR",
+        "rating_count": 5,
+        "seller": "Tayeb-Ibn-Roots"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "Generic",
+        "price": 80.0,
+        "currency": "EUR",
+        "rating_count": 627,
+        "seller": "hiphopgermany.de"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G",
+        "price": 100.0,
+        "currency": "USD",
+        "rating_count": 591,
+        "seller": "DeadLabour"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 16000.0,
+        "currency": "JPY",
+        "rating_count": 592,
+        "seller": "ExpatJPN_Music"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 79.99,
+        "currency": "GBP",
+        "rating_count": 1682,
+        "seller": "Hub.Store"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "Generic",
+        "price": 110.0,
+        "currency": "USD",
+        "rating_count": 36,
+        "seller": "Dee_Brown"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "Generic",
+        "price": 112.13,
+        "currency": "USD",
+        "rating_count": 241,
+        "seller": "vinylvendetta"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 100.0,
+        "currency": "EUR",
+        "rating_count": 8,
+        "seller": "Jazznull"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 99.9,
+        "currency": "CHF",
+        "rating_count": 2837,
+        "seller": "hiphopchef"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 110.1,
+        "currency": "EUR",
+        "rating_count": 3930,
+        "seller": "vinyl-support"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 115.0,
+        "currency": "GBP",
+        "rating_count": 42840,
+        "seller": "Dobshizzle"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 25000.0,
+        "currency": "JPY",
+        "rating_count": 592,
+        "seller": "ExpatJPN_Music"
+      },
+      {
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 125.0,
+        "currency": "GBP",
+        "rating_count": 295,
+        "seller": "ElectricWitchRecords"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 145.0,
+        "currency": "EUR",
+        "rating_count": 20,
+        "seller": "yearroundmunich"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 150.0,
+        "currency": "EUR",
+        "rating_count": 91,
+        "seller": "zimpala"
+      },
+      {
+        "media": "G",
+        "sleeve": "VG+",
+        "price": 151.02,
+        "currency": "EUR",
+        "rating_count": 377288,
+        "seller": "recordsale-de"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 180.0,
+        "currency": "USD",
+        "rating_count": 149,
+        "seller": "SmallDogRecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 249.99,
+        "currency": "AUD",
+        "rating_count": 1054,
+        "seller": "rduvrecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 140.0,
+        "currency": "GBP",
+        "rating_count": 176,
+        "seller": "SwingMobb"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 267.15,
+        "currency": "CAD",
+        "rating_count": 12,
+        "seller": "porto74"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 180.0,
+        "currency": "CHF",
+        "rating_count": 253,
+        "seller": "marke7652"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 199.99,
+        "currency": "EUR",
+        "rating_count": 1478,
+        "seller": "vinylizer"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "M",
+        "price": 199.99,
+        "currency": "EUR",
+        "rating_count": 2066,
+        "seller": "monsterecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 200.0,
+        "currency": "EUR",
+        "rating_count": 3150,
+        "seller": "HocusPocusRoma"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 190.0,
+        "currency": "CHF",
+        "rating_count": 8358,
+        "seller": "tondomusic"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 219.99,
+        "currency": "EUR",
+        "rating_count": 55204,
+        "seller": "MION.Berlin"
+      },
+      {
+        "media": "VG",
+        "sleeve": "NM",
+        "price": 241.62,
+        "currency": "EUR",
+        "rating_count": 377288,
+        "seller": "recordsale-de"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 250.0,
+        "currency": "EUR",
+        "rating_count": 66,
+        "seller": "Lavamund"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 219.0,
+        "currency": "GBP",
+        "rating_count": 2603,
+        "seller": "atlasrecordsuk"
+      },
+      {
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 253.0,
+        "currency": "EUR",
+        "rating_count": 102,
+        "seller": "stupid_white_man"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 255.0,
+        "currency": "EUR",
+        "rating_count": 870,
+        "seller": "recordorium"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 241.18,
+        "currency": "CHF",
+        "rating_count": 1062,
+        "seller": "idrecords"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 250.0,
+        "currency": "CHF",
+        "rating_count": 8358,
+        "seller": "tondomusic"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 298.0,
+        "currency": "EUR",
+        "rating_count": 179,
+        "seller": "greenonions"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 300.0,
+        "currency": "EUR",
+        "rating_count": 1025,
+        "seller": "Johnjosephmusic"
+      },
+      {
+        "media": "M",
+        "sleeve": "VG+",
+        "price": 399.99,
+        "currency": "USD",
+        "rating_count": 2306,
+        "seller": "Livefrombk"
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 420.0,
+        "currency": "USD",
+        "rating_count": 659,
+        "seller": "waxsidestories"
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 485.99,
+        "currency": "USD",
+        "rating_count": 2903,
+        "seller": "ghetto313"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 499.0,
+        "currency": "USD",
+        "rating_count": 120,
+        "seller": "thaDrizzle"
+      },
+      {
+        "media": "M",
+        "sleeve": "VG+",
+        "price": 539.99,
+        "currency": "EUR",
+        "rating_count": 55204,
+        "seller": "MION.Berlin"
+      }
+    ]
   },
   "16170729": {
     "fetched_at": "2026-05-13",
-    "listings": []
+    "listings": [
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 85.0,
+        "currency": "EUR",
+        "rating_count": 30,
+        "seller": "PJOT77"
+      },
+      {
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 100.0,
+        "currency": "EUR",
+        "rating_count": 3216,
+        "seller": "Luckywolfrecords"
+      }
+    ]
   }
 }

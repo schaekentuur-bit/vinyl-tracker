@@ -1213,22 +1213,22 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
                 save_cache(STATS_CACHE, stats_cache)
             time.sleep(0.5)
 
-        # Marketplace listings via Discogs API (gecached, 1 dag TTL; altijd vers bij force)
+        # Marketplace listings (gecached 7 dagen; fresh scrape bij force of verlopen cache)
         lc_entry = listings_cache.get(release_id, {})
-        if cache_is_fresh(lc_entry, max_days=1) and lc_entry.get("listings"):
+        if cache_is_fresh(lc_entry, max_days=7) and lc_entry.get("listings"):
             raw_listings = lc_entry["listings"]
             print(f"  Listings cache: {len(raw_listings)} listings")
         else:
-            raw_listings = scrape_listings_api(release_id)
+            raw_listings = scrape_listings(release_id, cookies, session)
             if raw_listings:
                 listings_cache[release_id] = {"fetched_at": today, "listings": raw_listings}
                 save_cache(LISTINGS_CACHE, listings_cache)
-                print(f"  Listings API: {len(raw_listings)} listings")
+                print(f"  Listings gescraped: {len(raw_listings)} listings")
             else:
                 old = lc_entry.get("listings", [])
                 raw_listings = old
-                print(f"  Listings API leeg, cache bewaard: {len(old)} listings")
-            time.sleep(0.5)
+                print(f"  Listings scrape leeg (Cloudflare?), cache bewaard: {len(old)} listings")
+            time.sleep(2)
 
         results.append({
             "id":       release_id,
