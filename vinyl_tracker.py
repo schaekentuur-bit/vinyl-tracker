@@ -1920,8 +1920,10 @@ def run_server(initial_results, cookies, session):
             ts = datetime.now().strftime("%Y-%m-%d %H:%M")
             subprocess.run(["git", "-C", repo, "commit", "-m",
                             f"Lokale refresh {ts}"], check=True, capture_output=True)
-            # Forceer push: lokale cache is altijd completer dan GitHub
-            # (GitHub Actions kan Discogs niet scrapen via Cloudflare)
+            # Fetch eerst zodat de tracking-ref actueel is; daarna force-with-lease.
+            # (GitHub Actions pusht dagelijks — zonder fetch krijg je 'stale info'.)
+            subprocess.run(["git", "-C", repo, "fetch", "origin"],
+                           check=True, capture_output=True)
             subprocess.run(["git", "-C", repo, "push", "--force-with-lease",
                             "origin", "HEAD"],
                            check=True, capture_output=True)
