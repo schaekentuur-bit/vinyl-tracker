@@ -100,6 +100,21 @@ RELEASE_INFO = {
     # Queen
     "612780":   ("🏆 First pressing", "Originele UK persing 1975 — topstuk, consistent stijgend in waarde. Met zorg bewaren."),
     "7541569":  ("🎵 Audiofiele versie", "Half-speed remaster EU 2015 — uitstekend geluid, ideaal voor afspelen."),
+    "10130642": ("🏆 First pressing", "Originele UK EMI-persing 1974 (EMC 3061) — dit IS de first pressing van Sheer Heart Attack."),
+    "23316872": ("🏆 First pressing", "Originele UK EMI-persing 1976 (EMTC 104) — dit IS de first pressing van A Day at the Races."),
+    "22048156": ("🎵 Luisterversie", "Originele US Elektra-persing 1976 (6E-101) — voor dagelijks afspelen."),
+    "14031557": ("🏆 First pressing", "Originele UK EMI-persing 1977 (EMA 784) — dit IS de first pressing van News of the World."),
+    "3824539":  ("🎵 Luisterversie", "Originele US Elektra-persing 1977 (6E-112) — voor dagelijks afspelen."),
+    "475606":   ("🏆 First pressing", "Originele UK EMI-persing 1978 (EMA 788) — dit IS de first pressing van Jazz."),
+    "4269045":  ("🎵 Luisterversie", "Originele US Elektra-persing 1978 (6E-166) — voor dagelijks afspelen."),
+    "455954":   ("🏆 First pressing", "Originele UK EMI-persing 1980 (EMA 795) — dit IS de first pressing van The Game."),
+    "446814":   ("🎵 Luisterversie", "Originele US Elektra-persing 1980 (5E-513) — voor dagelijks afspelen."),
+    "589920":   ("🏆 First pressing", "Originele UK EMI-persing 1982 (EMA 797) — dit IS de first pressing van Hot Space."),
+    "505097":   ("🎵 Luisterversie", "Originele US Elektra-persing 1982 (E1-60128) — voor dagelijks afspelen."),
+    "4732312":  ("🏆 First pressing (promo)", "Originele UK EMI white label promo-persing 1984 (EMC 2400141) — pre-release copy, gezocht door verzamelaars."),
+    "36148198": ("🎵 Luisterversie", "EU Virgin EMI remaster 2023 (0602547202789) — voor dagelijks afspelen."),
+    "11967456": ("🏆 First pressing", "Originele UK EMI-persing 1986 (EU 3509) — dit IS de first pressing van A Kind of Magic."),
+    "25210735": ("🎵 Luisterversie", "US Hollywood Records remaster 2022 (D004064601) — voor dagelijks afspelen."),
     # AC/DC
     "400591":   ("🏆 First pressing", "Australisch origineel 1980 — absolute heilige graal voor AC/DC-verzamelaars."),
     "1949857":  ("🎵 Luisterversie", "EU reissue 2009 — voor dagelijks gebruik, geen collector's waarde."),
@@ -199,6 +214,13 @@ RELEASE_PAIRS = [
     ("1629020",  "8519678"),   # RHCP — Stadium Arcadium
     ("7801798",  "14186441"),  # Beatles — Abbey Road
     ("612780",   "7541569"),   # Queen — A Night at the Opera
+    ("23316872", "22048156"),  # Queen — A Day at the Races
+    ("14031557", "3824539"),   # Queen — News of the World
+    ("475606",   "4269045"),   # Queen — Jazz
+    ("455954",   "446814"),    # Queen — The Game
+    ("589920",   "505097"),    # Queen — Hot Space
+    ("4732312",  "36148198"),  # Queen — The Works
+    ("11967456", "25210735"),  # Queen — A Kind of Magic
     ("9452213",  "1203470"),   # Green Day — American Idiot
     ("397167",   "20298550"),  # The Killers — Hot Fuss
     ("1934367",  "9847048"),   # Eagles — Hotel California
@@ -279,6 +301,21 @@ RELEASES = {
     # ── QUEEN ──
     "612780":   ("Queen", "A Night at the Opera (EMTC 103, UK 1975)"),
     "7541569":  ("Queen", "A Night at the Opera half-speed (00602547202697, EU 2015)"),
+    "10130642": ("Queen", "Sheer Heart Attack (EMC 3061, EMI UK 1974)"),
+    "23316872": ("Queen", "A Day at the Races (EMTC 104, EMI UK 1976)"),
+    "22048156": ("Queen", "A Day at the Races (6E-101, Elektra US 1976)"),
+    "14031557": ("Queen", "News of the World (EMA 784, EMI UK 1977)"),
+    "3824539":  ("Queen", "News of the World (6E-112, Elektra US 1977)"),
+    "475606":   ("Queen", "Jazz (EMA 788, EMI UK 1978)"),
+    "4269045":  ("Queen", "Jazz (6E-166, Elektra US 1978)"),
+    "455954":   ("Queen", "The Game (EMA 795, EMI UK 1980)"),
+    "446814":   ("Queen", "The Game (5E-513, Elektra US 1980)"),
+    "589920":   ("Queen", "Hot Space (EMA 797, EMI UK 1982)"),
+    "505097":   ("Queen", "Hot Space (E1-60128, Elektra US 1982)"),
+    "4732312":  ("Queen", "The Works (EMC 2400141, EMI UK 1984) [white label promo]"),
+    "36148198": ("Queen", "The Works (0602547202789, Virgin EMI EU 2023)"),
+    "11967456": ("Queen", "A Kind of Magic (EU 3509, EMI UK 1986)"),
+    "25210735": ("Queen", "A Kind of Magic (D004064601, Hollywood US 2022)"),
 
     # ── AC/DC ──
     "400591":   ("AC/DC", "Back in Black (APLP-046, Australisch origineel 1980)"),
