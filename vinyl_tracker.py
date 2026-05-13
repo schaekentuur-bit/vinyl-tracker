@@ -35,6 +35,7 @@ LISTINGS_CACHE     = "vinyl_listings_cache.json"
 DEALS_SEEN_FILE    = "vinyl_deals_seen.json"
 CACHE_DAYS         = 7   # verkoopdata na X dagen opnieuw ophalen
 MIN_SELLER_RATINGS = 50  # minimaal aantal ratings voor een verkoper
+DEALS_AVG_PCT      = 20  # % onder gemiddelde voor "goede deal" categorie
 PORT               = 8765
 USER_RELEASES_FILE = "user_releases.json"
 
@@ -598,7 +599,10 @@ def _build_release_cards(group_results):
     return cards
 
 def compute_deals(results):
-    """Bereken top deals: listings goedkoper dan laagste historische verkoop (in EUR)."""
+    """Bereken deals in twee tiers:
+    - 'beste': listing onder laagste historische verkoop
+    - 'goed':  listing >= DEALS_AVG_PCT% onder historisch gemiddelde (maar boven minimum)
+    """
     deals = []
     for r in results:
         best_for_release = get_best_listings(r.get("listings", []))
@@ -609,12 +613,26 @@ def compute_deals(results):
             cond_sales = by_cond.get(cond, [])
             if not cond_sales:
                 continue
-            mn        = min(s["price"] for s in cond_sales)        # historisch (assumed EUR)
-            item_eur  = _to_eur(best["price"], best["currency"])    # listing itemprijs in EUR, zonder verzend
-            disc      = (mn - item_eur) / mn * 100
-            if disc > 0:
-                deals.append({"r": r, "cond": cond, "best": best, "mn": mn, "disc": disc})
-    deals.sort(key=lambda x: x["disc"], reverse=True)
+            prices   = [s["price"] for s in cond_sales]
+            mn       = min(prices)
+            avg      = sum(prices) / len(prices)
+            item_eur = _to_eur(best["price"], best["currency"])
+
+            if item_eur < mn:
+                disc = (mn - item_eur) / mn * 100
+                deals.append({"r": r, "cond": cond, "best": best,
+                              "mn": mn, "avg": avg,
+                              "disc": disc, "disc_vs_avg": (avg - item_eur) / avg * 100,
+                              "tier": "beste"})
+            elif item_eur < avg * (1 - DEALS_AVG_PCT / 100):
+                disc_avg = (avg - item_eur) / avg * 100
+                deals.append({"r": r, "cond": cond, "best": best,
+                              "mn": mn, "avg": avg,
+                              "disc": disc_avg, "disc_vs_avg": disc_avg,
+                              "tier": "goed"})
+
+    # Beste eerst, daarna goed; binnen elke tier op kortings-% aflopend
+    deals.sort(key=lambda x: (0 if x["tier"] == "beste" else 1, -x["disc"]))
     return deals
 
 
@@ -650,7 +668,9 @@ def send_deals_email(deals, subject_prefix="Nieuwe deals"):
     for d in deals:
         b        = d["best"]
         tag      = d.get("tag", "NIEUW")
+        tier_lbl = "BESTE" if d.get("tier") == "beste" else "GOED"
         color    = "#10B981" if tag == "NIEUW" else "#F59E0B"
+        tier_color = "#3B82F6" if tier_lbl == "BESTE" else "#8B5CF6"
         eur_tot  = b.get("total_eur", b["price"])
         prev_eur = d.get("prev_total_eur")
         prev     = (f' <span style="color:#94A3B8;font-size:11px">was {_fmt_eur(prev_eur)}</span>'
@@ -661,8 +681,10 @@ def send_deals_email(deals, subject_prefix="Nieuwe deals"):
         rows += f"""
         <tr>
           <td style="padding:10px 12px;border-bottom:1px solid #F1F5F9;white-space:nowrap">
+            <span style="background:{tier_color};color:#fff;font-size:10px;font-weight:700;
+                         padding:2px 7px;border-radius:4px;letter-spacing:.3px">{tier_lbl}</span>
             <span style="background:{color};color:#fff;font-size:10px;font-weight:700;
-                         padding:2px 7px;border-radius:4px;letter-spacing:.3px">{tag}</span>
+                         padding:2px 7px;border-radius:4px;letter-spacing:.3px;margin-left:3px">{tag}</span>
           </td>
           <td style="padding:10px 12px;border-bottom:1px solid #F1F5F9;
                      font-size:12px;color:#64748B;white-space:nowrap">{d["r"]["group"]}</td>
@@ -813,8 +835,12 @@ def build_html(results, static=False):
           <div class="stat-lbl">Met listings</div>
         </div>
         <div class="stat-card stat-card-accent">
-          <div class="stat-val">{len(deals)}</div>
-          <div class="stat-lbl">Actieve deals</div>
+          <div class="stat-val">{sum(1 for d in deals if d["tier"]=="beste")}</div>
+          <div class="stat-lbl">Beste deals</div>
+        </div>
+        <div class="stat-card" style="border-top:3px solid #f59e0b">
+          <div class="stat-val">{sum(1 for d in deals if d["tier"]=="goed")}</div>
+          <div class="stat-lbl">Goede deals</div>
         </div>
       </div>
       <div class="card">
@@ -829,49 +855,67 @@ def build_html(results, static=False):
     </div>"""
 
     # ── Top Deals pagina ───────────────────────────────────────────────────
-    deal_rows = ""
-    for d in deals[:30]:
-        d = dict(d)
-        b  = d["best"]
-        r  = d["r"]
-        mc = b["media"].replace("+","p").replace("-","m")
-        sc = b["sleeve"].replace("+","p").replace("-","m")
-        cc = d["cond"].replace("+","p").replace("-","m")
-        lhref = f"https://www.discogs.com/sell/release/{r['id']}?sort=price%2Casc&limit=50"
-        eur_tot = b.get("total_eur", b["price"])
-        brkdwn  = _shipping_breakdown(b)
-        deal_rows += (
-            f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row">'
-            f'<td><span class="rb-group">{r["group"]}</span></td>'
-            f'<td class="td-title">{r["title"]}</td>'
-            f'<td><span class="badge bd-{cc}">{d["cond"]}</span></td>'
-            f'<td class="td-num"><strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}</td>'
-            f'<td class="td-num">{fmt(d["mn"])}</td>'
-            f'<td class="td-num"><span class="deal-pct">-{d["disc"]:.0f}%</span></td>'
-            f'<td class="td-seller">{b["seller"]} <span class="muted">({b["rating_count"]:,})</span></td>'
-            f'<td><span class="badge bd-{mc}">{b["media"]}</span> <span class="badge bd-{sc}">{b["sleeve"]}</span></td>'
-            f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
-            f'</tr>'
-        )
-    if not deal_rows:
-        deal_rows = '<tr><td colspan="9" class="no-data">Geen deals gevonden.</td></tr>'
+    def _deal_rows_html(tier_deals, ref_label):
+        if not tier_deals:
+            return f'<tr><td colspan="9" class="no-data">Geen deals gevonden.</td></tr>'
+        rows = ""
+        for d in tier_deals:
+            b       = d["best"]
+            r       = d["r"]
+            mc      = b["media"].replace("+","p").replace("-","m")
+            sc      = b["sleeve"].replace("+","p").replace("-","m")
+            cc      = d["cond"].replace("+","p").replace("-","m")
+            lhref   = f"https://www.discogs.com/sell/release/{r['id']}?sort=price%2Casc&limit=50"
+            eur_tot = b.get("total_eur", b["price"])
+            brkdwn  = _shipping_breakdown(b)
+            ref_val = fmt(d["mn"]) if ref_label == "Laagste ooit" else fmt(d["avg"])
+            rows += (
+                f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row">'
+                f'<td><span class="rb-group">{r["group"]}</span></td>'
+                f'<td class="td-title">{r["title"]}</td>'
+                f'<td><span class="badge bd-{cc}">{d["cond"]}</span></td>'
+                f'<td class="td-num"><strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}</td>'
+                f'<td class="td-num">{ref_val}</td>'
+                f'<td class="td-num"><span class="deal-pct">-{d["disc"]:.0f}%</span></td>'
+                f'<td class="td-seller">{b["seller"]} <span class="muted">({b["rating_count"]:,})</span></td>'
+                f'<td><span class="badge bd-{mc}">{b["media"]}</span> <span class="badge bd-{sc}">{b["sleeve"]}</span></td>'
+                f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
+                f'</tr>'
+            )
+        return rows
+
+    def _deal_table(tier_deals, ref_label):
+        return f"""
+        <div class="card" style="margin-bottom:24px">
+          <table class="ov-table">
+            <thead><tr>
+              <th>Artiest</th><th>Release</th><th>Staat</th>
+              <th class="th-r">Listing</th><th class="th-r">{ref_label}</th>
+              <th class="th-r">Korting</th><th>Verkoper</th><th>Disc / Hoes</th><th></th>
+            </tr></thead>
+            <tbody>{_deal_rows_html(tier_deals, ref_label)}</tbody>
+          </table>
+        </div>"""
+
+    beste_deals = [d for d in deals if d["tier"] == "beste"]
+    goede_deals = [d for d in deals if d["tier"] == "goed"]
 
     deals_page = f"""
     <div class="page" id="deals" style="display:none">
       <div class="page-header">
-        <h2>Top Deals</h2>
-        <span class="sub">{now} &nbsp;&middot;&nbsp; listings goedkoper dan laagste historische verkoop &nbsp;&middot;&nbsp; verkopers &ge;{MIN_SELLER_RATINGS} ratings</span>
+        <h2>Deals</h2>
+        <span class="sub">{now} &nbsp;&middot;&nbsp; verkopers &ge;{MIN_SELLER_RATINGS} ratings</span>
       </div>
-      <div class="card">
-        <table class="ov-table">
-          <thead><tr>
-            <th>Artiest</th><th>Release</th><th>Staat</th>
-            <th class="th-r">Listing</th><th class="th-r">Laagste verkoop</th>
-            <th class="th-r">Korting</th><th>Verkoper</th><th>Disc / Hoes</th><th></th>
-          </tr></thead>
-          <tbody>{deal_rows}</tbody>
-        </table>
-      </div>
+      <h3 style="margin:0 0 8px;font-size:15px;color:var(--accent)">
+        &#9650; Beste deals
+        <span style="font-weight:400;color:var(--muted);font-size:12px">— listing onder laagste historische verkoopprijs ({len(beste_deals)})</span>
+      </h3>
+      {_deal_table(beste_deals[:30], "Laagste ooit")}
+      <h3 style="margin:16px 0 8px;font-size:15px;color:#f59e0b">
+        &#9733; Goede deals
+        <span style="font-weight:400;color:var(--muted);font-size:12px">— listing &ge;{DEALS_AVG_PCT}% onder historisch gemiddelde ({len(goede_deals)})</span>
+      </h3>
+      {_deal_table(goede_deals[:30], "Gem. verkoop")}
     </div>"""
 
     # ── Navigatie sidebar ──────────────────────────────────────────────────
@@ -1437,6 +1481,7 @@ def run_server(initial_results, cookies, session):
                 "shipping":  d["best"].get("shipping", 0.0),
                 "total_eur": d["best"].get("total_eur", d["best"]["price"]),
                 "disc":      d["disc"],
+                "tier":      d.get("tier", "beste"),
                 "seller":    d["best"]["seller"],
                 "title":     d["r"]["title"],
                 "group":     d["r"]["group"],

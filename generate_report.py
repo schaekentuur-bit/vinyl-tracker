@@ -62,6 +62,7 @@ save_cache(DEALS_SEEN_FILE, {_deal_key(d): {
     "shipping":  d["best"].get("shipping", 0.0),
     "total_eur": d["best"].get("total_eur", d["best"]["price"]),
     "disc":      d["disc"],
+    "tier":      d.get("tier", "beste"),
     "seller":    d["best"]["seller"],
     "title":     d["r"]["title"],
     "group":     d["r"]["group"],
