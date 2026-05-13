@@ -35,7 +35,22 @@ LISTINGS_CACHE     = "vinyl_listings_cache.json"
 DEALS_SEEN_FILE    = "vinyl_deals_seen.json"
 CACHE_DAYS         = 7   # verkoopdata na X dagen opnieuw ophalen
 MIN_SELLER_RATINGS = 50  # minimaal aantal ratings voor een verkoper
-DEALS_AVG_PCT      = 20  # % onder gemiddelde voor "goede deal" categorie
+
+# Staffel: % onder historisch gemiddelde vereist voor "goede deal"
+# Hogere prijsklasse = lager percentage (want het absolute bedrag is al groter)
+DEALS_AVG_TIERS = [
+    (  30,  25),   # gem. < € 30  → vereist 25% korting
+    (  75,  20),   # gem. € 30–75 → vereist 20% korting
+    ( 200,  15),   # gem. €75–200 → vereist 15% korting
+    (float("inf"), 10),  # gem. > €200  → vereist 10% korting
+]
+
+def _deals_avg_pct(avg_eur: float) -> float:
+    """Geef de vereiste kortingsdrempel terug op basis van gemiddelde prijs."""
+    for ceiling, pct in DEALS_AVG_TIERS:
+        if avg_eur < ceiling:
+            return pct
+    return DEALS_AVG_TIERS[-1][1]
 PORT               = 8765
 USER_RELEASES_FILE = "user_releases.json"
 
@@ -618,18 +633,19 @@ def compute_deals(results):
             avg      = sum(prices) / len(prices)
             item_eur = _to_eur(best["price"], best["currency"])
 
+            threshold = _deals_avg_pct(avg)
             if item_eur < mn:
                 disc = (mn - item_eur) / mn * 100
                 deals.append({"r": r, "cond": cond, "best": best,
                               "mn": mn, "avg": avg,
                               "disc": disc, "disc_vs_avg": (avg - item_eur) / avg * 100,
-                              "tier": "beste"})
-            elif item_eur < avg * (1 - DEALS_AVG_PCT / 100):
+                              "tier": "beste", "threshold": threshold})
+            elif item_eur < avg * (1 - threshold / 100):
                 disc_avg = (avg - item_eur) / avg * 100
                 deals.append({"r": r, "cond": cond, "best": best,
                               "mn": mn, "avg": avg,
                               "disc": disc_avg, "disc_vs_avg": disc_avg,
-                              "tier": "goed"})
+                              "tier": "goed", "threshold": threshold})
 
     # Beste eerst, daarna goed; binnen elke tier op kortings-% aflopend
     deals.sort(key=lambda x: (0 if x["tier"] == "beste" else 1, -x["disc"]))
@@ -913,7 +929,7 @@ def build_html(results, static=False):
       {_deal_table(beste_deals[:30], "Laagste ooit")}
       <h3 style="margin:16px 0 8px;font-size:15px;color:#f59e0b">
         &#9733; Goede deals
-        <span style="font-weight:400;color:var(--muted);font-size:12px">— listing &ge;{DEALS_AVG_PCT}% onder historisch gemiddelde ({len(goede_deals)})</span>
+        <span style="font-weight:400;color:var(--muted);font-size:12px">— listing onder historisch gemiddelde (staffel: &lt;€30→25% / €30–75→20% / €75–200→15% / &gt;€200→10%) ({len(goede_deals)})</span>
       </h3>
       {_deal_table(goede_deals[:30], "Gem. verkoop")}
     </div>"""
