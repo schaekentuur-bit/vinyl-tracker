@@ -757,7 +757,7 @@ _VINYL_PLACEHOLDER_SVG = (
 )
 
 def _render_album_header(artist, album_name, thumb_url=None):
-    """Render de blauwe album-header met cover art boven elke release-blok."""
+    """Render de klikbare album-header als <summary> — maakt het album inklapbaar."""
     if thumb_url:
         img_html = (
             f'<img class="album-cover" src="{thumb_url}" '
@@ -767,13 +767,14 @@ def _render_album_header(artist, album_name, thumb_url=None):
     else:
         img_html = f'<div class="album-cover album-cover-ph">{_VINYL_PLACEHOLDER_SVG}</div>'
     return (
-        f'<div class="album-hdr">'
+        f'<summary class="album-hdr">'
         f'{img_html}'
         f'<div class="album-hdr-text">'
         f'<div class="album-hdr-name">{album_name}</div>'
         f'<div class="album-hdr-artist">{artist}</div>'
         f'</div>'
-        f'</div>'
+        f'<div class="album-hdr-chevron">&#8250;</div>'
+        f'</summary>'
     )
 
 
@@ -897,7 +898,7 @@ def _build_release_cards(group_results, thumbs=None):
             left_html  = _render_single_rb(left_r)
             right_html = _render_single_rb(right_r)
             html += (
-                f'<div class="album-block">'
+                f'<details class="album-block">'
                 f'{header}'
                 f'<div class="album-body">'
                 f'<div class="rb-pair">'
@@ -909,7 +910,7 @@ def _build_release_cards(group_results, thumbs=None):
                 f'{right_html}</div>'
                 f'</div>'
                 f'</div>'
-                f'</div>'
+                f'</details>'
             )
             processed.add(rid)
             processed.add(partner_id)
@@ -918,12 +919,12 @@ def _build_release_cards(group_results, thumbs=None):
             thumb_url  = thumbs.get(rid)
             header     = _render_album_header(r["group"], album_name, thumb_url)
             html += (
-                f'<div class="album-block">'
+                f'<details class="album-block">'
                 f'{header}'
                 f'<div class="album-body">'
                 f'{_render_single_rb(r)}'
                 f'</div>'
-                f'</div>'
+                f'</details>'
             )
             processed.add(rid)
 
@@ -1425,16 +1426,30 @@ def build_html(results, static=False):
   .card{{background:var(--surface);border:1px solid var(--border);border-radius:10px;
          overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04)}}
 
-  /* ── Album blocks (header + cards) ── */
-  .album-block{{margin-bottom:28px}}
-  .album-block:last-child{{margin-bottom:0}}
-  .album-hdr{{
+  /* ── Album blocks (inklapbaar via <details>) ── */
+  details.album-block{{margin-bottom:10px}}
+  details.album-block:last-child{{margin-bottom:0}}
+  /* <summary> = klikbare album-header */
+  details.album-block > summary.album-hdr{{
     display:flex;align-items:center;gap:16px;
-    padding:16px 20px;
+    padding:14px 20px;
     background:linear-gradient(140deg,var(--navy2) 0%,var(--navy) 100%);
     border:1px solid rgba(255,255,255,.07);
+    border-radius:12px;
+    position:relative;overflow:hidden;
+    cursor:pointer;list-style:none;
+    transition:border-radius 0s .18s;
+    -webkit-tap-highlight-color:transparent;
+    user-select:none}}
+  details.album-block > summary.album-hdr::-webkit-details-marker{{display:none}}
+  details.album-block > summary.album-hdr::marker{{display:none}}
+  details.album-block > summary.album-hdr:hover{{
+    background:linear-gradient(140deg,#1f3d73 0%,#132b55 100%)}}
+  details.album-block > summary.album-hdr:active{{opacity:.92}}
+  /* Open-state: hoekige onderkant (verbindt met body) */
+  details.album-block[open] > summary.album-hdr{{
     border-radius:12px 12px 0 0;
-    position:relative;overflow:hidden}}
+    transition:border-radius 0s 0s}}
   .album-hdr::after{{
     content:'';position:absolute;right:16px;top:50%;
     transform:translateY(-50%);
@@ -1457,12 +1472,20 @@ def build_html(results, static=False):
   .album-cover-ph svg{{width:80px;height:80px;display:block}}
   .album-hdr-text{{flex:1;min-width:0;position:relative;z-index:1}}
   .album-hdr-name{{
-    font-size:18px;font-weight:700;color:#fff;
+    font-size:17px;font-weight:700;color:#fff;
     letter-spacing:-.3px;line-height:1.2;
     overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
   .album-hdr-artist{{
     font-size:10.5px;font-weight:700;color:var(--accent);
     text-transform:uppercase;letter-spacing:.9px;margin-top:5px}}
+  /* Pijl-indicator rechtsboven */
+  .album-hdr-chevron{{
+    flex-shrink:0;color:rgba(255,255,255,.45);
+    font-size:22px;font-weight:300;line-height:1;
+    margin-left:4px;position:relative;z-index:1;
+    transition:transform .2s ease}}
+  details.album-block[open] .album-hdr-chevron{{transform:rotate(90deg)}}
+  /* Body (inhoud) — verbonden aan header */
   .album-body{{
     border:1px solid var(--border);border-top:none;
     border-radius:0 0 12px 12px;overflow:hidden;background:var(--bg)}}
@@ -1583,9 +1606,9 @@ def build_html(results, static=False):
     .card{{overflow-x:auto;-webkit-overflow-scrolling:touch}}
     .card table{{min-width:500px}}
     /* Album block mobile */
-    .album-block{{margin-bottom:20px}}
-    .album-hdr{{padding:12px 14px;gap:12px}}
-    .album-hdr::after{{display:none}}
+    details.album-block{{margin-bottom:20px}}
+    details.album-block > summary.album-hdr{{padding:12px 14px;gap:12px}}
+    details.album-block > summary.album-hdr::after{{display:none}}
     .album-cover,.album-cover-ph{{width:60px;height:60px}}
     .album-cover-ph svg{{width:60px;height:60px}}
     .album-hdr-name{{font-size:15px}}
