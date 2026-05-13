@@ -76,6 +76,7 @@ RELEASES = {
 
     # ── MICHAEL JACKSON ──
     "2911293":  ("Michael Jackson", "Thriller (QE 38112, Pitman, US 1982)"),
+    "152946":   ("Michael Jackson", "Thriller (EPC 85930, EU 1982)"),
     "459606":   ("Michael Jackson", "Bad (E 40600, Carrollton, US 1987)"),
 
     # ── METALLICA ──
@@ -89,6 +90,7 @@ RELEASES = {
 
     # ── AC/DC ──
     "400591":   ("AC/DC", "Back in Black (APLP-046, Australisch origineel 1980)"),
+    "1949857":  ("AC/DC", "Back in Black (5107651, EU reissue 2009)"),
     "400587":   ("AC/DC", "Highway to Hell (APLP-040, Australisch origineel 1979)"),
 
     # ── LINKIN PARK ──
@@ -108,6 +110,7 @@ RELEASES = {
 
     # ── KENDRICK LAMAR ──
     "3975953":  ("Kendrick Lamar", "Good Kid M.A.A.D City (B0017695-01, US 2012)"),
+    "10559651": ("Kendrick Lamar", "DAMN. (B0026745-01, US 2017)"),
 
     # ── THE KILLERS ──
     "397167":   ("The Killers", "Hot Fuss (LIZARD011X, blue marbled, UK 2004)"),
@@ -115,6 +118,18 @@ RELEASES = {
     # ── DOE MAAR ──
     "402227":   ("Doe Maar", "Skunk (Kil 19934 Kl, NL 1981)"),
     "382601":   ("Doe Maar", "Doris Day En Andere Stukken (Kil 21032 Kl, NL 1982)"),
+
+    # ── EAGLES ──
+    "1934367":  ("Eagles", "Hotel California (7E-1084, US origineel 1976)"),
+
+    # ── AMY WINEHOUSE ──
+    "2848009":  ("Amy Winehouse", "Back To Black (B0008994-01, US 2006)"),
+
+    # ── BOB MARLEY ──
+    "4418438":  ("Bob Marley", "Legend (0600753030523, EU reissue 2015)"),
+
+    # ── FLEETWOOD MAC ──
+    "526351":   ("Fleetwood Mac", "Rumours (BSK 3010, US origineel 1977)"),
 
     # ── OVERIGE ──
     "12895130": ("Overige", "Flatbush Zombies - Vacation in Hell (clear/black smoke, 2018)"),
@@ -140,6 +155,10 @@ GROUP_GENRES = {
     "Doe Maar":         "Pop",
     "Notorious B.I.G.": "Hip-Hop",
     "Kendrick Lamar":   "Hip-Hop",
+    "Eagles":           "Rock",
+    "Fleetwood Mac":    "Rock",
+    "Amy Winehouse":    "Soul / R&B",
+    "Bob Marley":       "Reggae",
 }
 GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Hip-Hop"]
 
