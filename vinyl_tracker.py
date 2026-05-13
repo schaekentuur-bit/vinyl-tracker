@@ -164,6 +164,14 @@ RELEASE_INFO = {
     "16170729": ("🏆 First pressing", "Originele NL persing 2020 — dit IS de (enige) pressing van Stickmatic."),
     # Elvis Presley
     "13314916": ("🏆 First pressing (EP)", "Originele US RCA Victor-persing 1957 — de eerste editie van de Jailhouse Rock EP (7\", 45 RPM, EPA-4114). Bevat ook Treat Me Nice, I Want to Be Free en Don't Leave Me Now."),
+    # 21 Savage
+    "10597886": ("🏆 Club Edition", "Gelimiteerde genummerde Club Edition US persing 2017 — de meest gezochte Savage Mode variant. Beperkte oplage."),
+    "10752389": ("🎵 Luisterversie", "Standaard US Slaughter Gang-persing 2017 — voor dagelijks afspelen."),
+    "10873523": ("🏆 First pressing", "Originele US Slaughter Gang-persing 2017 (88985466821) — dit IS de first pressing van Issa Album."),
+    "13876606": ("🎵 Luisterversie", "EU reissue 2019 (889854668211) — voor dagelijks afspelen."),
+    "13318697": ("🏆 First pressing", "Originele US Slaughter Gang-persing 2018 (19075923521) — dit IS de first pressing van I Am > I Was."),
+    "15624365": ("🎵 Luisterversie", "EU persing 2019 (19075922121) — voor dagelijks afspelen."),
+    "17277640": ("🏆 First pressing", "Gelimiteerde US Slaughter Gang-persing 2020 (19439818631) — enige officiële vinyluitgave van Savage Mode II."),
 }
 
 # ─── ALBUM PAIRINGS ─────────────────────────────────────────────────────────────
@@ -207,6 +215,10 @@ RELEASE_PAIRS = [
     ("3975953",  "30551209"),  # Kendrick Lamar — GKMC
     ("8814849",  "23398166"),  # Kendrick Lamar — TPAB
     ("10559651", "25683820"),  # Kendrick Lamar — DAMN.
+    # 21 Savage
+    ("10597886", "10752389"),  # 21 Savage — Savage Mode
+    ("10873523", "13876606"),  # 21 Savage — Issa Album
+    ("13318697", "15624365"),  # 21 Savage — I Am > I Was
 ]
 # Snelle lookup: id → partner_id
 _PAIR_MAP = {a: b for a, b in RELEASE_PAIRS} | {b: a for a, b in RELEASE_PAIRS}
@@ -329,6 +341,15 @@ RELEASES = {
 
     # ── ELVIS PRESLEY ──
     "13314916": ("Elvis Presley", "Jailhouse Rock (EP) (EPA-4114, RCA Victor US 1957)"),
+
+    # ── 21 SAVAGE ──
+    "10597886": ("21 Savage", "Savage Mode (Club Edition, Slaughter Gang, US 2017)"),
+    "10752389": ("21 Savage", "Savage Mode (Slaughter Gang, US 2017)"),
+    "10873523": ("21 Savage", "Issa Album (88985466821, Slaughter Gang, US 2017)"),
+    "13876606": ("21 Savage", "Issa Album (889854668211, Slaughter Gang, EU 2019)"),
+    "13318697": ("21 Savage", "I Am > I Was (19075923521, Slaughter Gang, US 2018)"),
+    "15624365": ("21 Savage", "I Am > I Was (19075922121, Slaughter Gang, EU 2019)"),
+    "17277640": ("21 Savage", "Savage Mode II (19439818631, Slaughter Gang, US 2020)"),
 }
 
 # ─── GENRE CATEGORISATIE ──────────────────────────────────────────────────────
@@ -363,6 +384,7 @@ GROUP_GENRES = {
     "Flatbush Zombies":  "Hip-Hop",
     "Beast Coast":       "Hip-Hop",
     "Sticks":            "Hip-Hop",
+    "21 Savage":         "Hip-Hop",
     # Rock & Roll
     "Elvis Presley":     "Rock & Roll",
 }
