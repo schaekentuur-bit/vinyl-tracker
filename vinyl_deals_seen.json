@@ -10,6 +10,17 @@
     "title": "Nevermind (DGC-24425, US origineel 1991)",
     "group": "Nirvana"
   },
+  "470912_VG": {
+    "price": 10.0,
+    "currency": "GBP",
+    "shipping": 11.0,
+    "total_eur": 24.21782201054052,
+    "disc": 57.82336814604577,
+    "tier": "beste",
+    "seller": "slabrecords",
+    "title": "London Calling (CBS CLASH 3, CBS UK 1979, 2LP)",
+    "group": "The Clash"
+  },
   "3183667_VG": {
     "price": 75.0,
     "currency": "CAD",
@@ -20,6 +31,17 @@
     "seller": "deathofvinyl",
     "title": "Nevermind 20th Anniversary (B0015884-01, US 2011)",
     "group": "Nirvana"
+  },
+  "27888051_M": {
+    "price": 34.99,
+    "currency": "CAD",
+    "shipping": 0.0,
+    "total_eur": 21.815574537065903,
+    "disc": 14.415164625084723,
+    "tier": "beste",
+    "seller": "Pusher_de_Vinyles",
+    "title": "Arrival (POLS 272, Polar EU 2022, reissue)",
+    "group": "ABBA"
   },
   "14186441_VG+": {
     "price": 4560.0,
@@ -43,6 +65,39 @@
     "title": "The Infamous (07863 66480-1, US 1995)",
     "group": "Mobb Deep"
   },
+  "676619_VG+": {
+    "price": 45.0,
+    "currency": "EUR",
+    "shipping": 16.0,
+    "total_eur": 61.0,
+    "disc": 32.796439312981306,
+    "tier": "goed",
+    "seller": "SonatineDischi",
+    "title": "All That You Can't Leave Behind (U212 / 524 653-1, Island Records EU 2000)",
+    "group": "U2"
+  },
+  "474703_VG+": {
+    "price": 18000.0,
+    "currency": "JPY",
+    "shipping": 0.0,
+    "total_eur": 97.38678785911377,
+    "disc": 32.60689010556889,
+    "tier": "goed",
+    "seller": "Tokyo_Atari",
+    "title": "Demon Days (07243 873838 1 4, Parlophone UK 2005, 2LP gatefold)",
+    "group": "Gorillaz"
+  },
+  "2048352_NM": {
+    "price": 70.0,
+    "currency": "EUR",
+    "shipping": 20.0,
+    "total_eur": 90.0,
+    "disc": 31.147540983606564,
+    "tier": "goed",
+    "seller": "vinylobus",
+    "title": "Use Your Illusion II (GEF 24420, Geffen US 1991, 2LP)",
+    "group": "Guns N' Roses"
+  },
   "534020_NM": {
     "price": 164.0,
     "currency": "USD",
@@ -53,6 +108,17 @@
     "seller": "circuitbreaker",
     "title": "Hybrid Theory (9 47755-1, US 2001)",
     "group": "Linkin Park"
+  },
+  "470912_VG+": {
+    "price": 40.0,
+    "currency": "GBP",
+    "shipping": 17.5,
+    "total_eur": 66.31070312409905,
+    "disc": 24.794585363725073,
+    "tier": "goed",
+    "seller": "Arpadys2009",
+    "title": "London Calling (CBS CLASH 3, CBS UK 1979, 2LP)",
+    "group": "The Clash"
   },
   "1203470_M": {
     "price": 39.99,
@@ -75,5 +141,60 @@
     "seller": "Grow760",
     "title": "Ready to Die (78612-73000-1, US 1994)",
     "group": "Notorious B.I.G."
+  },
+  "7264539_NM": {
+    "price": 85.0,
+    "currency": "EUR",
+    "shipping": 9.0,
+    "total_eur": 94.0,
+    "disc": 14.013904134650573,
+    "tier": "goed",
+    "seller": "vinsNL",
+    "title": "Beggars Banquet (SKL 4955, Decca UK 1968) [stereo]",
+    "group": "Rolling Stones"
+  },
+  "7541569_M": {
+    "price": 24.3,
+    "currency": "EUR",
+    "shipping": 7.5,
+    "total_eur": 31.8,
+    "disc": 12.235985518775266,
+    "tier": "goed",
+    "seller": "sonic-vinyls",
+    "title": "A Night at the Opera half-speed (00602547202697, EU 2015)",
+    "group": "Queen"
+  },
+  "4126519_VG+": {
+    "price": 10.0,
+    "currency": "GBP",
+    "shipping": 12.9,
+    "total_eur": 26.408958287684662,
+    "disc": 11.192580748045119,
+    "tier": "goed",
+    "seller": "StephenKenny",
+    "title": "Combat Rock (FMLN 2, CBS UK 1982)",
+    "group": "The Clash"
+  },
+  "7801798_VG+": {
+    "price": 55.0,
+    "currency": "EUR",
+    "shipping": 20.0,
+    "total_eur": 75.0,
+    "disc": 10.815812356469197,
+    "tier": "goed",
+    "seller": "Maugof",
+    "title": "Abbey Road (PCS 7088, UK first pressing 1969)",
+    "group": "Beatles"
+  },
+  "375491_VG+": {
+    "price": 80.0,
+    "currency": "EUR",
+    "shipping": 7.49,
+    "total_eur": 87.49,
+    "disc": 5.490291393232343,
+    "tier": "goed",
+    "seller": "RoughTrade_EU",
+    "title": "Blood Sugar Sex Magik (7599-26681-1, EU first pressing 1991)",
+    "group": "RHCP"
   }
 }

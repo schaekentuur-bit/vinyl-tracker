@@ -224,6 +224,22 @@ RELEASE_INFO = {
     "18017281": ("🎵 Luisterversie", "HKM Records NL 2021 (HKM 72036) — 2LP reissue van Vandaag (2000). Bevat November en Vergeate."),
     # Janse Bagge Bend
     "16062321": ("🎵 40 jaar jubileum", "Marlstone Music NL 2020 (L202010) — jubileumalbum op geel/beige vinyl ter ere van 40 jaar Janse Bagge Bend. Bevat Blief Bie De Mam. Inclusief bedrukt binnenhoesje."),
+    # Gorillaz
+    "204021":   ("🏆 First pressing", "Originele EU Parlophone-persing 2001 (7243 531138 1 0) — dit IS de first pressing van Gorillaz. 2LP gatefold met twee bedrukte binnenhoesjes. 23.626 have / 11.524 want."),
+    "20414716": ("🎵 Luisterversie", "EU Parlophone Special Cut 2021 (7243 531138 1 0) — moderne reissue met bijgewerkte labelrechten, ideaal voor dagelijks afspelen."),
+    "474703":   ("🏆 First pressing", "Originele UK Parlophone-persing 2005 (07243 873838 1 4) — dit IS de first pressing van Demon Days. 2LP gatefold, parental advisory sticker op voorkant. Uitzonderlijk: 16.388 want vs 11.025 have."),
+    "32440584": ("🎵 Luisterversie", "EU Parlophone repress (℗ 2017, 0724387383814) — officiële repress, 2LP gatefold, ideaal voor dagelijks afspelen."),
+    # Nirvana (aanvulling)
+    "1073329":  ("🏆 Limited Edition", "US DGC-persing 1993 (DGC-24607) — gelimiteerde Special Edition van In Utero op transparant clear vinyl. 'Special Limited Edition Disc' op de voorkant. 6.505 want vs 4.852 have — uitzonderlijk gezocht."),
+    "1559511":  ("🎵 Luisterversie", "EU Geffen 180g reissue 2008 (0720642453612) — geremasterd, deel van de Back To Black-serie. Inclusief download-voucher."),
+    # The Clash
+    "4126519":  ("🏆 First pressing", "Originele UK CBS-persing 1982 (FMLN 2) — dit IS de first pressing van Combat Rock. Custom CBS-labels, bedrukt binnenhoesje. Vroege exemplaren inclusief poster. Bevat Should I Stay Or Should I Go en Rock The Casbah."),
+    "4914174":  ("🎵 Luisterversie", "EU Columbia 180g reissue 2013 (88725446971) — geremasterd, inclusief bedrukt binnenhoesje met teksten en bandsfoto op dik karton."),
+    "470912":   ("🏆 First pressing", "Originele UK CBS-persing 1979 (CBS CLASH 3) — dit IS de first pressing van London Calling. 2LP met twee bedrukte inserts (28×28cm). 15.762 have / 13.663 want — iconisch album."),
+    "2048710":  ("🎵 Luisterversie", "EU Music On Vinyl 2LP 180g reissue 2009 (MOVLP050) — 30th anniversary reissue, geremasterd, ideaal voor dagelijks afspelen."),
+    # Guns N' Roses (aanvulling)
+    "2048352":  ("🏆 First pressing", "Originele US Geffen-persing 1991 (GEF 24420) — dit IS de first pressing van Use Your Illusion II. 2LP met bedrukte binnenhoesjes. Parental advisory sticker. 4.252 have / 3.227 want."),
+    "25128898": ("🎵 Luisterversie", "EU Geffen/UMe 2LP 180g reissue 2022 (00602445117314) — geremasterd gatefold reissue, ideaal voor dagelijks afspelen."),
     # Madness
     "370989":  ("🎵 Luisterversie", "Originele UK Stiff Records-persing 1982 (HIT-TV1) — de standaard UK-persing van de compilatie Complete Madness. CBS-pressing, gatefold hoes. Bevat House Of Fun, Baggy Trousers en It Must Be Love."),
     "4731834": ("🏆 Collector-editie", "UK Let Them Eat Vinyl reissue 2013 (LETV079LP) — gelimiteerde 2LP-reissue op rood vinyl van Complete Madness. Hoge want-ratio (56%) — zeldzamer dan het origineel."),
@@ -326,6 +342,16 @@ RELEASE_PAIRS = [
     # 10cc
     ("3386133",  "27084564"),  # 10cc — Bloody Tourists
     ("1615490",  "26309384"),  # 10cc — Deceptive Bends
+    # Gorillaz
+    ("204021",   "20414716"),  # Gorillaz — Gorillaz
+    ("474703",   "32440584"),  # Gorillaz — Demon Days
+    # Nirvana (aanvulling)
+    ("1073329",  "1559511"),   # Nirvana — In Utero
+    # The Clash
+    ("4126519",  "4914174"),   # The Clash — Combat Rock
+    ("470912",   "2048710"),   # The Clash — London Calling
+    # Guns N' Roses (aanvulling)
+    ("2048352",  "25128898"),  # Guns N' Roses — Use Your Illusion II
     # ABBA
     ("380614",   "27884982"),  # ABBA — Super Trouper
     ("8688135",  "3105488"),   # ABBA — Voulez-Vous
@@ -549,6 +575,26 @@ RELEASES = {
     "27084564": ("10cc", "Bloody Tourists (UMCLP017, UMC/Mercury UK 2023, 180g)"),
     "1615490":  ("10cc", "Deceptive Bends (9102 502, Mercury UK 1977)"),
     "26309384": ("10cc", "Deceptive Bends (UMCLP016, Mercury UK/EU/US 2023)"),
+
+    # ── GORILLAZ ──
+    "204021":   ("Gorillaz", "Gorillaz (7243 531138 1 0, Parlophone EU 2001, 2LP gatefold)"),
+    "20414716": ("Gorillaz", "Gorillaz (7243 531138 1 0, Parlophone EU 2021, Special Cut)"),
+    "474703":   ("Gorillaz", "Demon Days (07243 873838 1 4, Parlophone UK 2005, 2LP gatefold)"),
+    "32440584": ("Gorillaz", "Demon Days (0724387383814, Parlophone EU repress, 2LP gatefold)"),
+
+    # ── NIRVANA ──
+    "1073329":  ("Nirvana", "In Utero (DGC-24607, DGC US 1993, clear vinyl Limited Edition)"),
+    "1559511":  ("Nirvana", "In Utero (0720642453612, Geffen EU 2008, 180g remastered)"),
+
+    # ── THE CLASH ──
+    "4126519":  ("The Clash", "Combat Rock (FMLN 2, CBS UK 1982)"),
+    "4914174":  ("The Clash", "Combat Rock (88725446971, Columbia EU 2013, 180g)"),
+    "470912":   ("The Clash", "London Calling (CBS CLASH 3, CBS UK 1979, 2LP)"),
+    "2048710":  ("The Clash", "London Calling (MOVLP050, Music On Vinyl EU 2009, 2LP 180g)"),
+
+    # ── GUNS N' ROSES (aanvulling) ──
+    "2048352":  ("Guns N' Roses", "Use Your Illusion II (GEF 24420, Geffen US 1991, 2LP)"),
+    "25128898": ("Guns N' Roses", "Use Your Illusion II (00602445117314, Geffen EU 2022, 2LP 180g)"),
 }
 
 # ─── GENRE CATEGORISATIE ──────────────────────────────────────────────────────
@@ -573,6 +619,7 @@ GROUP_GENRES = {
     "Michael Jackson":   "Pop",
     "Doe Maar":          "Pop",
     "ABBA":              "Pop",
+    "Gorillaz":          "Pop",
     # Soul / R&B
     "Amy Winehouse":     "Soul / R&B",
     # Reggae
@@ -592,6 +639,7 @@ GROUP_GENRES = {
     "Led Zeppelin":      "Rock",
     "The Police":        "Rock",
     "U2":                "Rock",
+    "The Clash":         "Rock",
     # Ska
     "Madness":           "Ska",
     "10cc":              "Rock",
