@@ -164,6 +164,14 @@ RELEASE_INFO = {
     "7753999":  ("🎵 Luisterversie", "Music on Vinyl EU reissue 2015 (MOVLP1463) — kwalitatieve herpers voor dagelijks afspelen."),
     # Sticks
     "16170729": ("🏆 First pressing", "Originele NL persing 2020 — dit IS de (enige) pressing van Stickmatic."),
+    # Rolling Stones
+    "7264539":  ("🏆 First pressing (stereo)", "Originele UK Decca stereo-persing 1968 (SKL 4955) — zeldzaamste en meest gewaardeerde versie van Beggars Banquet."),
+    "1137475":  ("📀 UK mono origineel", "Originele UK Decca mono-persing 1968 (LK 4955) — andere masterband dan stereo, zeer gezocht door audiofilen."),
+    "765072":   ("🏆 First pressing US", "Originele US London Records stereo-persing 1966 (PS 476) — enige versie met Paint It Black op het album."),
+    "6003779":  ("📀 UK origineel", "Originele UK Decca mono-persing 1966 (LK 4786) — andere tracklist: geen Paint It Black maar wel Mother's Little Helper."),
+    "468054":   ("🏆 First pressing US", "Originele US Rolling Stones Records-persing 1981 (COC 16052) — dit IS de first pressing van Tattoo You."),
+    "1931909":  ("📀 UK origineel", "Originele UK Rolling Stones Records-persing 1981 (CUNS 39114) — gelijktijdig uitgebracht, prima luisterversie."),
+    "7435111":  ("🏆 First pressing US", "Originele US London Records stereo-persing 1965 (PS 429) — enige versie met (I Can't Get No) Satisfaction op het album."),
     # Elvis Presley
     "13314916": ("🏆 First pressing (EP)", "Originele US RCA Victor-persing 1957 — de eerste editie van de Jailhouse Rock EP (7\", 45 RPM, EPA-4114). Bevat ook Treat Me Nice, I Want to Be Free en Don't Leave Me Now."),
     # 21 Savage
@@ -218,6 +226,10 @@ RELEASE_PAIRS = [
     ("3975953",  "30551209"),  # Kendrick Lamar — GKMC
     ("8814849",  "23398166"),  # Kendrick Lamar — TPAB
     ("10559651", "25683820"),  # Kendrick Lamar — DAMN.
+    # Rolling Stones
+    ("7264539",  "1137475"),   # Rolling Stones — Beggars Banquet (stereo ↔ mono)
+    ("765072",   "6003779"),   # Rolling Stones — Aftermath (US ↔ UK)
+    ("468054",   "1931909"),   # Rolling Stones — Tattoo You (US ↔ UK)
     # 21 Savage
     ("10597886", "10752389"),  # 21 Savage — Savage Mode
     ("10873523", "13876606"),  # 21 Savage — Issa Album
@@ -344,6 +356,15 @@ RELEASES = {
     # ── STICKS ──
     "16170729": ("Sticks", "Stickmatic (350 405-3, NL 2020)"),
 
+    # ── ROLLING STONES ──
+    "7264539":  ("Rolling Stones", "Beggars Banquet (SKL 4955, Decca UK 1968) [stereo]"),
+    "1137475":  ("Rolling Stones", "Beggars Banquet (LK 4955, Decca UK 1968) [mono]"),
+    "765072":   ("Rolling Stones", "Aftermath (PS 476, London US 1966)"),
+    "6003779":  ("Rolling Stones", "Aftermath (LK 4786, Decca UK 1966)"),
+    "468054":   ("Rolling Stones", "Tattoo You (COC 16052, Rolling Stones Records US 1981)"),
+    "1931909":  ("Rolling Stones", "Tattoo You (CUNS 39114, Rolling Stones Records UK 1981)"),
+    "7435111":  ("Rolling Stones", "Out of Our Heads (PS 429, London US 1965)"),
+
     # ── ELVIS PRESLEY ──
     "13314916": ("Elvis Presley", "Jailhouse Rock (EP) (EPA-4114, RCA Victor US 1957)"),
 
@@ -392,6 +413,7 @@ GROUP_GENRES = {
     "21 Savage":         "Hip-Hop",
     # Rock & Roll
     "Elvis Presley":     "Rock & Roll",
+    "Rolling Stones":    "Rock",
 }
 GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Soul / R&B", "Reggae", "Hip-Hop", "Rock & Roll"]
 
