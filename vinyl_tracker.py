@@ -77,9 +77,10 @@ RELEASE_INFO = {
     "33663000": ("🎁 Limited edition", "Record Store Day 2025 box set — beperkte oplage, goed voor verzamelaars."),
     "12864584": ("🎵 Luisterversie", "Moderne reissue — ideaal om af te spelen zonder origineel te slijten."),
     # RHCP
-    "375491":   ("📀 EU origineel (niet first)", "Originele EU persing 1991 — collector's item, maar de ware first pressing is de US Warner Bros (9 26681-1) die je niet hebt."),
+    "375491":   ("🏆 First pressing", "Originele EU Warner Bros-persing 1991 — BSSM werd niet commercieel op vinyl uitgebracht in de US in 1991; dit IS de first pressing vinyl."),
     "12042641": ("🎵 Luisterversie", "US remaster 2012 — beste keuze voor dagelijks afspelen."),
-    "9899740":  ("📀 EU origineel (niet first)", "Originele EU persing 1999 — collector's waarde, maar US first pressing (Warner Bros. 9362-47386-1) ontbreekt in je collectie."),
+    "14914560": ("🏆 First pressing", "Originele US Warner Bros-persing 1999 — dit IS de first pressing van Californication (catno 9 47386-1)."),
+    "9899740":  ("📀 EU origineel (niet first)", "Originele EU persing 1999 — zelfde catno-reeks maar EU-geperst; de US first pressing zit nu ook in je collectie."),
     "31323387": ("🎁 Jubileumeditie", "25th Anniversary persing 2024 — beperkte oplage, goed geluid."),
     "420718":   ("🏆 First pressing", "Originele US Warner Bros-persing 2002 — dit IS de first pressing van By The Way."),
     "15276024": ("🎵 Luisterversie", "EU reissue 2020 — voor dagelijks gebruik."),
@@ -107,7 +108,8 @@ RELEASE_INFO = {
     "534020":   ("🏆 First pressing", "Originele US Warner Bros-persing 2001 — dit IS de first pressing van Hybrid Theory."),
     "3336797":  ("🏆 First pressing", "Originele US Warner Bros-persing 2003 — dit IS de first pressing van Meteora."),
     # Green Day
-    "1203470":  ("📀 EU origineel (niet first)", "Originele EU Warner persing 2004 — collector's waarde, maar US Reprise first pressing (9362-48723-1) ontbreekt."),
+    "9452213":  ("🏆 First pressing", "Originele US Reprise-persing 2004 — dit IS de first pressing van American Idiot (catno 9362-48777-1)."),
+    "1203470":  ("📀 EU origineel (niet first)", "Originele EU Warner persing 2004 — zelfde catno-reeks maar EU-geperst; de US first pressing zit nu ook in je collectie."),
     # Guns N' Roses
     "383777":   ("🏆 First pressing", "Originele US Allied-persing 1987 — meest gezochte GNR-variant. Topstuk."),
     "1238431":  ("🏆 First pressing", "Originele EU persing met ongecensureerd Robert Williams-artwork 1987 — zeldzame variant."),
@@ -129,6 +131,7 @@ RELEASE_INFO = {
     "2848009":  ("📀 US origineel (niet first)", "Originele US persing 2006 — Back to Black was een UK Island-release, dus de UK pressing geldt als the first pressing."),
     "34780535": ("🏆 First pressing", "Originele UK Island-persing 2006 — dit IS de first pressing van Back to Black."),
     # Bob Marley
+    "12927816": ("🏆 First pressing", "Originele UK Island-persing 1984 — dit IS de first pressing van Legend (catno BMW 1). Stijgende collector's waarde."),
     "4418438":  ("🎵 Luisterversie", "EU reissue compilatie 2015 — veelgeperste plaat, weinig collector's waarde maar geweldig geluid."),
     "3660230":  ("🏆 First pressing", "Originele Jamaicaanse Tuff Gong-persing 1977 — zeldzame authentieke Bob Marley. Topstuk."),
     "65845":    ("🏆 First pressing", "Originele UK Island-persing 1976 — collectors item uit het releasejaar."),
@@ -157,8 +160,9 @@ RELEASES = {
     "12864584": ("Oasis", "Definitely Maybe reissue (RKIDLP70, 2014)"),
 
     # ── RED HOT CHILI PEPPERS ──
-    "375491":   ("RHCP", "Blood Sugar Sex Magik (7599-26681-1, EU 1991)"),
+    "375491":   ("RHCP", "Blood Sugar Sex Magik (7599-26681-1, EU first pressing 1991)"),
     "12042641": ("RHCP", "Blood Sugar Sex Magik (468348-1, US 2012 remaster)"),
+    "14914560": ("RHCP", "Californication (9 47386-1, US first pressing 1999)"),
     "9899740":  ("RHCP", "Californication (9362-47386-1, EU 1999)"),
     "31323387": ("RHCP", "Californication 25th Anniversary (93624843276, 2024)"),
     "420718":   ("RHCP", "By The Way (9 48140-1, US 2002)"),
@@ -194,6 +198,7 @@ RELEASES = {
     "3336797":  ("Linkin Park", "Meteora (48186-1, US 2003)"),
 
     # ── GREEN DAY ──
+    "9452213":  ("Green Day", "American Idiot (9362-48777-1, US first pressing 2004)"),
     "1203470":  ("Green Day", "American Idiot (9362-48777-1, EU 2004)"),
 
     # ── GUNS N' ROSES ──
@@ -224,6 +229,7 @@ RELEASES = {
     "34780535": ("Amy Winehouse", "Back To Black (B0008994-01, Island UK 2006)"),
 
     # ── BOB MARLEY ──
+    "12927816": ("Bob Marley", "Legend (BMW 1, Island UK first pressing 1984)"),
     "4418438":  ("Bob Marley", "Legend (0600753030523, EU reissue 2015)"),
     "3660230":  ("Bob Marley", "Exodus (ILPS 9498, Tuff Gong, Jamaica 1977)"),
     "65845":    ("Bob Marley", "Rastaman Vibration (ILPS 9383, Island UK 1976)"),
@@ -730,20 +736,22 @@ def compute_deals(results):
             cond_sales = by_cond.get(cond, [])
             if not cond_sales:
                 continue
-            prices   = [s["price"] for s in cond_sales]
-            mn       = min(prices)
-            avg      = sum(prices) / len(prices)
-            item_eur = _to_eur(best["price"], best["currency"])
+            prices    = [s["price"] for s in cond_sales]
+            mn        = min(prices)
+            avg       = sum(prices) / len(prices)
+            total_eur = best.get("total_eur") or _to_eur(
+                best["price"] + best.get("shipping", 0.0), best["currency"]
+            )
 
             threshold = _deals_avg_pct(avg)
-            if item_eur < mn:
-                disc = (mn - item_eur) / mn * 100
+            if total_eur < mn:
+                disc = (mn - total_eur) / mn * 100
                 deals.append({"r": r, "cond": cond, "best": best,
                               "mn": mn, "avg": avg,
-                              "disc": disc, "disc_vs_avg": (avg - item_eur) / avg * 100,
+                              "disc": disc, "disc_vs_avg": (avg - total_eur) / avg * 100,
                               "tier": "beste", "threshold": threshold})
-            elif item_eur < avg * (1 - threshold / 100):
-                disc_avg = (avg - item_eur) / avg * 100
+            elif total_eur < avg * (1 - threshold / 100):
+                disc_avg = (avg - total_eur) / avg * 100
                 deals.append({"r": r, "cond": cond, "best": best,
                               "mn": mn, "avg": avg,
                               "disc": disc_avg, "disc_vs_avg": disc_avg,
@@ -851,10 +859,12 @@ def send_deals_email(deals, subject_prefix="Nieuwe deals"):
                        border-bottom:1px solid #E2E8F0">Staat</th>
             <th style="padding:9px 12px;text-align:left;font-size:10px;font-weight:600;
                        text-transform:uppercase;letter-spacing:.4px;color:#64748B;
-                       border-bottom:1px solid #E2E8F0">Prijs</th>
+                       border-bottom:1px solid #E2E8F0"
+                title="Totaalprijs incl. verzending">Prijs incl. verzend</th>
             <th style="padding:9px 12px;text-align:left;font-size:10px;font-weight:600;
                        text-transform:uppercase;letter-spacing:.4px;color:#64748B;
-                       border-bottom:1px solid #E2E8F0">Korting</th>
+                       border-bottom:1px solid #E2E8F0"
+                title="% goedkoper dan historische prijs (excl. verzending)">Korting vs. hist.</th>
             <th style="padding:9px 12px;text-align:left;font-size:10px;font-weight:600;
                        text-transform:uppercase;letter-spacing:.4px;color:#64748B;
                        border-bottom:1px solid #E2E8F0">Verkoper</th>
@@ -1008,8 +1018,8 @@ def build_html(results, static=False):
           <table class="ov-table">
             <thead><tr>
               <th>Artiest</th><th>Release</th><th>Staat</th>
-              <th class="th-r">Listing</th><th class="th-r">{ref_label}</th>
-              <th class="th-r">Korting</th><th>Verkoper</th><th>Disc / Hoes</th><th></th>
+              <th class="th-r" title="Totaalprijs incl. verzending">Listing incl. verzend</th><th class="th-r">{ref_label}</th>
+              <th class="th-r" title="% goedkoper dan historische prijs (excl. verzending)">Korting vs. hist.</th><th>Verkoper</th><th>Disc / Hoes</th><th></th>
             </tr></thead>
             <tbody>{_deal_rows_html(tier_deals, ref_label)}</tbody>
           </table>
@@ -1026,12 +1036,12 @@ def build_html(results, static=False):
       </div>
       <h3 style="margin:0 0 8px;font-size:15px;color:var(--accent)">
         &#9650; Beste deals
-        <span style="font-weight:400;color:var(--muted);font-size:12px">— listing onder laagste historische verkoopprijs ({len(beste_deals)})</span>
+        <span style="font-weight:400;color:var(--muted);font-size:12px">— totaalprijs incl. verzending onder laagste historische verkoopprijs ({len(beste_deals)})</span>
       </h3>
       {_deal_table(beste_deals[:30], "Laagste ooit")}
       <h3 style="margin:16px 0 8px;font-size:15px;color:#f59e0b">
         &#9733; Goede deals
-        <span style="font-weight:400;color:var(--muted);font-size:12px">— listing onder historisch gemiddelde (staffel: &lt;€30→25% / €30–75→20% / €75–200→15% / &gt;€200→10%) ({len(goede_deals)})</span>
+        <span style="font-weight:400;color:var(--muted);font-size:12px">— totaalprijs incl. verzending onder hist. gem. (staffel: &lt;€30→25% / €30–75→20% / €75–200→15% / &gt;€200→10%) ({len(goede_deals)})</span>
       </h3>
       {_deal_table(goede_deals[:30], "Gem. verkoop")}
     </div>"""
@@ -1564,10 +1574,31 @@ def run_server(initial_results, cookies, session):
     state = {"results": initial_results, "refreshing": False}
 
     def _push_to_github():
-        """Push verse cache naar GitHub zodat GitHub Pages automatisch bijwerkt."""
+        """Genereer docs/index.html lokaal en push alles naar GitHub Pages."""
         import subprocess
         repo = os.path.dirname(os.path.abspath(__file__))
-        files = [SALES_CACHE, STATS_CACHE, LISTINGS_CACHE, DEALS_SEEN_FILE, USER_RELEASES_FILE]
+
+        # 1. Genereer docs/index.html vanuit huidige data
+        try:
+            results = state.get("results") or build_from_cache()
+            html = build_html(results, static=True)
+            docs_dir = os.path.join(repo, "docs")
+            os.makedirs(docs_dir, exist_ok=True)
+            with open(os.path.join(docs_dir, "index.html"), "w", encoding="utf-8") as fh:
+                fh.write(html)
+            _log("docs/index.html aangemaakt")
+        except Exception as e:
+            _log(f"HTML genereren mislukt: {e}")
+            return
+
+        # 2. Stage alles wat relevant is
+        files = [
+            "vinyl_tracker.py",
+            "generate_report.py",
+            os.path.join("docs", "index.html"),
+            SALES_CACHE, STATS_CACHE, LISTINGS_CACHE,
+            DEALS_SEEN_FILE, USER_RELEASES_FILE,
+        ]
         existing = [f for f in files if os.path.exists(os.path.join(repo, f))]
         try:
             subprocess.run(["git", "-C", repo, "add"] + existing, check=True,
@@ -1580,9 +1611,12 @@ def run_server(initial_results, cookies, session):
             ts = datetime.now().strftime("%Y-%m-%d %H:%M")
             subprocess.run(["git", "-C", repo, "commit", "-m",
                             f"Lokale refresh {ts}"], check=True, capture_output=True)
+            # Pull --rebase zodat remote commits niet blokkeren
+            subprocess.run(["git", "-C", repo, "pull", "--rebase", "origin", "HEAD"],
+                           check=True, capture_output=True)
             subprocess.run(["git", "-C", repo, "push", "origin", "HEAD"],
                            check=True, capture_output=True)
-            _log("Cache gepushed naar GitHub — live site wordt bijgewerkt")
+            _log("Gepushed naar GitHub — live site is nu bijgewerkt")
         except subprocess.CalledProcessError as e:
             _log(f"GitHub push mislukt: {e.stderr.decode(errors='replace').strip()}")
 
