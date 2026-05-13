@@ -57,10 +57,12 @@ else:
     send_deals_email(new, subject_prefix="Nieuwe deals")
 
 save_cache(DEALS_SEEN_FILE, {_deal_key(d): {
-    "price":    d["best"]["price"],
-    "currency": d["best"]["currency"],
-    "disc":     d["disc"],
-    "seller":   d["best"]["seller"],
-    "title":    d["r"]["title"],
-    "group":    d["r"]["group"],
+    "price":     d["best"]["price"],
+    "currency":  d["best"]["currency"],
+    "shipping":  d["best"].get("shipping", 0.0),
+    "total_eur": d["best"].get("total_eur", d["best"]["price"]),
+    "disc":      d["disc"],
+    "seller":    d["best"]["seller"],
+    "title":     d["r"]["title"],
+    "group":     d["r"]["group"],
 } for d in deals})

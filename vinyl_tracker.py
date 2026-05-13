@@ -159,6 +159,44 @@ CONDITION_ORDER = ["M", "NM", "VG+", "VG", "G+", "G", "F", "P"]
 
 CURRENCY_SYMBOLS = {"EUR": "€", "GBP": "£", "USD": "$"}
 
+_fx_rates: dict = {}
+
+def _get_fx_rates() -> dict:
+    global _fx_rates
+    if _fx_rates:
+        return _fx_rates
+    try:
+        r = std_requests.get("https://api.frankfurter.app/latest", timeout=5)
+        r.raise_for_status()
+        _fx_rates = {**r.json().get("rates", {}), "EUR": 1.0}
+    except Exception:
+        _fx_rates = {"EUR": 1.0, "USD": 1.08, "GBP": 0.86, "CAD": 1.48,
+                     "AUD": 1.65, "CHF": 0.96, "JPY": 163.0, "SEK": 11.4,
+                     "DKK": 7.46, "NOK": 11.8}
+    return _fx_rates
+
+def _to_eur(price: float, currency: str) -> float:
+    """Convert price to EUR. frankfurter rates: 1 EUR = rates[currency]."""
+    return price / _get_fx_rates().get(currency, 1.0)
+
+def _fmt_eur(eur: float) -> str:
+    return f"€ {eur:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+def _shipping_breakdown(best: dict) -> str:
+    """Return parenthesised breakdown string when it adds useful info."""
+    ship     = best.get("shipping", 0.0)
+    currency = best["currency"]
+    price    = best["price"]
+    parts = []
+    if currency != "EUR":
+        parts.append(fmt_listing_price(price, currency))
+    if ship > 0:
+        ship_eur = _to_eur(ship, currency)
+        parts.append(f"+ {_fmt_eur(ship_eur)} verzend")
+    if parts:
+        return f' <span class="muted" style="font-size:11px">({" ".join(parts)})</span>'
+    return ""
+
 # ─── COOKIES ──────────────────────────────────────────────────────────────────
 
 def load_cookies():
@@ -271,11 +309,30 @@ def parse_listings_html(html):
         seller_match = re.search(r'class="star_rating"\s+alt="([^"]+?)\s+rating\s+[\d.]', block)
         seller = seller_match.group(1).strip() if seller_match else "?"
 
+        # Shipping cost (optional; same currency as listing price)
+        ship_match = re.search(
+            r'class="item_shipping[^"]*"[^>]*>.*?\+\s*(?:[€£\$]|[A-Z]{3})?\s*([\d]+(?:[.,][\d]+)?)',
+            block, re.DOTALL
+        )
+        shipping = 0.0
+        if ship_match:
+            raw = ship_match.group(1)
+            if "," in raw and "." not in raw:
+                raw = raw.replace(",", ".")
+            try:
+                shipping = float(raw)
+            except ValueError:
+                shipping = 0.0
+
+        total_eur = _to_eur(price + shipping, currency)
+
         listings.append({
             "media":        media,
             "sleeve":       sleeve,
             "price":        price,
             "currency":     currency,
+            "shipping":     shipping,
+            "total_eur":    total_eur,
             "rating_count": rating_count,
             "seller":       seller,
         })
@@ -284,13 +341,14 @@ def parse_listings_html(html):
 
 
 def get_best_listings(listings):
-    """Cheapest listing per condition from sellers with >= MIN_SELLER_RATINGS."""
+    """Cheapest listing per condition (by EUR total incl. shipping) from sellers with >= MIN_SELLER_RATINGS."""
     best = {}
     for listing in listings:
         if listing["rating_count"] < MIN_SELLER_RATINGS:
             continue
         cond = listing["media"]
-        if cond not in best or listing["price"] < best[cond]["price"]:
+        eur  = listing.get("total_eur", listing["price"])
+        if cond not in best or eur < best[cond].get("total_eur", best[cond]["price"]):
             best[cond] = listing
     return best
 
@@ -443,13 +501,15 @@ def _build_release_cards(group_results):
             )
             best = best_for_release.get(cond)
             if best:
-                mc = best["media"].replace("+","p").replace("-","m")
-                sc = best["sleeve"].replace("+","p").replace("-","m")
-                lhref = f"https://www.discogs.com/sell/release/{r['id']}?sort=price%2Casc&limit=50"
+                mc      = best["media"].replace("+","p").replace("-","m")
+                sc      = best["sleeve"].replace("+","p").replace("-","m")
+                lhref   = f"https://www.discogs.com/sell/release/{r['id']}?sort=price%2Casc&limit=50"
+                eur_tot = best.get("total_eur", best["price"])
+                brkdwn  = _shipping_breakdown(best)
                 best_html = (
                     f'<div class="best-listing">'
                     f'<span class="best-label">Beste listing:</span> '
-                    f'<strong>{fmt_listing_price(best["price"], best["currency"])}</strong>'
+                    f'<strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}'
                     f' &mdash; {best["seller"]} ({best["rating_count"]:,} ratings)'
                     f' | Disc: <span class="badge bd-{mc}">{best["media"]}</span>'
                     f' Hoes: <span class="badge bd-{sc}">{best["sleeve"]}</span>'
@@ -490,7 +550,7 @@ def _build_release_cards(group_results):
     return cards
 
 def compute_deals(results):
-    """Bereken top deals: listings goedkoper dan laagste historische verkoop."""
+    """Bereken top deals: listings goedkoper dan laagste historische verkoop (in EUR)."""
     deals = []
     for r in results:
         best_for_release = get_best_listings(r.get("listings", []))
@@ -501,8 +561,9 @@ def compute_deals(results):
             cond_sales = by_cond.get(cond, [])
             if not cond_sales:
                 continue
-            mn   = min(s["price"] for s in cond_sales)
-            disc = (mn - best["price"]) / mn * 100
+            mn       = min(s["price"] for s in cond_sales)   # historical (assumed EUR)
+            best_eur = best.get("total_eur", best["price"])
+            disc     = (mn - best_eur) / mn * 100
             if disc > 0:
                 deals.append({"r": r, "cond": cond, "best": best, "mn": mn, "disc": disc})
     deals.sort(key=lambda x: x["disc"], reverse=True)
@@ -514,15 +575,16 @@ def _deal_key(d):
 
 
 def find_new_deals(deals, seen):
-    """Geeft deals terug die nieuw zijn of waarvan de prijs >3% gedaald is."""
+    """Geeft deals terug die nieuw zijn of waarvan de EUR-totaalprijs >3% gedaald is."""
     new = []
     for d in deals:
-        key = _deal_key(d)
+        key      = _deal_key(d)
+        curr_eur = d["best"].get("total_eur", d["best"]["price"])
         if key not in seen:
             d = dict(d); d["tag"] = "NIEUW"
             new.append(d)
-        elif d["best"]["price"] < seen[key]["price"] * 0.97:
-            d = dict(d); d["tag"] = "GOEDKOPER"; d["prev_price"] = seen[key]["price"]
+        elif curr_eur < seen[key].get("total_eur", seen[key]["price"]) * 0.97:
+            d = dict(d); d["tag"] = "GOEDKOPER"; d["prev_total_eur"] = seen[key].get("total_eur", seen[key]["price"])
             new.append(d)
     return new
 
@@ -538,13 +600,16 @@ def send_deals_email(deals, subject_prefix="Nieuwe deals"):
     subject = f"Vinyl Tracker — {subject_prefix} ({len(deals)})"
     rows = ""
     for d in deals:
-        b     = d["best"]
-        tag   = d.get("tag", "NIEUW")
-        color = "#10B981" if tag == "NIEUW" else "#F59E0B"
-        prev  = (f' <span style="color:#94A3B8;font-size:11px">was {fmt(d["prev_price"])}</span>'
-                 if "prev_price" in d else "")
-        lhref = (f"https://www.discogs.com/sell/release/{d['r']['id']}"
-                 f"?sort=price%2Casc&limit=50")
+        b        = d["best"]
+        tag      = d.get("tag", "NIEUW")
+        color    = "#10B981" if tag == "NIEUW" else "#F59E0B"
+        eur_tot  = b.get("total_eur", b["price"])
+        prev_eur = d.get("prev_total_eur")
+        prev     = (f' <span style="color:#94A3B8;font-size:11px">was {_fmt_eur(prev_eur)}</span>'
+                    if prev_eur else "")
+        brkdwn   = _shipping_breakdown(b)
+        lhref    = (f"https://www.discogs.com/sell/release/{d['r']['id']}"
+                    f"?sort=price%2Casc&limit=50")
         rows += f"""
         <tr>
           <td style="padding:10px 12px;border-bottom:1px solid #F1F5F9;white-space:nowrap">
@@ -558,7 +623,7 @@ def send_deals_email(deals, subject_prefix="Nieuwe deals"):
                      font-weight:600;white-space:nowrap">{d["cond"]}</td>
           <td style="padding:10px 12px;border-bottom:1px solid #F1F5F9;
                      font-weight:700;white-space:nowrap">
-            {fmt_listing_price(b["price"], b["currency"])}{prev}
+            {_fmt_eur(eur_tot)}{brkdwn}{prev}
           </td>
           <td style="padding:10px 12px;border-bottom:1px solid #F1F5F9;
                      color:#065F46;font-weight:700;white-space:nowrap">-{d["disc"]:.0f}%</td>
@@ -667,8 +732,8 @@ def build_html(results, static=False):
             for c in CONDITION_ORDER if c in by_cond
         ) or '<span class="muted">—</span>'
         all_best = [v for v in best_for_release.values()]
-        cheapest = min(all_best, key=lambda x: x["price"]) if all_best else None
-        listing_cell = fmt_listing_price(cheapest["price"], cheapest["currency"]) if cheapest else "—"
+        cheapest = min(all_best, key=lambda x: x.get("total_eur", x["price"])) if all_best else None
+        listing_cell = _fmt_eur(cheapest.get("total_eur", cheapest["price"])) if cheapest else "—"
         stats = r["stats"]
         gid   = _gid(r["group"])
         home_rows += (
@@ -725,12 +790,14 @@ def build_html(results, static=False):
         sc = b["sleeve"].replace("+","p").replace("-","m")
         cc = d["cond"].replace("+","p").replace("-","m")
         lhref = f"https://www.discogs.com/sell/release/{r['id']}?sort=price%2Casc&limit=50"
+        eur_tot = b.get("total_eur", b["price"])
+        brkdwn  = _shipping_breakdown(b)
         deal_rows += (
             f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row">'
             f'<td><span class="rb-group">{r["group"]}</span></td>'
             f'<td class="td-title">{r["title"]}</td>'
             f'<td><span class="badge bd-{cc}">{d["cond"]}</span></td>'
-            f'<td class="td-num"><strong>{fmt_listing_price(b["price"], b["currency"])}</strong></td>'
+            f'<td class="td-num"><strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}</td>'
             f'<td class="td-num">{fmt(d["mn"])}</td>'
             f'<td class="td-num"><span class="deal-pct">-{d["disc"]:.0f}%</span></td>'
             f'<td class="td-seller">{b["seller"]} <span class="muted">({b["rating_count"]:,})</span></td>'
@@ -1295,12 +1362,14 @@ def run_server(initial_results, cookies, session):
                 new = find_new_deals(deals, seen)
                 send_deals_email(new, subject_prefix="Nieuwe deals")
             save_cache(DEALS_SEEN_FILE, {_deal_key(d): {
-                "price":    d["best"]["price"],
-                "currency": d["best"]["currency"],
-                "disc":     d["disc"],
-                "seller":   d["best"]["seller"],
-                "title":    d["r"]["title"],
-                "group":    d["r"]["group"],
+                "price":     d["best"]["price"],
+                "currency":  d["best"]["currency"],
+                "shipping":  d["best"].get("shipping", 0.0),
+                "total_eur": d["best"].get("total_eur", d["best"]["price"]),
+                "disc":      d["disc"],
+                "seller":    d["best"]["seller"],
+                "title":     d["r"]["title"],
+                "group":     d["r"]["group"],
             } for d in deals})
             _log("Vernieuwen klaar")
             _push_to_github()
