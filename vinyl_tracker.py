@@ -135,6 +135,11 @@ RELEASES = {
     # ── FLEETWOOD MAC ──
     "526351":   ("Fleetwood Mac", "Rumours (BSK 3010, US origineel 1977)"),
 
+    # ── NIRVANA ──
+    "1813006":  ("Nirvana", "Nevermind (DGC-24425, US origineel 1991)"),
+    "7097051":  ("Nirvana", "Nevermind (424 425-1, EU reissue 2015)"),
+    "3183667":  ("Nirvana", "Nevermind 20th Anniversary (B0015884-01, US 2011)"),
+
     # ── FLATBUSH ZOMBIES ──
     "12895130": ("Flatbush Zombies", "Vacation in Hell (clear/black smoke vinyl, 2018)"),
 
@@ -161,6 +166,7 @@ GROUP_GENRES = {
     "Eagles":            "Rock",
     "Fleetwood Mac":     "Rock",
     # Hard Rock / Metal
+    "Nirvana":           "Hard Rock / Metal",
     "AC/DC":             "Hard Rock / Metal",
     "Guns N' Roses":     "Hard Rock / Metal",
     "Metallica":         "Hard Rock / Metal",
