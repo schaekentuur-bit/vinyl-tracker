@@ -150,6 +150,8 @@ RELEASE_INFO = {
     # Fleetwood Mac
     "526351":   ("🏆 First pressing", "Originele US Warner Bros-persing 1977 — sterk gestegen in waarde door TikTok-hype."),
     "3229870":  ("🎵 Luisterversie", "Worldwide reissue 2023 (R1 567113) — moderne herpers voor dagelijks afspelen."),
+    "4065605":  ("🏆 First pressing", "Originele US Warner Bros-persing 1987 (9 25471-1) — dit IS de first pressing van Tango In The Night."),
+    "33831750": ("📀 EU origineel (niet first)", "Originele EU Warner Bros-persing 1987 (WX 65) — gelijktijdig uitgebracht, goede afspeelkopie."),
     # Nirvana
     "1813006":  ("🏆 First pressing", "Originele US DGC-persing 1991 — de meest gewilde Nevermind-versie."),
     "3183667":  ("🎵 Audiofiele versie", "20th Anniversary remaster US 2011 — beste klankkwaliteit voor Nevermind."),
@@ -190,6 +192,7 @@ RELEASE_PAIRS = [
     ("397167",   "20298550"),  # The Killers — Hot Fuss
     ("1934367",  "9847048"),   # Eagles — Hotel California
     ("526351",   "3229870"),   # Fleetwood Mac — Rumours
+    ("4065605",  "33831750"),  # Fleetwood Mac — Tango In The Night
     # Hard Rock / Metal
     ("1813006",  "3183667"),   # Nirvana — Nevermind
     ("400591",   "1949857"),   # AC/DC — Back in Black
@@ -321,6 +324,8 @@ RELEASES = {
     # ── FLEETWOOD MAC ──
     "526351":   ("Fleetwood Mac", "Rumours (BSK 3010, US origineel 1977)"),
     "3229870":  ("Fleetwood Mac", "Rumours (R1 567113, Worldwide reissue 2023)"),
+    "4065605":  ("Fleetwood Mac", "Tango In The Night (9 25471-1, Warner Bros. US 1987)"),
+    "33831750": ("Fleetwood Mac", "Tango In The Night (WX 65, Warner Bros. EU 1987)"),
 
     # ── NIRVANA ──
     "1813006":  ("Nirvana", "Nevermind (DGC-24425, US origineel 1991)"),
