@@ -39,10 +39,10 @@ MIN_SELLER_RATINGS = 50  # minimaal aantal ratings voor een verkoper
 # Staffel: % onder historisch gemiddelde vereist voor "goede deal"
 # Hogere prijsklasse = lager percentage (want het absolute bedrag is al groter)
 DEALS_AVG_TIERS = [
-    (  30,  25),   # gem. < € 30  → vereist 25% korting
-    (  75,  20),   # gem. € 30–75 → vereist 20% korting
-    ( 200,  15),   # gem. €75–200 → vereist 15% korting
-    (float("inf"), 10),  # gem. > €200  → vereist 10% korting
+    (  30,  10),   # gem. < € 30  → vereist 10% korting
+    (  75,  10),   # gem. € 30–75 → vereist 10% korting
+    ( 200,   5),   # gem. €75–200 → vereist  5% korting
+    (float("inf"), 2.5),  # gem. > €200  → vereist 2,5% korting
 ]
 
 def _deals_avg_pct(avg_eur: float) -> float:
