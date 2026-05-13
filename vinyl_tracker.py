@@ -135,36 +135,52 @@ RELEASES = {
     # ── FLEETWOOD MAC ──
     "526351":   ("Fleetwood Mac", "Rumours (BSK 3010, US origineel 1977)"),
 
-    # ── OVERIGE ──
-    "12895130": ("Overige", "Flatbush Zombies - Vacation in Hell (clear/black smoke, 2018)"),
-    "13672908": ("Overige", "Beast Coast - Escape From New York (blue, 2019)"),
-    "223127":   ("Overige", "Mobb Deep - The Infamous (07863 66480-1, US 1995)"),
-    "16170729": ("Overige", "Sticks - Stickmatic (350 405-3, NL 2020)"),
+    # ── FLATBUSH ZOMBIES ──
+    "12895130": ("Flatbush Zombies", "Vacation in Hell (clear/black smoke vinyl, 2018)"),
+
+    # ── BEAST COAST ──
+    "13672908": ("Beast Coast", "Escape From New York (blue vinyl, 2019)"),
+
+    # ── MOBB DEEP ──
+    "223127":   ("Mobb Deep", "The Infamous (07863 66480-1, US 1995)"),
+
+    # ── STICKS ──
+    "16170729": ("Sticks", "Stickmatic (350 405-3, NL 2020)"),
 }
 
 # ─── GENRE CATEGORISATIE ──────────────────────────────────────────────────────
 
 GROUP_GENRES = {
-    "Oasis":            "Rock",
-    "RHCP":             "Rock",
-    "Beatles":          "Rock",
-    "Queen":            "Rock",
-    "Green Day":        "Rock",
-    "The Killers":      "Rock",
-    "AC/DC":            "Hard Rock / Metal",
-    "Guns N' Roses":    "Hard Rock / Metal",
-    "Metallica":        "Hard Rock / Metal",
-    "Linkin Park":      "Hard Rock / Metal",
-    "Michael Jackson":  "Pop",
-    "Doe Maar":         "Pop",
-    "Notorious B.I.G.": "Hip-Hop",
-    "Kendrick Lamar":   "Hip-Hop",
-    "Eagles":           "Rock",
-    "Fleetwood Mac":    "Rock",
-    "Amy Winehouse":    "Soul / R&B",
-    "Bob Marley":       "Reggae",
+    # Rock
+    "Oasis":             "Rock",
+    "RHCP":              "Rock",
+    "Beatles":           "Rock",
+    "Queen":             "Rock",
+    "Green Day":         "Rock",
+    "The Killers":       "Rock",
+    "Eagles":            "Rock",
+    "Fleetwood Mac":     "Rock",
+    # Hard Rock / Metal
+    "AC/DC":             "Hard Rock / Metal",
+    "Guns N' Roses":     "Hard Rock / Metal",
+    "Metallica":         "Hard Rock / Metal",
+    "Linkin Park":       "Hard Rock / Metal",
+    # Pop
+    "Michael Jackson":   "Pop",
+    "Doe Maar":          "Pop",
+    # Soul / R&B
+    "Amy Winehouse":     "Soul / R&B",
+    # Reggae
+    "Bob Marley":        "Reggae",
+    # Hip-Hop
+    "Notorious B.I.G.":  "Hip-Hop",
+    "Kendrick Lamar":    "Hip-Hop",
+    "Mobb Deep":         "Hip-Hop",
+    "Flatbush Zombies":  "Hip-Hop",
+    "Beast Coast":       "Hip-Hop",
+    "Sticks":            "Hip-Hop",
 }
-GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Hip-Hop"]
+GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Soul / R&B", "Reggae", "Hip-Hop"]
 
 # ─── CONDITIES ────────────────────────────────────────────────────────────────
 
