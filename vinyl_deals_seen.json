@@ -1,15 +1,4 @@
 {
-  "1813006_G+": {
-    "price": 120.0,
-    "currency": "AUD",
-    "shipping": 0.0,
-    "total_eur": 73.83706620723603,
-    "disc": 68.73959940421844,
-    "tier": "beste",
-    "seller": "soundsforspace",
-    "title": "Nevermind (DGC-24425, US origineel 1991)",
-    "group": "Nirvana"
-  },
   "3183667_VG": {
     "price": 75.0,
     "currency": "CAD",
@@ -20,17 +9,6 @@
     "seller": "deathofvinyl",
     "title": "Nevermind 20th Anniversary (B0015884-01, US 2011)",
     "group": "Nirvana"
-  },
-  "382601_NM": {
-    "price": 19.0,
-    "currency": "CAD",
-    "shipping": 0.0,
-    "total_eur": 11.810044753853804,
-    "disc": 21.266368307641308,
-    "tier": "beste",
-    "seller": "Sconevinyl",
-    "title": "Doris Day En Andere Stukken (Kil 21032 Kl, NL 1982)",
-    "group": "Doe Maar"
   },
   "14186441_VG+": {
     "price": 4560.0,
@@ -65,39 +43,6 @@
     "title": "Nevermind (424 425-1, EU reissue 2015)",
     "group": "Nirvana"
   },
-  "400587_NM": {
-    "price": 550.0,
-    "currency": "AUD",
-    "shipping": 0.0,
-    "total_eur": 338.41988678316517,
-    "disc": 28.26758882126132,
-    "tier": "goed",
-    "seller": "vicious_sloth",
-    "title": "Highway to Hell (APLP-040, Australisch origineel 1979)",
-    "group": "AC/DC"
-  },
-  "534020_NM": {
-    "price": 164.0,
-    "currency": "USD",
-    "shipping": 28.0,
-    "total_eur": 163.57130686658715,
-    "disc": 25.30888237437629,
-    "tier": "goed",
-    "seller": "circuitbreaker",
-    "title": "Hybrid Theory (9 47755-1, US 2001)",
-    "group": "Linkin Park"
-  },
-  "381988_NM": {
-    "price": 570.0,
-    "currency": "EUR",
-    "shipping": 15.0,
-    "total_eur": 585.0,
-    "disc": 21.253247462230718,
-    "tier": "goed",
-    "seller": "cosmicmusicshop",
-    "title": "Black Album (61113-1, Elektra, US 1991)",
-    "group": "Metallica"
-  },
   "1203470_M": {
     "price": 39.99,
     "currency": "CAD",
@@ -109,28 +54,6 @@
     "title": "American Idiot (9362-48777-1, EU 2004)",
     "group": "Green Day"
   },
-  "400587_VG+": {
-    "price": 350.0,
-    "currency": "AUD",
-    "shipping": 0.0,
-    "total_eur": 215.3581097711051,
-    "disc": 20.037089448113285,
-    "tier": "goed",
-    "seller": "FootscrayRecords",
-    "title": "Highway to Hell (APLP-040, Australisch origineel 1979)",
-    "group": "AC/DC"
-  },
-  "383777_NM": {
-    "price": 380.0,
-    "currency": "USD",
-    "shipping": 99.1,
-    "total_eur": 408.1615266655308,
-    "disc": 18.335028678365187,
-    "tier": "goed",
-    "seller": "cacotone",
-    "title": "Appetite for Destruction (XXXG 24148, US Allied 1987)",
-    "group": "Guns N' Roses"
-  },
   "317356_VG+": {
     "price": 120.0,
     "currency": "EUR",
@@ -141,38 +64,5 @@
     "seller": "Grow760",
     "title": "Ready to Die (78612-73000-1, US 1994)",
     "group": "Notorious B.I.G."
-  },
-  "383777_M": {
-    "price": 569.99,
-    "currency": "USD",
-    "shipping": 25.0,
-    "total_eur": 506.8921451695349,
-    "disc": 17.06556688305353,
-    "tier": "goed",
-    "seller": "Fuji_Records",
-    "title": "Appetite for Destruction (XXXG 24148, US Allied 1987)",
-    "group": "Guns N' Roses"
-  },
-  "517224_VG+": {
-    "price": 160.0,
-    "currency": "GBP",
-    "shipping": 17.0,
-    "total_eur": 203.91000311049157,
-    "disc": 16.998893890013317,
-    "tier": "goed",
-    "seller": "SoundRecordsStroud",
-    "title": "Definitely Maybe (CRE LP 169, Damont, UK 1994)",
-    "group": "Oasis"
-  },
-  "375491_VG+": {
-    "price": 47.0,
-    "currency": "EUR",
-    "shipping": 30.0,
-    "total_eur": 77.0,
-    "disc": 16.821950363228826,
-    "tier": "goed",
-    "seller": "Herk1975",
-    "title": "Blood Sugar Sex Magik (7599-26681-1, EU first pressing 1991)",
-    "group": "RHCP"
   }
 }

@@ -487,6 +487,14 @@ def parse_listings_html(html):
     return listings
 
 
+def _effective_cond(media: str, sleeve: str) -> str:
+    """Neem de slechtste van disc en sleeve als effectieve conditie voor dealvergelijking."""
+    rank = {c: i for i, c in enumerate(CONDITION_ORDER)}
+    r_m = rank.get(media, len(CONDITION_ORDER))
+    r_s = rank.get(sleeve, len(CONDITION_ORDER))
+    return media if r_m >= r_s else sleeve
+
+
 def get_best_listings(listings):
     """Cheapest listing per condition (by EUR total incl. shipping) from sellers with >= MIN_SELLER_RATINGS."""
     best = {}
@@ -733,7 +741,9 @@ def compute_deals(results):
         for s in r["sales"]:
             by_cond.setdefault(s["media"], []).append(s)
         for cond, best in best_for_release.items():
-            cond_sales = by_cond.get(cond, [])
+            # Vergelijk tegen historische prijzen van de SLECHTSTE conditie (disc of sleeve)
+            eff_cond  = _effective_cond(best["media"], best["sleeve"])
+            cond_sales = by_cond.get(eff_cond, [])
             if not cond_sales:
                 continue
             prices    = [s["price"] for s in cond_sales]
@@ -746,13 +756,13 @@ def compute_deals(results):
             threshold = _deals_avg_pct(avg)
             if total_eur < mn:
                 disc = (mn - total_eur) / mn * 100
-                deals.append({"r": r, "cond": cond, "best": best,
+                deals.append({"r": r, "cond": cond, "eff_cond": eff_cond, "best": best,
                               "mn": mn, "avg": avg,
                               "disc": disc, "disc_vs_avg": (avg - total_eur) / avg * 100,
                               "tier": "beste", "threshold": threshold})
             elif total_eur < avg * (1 - threshold / 100):
                 disc_avg = (avg - total_eur) / avg * 100
-                deals.append({"r": r, "cond": cond, "best": best,
+                deals.append({"r": r, "cond": cond, "eff_cond": eff_cond, "best": best,
                               "mn": mn, "avg": avg,
                               "disc": disc_avg, "disc_vs_avg": disc_avg,
                               "tier": "goed", "threshold": threshold})
@@ -816,7 +826,11 @@ def send_deals_email(deals, subject_prefix="Nieuwe deals"):
                      font-size:12px;color:#64748B;white-space:nowrap">{d["r"]["group"]}</td>
           <td style="padding:10px 12px;border-bottom:1px solid #F1F5F9;font-size:13px">{d["r"]["title"]}</td>
           <td style="padding:10px 12px;border-bottom:1px solid #F1F5F9;
-                     font-weight:600;white-space:nowrap">{d["cond"]}</td>
+                     font-weight:600;white-space:nowrap">
+            {b["media"]} / {b["sleeve"]}
+            {f'<span style="font-size:10px;color:#94A3B8">(vergel. als {d.get("eff_cond", d["cond"])})</span>'
+             if d.get("eff_cond") and d["eff_cond"] != b["media"] else ""}
+          </td>
           <td style="padding:10px 12px;border-bottom:1px solid #F1F5F9;
                      font-weight:700;white-space:nowrap">
             {_fmt_eur(eur_tot)}{brkdwn}{prev}
@@ -1001,12 +1015,17 @@ def build_html(results, static=False):
                 f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row">'
                 f'<td><span class="rb-group">{r["group"]}</span></td>'
                 f'<td class="td-title">{r["title"]}</td>'
-                f'<td><span class="badge bd-{cc}">{d["cond"]}</span></td>'
+                f'<td>'
+                f'<span class="badge bd-{mc}">{b["media"]}</span>'
+                f' / <span class="badge bd-{sc}">{b["sleeve"]}</span>'
+                + (f' <span class="muted" style="font-size:10px">(vergel. als {d["eff_cond"]})</span>'
+                   if d.get("eff_cond") and d["eff_cond"] != b["media"] else "")
+                + f'</td>'
                 f'<td class="td-num"><strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}</td>'
                 f'<td class="td-num">{ref_val}</td>'
                 f'<td class="td-num"><span class="deal-pct">-{d["disc"]:.0f}%</span></td>'
                 f'<td class="td-seller">{b["seller"]} <span class="muted">({b["rating_count"]:,})</span></td>'
-                f'<td><span class="badge bd-{mc}">{b["media"]}</span> <span class="badge bd-{sc}">{b["sleeve"]}</span></td>'
+                f'<td></td>'
                 f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
                 f'</tr>'
             )
@@ -1017,9 +1036,9 @@ def build_html(results, static=False):
         <div class="card" style="margin-bottom:24px">
           <table class="ov-table">
             <thead><tr>
-              <th>Artiest</th><th>Release</th><th>Staat</th>
+              <th>Artiest</th><th>Release</th><th>Disc / Hoes</th>
               <th class="th-r" title="Totaalprijs incl. verzending">Listing incl. verzend</th><th class="th-r">{ref_label}</th>
-              <th class="th-r" title="% goedkoper dan historische prijs (excl. verzending)">Korting vs. hist.</th><th>Verkoper</th><th>Disc / Hoes</th><th></th>
+              <th class="th-r" title="% goedkoper dan historische prijs (excl. verzending)">Korting vs. hist.</th><th>Verkoper</th><th></th><th></th>
             </tr></thead>
             <tbody>{_deal_rows_html(tier_deals, ref_label)}</tbody>
           </table>
