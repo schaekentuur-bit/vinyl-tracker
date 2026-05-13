@@ -8,7 +8,7 @@
     "blocked_from_sale": false
   },
   "517224_2026-05-13": {
-    "num_for_sale": 29,
+    "num_for_sale": 30,
     "lowest_price": {
       "value": 183.78,
       "currency": "EUR"
@@ -40,7 +40,7 @@
     "blocked_from_sale": false
   },
   "375491_2026-05-13": {
-    "num_for_sale": 92,
+    "num_for_sale": 93,
     "lowest_price": {
       "value": 36.86,
       "currency": "EUR"
@@ -64,7 +64,7 @@
     "blocked_from_sale": false
   },
   "31323387_2026-05-13": {
-    "num_for_sale": 24,
+    "num_for_sale": 23,
     "lowest_price": {
       "value": 30.58,
       "currency": "EUR"
@@ -80,7 +80,7 @@
     "blocked_from_sale": false
   },
   "15276024_2026-05-13": {
-    "num_for_sale": 179,
+    "num_for_sale": 178,
     "lowest_price": {
       "value": 17.59,
       "currency": "EUR"
@@ -112,7 +112,7 @@
     "blocked_from_sale": false
   },
   "14186441_2026-05-13": {
-    "num_for_sale": 210,
+    "num_for_sale": 208,
     "lowest_price": {
       "value": 19.0,
       "currency": "EUR"
@@ -120,7 +120,7 @@
     "blocked_from_sale": false
   },
   "2911293_2026-05-13": {
-    "num_for_sale": 127,
+    "num_for_sale": 125,
     "lowest_price": {
       "value": 4.5,
       "currency": "EUR"
@@ -160,7 +160,7 @@
     "blocked_from_sale": false
   },
   "612780_2026-05-13": {
-    "num_for_sale": 239,
+    "num_for_sale": 240,
     "lowest_price": {
       "value": 9.19,
       "currency": "EUR"
@@ -208,7 +208,7 @@
     "blocked_from_sale": false
   },
   "1203470_2026-05-13": {
-    "num_for_sale": 236,
+    "num_for_sale": 235,
     "lowest_price": {
       "value": 20.99,
       "currency": "EUR"
@@ -248,7 +248,7 @@
     "blocked_from_sale": false
   },
   "3975953_2026-05-13": {
-    "num_for_sale": 77,
+    "num_for_sale": 76,
     "lowest_price": {
       "value": 8.49,
       "currency": "EUR"
@@ -264,9 +264,9 @@
     "blocked_from_sale": false
   },
   "402227_2026-05-13": {
-    "num_for_sale": 23,
+    "num_for_sale": 22,
     "lowest_price": {
-      "value": 10.0,
+      "value": 14.54,
       "currency": "EUR"
     },
     "blocked_from_sale": false
@@ -307,6 +307,14 @@
     "num_for_sale": 3,
     "lowest_price": {
       "value": 85.0,
+      "currency": "EUR"
+    },
+    "blocked_from_sale": false
+  },
+  "7097051_2026-05-13": {
+    "num_for_sale": 184,
+    "lowest_price": {
+      "value": 22.97,
       "currency": "EUR"
     },
     "blocked_from_sale": false
