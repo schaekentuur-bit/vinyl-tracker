@@ -554,25 +554,29 @@ def load_cookies():
 
 # ─── SCRAPEN VERKOOPHISTORIE ──────────────────────────────────────────────────
 
+_SYMBOL_TO_CURRENCY = {"€": "EUR", "£": "GBP", "$": "USD", "¥": "JPY", "": "EUR"}
+
 def parse_history_html(html):
     pattern = re.compile(
         r'sales-history-row[^"]*"[^>]*>.*?'
         r'data-header="Order Date:">\s*([\d\-]+)\s*</td>.*?'
         r'data-header="Media:">\s*([^<]+?)\s*</td>.*?'
         r'data-header="Sleeve:">\s*([^<]+?)\s*</td>.*?'
-        r'class="price">\s*[€£\$\s]*([\d\.,]+)',
+        r'class="price">\s*([€£\$¥]?)\s*([\d\.,]+)',
         re.DOTALL
     )
     sales = []
     for m in pattern.finditer(html):
-        date, media_raw, sleeve_raw, price_str = m.groups()
-        media  = CONDITION_MAP.get(media_raw.strip(),  media_raw.strip())
-        sleeve = CONDITION_MAP.get(sleeve_raw.strip(), sleeve_raw.strip())
+        date, media_raw, sleeve_raw, symbol, price_str = m.groups()
+        media    = CONDITION_MAP.get(media_raw.strip(),  media_raw.strip())
+        sleeve   = CONDITION_MAP.get(sleeve_raw.strip(), sleeve_raw.strip())
+        currency = _SYMBOL_TO_CURRENCY.get(symbol, "EUR")
         try:
             price = float(price_str.replace(",", ""))
         except ValueError:
             continue
-        sales.append({"date": date.strip(), "media": media, "sleeve": sleeve, "price": price})
+        sales.append({"date": date.strip(), "media": media, "sleeve": sleeve,
+                      "price": price, "currency": currency})
     return sales
 
 def scrape_history(release_id, cookies, session):
@@ -1074,10 +1078,11 @@ def compute_deals(results):
                 cond_sales = by_cond.get(eff_cond, [])
             if not cond_sales:
                 continue
-            prices    = [s["price"] for s in cond_sales]
-            mn        = min(prices)
-            avg       = sum(prices) / len(prices)
-            total_eur = best.get("total_eur") or _to_eur(
+            # Convert historical prices to EUR (old cache entries without "currency" default to EUR)
+            prices_eur = [_to_eur(s["price"], s.get("currency", "EUR")) for s in cond_sales]
+            mn         = min(prices_eur)
+            avg        = sum(prices_eur) / len(prices_eur)
+            total_eur  = best.get("total_eur") or _to_eur(
                 best["price"] + best.get("shipping", 0.0), best["currency"]
             )
 
