@@ -179,6 +179,13 @@ RELEASE_INFO = {
     "7753999":  ("🎵 Luisterversie", "Music on Vinyl EU reissue 2015 (MOVLP1463) — kwalitatieve herpers voor dagelijks afspelen."),
     # Sticks
     "16170729": ("🏆 First pressing", "Originele NL persing 2020 — dit IS de (enige) pressing van Stickmatic."),
+    # The Police
+    "5305755":  ("🏆 First pressing", "Originele UK A&M-persing 1978 (AMLH 68502) — dit IS de first pressing van Outlandos d'Amour."),
+    "13549135": ("🎵 Luisterversie", "US A&M remaster 2018 (676325-1) — voor dagelijks afspelen."),
+    "11827033": ("🏆 First pressing", "Originele UK A&M-persing 1979 (AMLH 64792) — dit IS de first pressing van Reggatta de Blanc."),
+    "3363252":  ("🎵 Luisterversie", "EU A&M reissue 2008 (0082839479219) — voor dagelijks afspelen."),
+    "3214829":  ("🏆 First pressing", "Originele UK A&M-persing 1983 (AMLX 63735) — dit IS de first pressing van Synchronicity."),
+    "31334893": ("🎵 Luisterversie", "Worldwide A&M remaster 2024 (558 217-9) — voor dagelijks afspelen."),
     # Led Zeppelin
     "2893139":  ("🏆 First pressing", "Originele UK Atlantic-persing 1971 (2401012) — dit IS de first pressing van Led Zeppelin IV. Een van de meest iconische platen aller tijden."),
     "22645229": ("🎵 Luisterversie", "US Atlantic remaster 2022 (8122-79657-7) — 180g gatefold reissue, ideaal voor dagelijks afspelen."),
@@ -251,6 +258,10 @@ RELEASE_PAIRS = [
     ("3975953",  "30551209"),  # Kendrick Lamar — GKMC
     ("8814849",  "23398166"),  # Kendrick Lamar — TPAB
     ("10559651", "25683820"),  # Kendrick Lamar — DAMN.
+    # The Police
+    ("5305755",  "13549135"),  # The Police — Outlandos d'Amour
+    ("11827033", "3363252"),   # The Police — Reggatta de Blanc
+    ("3214829",  "31334893"),  # The Police — Synchronicity
     # Led Zeppelin
     ("2893139",  "22645229"),  # Led Zeppelin — IV
     # Rolling Stones
@@ -398,6 +409,14 @@ RELEASES = {
     # ── STICKS ──
     "16170729": ("Sticks", "Stickmatic (350 405-3, NL 2020)"),
 
+    # ── THE POLICE ──
+    "5305755":  ("The Police", "Outlandos d'Amour (AMLH 68502, A&M UK 1978)"),
+    "13549135": ("The Police", "Outlandos d'Amour (676325-1, A&M US 2018 remaster)"),
+    "11827033": ("The Police", "Reggatta de Blanc (AMLH 64792, A&M UK 1979)"),
+    "3363252":  ("The Police", "Reggatta de Blanc (0082839479219, A&M EU 2008)"),
+    "3214829":  ("The Police", "Synchronicity (AMLX 63735, A&M UK 1983)"),
+    "31334893": ("The Police", "Synchronicity (558 217-9, A&M Worldwide 2024 remaster)"),
+
     # ── LED ZEPPELIN ──
     "2893139":  ("Led Zeppelin", "Led Zeppelin IV (2401012, Atlantic UK 1971)"),
     "22645229": ("Led Zeppelin", "Led Zeppelin IV (8122-79657-7, Atlantic US 2022 remaster)"),
@@ -461,6 +480,7 @@ GROUP_GENRES = {
     "Elvis Presley":     "Rock & Roll",
     "Rolling Stones":    "Rock",
     "Led Zeppelin":      "Rock",
+    "The Police":        "Rock",
 }
 GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Soul / R&B", "Reggae", "Hip-Hop", "Rock & Roll"]
 
