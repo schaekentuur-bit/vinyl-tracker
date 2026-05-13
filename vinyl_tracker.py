@@ -700,7 +700,9 @@ def _effective_cond(media: str, sleeve: str) -> str:
 
 
 def get_best_listings(listings):
-    """Cheapest listing per condition (by EUR total incl. shipping) from sellers with >= MIN_SELLER_RATINGS."""
+    """Cheapest listing per EFFECTIVE condition (disc vs sleeve, worst wins) from sellers with >= MIN_SELLER_RATINGS.
+    Grouping by effective condition ensures a VG+ disc with VG sleeve competes in the VG bucket,
+    not the VG+ bucket where it would be compared against (higher) VG+ historical prices."""
     best = {}
     for listing in listings:
         if listing["rating_count"] < MIN_SELLER_RATINGS:
@@ -709,9 +711,9 @@ def get_best_listings(listings):
         if "total_eur" not in listing:
             listing = dict(listing)
             listing["total_eur"] = _to_eur(listing["price"] + listing.get("shipping", 0.0), listing["currency"])
-        cond = listing["media"]
-        if cond not in best or listing["total_eur"] < best[cond]["total_eur"]:
-            best[cond] = listing
+        eff = _effective_cond(listing["media"], listing["sleeve"])
+        if eff not in best or listing["total_eur"] < best[eff]["total_eur"]:
+            best[eff] = listing
     return best
 
 
@@ -1069,13 +1071,10 @@ def compute_deals(results):
         for s in r["sales"]:
             by_cond.setdefault(s["media"], []).append(s)
         for cond, best in best_for_release.items():
-            # Vergelijk tegen historische prijzen van de SLECHTSTE conditie (disc of sleeve).
-            # Fallback naar disc-conditie als er geen sales zijn voor de eff_cond.
-            eff_cond   = _effective_cond(best["media"], best["sleeve"])
-            cond_sales = by_cond.get(eff_cond, [])
-            if not cond_sales:
-                eff_cond   = cond   # fallback naar disc-conditie
-                cond_sales = by_cond.get(eff_cond, [])
+            # cond is al de effectieve conditie (slechtste van disc/sleeve), zie get_best_listings.
+            # Sla eff_cond op voor weergave (bijv. "(vergel. als VG)" badge in HTML).
+            eff_cond   = _effective_cond(best["media"], best["sleeve"])  # == cond
+            cond_sales = by_cond.get(cond, [])
             if not cond_sales:
                 continue
             # Convert historical prices to EUR (old cache entries without "currency" default to EUR)
