@@ -53,6 +53,7 @@ def _deals_avg_pct(avg_eur: float) -> float:
     return DEALS_AVG_TIERS[-1][1]
 PORT               = 8765
 USER_RELEASES_FILE = "user_releases.json"
+THUMB_CACHE        = "vinyl_thumb_cache.json"
 
 EMAIL_FROM = os.getenv("EMAIL_FROM", "").lstrip("﻿").strip()
 EMAIL_TO   = os.getenv("EMAIL_TO",   "").lstrip("﻿").strip()
@@ -639,6 +640,25 @@ def get_market_stats(release_id):
     except Exception:
         return {}
 
+def get_release_thumb(release_id):
+    """Haal album-cover thumbnail URL op via Discogs API (gecached in THUMB_CACHE)."""
+    try:
+        r = std_requests.get(
+            f"https://api.discogs.com/releases/{release_id}",
+            headers=DISCOGS_HEADERS, timeout=10
+        )
+        if r.status_code == 200:
+            data = r.json()
+            thumb = data.get("thumb", "")
+            if not thumb:
+                imgs = data.get("images", [])
+                if imgs:
+                    thumb = imgs[0].get("uri150", "") or imgs[0].get("uri", "")
+            return thumb
+    except Exception:
+        pass
+    return ""
+
 def scrape_listings_api(release_id):
     """Listings ophalen via officiële Discogs API — werkt ook vanuit GitHub Actions."""
     try:
@@ -710,6 +730,51 @@ _BADGE_MAP = {
     "📀 EU origineel (niet first)":  "rb-badge-missing",
     "📀 US origineel (niet first)":  "rb-badge-missing",
 }
+
+def _album_name(title_str):
+    """Extract 'Album Name' from 'Album Name (pressing info)' format."""
+    idx = title_str.find(" (")
+    return title_str[:idx] if idx > 0 else title_str
+
+def _pressing_info(title_str):
+    """Extract 'pressing info' from 'Album Name (pressing info)' format."""
+    start = title_str.find(" (")
+    if start > 0 and title_str.endswith(")"):
+        return title_str[start + 2:-1]
+    return title_str
+
+_VINYL_PLACEHOLDER_SVG = (
+    '<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">'
+    '<circle cx="40" cy="40" r="40" fill="#0d1a2e"/>'
+    '<circle cx="40" cy="40" r="32" fill="#111827"/>'
+    '<circle cx="40" cy="40" r="28" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="1.5"/>'
+    '<circle cx="40" cy="40" r="23" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1.5"/>'
+    '<circle cx="40" cy="40" r="18" fill="none" stroke="rgba(255,255,255,.05)" stroke-width="1.5"/>'
+    '<circle cx="40" cy="40" r="13" fill="none" stroke="rgba(255,255,255,.04)" stroke-width="1.5"/>'
+    '<circle cx="40" cy="40" r="8" fill="#0d1a2e"/>'
+    '<circle cx="40" cy="40" r="3.5" fill="#1f2937"/>'
+    '</svg>'
+)
+
+def _render_album_header(artist, album_name, thumb_url=None):
+    """Render de blauwe album-header met cover art boven elke release-blok."""
+    if thumb_url:
+        img_html = (
+            f'<img class="album-cover" src="{thumb_url}" '
+            f'alt="{album_name}" width="80" height="80" loading="lazy">'
+        )
+    else:
+        img_html = f'<div class="album-cover album-cover-ph">{_VINYL_PLACEHOLDER_SVG}</div>'
+    return (
+        f'<div class="album-hdr">'
+        f'{img_html}'
+        f'<div class="album-hdr-text">'
+        f'<div class="album-hdr-name">{album_name}</div>'
+        f'<div class="album-hdr-artist">{artist}</div>'
+        f'</div>'
+        f'</div>'
+    )
+
 
 def _render_single_rb(r):
     """Render één release card (<div class='rb'>)."""
@@ -793,9 +858,11 @@ def _render_single_rb(r):
         badge_html = ""
         desc_html  = ""
 
+    pressing = _pressing_info(r["title"])
+
     return (
         f'<div class="rb">'
-        f'<div class="rb-head"><span class="rb-title">{r["title"]}</span>{badge_html}</div>'
+        f'<div class="rb-head"><span class="rb-title">{pressing}</span>{badge_html}</div>'
         f'{desc_html}'
         f'<p class="market">{market}</p>'
         f'<div class="conds">{cond_blocks}</div>'
@@ -803,9 +870,10 @@ def _render_single_rb(r):
     )
 
 
-def _build_release_cards(group_results):
-    """Render release cards; gepaarde releases (belegging + luister) naast elkaar."""
-    by_id = {r["id"]: r for r in group_results}
+def _build_release_cards(group_results, thumbs=None):
+    """Render release cards met album-headers; gepaarde releases naast elkaar."""
+    thumbs = thumbs or {}
+    by_id  = {r["id"]: r for r in group_results}
     processed = set()
     html = ""
 
@@ -816,28 +884,46 @@ def _build_release_cards(group_results):
 
         partner_id = _PAIR_MAP.get(rid)
         if partner_id and partner_id in by_id:
-            # Bepaal welke links (belegging) en welke rechts (luisteren) staat
             if rid in _LEFT_IDS:
                 left_r, right_r = r, by_id[partner_id]
             else:
                 left_r, right_r = by_id[partner_id], r
 
+            album_name = _album_name(left_r["title"])
+            thumb_url  = thumbs.get(left_r["id"]) or thumbs.get(right_r["id"])
+            header     = _render_album_header(left_r["group"], album_name, thumb_url)
+
             left_html  = _render_single_rb(left_r)
             right_html = _render_single_rb(right_r)
             html += (
+                f'<div class="album-block">'
+                f'{header}'
+                f'<div class="album-body">'
                 f'<div class="rb-pair">'
                 f'<div class="rb-pair-col">'
-                f'<div class="rb-pair-role rb-role-invest">💎 Belegging</div>'
+                f'<div class="rb-pair-role rb-role-invest">&#9830; Belegging</div>'
                 f'{left_html}</div>'
                 f'<div class="rb-pair-col">'
-                f'<div class="rb-pair-role rb-role-listen">🎧 Luisteren</div>'
+                f'<div class="rb-pair-role rb-role-listen">&#9834; Luisteren</div>'
                 f'{right_html}</div>'
+                f'</div>'
+                f'</div>'
                 f'</div>'
             )
             processed.add(rid)
             processed.add(partner_id)
         else:
-            html += _render_single_rb(r)
+            album_name = _album_name(r["title"])
+            thumb_url  = thumbs.get(rid)
+            header     = _render_album_header(r["group"], album_name, thumb_url)
+            html += (
+                f'<div class="album-block">'
+                f'{header}'
+                f'<div class="album-body">'
+                f'{_render_single_rb(r)}'
+                f'</div>'
+                f'</div>'
+            )
             processed.add(rid)
 
     return html
@@ -1030,6 +1116,7 @@ def send_deals_email(deals, subject_prefix="Nieuwe deals"):
 def build_html(results, static=False):
     now    = datetime.now().strftime("%d/%m/%Y %H:%M")
     groups = list(dict.fromkeys(r["group"] for r in results))
+    thumbs = load_cache(THUMB_CACHE)
 
     # ── Top Deals berekening (nodig voor home stats) ───────────────────────
     deals = compute_deals(results)
@@ -1038,7 +1125,7 @@ def build_html(results, static=False):
     artist_pages = ""
     for group in groups:
         gresult = [r for r in results if r["group"] == group]
-        cards   = _build_release_cards(gresult)
+        cards   = _build_release_cards(gresult, thumbs)
         artist_pages += f"""
         <div class="page" id="{_gid(group)}" style="display:none">
           <div class="page-header">
@@ -1337,16 +1424,62 @@ def build_html(results, static=False):
   .card{{background:var(--surface);border:1px solid var(--border);border-radius:10px;
          overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04)}}
 
+  /* ── Album blocks (header + cards) ── */
+  .album-block{{margin-bottom:28px}}
+  .album-block:last-child{{margin-bottom:0}}
+  .album-hdr{{
+    display:flex;align-items:center;gap:16px;
+    padding:16px 20px;
+    background:linear-gradient(140deg,var(--navy2) 0%,var(--navy) 100%);
+    border:1px solid rgba(255,255,255,.07);
+    border-radius:12px 12px 0 0;
+    position:relative;overflow:hidden}}
+  .album-hdr::after{{
+    content:'';position:absolute;right:16px;top:50%;
+    transform:translateY(-50%);
+    width:100px;height:100px;border-radius:50%;pointer-events:none;
+    background:transparent;
+    box-shadow:
+      inset 0 0 0 1px rgba(255,255,255,.06),
+      0 0 0 12px rgba(255,255,255,.04),
+      0 0 0 24px rgba(255,255,255,.03),
+      0 0 0 36px rgba(255,255,255,.02)}}
+  .album-cover{{
+    width:80px;height:80px;border-radius:8px;object-fit:cover;flex-shrink:0;
+    box-shadow:0 4px 16px rgba(0,0,0,.55),0 0 0 2px rgba(255,255,255,.12);
+    position:relative;z-index:1}}
+  .album-cover-ph{{
+    width:80px;height:80px;border-radius:8px;flex-shrink:0;
+    background:#0d1a2e;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 4px 16px rgba(0,0,0,.55);
+    position:relative;z-index:1;overflow:hidden}}
+  .album-cover-ph svg{{width:80px;height:80px;display:block}}
+  .album-hdr-text{{flex:1;min-width:0;position:relative;z-index:1}}
+  .album-hdr-name{{
+    font-size:18px;font-weight:700;color:#fff;
+    letter-spacing:-.3px;line-height:1.2;
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+  .album-hdr-artist{{
+    font-size:10.5px;font-weight:700;color:var(--accent);
+    text-transform:uppercase;letter-spacing:.9px;margin-top:5px}}
+  .album-body{{
+    border:1px solid var(--border);border-top:none;
+    border-radius:0 0 12px 12px;overflow:hidden;background:var(--bg)}}
+  .album-body > .rb{{
+    margin-bottom:0;border-radius:0;border:none;
+    border-bottom:1px solid var(--border)}}
+  .album-body > .rb:last-child{{border-bottom:none}}
+
   /* ── Release cards ── */
   .rb{{background:var(--surface);border:1px solid var(--border);border-radius:10px;
        padding:18px 20px;margin-bottom:12px;
        box-shadow:0 1px 3px rgba(0,0,0,.04)}}
-  .rb-head{{display:flex;align-items:center;gap:8px;margin-bottom:6px}}
+  .rb-head{{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}}
   .rb-group{{background:var(--navy);color:#fff;font-size:10px;font-weight:700;
              padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.5px;
              white-space:nowrap}}
-  .rb-title{{font-size:15px;font-weight:600;color:var(--text)}}
-  .rb-badge{{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:middle;white-space:nowrap}}
+  .rb-title{{font-size:13.5px;font-weight:600;color:var(--muted);line-height:1.3}}
+  .rb-badge{{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:99px;margin-left:4px;vertical-align:middle;white-space:nowrap}}
   .rb-badge-first{{background:#fef3c7;color:#92400e}}
   .rb-badge-listen{{background:#d1fae5;color:#065f46}}
   .rb-badge-limited{{background:#ede9fe;color:#4c1d95}}
@@ -1354,13 +1487,19 @@ def build_html(results, static=False):
   .rb-badge-missing{{background:#fff7ed;color:#9a3412}}
   .rb-desc{{font-size:12px;color:var(--muted);margin:2px 0 8px;line-height:1.4}}
   /* ── Pair layout ── */
-  .rb-pair{{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}}
-  .rb-pair-col{{flex:1;min-width:0;display:flex;flex-direction:column}}
-  .rb-pair-col .rb{{margin-bottom:0;border-radius:0 0 10px 10px;flex:1}}
-  .rb-pair-role{{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;
-                 padding:5px 14px;border-radius:10px 10px 0 0;border:1px solid transparent}}
-  .rb-role-invest{{background:#fef3c7;color:#92400e;border-color:#fde68a}}
-  .rb-role-listen{{background:#d1fae5;color:#065f46;border-color:#a7f3d0}}
+  .rb-pair{{display:flex;gap:0;align-items:stretch}}
+  .rb-pair-col{{flex:1;min-width:0;display:flex;flex-direction:column;
+               border-right:1px solid var(--border)}}
+  .rb-pair-col:last-child{{border-right:none}}
+  .rb-pair-col .rb{{margin-bottom:0;border-radius:0;border:none;
+                    border-top:1px solid var(--border);flex:1}}
+  .rb-pair-col .rb:first-child{{border-top:none}}
+  .rb-pair-role{{
+    font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;
+    padding:6px 16px;border-bottom:1px solid transparent;
+    flex-shrink:0}}
+  .rb-role-invest{{background:#fef9ec;color:#92400e;border-color:#fde68a}}
+  .rb-role-listen{{background:#f0fdf4;color:#065f46;border-color:#bbf7d0}}
   .market{{font-size:12px;color:var(--muted);margin-bottom:14px}}
   .market a{{color:#3B82F6;text-decoration:none}}
   .market a:hover{{text-decoration:underline}}
@@ -1433,7 +1572,7 @@ def build_html(results, static=False):
           -webkit-overflow-scrolling:touch;width:100%}}
     .topbar{{padding:10px 12px;gap:6px}}
     .topbar .btn,.topbar a.btn{{font-size:11.5px;padding:6px 10px}}
-    .page{{padding:16px 12px 52px}}
+    .page{{padding:14px 12px 52px}}
     h2{{font-size:17px}}
     .sub{{font-size:11px}}
     .page-header{{flex-wrap:wrap;gap:4px}}
@@ -1442,14 +1581,25 @@ def build_html(results, static=False):
     .stat-val{{font-size:20px}}
     .card{{overflow-x:auto;-webkit-overflow-scrolling:touch}}
     .card table{{min-width:500px}}
-    .rb{{padding:14px 12px;overflow-x:auto;-webkit-overflow-scrolling:touch}}
+    /* Album block mobile */
+    .album-block{{margin-bottom:20px}}
+    .album-hdr{{padding:12px 14px;gap:12px}}
+    .album-hdr::after{{display:none}}
+    .album-cover,.album-cover-ph{{width:60px;height:60px}}
+    .album-cover-ph svg{{width:60px;height:60px}}
+    .album-hdr-name{{font-size:15px}}
+    /* Pair stacks vertically on mobile */
     .rb-pair{{flex-direction:column}}
+    .rb-pair-col{{border-right:none;border-bottom:1px solid var(--border)}}
+    .rb-pair-col:last-child{{border-bottom:none}}
+    .rb-pair-col .rb{{border-top:1px solid var(--border)}}
+    .rb{{padding:14px 12px;overflow-x:auto;-webkit-overflow-scrolling:touch}}
     .conds{{flex-direction:column}}
     .cb{{min-width:0;width:100%}}
     .cb table{{min-width:280px}}
     .best-listing{{font-size:11px}}
     .market{{font-size:11.5px}}
-    .rb-title{{font-size:14px}}
+    .rb-title{{font-size:13px}}
     .td-title{{max-width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
     .nav-item{{padding:12px 16px;font-size:13.5px;min-height:44px}}
     .nav-genre summary{{padding:12px 16px;min-height:44px}}
@@ -1700,6 +1850,20 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
             "listings": raw_listings,
         })
 
+    # Thumbnails ophalen (eenmalig, permanent gecached — covers veranderen niet)
+    thumb_cache = load_cache(THUMB_CACHE)
+    updated = False
+    for res in results:
+        rid = res["id"]
+        if not thumb_cache.get(rid):
+            print(f"  Thumbnail: {res['group']} — {_album_name(res['title'])}")
+            thumb = get_release_thumb(rid)
+            thumb_cache[rid] = thumb
+            updated = True
+            time.sleep(0.4)
+    if updated:
+        save_cache(THUMB_CACHE, thumb_cache)
+
     return results
 
 # ─── LOKALE SERVER ─────────────────────────────────────────────────────────────
@@ -1742,7 +1906,7 @@ def run_server(initial_results, cookies, session):
             "generate_report.py",
             os.path.join("docs", "index.html"),
             SALES_CACHE, STATS_CACHE, LISTINGS_CACHE,
-            DEALS_SEEN_FILE, USER_RELEASES_FILE,
+            DEALS_SEEN_FILE, USER_RELEASES_FILE, THUMB_CACHE,
         ]
         existing = [f for f in files if os.path.exists(os.path.join(repo, f))]
         try:
