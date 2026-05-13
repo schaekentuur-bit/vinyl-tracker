@@ -162,6 +162,8 @@ RELEASE_INFO = {
     "7753999":  ("🎵 Luisterversie", "Music on Vinyl EU reissue 2015 (MOVLP1463) — kwalitatieve herpers voor dagelijks afspelen."),
     # Sticks
     "16170729": ("🏆 First pressing", "Originele NL persing 2020 — dit IS de (enige) pressing van Stickmatic."),
+    # Elvis Presley
+    "13314916": ("🏆 First pressing (EP)", "Originele US RCA Victor-persing 1957 — de eerste editie van de Jailhouse Rock EP (7\", 45 RPM, EPA-4114). Bevat ook Treat Me Nice, I Want to Be Free en Don't Leave Me Now."),
 }
 
 # ─── ALBUM PAIRINGS ─────────────────────────────────────────────────────────────
@@ -324,6 +326,9 @@ RELEASES = {
 
     # ── STICKS ──
     "16170729": ("Sticks", "Stickmatic (350 405-3, NL 2020)"),
+
+    # ── ELVIS PRESLEY ──
+    "13314916": ("Elvis Presley", "Jailhouse Rock (EP) (EPA-4114, RCA Victor US 1957)"),
 }
 
 # ─── GENRE CATEGORISATIE ──────────────────────────────────────────────────────
@@ -358,8 +363,10 @@ GROUP_GENRES = {
     "Flatbush Zombies":  "Hip-Hop",
     "Beast Coast":       "Hip-Hop",
     "Sticks":            "Hip-Hop",
+    # Rock & Roll
+    "Elvis Presley":     "Rock & Roll",
 }
-GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Soul / R&B", "Reggae", "Hip-Hop"]
+GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Soul / R&B", "Reggae", "Hip-Hop", "Rock & Roll"]
 
 # ─── CONDITIES ────────────────────────────────────────────────────────────────
 
