@@ -217,6 +217,36 @@ RELEASE_INFO = {
     "10395824": ("🎵 Luisterversie", "EU Island Records 30th Anniversary reissue 2017 (5749844) — geremasterd 180g vinyl, ideaal voor dagelijks afspelen."),
     "676619":   ("🏆 First pressing", "Originele EU Island Records-persing 2000 (U212 / 524 653-1) — dit IS de first pressing van All That You Can't Leave Behind. Matte hoes met 16-pagina's boekje en ansichtkaart. Bevat Beautiful Day."),
     "11846916": ("🎵 Luisterversie", "EU/UK/US Island Records remaster 2018 (5796988) — 180g reissue, ideaal voor dagelijks afspelen."),
+    # Rowwen Hèze
+    "15500018": ("🏆 RSD-editie", "HKM Records NL 2020 (HKM 72031) — gelimiteerde Record Store Day-persing op rood vinyl (45 RPM) van het debuutalbum Blieve Loepe. Bevat Limburg."),
+    "26032708": ("🎵 Luisterversie", "HKM Records NL 2023 (HKM 72031) — standaard reissue van Blieve Loepe (1990). Bevat Limburg. Ideaal voor dagelijks afspelen."),
+    "15969889": ("🎵 Luisterversie", "HKM Records NL 2020 (HKM 72032) — 2LP reissue van Boem (1991). Bevat Bestel Mar en De Peel In Brand."),
+    "18017281": ("🎵 Luisterversie", "HKM Records NL 2021 (HKM 72036) — 2LP reissue van Vandaag (2000). Bevat November en Vergeate."),
+    # Janse Bagge Bend
+    "16062321": ("🎵 40 jaar jubileum", "Marlstone Music NL 2020 (L202010) — jubileumalbum op geel/beige vinyl ter ere van 40 jaar Janse Bagge Bend. Bevat Blief Bie De Mam. Inclusief bedrukt binnenhoesje."),
+    # Madness
+    "370989":  ("🎵 Luisterversie", "Originele UK Stiff Records-persing 1982 (HIT-TV1) — de standaard UK-persing van de compilatie Complete Madness. CBS-pressing, gatefold hoes. Bevat House Of Fun, Baggy Trousers en It Must Be Love."),
+    "4731834": ("🏆 Collector-editie", "UK Let Them Eat Vinyl reissue 2013 (LETV079LP) — gelimiteerde 2LP-reissue op rood vinyl van Complete Madness. Hoge want-ratio (56%) — zeldzamer dan het origineel."),
+    "401145":  ("🏆 First pressing", "Originele UK Stiff Records-persing 1982 (SEEZ 46) — dit IS de first pressing van The Rise & Fall. Gatefold met embossed bandnaam op de voorkant. CBS-pressing. Bevat Our House en Tomorrow's (Just Another Day)."),
+    "378607":  ("🎵 Luisterversie", "West-Duitsland Stiff Records-persing 1982 (6.25422 / SEEZ 46) — gatefold, meest beschikbare versie (2902 have), ideaal voor dagelijks afspelen."),
+    # ABBA
+    "380614":   ("🏆 First pressing", "Originele Zweedse Polar-persing 1980 (POLS 322) — dit IS de first pressing van Super Trouper. Hard-papieren binnenhoesje met teksten. Locked groove aan het einde van The Way Old Friends Do. Bevat Super Trouper en The Winner Takes It All."),
+    "27884982": ("🎵 Luisterversie", "EU Polar 180g reissue 2022 (POLS 322 / 0602445509089) — geremasterd, ideaal voor dagelijks afspelen."),
+    "8688135":  ("🏆 First pressing", "Originele Zweedse Polar-persing 1979 (POLS 292) — dit IS de first pressing van Voulez-Vous. Bevat Voulez-Vous, Chiquitita, Does Your Mother Know en Gimme! Gimme! Gimme!"),
+    "3105488":  ("🎵 Luisterversie", "EU Polar 180g reissue 2011 (POLS 292) — geremasterd, ideaal voor dagelijks afspelen."),
+    "441165":   ("🏆 First pressing", "Originele Zweedse Polar-persing 1976 (POLS 272) — dit IS de first pressing van Arrival. Uitzonderlijk gezocht: 16.085 have / 1.605 want. Bevat Dancing Queen, Fernando en Money Money Money."),
+    "27888051": ("🎵 Luisterversie", "EU Polar reissue 2022 (POLS 272 / 0602445509126) — geremasterd, ideaal voor dagelijks afspelen."),
+    "20031742": ("🏆 First pressing", "Originele Zweedse Polar-persing 1975 (POLS 262) — dit IS de first pressing van ABBA. Bevat I Do I Do I Do I Do I Do, S.O.S. en Mamma Mia."),
+    "3105226":  ("🎵 Luisterversie", "EU Polar 180g reissue 2011 (POLS 262 / 00602527346496) — geremasterd, ideaal voor dagelijks afspelen."),
+    "4475809":  ("🏆 First pressing", "Originele Zweedse Polar-persing 1977 (POLS 282) — dit IS de first pressing van The Album. Bevat Take A Chance On Me, The Name Of The Game en Eagle."),
+    "3102070":  ("🎵 Luisterversie", "EU Polar 180g reissue 2011 (POLS 282 / 00602527346519) — geremasterd, inclusief download-voucher op vroege exemplaren."),
+    "9535494":  ("🏆 First pressing", "Originele Zweedse Polar-persing 1981 (POLS 342) — dit IS de first pressing van The Visitors. Locked groove aan het einde van Like An Angel Passing Through My Room. Bevat One Of Us en Head Over Heels."),
+    "3102140":  ("🎵 Luisterversie", "EU Polar 180g reissue 2011 (POLS 342) — geremasterd, ideaal voor dagelijks afspelen. Zonder locked groove."),
+    # 10cc
+    "3386133": ("🏆 First pressing", "Originele UK Mercury-persing 1978 (9102 503) — dit IS de first pressing van Bloody Tourists. Gatefold met picture labels en bedrukt binnenhoesje. Bevat Dreadlock Holiday."),
+    "27084564":("🎵 Luisterversie", "UK UMC/Mercury reissue 2023 (UMCLP017) — 180g gatefold reissue, ideaal voor dagelijks afspelen."),
+    "1615490": ("🏆 First pressing", "Originele UK Mercury-persing 1977 (9102 502) — dit IS de first pressing van Deceptive Bends. Gatefold met bedrukt binnenhoesje. Bevat The Things We Do For Love en Good Morning Judge."),
+    "26309384":("🎵 Luisterversie", "UK/EU/US Mercury reissue 2023 (UMCLP016) — gatefold reissue, ideaal voor dagelijks afspelen."),
 }
 
 # ─── ALBUM PAIRINGS ─────────────────────────────────────────────────────────────
@@ -288,6 +318,21 @@ RELEASE_PAIRS = [
     # U2
     ("10456142", "10395824"),  # U2 — The Joshua Tree
     ("676619",   "11846916"),  # U2 — All That You Can't Leave Behind
+    # Rowwen Hèze
+    ("15500018", "26032708"),  # Rowwen Hèze — Blieve Loepe
+    # Madness
+    ("4731834",  "370989"),    # Madness — Complete Madness
+    ("401145",   "378607"),    # Madness — The Rise & Fall
+    # 10cc
+    ("3386133",  "27084564"),  # 10cc — Bloody Tourists
+    ("1615490",  "26309384"),  # 10cc — Deceptive Bends
+    # ABBA
+    ("380614",   "27884982"),  # ABBA — Super Trouper
+    ("8688135",  "3105488"),   # ABBA — Voulez-Vous
+    ("441165",   "27888051"),  # ABBA — Arrival
+    ("20031742", "3105226"),   # ABBA — ABBA
+    ("4475809",  "3102070"),   # ABBA — The Album
+    ("9535494",  "3102140"),   # ABBA — The Visitors
 ]
 # Snelle lookup: id → partner_id
 _PAIR_MAP = {a: b for a, b in RELEASE_PAIRS} | {b: a for a, b in RELEASE_PAIRS}
@@ -469,6 +514,41 @@ RELEASES = {
     "10395824": ("U2", "The Joshua Tree (5749844, Island Records EU 2017, 30th Anniversary)"),
     "676619":   ("U2", "All That You Can't Leave Behind (U212 / 524 653-1, Island Records EU 2000)"),
     "11846916": ("U2", "All That You Can't Leave Behind (5796988, Island Records EU 2018 remaster)"),
+
+    # ── ROWWEN HÈZE ──
+    "15500018": ("Rowwen Hèze", "Blieve Loepe (HKM 72031, HKM NL 2020, RSD rood vinyl 45RPM)"),
+    "26032708": ("Rowwen Hèze", "Blieve Loepe (HKM 72031, HKM NL 2023, reissue)"),
+    "15969889": ("Rowwen Hèze", "Boem (HKM 72032, HKM NL 2020, 2LP)"),
+    "18017281": ("Rowwen Hèze", "Vandaag (HKM 72036, HKM NL 2021, 2LP reissue)"),
+
+    # ── JANSE BAGGE BEND ──
+    "16062321": ("Janse Bagge Bend", "Veërtig (L202010, Marlstone Music NL 2020, geel vinyl)"),
+
+    # ── MADNESS ──
+    "370989":  ("Madness", "Complete Madness (HIT-TV1, Stiff Records UK 1982)"),
+    "4731834": ("Madness", "Complete Madness (LETV079LP, Let Them Eat Vinyl UK 2013, 2LP rood vinyl)"),
+    "401145":  ("Madness", "The Rise & Fall (SEEZ 46, Stiff Records UK 1982)"),
+    "378607":  ("Madness", "The Rise & Fall (6.25422, Stiff Records DE 1982)"),
+
+    # ── ABBA ──
+    "380614":   ("ABBA", "Super Trouper (POLS 322, Polar SE 1980)"),
+    "27884982": ("ABBA", "Super Trouper (POLS 322, Polar EU 2022, 180g reissue)"),
+    "8688135":  ("ABBA", "Voulez-Vous (POLS 292, Polar SE 1979)"),
+    "3105488":  ("ABBA", "Voulez-Vous (POLS 292, Polar EU 2011, 180g reissue)"),
+    "441165":   ("ABBA", "Arrival (POLS 272, Polar SE 1976)"),
+    "27888051": ("ABBA", "Arrival (POLS 272, Polar EU 2022, reissue)"),
+    "20031742": ("ABBA", "ABBA (POLS 262, Polar SE 1975)"),
+    "3105226":  ("ABBA", "ABBA (POLS 262, Polar EU 2011, 180g reissue)"),
+    "4475809":  ("ABBA", "The Album (POLS 282, Polar SE 1977)"),
+    "3102070":  ("ABBA", "The Album (POLS 282, Polar EU 2011, 180g reissue)"),
+    "9535494":  ("ABBA", "The Visitors (POLS 342, Polar SE 1981)"),
+    "3102140":  ("ABBA", "The Visitors (POLS 342, Polar EU 2011, 180g reissue)"),
+
+    # ── 10CC ──
+    "3386133":  ("10cc", "Bloody Tourists (9102 503, Mercury UK 1978)"),
+    "27084564": ("10cc", "Bloody Tourists (UMCLP017, UMC/Mercury UK 2023, 180g)"),
+    "1615490":  ("10cc", "Deceptive Bends (9102 502, Mercury UK 1977)"),
+    "26309384": ("10cc", "Deceptive Bends (UMCLP016, Mercury UK/EU/US 2023)"),
 }
 
 # ─── GENRE CATEGORISATIE ──────────────────────────────────────────────────────
@@ -492,6 +572,7 @@ GROUP_GENRES = {
     # Pop
     "Michael Jackson":   "Pop",
     "Doe Maar":          "Pop",
+    "ABBA":              "Pop",
     # Soul / R&B
     "Amy Winehouse":     "Soul / R&B",
     # Reggae
@@ -511,8 +592,14 @@ GROUP_GENRES = {
     "Led Zeppelin":      "Rock",
     "The Police":        "Rock",
     "U2":                "Rock",
+    # Ska
+    "Madness":           "Ska",
+    "10cc":              "Rock",
+    # Nederlandstalig
+    "Rowwen Hèze":       "Nederlandstalig",
+    "Janse Bagge Bend":  "Nederlandstalig",
 }
-GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Soul / R&B", "Reggae", "Hip-Hop", "Rock & Roll"]
+GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Soul / R&B", "Reggae", "Ska", "Hip-Hop", "Rock & Roll", "Nederlandstalig"]
 
 # ─── CONDITIES ────────────────────────────────────────────────────────────────
 
