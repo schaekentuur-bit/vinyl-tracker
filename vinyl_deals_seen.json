@@ -10,17 +10,6 @@
     "title": "Nevermind (DGC-24425, US origineel 1991)",
     "group": "Nirvana"
   },
-  "7097051_NM": {
-    "price": 22.0,
-    "currency": "GBP",
-    "shipping": 14.5,
-    "total_eur": 42.04923792956465,
-    "disc": 39.74144995404984,
-    "tier": "beste",
-    "seller": "mrgrandprix",
-    "title": "Nevermind (424 425-1, EU reissue 2015)",
-    "group": "Nirvana"
-  },
   "3183667_VG": {
     "price": 75.0,
     "currency": "CAD",
@@ -31,39 +20,6 @@
     "seller": "deathofvinyl",
     "title": "Nevermind 20th Anniversary (B0015884-01, US 2011)",
     "group": "Nirvana"
-  },
-  "612780_VG": {
-    "price": 8.0,
-    "currency": "GBP",
-    "shipping": 9.7,
-    "total_eur": 20.391000311049158,
-    "disc": 38.55819115314754,
-    "tier": "beste",
-    "seller": "wibetribe",
-    "title": "A Night at the Opera (EMTC 103, UK 1975)",
-    "group": "Queen"
-  },
-  "223127_VG+": {
-    "price": 70.0,
-    "currency": "USD",
-    "shipping": 33.0,
-    "total_eur": 87.74919066280457,
-    "disc": 35.97920311850789,
-    "tier": "beste",
-    "seller": "EatRecords",
-    "title": "The Infamous (07863 66480-1, US 1995)",
-    "group": "Mobb Deep"
-  },
-  "459606_G+": {
-    "price": 20.0,
-    "currency": "USD",
-    "shipping": 30.0,
-    "total_eur": 42.59669449650707,
-    "disc": 28.408916812593155,
-    "tier": "beste",
-    "seller": "royaltsound",
-    "title": "Bad (E 40600, Carrollton, US 1987)",
-    "group": "Michael Jackson"
   },
   "382601_NM": {
     "price": 19.0,
@@ -87,159 +43,27 @@
     "title": "Abbey Road 50th Anniversary (0602577915123, 2019)",
     "group": "Beatles"
   },
-  "375491_VG+": {
-    "price": 47.0,
-    "currency": "EUR",
-    "shipping": 30.0,
-    "total_eur": 77.0,
-    "disc": 6.0,
+  "223127_VG+": {
+    "price": 70.0,
+    "currency": "USD",
+    "shipping": 33.0,
+    "total_eur": 87.74919066280457,
+    "disc": 5.797970302947332,
     "tier": "beste",
-    "seller": "Herk1975",
-    "title": "Blood Sugar Sex Magik (7599-26681-1, EU 1991)",
-    "group": "RHCP"
-  },
-  "1949857_VG+": {
-    "price": 19.11,
-    "currency": "EUR",
-    "shipping": 10.0,
-    "total_eur": 29.11,
-    "disc": 4.40220110055027,
-    "tier": "beste",
-    "seller": "Best-Kept-Records",
-    "title": "Back in Black (5107651, EU reissue 2009)",
-    "group": "AC/DC"
-  },
-  "223127_NM": {
-    "price": 150.0,
-    "currency": "EUR",
-    "shipping": 20.0,
-    "total_eur": 170.0,
-    "disc": 1.9607843137254901,
-    "tier": "beste",
-    "seller": "zimpala",
+    "seller": "EatRecords",
     "title": "The Infamous (07863 66480-1, US 1995)",
     "group": "Mobb Deep"
   },
-  "459606_VG+": {
-    "price": 15.0,
-    "currency": "USD",
-    "shipping": 28.0,
-    "total_eur": 36.63315726699608,
-    "disc": 58.41103804321502,
-    "tier": "goed",
-    "seller": "circuitbreaker",
-    "title": "Bad (E 40600, Carrollton, US 1987)",
-    "group": "Michael Jackson"
-  },
-  "2911293_VG+": {
-    "price": 20.0,
-    "currency": "USD",
-    "shipping": 30.0,
-    "total_eur": 42.59669449650707,
-    "disc": 49.05521944344701,
-    "tier": "goed",
-    "seller": "RevC",
-    "title": "Thriller (QE 38112, Pitman, US 1982)",
-    "group": "Michael Jackson"
-  },
-  "65845_VG": {
-    "price": 2.0,
-    "currency": "EUR",
-    "shipping": 2.0,
-    "total_eur": 4.0,
-    "disc": 47.340705634544506,
-    "tier": "goed",
-    "seller": "TurntableRoom",
-    "title": "Rastaman Vibration (ILPS 9383, Island UK 1976)",
-    "group": "Bob Marley"
-  },
-  "2911293_VG": {
-    "price": 16.98,
-    "currency": "USD",
-    "shipping": 25.5,
-    "total_eur": 36.190151644232415,
-    "disc": 38.213187609124176,
-    "tier": "goed",
-    "seller": "drbossman",
-    "title": "Thriller (QE 38112, Pitman, US 1982)",
-    "group": "Michael Jackson"
-  },
-  "534020_NM": {
-    "price": 164.0,
-    "currency": "USD",
-    "shipping": 28.0,
-    "total_eur": 163.57130686658715,
-    "disc": 36.20133702811308,
-    "tier": "goed",
-    "seller": "circuitbreaker",
-    "title": "Hybrid Theory (9 47755-1, US 2001)",
-    "group": "Linkin Park"
-  },
-  "383777_NM": {
-    "price": 380.0,
-    "currency": "USD",
-    "shipping": 99.1,
-    "total_eur": 408.1615266655308,
-    "disc": 35.22711521139381,
-    "tier": "goed",
-    "seller": "cacotone",
-    "title": "Appetite for Destruction (XXXG 24148, US Allied 1987)",
-    "group": "Guns N' Roses"
-  },
-  "13672908_M": {
-    "price": 60.0,
-    "currency": "USD",
-    "shipping": 34.0,
-    "total_eur": 80.0817856534333,
-    "disc": 34.93284576859873,
-    "tier": "goed",
-    "seller": "salzersrecords",
-    "title": "Escape From New York (blue vinyl, 2019)",
-    "group": "Beast Coast"
-  },
-  "7801798_VG+": {
-    "price": 55.0,
-    "currency": "EUR",
-    "shipping": 20.0,
-    "total_eur": 75.0,
-    "disc": 34.598262394744076,
-    "tier": "goed",
-    "seller": "Maugof",
-    "title": "Abbey Road (PCS 7088, UK first pressing 1969)",
-    "group": "Beatles"
-  },
-  "7541569_M": {
-    "price": 24.3,
-    "currency": "EUR",
-    "shipping": 7.5,
-    "total_eur": 31.8,
-    "disc": 32.93504553793204,
-    "tier": "goed",
-    "seller": "sonic-vinyls",
-    "title": "A Night at the Opera half-speed (00602547202697, EU 2015)",
-    "group": "Queen"
-  },
-  "1238431_VG+": {
-    "price": 40.0,
-    "currency": "EUR",
-    "shipping": 15.0,
-    "total_eur": 55.0,
-    "disc": 32.12218007586344,
-    "tier": "goed",
-    "seller": "cosmicmusicshop",
-    "title": "Appetite for Destruction (924 148-1, EU uncensored 1987)",
-    "group": "Guns N' Roses"
-  },
-  "317356_VG+": {
-    "price": 120.0,
-    "currency": "EUR",
-    "shipping": 19.9,
-    "total_eur": 139.9,
-    "disc": 29.690017610046514,
-    "tier": "goed",
-    "seller": "Grow760",
-    "title": "Ready to Die (78612-73000-1, US 1994)",
-    "group": "Notorious B.I.G."
+  "7097051_NM": {
+    "price": 22.0,
+    "currency": "GBP",
+    "shipping": 14.5,
+    "total_eur": 42.04923792956465,
+    "disc": 0.02558742376451508,
+    "tier": "beste",
+    "seller": "mrgrandprix",
+    "title": "Nevermind (424 425-1, EU reissue 2015)",
+    "group": "Nirvana"
   },
   "400587_NM": {
     "price": 550.0,
@@ -252,34 +76,23 @@
     "title": "Highway to Hell (APLP-040, Australisch origineel 1979)",
     "group": "AC/DC"
   },
-  "612780_VG+": {
-    "price": 18.0,
-    "currency": "GBP",
-    "shipping": 12.5,
-    "total_eur": 35.137034434293746,
-    "disc": 28.130534059860018,
+  "534020_NM": {
+    "price": 164.0,
+    "currency": "USD",
+    "shipping": 28.0,
+    "total_eur": 163.57130686658715,
+    "disc": 25.30888237437629,
     "tier": "goed",
-    "seller": "annab4028",
-    "title": "A Night at the Opera (EMTC 103, UK 1975)",
-    "group": "Queen"
-  },
-  "517224_VG+": {
-    "price": 160.0,
-    "currency": "GBP",
-    "shipping": 17.0,
-    "total_eur": 203.91000311049157,
-    "disc": 24.97075153899508,
-    "tier": "goed",
-    "seller": "SoundRecordsStroud",
-    "title": "Definitely Maybe (CRE LP 169, Damont, UK 1994)",
-    "group": "Oasis"
+    "seller": "circuitbreaker",
+    "title": "Hybrid Theory (9 47755-1, US 2001)",
+    "group": "Linkin Park"
   },
   "381988_NM": {
     "price": 570.0,
     "currency": "EUR",
     "shipping": 15.0,
     "total_eur": 585.0,
-    "disc": 23.27239496319916,
+    "disc": 21.253247462230718,
     "tier": "goed",
     "seller": "cosmicmusicshop",
     "title": "Black Album (61113-1, Elektra, US 1991)",
@@ -296,28 +109,6 @@
     "title": "American Idiot (9362-48777-1, EU 2004)",
     "group": "Green Day"
   },
-  "439599_VG+": {
-    "price": 90.0,
-    "currency": "EUR",
-    "shipping": 14.0,
-    "total_eur": 104.0,
-    "disc": 20.567375886524825,
-    "tier": "goed",
-    "seller": "xander007",
-    "title": "Black Album (510 022-1, Vertigo, EU 1991)",
-    "group": "Metallica"
-  },
-  "383777_M": {
-    "price": 569.99,
-    "currency": "USD",
-    "shipping": 25.0,
-    "total_eur": 506.8921451695349,
-    "disc": 20.550265496347304,
-    "tier": "goed",
-    "seller": "Fuji_Records",
-    "title": "Appetite for Destruction (XXXG 24148, US Allied 1987)",
-    "group": "Guns N' Roses"
-  },
   "400587_VG+": {
     "price": 350.0,
     "currency": "AUD",
@@ -329,15 +120,59 @@
     "title": "Highway to Hell (APLP-040, Australisch origineel 1979)",
     "group": "AC/DC"
   },
-  "439599_NM": {
-    "price": 144.98,
-    "currency": "EUR",
-    "shipping": 10.0,
-    "total_eur": 154.98,
-    "disc": 18.17534057158177,
+  "383777_NM": {
+    "price": 380.0,
+    "currency": "USD",
+    "shipping": 99.1,
+    "total_eur": 408.1615266655308,
+    "disc": 18.335028678365187,
     "tier": "goed",
-    "seller": "Plattebox",
-    "title": "Black Album (510 022-1, Vertigo, EU 1991)",
-    "group": "Metallica"
+    "seller": "cacotone",
+    "title": "Appetite for Destruction (XXXG 24148, US Allied 1987)",
+    "group": "Guns N' Roses"
+  },
+  "317356_VG+": {
+    "price": 120.0,
+    "currency": "EUR",
+    "shipping": 19.9,
+    "total_eur": 139.9,
+    "disc": 18.030278863712564,
+    "tier": "goed",
+    "seller": "Grow760",
+    "title": "Ready to Die (78612-73000-1, US 1994)",
+    "group": "Notorious B.I.G."
+  },
+  "383777_M": {
+    "price": 569.99,
+    "currency": "USD",
+    "shipping": 25.0,
+    "total_eur": 506.8921451695349,
+    "disc": 17.06556688305353,
+    "tier": "goed",
+    "seller": "Fuji_Records",
+    "title": "Appetite for Destruction (XXXG 24148, US Allied 1987)",
+    "group": "Guns N' Roses"
+  },
+  "517224_VG+": {
+    "price": 160.0,
+    "currency": "GBP",
+    "shipping": 17.0,
+    "total_eur": 203.91000311049157,
+    "disc": 16.998893890013317,
+    "tier": "goed",
+    "seller": "SoundRecordsStroud",
+    "title": "Definitely Maybe (CRE LP 169, Damont, UK 1994)",
+    "group": "Oasis"
+  },
+  "375491_VG+": {
+    "price": 47.0,
+    "currency": "EUR",
+    "shipping": 30.0,
+    "total_eur": 77.0,
+    "disc": 16.821950363228826,
+    "tier": "goed",
+    "seller": "Herk1975",
+    "title": "Blood Sugar Sex Magik (7599-26681-1, EU first pressing 1991)",
+    "group": "RHCP"
   }
 }
