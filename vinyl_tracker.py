@@ -89,9 +89,9 @@ RELEASE_INFO = {
     "7801798":  ("🏆 First pressing", "UK first pressing PCS 7088 uit 1969 — een van de meest begeerde platen ter wereld. Nooit afspelen."),
     "14186441": ("🎵 Luisterversie", "50th Anniversary remaster door Giles Martin — beste klankkwaliteit om af te spelen."),
     # Michael Jackson
-    "2911293":  ("🏆 First pressing", "Originele US persing, Pitman-plant 1982 — meest gezochte Thriller-versie."),
+    "2911293":  ("🏆 First pressing", "Originele US persing, Pitman-plant 1982 — meest gezochte Thriller-variant (Pitman = meest gewaardeerde CBS-persplaats)."),
     "152946":   ("🏆 First pressing", "Originele EU persing 1982 — collector's item uit het releasejaar."),
-    "459606":   ("📀 Origineel", "Originele US persing Carrollton-plant 1987 — degelijke collector's waarde."),
+    "459606":   ("🏆 First pressing", "Originele US persing Carrollton-plant 1987 — first pressing, iets minder gezocht dan Pitman maar zeker een collector's item."),
     # Metallica
     "1549636":  ("🏆 First pressing", "Originele US Allied-persing 1986 — heilige graal voor metalverzamelaars. Niet afspelen."),
     "381988":   ("📀 Origineel", "Originele US Elektra-persing 1991 — solide collector's waarde."),
