@@ -491,13 +491,14 @@ _NEUTRAL_SLEEVES = {"Generic", "No Cover", ""}
 
 def _effective_cond(media: str, sleeve: str) -> str:
     """Slechtste van disc en sleeve als vergelijkingsconditie.
-    Generic/No Cover hoezen tellen niet mee — die zijn neutraal."""
+    Generic/No Cover hoezen tellen niet mee — die zijn neutraal.
+    Geeft ook terug of de sleeve de beperkende factor was."""
     if sleeve in _NEUTRAL_SLEEVES:
         return media
     rank = {c: i for i, c in enumerate(CONDITION_ORDER)}
-    r_m = rank.get(media, 0)   # onbekende disc → beste rank (voorzichtig)
-    r_s = rank.get(sleeve, 0)  # onbekende sleeve → beste rank (voorzichtig)
-    return media if r_m >= r_s else sleeve
+    r_m = rank.get(media, 0)
+    r_s = rank.get(sleeve, 0)
+    return sleeve if r_s > r_m else media
 
 
 def get_best_listings(listings):
@@ -746,9 +747,13 @@ def compute_deals(results):
         for s in r["sales"]:
             by_cond.setdefault(s["media"], []).append(s)
         for cond, best in best_for_release.items():
-            # Vergelijk tegen historische prijzen van de SLECHTSTE conditie (disc of sleeve)
-            eff_cond  = _effective_cond(best["media"], best["sleeve"])
+            # Vergelijk tegen historische prijzen van de SLECHTSTE conditie (disc of sleeve).
+            # Fallback naar disc-conditie als er geen sales zijn voor de eff_cond.
+            eff_cond   = _effective_cond(best["media"], best["sleeve"])
             cond_sales = by_cond.get(eff_cond, [])
+            if not cond_sales:
+                eff_cond   = cond   # fallback naar disc-conditie
+                cond_sales = by_cond.get(eff_cond, [])
             if not cond_sales:
                 continue
             prices    = [s["price"] for s in cond_sales]
@@ -1635,10 +1640,10 @@ def run_server(initial_results, cookies, session):
             ts = datetime.now().strftime("%Y-%m-%d %H:%M")
             subprocess.run(["git", "-C", repo, "commit", "-m",
                             f"Lokale refresh {ts}"], check=True, capture_output=True)
-            # Pull --rebase zodat remote commits niet blokkeren
-            subprocess.run(["git", "-C", repo, "pull", "--rebase", "origin", "HEAD"],
-                           check=True, capture_output=True)
-            subprocess.run(["git", "-C", repo, "push", "origin", "HEAD"],
+            # Forceer push: lokale cache is altijd completer dan GitHub
+            # (GitHub Actions kan Discogs niet scrapen via Cloudflare)
+            subprocess.run(["git", "-C", repo, "push", "--force-with-lease",
+                            "origin", "HEAD"],
                            check=True, capture_output=True)
             _log("Gepushed naar GitHub — live site is nu bijgewerkt")
         except subprocess.CalledProcessError as e:

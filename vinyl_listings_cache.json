@@ -649,7 +649,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 40.24,
-        "rating_count": 237993,
+        "rating_count": 237995,
         "seller": "groovesland"
       },
       {
@@ -659,7 +659,7 @@
         "currency": "GBP",
         "shipping": 16.4,
         "total_eur": 53.44285335760285,
-        "rating_count": 35253,
+        "rating_count": 35254,
         "seller": "dempster13"
       },
       {
@@ -909,7 +909,7 @@
         "currency": "GBP",
         "shipping": 12.0,
         "total_eur": 52.99356013041024,
-        "rating_count": 9471,
+        "rating_count": 9472,
         "seller": "StevecaptainKirk"
       },
       {
@@ -1479,7 +1479,7 @@
         "currency": "GBP",
         "shipping": 11.99,
         "total_eur": 54.12255336797116,
-        "rating_count": 5686,
+        "rating_count": 5687,
         "seller": "Vinyl__Hunter"
       },
       {
@@ -2139,7 +2139,7 @@
         "currency": "GBP",
         "shipping": 16.4,
         "total_eur": 64.96319251638768,
-        "rating_count": 35253,
+        "rating_count": 35254,
         "seller": "dempster13"
       },
       {
@@ -2309,7 +2309,7 @@
         "currency": "USD",
         "shipping": 55.0,
         "total_eur": 80.93371954336344,
-        "rating_count": 10687,
+        "rating_count": 10688,
         "seller": "AndrewRocco"
       },
       {
@@ -2319,7 +2319,7 @@
         "currency": "USD",
         "shipping": 55.0,
         "total_eur": 80.93371954336344,
-        "rating_count": 10687,
+        "rating_count": 10688,
         "seller": "AndrewRocco"
       },
       {
@@ -2739,7 +2739,7 @@
         "currency": "EUR",
         "shipping": 7.9,
         "total_eur": 36.21,
-        "rating_count": 33692,
+        "rating_count": 33693,
         "seller": "decks.de"
       },
       {
@@ -2847,20 +2847,20 @@
         "sleeve": "M",
         "price": 29.99,
         "currency": "EUR",
-        "shipping": 12.99,
-        "total_eur": 42.98,
-        "rating_count": 15001,
-        "seller": "the_sound_of_metal"
+        "shipping": 15.0,
+        "total_eur": 44.989999999999995,
+        "rating_count": 213,
+        "seller": "wax_track"
       },
       {
         "media": "M",
         "sleeve": "M",
         "price": 29.99,
         "currency": "EUR",
-        "shipping": 15.0,
-        "total_eur": 44.989999999999995,
-        "rating_count": 213,
-        "seller": "wax_track"
+        "shipping": 12.99,
+        "total_eur": 42.98,
+        "rating_count": 15001,
+        "seller": "the_sound_of_metal"
       },
       {
         "media": "M",
@@ -2895,16 +2895,6 @@
       {
         "media": "M",
         "sleeve": "M",
-        "price": 30.0,
-        "currency": "EUR",
-        "shipping": 12.49,
-        "total_eur": 42.49,
-        "rating_count": 167,
-        "seller": "vhv-amiens"
-      },
-      {
-        "media": "M",
-        "sleeve": "M",
         "price": 35.71,
         "currency": "USD",
         "shipping": 30.0,
@@ -2919,7 +2909,7 @@
         "currency": "GBP",
         "shipping": 9.0,
         "total_eur": 41.185212492655786,
-        "rating_count": 56697,
+        "rating_count": 56698,
         "seller": "Juno_Records"
       },
       {
@@ -2991,6 +2981,16 @@
         "total_eur": 50.10195500155524,
         "rating_count": 22576,
         "seller": "SEISMIC_RECORDS"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 31.69,
+        "currency": "EUR",
+        "shipping": 5.95,
+        "total_eur": 37.64,
+        "rating_count": 237996,
+        "seller": "groovesland"
       }
     ]
   },
@@ -3004,7 +3004,7 @@
         "currency": "EUR",
         "shipping": 4.0,
         "total_eur": 379.0,
-        "rating_count": 12923,
+        "rating_count": 12924,
         "seller": "minty-vinyl"
       },
       {
@@ -3099,7 +3099,7 @@
         "currency": "EUR",
         "shipping": 15.0,
         "total_eur": 104.99,
-        "rating_count": 5289,
+        "rating_count": 5290,
         "seller": "ISDA"
       },
       {
@@ -3594,7 +3594,7 @@
         "currency": "GBP",
         "shipping": 15.0,
         "total_eur": 132.42629863023168,
-        "rating_count": 510,
+        "rating_count": 511,
         "seller": "ZardozRecords"
       },
       {
@@ -3614,7 +3614,7 @@
         "currency": "GBP",
         "shipping": 11.0,
         "total_eur": 127.87576466251167,
-        "rating_count": 6447,
+        "rating_count": 6448,
         "seller": "slabrecords"
       },
       {
@@ -4029,7 +4029,7 @@
         "currency": "EUR",
         "shipping": 9.8,
         "total_eur": 36.8,
-        "rating_count": 143,
+        "rating_count": 144,
         "seller": "karavanselecta"
       },
       {
@@ -4374,7 +4374,7 @@
         "currency": "USD",
         "shipping": 15.5,
         "total_eur": 36.190151644232415,
-        "rating_count": 6067,
+        "rating_count": 6068,
         "seller": "nivessa"
       },
       {
@@ -5184,7 +5184,7 @@
         "currency": "USD",
         "shipping": 25.0,
         "total_eur": 63.89504174476061,
-        "rating_count": 24390,
+        "rating_count": 24391,
         "seller": "Armo-15"
       },
       {
@@ -5329,7 +5329,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 170.378258647129,
-        "rating_count": 10278,
+        "rating_count": 10279,
         "seller": "MediumRareLA"
       },
       {
@@ -6444,7 +6444,7 @@
         "currency": "GBP",
         "shipping": 9.99,
         "total_eur": 40.29814637742935,
-        "rating_count": 35253,
+        "rating_count": 35254,
         "seller": "dempster13"
       },
       {
@@ -6689,7 +6689,7 @@
         "currency": "GBP",
         "shipping": 13.95,
         "total_eur": 44.87172102346693,
-        "rating_count": 12325,
+        "rating_count": 12326,
         "seller": "revolutionrecords1"
       },
       {
@@ -6949,7 +6949,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 39.64,
-        "rating_count": 237993,
+        "rating_count": 237996,
         "seller": "groovesland"
       },
       {
@@ -7834,7 +7834,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 374.8509115692622,
-        "rating_count": 121,
+        "rating_count": 122,
         "seller": "bigfunrecords"
       },
       {
@@ -8159,7 +8159,7 @@
         "currency": "EUR",
         "shipping": 11.99,
         "total_eur": 32.98,
-        "rating_count": 6453,
+        "rating_count": 6454,
         "seller": "recordshopx"
       },
       {
@@ -8299,7 +8299,7 @@
         "currency": "EUR",
         "shipping": 8.99,
         "total_eur": 34.98,
-        "rating_count": 5596,
+        "rating_count": 5597,
         "seller": "zulu_zulu"
       },
       {
@@ -8499,7 +8499,7 @@
         "currency": "GBP",
         "shipping": 13.95,
         "total_eur": 43.66208541179452,
-        "rating_count": 12325,
+        "rating_count": 12326,
         "seller": "revolutionrecords1"
       },
       {
@@ -8519,7 +8519,7 @@
         "currency": "EUR",
         "shipping": 7.9,
         "total_eur": 35.7,
-        "rating_count": 33692,
+        "rating_count": 33693,
         "seller": "decks.de"
       },
       {
@@ -8565,16 +8565,6 @@
       {
         "media": "M",
         "sleeve": "M",
-        "price": 27.99,
-        "currency": "EUR",
-        "shipping": 12.99,
-        "total_eur": 40.98,
-        "rating_count": 284127,
-        "seller": "www.hhv.de"
-      },
-      {
-        "media": "M",
-        "sleeve": "M",
         "price": 28.0,
         "currency": "EUR",
         "shipping": 12.0,
@@ -8601,6 +8591,16 @@
         "total_eur": 48.03981429213277,
         "rating_count": 5219,
         "seller": "coreofthepoodle"
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.99,
+        "currency": "GBP",
+        "shipping": 22.3,
+        "total_eur": 54.479683881893486,
+        "rating_count": 11470,
+        "seller": "RelevantRecords"
       }
     ]
   },
@@ -8813,16 +8813,6 @@
         "seller": "Plattenkontrolle"
       },
       {
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 40.0,
-        "currency": "EUR",
-        "shipping": 15.95,
-        "total_eur": 55.95,
-        "rating_count": 1621,
-        "seller": "SteinmejerNorgaard"
-      },
-      {
         "media": "VG+",
         "sleeve": "Generic",
         "price": 40.0,
@@ -8831,6 +8821,16 @@
         "total_eur": 55.0,
         "rating_count": 7852,
         "seller": "cosmicmusicshop"
+      },
+      {
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 40.0,
+        "currency": "EUR",
+        "shipping": 15.95,
+        "total_eur": 55.95,
+        "rating_count": 1621,
+        "seller": "SteinmejerNorgaard"
       },
       {
         "media": "VG",
@@ -9334,7 +9334,7 @@
         "currency": "GBP",
         "shipping": 12.0,
         "total_eur": 44.92932271926086,
-        "rating_count": 9471,
+        "rating_count": 9472,
         "seller": "StevecaptainKirk"
       },
       {
@@ -9344,7 +9344,7 @@
         "currency": "GBP",
         "shipping": 6.5,
         "total_eur": 39.16915313986844,
-        "rating_count": 56697,
+        "rating_count": 56698,
         "seller": "Juno_Records"
       },
       {
@@ -11014,7 +11014,7 @@
         "currency": "USD",
         "shipping": 42.0,
         "total_eur": 57.32663145339921,
-        "rating_count": 25101,
+        "rating_count": 25102,
         "seller": "bordentownrecords"
       },
       {
@@ -11544,7 +11544,7 @@
         "currency": "GBP",
         "shipping": 12.0,
         "total_eur": 38.5931361819292,
-        "rating_count": 9471,
+        "rating_count": 9472,
         "seller": "StevecaptainKirk"
       },
       {
@@ -11554,7 +11554,7 @@
         "currency": "EUR",
         "shipping": 12.0,
         "total_eur": 36.89,
-        "rating_count": 12337,
+        "rating_count": 12338,
         "seller": "dentaku"
       },
       {
@@ -11644,7 +11644,7 @@
         "currency": "EUR",
         "shipping": 12.5,
         "total_eur": 38.489999999999995,
-        "rating_count": 5289,
+        "rating_count": 5290,
         "seller": "ISDA"
       },
       {
@@ -12124,7 +12124,7 @@
         "currency": "USD",
         "shipping": 25.0,
         "total_eur": 52.4365309252002,
-        "rating_count": 24390,
+        "rating_count": 24391,
         "seller": "Armo-15"
       },
       {
@@ -12174,7 +12174,7 @@
         "currency": "USD",
         "shipping": 25.0,
         "total_eur": 62.19117396490033,
-        "rating_count": 24390,
+        "rating_count": 24391,
         "seller": "Armo-15"
       },
       {
@@ -12254,7 +12254,7 @@
         "currency": "USD",
         "shipping": 25.0,
         "total_eur": 72.41438064406202,
-        "rating_count": 24390,
+        "rating_count": 24391,
         "seller": "Armo-15"
       }
     ]
@@ -12394,7 +12394,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 32.98,
-        "rating_count": 284127,
+        "rating_count": 284128,
         "seller": "www.hhv.de"
       },
       {
@@ -12474,7 +12474,7 @@
         "currency": "EUR",
         "shipping": 12.5,
         "total_eur": 38.489999999999995,
-        "rating_count": 5289,
+        "rating_count": 5290,
         "seller": "ISDA"
       },
       {
@@ -12654,7 +12654,7 @@
         "currency": "USD",
         "shipping": 35.0,
         "total_eur": 59.6353722951099,
-        "rating_count": 10687,
+        "rating_count": 10689,
         "seller": "AndrewRocco"
       },
       {
@@ -12929,7 +12929,7 @@
         "currency": "EUR",
         "shipping": 19.0,
         "total_eur": 203.71,
-        "rating_count": 4812,
+        "rating_count": 4813,
         "seller": "musikdrehscheibe"
       },
       {
@@ -13394,7 +13394,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 156.92000000000002,
-        "rating_count": 377335,
+        "rating_count": 377336,
         "seller": "recordsale-de"
       },
       {
@@ -13504,7 +13504,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 247.52,
-        "rating_count": 377335,
+        "rating_count": 377336,
         "seller": "recordsale-de"
       },
       {
