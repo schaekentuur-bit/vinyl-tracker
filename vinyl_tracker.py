@@ -207,6 +207,11 @@ RELEASE_INFO = {
     "13318697": ("🏆 First pressing", "Originele US Slaughter Gang-persing 2018 (19075923521) — dit IS de first pressing van I Am > I Was."),
     "15624365": ("🎵 Luisterversie", "EU persing 2019 (19075922121) — voor dagelijks afspelen."),
     "17277640": ("🏆 First pressing", "Gelimiteerde US Slaughter Gang-persing 2020 (19439818631) — enige officiële vinyluitgave van Savage Mode II."),
+    # 50 Cent
+    "485114":   ("🏆 First pressing", "Originele US Aftermath/Shady/Interscope-persing 2003 (0694935441) — dit IS de first pressing van Get Rich or Die Tryin'. Inclusief 10\" × 10\" insert. Meer want (3.792) dan have (3.325) — uitzonderlijk gezocht."),
+    "1198408":  ("🎵 Luisterversie", "EU Shady/Aftermath/Interscope-persing 2003 (493 544-1) — 180g originele Europese persing, ideaal voor dagelijks afspelen."),
+    "598810":   ("🏆 First pressing", "Originele US Shady/Aftermath/Interscope-persing 2005 (B0004317-01) — dit IS de first pressing van The Massacre."),
+    "8954977":  ("🎵 Luisterversie", "US UMe reissue 2016 (B0025252-01) — voor dagelijks afspelen."),
     # U2
     "10456142": ("🏆 First pressing", "Originele UK Island Records-persing 1987 (U26) — dit IS de first pressing van The Joshua Tree. Gatefold hoes met zwart binnenhoesje en gouden labels. Bevat With or Without You en I Still Haven't Found What I'm Looking For."),
     "10395824": ("🎵 Luisterversie", "EU Island Records 30th Anniversary reissue 2017 (5749844) — geremasterd 180g vinyl, ideaal voor dagelijks afspelen."),
@@ -277,6 +282,9 @@ RELEASE_PAIRS = [
     ("10597886", "10752389"),  # 21 Savage — Savage Mode
     ("10873523", "13876606"),  # 21 Savage — Issa Album
     ("13318697", "15624365"),  # 21 Savage — I Am > I Was
+    # 50 Cent
+    ("485114",   "1198408"),   # 50 Cent — Get Rich or Die Tryin'
+    ("598810",   "8954977"),   # 50 Cent — The Massacre
     # U2
     ("10456142", "10395824"),  # U2 — The Joshua Tree
     ("676619",   "11846916"),  # U2 — All That You Can't Leave Behind
@@ -450,6 +458,12 @@ RELEASES = {
     "15624365": ("21 Savage", "I Am > I Was (19075922121, Slaughter Gang, EU 2019)"),
     "17277640": ("21 Savage", "Savage Mode II (19439818631, Slaughter Gang, US 2020)"),
 
+    # ── 50 CENT ──
+    "485114":   ("50 Cent", "Get Rich or Die Tryin' (0694935441, Aftermath US 2003)"),
+    "1198408":  ("50 Cent", "Get Rich or Die Tryin' (493 544-1, Shady EU 2003, 180g)"),
+    "598810":   ("50 Cent", "The Massacre (B0004317-01, Shady US 2005)"),
+    "8954977":  ("50 Cent", "The Massacre (B0025252-01, UMe US 2016 reissue)"),
+
     # ── U2 ──
     "10456142": ("U2", "The Joshua Tree (U26, Island Records UK 1987)"),
     "10395824": ("U2", "The Joshua Tree (5749844, Island Records EU 2017, 30th Anniversary)"),
@@ -490,6 +504,7 @@ GROUP_GENRES = {
     "Beast Coast":       "Hip-Hop",
     "Sticks":            "Hip-Hop",
     "21 Savage":         "Hip-Hop",
+    "50 Cent":           "Hip-Hop",
     # Rock & Roll
     "Elvis Presley":     "Rock & Roll",
     "Rolling Stones":    "Rock",
