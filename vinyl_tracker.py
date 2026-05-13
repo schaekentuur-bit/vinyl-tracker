@@ -110,6 +110,7 @@ RELEASES = {
 
     # ── KENDRICK LAMAR ──
     "3975953":  ("Kendrick Lamar", "Good Kid M.A.A.D City (B0017695-01, US 2012)"),
+    "8814849":  ("Kendrick Lamar", "To Pimp A Butterfly (B0023464-01, US 2015)"),
     "10559651": ("Kendrick Lamar", "DAMN. (B0026745-01, US 2017)"),
 
     # ── THE KILLERS ──
@@ -124,9 +125,12 @@ RELEASES = {
 
     # ── AMY WINEHOUSE ──
     "2848009":  ("Amy Winehouse", "Back To Black (B0008994-01, US 2006)"),
+    "34780535": ("Amy Winehouse", "Back To Black (B0008994-01, Island UK 2006)"),
 
     # ── BOB MARLEY ──
     "4418438":  ("Bob Marley", "Legend (0600753030523, EU reissue 2015)"),
+    "3660230":  ("Bob Marley", "Exodus (ILPS 9498, Tuff Gong, Jamaica 1977)"),
+    "65845":    ("Bob Marley", "Rastaman Vibration (ILPS 9383, Island UK 1976)"),
 
     # ── FLEETWOOD MAC ──
     "526351":   ("Fleetwood Mac", "Rumours (BSK 3010, US origineel 1977)"),
