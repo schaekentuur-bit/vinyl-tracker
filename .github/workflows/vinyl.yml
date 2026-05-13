@@ -40,6 +40,7 @@ jobs:
           git add vinyl_listings_cache.json 2>/dev/null || true
           git add vinyl_history_cache.json 2>/dev/null || true
           git add user_releases.json 2>/dev/null || true
+          git add vinyl_thumb_cache.json 2>/dev/null || true
           git status --short
           git diff --staged --quiet || git commit -m "Vinyl rapport $(date +'%Y-%m-%d %H:%M')"
           git push

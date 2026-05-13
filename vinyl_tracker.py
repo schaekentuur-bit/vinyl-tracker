@@ -761,7 +761,8 @@ def _render_album_header(artist, album_name, thumb_url=None):
     if thumb_url:
         img_html = (
             f'<img class="album-cover" src="{thumb_url}" '
-            f'alt="{album_name}" width="80" height="80" loading="lazy">'
+            f'alt="{album_name}" width="80" height="80" '
+            f'loading="lazy" referrerpolicy="no-referrer">'
         )
     else:
         img_html = f'<div class="album-cover album-cover-ph">{_VINYL_PLACEHOLDER_SVG}</div>'
