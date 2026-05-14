@@ -1273,7 +1273,12 @@ def get_best_listings(listings):
         if "total_eur" not in listing:
             listing["total_eur"] = _to_eur(listing["price"] + listing.get("shipping", 0.0), listing["currency"])
         ships_from = listing.get("ships_from", "")
-        is_eu = not ships_from or ships_from in EU_COUNTRIES
+        if ships_from:
+            is_eu = ships_from in EU_COUNTRIES
+        else:
+            # Fallback voor cache-entries zonder ships_from: valuta als proxy
+            # EUR/GBP → vermoedelijk EU/UK; alles anders (USD, CAD, AUD, JPY...) → non-EU
+            is_eu = listing.get("currency", "EUR") in ("EUR", "GBP")
         adj = _non_eu_adjusted_total(listing["total_eur"]) if not is_eu else listing["total_eur"]
         listing["_is_eu"]     = is_eu
         listing["_adj_total"] = adj
