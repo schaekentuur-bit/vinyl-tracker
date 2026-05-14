@@ -1930,10 +1930,20 @@ def build_html(results, static=False):
                     f'font-size:10px;font-weight:600;padding:1px 5px;border-radius:4px;'
                     f'white-space:nowrap;cursor:help">🌍 {b["ships_from"]} +est.{_fmt_eur(imp_cost)}</span>'
                 )
+            ri_info = RELEASE_INFO.get(str(r["id"]))
+            if not ri_info:
+                ri_info = RELEASE_INFO.get(r["id"])
+            if ri_info:
+                ri_label, ri_desc = ri_info
+                ri_cls  = _BADGE_MAP.get(ri_label, "rb-badge-orig")
+                ri_badge = (f'<br><span class="rb-badge {ri_cls}" style="font-size:9px;margin-left:0;margin-top:3px"'
+                            f' title="{ri_desc}">{ri_label}</span>')
+            else:
+                ri_badge = ""
             rows += (
                 f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row">'
                 f'<td><span class="rb-group">{r["group"]}</span></td>'
-                f'<td class="td-title">{r["title"]}</td>'
+                f'<td class="td-title">{r["title"]}{ri_badge}</td>'
                 f'<td>'
                 f'<span class="badge bd-{mc}">{b["media"]}</span>'
                 f' / <span class="badge bd-{sc}">{b["sleeve"]}</span>'
