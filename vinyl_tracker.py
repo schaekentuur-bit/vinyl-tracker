@@ -36,6 +36,17 @@ LISTINGS_CACHE     = "vinyl_listings_cache.json"
 DEALS_SEEN_FILE    = "vinyl_deals_seen.json"
 CACHE_DAYS         = 7   # verkoopdata na X dagen opnieuw ophalen
 MIN_SELLER_RATINGS = 50  # minimaal aantal ratings voor een verkoper
+EU_COUNTRIES = {
+    "Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic",
+    "Denmark", "Estonia", "Finland", "France", "Germany", "Greece", "Hungary",
+    "Ireland", "Italy", "Latvia", "Lithuania", "Luxembourg", "Malta",
+    "Netherlands", "Poland", "Portugal", "Romania", "Slovakia", "Slovenia",
+    "Spain", "Sweden", "United Kingdom",
+}
+NON_EU_VAT        = 0.21   # Belgische BTW op invoer
+NON_EU_DUTY_RATE  = 0.065  # douane vinyl (HS 8524) boven drempel
+NON_EU_DUTY_LIMIT = 150.0  # drempel douaneheffing (EUR)
+NON_EU_HANDLING   = 15.0   # bpost verwerkingsvergoeding bij invoer
 
 # Staffel: % onder historisch gemiddelde vereist voor "goede deal"
 # Hogere prijsklasse = lager percentage (want het absolute bedrag is al groter)
@@ -52,6 +63,13 @@ def _deals_avg_pct(avg_eur: float) -> float:
         if avg_eur < ceiling:
             return pct
     return DEALS_AVG_TIERS[-1][1]
+
+def _non_eu_adjusted_total(total_eur: float) -> float:
+    """Schat de werkelijke kost voor een Belgische koper van een non-EU listing (BTW + douane + bpost-verwerking)."""
+    vat  = total_eur * NON_EU_VAT
+    duty = total_eur * NON_EU_DUTY_RATE if total_eur > NON_EU_DUTY_LIMIT else 0.0
+    return total_eur + vat + duty + NON_EU_HANDLING
+
 PORT               = 8765
 USER_RELEASES_FILE = "user_releases.json"
 THUMB_CACHE        = "vinyl_thumb_cache.json"
@@ -1205,6 +1223,15 @@ def parse_listings_html(html):
 
         total_eur = _to_eur(price + shipping, currency)
 
+        # Ships from country
+        loc_match = re.search(r'class="seller_location"[^>]*>.*?<strong>([^<]+)</strong>', block, re.DOTALL)
+        if not loc_match:
+            loc_match = re.search(
+                r'[Ss]hips\s+[Ff]rom:?\s*(?:<[^>]*>)*\s*([A-Za-z][A-Za-z\s]+?)(?:\s*<|\s*$)',
+                block, re.DOTALL
+            )
+        ships_from = loc_match.group(1).strip() if loc_match else ""
+
         listings.append({
             "media":        media,
             "sleeve":       sleeve,
@@ -1214,6 +1241,7 @@ def parse_listings_html(html):
             "total_eur":    total_eur,
             "rating_count": rating_count,
             "seller":       seller,
+            "ships_from":   ships_from,
         })
 
     return listings
@@ -1235,18 +1263,22 @@ def _effective_cond(media: str, sleeve: str) -> str:
 
 def get_best_listings(listings):
     """Cheapest listing per EFFECTIVE condition (disc vs sleeve, worst wins) from sellers with >= MIN_SELLER_RATINGS.
-    Grouping by effective condition ensures a VG+ disc with VG sleeve competes in the VG bucket,
-    not the VG+ bucket where it would be compared against (higher) VG+ historical prices."""
+    Non-EU listings are penalised by estimated Belgian import costs (BTW + douane + bpost) so they only
+    win when they remain cheaper even after invoertaks."""
     best = {}
     for listing in listings:
         if listing["rating_count"] < MIN_SELLER_RATINGS:
             continue
-        # Compute total_eur on-the-fly for cache entries that predate this field
+        listing = dict(listing)
         if "total_eur" not in listing:
-            listing = dict(listing)
             listing["total_eur"] = _to_eur(listing["price"] + listing.get("shipping", 0.0), listing["currency"])
+        ships_from = listing.get("ships_from", "")
+        is_eu = not ships_from or ships_from in EU_COUNTRIES
+        adj = _non_eu_adjusted_total(listing["total_eur"]) if not is_eu else listing["total_eur"]
+        listing["_is_eu"]     = is_eu
+        listing["_adj_total"] = adj
         eff = _effective_cond(listing["media"], listing["sleeve"])
-        if eff not in best or listing["total_eur"] < best[eff]["total_eur"]:
+        if eff not in best or adj < best[eff]["_adj_total"]:
             best[eff] = listing
     return best
 
@@ -1480,10 +1512,19 @@ def _render_single_rb(r):
             lhref   = f"https://www.discogs.com/sell/release/{r['id']}?sort=price%2Casc&limit=50"
             eur_tot = best.get("total_eur", best["price"])
             brkdwn  = _shipping_breakdown(best)
+            non_eu_note = ""
+            if not best.get("_is_eu", True) and best.get("ships_from"):
+                imp_cost = _non_eu_adjusted_total(eur_tot) - eur_tot
+                non_eu_note = (
+                    f' <span style="background:#FEF9C3;color:#92400E;font-size:10px;font-weight:600;'
+                    f'padding:1px 5px;border-radius:4px" '
+                    f'title="Non-EU: geschatte invoerkosten ≈ +{_fmt_eur(imp_cost)}">'
+                    f'🌍 {best["ships_from"]}</span>'
+                )
             best_html = (
                 f'<div class="best-listing">'
                 f'<span class="best-label">Beste listing:</span> '
-                f'<strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}'
+                f'<strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}{non_eu_note}'
                 f' &mdash; {best["seller"]} ({best["rating_count"]:,} ratings)'
                 f' | Disc: <span class="badge bd-{mc}">{best["media"]}</span>'
                 f' Hoes: <span class="badge bd-{sc}">{best["sleeve"]}</span>'
@@ -1618,16 +1659,18 @@ def compute_deals(results):
             total_eur  = best.get("total_eur") or _to_eur(
                 best["price"] + best.get("shipping", 0.0), best["currency"]
             )
+            # Use import-adjusted price for deal threshold comparison (non-EU listings include BTW + handling)
+            adj_total  = best.get("_adj_total", total_eur)
 
             threshold = _deals_avg_pct(avg)
-            if total_eur < mn:
-                disc = (mn - total_eur) / mn * 100
+            if adj_total < mn:
+                disc = (mn - adj_total) / mn * 100
                 deals.append({"r": r, "cond": cond, "eff_cond": eff_cond, "best": best,
                               "mn": mn, "avg": avg,
-                              "disc": disc, "disc_vs_avg": (avg - total_eur) / avg * 100,
+                              "disc": disc, "disc_vs_avg": (avg - adj_total) / avg * 100,
                               "tier": "beste", "threshold": threshold})
-            elif total_eur < avg * (1 - threshold / 100):
-                disc_avg = (avg - total_eur) / avg * 100
+            elif adj_total < avg * (1 - threshold / 100):
+                disc_avg = (avg - adj_total) / avg * 100
                 deals.append({"r": r, "cond": cond, "eff_cond": eff_cond, "best": best,
                               "mn": mn, "avg": avg,
                               "disc": disc_avg, "disc_vs_avg": disc_avg,
@@ -1878,6 +1921,15 @@ def build_html(results, static=False):
             eur_tot = b.get("total_eur", b["price"])
             brkdwn  = _shipping_breakdown(b)
             ref_val = fmt(d["mn"]) if ref_label == "Laagste ooit" else fmt(d["avg"])
+            non_eu_badge = ""
+            if not b.get("_is_eu", True) and b.get("ships_from"):
+                imp_cost = _non_eu_adjusted_total(eur_tot) - eur_tot
+                non_eu_badge = (
+                    f' <span title="Non-EU: geschatte invoerkosten ≈ +{_fmt_eur(imp_cost)} '
+                    f'(21% BTW + bpost verwerking)" style="background:#FEF9C3;color:#92400E;'
+                    f'font-size:10px;font-weight:600;padding:1px 5px;border-radius:4px;'
+                    f'white-space:nowrap;cursor:help">🌍 {b["ships_from"]} +est.{_fmt_eur(imp_cost)}</span>'
+                )
             rows += (
                 f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row">'
                 f'<td><span class="rb-group">{r["group"]}</span></td>'
@@ -1888,7 +1940,7 @@ def build_html(results, static=False):
                 + (f' <span class="muted" style="font-size:10px">(vergel. als {d["eff_cond"]})</span>'
                    if d.get("eff_cond") and d["eff_cond"] != b["media"] else "")
                 + f'</td>'
-                f'<td class="td-num"><strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}</td>'
+                f'<td class="td-num"><strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}{non_eu_badge}</td>'
                 f'<td class="td-num">{ref_val}</td>'
                 f'<td class="td-num"><span class="deal-pct">-{d["disc"]:.0f}%</span></td>'
                 f'<td class="td-seller">{b["seller"]} <span class="muted">({b["rating_count"]:,})</span></td>'
