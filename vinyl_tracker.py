@@ -264,6 +264,136 @@ RELEASE_INFO = {
     "27084564":("🎵 Luisterversie", "UK UMC/Mercury reissue 2023 (UMCLP017) — 180g gatefold reissue, ideaal voor dagelijks afspelen."),
     "1615490": ("🏆 First pressing", "Originele UK Mercury-persing 1977 (9102 502) — dit IS de first pressing van Deceptive Bends. Gatefold met bedrukt binnenhoesje. Bevat The Things We Do For Love en Good Morning Judge."),
     "26309384":("🎵 Luisterversie", "UK/EU/US Mercury reissue 2023 (UMCLP016) — gatefold reissue, ideaal voor dagelijks afspelen."),
+    # Rage Against the Machine
+    "367339":  ("🏆 First pressing", "Originele US Epic-persing 1992 (Z 52959) — dit IS de first pressing van het zelfgetitelde debuutalbum. LP. Bevat Killing in the Name, Bombtrack en Wake Up. 7.091 have / 11.394 want — extreem gezocht."),
+    "4073023": ("🎵 Luisterversie", "US Epic/Legacy 180g reissue 2012 (88725470451) — 20th Anniversary edition, geremasterd. Meest verspreide versie: 31.797 have. Ideaal voor dagelijks afspelen."),
+    # Drake
+    "3294598":  ("🏆 First pressing", "Originele US Young Money/Cash Money-persing 2011 (B0016280-01) — dit IS de first pressing van Take Care. 2LP gatefold. Bevat Marvins Room, Crew Love en Take Care feat. Rihanna. 16.061 have / 5.930 want."),
+    "21976249": ("🎵 Luisterversie", "US Young Money/Cash Money reissue 2021 (B0016280-01) — 2LP gatefold heruitgave, ideaal voor dagelijks afspelen."),
+    "9258657":  ("🏆 First pressing", "Officiële eerste US vinyl-persing 2016 (B0025237-01, Young Money/Republic) — het mixtape verscheen digitaal in 2015, vinyl pas in 2016. 6.299 have / 3.019 want."),
+    "9247160":  ("🎵 EU-persing", "EU Young Money/Republic vinyl-persing 2016 (0602547973450) — gelijktijdig uitgebracht, EU-geperst via GZ Media, iets meer beschikbaar."),
+    "9258642":  ("🏆 First pressing", "Originele US Young Money/Cash Money-persing 2016 (B0025236-01) — dit IS de first pressing van Views. 2LP. Bevat One Dance, Hotline Bling en Too Good feat. Rihanna. 9.004 have / 3.156 want."),
+    "26904353": ("🎵 Luisterversie", "US Young Money/Cash Money reissue 2022 (B0025236-01) — 2LP heruitgave, ideaal voor dagelijks afspelen."),
+    "26783426": ("🎵 Enige officiële vinyl", "US OVO/Young Money/UMe reissue 2023 (B0036101-01) — eerste en enige officiële vinyl-persing van More Life. Origineel digitaal uitgebracht in 2017. 2LP. Opvallend: 117 have / 1.656 want — uitzonderlijk hoge vraag."),
+    "12802012": ("🏆 First pressing", "Originele US Young Money/Cash Money-persing 2018 (B0029103-01) — dit IS de first pressing van Scorpion. 4LP gatefold, kant A-D (rap) en E-H (R&B/pop). Bevat God's Plan, In My Feelings en Nice For What. 5.633 have / 1.967 want."),
+    "12800480": ("🎵 EU-persing", "EU Young Money/Cash Money-persing 2018 (00602567874942) — gelijktijdige EU-persing, 4LP gatefold, iets meer beschikbaar voor dagelijks afspelen."),
+    # J. Cole
+    "6736792":  ("🏆 First pressing", "Originele US Roc Nation/Columbia-persing 2015 (88875 05698 1) — eerste vinyl-persing van 2014 Forest Hills Drive. 2LP gatefold. Bevat No Role Modelz, Love Yourz en Wet Dreamz. 20.423 have / 7.319 want — een van de meest verspreide hip-hop vinylalbums van de jaren 2010."),
+    "27356088": ("🎵 Luisterversie", "US Interscope reissue 2023 (B0037320-01) — 2LP gatefold heruitgave, ideaal voor dagelijks afspelen."),
+    "13377344": ("🏆 First pressing US", "Originele US Dreamville/Roc Nation/Interscope-persing 2018 (B0028571-01) — dit IS de US first pressing van KOD. 2LP gatefold. Bevat KOD, ATM en FRIENDS. 5.300 have / 1.260 want."),
+    "12308370": ("🎵 EU-persing", "Originele EU Dreamville/Roc Nation/Interscope-persing 2018 (00810760032230) — gelijktijdig geperst, 2LP gatefold, iets meer beschikbaar. 5.798 have / 1.595 want."),
+    "20020801": ("🏆 First pressing", "Originele US Dreamville/Roc Nation/Interscope-persing 2021 (B0034081-01) — dit IS de first pressing van The Off-Season. 2LP. 6.162 have / 1.225 want."),
+    "22026808": ("🎵 Limited Edition blauw", "US/EU Dreamville/Roc Nation/Interscope Limited Edition 2022 (00810061165248) — 2LP op blauw vinyl, gelimiteerde variant van The Off-Season."),
+    # Young Thug
+    "9480756":  ("🏆 VMP original", "Originele US 300 Entertainment/Atlantic/VMP Club Edition 2016 (557768-1) — eerste vinyl-persing van Jeffery, exclusief via Vinyl Me Please. LP op blauw/wit marmer vinyl, genummerd. 862 have / 2.329 want — extreem gezocht."),
+    "30428033": ("🎵 RSD reissue", "Worldwide 300 Entertainment/Atlantic Record Store Day 2024 (075678613456) — LP op blauw galaxy vinyl. RSD-heruitgave, ruimer beschikbaar. 3.466 have."),
+    "18582520": ("🎵 VMP persing", "US Atlantic/YSL/300/VMP 2021 (624959-1) — eerste en enige officiële vinyl-persing van So Much Fun. 2LP op groen translucent vinyl, exclusief via Vinyl Me Please. 3.359 have / 2.415 want."),
+    # JACKBOYS
+    "15227004": ("🏆 US-persing", "Originele US Cactus Jack/Epic-persing 2020 (19439748411) — LP van de JACKBOYS-compilatie (Travis Scott). Bevat JACKBOYS, Out West feat. Young Thug en GATTI. 2.656 have / 531 want."),
+    "16211818": ("🎵 EU-persing", "Originele EU Cactus Jack/Epic-persing 2020 (19439748411) — identieke EU-persing, iets meer beschikbaar (4.133 have). Ideaal voor dagelijks afspelen."),
+    # Metro Boomin
+    "26608835": ("🏆 Target exclusief", "US Boominati/Republic Target exclusive 2023 (B0037189-01) — beperkte editie van Heroes & Villains, exclusief via Target. LP. 1.685 have / 427 want."),
+    "26584355": ("🎵 Standaard persing", "US Boominati/Republic-persing 2023 (B0037188-01) — standaard vinyl-persing van Heroes & Villains. LP. Bevat Superhero feat. Future & Chris Brown en Creepin' feat. 21 Savage & The Weeknd. 6.397 have / 2.146 want."),
+    "13053315": ("🏆 First pressing", "Originele US Republic/Boominati-persing 2018 (B0029506-01) — dit IS de first pressing van Not All Heroes Wear Capes. LP. Bevat Space Cadet feat. Gunna en Overdue feat. Travis Scott. 2.177 have / 1.802 want."),
+    "13208577": ("🎵 EU-persing", "EU Republic/Boominati-persing 2019 (00602577305603) — EU-persing van Not All Heroes Wear Capes. LP. 975 have / 689 want."),
+    # Coldplay
+    "484030":   ("🏆 First pressing", "Originele EU Parlophone/EMI-persing 2000 (7243 5 27783 1 7) — dit IS de first pressing van Parachutes. LP. Bevat Yellow, Shiver en Trouble. 15.286 have / 6.901 want."),
+    "16231042": ("🎵 Luisterversie", "EU Parlophone/Warner reissue 2020 (0190295182502) — LP op geel translucent vinyl. Populairste reissue: 8.856 have. Ideaal voor dagelijks afspelen."),
+    "703741":   ("🏆 First pressing", "Originele EU Parlophone-persing 2002 (7243 5 40504 1 1) — dit IS de first pressing van A Rush of Blood to the Head. LP 180g. Bevat The Scientist, Clocks en In My Place. 8.839 have / 4.264 want."),
+    "7266689":  ("🎵 Luisterversie", "EU Parlophone reissue 2013 (7243 5 40504 1 1) — LP 180g heruitgave. Meest verspreide versie: 16.364 have. Ideaal voor dagelijks afspelen."),
+    "1044164":  ("🏆 First pressing", "Originele EU Parlophone-persing 2005 (7243 4 74786 1 1) — dit IS de first pressing van X&Y. LP gatefold. Bevat Speed of Sound, Fix You en Talk. 6.864 have / 2.896 want."),
+    "10039232": ("🎵 Luisterversie", "EU Parlophone reissue 2016 (07243 474786 1 1) — LP heruitgave van X&Y. 5.313 have. Ideaal voor dagelijks afspelen."),
+    "5699282":  ("🏆 First pressing EU", "Originele EU Parlophone/Warner-persing 2014 (825646298815) — dit IS de EU first pressing van Ghost Stories. LP 180g gatefold. Bevat A Sky Full of Stars en Magic. 12.577 have / 2.075 want."),
+    "5709533":  ("🎵 US-persing", "Originele US Atlantic/Parlophone-persing 2014 (542279-1) — gelijktijdige US-persing van Ghost Stories. LP. 5.260 have / 1.231 want."),
+    # Golden Earring
+    "589850":   ("🏆 First pressing NL", "Originele Nederlandse Polydor-persing 1973 (2925 017) — dit IS de NL first pressing van Moontan. LP gatefold. Bevat Radar Love. 2.114 have / 760 want."),
+    "22207354": ("🎵 Luisterversie", "EU Music On Vinyl reissue 2022 (MOVLP3000) — 2LP geremasterd op clear vinyl gatefold. Ideaal voor dagelijks afspelen."),
+    # Toto
+    "386005":   ("🏆 First pressing EU", "Originele EU CBS-persing 1982 (CBS 85529) — dit IS de EU first pressing van Toto IV. LP. Bevat Africa en Rosanna. Meest verspreide originele persing: 19.266 have / 2.201 want."),
+    "16132613": ("🎵 Luisterversie", "EU Columbia geremasterde reissue 2020 (19075801121) — LP. 4.435 have. Ideaal voor dagelijks afspelen."),
+    "1464270":  ("🏆 First pressing US", "Originele US Columbia-persing 1978 (JC 35317) — dit IS de US first pressing van het debuutalbum Toto. LP stereo. Bevat Hold the Line en I'll Supply the Love. 14.523 have / 1.745 want."),
+    "693037":   ("🎵 EU-persing", "Originele EU CBS-persing 1978 (CBS 83148) — gelijktijdige EU-persing van het debuutalbum Toto. LP stereo. 6.792 have / 811 want."),
+    # Racoon
+    "3033070":  ("🏆 First pressing", "Nederlandse PIAS-persing 2011 (PIASNL0026CLPCD) — eerste vinyl-persing van Liverpool Rain. LP+CD. 365 have / 127 want."),
+    "10174337": ("🎵 Wit vinyl reissue", "Nederlandse PIAS-heruitgave 2017 (PIASNL0026CLPCD) — Liverpool Rain op wit vinyl. LP+CD. 221 have / 69 want."),
+    "22336765": ("🎵 Vinyl reissue", "Nederlandse PIAS beperkte editie 2022 — eerste vinyl-persing van Another Day (2005 studioalbum). LP."),
+    "6647916":  ("🎵 Officiële vinyl", "Nederlandse PIAS-persing 2015 (944.A174.010) — officiële vinyl-persing van All in Good Time. LP+CD. 500 have / 65 want."),
+    "20619157": ("🏆 First pressing", "Nederlandse Sony Music-persing 2021 (19439887531) — eerste vinyl-persing van Spijt Is Iets Voor Later. LP+CD. 1.037 have / 74 want."),
+    "20433880": ("🎵 EU clear vinyl", "EU Sony Music-persing 2021 (19439887541) — Spijt Is Iets Voor Later op clear vinyl. LP+CD. 758 have / 105 want."),
+    "22785002": ("🏆 Artone Sessions", "Nederlandse Sony Music Artone Sessions LP 2022 (19439976911) — speciale akoestische versie op bruin vinyl. Bevat OCEAAN voor het eerst op vinyl! 868 have / 79 want."),
+    # BLØF
+    "26234072": ("🎵 Vinyl reissue", "EU Music On Vinyl reissue 2023 (MOVLP3301) — eerste vinyl-persing van Boven (1999 origineel). 2LP 180g gatefold. 216 have / 49 want."),
+    "10320776": ("🏆 Beperkt geel vinyl", "Nederlandse Altijd Wakker beperkte genummerde editie 2017 (97205) — Aan op geel vinyl. Eerste vinyl-persing van het album. 2LP. 274 have / 81 want."),
+    "11745367": ("🎵 Standaard persing", "Benelux Altijd Wakker-persing 2017 (97205) — standaard zwart vinyl persing van Aan. 2LP. 108 have / 49 want."),
+    "27135846": ("🎵 Vinyl reissue", "Nederlandse Music On Vinyl beperkte editie 2023 (MOVLP3195) — eerste vinyl-persing van Blauwe Ruis (2002 origineel). LP 180g blauw transparant vinyl, 500 exemplaren. 126 have / 25 want."),
+    "26449052": ("🎵 Vinyl reissue", "Nederlandse Music On Vinyl beperkte genummerde editie 2023 (MOVLP3302) — eerste vinyl-persing van Watermakers (2000 origineel). 2LP zilver vinyl. 230 have / 39 want."),
+    # Janse Bagge Bend (aanvulling)
+    "2267945":  ("🎵 Debuut LP", "Nederlandse Sky/Marlstone-persing 1983 (SKY 21048 SL) — originele vinyl-persing van het debuutalbum Flazjelêttentaere. LP. 278 have / 38 want."),
+    # De Dijk
+    "2084461":  ("🎵 Officiële vinyl", "Benelux Dureco-persing 1982 (88.053) — originele vinyl-persing van het zelfgetitelde debuutalbum De Dijk. LP. Bevat Bloedend Hart. 628 have / 90 want."),
+    "3469887":  ("🎵 Officiële vinyl", "Nederlandse Sky-persing 1985 (TLP 19081) — originele vinyl-persing van Elke Dag Een Nieuwe Hoed. LP. Bevat Groot Hart. 258 have / 128 want."),
+    "2375621":  ("🏆 First pressing", "Originele Nederlandse Mercury-persing 1987 (832 637-1) — dit IS de first pressing van Wakker in een Vreemde Wereld. LP. Bevat Dansen op de Vulkaan en Mag Het Licht Uit. 715 have / 151 want."),
+    "30376355": ("🎵 Luisterversie", "Nederlandse Universal Music reissue 2024 (650 170-4) — heruitgave van Wakker in een Vreemde Wereld. LP. Ideaal voor dagelijks afspelen."),
+    "1265189":  ("🏆 First pressing", "Originele Nederlandse Mercury/Phonogram-persing 1989 (836 985-1) — dit IS de first pressing van Niemand in de Stad. LP. Bevat Nergens Goed Voor en Ik Kan Het Niet Alleen. 755 have / 217 want."),
+    "21119311": ("🎵 Luisterversie", "EU Music On Vinyl reissue 2021 (MOVLP619) — Niemand in de Stad op geel vinyl, gelimiteerd. LP. 194 have / 40 want."),
+    "22978889": ("🎵 Vinyl reissue", "Nederlandse Music On Vinyl RSD reissue 2022 (MOVLP3032) — eerste vinyl-persing van De Blauwe Schuit (1994 origineel). LP blauw transparant vinyl. Bevat Als Ze Er Niet Is. 371 have / 51 want."),
+    # Green Day (aanvulling)
+    "2103788":  ("🏆 First pressing", "Originele US Reprise-persing 1994 (1-45529) — dit IS de first pressing van Dookie. LP. Bevat Basket Case, When I Come Around en Longview. 2.843 have / 5.475 want — vraag ruim groter dan aanbod."),
+    "1770697":  ("🎵 Luisterversie", "US Reprise reissue 2009 (468284-1) — meest beschikbare versie van Dookie: 27.540 have. Ideaal voor dagelijks afspelen."),
+    "1297507":  ("🏆 First pressing", "Originele US Reprise-persing 1995 (1-46046) — dit IS de first pressing van Insomniac. LP. Bevat Brain Stew, Geek Stink Breath en Stuck With Me. 2.951 have / 1.959 want."),
+    "17885617": ("🎵 Luisterversie", "US/EU Reprise 25th Anniversary reissue 2021 (093624884576) — LP deluxe heruitgave van Insomniac. 8.248 have. Ideaal voor dagelijks afspelen."),
+    "1220700":  ("🏆 First pressing", "Originele Duitse Reprise-persing 1997 (9362-46794-1) — eerste Europese vinyl-persing van Nimrod. LP. Bevat Good Riddance (Time of Your Life), Hitchin' a Ride en Nice Guys Finish Last. 454 have / 1.501 want — vraag meer dan 3× het have."),
+    "18825352": ("🎵 Luisterversie", "US/EU Reprise reissue 2021 (093624912231) — LP heruitgave van Nimrod. 4.866 have. Ideaal voor dagelijks afspelen."),
+    "1827139":  ("🏆 First pressing US", "Originele US Reprise-persing 2009 (517153-1) — dit IS de US first pressing van 21st Century Breakdown. 2LP 180g gatefold. Bevat Know Your Enemy en 21 Guns. 3.549 have / 1.882 want."),
+    "15703648": ("🎵 Luisterversie", "US Reprise/Warner reissue 2019 (093624978534) — 2LP heruitgave van 21st Century Breakdown. 2.298 have. Ideaal voor dagelijks afspelen."),
+    # Bon Jovi
+    "1443701":  ("🏆 First pressing US", "Originele US Mercury-persing 1986 (830 264-1 M-1) — dit IS de US first pressing van Slippery When Wet. LP. Bevat Livin' on a Prayer, You Give Love a Bad Name en Wanted Dead or Alive. 11.242 have / 1.276 want."),
+    "9307146":  ("🎵 Luisterversie", "EU Mercury/Back To Black 180g reissue 2016 — Slippery When Wet op 180g vinyl. 5.428 have. Ideaal voor dagelijks afspelen."),
+    "17650882": ("🏆 US-persing", "US Island Records 180g gatefold 2014 (B0021972-01) — eerste US vinyl-persing van Crush. 2LP. Bevat It's My Life en Thank You for Loving Me. Origineel (2000) was CD-only."),
+    "9299636":  ("🎵 EU-persing", "EU Island Records 180g gatefold reissue 2016 (06025 470 299-4) — 2LP gatefold van Crush. 915 have / 615 want. Meest beschikbare vinyl versie."),
+    # Doe Maar (aanvulling)
+    "401816":   ("🏆 First pressing", "Originele Nederlandse Sky/Foon-persing 1983 (24000 SL) — dit IS de first pressing van 4US. LP. Bevat De Bom en Doris Day. 6.394 have / 366 want — meest verspreide Doe Maar LP."),
+    "23005994": ("🎵 Luisterversie", "Nederlandse Music On Vinyl reissue 2022 (MOVLP2298) — LP heruitgave van 4US. 368 have. Ideaal voor dagelijks afspelen."),
+    # Fugees
+    "361323":   ("🏆 First pressing", "Originele US Columbia/Ruffhouse-persing 1996 (C2 67147) — dit IS de first pressing van The Score. 2LP. Bevat Killing Me Softly, Ready or Not en Fu-Gee-La. 4.557 have / 6.863 want — vraag ruim hoger dan aanbod."),
+    "2691711":  ("🎵 Luisterversie", "EU Music On Vinyl 180g reissue 2010 (MOVLP068) — 2LP 180g heruitgave van The Score. 5.585 have. Ideaal voor dagelijks afspelen."),
+    # André Hazes
+    "952645":   ("🏆 First pressing", "Originele Nederlandse EMI-persing 1981 (1A 064-26677) — dit IS de first pressing van Gewoon André. LP. Bevat Zij Gelooft In Mij en Bloed, Zweet en Tranen. 4.487 have / 193 want — meest verspreide André Hazes LP."),
+    "20794702": ("🎵 Luisterversie", "Nederlandse Music On Vinyl reissue 2021 (MOVLP2884) — Gewoon André op rood vinyl, gelimiteerd. LP. 144 have."),
+    "3100518":  ("🏆 First pressing", "Originele Nederlandse EMI-persing 1990 (7949391) — dit IS de first pressing van Kleine Jongen. LP. Bevat Kleine Jongen en Caruso. 187 have / 153 want."),
+    "26658734": ("🎵 Luisterversie", "Nederlandse Music On Vinyl reissue 2023 (MOVLP3362) — Kleine Jongen op groen vinyl, gelimiteerd. LP. 78 have."),
+    "28648639": ("🎵 Vinyl reissue", "Nederlandse Music On Vinyl reissue 2023 (MOVLP3546) — eerste vinyl-persing van Strijdlustig (2002 origineel). LP zilver vinyl. 91 have / 31 want."),
+    "26918048": ("🎵 Vinyl reissue", "Nederlandse Music On Vinyl reissue 2023 (MOVLP3431) — eerste vinyl-persing van Met Heel Mijn Hart (1993 origineel). LP geel vinyl. 110 have / 29 want."),
+    "1201387":  ("🏆 First pressing", "Originele Nederlandse EMI/EMI-Bovema-persing 1983 (1A 068-1270201) — dit IS de first pressing van Voor Jou. LP. Bevat Zeg Maar Niets Meer en Bij Jou. 1.695 have / 79 want."),
+    "24606677": ("🎵 Luisterversie", "Nederlandse Music On Vinyl reissue 2022 (MOVLP3134) — Voor Jou op oranje vinyl, gelimiteerd. LP. 99 have."),
+    "25287358": ("🏆 Origineel 1977", "Originele Nederlandse Philips-persing 1977 (6410 140) — eerste persing van Zo Is Het Leven met De Vlieger op zijde B. LP. Zeldzaam: 15 have / 8 want."),
+    "2693688":  ("🎵 Meest beschikbaar", "Nederlandse Philips/Gouden Molen repress 1981 (6423 412) — repress van Zo Is Het Leven. LP. Bevat De Vlieger. Meest verspreide versie: 570 have / 22 want."),
+    # Pop Smoke
+    "16578819": ("🏆 First pressing", "Originele US Victor Victor/Republic-persing 2020 (B0032626-01) — dit IS de first pressing van Shoot for the Stars Aim for the Moon. 2LP gatefold. Bevat Welcome to the Party, For the Night en Dior. Postuum album afgewerkt door 50 Cent. 1.654 have / 442 want."),
+    "16938279": ("🎵 EU-persing", "EU Victor Victor/Republic-persing 2020 (00602507306465) — gelijktijdige EU-persing, 2LP. Meest verspreide versie: 1.695 have. Ideaal voor dagelijks afspelen."),
+    "31489625": ("🎵 Officiële vinyl", "US Victor Victor/Republic 5th Anniversary reissue 2024 (602465755855) — eerste en enige officiële vinyl-persing van Meet the Woo V.1. LP op blauw vinyl."),
+    "16026374": ("🎵 Officiële vinyl", "US Victor Victor/Republic-persing 2020 (B0032506-01) — officiële vinyl-persing van Meet the Woo V.2. 2LP Deluxe Edition, 16 tracks. Bevat Shake the Room, Christopher Walking en Welcome to the Party (Remix). 1.946 have / 1.124 want."),
+    # Travis Scott
+    "31843496": ("🏆 Beperkt rood vinyl", "US Cactus Jack/Epic reissue 2024 (PRES BIZ 011 847 088) — eerste officiële vinyl-persing van Days Before Rodeo op rood vinyl, Deluxe Edition. Oorspronkelijk digitaal mixtape (2014), vinyl pas in 2024. 4.254 have / 1.295 want."),
+    "31828724": ("🎵 Standaard persing", "US Cactus Jack/Epic reissue 2024 (TSBR-VR07) — standaard zwart vinyl persing van Days Before Rodeo. Zelfde 2024-batch als de rode variant, iets meer beschikbaar."),
+    "7435327":  ("🏆 First pressing", "Originele US Epic/Grand Hustle-persing 2015 (88875065201) — dit IS de first pressing van Rodeo. 2LP 150g met download card. Bevat Antidote, 3500 en Oh My Dis Side. 19.335 have / 6.924 want — meest verspreide Travis-album op vinyl."),
+    "22348948": ("🎵 Luisterversie", "US/EU Epic/Grand Hustle reissue 2022 (88875065201) — 2LP heruitgave, geperst door GZ Media. 8.197 have. Laagste vraagprijs ~$18. Ideaal voor dagelijks afspelen."),
+    "9403008":  ("🏆 First pressing US", "Originele US Epic/Grand Hustle-persing 2016 (88985377711) — dit IS de US first pressing van Birds in the Trap Sing McKnight. 2LP. Bevat goosebumps, through the late night en way back feat. Frank Ocean. 13.417 have / 3.648 want."),
+    "9402676":  ("🎵 EU-persing", "Originele EU Epic/Grand Hustle-persing 2016 (88985377711) — gelijktijdige EU-persing, 2LP. 7.224 have / 1.576 want. Ideaal voor dagelijks afspelen."),
+    "27840414": ("🏆 First pressing", "Originele US Epic/Cactus Jack-persing 2023 (1 96588 15041 8) — dit IS de first pressing van Utopia. 2LP. Bevat MY EYES, FE!N feat. Playboi Carti en MODERN JAM. 10.925 have / 2.115 want."),
+    "29085418": ("🎵 EU-persing", "EU Epic/Cactus Jack reissue 2023 (1 96588 46031) — EU-persing van Utopia, 2LP. 4.985 have. Ideaal voor dagelijks afspelen."),
+    # Migos
+    "9896622":  ("🏆 Limited Edition goud", "US QC/300 Entertainment/Atlantic beperkte editie — Culture op goud translucent vinyl. Extreem gezocht: 448 have / 1.094 want. Zeldzamer dan de standaard zwarte persing."),
+    "10271326": ("🎵 Standaard persing", "US QC/300 Entertainment/Atlantic-persing 2017 (560566-1) — standaard zwart vinyl persing van Culture. 2LP. Bevat Bad and Boujee, T-Shirt en Slippery. Opvallend: 1.606 have / 1.721 want — vraag overtreft aanbod."),
+    "12270746": ("🏆 Limited Edition rood", "US QC/Motown/Capitol beperkte editie 2018 (B002813601) — Culture II op rood vinyl, tri-fold gatefold. 3LP. 581 have / 587 want — collector item."),
+    "12274680": ("🎵 Standaard persing", "US QC/Motown/Capitol-persing 2018 (B002813501) — standaard zwart vinyl persing van Culture II. 3LP. 1.147 have / 418 want. Ideaal voor dagelijks afspelen."),
+    "23055125": ("🏆 Standaard persing", "US QC/Motown/UMG-persing 2022 (B003486901) — officiële vinyl-persing van Culture III (digitaal 2021). 2LP. 1.414 have / 168 want."),
+    "23100230": ("🎵 Walmart exclusief wit", "US QC/Motown/Walmart exclusieve persing 2022 (B003486901) — Culture III op wit vinyl. Walmart exclusive limited edition."),
+    # 2Pac
+    "238369":   ("🏆 First pressing", "Originele US Death Row/Interscope-persing 1996 (314-524 204-1) — dit IS de first pressing van All Eyez on Me. 4LP gatefold. Bevat California Love (Remix), Ambitionz Az a Ridah en 2 Of Amerikaz Most Wanted. 2.902 have / 7.474 want — vraag meer dan dubbel zo hoog als aanbod."),
+    "25119211": ("🎵 Luisterversie", "US/EU Interscope/Amaru/UMe 180g reissue 2022 (00602448276261) — 4LP 180g gatefold, gemasterd door Brian Gardner, geperst door GZ Media. 5.200 have. Beste moderne persing: 4.8/5 door fans beoordeeld."),
+    "960025":   ("🏆 First pressing", "Originele US Death Row/Interscope-persing 1998 (INT4-90301) — dit IS de first pressing van Greatest Hits. 4LP gatefold. Bevat California Love, Changes, Hit 'Em Up en Hail Mary. 1.904 have / 1.776 want."),
+    "12824597": ("🎵 Luisterversie", "US Death Row/Interscope/UMG reissue 2018 (B0029039-01) — meest verspreide persing van Greatest Hits. 4LP gatefold heruitgave. 2.603 have. Ideaal voor dagelijks afspelen."),
 }
 
 # ─── ALBUM PAIRINGS ─────────────────────────────────────────────────────────────
@@ -360,6 +490,73 @@ RELEASE_PAIRS = [
     ("20031742", "3105226"),   # ABBA — ABBA
     ("4475809",  "3102070"),   # ABBA — The Album
     ("9535494",  "3102140"),   # ABBA — The Visitors
+    # Rage Against the Machine
+    ("367339",   "4073023"),   # RATM — Rage Against the Machine
+    # Drake
+    ("3294598",  "21976249"),  # Drake — Take Care
+    ("9258657",  "9247160"),   # Drake — If You're Reading This It's Too Late
+    ("9258642",  "26904353"),  # Drake — Views
+    ("12802012", "12800480"),  # Drake — Scorpion
+    # J. Cole
+    ("6736792",  "27356088"),  # J. Cole — 2014 Forest Hills Drive
+    ("13377344", "12308370"),  # J. Cole — KOD
+    ("20020801", "22026808"),  # J. Cole — The Off-Season
+    # Young Thug
+    ("9480756",  "30428033"),  # Young Thug — Jeffery
+    # JACKBOYS
+    ("15227004", "16211818"),  # JACKBOYS — JACKBOYS
+    # Metro Boomin
+    ("26608835", "26584355"),  # Metro Boomin — Heroes & Villains
+    ("13053315", "13208577"),  # Metro Boomin — Not All Heroes Wear Capes
+    # Coldplay
+    ("484030",   "16231042"),  # Coldplay — Parachutes
+    ("703741",   "7266689"),   # Coldplay — A Rush of Blood to the Head
+    ("1044164",  "10039232"),  # Coldplay — X&Y
+    ("5699282",  "5709533"),   # Coldplay — Ghost Stories (EU ↔ US)
+    # Golden Earring
+    ("589850",   "22207354"),  # Golden Earring — Moontan
+    # Toto
+    ("386005",   "16132613"),  # Toto — Toto IV
+    ("1464270",  "693037"),    # Toto — Toto (debut)
+    # Racoon
+    ("3033070",  "10174337"),  # Racoon — Liverpool Rain
+    ("20619157", "20433880"),  # Racoon — Spijt Is Iets Voor Later
+    # BLØF
+    ("10320776", "11745367"),  # BLØF — Aan
+    # Pop Smoke
+    ("16578819", "16938279"),  # Pop Smoke — Shoot for the Stars Aim for the Moon
+    # Travis Scott
+    ("31843496", "31828724"),  # Travis Scott — Days Before Rodeo
+    ("7435327",  "22348948"),  # Travis Scott — Rodeo
+    ("9403008",  "9402676"),   # Travis Scott — Birds in the Trap Sing McKnight
+    ("27840414", "29085418"),  # Travis Scott — Utopia
+    # Migos
+    ("9896622",  "10271326"),  # Migos — Culture
+    ("12270746", "12274680"),  # Migos — Culture II
+    ("23055125", "23100230"),  # Migos — Culture III
+    # 2Pac
+    ("238369",   "25119211"),  # 2Pac — All Eyez on Me
+    ("960025",   "12824597"),  # 2Pac — Greatest Hits
+    # De Dijk
+    ("2375621",  "30376355"),  # De Dijk — Wakker in een Vreemde Wereld
+    ("1265189",  "21119311"),  # De Dijk — Niemand in de Stad
+    # Green Day (aanvulling)
+    ("2103788",  "1770697"),   # Green Day — Dookie
+    ("1297507",  "17885617"),  # Green Day — Insomniac
+    ("1220700",  "18825352"),  # Green Day — Nimrod
+    ("1827139",  "15703648"),  # Green Day — 21st Century Breakdown
+    # Bon Jovi
+    ("1443701",  "9307146"),   # Bon Jovi — Slippery When Wet
+    ("17650882", "9299636"),   # Bon Jovi — Crush (US ↔ EU)
+    # Doe Maar (aanvulling)
+    ("401816",   "23005994"),  # Doe Maar — 4US
+    # Fugees
+    ("361323",   "2691711"),   # Fugees — The Score
+    # André Hazes
+    ("952645",   "20794702"),  # André Hazes — Gewoon André
+    ("3100518",  "26658734"),  # André Hazes — Kleine Jongen
+    ("1201387",  "24606677"),  # André Hazes — Voor Jou
+    ("25287358", "2693688"),   # André Hazes — Zo Is Het Leven (De Vlieger)
 ]
 # Snelle lookup: id → partner_id
 _PAIR_MAP = {a: b for a, b in RELEASE_PAIRS} | {b: a for a, b in RELEASE_PAIRS}
@@ -596,6 +793,158 @@ RELEASES = {
     # ── GUNS N' ROSES (aanvulling) ──
     "2048352":  ("Guns N' Roses", "Use Your Illusion II (GEF 24420, Geffen US 1991, 2LP)"),
     "25128898": ("Guns N' Roses", "Use Your Illusion II (00602445117314, Geffen EU 2022, 2LP 180g)"),
+
+    # ── RAGE AGAINST THE MACHINE ──
+    "367339":  ("Rage Against the Machine", "Rage Against the Machine (Z 52959, Epic US 1992, LP)"),
+    "4073023": ("Rage Against the Machine", "Rage Against the Machine (88725470451, Epic/Legacy US 2012, LP 180g)"),
+
+    # ── DRAKE ──
+    "3294598":  ("Drake", "Take Care (B0016280-01, Young Money/Cash Money US 2011, 2LP)"),
+    "21976249": ("Drake", "Take Care (B0016280-01, Young Money/Cash Money US 2021, 2LP reissue)"),
+    "9258657":  ("Drake", "If You're Reading This It's Too Late (B0025237-01, Young Money US 2016, 2LP)"),
+    "9247160":  ("Drake", "If You're Reading This It's Too Late (0602547973450, Young Money EU 2016, 2LP)"),
+    "9258642":  ("Drake", "Views (B0025236-01, Young Money/Cash Money US 2016, 2LP)"),
+    "26904353": ("Drake", "Views (B0025236-01, Young Money/Cash Money US 2022, 2LP reissue)"),
+    "26783426": ("Drake", "More Life (B0036101-01, OVO/Young Money US 2023, 2LP reissue)"),
+    "12802012": ("Drake", "Scorpion (B0029103-01, Young Money/Cash Money US 2018, 4LP)"),
+    "12800480": ("Drake", "Scorpion (00602567874942, Young Money/Cash Money EU 2018, 4LP)"),
+
+    # ── J. COLE ──
+    "6736792":  ("J. Cole", "2014 Forest Hills Drive (88875 05698 1, Roc Nation/Columbia US 2015, 2LP)"),
+    "27356088": ("J. Cole", "2014 Forest Hills Drive (B0037320-01, Interscope US 2023, 2LP reissue)"),
+    "13377344": ("J. Cole", "KOD (B0028571-01, Dreamville/Interscope US 2018, 2LP gatefold)"),
+    "12308370": ("J. Cole", "KOD (00810760032230, Dreamville/Interscope EU 2018, 2LP gatefold)"),
+    "20020801": ("J. Cole", "The Off-Season (B0034081-01, Dreamville/Interscope US 2021, 2LP)"),
+    "22026808": ("J. Cole", "The Off-Season (00810061165248, Dreamville/Interscope US/EU 2022, 2LP blauw)"),
+
+    # ── YOUNG THUG ──
+    "9480756":  ("Young Thug", "Jeffery (557768-1, 300 Entertainment/Atlantic/VMP US 2016, LP blauw/wit marmer)"),
+    "30428033": ("Young Thug", "Jeffery (075678613456, 300 Entertainment/Atlantic 2024, LP blauw galaxy RSD)"),
+    "18582520": ("Young Thug", "So Much Fun (624959-1, Atlantic/YSL/300/VMP US 2021, 2LP groen)"),
+
+    # ── JACKBOYS ──
+    "15227004": ("JACKBOYS", "JACKBOYS (19439748411, Cactus Jack/Epic US 2020, LP)"),
+    "16211818": ("JACKBOYS", "JACKBOYS (19439748411, Cactus Jack/Epic EU 2020, LP)"),
+
+    # ── POP SMOKE ──
+    "16578819": ("Pop Smoke", "Shoot for the Stars Aim for the Moon (B0032626-01, Victor Victor/Republic US 2020, 2LP)"),
+    "16938279": ("Pop Smoke", "Shoot for the Stars Aim for the Moon (00602507306465, Victor Victor/Republic EU 2020, 2LP)"),
+    "31489625": ("Pop Smoke", "Meet the Woo (602465755855, Victor Victor/Republic US 2024, LP blauw)"),
+    "16026374": ("Pop Smoke", "Meet the Woo 2 (B0032506-01, Victor Victor/Republic US 2020, 2LP)"),
+
+    # ── TRAVIS SCOTT ──
+    "31843496": ("Travis Scott", "Days Before Rodeo (Cactus Jack/Epic US 2024, LP rood)"),
+    "31828724": ("Travis Scott", "Days Before Rodeo (TSBR-VR07, Cactus Jack/Epic US 2024, LP reissue)"),
+    "7435327":  ("Travis Scott", "Rodeo (88875065201, Epic/Grand Hustle US 2015, 2LP)"),
+    "22348948": ("Travis Scott", "Rodeo (88875065201, Epic/Grand Hustle US/EU 2022, 2LP reissue)"),
+    "9403008":  ("Travis Scott", "Birds in the Trap Sing McKnight (88985377711, Epic/Grand Hustle US 2016, 2LP)"),
+    "9402676":  ("Travis Scott", "Birds in the Trap Sing McKnight (88985377711, Epic/Grand Hustle EU 2016, 2LP)"),
+    "27840414": ("Travis Scott", "Utopia (1 96588 15041 8, Epic/Cactus Jack US 2023, 2LP)"),
+    "29085418": ("Travis Scott", "Utopia (1 96588 46031, Epic/Cactus Jack EU 2023, 2LP reissue)"),
+
+    # ── MIGOS ──
+    "9896622":  ("Migos", "Culture (QC/300 Entertainment/Atlantic US, 2LP goud translucent beperkt)"),
+    "10271326": ("Migos", "Culture (560566-1, QC/300 Entertainment/Atlantic US 2017, 2LP)"),
+    "12270746": ("Migos", "Culture II (B002813601, QC/Motown/Capitol US 2018, 3LP rood)"),
+    "12274680": ("Migos", "Culture II (B002813501, QC/Motown/Capitol US 2018, 3LP)"),
+    "23055125": ("Migos", "Culture III (B003486901, QC/Motown/UMG US 2022, 2LP)"),
+    "23100230": ("Migos", "Culture III (B003486901, QC/Motown/Walmart US 2022, 2LP wit)"),
+
+    # ── 2PAC ──
+    "238369":   ("2Pac", "All Eyez on Me (314-524 204-1, Death Row/Interscope US 1996, 4LP)"),
+    "25119211": ("2Pac", "All Eyez on Me (00602448276261, Interscope/Amaru/UMe US/EU 2022, 4LP 180g)"),
+    "960025":   ("2Pac", "Greatest Hits (INT4-90301, Death Row/Interscope US 1998, 4LP)"),
+    "12824597": ("2Pac", "Greatest Hits (B0029039-01, Death Row/Interscope/UMG US 2018, 4LP reissue)"),
+
+    # ── METRO BOOMIN ──
+    "26608835": ("Metro Boomin", "Heroes & Villains (B0037189-01, Boominati/Republic US 2023, LP Target exclusief)"),
+    "26584355": ("Metro Boomin", "Heroes & Villains (B0037188-01, Boominati/Republic US 2023, LP)"),
+    "13053315": ("Metro Boomin", "Not All Heroes Wear Capes (B0029506-01, Republic/Boominati US 2018, LP)"),
+    "13208577": ("Metro Boomin", "Not All Heroes Wear Capes (00602577305603, Republic/Boominati EU 2019, LP)"),
+
+    # ── COLDPLAY ──
+    "484030":   ("Coldplay", "Parachutes (7243 5 27783 1 7, Parlophone/EMI EU 2000, LP)"),
+    "16231042": ("Coldplay", "Parachutes (0190295182502, Parlophone/Warner EU 2020, LP geel translucent)"),
+    "703741":   ("Coldplay", "A Rush of Blood to the Head (7243 5 40504 1 1, Parlophone EU 2002, LP 180g)"),
+    "7266689":  ("Coldplay", "A Rush of Blood to the Head (7243 5 40504 1 1, Parlophone EU 2013, LP 180g reissue)"),
+    "1044164":  ("Coldplay", "X&Y (7243 4 74786 1 1, Parlophone EU 2005, LP)"),
+    "10039232": ("Coldplay", "X&Y (07243 474786 1 1, Parlophone EU 2016, LP reissue)"),
+    "5699282":  ("Coldplay", "Ghost Stories (825646298815, Parlophone/Warner EU 2014, LP 180g)"),
+    "5709533":  ("Coldplay", "Ghost Stories (542279-1, Atlantic/Parlophone US 2014, LP)"),
+
+    # ── GOLDEN EARRING ──
+    "589850":   ("Golden Earring", "Moontan (2925 017, Polydor NL 1973, LP gatefold)"),
+    "22207354": ("Golden Earring", "Moontan (MOVLP3000, Music On Vinyl EU 2022, 2LP geremasterd clear vinyl)"),
+
+    # ── TOTO ──
+    "386005":   ("Toto", "Toto IV (CBS 85529, CBS EU 1982, LP)"),
+    "16132613": ("Toto", "Toto IV (19075801121, Columbia EU 2020, LP remaster)"),
+    "1464270":  ("Toto", "Toto (JC 35317, Columbia US 1978, LP)"),
+    "693037":   ("Toto", "Toto (CBS 83148, CBS EU 1978, LP)"),
+
+    # ── RACOON ──
+    "3033070":  ("Racoon", "Liverpool Rain (PIASNL0026CLPCD, PIAS NL 2011, LP+CD)"),
+    "10174337": ("Racoon", "Liverpool Rain (PIASNL0026CLPCD, PIAS NL 2017, LP wit+CD)"),
+    "22336765": ("Racoon", "Another Day (PIAS NL 2022, LP beperkt)"),
+    "6647916":  ("Racoon", "All in Good Time (944.A174.010, PIAS NL 2015, LP+CD)"),
+    "20619157": ("Racoon", "Spijt Is Iets Voor Later (19439887531, Sony Music NL 2021, LP+CD)"),
+    "20433880": ("Racoon", "Spijt Is Iets Voor Later (19439887541, Sony Music EU 2021, LP clear+CD)"),
+    "22785002": ("Racoon", "Spijt Is Iets Voor Later — Artone Sessions (19439976911, Sony Music NL 2022, LP bruin)"),
+
+    # ── BLØF ──
+    "26234072": ("BLØF", "Boven (MOVLP3301, Music On Vinyl EU 2023, 2LP 180g)"),
+    "10320776": ("BLØF", "Aan (97205, Altijd Wakker NL 2017, 2LP geel beperkt genummerd)"),
+    "11745367": ("BLØF", "Aan (97205, Altijd Wakker Benelux 2017, 2LP)"),
+    "27135846": ("BLØF", "Blauwe Ruis (MOVLP3195, Music On Vinyl NL 2023, LP 180g blauw)"),
+    "26449052": ("BLØF", "Watermakers (MOVLP3302, Music On Vinyl NL 2023, 2LP zilver genummerd)"),
+
+    # ── JANSE BAGGE BEND (aanvulling) ──
+    "2267945":  ("Janse Bagge Bend", "Flazjelêttentaere (SKY 21048 SL, Sky/Marlstone NL 1983, LP)"),
+
+    # ── DE DIJK ──
+    "2084461":  ("De Dijk", "De Dijk (88.053, Dureco Benelux 1982, LP)"),
+    "3469887":  ("De Dijk", "Elke Dag Een Nieuwe Hoed (TLP 19081, Sky NL 1985, LP)"),
+    "2375621":  ("De Dijk", "Wakker in een Vreemde Wereld (832 637-1, Mercury NL 1987, LP)"),
+    "30376355": ("De Dijk", "Wakker in een Vreemde Wereld (650 170-4, Universal Music NL 2024, LP reissue)"),
+    "1265189":  ("De Dijk", "Niemand in de Stad (836 985-1, Mercury/Phonogram NL 1989, LP)"),
+    "21119311": ("De Dijk", "Niemand in de Stad (MOVLP619, Music On Vinyl EU 2021, LP geel)"),
+    "22978889": ("De Dijk", "De Blauwe Schuit (MOVLP3032, Music On Vinyl NL 2022, LP blauw transparant)"),
+
+    # ── GREEN DAY (aanvulling) ──
+    "2103788":  ("Green Day", "Dookie (1-45529, Reprise US 1994, LP)"),
+    "1770697":  ("Green Day", "Dookie (468284-1, Reprise US 2009, LP reissue)"),
+    "1297507":  ("Green Day", "Insomniac (1-46046, Reprise US 1995, LP)"),
+    "17885617": ("Green Day", "Insomniac (093624884576, Reprise US/EU 2021, LP 25th Anniversary)"),
+    "1220700":  ("Green Day", "Nimrod (9362-46794-1, Reprise DE 1997, LP)"),
+    "18825352": ("Green Day", "Nimrod (093624912231, Reprise US/EU 2021, LP reissue)"),
+    "1827139":  ("Green Day", "21st Century Breakdown (517153-1, Reprise US 2009, 2LP 180g)"),
+    "15703648": ("Green Day", "21st Century Breakdown (093624978534, Reprise/Warner US 2019, 2LP reissue)"),
+
+    # ── BON JOVI ──
+    "1443701":  ("Bon Jovi", "Slippery When Wet (830 264-1 M-1, Mercury US 1986, LP)"),
+    "9307146":  ("Bon Jovi", "Slippery When Wet (Mercury/Back To Black EU 2016, LP 180g)"),
+    "17650882": ("Bon Jovi", "Crush (B0021972-01, Island US 2014, 2LP 180g)"),
+    "9299636":  ("Bon Jovi", "Crush (06025 470 299-4, Island EU 2016, 2LP 180g)"),
+
+    # ── DOE MAAR (aanvulling) ──
+    "401816":   ("Doe Maar", "4US (24000 SL, Sky/Foon NL 1983, LP)"),
+    "23005994": ("Doe Maar", "4US (MOVLP2298, Music On Vinyl NL 2022, LP reissue)"),
+
+    # ── FUGEES ──
+    "361323":   ("Fugees", "The Score (C2 67147, Columbia/Ruffhouse US 1996, 2LP)"),
+    "2691711":  ("Fugees", "The Score (MOVLP068, Music On Vinyl EU 2010, 2LP 180g)"),
+
+    # ── ANDRÉ HAZES ──
+    "952645":   ("André Hazes", "Gewoon André (1A 064-26677, EMI NL 1981, LP)"),
+    "20794702": ("André Hazes", "Gewoon André (MOVLP2884, Music On Vinyl NL 2021, LP rood)"),
+    "3100518":  ("André Hazes", "Kleine Jongen (7949391, EMI NL 1990, LP)"),
+    "26658734": ("André Hazes", "Kleine Jongen (MOVLP3362, Music On Vinyl NL 2023, LP groen)"),
+    "28648639": ("André Hazes", "Strijdlustig (MOVLP3546, Music On Vinyl NL 2023, LP zilver)"),
+    "26918048": ("André Hazes", "Met Heel Mijn Hart (MOVLP3431, Music On Vinyl NL 2023, LP geel)"),
+    "1201387":  ("André Hazes", "Voor Jou (1A 068-1270201, EMI/EMI-Bovema NL 1983, LP)"),
+    "24606677": ("André Hazes", "Voor Jou (MOVLP3134, Music On Vinyl NL 2022, LP oranje)"),
+    "25287358": ("André Hazes", "Zo Is Het Leven (6410 140, Philips NL 1977, LP)"),
+    "2693688":  ("André Hazes", "Zo Is Het Leven (6423 412, Philips/Gouden Molen NL 1981, LP repress)"),
 }
 
 # ─── GENRE CATEGORISATIE ──────────────────────────────────────────────────────
@@ -611,11 +960,16 @@ GROUP_GENRES = {
     "Eagles":            "Rock",
     "Fleetwood Mac":     "Rock",
     # Hard Rock / Metal
-    "Nirvana":           "Hard Rock / Metal",
-    "AC/DC":             "Hard Rock / Metal",
-    "Guns N' Roses":     "Hard Rock / Metal",
-    "Metallica":         "Hard Rock / Metal",
-    "Linkin Park":       "Hard Rock / Metal",
+    "Nirvana":                   "Hard Rock / Metal",
+    "AC/DC":                     "Hard Rock / Metal",
+    "Guns N' Roses":             "Hard Rock / Metal",
+    "Metallica":                 "Hard Rock / Metal",
+    "Linkin Park":               "Hard Rock / Metal",
+    "Rage Against the Machine":  "Hard Rock / Metal",
+    "Coldplay":                  "Rock",
+    "Golden Earring":            "Rock",
+    "Toto":                      "Rock",
+    "Bon Jovi":                  "Rock",
     # Pop
     "Michael Jackson":   "Pop",
     "Doe Maar":          "Pop",
@@ -634,6 +988,16 @@ GROUP_GENRES = {
     "Sticks":            "Hip-Hop",
     "21 Savage":         "Hip-Hop",
     "50 Cent":           "Hip-Hop",
+    "Drake":             "Hip-Hop",
+    "J. Cole":           "Hip-Hop",
+    "Young Thug":        "Hip-Hop",
+    "JACKBOYS":          "Hip-Hop",
+    "Pop Smoke":         "Hip-Hop",
+    "Travis Scott":      "Hip-Hop",
+    "Migos":             "Hip-Hop",
+    "2Pac":              "Hip-Hop",
+    "Metro Boomin":      "Hip-Hop",
+    "Fugees":            "Hip-Hop",
     # Rock & Roll
     "Elvis Presley":     "Rock & Roll",
     "Rolling Stones":    "Rock",
@@ -647,6 +1011,10 @@ GROUP_GENRES = {
     # Nederlandstalig
     "Rowwen Hèze":       "Nederlandstalig",
     "Janse Bagge Bend":  "Nederlandstalig",
+    "Racoon":            "Nederlandstalig",
+    "BLØF":              "Nederlandstalig",
+    "De Dijk":           "Nederlandstalig",
+    "André Hazes":       "Nederlandstalig",
 }
 GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Soul / R&B", "Reggae", "Ska", "Hip-Hop", "Rock & Roll", "Nederlandstalig"]
 
@@ -1941,7 +2309,7 @@ def build_html(results, static=False):
 {nav}
 <main>
   <div class="topbar-wrap">
-    {"" if not static else f'<div class="topbar"><button class="hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button><span class="sub" style="margin-right:auto">Snapshot: {now}</span><a class="btn btn-refresh" href="https://github.com/schaekentuur-bit/vinyl-tracker/actions" target="_blank">&#8635; Vernieuwen via GitHub</a><button class="btn btn-pdf" onclick="window.print()">&#128438; PDF</button></div>'}
+    {"" if not static else f'<div class="topbar"><button class="hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button><span class="sub" style="margin-right:auto">Snapshot: {now}</span><button id="gh-refresh-btn" class="btn btn-refresh" onclick="ghRefresh()">&#8635; Vernieuwen</button><button class="btn btn-pdf" onclick="window.print()">&#128438; PDF</button></div>'}
     {"" if static else """<div class="topbar">
       <button class="hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
       <button class="btn btn-pdf" onclick="window.print()">&#128438; PDF</button>
@@ -1959,6 +2327,20 @@ def build_html(results, static=False):
   {deals_page}
   {artist_pages}
 </main>
+{"" if not static else """
+<div id="gh-modal" style="display:none;position:fixed;inset:0;background:rgba(15,23,42,.6);z-index:200;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(2px)">
+  <div style="background:#fff;border-radius:14px;padding:24px 20px;max-width:380px;width:100%;box-shadow:0 12px 40px rgba(0,0,0,.25)">
+    <h3 style="margin:0 0 6px;font-size:15px;font-weight:700;color:#1E293B">GitHub token vereist</h3>
+    <p style="margin:0 0 12px;font-size:12.5px;color:#64748B;line-height:1.5">Maak een <strong>Classic Personal Access Token</strong> aan met scope <code style="background:#F1F5F9;padding:1px 4px;border-radius:3px">workflow</code> op <a href="https://github.com/settings/tokens/new?scopes=workflow&description=Vinyl+Tracker" target="_blank" style="color:#10B981;font-weight:600">github.com/settings/tokens</a>. Het token wordt enkel in je browser bewaard (localStorage).</p>
+    <input id="gh-token-input" type="password" placeholder="ghp_xxxxxxxxxxxx" autocomplete="off" style="width:100%;box-sizing:border-box;padding:10px 12px;border:1.5px solid #CBD5E1;border-radius:8px;font-size:13px;margin-bottom:10px;outline:none;font-family:monospace"/>
+    <div style="display:flex;gap:8px;justify-content:flex-end;align-items:center">
+      <button onclick="ghClearToken()" title="Bewaard token wissen" style="padding:8px 10px;border:none;background:none;color:#94A3B8;cursor:pointer;font-size:12px">Wissen</button>
+      <button onclick="document.getElementById('gh-modal').style.display='none'" style="padding:8px 14px;border:1.5px solid #CBD5E1;background:#fff;border-radius:8px;cursor:pointer;font-size:13px;font-weight:500;color:#475569">Annuleren</button>
+      <button onclick="ghSaveToken()" style="padding:8px 18px;background:#10B981;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600">Opslaan &amp; starten</button>
+    </div>
+    <p id="gh-modal-err" style="margin:8px 0 0;font-size:11.5px;color:#EF4444;display:none"></p>
+  </div>
+</div>"""}
 <script>
 function showPage(id){{
   document.querySelectorAll('.page').forEach(function(p){{p.style.display='none';}});
@@ -2028,6 +2410,92 @@ if(_addUrl){{
 }}
 var initPage=(window.location.hash||'#home').slice(1);
 showPage(document.getElementById(initPage)?initPage:'home');
+var _ghTriggerTime=0;
+function ghRefresh(){{
+  var btn=document.getElementById('gh-refresh-btn');
+  if(!btn)return;
+  var token=localStorage.getItem('gh_pat');
+  if(!token){{
+    var m=document.getElementById('gh-modal');
+    m.style.display='flex';
+    setTimeout(function(){{document.getElementById('gh-token-input').focus();}},50);
+    return;
+  }}
+  ghTrigger(token);
+}}
+function ghSaveToken(){{
+  var t=document.getElementById('gh-token-input').value.trim();
+  var err=document.getElementById('gh-modal-err');
+  if(!t){{err.style.display='block';err.textContent='Voer een token in.';return;}}
+  localStorage.setItem('gh_pat',t);
+  document.getElementById('gh-modal').style.display='none';
+  document.getElementById('gh-token-input').value='';
+  err.style.display='none';
+  ghTrigger(t);
+}}
+function ghClearToken(){{
+  localStorage.removeItem('gh_pat');
+  document.getElementById('gh-token-input').value='';
+}}
+document.addEventListener('DOMContentLoaded',function(){{
+  var inp=document.getElementById('gh-token-input');
+  if(inp)inp.addEventListener('keydown',function(e){{if(e.key==='Enter')ghSaveToken();}});
+}});
+function ghTrigger(token){{
+  var btn=document.getElementById('gh-refresh-btn');
+  btn.disabled=true; btn.textContent='⏳ Starten…';
+  _ghTriggerTime=Date.now();
+  fetch('https://api.github.com/repos/schaekentuur-bit/vinyl-tracker/actions/workflows/vinyl.yml/dispatches',{{
+    method:'POST',
+    headers:{{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'}},
+    body:JSON.stringify({{ref:'master'}})
+  }}).then(function(r){{
+    if(r.status===204){{
+      btn.textContent='⏳ Bezig…';
+      setTimeout(function(){{ghPoll(token,0);}},10000);
+    }}else if(r.status===401||r.status===403){{
+      localStorage.removeItem('gh_pat');
+      btn.disabled=false; btn.textContent='⚠ Token ongeldig';
+      setTimeout(function(){{btn.textContent='↻ Vernieuwen';btn.disabled=false;}},3000);
+    }}else{{
+      btn.disabled=false; btn.textContent='⚠ Fout '+r.status;
+      setTimeout(function(){{btn.textContent='↻ Vernieuwen';}},3000);
+    }}
+  }}).catch(function(){{
+    btn.disabled=false; btn.textContent='⚠ Netwerkfout';
+    setTimeout(function(){{btn.textContent='↻ Vernieuwen';}},3000);
+  }});
+}}
+function ghPoll(token,n){{
+  if(n>80){{
+    var btn=document.getElementById('gh-refresh-btn');
+    btn.disabled=false; btn.textContent='⚠ Timeout — probeer opnieuw';
+    return;
+  }}
+  fetch('https://api.github.com/repos/schaekentuur-bit/vinyl-tracker/actions/runs?per_page=5',{{
+    headers:{{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json'}}
+  }}).then(function(r){{return r.json();}}).then(function(d){{
+    var runs=d.workflow_runs||[];
+    var run=null;
+    for(var i=0;i<runs.length;i++){{
+      if(new Date(runs[i].created_at).getTime()>=_ghTriggerTime-5000){{run=runs[i];break;}}
+    }}
+    var btn=document.getElementById('gh-refresh-btn');
+    if(!run||run.status==='queued'||run.status==='in_progress'){{
+      var mins=Math.floor(n*5/60);
+      btn.textContent='⏳ Bezig ('+(mins>0?mins+'min':'<1min')+')…';
+      setTimeout(function(){{ghPoll(token,n+1);}},5000);
+    }}else if(run.conclusion==='success'){{
+      btn.disabled=false; btn.textContent='✓ Klaar — herlaad';
+      btn.onclick=function(){{window.location.reload();}};
+    }}else{{
+      btn.disabled=false; btn.textContent='⚠ Workflow mislukt';
+      setTimeout(function(){{btn.textContent='↻ Vernieuwen';btn.onclick=ghRefresh;}},4000);
+    }}
+  }}).catch(function(){{
+    setTimeout(function(){{ghPoll(token,n+1);}},5000);
+  }});
+}}
 </script>
 </body>
 </html>"""
