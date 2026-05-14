@@ -2309,7 +2309,7 @@ def build_html(results, static=False):
 {nav}
 <main>
   <div class="topbar-wrap">
-    {"" if not static else f'<div class="topbar"><button class="hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button><span class="sub" style="margin-right:auto">Snapshot: {now}</span><button id="gh-refresh-btn" class="btn btn-refresh" onclick="ghRefresh()">&#8635; Vernieuwen</button><button class="btn btn-pdf" onclick="window.print()">&#128438; PDF</button></div>'}
+    {"" if not static else f'<div class="topbar"><button class="hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button><span class="sub" style="margin-right:auto">Snapshot: {now}</span><span style="display:inline-flex;gap:1px;position:relative"><button id="gh-refresh-btn" class="btn btn-refresh" style="border-radius:6px 0 0 6px" onclick="ghRefresh(false)">&#8635; Vernieuwen</button><button class="btn btn-refresh" style="border-radius:0 6px 6px 0;padding:6px 8px;border-left:1px solid rgba(255,255,255,.35)" onclick="ghToggleMenu()" aria-label="Opties">&#9662;</button><div id="gh-menu" style="display:none;position:absolute;right:0;top:calc(100% + 6px);background:#fff;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.18);z-index:110;min-width:220px;overflow:hidden;border:1px solid #E2E8F0"><button onclick="ghRefresh(false)" style="display:block;width:100%;text-align:left;padding:11px 16px;border:none;background:none;cursor:pointer;font-size:13px;color:#1E293B;font-weight:500">&#8635; Normaal vernieuwen</button><button onclick="ghRefresh(true)" style="display:block;width:100%;text-align:left;padding:11px 16px;border:none;background:none;cursor:pointer;font-size:13px;color:#DC2626;font-weight:500">&#9889; Alles ophalen (cache negeren)</button><div style="border-top:1px solid #F1F5F9"></div><button onclick="ghShowTokenModal()" style="display:block;width:100%;text-align:left;padding:11px 16px;border:none;background:none;cursor:pointer;font-size:13px;color:#64748B">&#128273; Token beheren</button></div></span><button class="btn btn-pdf" onclick="window.print()">&#128438; PDF</button></div>'}
     {"" if static else """<div class="topbar">
       <button class="hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
       <button class="btn btn-pdf" onclick="window.print()">&#128438; PDF</button>
@@ -2410,18 +2410,30 @@ if(_addUrl){{
 }}
 var initPage=(window.location.hash||'#home').slice(1);
 showPage(document.getElementById(initPage)?initPage:'home');
-var _ghTriggerTime=0;
-function ghRefresh(){{
+var _ghTriggerTime=0,_ghForce=false;
+function ghRefresh(force){{
+  var m=document.getElementById('gh-menu');
+  if(m)m.style.display='none';
+  _ghForce=!!force;
   var btn=document.getElementById('gh-refresh-btn');
   if(!btn)return;
   var token=localStorage.getItem('gh_pat');
   if(!token){{
-    var m=document.getElementById('gh-modal');
-    m.style.display='flex';
-    setTimeout(function(){{document.getElementById('gh-token-input').focus();}},50);
+    var md=document.getElementById('gh-modal');
+    if(md){{md.style.display='flex';setTimeout(function(){{document.getElementById('gh-token-input').focus();}},50);}}
     return;
   }}
-  ghTrigger(token);
+  ghTrigger(token,_ghForce);
+}}
+function ghToggleMenu(){{
+  var m=document.getElementById('gh-menu');
+  if(m)m.style.display=m.style.display==='none'?'block':'none';
+}}
+function ghShowTokenModal(){{
+  var m=document.getElementById('gh-menu');
+  if(m)m.style.display='none';
+  var md=document.getElementById('gh-modal');
+  if(md){{md.style.display='flex';setTimeout(function(){{document.getElementById('gh-token-input').focus();}},50);}}
 }}
 function ghSaveToken(){{
   var t=document.getElementById('gh-token-input').value.trim();
@@ -2431,7 +2443,7 @@ function ghSaveToken(){{
   document.getElementById('gh-modal').style.display='none';
   document.getElementById('gh-token-input').value='';
   err.style.display='none';
-  ghTrigger(t);
+  ghTrigger(t,_ghForce);
 }}
 function ghClearToken(){{
   localStorage.removeItem('gh_pat');
@@ -2440,15 +2452,19 @@ function ghClearToken(){{
 document.addEventListener('DOMContentLoaded',function(){{
   var inp=document.getElementById('gh-token-input');
   if(inp)inp.addEventListener('keydown',function(e){{if(e.key==='Enter')ghSaveToken();}});
+  document.addEventListener('click',function(e){{
+    var m=document.getElementById('gh-menu');
+    if(m&&m.style.display!=='none'&&!m.contains(e.target)&&!e.target.closest('[onclick="ghToggleMenu()"]')){{m.style.display='none';}}
+  }});
 }});
-function ghTrigger(token){{
+function ghTrigger(token,force){{
   var btn=document.getElementById('gh-refresh-btn');
-  btn.disabled=true; btn.textContent='⏳ Starten…';
+  btn.disabled=true; btn.textContent=force?'⏳ Starten (volledig)…':'⏳ Starten…';
   _ghTriggerTime=Date.now();
   fetch('https://api.github.com/repos/schaekentuur-bit/vinyl-tracker/actions/workflows/vinyl.yml/dispatches',{{
     method:'POST',
     headers:{{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'}},
-    body:JSON.stringify({{ref:'master'}})
+    body:JSON.stringify({{ref:'master',inputs:{{force:force?'true':'false'}}}})
   }}).then(function(r){{
     if(r.status===204){{
       btn.textContent='⏳ Bezig…';
@@ -2490,7 +2506,7 @@ function ghPoll(token,n){{
       btn.onclick=function(){{window.location.reload();}};
     }}else{{
       btn.disabled=false; btn.textContent='⚠ Workflow mislukt';
-      setTimeout(function(){{btn.textContent='↻ Vernieuwen';btn.onclick=ghRefresh;}},4000);
+      setTimeout(function(){{btn.textContent='↻ Vernieuwen';btn.onclick=function(){{ghRefresh(false);}};}},4000);
     }}
   }}).catch(function(){{
     setTimeout(function(){{ghPoll(token,n+1);}},5000);

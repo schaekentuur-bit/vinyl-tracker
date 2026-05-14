@@ -36,8 +36,9 @@ cookies = vinyl_tracker.load_cookies()
 session = cf_requests.Session(impersonate="chrome124")
 session.headers.update({"Accept-Language": "nl-BE,nl;q=0.9"})
 
-print("Scrapen...")
-results = scrape_all(cookies, session)
+force = os.getenv("FORCE_REFRESH", "false").strip().lower() == "true"
+print(f"Scrapen... (force={force})")
+results = scrape_all(cookies, session, force_listings=force, force_stats=force)
 print(f"{len(results)} releases verwerkt")
 
 html = build_html(results, static=True)

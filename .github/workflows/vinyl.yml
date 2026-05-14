@@ -3,7 +3,16 @@ name: Vinyl Report
 on:
   schedule:
     - cron: '0 7 * * *'   # elke dag om 07:00 UTC
-  workflow_dispatch:       # ook handmatig te starten via GitHub app
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Forceer volledige refresh (cache negeren)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
 
 permissions:
   contents: write
@@ -28,6 +37,7 @@ jobs:
           EMAIL_FROM:          ${{ secrets.EMAIL_FROM }}
           EMAIL_TO:            ${{ secrets.EMAIL_TO }}
           EMAIL_PASS:          ${{ secrets.EMAIL_PASS }}
+          FORCE_REFRESH:       ${{ github.event.inputs.force || 'false' }}
         run: python generate_report.py
 
       - name: Publiceer naar GitHub Pages
