@@ -1945,8 +1945,9 @@ def build_html(results, static=False):
                             f' title="{ri_desc}">{ri_label}</span>')
             else:
                 ri_badge = ""
+            deal_key = f"{r['id']}_{d['cond']}"
             rows += (
-                f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row">'
+                f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row" data-deal-key="{deal_key}">'
                 f'<td><span class="rb-group">{r["group"]}</span></td>'
                 f'<td class="td-title">{r["title"]}{ri_badge}</td>'
                 f'<td>'
@@ -1959,7 +1960,7 @@ def build_html(results, static=False):
                 f'<td class="td-num">{ref_val}</td>'
                 f'<td class="td-num"><span class="deal-pct">-{d["disc"]:.0f}%</span></td>'
                 f'<td class="td-seller">{b["seller"]} <span class="muted">({b["rating_count"]:,})</span></td>'
-                f'<td></td>'
+                f'<td><button class="deal-dismiss" onclick="dismissDeal(\'{deal_key}\',event)" title="Verbergen">&#10005;</button></td>'
                 f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
                 f'</tr>'
             )
@@ -1986,6 +1987,10 @@ def build_html(results, static=False):
       <div class="page-header">
         <h2>Deals</h2>
         <span class="sub">{now} &nbsp;&middot;&nbsp; verkopers &ge;{MIN_SELLER_RATINGS} ratings</span>
+      </div>
+      <div class="dismissed-bar" id="dismissed-bar">
+        <span id="dismissed-n">0</span> deal(s) verborgen &mdash;
+        <a href="#" onclick="showHiddenDeals();return false" style="color:var(--accent);font-weight:600">Toon alles</a>
       </div>
       <h3 style="margin:0 0 8px;font-size:15px;color:var(--accent)">
         &#9650; Beste deals
@@ -2298,6 +2303,12 @@ def build_html(results, static=False):
   /* ── Deal percentage badge ── */
   .deal-pct{{background:var(--deal-bg);color:var(--deal-fg);
              font-size:12px;font-weight:700;padding:2px 8px;border-radius:20px}}
+  .deal-dismiss{{background:none;border:none;color:#CBD5E1;cursor:pointer;
+                 font-size:13px;padding:2px 6px;border-radius:4px;line-height:1}}
+  .deal-dismiss:hover{{background:#FEE2E2;color:#EF4444}}
+  .dismissed-bar{{display:none;font-size:12px;color:var(--muted);
+                  margin-bottom:12px;padding:6px 12px;background:#F8FAFC;
+                  border-radius:6px;border:1px solid var(--border)}}
 
   /* ── Hamburger ── */
   .hamburger{{display:none;border:none;background:none;cursor:pointer;
@@ -2477,6 +2488,27 @@ if(_addUrl){{
 }}
 var initPage=(window.location.hash||'#home').slice(1);
 showPage(document.getElementById(initPage)?initPage:'home');
+function dismissDeal(key,e){{
+  e.stopPropagation();
+  var list=JSON.parse(localStorage.getItem('dismissed_deals')||'[]');
+  if(!list.includes(key))list.push(key);
+  localStorage.setItem('dismissed_deals',JSON.stringify(list));
+  var row=document.querySelector('tr[data-deal-key="'+key+'"]');
+  if(row)row.style.display='none';
+  _updateDismissedBar();
+}}
+function showHiddenDeals(){{
+  localStorage.removeItem('dismissed_deals');
+  document.querySelectorAll('tr[data-deal-key]').forEach(function(r){{r.style.display='';}});
+  _updateDismissedBar();
+}}
+function _updateDismissedBar(){{
+  var list=JSON.parse(localStorage.getItem('dismissed_deals')||'[]');
+  var bar=document.getElementById('dismissed-bar');
+  var cnt=document.getElementById('dismissed-n');
+  if(bar)bar.style.display=list.length?'block':'none';
+  if(cnt)cnt.textContent=list.length;
+}}
 var _ghTriggerTime=0,_ghForce=false;
 function ghRefresh(force){{
   var m=document.getElementById('gh-menu');
@@ -2523,6 +2555,13 @@ document.addEventListener('DOMContentLoaded',function(){{
     var m=document.getElementById('gh-menu');
     if(m&&m.style.display!=='none'&&!m.contains(e.target)&&!e.target.closest('[onclick="ghToggleMenu()"]')){{m.style.display='none';}}
   }});
+  // Herstel verborgen deals vanuit localStorage
+  var dismissed=JSON.parse(localStorage.getItem('dismissed_deals')||'[]');
+  dismissed.forEach(function(key){{
+    var row=document.querySelector('tr[data-deal-key="'+key+'"]');
+    if(row)row.style.display='none';
+  }});
+  _updateDismissedBar();
 }});
 function ghTrigger(token,force){{
   var btn=document.getElementById('gh-refresh-btn');
