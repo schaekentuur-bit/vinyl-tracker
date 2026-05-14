@@ -1,15 +1,4 @@
 {
-  "1813006_G+": {
-    "price": 120.0,
-    "currency": "AUD",
-    "shipping": 0.0,
-    "total_eur": 74.26661715558856,
-    "disc": 68.55774040830289,
-    "tier": "beste",
-    "seller": "soundsforspace",
-    "title": "Nevermind (DGC-24425, US origineel 1991)",
-    "group": "Nirvana"
-  },
   "470912_VG": {
     "price": 10.0,
     "currency": "GBP",
@@ -21,93 +10,49 @@
     "title": "London Calling (CBS CLASH 3, CBS UK 1979, 2LP)",
     "group": "The Clash"
   },
+  "1813006_G+": {
+    "price": 120.0,
+    "currency": "AUD",
+    "shipping": 0.0,
+    "total_eur": 74.26661715558856,
+    "disc": 55.60431551301348,
+    "tier": "beste",
+    "seller": "soundsforspace",
+    "title": "Nevermind (DGC-24425, US origineel 1991)",
+    "group": "Nirvana"
+  },
   "960025_M": {
     "price": 195.0,
     "currency": "USD",
     "shipping": 77.0,
     "total_eur": 232.18096457533076,
-    "disc": 56.879754002167196,
+    "disc": 42.235912371892155,
     "tier": "beste",
     "seller": "2Hipps",
     "title": "Greatest Hits (INT4-90301, Death Row/Interscope US 1998, 4LP)",
     "group": "2Pac"
-  },
-  "1464270_VG+": {
-    "price": 4.96,
-    "currency": "CAD",
-    "shipping": 0.0,
-    "total_eur": 3.092462123573789,
-    "disc": 39.244359065347965,
-    "tier": "beste",
-    "seller": "ECWB",
-    "title": "Toto (JC 35317, Columbia US 1978, LP)",
-    "group": "Toto"
   },
   "3183667_VG": {
     "price": 75.0,
     "currency": "CAD",
     "shipping": 0.0,
     "total_eur": 46.76102001371656,
-    "disc": 38.87448364220057,
+    "disc": 6.430282069807792,
     "tier": "beste",
     "seller": "deathofvinyl",
     "title": "Nevermind 20th Anniversary (B0015884-01, US 2011)",
     "group": "Nirvana"
   },
-  "27888051_M": {
-    "price": 34.99,
-    "currency": "CAD",
-    "shipping": 0.0,
-    "total_eur": 21.815574537065903,
-    "disc": 14.415164625084723,
-    "tier": "beste",
-    "seller": "Pusher_de_Vinyles",
-    "title": "Arrival (POLS 272, Polar EU 2022, reissue)",
-    "group": "ABBA"
-  },
-  "14186441_VG+": {
-    "price": 4560.0,
-    "currency": "JPY",
-    "shipping": 0.0,
-    "total_eur": 24.67131959097549,
-    "disc": 11.88814431794468,
-    "tier": "beste",
-    "seller": "recordshopshibuya",
-    "title": "Abbey Road 50th Anniversary (0602577915123, 2019)",
-    "group": "Beatles"
-  },
-  "2375621_VG+": {
-    "price": 28.0,
-    "currency": "CAD",
-    "shipping": 0.0,
-    "total_eur": 17.457447471787518,
-    "disc": 11.652593766257509,
-    "tier": "beste",
-    "seller": "LPRecordCave",
-    "title": "Wakker in een Vreemde Wereld (832 637-1, Mercury NL 1987, LP)",
-    "group": "De Dijk"
-  },
   "223127_VG+": {
-    "price": 70.0,
-    "currency": "USD",
-    "shipping": 33.0,
-    "total_eur": 87.92146820315834,
-    "disc": 5.61302393649132,
+    "price": 80.0,
+    "currency": "EUR",
+    "shipping": 9.0,
+    "total_eur": 89.0,
+    "disc": 4.455179817498664,
     "tier": "beste",
-    "seller": "EatRecords",
+    "seller": "hiphopgermany.de",
     "title": "The Infamous (07863 66480-1, US 1995)",
     "group": "Mobb Deep"
-  },
-  "23055125_VG+": {
-    "price": 12.99,
-    "currency": "CAD",
-    "shipping": 0.0,
-    "total_eur": 8.099008666375708,
-    "disc": 4.717545101462259,
-    "tier": "beste",
-    "seller": "33s",
-    "title": "Culture III (B003486901, QC/Motown/UMG US 2022, 2LP)",
-    "group": "Migos"
   },
   "676619_VG+": {
     "price": 45.0,
@@ -119,17 +64,6 @@
     "seller": "SonatineDischi",
     "title": "All That You Can't Leave Behind (U212 / 524 653-1, Island Records EU 2000)",
     "group": "U2"
-  },
-  "474703_VG+": {
-    "price": 18000.0,
-    "currency": "JPY",
-    "shipping": 0.0,
-    "total_eur": 97.38678785911377,
-    "disc": 32.60689010556889,
-    "tier": "goed",
-    "seller": "Tokyo_Atari",
-    "title": "Demon Days (07243 873838 1 4, Parlophone UK 2005, 2LP gatefold)",
-    "group": "Gorillaz"
   },
   "17885617_M": {
     "price": 18.9,
@@ -153,28 +87,6 @@
     "title": "Use Your Illusion II (GEF 24420, Geffen US 1991, 2LP)",
     "group": "Guns N' Roses"
   },
-  "16026374_M": {
-    "price": 39.99,
-    "currency": "CAD",
-    "shipping": 0.0,
-    "total_eur": 24.932975871313673,
-    "disc": 27.487922044578095,
-    "tier": "goed",
-    "seller": "ZaxxRecords",
-    "title": "Meet the Woo 2 (B0032506-01, Victor Victor/Republic US 2020, 2LP)",
-    "group": "Pop Smoke"
-  },
-  "534020_NM": {
-    "price": 164.0,
-    "currency": "USD",
-    "shipping": 28.0,
-    "total_eur": 163.89244558258642,
-    "disc": 25.162241682494997,
-    "tier": "goed",
-    "seller": "circuitbreaker",
-    "title": "Hybrid Theory (9 47755-1, US 2001)",
-    "group": "Linkin Park"
-  },
   "470912_VG+": {
     "price": 40.0,
     "currency": "GBP",
@@ -185,50 +97,6 @@
     "seller": "Arpadys2009",
     "title": "London Calling (CBS CLASH 3, CBS UK 1979, 2LP)",
     "group": "The Clash"
-  },
-  "16938279_M": {
-    "price": 37.99,
-    "currency": "CAD",
-    "shipping": 0.0,
-    "total_eur": 23.686015337614563,
-    "disc": 22.0164795541856,
-    "tier": "goed",
-    "seller": "ZaxxRecords",
-    "title": "Shoot for the Stars Aim for the Moon (00602507306465, Victor Victor/Republic EU 2020, 2LP)",
-    "group": "Pop Smoke"
-  },
-  "25119211_M": {
-    "price": 8800.0,
-    "currency": "JPY",
-    "shipping": 0.0,
-    "total_eur": 47.61131850890007,
-    "disc": 21.99051126103718,
-    "tier": "goed",
-    "seller": "recordshopshibuya",
-    "title": "All Eyez on Me (00602448276261, Interscope/Amaru/UMe US/EU 2022, 4LP 180g)",
-    "group": "2Pac"
-  },
-  "1203470_M": {
-    "price": 39.99,
-    "currency": "CAD",
-    "shipping": 0.0,
-    "total_eur": 24.932975871313673,
-    "disc": 20.995393852120184,
-    "tier": "goed",
-    "seller": "vinyl.dude",
-    "title": "American Idiot (9362-48777-1, EU 2004)",
-    "group": "Green Day"
-  },
-  "960025_VG": {
-    "price": 8000.0,
-    "currency": "JPY",
-    "shipping": 0.0,
-    "total_eur": 43.283016826272785,
-    "disc": 18.85013986931929,
-    "tier": "goed",
-    "seller": "ExpatJPN_Music",
-    "title": "Greatest Hits (INT4-90301, Death Row/Interscope US 1998, 4LP)",
-    "group": "2Pac"
   },
   "317356_VG+": {
     "price": 120.0,
@@ -241,39 +109,6 @@
     "title": "Ready to Die (78612-73000-1, US 1994)",
     "group": "Notorious B.I.G."
   },
-  "12308370_M": {
-    "price": 29.99,
-    "currency": "CAD",
-    "shipping": 0.0,
-    "total_eur": 18.69817320281813,
-    "disc": 17.42913136313478,
-    "tier": "goed",
-    "seller": "BarnacleRecords",
-    "title": "KOD (00810760032230, Dreamville/Interscope EU 2018, 2LP gatefold)",
-    "group": "J. Cole"
-  },
-  "18825352_M": {
-    "price": 33.99,
-    "currency": "CAD",
-    "shipping": 0.0,
-    "total_eur": 21.192094270216348,
-    "disc": 17.2283302749632,
-    "tier": "goed",
-    "seller": "ZaxxRecords",
-    "title": "Nimrod (093624912231, Reprise US/EU 2021, LP reissue)",
-    "group": "Green Day"
-  },
-  "361323_VG+": {
-    "price": 12500.0,
-    "currency": "JPY",
-    "shipping": 0.0,
-    "total_eur": 67.62971379105123,
-    "disc": 16.837124282418976,
-    "tier": "goed",
-    "seller": "ExpatJPN_Music",
-    "title": "The Score (C2 67147, Columbia/Ruffhouse US 1996, 2LP)",
-    "group": "Fugees"
-  },
   "7264539_NM": {
     "price": 85.0,
     "currency": "EUR",
@@ -284,28 +119,6 @@
     "seller": "vinsNL",
     "title": "Beggars Banquet (SKL 4955, Decca UK 1968) [stereo]",
     "group": "Rolling Stones"
-  },
-  "9247160_VG+": {
-    "price": 40.0,
-    "currency": "AUD",
-    "shipping": 0.0,
-    "total_eur": 24.755539051862854,
-    "disc": 12.442092483390036,
-    "tier": "goed",
-    "seller": "houndsofwax",
-    "title": "If You're Reading This It's Too Late (0602547973450, Young Money EU 2016, 2LP)",
-    "group": "Drake"
-  },
-  "367339_VG+": {
-    "price": 34000.0,
-    "currency": "JPY",
-    "shipping": 0.0,
-    "total_eur": 183.95282151165935,
-    "disc": 12.423376265843125,
-    "tier": "goed",
-    "seller": "cook_kawasaki",
-    "title": "Rage Against the Machine (Z 52959, Epic US 1992, LP)",
-    "group": "Rage Against the Machine"
   },
   "7541569_M": {
     "price": 24.3,
@@ -318,17 +131,6 @@
     "title": "A Night at the Opera half-speed (00602547202697, EU 2015)",
     "group": "Queen"
   },
-  "361323_NM": {
-    "price": 149.99,
-    "currency": "USD",
-    "shipping": 29.0,
-    "total_eur": 152.78702518139139,
-    "disc": 11.740939287056133,
-    "tier": "goed",
-    "seller": "djbrahms",
-    "title": "The Score (C2 67147, Columbia/Ruffhouse US 1996, 2LP)",
-    "group": "Fugees"
-  },
   "7801798_VG+": {
     "price": 55.0,
     "currency": "EUR",
@@ -340,16 +142,27 @@
     "title": "Abbey Road (PCS 7088, UK first pressing 1969)",
     "group": "Beatles"
   },
-  "367339_VG": {
-    "price": 22000.0,
+  "16938279_M": {
+    "price": 21.99,
+    "currency": "EUR",
+    "shipping": 5.3,
+    "total_eur": 27.29,
+    "disc": 10.15076860198451,
+    "tier": "goed",
+    "seller": "LaurentCamso",
+    "title": "Shoot for the Stars Aim for the Moon (00602507306465, Victor Victor/Republic EU 2020, 2LP)",
+    "group": "Pop Smoke"
+  },
+  "474703_VG+": {
+    "price": 18000.0,
     "currency": "JPY",
     "shipping": 0.0,
-    "total_eur": 119.02829627225017,
-    "disc": 8.287211401851021,
+    "total_eur": 97.38678785911377,
+    "disc": 8.07411327624861,
     "tier": "goed",
-    "seller": "qqaazz",
-    "title": "Rage Against the Machine (Z 52959, Epic US 1992, LP)",
-    "group": "Rage Against the Machine"
+    "seller": "Tokyo_Atari",
+    "title": "Demon Days (07243 873838 1 4, Parlophone UK 2005, 2LP gatefold)",
+    "group": "Gorillaz"
   },
   "375491_VG+": {
     "price": 80.0,
