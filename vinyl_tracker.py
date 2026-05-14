@@ -19,6 +19,7 @@ import json
 import os
 import time
 import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import webbrowser
 from datetime import datetime
 from http.server import HTTPServer, BaseHTTPRequestHandler
@@ -2106,16 +2107,43 @@ setTimeout(check,3000);
 # ─── SCRAPEN (herbruikbaar voor refresh) ──────────────────────────────────────
 
 def scrape_all(cookies, session, force_listings=False, force_stats=False):
-    """Scrapes alle releases en geeft results terug. Respecteert cache tenzij force=True."""
+    """Scrapes alle releases parallel en geeft results terug. Respecteert cache tenzij force=True."""
     sales_cache    = load_cache(SALES_CACHE)
     stats_cache    = load_cache(STATS_CACHE)
-    listings_cache = load_cache(LISTINGS_CACHE)  # altijd laden als fallback
+    listings_cache = load_cache(LISTINGS_CACHE)
     if force_stats:
         stats_cache = {}
     today = datetime.now().strftime("%Y-%m-%d")
-    results = []
 
-    for release_id, (group, title) in RELEASES.items():
+    # Thread-local curl_cffi sessies (Session is niet thread-safe om te delen)
+    _local    = threading.local()
+    # Max 3 gelijktijdige HTML-scrapes — voorkomt Cloudflare rate-limiting
+    _html_sem = threading.Semaphore(3)
+    # API-calls serialiseren met minimale tussentijd
+    _api_lock  = threading.Lock()
+    _api_last  = [0.0]
+    # Cache-dict schrijven vanuit meerdere threads
+    _sales_lock = threading.Lock()
+    _stats_lock = threading.Lock()
+    _lst_lock   = threading.Lock()
+
+    def _session():
+        if not hasattr(_local, "sess"):
+            s = cf_requests.Session(impersonate="chrome124")
+            s.headers.update({"Accept-Language": "nl-BE,nl;q=0.9"})
+            _local.sess = s
+        return _local.sess
+
+    def _throttled_api(release_id):
+        with _api_lock:
+            gap = time.time() - _api_last[0]
+            if gap < 0.5:
+                time.sleep(0.5 - gap)
+            result = get_market_stats(release_id)
+            _api_last[0] = time.time()
+        return result
+
+    def _process(release_id, group, title):
         print(f">> {group} - {title}")
 
         # Verkoophistorie (gecached, 7 dagen TTL)
@@ -2124,21 +2152,23 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
             sales = sc_entry["sales"]
             print(f"  Geschiedenis cache: {len(sales)} verkopen")
         else:
-            sales = scrape_history(release_id, cookies, session)
-            sales_cache[release_id] = {"fetched_at": today, "sales": sales}
-            save_cache(SALES_CACHE, sales_cache)
+            with _html_sem:
+                sales = scrape_history(release_id, cookies, _session())
+                time.sleep(1.5)
             print(f"  Geschiedenis gescraped: {len(sales)} verkopen")
-            time.sleep(2)
+            with _sales_lock:
+                sales_cache[release_id] = {"fetched_at": today, "sales": sales}
+                save_cache(SALES_CACHE, sales_cache)
 
         # Marktstatistieken API (gecached per dag)
         stats_key = f"{release_id}_{today}"
         stats = stats_cache.get(stats_key)
         if not stats:
-            stats = get_market_stats(release_id)
+            stats = _throttled_api(release_id)
             if stats:
-                stats_cache[stats_key] = stats
-                save_cache(STATS_CACHE, stats_cache)
-            time.sleep(0.5)
+                with _stats_lock:
+                    stats_cache[stats_key] = stats
+                    save_cache(STATS_CACHE, stats_cache)
 
         # Marketplace listings (gecached 7 dagen; fresh scrape bij force of verlopen cache)
         lc_entry = listings_cache.get(release_id, {})
@@ -2147,25 +2177,39 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
             raw_listings = lc_entry["listings"]
             print(f"  Listings cache: {len(raw_listings)} listings")
         else:
-            raw_listings = scrape_listings(release_id, cookies, session)
+            with _html_sem:
+                raw_listings = scrape_listings(release_id, cookies, _session())
+                time.sleep(1.5)
             if raw_listings:
-                listings_cache[release_id] = {"fetched_at": today, "listings": raw_listings}
-                save_cache(LISTINGS_CACHE, listings_cache)
+                with _lst_lock:
+                    listings_cache[release_id] = {"fetched_at": today, "listings": raw_listings}
+                    save_cache(LISTINGS_CACHE, listings_cache)
                 print(f"  Listings gescraped: {len(raw_listings)} listings")
             else:
-                # Cloudflare geblokkeerd — bewaar bestaande cache-data (disk of eerder geladen)
                 raw_listings = lc_entry.get("listings", [])
                 print(f"  Listings scrape leeg (Cloudflare?), cache bewaard: {len(raw_listings)} listings")
-            time.sleep(2)
 
-        results.append({
+        return {
             "id":       release_id,
             "group":    group,
             "title":    title,
             "sales":    sales,
             "stats":    stats or {},
             "listings": raw_listings,
-        })
+        }
+
+    results = []
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        futures = {
+            pool.submit(_process, rid, grp, ttl): rid
+            for rid, (grp, ttl) in RELEASES.items()
+        }
+        for future in as_completed(futures):
+            try:
+                results.append(future.result())
+            except Exception as e:
+                rid = futures[future]
+                print(f"  Fout bij release {rid}: {e}")
 
     # Thumbnails ophalen (eenmalig, permanent gecached — covers veranderen niet)
     thumb_cache = load_cache(THUMB_CACHE)
