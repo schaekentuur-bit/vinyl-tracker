@@ -2146,6 +2146,50 @@ def build_html(results, static=False, new_listings=None):
       {_nl_table(nl_overig, "&#9835; Luisterversies &amp; Overige", "var(--accent)")}
     </div>"""
 
+    # ── Beleggingen Listings pagina ──────────────────────────────────────────
+    invest_all = []
+    for r in results:
+        if not _is_investment(r["id"]):
+            continue
+        by_cond = {}
+        for s in r["sales"]:
+            by_cond.setdefault(s["media"], []).append(s)
+        for listing in r.get("listings", []):
+            if listing.get("rating_count", 0) < MIN_SELLER_RATINGS:
+                continue
+            eff_cond   = _effective_cond(listing["media"], listing["sleeve"])
+            cond_sales = by_cond.get(eff_cond, [])
+            avg        = (sum(_to_eur(s["price"], s.get("currency", "EUR")) for s in cond_sales)
+                          / len(cond_sales)) if cond_sales else None
+            total_eur  = listing.get("total_eur") or _to_eur(
+                listing["price"] + listing.get("shipping", 0.0), listing["currency"]
+            )
+            ships_from = listing.get("ships_from", "")
+            is_eu      = (ships_from in EU_COUNTRIES) if ships_from else listing.get("currency", "EUR") in ("EUR", "GBP")
+            adj_total  = _non_eu_adjusted_total(total_eur) if not is_eu else total_eur
+            pct        = (adj_total - avg) / avg * 100 if avg is not None else None
+            invest_all.append({
+                "r":         r,
+                "listing":   listing,
+                "key":       _listing_key(r["id"], listing),
+                "eff_cond":  eff_cond,
+                "avg":       avg,
+                "pct":       pct,
+                "total_eur": total_eur,
+                "adj_total": adj_total,
+                "is_eu":     is_eu,
+            })
+    invest_all.sort(key=lambda x: (x["pct"] is None, x["pct"] or 0))
+
+    invest_listings_page = f"""
+    <div class="page" id="invest-listings" style="display:none">
+      <div class="page-header">
+        <h2>&#127942; Beleggingen &mdash; Alle Listings</h2>
+        <span class="sub">{now} &nbsp;&middot;&nbsp; {len(invest_all)} listings &nbsp;&middot;&nbsp; verkopers &ge;{MIN_SELLER_RATINGS} ratings &nbsp;&middot;&nbsp; gesorteerd op % vs gem.</span>
+      </div>
+      {_nl_table(invest_all, "&#127942; Alle listings beleggingsplaten", "#92400E")}
+    </div>"""
+
     deals_page = f"""
     <div class="page" id="deals" style="display:none">
       <div class="page-header">
@@ -2203,6 +2247,10 @@ def build_html(results, static=False, new_listings=None):
       <div class="nav-item" data-page="new-listings" onclick="showPage('new-listings')">
         <span class="nav-icon">&#10024;</span> Nieuwe Listings
         {f'<span class="nav-badge" style="background:#3B82F6">{len(nl)}</span>' if nl else ''}
+      </div>
+      <div class="nav-item" data-page="invest-listings" onclick="showPage('invest-listings')">
+        <span class="nav-icon">&#127942;</span> Beleggingen
+        {f'<span class="nav-badge" style="background:#92400E">{len(invest_all)}</span>' if invest_all else ''}
       </div>
       <div class="nav-item" data-page="deals" onclick="showPage('deals')">
         <span class="nav-icon">&#9650;</span> Top Deals
@@ -2571,6 +2619,7 @@ def build_html(results, static=False, new_listings=None):
   </div>
   {home_page}
   {new_listings_page}
+  {invest_listings_page}
   {deals_page}
   {artist_pages}
 </main>
