@@ -1234,6 +1234,10 @@ def parse_listings_html(html):
             )
         ships_from = loc_match.group(1).strip() if loc_match else ""
 
+        # Listing date — <time datetime="YYYY-MM-DD..."> within the block
+        time_match = re.search(r'<time[^>]+datetime="(\d{4}-\d{2}-\d{2})', block)
+        listed_date = time_match.group(1) if time_match else None
+
         listings.append({
             "media":        media,
             "sleeve":       sleeve,
@@ -1244,6 +1248,7 @@ def parse_listings_html(html):
             "rating_count": rating_count,
             "seller":       seller,
             "ships_from":   ships_from,
+            "listed_date":  listed_date,
         })
 
     return listings
@@ -2092,6 +2097,16 @@ def build_html(results, static=False, new_listings=None):
                 ri_cls  = _BADGE_MAP.get(ri_info[0], "rb-badge-orig")
                 ri_badge = (f'<br><span class="rb-badge {ri_cls}" style="font-size:9px;margin-left:0;margin-top:3px"'
                             f' title="{ri_info[1]}">{ri_info[0]}</span>')
+            ld = lst.get("listed_date")
+            if ld:
+                try:
+                    ld_fmt = datetime.strptime(ld, "%Y-%m-%d").strftime("%d/%m/%Y")
+                except ValueError:
+                    ld_fmt = ld
+            else:
+                ld_fmt = None
+            date_cell = (f'<td class="td-num muted" style="white-space:nowrap">{ld_fmt}</td>'
+                         if ld_fmt else '<td class="td-num muted">—</td>')
             rows += (
                 f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row" data-nl-key="{key}">'
                 f'<td><span class="rb-group">{r["group"]}</span></td>'
@@ -2103,8 +2118,9 @@ def build_html(results, static=False, new_listings=None):
                 + f'</td>'
                 f'<td class="td-num"><strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}{non_eu_badge}</td>'
                 f'<td class="td-num muted">{avg_cell}</td>'
-                + _nl_pct_cell(nl_item["pct"]) +
-                f'<td class="td-seller">{lst["seller"]} <span class="muted">({lst["rating_count"]:,})</span></td>'
+                + _nl_pct_cell(nl_item["pct"])
+                + date_cell
+                + f'<td class="td-seller">{lst["seller"]} <span class="muted">({lst["rating_count"]:,})</span></td>'
                 f'<td><button class="deal-dismiss" onclick="dismissNewListing(\'{key}\',event)" title="Verbergen">&#10005;</button></td>'
                 f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
                 f'</tr>'
@@ -2126,6 +2142,7 @@ def build_html(results, static=False, new_listings=None):
               <th class="th-r">Prijs incl. verzend</th>
               <th class="th-r">Gem. verkoop</th>
               <th class="th-r">% vs gem.</th>
+              <th class="th-r">Geplaatst</th>
               <th>Verkoper</th><th></th><th></th>
             </tr></thead>
             <tbody>{_nl_rows(items)}</tbody>
@@ -2136,14 +2153,13 @@ def build_html(results, static=False, new_listings=None):
     <div class="page" id="new-listings" style="display:none">
       <div class="page-header">
         <h2>Nieuwe Listings</h2>
-        <span class="sub">{now} &nbsp;&middot;&nbsp; {len(nl)} nieuw &nbsp;&middot;&nbsp; verkopers &ge;{MIN_SELLER_RATINGS} ratings</span>
+        <span class="sub">{now} &nbsp;&middot;&nbsp; {len(nl_invest)} nieuw &nbsp;&middot;&nbsp; verkopers &ge;{MIN_SELLER_RATINGS} ratings</span>
       </div>
       <div class="dismissed-bar" id="nl-dismissed-bar">
         <span id="nl-dismissed-n">0</span> listing(s) verborgen &mdash;
         <a href="#" onclick="showHiddenNl();return false" style="color:var(--accent);font-weight:600">Toon alles</a>
       </div>
       {_nl_table(nl_invest, "&#127942; Beleggingen", "#92400E")}
-      {_nl_table(nl_overig, "&#9835; Luisterversies &amp; Overige", "var(--accent)")}
     </div>"""
 
     # ── Beleggingen Listings pagina ──────────────────────────────────────────
@@ -2246,7 +2262,7 @@ def build_html(results, static=False, new_listings=None):
       </div>
       <div class="nav-item" data-page="new-listings" onclick="showPage('new-listings')">
         <span class="nav-icon">&#10024;</span> Nieuwe Listings
-        {f'<span class="nav-badge" style="background:#3B82F6">{len(nl)}</span>' if nl else ''}
+        {f'<span class="nav-badge" style="background:#3B82F6">{len(nl_invest)}</span>' if nl_invest else ''}
       </div>
       <div class="nav-item" data-page="invest-listings" onclick="showPage('invest-listings')">
         <span class="nav-icon">&#127942;</span> Beleggingen
