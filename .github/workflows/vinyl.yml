@@ -46,6 +46,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/ 2>/dev/null || true
           git add vinyl_deals_seen.json 2>/dev/null || true
+          git add vinyl_listings_seen.json 2>/dev/null || true
           git add vinyl_sales_cache.json 2>/dev/null || true
           git add vinyl_listings_cache.json 2>/dev/null || true
           git add vinyl_history_cache.json 2>/dev/null || true

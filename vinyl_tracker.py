@@ -21,7 +21,7 @@ import time
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import webbrowser
-from datetime import datetime
+from datetime import datetime, timedelta
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from curl_cffi import requests as cf_requests
 import requests as std_requests
@@ -34,6 +34,8 @@ SALES_CACHE        = "vinyl_sales_cache.json"
 STATS_CACHE        = "vinyl_history_cache.json"
 LISTINGS_CACHE     = "vinyl_listings_cache.json"
 DEALS_SEEN_FILE    = "vinyl_deals_seen.json"
+LISTINGS_SEEN_FILE = "vinyl_listings_seen.json"
+LISTINGS_SEEN_DAYS = 30   # geziene listings ouder dan N dagen worden gesneden
 CACHE_DAYS         = 7   # verkoopdata na X dagen opnieuw ophalen
 MIN_SELLER_RATINGS = 50  # minimaal aantal ratings voor een verkoper
 EU_COUNTRIES = {
@@ -1705,6 +1707,70 @@ def find_new_deals(deals, seen):
     return new
 
 
+def _listing_key(release_id, listing):
+    return f"{release_id}_{listing['seller']}_{listing['price']}_{listing['currency']}_{listing['media']}_{listing['sleeve']}"
+
+
+def compute_new_listings(results):
+    """Vergelijkt huidige listings met eerder geziene; retourneert nieuwe listings gesorteerd op % vs gem."""
+    seen   = load_cache(LISTINGS_SEEN_FILE)
+    today  = datetime.now().strftime("%Y-%m-%d")
+    cutoff = (datetime.now() - timedelta(days=LISTINGS_SEEN_DAYS)).strftime("%Y-%m-%d")
+
+    new_listings = []
+    current_keys = {}
+
+    for r in results:
+        by_cond = {}
+        for s in r["sales"]:
+            by_cond.setdefault(s["media"], []).append(s)
+
+        for listing in r.get("listings", []):
+            if listing.get("rating_count", 0) < MIN_SELLER_RATINGS:
+                continue
+            key = _listing_key(r["id"], listing)
+            current_keys[key] = today
+            if key in seen:
+                continue
+
+            eff_cond   = _effective_cond(listing["media"], listing["sleeve"])
+            cond_sales = by_cond.get(eff_cond, [])
+            if cond_sales:
+                prices_eur = [_to_eur(s["price"], s.get("currency", "EUR")) for s in cond_sales]
+                avg = sum(prices_eur) / len(prices_eur)
+            else:
+                avg = None
+
+            total_eur  = listing.get("total_eur") or _to_eur(
+                listing["price"] + listing.get("shipping", 0.0), listing["currency"]
+            )
+            ships_from = listing.get("ships_from", "")
+            is_eu      = (ships_from in EU_COUNTRIES) if ships_from else listing.get("currency", "EUR") in ("EUR", "GBP")
+            adj_total  = _non_eu_adjusted_total(total_eur) if not is_eu else total_eur
+            pct        = (adj_total - avg) / avg * 100 if avg is not None else None
+
+            new_listings.append({
+                "r":        r,
+                "listing":  listing,
+                "key":      key,
+                "eff_cond": eff_cond,
+                "avg":      avg,
+                "pct":      pct,
+                "total_eur": total_eur,
+                "adj_total": adj_total,
+                "is_eu":    is_eu,
+            })
+
+    # Prune oude entries, voeg huidig toe
+    pruned = {k: v for k, v in seen.items() if v >= cutoff}
+    pruned.update(current_keys)
+    save_cache(LISTINGS_SEEN_FILE, pruned)
+
+    # Sorteer: laagste % vs gem eerst (beste deal), geen data achteraan
+    new_listings.sort(key=lambda x: (x["pct"] is None, x["pct"] or 0))
+    return new_listings
+
+
 def send_deals_email(deals, subject_prefix="Nieuwe deals"):
     import smtplib
     from email.mime.multipart import MIMEMultipart
@@ -1824,7 +1890,7 @@ def send_deals_email(deals, subject_prefix="Nieuwe deals"):
         print(f"Email fout: {e}")
 
 
-def build_html(results, static=False):
+def build_html(results, static=False, new_listings=None):
     now    = datetime.now().strftime("%d/%m/%Y %H:%M")
     groups = list(dict.fromkeys(r["group"] for r in results))
     thumbs = load_cache(THUMB_CACHE)
@@ -1982,6 +2048,104 @@ def build_html(results, static=False):
     beste_deals = [d for d in deals if d["tier"] == "beste"]
     goede_deals = [d for d in deals if d["tier"] == "goed"]
 
+    # ── Nieuwe Listings pagina ────────────────────────────────────────────
+    nl = new_listings or []
+    def _is_investment(release_id):
+        info = RELEASE_INFO.get(str(release_id)) or RELEASE_INFO.get(release_id)
+        if not info:
+            return False
+        return info[0].startswith("🏆")
+
+    def _nl_pct_cell(pct):
+        if pct is None:
+            return '<td class="td-num muted">—</td>'
+        color = "#10B981" if pct < -5 else ("#EF4444" if pct > 15 else "var(--text)")
+        sign  = "+" if pct > 0 else ""
+        return f'<td class="td-num" style="font-weight:600;color:{color}">{sign}{pct:.0f}%</td>'
+
+    def _nl_rows(items):
+        if not items:
+            return '<tr><td colspan="8" class="no-data">Geen nieuwe listings.</td></tr>'
+        rows = ""
+        for nl_item in items:
+            r       = nl_item["r"]
+            lst     = nl_item["listing"]
+            key     = nl_item["key"]
+            mc      = lst["media"].replace("+","p").replace("-","m")
+            sc      = lst["sleeve"].replace("+","p").replace("-","m")
+            lhref   = f"https://www.discogs.com/sell/release/{r['id']}?sort=price%2Casc&limit=50"
+            eur_tot = nl_item["total_eur"]
+            brkdwn  = _shipping_breakdown(lst)
+            non_eu_badge = ""
+            if not nl_item["is_eu"] and lst.get("ships_from"):
+                imp = nl_item["adj_total"] - eur_tot
+                non_eu_badge = (
+                    f' <span title="Non-EU: est. +{_fmt_eur(imp)}" style="background:#FEF9C3;'
+                    f'color:#92400E;font-size:10px;font-weight:600;padding:1px 5px;'
+                    f'border-radius:4px;white-space:nowrap;cursor:help">'
+                    f'🌍 {lst["ships_from"]}</span>'
+                )
+            avg_cell = _fmt_eur(nl_item["avg"]) if nl_item["avg"] else "—"
+            ri_info  = RELEASE_INFO.get(str(r["id"])) or RELEASE_INFO.get(r["id"])
+            ri_badge = ""
+            if ri_info:
+                ri_cls  = _BADGE_MAP.get(ri_info[0], "rb-badge-orig")
+                ri_badge = (f'<br><span class="rb-badge {ri_cls}" style="font-size:9px;margin-left:0;margin-top:3px"'
+                            f' title="{ri_info[1]}">{ri_info[0]}</span>')
+            rows += (
+                f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row" data-nl-key="{key}">'
+                f'<td><span class="rb-group">{r["group"]}</span></td>'
+                f'<td class="td-title">{r["title"]}{ri_badge}</td>'
+                f'<td><span class="badge bd-{mc}">{lst["media"]}</span>'
+                f' / <span class="badge bd-{sc}">{lst["sleeve"]}</span>'
+                + (f' <span class="muted" style="font-size:10px">({nl_item["eff_cond"]})</span>'
+                   if nl_item["eff_cond"] != lst["media"] else "")
+                + f'</td>'
+                f'<td class="td-num"><strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}{non_eu_badge}</td>'
+                f'<td class="td-num muted">{avg_cell}</td>'
+                + _nl_pct_cell(nl_item["pct"]) +
+                f'<td class="td-seller">{lst["seller"]} <span class="muted">({lst["rating_count"]:,})</span></td>'
+                f'<td><button class="deal-dismiss" onclick="dismissNewListing(\'{key}\',event)" title="Verbergen">&#10005;</button></td>'
+                f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
+                f'</tr>'
+            )
+        return rows
+
+    nl_invest = [x for x in nl if _is_investment(x["r"]["id"])]
+    nl_overig  = [x for x in nl if not _is_investment(x["r"]["id"])]
+
+    def _nl_table(items, title, color):
+        return f"""
+        <h3 style="margin:0 0 8px;font-size:15px;color:{color}">{title}
+          <span style="font-weight:400;color:var(--muted);font-size:12px">({len(items)})</span>
+        </h3>
+        <div class="card" style="margin-bottom:24px">
+          <table class="ov-table">
+            <thead><tr>
+              <th>Artiest</th><th>Release</th><th>Disc / Hoes</th>
+              <th class="th-r">Prijs incl. verzend</th>
+              <th class="th-r">Gem. verkoop</th>
+              <th class="th-r">% vs gem.</th>
+              <th>Verkoper</th><th></th><th></th>
+            </tr></thead>
+            <tbody>{_nl_rows(items)}</tbody>
+          </table>
+        </div>"""
+
+    new_listings_page = f"""
+    <div class="page" id="new-listings" style="display:none">
+      <div class="page-header">
+        <h2>Nieuwe Listings</h2>
+        <span class="sub">{now} &nbsp;&middot;&nbsp; {len(nl)} nieuw &nbsp;&middot;&nbsp; verkopers &ge;{MIN_SELLER_RATINGS} ratings</span>
+      </div>
+      <div class="dismissed-bar" id="nl-dismissed-bar">
+        <span id="nl-dismissed-n">0</span> listing(s) verborgen &mdash;
+        <a href="#" onclick="showHiddenNl();return false" style="color:var(--accent);font-weight:600">Toon alles</a>
+      </div>
+      {_nl_table(nl_invest, "&#127942; Beleggingen", "#92400E")}
+      {_nl_table(nl_overig, "&#9835; Luisterversies &amp; Overige", "var(--accent)")}
+    </div>"""
+
     deals_page = f"""
     <div class="page" id="deals" style="display:none">
       <div class="page-header">
@@ -2035,6 +2199,10 @@ def build_html(results, static=False):
       <div class="nav-logo"><span class="nav-logo-icon">&#9679;</span> Vinyl</div>
       <div class="nav-item active" data-page="home" onclick="showPage('home')">
         <span class="nav-icon">&#9646;</span> Home
+      </div>
+      <div class="nav-item" data-page="new-listings" onclick="showPage('new-listings')">
+        <span class="nav-icon">&#10024;</span> Nieuwe Listings
+        {f'<span class="nav-badge" style="background:#3B82F6">{len(nl)}</span>' if nl else ''}
       </div>
       <div class="nav-item" data-page="deals" onclick="showPage('deals')">
         <span class="nav-icon">&#9650;</span> Top Deals
@@ -2402,6 +2570,7 @@ def build_html(results, static=False):
     </div>"""}
   </div>
   {home_page}
+  {new_listings_page}
   {deals_page}
   {artist_pages}
 </main>
@@ -2488,6 +2657,27 @@ if(_addUrl){{
 }}
 var initPage=(window.location.hash||'#home').slice(1);
 showPage(document.getElementById(initPage)?initPage:'home');
+function dismissNewListing(key,e){{
+  e.stopPropagation();
+  var list=JSON.parse(localStorage.getItem('dismissed_nl')||'[]');
+  if(!list.includes(key))list.push(key);
+  localStorage.setItem('dismissed_nl',JSON.stringify(list));
+  var row=document.querySelector('tr[data-nl-key="'+key+'"]');
+  if(row)row.style.display='none';
+  _updateNlBar();
+}}
+function showHiddenNl(){{
+  localStorage.removeItem('dismissed_nl');
+  document.querySelectorAll('tr[data-nl-key]').forEach(function(r){{r.style.display='';}});
+  _updateNlBar();
+}}
+function _updateNlBar(){{
+  var list=JSON.parse(localStorage.getItem('dismissed_nl')||'[]');
+  var bar=document.getElementById('nl-dismissed-bar');
+  var cnt=document.getElementById('nl-dismissed-n');
+  if(bar)bar.style.display=list.length?'block':'none';
+  if(cnt)cnt.textContent=list.length;
+}}
 function dismissDeal(key,e){{
   e.stopPropagation();
   var list=JSON.parse(localStorage.getItem('dismissed_deals')||'[]');
@@ -2562,6 +2752,13 @@ document.addEventListener('DOMContentLoaded',function(){{
     if(row)row.style.display='none';
   }});
   _updateDismissedBar();
+  // Herstel verborgen nieuwe listings
+  var dismissedNl=JSON.parse(localStorage.getItem('dismissed_nl')||'[]');
+  dismissedNl.forEach(function(key){{
+    var row=document.querySelector('tr[data-nl-key="'+key+'"]');
+    if(row)row.style.display='none';
+  }});
+  _updateNlBar();
 }});
 function ghTrigger(token,force){{
   var btn=document.getElementById('gh-refresh-btn');
@@ -2831,7 +3028,7 @@ def _log(msg):
 
 
 def run_server(initial_results, cookies, session):
-    state = {"results": initial_results, "refreshing": False}
+    state = {"results": initial_results, "refreshing": False, "new_listings": []}
 
     def _push_to_github():
         """Genereer docs/index.html lokaal en push alles naar GitHub Pages."""
@@ -2887,6 +3084,7 @@ def run_server(initial_results, cookies, session):
             _log("Vernieuwen gestart")
             results = scrape_all(cookies, session, force_listings=True, force_stats=True)
             state["results"] = results
+            state["new_listings"] = compute_new_listings(results)
             _log("Scrapen klaar, email berekenen")
 
             deals = compute_deals(results)
@@ -2920,7 +3118,7 @@ def run_server(initial_results, cookies, session):
         def do_GET(self):
             if self.path in ("/", "/index.html"):
                 # HTML altijd vers genereren — nooit stale cache
-                html = build_html(state["results"])
+                html = build_html(state["results"], new_listings=state.get("new_listings", []))
                 self._respond(200, "text/html; charset=utf-8", html.encode("utf-8"))
             elif self.path == "/refresh":
                 if not state["refreshing"]:
