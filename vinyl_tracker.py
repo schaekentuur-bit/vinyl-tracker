@@ -2177,10 +2177,11 @@ def compute_new_listings(results):
                 "is_eu":    is_eu,
             })
 
-    # Prune oude entries, voeg huidig toe
+    # Prune oude entries — GEEN automatisch markeren als gezien;
+    # dat gebeurt pas expliciet via /mark-read (gebruikersbevestiging).
     pruned = {k: v for k, v in seen.items() if v >= cutoff}
-    pruned.update(current_keys)
-    save_cache(LISTINGS_SEEN_FILE, pruned)
+    if len(pruned) != len(seen):
+        save_cache(LISTINGS_SEEN_FILE, pruned)
 
     # Sorteer: laagste % vs gem eerst (beste deal), geen data achteraan
     new_listings.sort(key=lambda x: (x["pct"] is None, x["pct"] or 0))
@@ -2574,9 +2575,10 @@ def build_html(results, static=False, new_listings=None):
 
     new_listings_page = f"""
     <div class="page" id="new-listings" style="display:none">
-      <div class="page-header">
-        <h2>Nieuwe Listings</h2>
+      <div class="page-header" style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap">
+        <h2 style="margin:0">Nieuwe Listings</h2>
         <span class="sub">{now} &nbsp;&middot;&nbsp; {len(nl_invest)} nieuw &nbsp;&middot;&nbsp; verkopers &ge;{MIN_SELLER_RATINGS} ratings</span>
+        <button class="btn-mark-all" onclick="markAllRead()" style="margin-left:auto">&#10003; Alles gelezen</button>
       </div>
       <div class="dismissed-bar" id="nl-dismissed-bar">
         <span id="nl-dismissed-n">0</span> listing(s) verborgen &mdash;
@@ -2691,7 +2693,7 @@ def build_html(results, static=False, new_listings=None):
       <div class="nav-item" data-page="new-listings" onclick="showPage('new-listings')">
         <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
         Nieuwe Listings
-        {f'<span class="nav-badge" style="background:#3B82F6">{len(nl_invest)}</span>' if nl_invest else ''}
+        {f'<span class="nav-badge" id="nl-nav-badge" style="background:#3B82F6">{len(nl_invest)}</span>' if nl_invest else ''}
       </div>
       <div class="nav-item" data-page="invest-listings" onclick="showPage('invest-listings')">
         <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M5 3a2 2 0 00-2 2v1H1v3a3 3 0 002.83 2.98A5 5 0 009 14.9V16H8a1 1 0 000 2h4a1 1 0 000-2h-1v-1.1A5 5 0 0016.17 11.98 3 3 0 0019 9V6h-2V5a2 2 0 00-2-2H5zm11 3h1v2.17A1 1 0 0116 9v-3zm-13 0V9a1 1 0 01-1-.83V6h1zm2-1h10v5a3 3 0 01-10 0V5z"/></svg>
@@ -2982,6 +2984,9 @@ def build_html(results, static=False, new_listings=None):
   .deal-dismiss{{background:none;border:none;color:#CBD5E1;cursor:pointer;
                  font-size:13px;padding:2px 6px;border-radius:4px;line-height:1}}
   .deal-dismiss:hover{{background:#FEE2E2;color:#EF4444}}
+  .btn-mark-all{{background:#3B82F6;border:none;color:#fff;cursor:pointer;
+                 font-size:12px;font-weight:600;padding:4px 12px;border-radius:6px;line-height:1.4}}
+  .btn-mark-all:hover{{background:#2563EB}}
   .dismissed-bar{{display:none;font-size:12px;color:var(--muted);
                   margin-bottom:12px;padding:6px 12px;background:#F8FAFC;
                   border-radius:6px;border:1px solid var(--border)}}
@@ -3223,12 +3228,35 @@ var initPage=(window.location.hash||'#home').slice(1);
 showPage(document.getElementById(initPage)?initPage:'home');
 function dismissNewListing(key,e){{
   e.stopPropagation();
+  fetch('/mark-read',{{method:'POST',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{keys:[key]}})}});
   var list=JSON.parse(localStorage.getItem('dismissed_nl')||'[]');
   if(!list.includes(key))list.push(key);
   localStorage.setItem('dismissed_nl',JSON.stringify(list));
   var row=document.querySelector('tr[data-nl-key="'+key+'"]');
   if(row)row.style.display='none';
   _updateNlBar();
+  _updateNlNavBadge(-1);
+}}
+function markAllRead(){{
+  var rows=document.querySelectorAll('tr[data-nl-key]');
+  var keys=[];
+  rows.forEach(function(r){{if(r.style.display!=='none')keys.push(r.getAttribute('data-nl-key'));}});
+  if(!keys.length)return;
+  fetch('/mark-read',{{method:'POST',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{keys:keys}})}});
+  rows.forEach(function(r){{r.style.display='none';}});
+  var list=JSON.parse(localStorage.getItem('dismissed_nl')||'[]');
+  keys.forEach(function(k){{if(!list.includes(k))list.push(k);}});
+  localStorage.setItem('dismissed_nl',JSON.stringify(list));
+  _updateNlBar();
+  var badge=document.getElementById('nl-nav-badge');
+  if(badge)badge.style.display='none';
+}}
+function _updateNlNavBadge(delta){{
+  var badge=document.getElementById('nl-nav-badge');
+  if(!badge)return;
+  var n=(parseInt(badge.textContent)||0)+delta;
+  if(n<=0)badge.style.display='none';
+  else badge.textContent=n;
 }}
 function showHiddenNl(){{
   localStorage.removeItem('dismissed_nl');
@@ -3797,6 +3825,29 @@ def run_server(initial_results, cookies, session):
                     state["refreshing"] = True
                     threading.Thread(target=do_refresh, daemon=True).start()
                 self._redirect("/refreshing")
+            else:
+                self.send_response(404); self.end_headers()
+
+        def do_POST(self):
+            if self.path == "/mark-read":
+                length = int(self.headers.get("Content-Length", 0))
+                body   = self.rfile.read(length)
+                try:
+                    keys = json.loads(body).get("keys", [])
+                except Exception:
+                    self.send_response(400); self.end_headers(); return
+                if keys:
+                    today = datetime.now().strftime("%Y-%m-%d")
+                    seen  = load_cache(LISTINGS_SEEN_FILE)
+                    for k in keys:
+                        seen[k] = today
+                    save_cache(LISTINGS_SEEN_FILE, seen)
+                    state["new_listings"] = [
+                        nl for nl in state.get("new_listings", [])
+                        if nl["key"] not in keys
+                    ]
+                resp = json.dumps({"ok": True}).encode()
+                self._respond(200, "application/json", resp)
             else:
                 self.send_response(404); self.end_headers()
 
