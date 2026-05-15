@@ -23,7 +23,7 @@ from curl_cffi import requests as cf_requests
 from vinyl_tracker import (
     scrape_all, build_html, compute_deals,
     send_deals_email, find_new_deals,
-    compute_new_listings,
+    compute_new_listings, enrich_listing_dates,
     load_cache, save_cache,
     DEALS_SEEN_FILE, _deal_key, RELEASES, USER_RELEASES_FILE
 )
@@ -41,6 +41,9 @@ force = os.getenv("FORCE_REFRESH", "false").strip().lower() == "true"
 print(f"Scrapen... (force={force})")
 results = scrape_all(cookies, session, force_listings=force, force_stats=force)
 print(f"{len(results)} releases verwerkt")
+
+print("Plaatsingsdatums ophalen voor beleggingsplaten...")
+enrich_listing_dates(results)
 
 new_listings = compute_new_listings(results)
 print(f"{len(new_listings)} nieuwe listings gevonden")

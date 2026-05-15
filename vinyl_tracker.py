@@ -1405,6 +1405,76 @@ def scrape_listings_api(release_id):
             })
     return listings
 
+
+LISTING_DATES_CACHE = "vinyl_listing_dates_cache.json"
+
+def _is_investment_release(release_id):
+    info = RELEASE_INFO.get(str(release_id)) or RELEASE_INFO.get(release_id)
+    return bool(info and info[0].startswith("🏆"))
+
+def fetch_release_listing_dates(release_id):
+    """Haalt posted-datum op voor alle listings van een release via de Discogs API."""
+    try:
+        r = std_requests.get(
+            "https://api.discogs.com/marketplace/search",
+            headers=DISCOGS_HEADERS,
+            params={
+                "release_id": release_id,
+                "status": "For Sale",
+                "sort": "price",
+                "sort_order": "asc",
+                "per_page": 50,
+            },
+            timeout=15,
+        )
+        r.raise_for_status()
+        data = r.json()
+    except Exception as e:
+        print(f"  Listing dates fout {release_id}: {e}")
+        return {}
+
+    dates = {}
+    for item in data.get("listings", []):
+        media    = CONDITION_MAP.get(item.get("condition",        ""), item.get("condition",        ""))
+        sleeve   = CONDITION_MAP.get(item.get("sleeve_condition", ""), item.get("sleeve_condition", "Generic"))
+        price    = float(item.get("price", {}).get("value", 0))
+        currency = item.get("price",  {}).get("currency", "EUR")
+        seller   = item.get("seller", {}).get("username", "?")
+        posted   = item.get("posted", "")
+        if price > 0 and posted:
+            key = f"{release_id}_{seller}_{price}_{currency}_{media}_{sleeve}"
+            dates[key] = posted[:10]  # YYYY-MM-DD
+    return dates
+
+def enrich_listing_dates(results):
+    """Voegt plaatsingsdatum toe aan listings van beleggingsplaten via Discogs API (gecached per dag)."""
+    dates_cache = load_cache(LISTING_DATES_CACHE)
+    today   = datetime.now().strftime("%Y-%m-%d")
+    changed = False
+
+    for r in results:
+        if not _is_investment_release(r["id"]):
+            continue
+        release_id = str(r["id"])
+        fetch_key  = f"__fetched__{release_id}"
+        if dates_cache.get(fetch_key) != today:
+            print(f"  Datums ophalen: {r['group']} — {r['title']}")
+            new_dates = fetch_release_listing_dates(release_id)
+            dates_cache.update(new_dates)
+            dates_cache[fetch_key] = today
+            changed = True
+            time.sleep(0.5)
+
+        for listing in r.get("listings", []):
+            key = (f"{release_id}_{listing['seller']}_{listing['price']}"
+                   f"_{listing['currency']}_{listing['media']}_{listing['sleeve']}")
+            if key in dates_cache:
+                listing["listed_date"] = dates_cache[key]
+
+    if changed:
+        save_cache(LISTING_DATES_CACHE, dates_cache)
+    return results
+
 # ─── HTML OPBOUW ──────────────────────────────────────────────────────────────
 
 GROUP_COLORS = [
@@ -2055,11 +2125,7 @@ def build_html(results, static=False, new_listings=None):
 
     # ── Nieuwe Listings pagina ────────────────────────────────────────────
     nl = new_listings or []
-    def _is_investment(release_id):
-        info = RELEASE_INFO.get(str(release_id)) or RELEASE_INFO.get(release_id)
-        if not info:
-            return False
-        return info[0].startswith("🏆")
+    _is_investment = _is_investment_release
 
     def _nl_pct_cell(pct):
         if pct is None:
@@ -2108,7 +2174,8 @@ def build_html(results, static=False, new_listings=None):
             date_cell = (f'<td class="td-num muted" style="white-space:nowrap">{ld_fmt}</td>'
                          if ld_fmt else '<td class="td-num muted">—</td>')
             rows += (
-                f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row" data-nl-key="{key}">'
+                f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row" data-nl-key="{key}"'
+                f' data-group="{r["group"]}" data-cond="{nl_item["eff_cond"]}">'
                 f'<td><span class="rb-group">{r["group"]}</span></td>'
                 f'<td class="td-title">{r["title"]}{ri_badge}</td>'
                 f'<td><span class="badge bd-{mc}">{lst["media"]}</span>'
@@ -2130,22 +2197,37 @@ def build_html(results, static=False, new_listings=None):
     nl_invest = [x for x in nl if _is_investment(x["r"]["id"])]
     nl_overig  = [x for x in nl if not _is_investment(x["r"]["id"])]
 
-    def _nl_table(items, title, color):
+    def _nl_table(items, title, color, tid="tbl"):
+        conds = sorted(set(x["eff_cond"] for x in items if x.get("eff_cond")))
+        cond_opts = "\n".join(f'<option value="{c}">{c}</option>' for c in conds)
+        rows_html = _nl_rows(items)
         return f"""
-        <h3 style="margin:0 0 8px;font-size:15px;color:{color}">{title}
+        <h3 style="margin:0 0 4px;font-size:15px;color:{color}">{title}
           <span style="font-weight:400;color:var(--muted);font-size:12px">({len(items)})</span>
         </h3>
+        <div class="filter-bar">
+          <input class="filter-input" type="search" placeholder="Zoek artiest..."
+                 oninput="applyFilters('{tid}')" id="fi-{tid}-q" autocomplete="off">
+          <select class="filter-select" onchange="applyFilters('{tid}')" id="fi-{tid}-cond">
+            <option value="">Alle condities</option>
+            {cond_opts}
+          </select>
+          <span class="filter-count" id="fi-{tid}-cnt">{len(items)} listings</span>
+          <button class="filter-clear" onclick="clearFilters('{tid}')">Wis filters</button>
+        </div>
         <div class="card" style="margin-bottom:24px">
-          <table class="ov-table">
+          <table class="ov-table" id="{tid}">
             <thead><tr>
-              <th>Artiest</th><th>Release</th><th>Disc / Hoes</th>
-              <th class="th-r">Prijs incl. verzend</th>
+              <th class="th-sort" onclick="sortTable('{tid}',0,this)">Artiest<span class="sort-icon"></span></th>
+              <th>Release</th>
+              <th class="th-sort" onclick="sortTable('{tid}',2,this)">Disc / Hoes<span class="sort-icon"></span></th>
+              <th class="th-r th-sort" onclick="sortTable('{tid}',3,this)">Prijs incl. verzend<span class="sort-icon"></span></th>
               <th class="th-r">Gem. verkoop</th>
-              <th class="th-r">% vs gem.</th>
-              <th class="th-r">Geplaatst</th>
+              <th class="th-r th-sort" onclick="sortTable('{tid}',5,this)">% vs gem.<span class="sort-icon"></span></th>
+              <th class="th-r th-sort" onclick="sortTable('{tid}',6,this)">Geplaatst<span class="sort-icon"></span></th>
               <th>Verkoper</th><th></th><th></th>
             </tr></thead>
-            <tbody>{_nl_rows(items)}</tbody>
+            <tbody>{rows_html}</tbody>
           </table>
         </div>"""
 
@@ -2159,7 +2241,7 @@ def build_html(results, static=False, new_listings=None):
         <span id="nl-dismissed-n">0</span> listing(s) verborgen &mdash;
         <a href="#" onclick="showHiddenNl();return false" style="color:var(--accent);font-weight:600">Toon alles</a>
       </div>
-      {_nl_table(nl_invest, "&#127942; Beleggingen", "#92400E")}
+      {_nl_table(nl_invest, "&#127942; Beleggingen", "#92400E", "nl-invest-tbl")}
     </div>"""
 
     # ── Beleggingen Listings pagina ──────────────────────────────────────────
@@ -2196,6 +2278,7 @@ def build_html(results, static=False, new_listings=None):
                 "is_eu":     is_eu,
             })
     invest_all.sort(key=lambda x: (x["pct"] is None, x["pct"] or 0))
+    invest_release_count = len(set(x["r"]["id"] for x in invest_all))
 
     invest_listings_page = f"""
     <div class="page" id="invest-listings" style="display:none">
@@ -2203,7 +2286,7 @@ def build_html(results, static=False, new_listings=None):
         <h2>&#127942; Beleggingen &mdash; Alle Listings</h2>
         <span class="sub">{now} &nbsp;&middot;&nbsp; {len(invest_all)} listings &nbsp;&middot;&nbsp; verkopers &ge;{MIN_SELLER_RATINGS} ratings &nbsp;&middot;&nbsp; gesorteerd op % vs gem.</span>
       </div>
-      {_nl_table(invest_all, "&#127942; Alle listings beleggingsplaten", "#92400E")}
+      {_nl_table(invest_all, "&#127942; Alle listings beleggingsplaten", "#92400E", "invest-all-tbl")}
     </div>"""
 
     deals_page = f"""
@@ -2257,19 +2340,26 @@ def build_html(results, static=False, new_listings=None):
     nav = f"""
     <nav>
       <div class="nav-logo"><span class="nav-logo-icon">&#9679;</span> Vinyl</div>
+      <div class="nav-search-wrap">
+        <input class="nav-search" type="search" placeholder="Zoek artiest..." oninput="filterNav(this.value)" autocomplete="off">
+      </div>
       <div class="nav-item active" data-page="home" onclick="showPage('home')">
-        <span class="nav-icon">&#9646;</span> Home
+        <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2L2 9h2v9h5v-6h2v6h5V9h2z"/></svg>
+        Home
       </div>
       <div class="nav-item" data-page="new-listings" onclick="showPage('new-listings')">
-        <span class="nav-icon">&#10024;</span> Nieuwe Listings
+        <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        Nieuwe Listings
         {f'<span class="nav-badge" style="background:#3B82F6">{len(nl_invest)}</span>' if nl_invest else ''}
       </div>
       <div class="nav-item" data-page="invest-listings" onclick="showPage('invest-listings')">
-        <span class="nav-icon">&#127942;</span> Beleggingen
-        {f'<span class="nav-badge" style="background:#92400E">{len(invest_all)}</span>' if invest_all else ''}
+        <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M5 3a2 2 0 00-2 2v1H1v3a3 3 0 002.83 2.98A5 5 0 009 14.9V16H8a1 1 0 000 2h4a1 1 0 000-2h-1v-1.1A5 5 0 0016.17 11.98 3 3 0 0019 9V6h-2V5a2 2 0 00-2-2H5zm11 3h1v2.17A1 1 0 0116 9v-3zm-13 0V9a1 1 0 01-1-.83V6h1zm2-1h10v5a3 3 0 01-10 0V5z"/></svg>
+        Beleggingen
+        {f'<span class="nav-badge" style="background:#92400E">{invest_release_count}</span>' if invest_all else ''}
       </div>
       <div class="nav-item" data-page="deals" onclick="showPage('deals')">
-        <span class="nav-icon">&#9650;</span> Top Deals
+        <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/></svg>
+        Top Deals
         <span class="nav-badge">{len(deals)}</span>
       </div>
       <div class="nav-sep"></div>
@@ -2289,7 +2379,7 @@ def build_html(results, static=False, new_listings=None):
   :root{{
     --navy:#0F2245;--navy2:#1a3460;--accent:#10B981;--accent-dim:#059669;
     --bg:#F1F5F9;--surface:#fff;--border:#E2E8F0;
-    --text:#1E293B;--muted:#64748B;--muted2:#94A3B8;
+    --text:#1E293B;--muted:#475569;--muted2:#94A3B8;
     --deal-bg:#D1FAE5;--deal-fg:#065F46;
     --warn-bg:#FFFBEB;--warn-bdr:#FDE68A;
     --purple:#7C3AED;--purple2:#6D28D9;
@@ -2313,7 +2403,7 @@ def build_html(results, static=False, new_listings=None):
   .nav-item:hover{{background:rgba(255,255,255,.07);color:#fff}}
   .nav-item.active{{background:rgba(255,255,255,.12);border-left-color:var(--accent);
                    color:#fff;font-weight:600}}
-  .nav-icon{{font-size:8px;opacity:.5}}
+  .nav-icon{{width:14px;height:14px;opacity:.65;flex-shrink:0}}
   .nav-badge{{margin-left:auto;background:var(--accent);color:#fff;
               font-size:10px;font-weight:700;padding:1px 6px;border-radius:10px}}
   .nav-sep{{height:1px;background:rgba(255,255,255,.1);margin:6px 0}}
@@ -2612,6 +2702,57 @@ def build_html(results, static=False, new_listings=None):
     .cb{{break-inside:avoid}}
     .card{{box-shadow:none}}
   }}
+
+  /* ── Focus ── */
+  *:focus-visible{{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}}
+
+  /* ── Page transition ── */
+  @keyframes fadeIn{{from{{opacity:0;transform:translateY(4px)}}to{{opacity:1;transform:none}}}}
+  .page{{animation:fadeIn 120ms ease-out}}
+
+  /* ── Nav search ── */
+  .nav-search-wrap{{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.1)}}
+  .nav-search{{width:100%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);
+               border-radius:6px;padding:6px 10px;color:#fff;font-size:12px;outline:none}}
+  .nav-search::placeholder{{color:rgba(255,255,255,.4)}}
+  .nav-search:focus{{border-color:var(--accent);background:rgba(255,255,255,.15)}}
+
+  /* ── Filter bar ── */
+  .filter-bar{{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px 0 14px}}
+  .filter-input{{padding:6px 10px;border:1.5px solid var(--border);border-radius:6px;
+                 font-size:12px;color:var(--text);background:var(--surface);outline:none;min-width:140px}}
+  .filter-input:focus{{border-color:var(--accent)}}
+  .filter-select{{padding:6px 10px;border:1.5px solid var(--border);border-radius:6px;
+                  font-size:12px;color:var(--text);background:var(--surface);outline:none;cursor:pointer}}
+  .filter-select:focus{{border-color:var(--accent)}}
+  .filter-count{{font-size:12px;color:var(--muted);margin-left:auto}}
+  .filter-clear{{padding:5px 12px;border:1.5px solid var(--border);border-radius:6px;
+                 font-size:12px;color:var(--muted);background:none;cursor:pointer}}
+  .filter-clear:hover{{border-color:var(--accent);color:var(--accent)}}
+
+  /* ── Sortable headers ── */
+  .th-sort{{cursor:pointer;user-select:none;white-space:nowrap}}
+  .th-sort:hover{{color:var(--accent)}}
+  .sort-icon{{display:inline-block;margin-left:3px;opacity:.45;font-size:9px}}
+  .th-sort.asc .sort-icon::after{{content:"\\25B2"}}
+  .th-sort.desc .sort-icon::after{{content:"\\25BC"}}
+  .th-sort:not(.asc):not(.desc) .sort-icon::after{{content:"\\21C5"}}
+
+  /* ── Dark mode ── */
+  @media(prefers-color-scheme:dark){{
+    :root{{
+      --bg:#0F172A;--surface:#1E293B;--border:#334155;
+      --text:#E2E8F0;--muted:#94A3B8;--muted2:#64748B;
+      --deal-bg:#064E3B;--deal-fg:#6EE7B7;
+      --warn-bg:#451A03;--warn-bdr:#92400E;
+    }}
+    .card{{box-shadow:0 1px 4px rgba(0,0,0,.4)}}
+    .topbar-wrap{{background:#1E293B;border-bottom-color:#334155}}
+    .filter-input,.filter-select{{background:#0F172A;color:#E2E8F0;border-color:#334155}}
+    table th{{background:#0F172A}}
+    .home-row:hover{{background:#1a2a3a}}
+    .nav-search{{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12)}}
+  }}
 </style>
 </head>
 <body>
@@ -2879,6 +3020,72 @@ function ghPoll(token,n){{
   }}).catch(function(){{
     setTimeout(function(){{ghPoll(token,n+1);}},5000);
   }});
+}}
+function filterNav(q){{
+  q=(q||'').toLowerCase().trim();
+  document.querySelectorAll('.nav-genre').forEach(function(det){{
+    var anyVis=false;
+    det.querySelectorAll('.nav-item').forEach(function(item){{
+      var show=!q||item.textContent.toLowerCase().includes(q);
+      item.style.display=show?'':'none';
+      if(show)anyVis=true;
+    }});
+    det.style.display=(q&&!anyVis)?'none':'';
+    if(q&&anyVis)det.open=true;
+  }});
+}}
+function sortTable(tid,col,th){{
+  var table=document.getElementById(tid);
+  if(!table)return;
+  var tbody=table.querySelector('tbody');
+  var rows=Array.from(tbody.querySelectorAll('tr[data-group]'));
+  var asc=!th.classList.contains('asc');
+  table.querySelectorAll('.th-sort').forEach(function(h){{h.classList.remove('asc','desc');}});
+  th.classList.add(asc?'asc':'desc');
+  var numCols=[3,4,5];
+  var dateCols=[6];
+  rows.sort(function(a,b){{
+    var ca=a.cells[col]?a.cells[col].textContent.trim():'';
+    var cb=b.cells[col]?b.cells[col].textContent.trim():'';
+    if(numCols.indexOf(col)>=0){{
+      var na=parseFloat(ca.replace(/[^0-9.+-]/g,''))||(asc?Infinity:-Infinity);
+      var nb=parseFloat(cb.replace(/[^0-9.+-]/g,''))||(asc?Infinity:-Infinity);
+      return asc?na-nb:nb-na;
+    }}
+    if(dateCols.indexOf(col)>=0){{
+      var da=ca==='—'?'':ca.split('/').reverse().join('');
+      var db=cb==='—'?'':cb.split('/').reverse().join('');
+      return asc?da.localeCompare(db):db.localeCompare(da);
+    }}
+    return asc?ca.localeCompare(cb,'nl'):cb.localeCompare(ca,'nl');
+  }});
+  rows.forEach(function(r){{tbody.appendChild(r);}});
+}}
+function applyFilters(tid){{
+  var table=document.getElementById(tid);
+  if(!table)return;
+  var qEl=document.getElementById('fi-'+tid+'-q');
+  var cEl=document.getElementById('fi-'+tid+'-cond');
+  var q=qEl?qEl.value.toLowerCase():'';
+  var cond=cEl?cEl.value:'';
+  var rows=table.querySelectorAll('tbody tr[data-group]');
+  var vis=0;
+  rows.forEach(function(r){{
+    var group=(r.getAttribute('data-group')||'').toLowerCase();
+    var rcond=r.getAttribute('data-cond')||'';
+    var show=(!q||group.includes(q))&&(!cond||rcond===cond);
+    r.style.display=show?'':'none';
+    if(show)vis++;
+  }});
+  var cnt=document.getElementById('fi-'+tid+'-cnt');
+  if(cnt)cnt.textContent=vis+' listings';
+}}
+function clearFilters(tid){{
+  var q=document.getElementById('fi-'+tid+'-q');
+  var c=document.getElementById('fi-'+tid+'-cond');
+  if(q)q.value='';
+  if(c)c.value='';
+  applyFilters(tid);
 }}
 </script>
 </body>
