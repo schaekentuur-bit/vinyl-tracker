@@ -96,6 +96,10 @@ RELEASE_INFO = {
     "517224":   ("🏆 First pressing", "Originele UK Damont-persing van het debuut — zeldzamer dan Morning Glory. Top collector's item."),
     "6127871":  ("🎵 Luisterversie", "Moderne EU reissue — prima geluid voor dagelijks gebruik."),
     "12864584": ("🎵 Luisterversie", "Moderne reissue — ideaal om af te spelen zonder origineel te slijten."),
+    "2334540":  ("🏆 First pressing", "Originele UK Big Brother-persing 2010 (RKIDLP66) — dit IS de first pressing van Time Flies... 1994-2009. 5LP box set, zwart hype-sticker op shrinkwrap."),
+    "2521407":  ("📀 EU origineel (niet first)", "Originele EU Big Brother-persing 2010 (88697722641) — gelijktijdig uitgebracht met de UK, wit hype-sticker i.p.v. zwart. 5LP box set met kleurig 20-pagina boekje."),
+    "33663000": ("🎁 RSD 2025", "Worldwide Big Brother Record Store Day 2025 (RKIDLP150RSD) — gelimiteerde RSD First Release editie, april 2025."),
+    "34257205": ("🎵 Luisterversie", "Worldwide Big Brother reissue 2025 (RKIDLP150) — zwart vinyl reissue met beperkte print van albumhoes, verwacht juni 2025."),
     # RHCP
     "375491":   ("🏆 First pressing", "Originele EU Warner Bros-persing 1991 — BSSM werd niet commercieel op vinyl uitgebracht in de US in 1991; dit IS de first pressing vinyl."),
     "12042641": ("🎵 Luisterversie", "US remaster 2012 — beste keuze voor dagelijks afspelen."),
@@ -526,6 +530,7 @@ RELEASE_PAIRS = [
     # Rock
     ("939519",   "6127871"),   # Oasis — Morning Glory
     ("517224",   "12864584"),  # Oasis — Definitely Maybe
+    ("2334540",  "34257205"),  # Oasis — Time Flies (UK first / reissue 2025)
     ("375491",   "12042641"),  # RHCP — Blood Sugar Sex Magik
     ("14914560", "31323387"),  # RHCP — Californication
     ("420718",   "15276024"),  # RHCP — By The Way
@@ -746,6 +751,10 @@ RELEASES = {
     "517224":   ("Oasis", "Definitely Maybe (CRE LP 169, Damont, UK 1994)"),
     "6127871":  ("Oasis", "Morning Glory (RKIDLP73, EU reissue 2014)"),
     "12864584": ("Oasis", "Definitely Maybe reissue (RKIDLP70, 2014)"),
+    "2334540":  ("Oasis", "Time Flies... 1994-2009 (RKIDLP66, Big Brother UK 2010)"),
+    "2521407":  ("Oasis", "Time Flies... 1994-2009 (88697722641, Big Brother EU 2010)"),
+    "33663000": ("Oasis", "Time Flies... 1994-2009 RSD (RKIDLP150RSD, Worldwide 2025)"),
+    "34257205": ("Oasis", "Time Flies... 1994-2009 reissue (RKIDLP150, Worldwide 2025)"),
 
     # ── RED HOT CHILI PEPPERS ──
     "375491":   ("RHCP", "Blood Sugar Sex Magik (7599-26681-1, EU first pressing 1991)"),
@@ -3228,9 +3237,23 @@ if(_addUrl){{
 }}
 var initPage=(window.location.hash||'#home').slice(1);
 showPage(document.getElementById(initPage)?initPage:'home');
+function _markReadServer(keys){{
+  // Probeer lokale server; als dat mislukt, gebruik GitHub Actions (statische site)
+  fetch('/mark-read',{{method:'POST',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{keys:keys}})}})
+    .then(function(r){{if(!r.ok)throw new Error('no local server');}})
+    .catch(function(){{
+      var token=localStorage.getItem('gh_pat');
+      if(!token)return;
+      fetch('https://api.github.com/repos/schaekentuur-bit/vinyl-tracker/actions/workflows/vinyl.yml/dispatches',{{
+        method:'POST',
+        headers:{{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'}},
+        body:JSON.stringify({{ref:'master',inputs:{{force:'false',mark_read_keys:JSON.stringify(keys)}}}})
+      }});
+    }});
+}}
 function dismissNewListing(key,e){{
   e.stopPropagation();
-  fetch('/mark-read',{{method:'POST',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{keys:[key]}})}});
+  _markReadServer([key]);
   var list=JSON.parse(localStorage.getItem('dismissed_nl')||'[]');
   if(!list.includes(key))list.push(key);
   localStorage.setItem('dismissed_nl',JSON.stringify(list));
@@ -3244,7 +3267,7 @@ function markAllRead(){{
   var keys=[];
   rows.forEach(function(r){{if(r.style.display!=='none')keys.push(r.getAttribute('data-nl-key'));}});
   if(!keys.length)return;
-  fetch('/mark-read',{{method:'POST',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{keys:keys}})}});
+  _markReadServer(keys);
   rows.forEach(function(r){{r.style.display='none';}});
   var list=JSON.parse(localStorage.getItem('dismissed_nl')||'[]');
   keys.forEach(function(k){{if(!list.includes(k))list.push(k);}});
@@ -3700,7 +3723,8 @@ def run_server(initial_results, cookies, session):
         # 1. Genereer docs/index.html vanuit huidige data
         try:
             results = state.get("results") or build_from_cache()
-            html = build_html(results, static=True)
+            html = build_html(results, static=True,
+                              new_listings=state.get("new_listings", []))
             docs_dir = os.path.join(repo, "docs")
             os.makedirs(docs_dir, exist_ok=True)
             with open(os.path.join(docs_dir, "index.html"), "w", encoding="utf-8") as fh:
@@ -3716,7 +3740,7 @@ def run_server(initial_results, cookies, session):
             "generate_report.py",
             os.path.join("docs", "index.html"),
             SALES_CACHE, STATS_CACHE, LISTINGS_CACHE,
-            DEALS_SEEN_FILE, USER_RELEASES_FILE, THUMB_CACHE,
+            DEALS_SEEN_FILE, LISTINGS_SEEN_FILE, USER_RELEASES_FILE, THUMB_CACHE,
         ]
         existing = [f for f in files if os.path.exists(os.path.join(repo, f))]
         try:

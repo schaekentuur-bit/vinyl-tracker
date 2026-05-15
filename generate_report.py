@@ -25,7 +25,7 @@ from vinyl_tracker import (
     send_deals_email, find_new_deals,
     compute_new_listings, enrich_listing_dates,
     load_cache, save_cache,
-    DEALS_SEEN_FILE, _deal_key, RELEASES, USER_RELEASES_FILE
+    DEALS_SEEN_FILE, LISTINGS_SEEN_FILE, _deal_key, RELEASES, USER_RELEASES_FILE
 )
 
 # Eerder toegevoegde releases laden
@@ -36,6 +36,22 @@ for rid, val in load_cache(USER_RELEASES_FILE).items():
 cookies = vinyl_tracker.load_cookies()
 session = cf_requests.Session(impersonate="chrome124")
 session.headers.update({"Accept-Language": "nl-BE,nl;q=0.9"})
+
+# Verwerk expliciete mark-as-read keys (vanuit workflow dispatch via telefoon)
+_mark_keys_raw = os.getenv("MARK_READ_KEYS", "").strip()
+if _mark_keys_raw:
+    import json as _json
+    try:
+        _mark_keys = _json.loads(_mark_keys_raw)
+        if _mark_keys:
+            _seen = load_cache(LISTINGS_SEEN_FILE)
+            _today = __import__("datetime").datetime.now().strftime("%Y-%m-%d")
+            for _k in _mark_keys:
+                _seen[_k] = _today
+            save_cache(LISTINGS_SEEN_FILE, _seen)
+            print(f"{len(_mark_keys)} listings gemarkeerd als gelezen")
+    except Exception as _e:
+        print(f"MARK_READ_KEYS parse fout: {_e}")
 
 force = os.getenv("FORCE_REFRESH", "false").strip().lower() == "true"
 print(f"Scrapen... (force={force})")

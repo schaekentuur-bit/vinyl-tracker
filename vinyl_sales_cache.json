@@ -61628,5 +61628,650 @@
         "currency": "EUR"
       }
     ]
+  },
+  "2521407": {
+    "fetched_at": "2026-05-15",
+    "sales": [
+      {
+        "date": "2025-08-09",
+        "media": "M",
+        "sleeve": "M",
+        "price": 493.91,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-07-10",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 120.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-07-01",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 195.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-05-19",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 212.5,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-02-07",
+        "media": "M",
+        "sleeve": "M",
+        "price": 275.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-12-11",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 280.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-12-07",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 243.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-11-02",
+        "media": "M",
+        "sleeve": "M",
+        "price": 250.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-09-27",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 300.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-09-15",
+        "media": "M",
+        "sleeve": "M",
+        "price": 283.33,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-09-10",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 270.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-09-07",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 230.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-08-27",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 230.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-08-06",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 270.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-07-12",
+        "media": "M",
+        "sleeve": "M",
+        "price": 250.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-03-02",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 179.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-02-07",
+        "media": "M",
+        "sleeve": "M",
+        "price": 398.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-02-03",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 349.9,
+        "currency": "EUR"
+      },
+      {
+        "date": "2023-10-12",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 186.13,
+        "currency": "EUR"
+      },
+      {
+        "date": "2023-07-20",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 276.25,
+        "currency": "EUR"
+      },
+      {
+        "date": "2023-07-19",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 300.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2023-05-01",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 250.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2023-01-26",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 350.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2023-01-19",
+        "media": "M",
+        "sleeve": "M",
+        "price": 350.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2022-10-31",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 127.5,
+        "currency": "EUR"
+      },
+      {
+        "date": "2022-08-15",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 350.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2022-06-01",
+        "media": "M",
+        "sleeve": "M",
+        "price": 310.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2022-03-06",
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 182.9,
+        "currency": "EUR"
+      },
+      {
+        "date": "2022-01-03",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 260.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2021-12-15",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 390.54,
+        "currency": "EUR"
+      }
+    ]
+  },
+  "34257205": {
+    "fetched_at": "2026-05-15",
+    "sales": [
+      {
+        "date": "2026-05-14",
+        "media": "M",
+        "sleeve": "M",
+        "price": 79.9,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-04-17",
+        "media": "M",
+        "sleeve": "M",
+        "price": 63.18,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-04-13",
+        "media": "M",
+        "sleeve": "M",
+        "price": 67.18,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-04-11",
+        "media": "M",
+        "sleeve": "M",
+        "price": 83.84,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-03-20",
+        "media": "M",
+        "sleeve": "M",
+        "price": 78.19,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-03-09",
+        "media": "M",
+        "sleeve": "M",
+        "price": 63.18,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-02-25",
+        "media": "M",
+        "sleeve": "M",
+        "price": 76.5,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-01-30",
+        "media": "M",
+        "sleeve": "M",
+        "price": 82.45,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-01-21",
+        "media": "M",
+        "sleeve": "M",
+        "price": 95.99,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-01-04",
+        "media": "M",
+        "sleeve": "M",
+        "price": 108.55,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-01-02",
+        "media": "M",
+        "sleeve": "M",
+        "price": 62.03,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-01-02",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 76.49,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-01-02",
+        "media": "M",
+        "sleeve": "M",
+        "price": 62.03,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-12-31",
+        "media": "M",
+        "sleeve": "M",
+        "price": 81.54,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-12-29",
+        "media": "M",
+        "sleeve": "M",
+        "price": 62.03,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-12-24",
+        "media": "M",
+        "sleeve": "M",
+        "price": 99.27,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-12-23",
+        "media": "M",
+        "sleeve": "M",
+        "price": 66.61,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-12-22",
+        "media": "M",
+        "sleeve": "M",
+        "price": 87.9,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-12-22",
+        "media": "M",
+        "sleeve": "M",
+        "price": 87.9,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-12-11",
+        "media": "M",
+        "sleeve": "M",
+        "price": 79.99,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-12-10",
+        "media": "M",
+        "sleeve": "M",
+        "price": 62.03,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-12-09",
+        "media": "M",
+        "sleeve": "M",
+        "price": 62.03,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-12-05",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 82.28,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-12-04",
+        "media": "M",
+        "sleeve": "M",
+        "price": 63.12,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-12-01",
+        "media": "M",
+        "sleeve": "M",
+        "price": 62.03,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-11-29",
+        "media": "M",
+        "sleeve": "M",
+        "price": 63.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-11-21",
+        "media": "M",
+        "sleeve": "M",
+        "price": 82.45,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-11-13",
+        "media": "M",
+        "sleeve": "M",
+        "price": 62.03,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-10-28",
+        "media": "M",
+        "sleeve": "M",
+        "price": 74.99,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-10-17",
+        "media": "M",
+        "sleeve": "M",
+        "price": 87.9,
+        "currency": "EUR"
+      }
+    ]
+  },
+  "2334540": {
+    "fetched_at": "2026-05-15",
+    "sales": [
+      {
+        "date": "2026-03-08",
+        "media": "M",
+        "sleeve": "M",
+        "price": 338.85,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-05-17",
+        "media": "M",
+        "sleeve": "M",
+        "price": 338.85,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-03-03",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 298.65,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-10-06",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 453.72,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-09-02",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 459.46,
+        "currency": "EUR"
+      },
+      {
+        "date": "2024-08-07",
+        "media": "M",
+        "sleeve": "M",
+        "price": 482.43,
+        "currency": "EUR"
+      },
+      {
+        "date": "2023-10-14",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 292.91,
+        "currency": "EUR"
+      },
+      {
+        "date": "2023-08-05",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 344.59,
+        "currency": "EUR"
+      },
+      {
+        "date": "2023-06-07",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 267.75,
+        "currency": "EUR"
+      },
+      {
+        "date": "2023-02-08",
+        "media": "M",
+        "sleeve": "M",
+        "price": 800.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2022-12-08",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 297.5,
+        "currency": "EUR"
+      },
+      {
+        "date": "2022-09-27",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 310.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2022-02-23",
+        "media": "M",
+        "sleeve": "M",
+        "price": 459.46,
+        "currency": "EUR"
+      },
+      {
+        "date": "2021-12-12",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 325.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2021-11-30",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 300.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2021-09-24",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 333.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2021-08-25",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 357.84,
+        "currency": "EUR"
+      },
+      {
+        "date": "2021-06-30",
+        "media": "M",
+        "sleeve": "M",
+        "price": 375.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2021-05-28",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 396.28,
+        "currency": "EUR"
+      },
+      {
+        "date": "2021-04-14",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 340.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2021-02-18",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 345.74,
+        "currency": "EUR"
+      },
+      {
+        "date": "2020-09-02",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 282.56,
+        "currency": "EUR"
+      },
+      {
+        "date": "2020-08-26",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 220.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2020-06-24",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 250.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2020-06-24",
+        "media": "M",
+        "sleeve": "M",
+        "price": 298.65,
+        "currency": "EUR"
+      },
+      {
+        "date": "2020-06-10",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 258.45,
+        "currency": "EUR"
+      },
+      {
+        "date": "2020-05-09",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 225.25,
+        "currency": "EUR"
+      },
+      {
+        "date": "2020-04-20",
+        "media": "M",
+        "sleeve": "M",
+        "price": 280.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2020-03-04",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 125.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2020-01-01",
+        "media": "M",
+        "sleeve": "M",
+        "price": 298.65,
+        "currency": "EUR"
+      }
+    ]
   }
 }

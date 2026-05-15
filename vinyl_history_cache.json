@@ -10,6 +10,17 @@
       "blocked_from_sale": false
     }
   },
+  "33663000": {
+    "fetched_at": "2026-05-15",
+    "stats": {
+      "num_for_sale": 117,
+      "lowest_price": {
+        "value": 90.0,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
   "6127871": {
     "fetched_at": "2026-05-15",
     "stats": {
@@ -21,12 +32,31 @@
       "blocked_from_sale": false
     }
   },
-  "12864584": {
+  "14914560": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 28,
+      "num_for_sale": 0,
+      "lowest_price": null,
+      "blocked_from_sale": false
+    }
+  },
+  "12042641": {
+    "fetched_at": "2026-05-15",
+    "stats": {
+      "num_for_sale": 22,
       "lowest_price": {
-        "value": 29.75,
+        "value": 23.8,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "375491": {
+    "fetched_at": "2026-05-15",
+    "stats": {
+      "num_for_sale": 93,
+      "lowest_price": {
+        "value": 36.86,
         "currency": "EUR"
       },
       "blocked_from_sale": false
@@ -43,53 +73,78 @@
       "blocked_from_sale": false
     }
   },
+  "31323387": {
+    "fetched_at": "2026-05-15",
+    "stats": {
+      "num_for_sale": 28,
+      "lowest_price": {
+        "value": 25.87,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "12864584": {
+    "fetched_at": "2026-05-15",
+    "stats": {
+      "num_for_sale": 28,
+      "lowest_price": {
+        "value": 29.75,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "2521407": {
+    "fetched_at": "2026-05-15",
+    "stats": {
+      "num_for_sale": 21,
+      "lowest_price": {
+        "value": 254.99,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "34257205": {
+    "fetched_at": "2026-05-15",
+    "stats": {
+      "num_for_sale": 103,
+      "lowest_price": {
+        "value": 58.58,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "2334540": {
+    "fetched_at": "2026-05-15",
+    "stats": {
+      "num_for_sale": 17,
+      "lowest_price": {
+        "value": 238.86,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "420718": {
+    "fetched_at": "2026-05-15",
+    "stats": {
+      "num_for_sale": 12,
+      "lowest_price": {
+        "value": 76.5,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
   "15276024": {
     "fetched_at": "2026-05-15",
     "stats": {
       "num_for_sale": 181,
       "lowest_price": {
         "value": 17.59,
-        "currency": "EUR"
-      },
-      "blocked_from_sale": false
-    }
-  },
-  "14914560": {
-    "fetched_at": "2026-05-15",
-    "stats": {
-      "num_for_sale": 0,
-      "lowest_price": null,
-      "blocked_from_sale": false
-    }
-  },
-  "375491": {
-    "fetched_at": "2026-05-15",
-    "stats": {
-      "num_for_sale": 93,
-      "lowest_price": {
-        "value": 36.86,
-        "currency": "EUR"
-      },
-      "blocked_from_sale": false
-    }
-  },
-  "12042641": {
-    "fetched_at": "2026-05-15",
-    "stats": {
-      "num_for_sale": 21,
-      "lowest_price": {
-        "value": 23.8,
-        "currency": "EUR"
-      },
-      "blocked_from_sale": false
-    }
-  },
-  "31323387": {
-    "fetched_at": "2026-05-15",
-    "stats": {
-      "num_for_sale": 27,
-      "lowest_price": {
-        "value": 25.87,
         "currency": "EUR"
       },
       "blocked_from_sale": false
@@ -117,17 +172,6 @@
       "blocked_from_sale": false
     }
   },
-  "420718": {
-    "fetched_at": "2026-05-15",
-    "stats": {
-      "num_for_sale": 12,
-      "lowest_price": {
-        "value": 76.5,
-        "currency": "EUR"
-      },
-      "blocked_from_sale": false
-    }
-  },
   "7801798": {
     "fetched_at": "2026-05-15",
     "stats": {
@@ -142,7 +186,7 @@
   "14186441": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 207,
+      "num_for_sale": 208,
       "lowest_price": {
         "value": 19.0,
         "currency": "EUR"
@@ -153,7 +197,7 @@
   "2911293": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 122,
+      "num_for_sale": 121,
       "lowest_price": {
         "value": 4.5,
         "currency": "EUR"
@@ -175,7 +219,7 @@
   "459606": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 95,
+      "num_for_sale": 94,
       "lowest_price": {
         "value": 8.5,
         "currency": "EUR"
@@ -197,7 +241,7 @@
   "11118447": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 73,
+      "num_for_sale": 74,
       "lowest_price": {
         "value": 16.99,
         "currency": "EUR"
@@ -208,7 +252,7 @@
   "381988": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 23,
+      "num_for_sale": 22,
       "lowest_price": {
         "value": 340.0,
         "currency": "EUR"
@@ -241,7 +285,7 @@
   "7541569": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 151,
+      "num_for_sale": 150,
       "lowest_price": {
         "value": 16.99,
         "currency": "EUR"
@@ -329,7 +373,7 @@
   "455954": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 83,
+      "num_for_sale": 84,
       "lowest_price": {
         "value": 9.19,
         "currency": "EUR"
@@ -362,7 +406,7 @@
   "505097": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 84,
+      "num_for_sale": 85,
       "lowest_price": {
         "value": 8.0,
         "currency": "EUR"
@@ -425,7 +469,7 @@
   "1949857": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 263,
+      "num_for_sale": 264,
       "lowest_price": {
         "value": 15.51,
         "currency": "EUR"
@@ -557,9 +601,9 @@
   "34578556": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 6,
+      "num_for_sale": 7,
       "lowest_price": {
-        "value": 20.4,
+        "value": 18.7,
         "currency": "EUR"
       },
       "blocked_from_sale": false
@@ -579,7 +623,7 @@
   "30551209": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 8,
+      "num_for_sale": 9,
       "lowest_price": {
         "value": 23.66,
         "currency": "EUR"
@@ -623,7 +667,7 @@
   "25683820": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 69,
+      "num_for_sale": 68,
       "lowest_price": {
         "value": 28.07,
         "currency": "EUR"
@@ -664,7 +708,7 @@
   "22712903": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 19,
+      "num_for_sale": 21,
       "lowest_price": {
         "value": 8.46,
         "currency": "EUR"
@@ -716,7 +760,7 @@
   "2848009": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 31,
+      "num_for_sale": 30,
       "lowest_price": {
         "value": 26.33,
         "currency": "EUR"
@@ -801,9 +845,9 @@
   "526351": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 88,
+      "num_for_sale": 86,
       "lowest_price": {
-        "value": 10.1,
+        "value": 15.2,
         "currency": "EUR"
       },
       "blocked_from_sale": false
@@ -889,7 +933,7 @@
   "223127": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 56,
+      "num_for_sale": 57,
       "lowest_price": {
         "value": 42.5,
         "currency": "EUR"
@@ -900,7 +944,7 @@
   "7753999": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 72,
+      "num_for_sale": 71,
       "lowest_price": {
         "value": 30.8,
         "currency": "EUR"
@@ -944,7 +988,7 @@
   "11827033": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 16,
+      "num_for_sale": 15,
       "lowest_price": {
         "value": 5.74,
         "currency": "EUR"
@@ -999,7 +1043,7 @@
   "22645229": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 34,
+      "num_for_sale": 35,
       "lowest_price": {
         "value": 14.45,
         "currency": "EUR"
@@ -1054,7 +1098,7 @@
   "468054": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 235,
+      "num_for_sale": 234,
       "lowest_price": {
         "value": 1.72,
         "currency": "EUR"
@@ -1197,7 +1241,7 @@
   "598810": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 53,
+      "num_for_sale": 52,
       "lowest_price": {
         "value": 6.8,
         "currency": "EUR"
@@ -1538,7 +1582,7 @@
   "204021": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 21,
+      "num_for_sale": 22,
       "lowest_price": {
         "value": 44.0,
         "currency": "EUR"
@@ -1571,7 +1615,7 @@
   "32440584": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 54,
+      "num_for_sale": 53,
       "lowest_price": {
         "value": 25.26,
         "currency": "EUR"
@@ -1582,7 +1626,7 @@
   "1073329": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 43,
+      "num_for_sale": 42,
       "lowest_price": {
         "value": 315.88,
         "currency": "EUR"
@@ -1681,7 +1725,7 @@
   "4073023": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 79,
+      "num_for_sale": 80,
       "lowest_price": {
         "value": 19.54,
         "currency": "EUR"
@@ -1725,7 +1769,7 @@
   "9247160": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 105,
+      "num_for_sale": 104,
       "lowest_price": {
         "value": 24.64,
         "currency": "EUR"
@@ -1736,7 +1780,7 @@
   "9258642": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 46,
+      "num_for_sale": 45,
       "lowest_price": {
         "value": 12.75,
         "currency": "EUR"
@@ -1813,9 +1857,9 @@
   "13377344": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 37,
+      "num_for_sale": 38,
       "lowest_price": {
-        "value": 10.96,
+        "value": 10.85,
         "currency": "EUR"
       },
       "blocked_from_sale": false
@@ -1824,7 +1868,7 @@
   "12308370": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 92,
+      "num_for_sale": 93,
       "lowest_price": {
         "value": 13.78,
         "currency": "EUR"
@@ -1868,9 +1912,9 @@
   "30428033": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 23,
+      "num_for_sale": 20,
       "lowest_price": {
-        "value": 55.25,
+        "value": 79.18,
         "currency": "EUR"
       },
       "blocked_from_sale": false
@@ -1945,7 +1989,7 @@
   "16026374": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 34,
+      "num_for_sale": 35,
       "lowest_price": {
         "value": 17.0,
         "currency": "EUR"
@@ -2000,7 +2044,7 @@
   "9403008": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 77,
+      "num_for_sale": 79,
       "lowest_price": {
         "value": 9.3,
         "currency": "EUR"
@@ -2011,7 +2055,7 @@
   "9402676": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 137,
+      "num_for_sale": 134,
       "lowest_price": {
         "value": 17.23,
         "currency": "EUR"
@@ -2033,7 +2077,7 @@
   "29085418": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 136,
+      "num_for_sale": 134,
       "lowest_price": {
         "value": 10.2,
         "currency": "EUR"
@@ -2088,7 +2132,7 @@
   "23055125": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 81,
+      "num_for_sale": 84,
       "lowest_price": {
         "value": 5.95,
         "currency": "EUR"
@@ -2165,7 +2209,7 @@
   "26584355": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 52,
+      "num_for_sale": 54,
       "lowest_price": {
         "value": 16.15,
         "currency": "EUR"
@@ -2176,7 +2220,7 @@
   "13053315": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 23,
+      "num_for_sale": 24,
       "lowest_price": {
         "value": 18.61,
         "currency": "EUR"
@@ -2231,9 +2275,9 @@
   "7266689": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 25,
+      "num_for_sale": 26,
       "lowest_price": {
-        "value": 29.95,
+        "value": 27.1,
         "currency": "EUR"
       },
       "blocked_from_sale": false
@@ -2308,7 +2352,7 @@
   "386005": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 114,
+      "num_for_sale": 115,
       "lowest_price": {
         "value": 4.41,
         "currency": "EUR"
@@ -2640,7 +2684,7 @@
   "15703648": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 36,
+      "num_for_sale": 37,
       "lowest_price": {
         "value": 25.5,
         "currency": "EUR"
@@ -2706,7 +2750,7 @@
   "23005994": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 20,
+      "num_for_sale": 21,
       "lowest_price": {
         "value": 22.9,
         "currency": "EUR"
@@ -2771,7 +2815,7 @@
     "stats": {
       "num_for_sale": 2,
       "lowest_price": {
-        "value": 27.89,
+        "value": 21.89,
         "currency": "EUR"
       },
       "blocked_from_sale": false
@@ -2914,7 +2958,7 @@
   "1201716": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 43,
+      "num_for_sale": 44,
       "lowest_price": {
         "value": 6.9,
         "currency": "EUR"
@@ -3046,7 +3090,7 @@
   "840158": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 50,
+      "num_for_sale": 51,
       "lowest_price": {
         "value": 6.8,
         "currency": "EUR"
@@ -3090,7 +3134,7 @@
   "2070894": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 23,
+      "num_for_sale": 22,
       "lowest_price": {
         "value": 21.72,
         "currency": "EUR"
@@ -3211,7 +3255,7 @@
   "15841340": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 48,
+      "num_for_sale": 50,
       "lowest_price": {
         "value": 14.36,
         "currency": "EUR"
@@ -3365,7 +3409,7 @@
   "9359884": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 130,
+      "num_for_sale": 129,
       "lowest_price": {
         "value": 15.0,
         "currency": "EUR"
@@ -3409,7 +3453,7 @@
   "382417": {
     "fetched_at": "2026-05-15",
     "stats": {
-      "num_for_sale": 82,
+      "num_for_sale": 81,
       "lowest_price": {
         "value": 3.45,
         "currency": "EUR"
