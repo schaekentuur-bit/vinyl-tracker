@@ -20,7 +20,6 @@ import os
 import time
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import webbrowser
 from datetime import datetime, timedelta
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from curl_cffi import requests as cf_requests
@@ -414,6 +413,111 @@ RELEASE_INFO = {
     "25119211": ("🎵 Luisterversie", "US/EU Interscope/Amaru/UMe 180g reissue 2022 (00602448276261) — 4LP 180g gatefold, gemasterd door Brian Gardner, geperst door GZ Media. 5.200 have. Beste moderne persing: 4.8/5 door fans beoordeeld."),
     "960025":   ("🏆 First pressing", "Originele US Death Row/Interscope-persing 1998 (INT4-90301) — dit IS de first pressing van Greatest Hits. 4LP gatefold. Bevat California Love, Changes, Hit 'Em Up en Hail Mary. 1.904 have / 1.776 want."),
     "12824597": ("🎵 Luisterversie", "US Death Row/Interscope/UMG reissue 2018 (B0029039-01) — meest verspreide persing van Greatest Hits. 4LP gatefold heruitgave. 2.603 have. Ideaal voor dagelijks afspelen."),
+    # Marvin Gaye & Tammi Terrell
+    "16254322": ("🏆 First pressing (stereo)", "Originele US Tamla-persing 1967 (TS 277) — dit IS de stereo first pressing van United. Indianapolis pressing, meest gezochte variant. Bevat Ain't No Mountain High Enough."),
+    "3925863":  ("🎵 Audiofiele versie", "Speakers Corner 180g reissue Duitsland 2009 — gemasterd door Emil Berliner Studios, geperst door Pallas. Ideaal voor dagelijks afspelen."),
+    # Ramses Shaffy
+    "735833":   ("🏆 First pressing", "Originele Nederlandse Philips-persing 1978 (6423 112) — dit IS de first pressing van Dag En Nacht. Bevat Laat Me."),
+    # UB40
+    "15311529": ("🏆 First pressing", "Originele UK DEP International/Virgin-persing 1983 (LP DEP 5) — dit IS de first pressing van Labour of Love. Bevat Red Red Wine."),
+    "6848587":  ("🎵 Luisterversie", "EU Virgin EMI/UMC Back To Black 2LP 180g reissue 2015 (00602547161116) — inclusief download-voucher. Ideaal voor dagelijks afspelen."),
+    "4634884":  ("🏆 First pressing", "Originele UK DEP International-persing 1989 (LPDEP 14) — dit IS de first pressing van Labour of Love II. Gemasterd bij Abbey Road. Bevat Kingston Town."),
+    "634218":   ("🏆 First pressing", "Originele UK DEP International/Virgin-persing 1985 (LP DEP 10) — dit IS de first pressing van Baggariddim. Gatefold, 33+45 RPM. Bevat I Got You Babe feat. Chrissie Hynde."),
+    "1201716":  ("🏆 First pressing", "Originele UK/EU DEP International/Virgin-persing 1993 (LPDEP 15) — dit IS de first pressing van Promises and Lies. Bevat (I Can't Help) Falling in Love with You."),
+    # Sting
+    "1066027":  ("🏆 First pressing UK/EU", "Originele UK/EU A&M-persing 1987 (AMA 6402) — dit IS de UK/EU first pressing van ...Nothing Like the Sun. 2LP. Bevat Englishman in New York."),
+    "9124039":  ("🎵 Audiofiele versie", "EU A&M 2LP reissue 2016 (0082839391214) — nieuw gemasterd bij Abbey Road Studios, geperst in Duitsland. Beoordeeld 4.53/5 door fans. Ideaal voor dagelijks afspelen."),
+    # Drukwerk
+    "2689368":  ("🏆 First pressing", "Originele Nederlandse EMI-persing 1981 (1A 058-26650) — dit IS de first pressing van het debuutalbum Drukwerk. Bevat Je Loog Tegen Mij."),
+    "2972649":  ("🏆 First pressing", "Originele Nederlandse EMI-persing 1982 (1A 068 26852) — dit IS de first pressing van Tweede Druk. Bevat Schijn 'n Lichtje Op Mij."),
+    # Jay-Z & Kanye West
+    "3351778":  ("🏆 Officieel vinyl (picture disc)", "US Roc-A-Fella/Island Def Jam 2LP picture disc 2012 (B0016010-01) — enige officiële vinyl-persing van Watch the Throne. Gouden gevouwen kruis-hoes (ontworpen door Givenchy). Lacquers gesneden door Ray Janos bij Sterling Sound. Bevat Niggas in Paris."),
+    # Notorious B.I.G. (aanvulling)
+    "268090":   ("🏆 First pressing", "Originele US Bad Boy/Arista-persing 1997 (78612-73011-1) — dit IS de first pressing van Life After Death. 3LP. Bevat Hypnotize en Mo Money Mo Problems. 'Recorded and manufactured prior to March 9, 1997.'"),
+    "22556825": ("🎵 Luisterversie", "EU Bad Boy Entertainment 25th Anniversary 3LP reissue 2022 (R1 541302) — ideaal voor dagelijks afspelen."),
+    # KISS
+    "688267":   ("🏆 First pressing", "Originele US Casablanca-persing 1975 (NBLP 7016) — dit IS de first pressing van Dressed to Kill. PRC Richmond pressing. Bevat Rock and Roll All Nite."),
+    "5557406":  ("🎵 Luisterversie", "EU Casablanca/Mercury/UMG 180g reissue 2014 (0602537727889) — inclusief MP3 download-voucher, geperst door GZ Media. Ideaal voor dagelijks afspelen."),
+    "625331":   ("🏆 First pressing", "Originele US Casablanca-persing 1979 (NBLP 7152) — dit IS de first pressing van Dynasty. Santa Maria pressing. Inclusief 22×33\" poster. Bevat I Was Made for Lovin' You."),
+    "6102279":  ("🎵 Luisterversie", "Duitsland Casablanca/Mercury 180g reissue 2014 (0602537770946) — inclusief poster en origineel binnenhoesje. Ideaal voor dagelijks afspelen."),
+    # ZZ Top
+    "840158":   ("🏆 First pressing", "Originele US London Records-persing 1973 (XPS 631) — dit IS de first pressing van Tres Hombres. LP gatefold, Terre Haute pressing. Bevat La Grange."),
+    "2560004":  ("🎵 Audiofiele versie", "US Warner Bros. 180g reissue 2006 (274492) — gemasterd door Kevin Gray & Steve Hoffman bij AcousTech, geperst door RTI van originele analoge mastertapes. Beste moderne persing."),
+    # Radiohead
+    "339574":   ("🏆 First pressing", "Originele UK Parlophone-persing 1993 (PCS 7360) — dit IS de first pressing van Pablo Honey. 'COME TO FLORIDA' gegraveerd in runout. Bevat Creep."),
+    "1635232":  ("🎵 Luisterversie", "US Capitol 180g reissue 2008 — 'Faithfully Restored' serie, geperst door Rainbo Records. Ideaal voor dagelijks afspelen."),
+    # Foo Fighters
+    "2070894":  ("🏆 First pressing", "Originele US Roswell/RCA-persing 2007 (88697 11516-1) — dit IS de first pressing van Echoes, Silence, Patience & Grace. 2LP, geperst door United Record Pressing. Bevat The Pretender."),
+    "15388111": ("🎵 Luisterversie", "US Roswell/RCA/BMG reissue 2LP gatefold — Pallas USA pressing. Ideaal voor dagelijks afspelen."),
+    # Lynyrd Skynyrd
+    "2034523":  ("🏆 First pressing", "Originele US MCA/Sounds of the South-persing 1973 (MCA-363) — dit IS de first pressing van (Pronounced 'Leh-'nérd 'Skin-'nérd). LP gatefold, Gloversville pressing, gele labels. Bevat Free Bird."),
+    "4179730":  ("🎵 Audiofiele versie", "US Mobile Fidelity Sound Lab 180g reissue 2013 (MFSL 1-400) — gelimiteerd genummerd, GAIN 2 Ultra Analog systeem, gemasterd van originele tapes. Beste moderne persing."),
+    "1634156":  ("🏆 First pressing", "Originele US MCA/Sounds of the South-persing 1974 (MCA-413) — dit IS de first pressing van Second Helping. Pinckneyville pressing, gele labels. Bevat Sweet Home Alabama."),
+    "2341640":  ("🎵 Luisterversie", "US MCA 180g reissue 2008 (MCA-1686) — Back to Black-serie, geremasterd. Ideaal voor dagelijks afspelen."),
+    # Guns N' Roses (Use Your Illusion I)
+    "2206780":  ("🏆 First pressing", "Originele US Geffen-persing 1991 (GEF-24415) — dit IS de first pressing van Use Your Illusion I. 2LP. Bevat November Rain."),
+    "25133437": ("🎵 Luisterversie", "US/EU Geffen 2LP 180g reissue 2022 (00602445117307) — geremasterd door Ted Jensen bij Sterling Sound van 192kHz/24-bit transfers. Ideaal voor dagelijks afspelen."),
+    # Limp Bizkit
+    "3782742":  ("🏆 First pressing", "Originele US Interscope/Flip-persing 1999 (INT2-90335) — dit IS de first pressing van Significant Other. 2LP gatefold. Bevat Break Stuff."),
+    "10821533": ("🎵 Luisterversie", "US Flip/Interscope/UMe 2LP gatefold reissue 2017 (B0026803-01) — 'First time on vinyl in U.S. since 1999.' Hand-gegraveerde runouts. Beoordeeld 4.64/5. Ideaal voor dagelijks afspelen."),
+    # Stormzy
+    "10996313": ("🏆 First pressing", "Originele UK #Merky Records-persing 2017 (MRKY001LP) — dit IS de first pressing van Gang Signs & Prayer. 2LP. 500 gesigneerde exemplaren via Stormzy's webshop. Lacquer gesneden door Shane McEnhill bij Finyl Tweek."),
+    "15841340": ("🏆 First pressing", "Originele UK #Merky Records/Atlantic-persing 2020 (0190295403027) — eerste vinyl-persing van Heavy Is the Head. 2LP, 45 RPM voor betere geluidskwaliteit. Geperst door Optimal Media."),
+    # Skepta
+    "10305796": ("🏆 Eerste vinyl (rood)", "UK Boy Better Know-persing 2017 (BBKS004LP) — enige officiële vinyl LP van Konnichiwa. Rood vinyl, gelimiteerde editie. Lacquer gesneden door Finyl Tweek."),
+    "13713464": ("🏆 First pressing", "Originele UK Boy Better Know-persing 2019 — dit IS de first pressing van Ignorance Is Bliss. 2LP gatefold met thermochromische hoes."),
+    # Billy Joel
+    "9603231":  ("🏆 First pressing", "Originele US Columbia-persing 1973 (KC 32544) — dit IS de first pressing van Piano Man. Santa Maria pressing."),
+    "3333076":  ("🎵 Audiofiele versie", "US Mobile Fidelity Sound Lab 180g reissue 2011 (MFSL 1-349) — gelimiteerd genummerd, GAIN 2 Ultra Analog 180g, gemasterd van analoge mastertapes. Beste moderne persing."),
+    # John Lennon
+    "376138":   ("🏆 First pressing", "Originele US Apple Records-persing 1971 (SW 3379) — dit IS de first pressing van Imagine. Los Angeles pressing. Inclusief poster en twee ansichtkaarten. 13.609 have op Discogs."),
+    "2590105":  ("🎵 Audiofiele versie", "US Mobile Fidelity Sound Lab 180g reissue 2003 (MFSL 1-277) — gelimiteerd genummerd, GAIN 2 Ultra Analog, geperst door RTI. Beoordeeld 4.53/5."),
+    # The Cranberries
+    "501415":   ("🏆 First pressing", "Originele UK/EU Island Records-persing 1994 (524050-1 / ILPS 8029) — dit IS de first pressing van No Need to Argue. LP gatefold met teksten. Bevat Zombie."),
+    "6986271":  ("🎵 Luisterversie", "US Plain Recordings 180g gatefold reissue 2015 (PLAIN202) — geremasterd door Gary Hobish, geperst door Rainbo Records. Ideaal voor dagelijks afspelen."),
+    # Pink Floyd
+    "495681":   ("🏆 First pressing", "Originele US Columbia-persing 1979 (PC2 36183) — dit IS de first pressing van The Wall. 2LP, Pitman pressing. Bevat Another Brick in the Wall."),
+    "8961614":  ("🎵 Audiofiele versie", "EU Pink Floyd Records 2LP 180g reissue 2016 (PFRLP11) — geremasterd door James Guthrie, Joel Plante & Bernie Grundman van originele analoge banden. Beoordeeld 4.78/5 door 3.933 fans (37.667 have) — de definitieve moderne persing."),
+    # The Verve
+    "445878":   ("🏆 First pressing", "Originele UK Hut Recordings/Virgin-persing 1997 (HUTLP 45) — dit IS de first pressing van Urban Hymns. 2LP. Bevat Bittersweet Symphony."),
+    "9057753":  ("🎵 Luisterversie", "EU Virgin EMI 2LP 180g reissue 2016 (4787014) — lacquer gesneden door Matt Colton bij Alchemy, geperst door Optimal Media van originele halve-inch tapes. Ideaal voor dagelijks afspelen."),
+    # R.E.M.
+    "2024524":  ("🏆 First pressing", "Originele US Warner Bros.-persing 1991 (9 26496-1) — dit IS de first pressing van Out of Time. LP. Bevat Losing My Religion."),
+    "9359884":  ("🎵 Luisterversie", "EU/US Concord/Warner 25th Anniversary 180g reissue 2016 — geremasterd van originele analoge masters. Ideaal voor dagelijks afspelen."),
+    # Van Dik Hout
+    "13488794": ("🎵 Eerste vinyl (jubileum)", "NL Polydor/Universal Music jubileum 2LP 180g blauw vinyl 2019 — eerste ooit op vinyl, gelimiteerd (1000 exemplaren, RSD). Bevat Stil in Mij."),
+    # Bryan Adams
+    "1469334":  ("🏆 First pressing", "Originele Canada A&M-persing 1984 (SP-5013) — dit IS de Canadian first pressing van Reckless. Bevat Summer of '69."),
+    "6275103":  ("🎵 Luisterversie", "UK/EU A&M 30th Anniversary 2LP 180g reissue 2014 (3783059) — geremasterd. Ideaal voor dagelijks afspelen."),
+    # Dire Straits
+    "382417":   ("🏆 First pressing", "Originele UK Vertigo/Phonogram-persing 1985 (VERH 25) — dit IS de first pressing van Brothers in Arms. LP. Bevat Walk of Life."),
+    "17896735": ("🎵 Audiofiele versie", "EU Vertigo/Universal 2LP 180g 45 RPM half-speed mastered reissue 2021 — gemasterd door Miles Showell bij Abbey Road van originele U-Matic master. Met echtheidsverklaring. Definitieve moderne persing."),
+    # The Scene
+    "864382":   ("🏆 First pressing", "Originele Nederlandse Phonogram-persing 1990 — dit IS de first pressing van Blauw. LP. Bevat Iedereen Is Van de Wereld."),
+    "13670805": ("🎵 Luisterversie", "Nederlandse Music On Vinyl/Universal reissue 2019 — ideaal voor dagelijks afspelen."),
+    # Louis Armstrong
+    "4194515":  ("🏆 First pressing (stereo)", "Originele US ABC Records-persing 1968 (ABCS-650) — dit IS de stereo first pressing van What a Wonderful World. LP. Bevat What a Wonderful World."),
+    # Nickelback
+    "1982122":  ("🎵 Eerste vinyl persing", "EU Roadrunner Records LP reissue 2002 — eerste ooit op vinyl uitgebrachte persing van Silver Side Up (origineel 2001 CD-only). Bevat How You Remind Me."),
+    "10533002": ("🎵 Luisterversie", "EU Roadrunner Records LP reissue 2017 — voor dagelijks afspelen."),
+    "10518961": ("🎵 Eerste vinyl persing", "EU Roadrunner Records LP reissue 2017 — eerste en enige vinyl-persing van All the Right Reasons (origineel 2005 CD-only). Bevat Rockstar."),
+    # Soft Cell
+    "238877":   ("🏆 First pressing", "Originele UK Some Bizzare/Phonogram-persing 1981 (BIZL 1) — dit IS de first pressing van Non-Stop Erotic Cabaret. LP. Bevat Tainted Love."),
+    "6063431":  ("🎵 Luisterversie", "EU Mercury/Universal 180g reissue 2014 — ideaal voor dagelijks afspelen."),
+    # Depeche Mode
+    "1217497":  ("🏆 First pressing", "Originele UK Mute Records-persing 1981 (STUMM 5) — dit IS de first pressing van Speak & Spell. LP, origineel Mute 'walking man'-logo. Bevat Just Can't Get Enough."),
+    "8953011":  ("🎵 Luisterversie", "EU Sony Music/Mute 180g gatefold reissue 2016 — inclusief 12\"×12\" binnenhoesje replica. Ideaal voor dagelijks afspelen."),
+    # Frank Sinatra
+    "804778":   ("🏆 First pressing (mono)", "Originele US Reprise Records mono-persing 1966 (F 1020) — dit IS de mono first pressing van That's Life. Pitman pressing. Bevat That's Life."),
+    "8212247":  ("🎵 Luisterversie", "EU/US Reprise/Sinatra Centennial 180g reissue 2016 — centennial heruitgavereeks. Ideaal voor dagelijks afspelen."),
+    # Coolio
+    "1410402":  ("🏆 First pressing US", "Originele US Tommy Boy-persing 1995 (TB 1141) — dit IS de US first pressing van Gangsta's Paradise. LP. Bevat Gangsta's Paradise feat. L.V."),
+    "3480688":  ("🎵 EU-persing", "Originele EU Tommy Boy/Island/Polydor-persing 1995 — gelijktijdige Europese persing, meer beschikbaar. Ideaal voor dagelijks afspelen."),
+    # Wheatus
+    "14950419": ("🎵 Eerste vinyl (RSD)", "EU Wheatus Records RSD-persing 2020 — eerste ooit op vinyl uitgebrachte persing van het debuutalbum (origineel 2000 CD-only). LP turquoise 180g, gelimiteerd. Inclusief boekje en poster. Bevat Teenage Dirtbag."),
+    # Eurythmics
+    "66534":    ("🏆 First pressing", "Originele UK RCA-persing 1983 (RCALP 6063) — dit IS de first pressing van Sweet Dreams (Are Made of This). LP, inclusief gekleurd binnenhoesje met teksten. Bevat Sweet Dreams."),
+    "11860171": ("🎵 Luisterversie", "EU RCA/Legacy/Sony 180g reissue 2018 — geremasterd van originele ½\" tapes. Ideaal voor dagelijks afspelen."),
 }
 
 # ─── ALBUM PAIRINGS ─────────────────────────────────────────────────────────────
@@ -577,6 +681,60 @@ RELEASE_PAIRS = [
     ("3100518",  "26658734"),  # André Hazes — Kleine Jongen
     ("1201387",  "24606677"),  # André Hazes — Voor Jou
     ("25287358", "2693688"),   # André Hazes — Zo Is Het Leven (De Vlieger)
+    # Marvin Gaye & Tammi Terrell
+    ("16254322", "3925863"),   # Marvin Gaye & Tammi Terrell — United
+    # UB40
+    ("15311529", "6848587"),   # UB40 — Labour of Love
+    # Sting
+    ("1066027",  "9124039"),   # Sting — ...Nothing Like the Sun
+    # Notorious B.I.G. (aanvulling)
+    ("268090",   "22556825"),  # Notorious B.I.G. — Life After Death
+    # KISS
+    ("688267",   "5557406"),   # KISS — Dressed to Kill
+    ("625331",   "6102279"),   # KISS — Dynasty
+    # ZZ Top
+    ("840158",   "2560004"),   # ZZ Top — Tres Hombres
+    # Radiohead
+    ("339574",   "1635232"),   # Radiohead — Pablo Honey
+    # Foo Fighters
+    ("2070894",  "15388111"),  # Foo Fighters — Echoes, Silence, Patience & Grace
+    # Lynyrd Skynyrd
+    ("2034523",  "4179730"),   # Lynyrd Skynyrd — (Pronounced)
+    ("1634156",  "2341640"),   # Lynyrd Skynyrd — Second Helping
+    # Guns N' Roses (Use Your Illusion I)
+    ("2206780",  "25133437"),  # Guns N' Roses — Use Your Illusion I
+    # Limp Bizkit
+    ("3782742",  "10821533"),  # Limp Bizkit — Significant Other
+    # Billy Joel
+    ("9603231",  "3333076"),   # Billy Joel — Piano Man
+    # John Lennon
+    ("376138",   "2590105"),   # John Lennon — Imagine
+    # The Cranberries
+    ("501415",   "6986271"),   # The Cranberries — No Need to Argue
+    # Pink Floyd
+    ("495681",   "8961614"),   # Pink Floyd — The Wall
+    # The Verve
+    ("445878",   "9057753"),   # The Verve — Urban Hymns
+    # R.E.M.
+    ("2024524",  "9359884"),   # R.E.M. — Out of Time
+    # Bryan Adams
+    ("1469334",  "6275103"),   # Bryan Adams — Reckless
+    # Dire Straits
+    ("382417",   "17896735"),  # Dire Straits — Brothers in Arms
+    # The Scene
+    ("864382",   "13670805"),  # The Scene — Blauw
+    # Nickelback
+    ("1982122",  "10533002"),  # Nickelback — Silver Side Up
+    # Soft Cell
+    ("238877",   "6063431"),   # Soft Cell — Non-Stop Erotic Cabaret
+    # Depeche Mode
+    ("1217497",  "8953011"),   # Depeche Mode — Speak & Spell
+    # Frank Sinatra
+    ("804778",   "8212247"),   # Frank Sinatra — That's Life
+    # Coolio
+    ("1410402",  "3480688"),   # Coolio — Gangsta's Paradise (US ↔ EU)
+    # Eurythmics
+    ("66534",    "11860171"),  # Eurythmics — Sweet Dreams
 ]
 # Snelle lookup: id → partner_id
 _PAIR_MAP = {a: b for a, b in RELEASE_PAIRS} | {b: a for a, b in RELEASE_PAIRS}
@@ -965,6 +1123,145 @@ RELEASES = {
     "24606677": ("André Hazes", "Voor Jou (MOVLP3134, Music On Vinyl NL 2022, LP oranje)"),
     "25287358": ("André Hazes", "Zo Is Het Leven (6410 140, Philips NL 1977, LP)"),
     "2693688":  ("André Hazes", "Zo Is Het Leven (6423 412, Philips/Gouden Molen NL 1981, LP repress)"),
+
+    # ── MARVIN GAYE & TAMMI TERRELL ──
+    "16254322": ("Marvin Gaye & Tammi Terrell", "United (TS 277, Tamla US stereo first pressing 1967)"),
+    "3925863":  ("Marvin Gaye & Tammi Terrell", "United (TS 277, Speakers Corner 180g DE 2009)"),
+
+    # ── RAMSES SHAFFY ──
+    "735833":   ("Ramses Shaffy", "Dag En Nacht (6423 112, Philips NL 1978)"),
+
+    # ── UB40 ──
+    "15311529": ("UB40", "Labour of Love (LP DEP 5, DEP International UK 1983)"),
+    "6848587":  ("UB40", "Labour of Love (00602547161116, Virgin EMI EU 2015, 2LP 180g)"),
+    "4634884":  ("UB40", "Labour of Love II (LPDEP 14, DEP International UK 1989)"),
+    "634218":   ("UB40", "Baggariddim (LP DEP 10, DEP International UK 1985, gatefold)"),
+    "1201716":  ("UB40", "Promises and Lies (LPDEP 15, DEP International UK/EU 1993)"),
+
+    # ── STING ──
+    "1066027":  ("Sting", "...Nothing Like the Sun (AMA 6402, A&M UK/EU 1987, 2LP)"),
+    "9124039":  ("Sting", "...Nothing Like the Sun (0082839391214, A&M EU 2016, 2LP Abbey Road remaster)"),
+
+    # ── DRUKWERK ──
+    "2689368":  ("Drukwerk", "Drukwerk (1A 058-26650, EMI NL 1981)"),
+    "2972649":  ("Drukwerk", "Tweede Druk (1A 068 26852, EMI NL 1982)"),
+
+    # ── JAY-Z & KANYE WEST ──
+    "3351778":  ("Jay-Z & Kanye West", "Watch the Throne (B0016010-01, Roc-A-Fella US 2012, 2LP picture disc)"),
+
+    # ── NOTORIOUS B.I.G. (aanvulling) ──
+    "268090":   ("Notorious B.I.G.", "Life After Death (78612-73011-1, Bad Boy/Arista US 1997, 3LP)"),
+    "22556825": ("Notorious B.I.G.", "Life After Death (R1 541302, Bad Boy EU 2022, 3LP 25th Anniversary)"),
+
+    # ── KISS ──
+    "688267":   ("KISS", "Dressed to Kill (NBLP 7016, Casablanca US 1975, LP)"),
+    "5557406":  ("KISS", "Dressed to Kill (0602537727889, Casablanca/Mercury EU 2014, LP 180g)"),
+    "625331":   ("KISS", "Dynasty (NBLP 7152, Casablanca US 1979, LP)"),
+    "6102279":  ("KISS", "Dynasty (0602537770946, Casablanca/Mercury DE 2014, LP 180g)"),
+
+    # ── ZZ TOP ──
+    "840158":   ("ZZ Top", "Tres Hombres (XPS 631, London Records US 1973, LP gatefold)"),
+    "2560004":  ("ZZ Top", "Tres Hombres (274492, Warner Bros. US 2006, LP 180g)"),
+
+    # ── RADIOHEAD ──
+    "339574":   ("Radiohead", "Pablo Honey (PCS 7360, Parlophone UK 1993, LP)"),
+    "1635232":  ("Radiohead", "Pablo Honey (Capitol US 2008, LP 180g)"),
+
+    # ── FOO FIGHTERS ──
+    "2070894":  ("Foo Fighters", "Echoes, Silence, Patience & Grace (88697 11516-1, Roswell/RCA US 2007, 2LP)"),
+    "15388111": ("Foo Fighters", "Echoes, Silence, Patience & Grace (88697 11516-1, Roswell/RCA reissue, 2LP)"),
+
+    # ── LYNYRD SKYNYRD ──
+    "2034523":  ("Lynyrd Skynyrd", "(Pronounced 'Leh-'nérd 'Skin-'nérd) (MCA-363, MCA US 1973, LP gatefold)"),
+    "4179730":  ("Lynyrd Skynyrd", "(Pronounced 'Leh-'nérd 'Skin-'nérd) (MFSL 1-400, MFSL US 2013, LP 180g)"),
+    "1634156":  ("Lynyrd Skynyrd", "Second Helping (MCA-413, MCA US 1974, LP)"),
+    "2341640":  ("Lynyrd Skynyrd", "Second Helping (MCA-1686, MCA US 2008, LP 180g)"),
+
+    # ── GUNS N' ROSES (Use Your Illusion I) ──
+    "2206780":  ("Guns N' Roses", "Use Your Illusion I (GEF-24415, Geffen US 1991, 2LP)"),
+    "25133437": ("Guns N' Roses", "Use Your Illusion I (00602445117307, Geffen US/EU 2022, 2LP 180g)"),
+
+    # ── LIMP BIZKIT ──
+    "3782742":  ("Limp Bizkit", "Significant Other (INT2-90335, Interscope/Flip US 1999, 2LP)"),
+    "10821533": ("Limp Bizkit", "Significant Other (B0026803-01, Flip/Interscope/UMe US 2017, 2LP reissue)"),
+
+    # ── STORMZY ──
+    "10996313": ("Stormzy", "Gang Signs & Prayer (MRKY001LP, #Merky Records UK 2017, 2LP)"),
+    "15841340": ("Stormzy", "Heavy Is the Head (0190295403027, #Merky Records/Atlantic UK 2020, 2LP 45RPM)"),
+
+    # ── SKEPTA ──
+    "10305796": ("Skepta", "Konnichiwa (BBKS004LP, Boy Better Know UK 2017, LP rood vinyl)"),
+    "13713464": ("Skepta", "Ignorance Is Bliss (Boy Better Know UK 2019, 2LP gatefold)"),
+
+    # ── BILLY JOEL ──
+    "9603231":  ("Billy Joel", "Piano Man (KC 32544, Columbia US 1973, LP)"),
+    "3333076":  ("Billy Joel", "Piano Man (MFSL 1-349, Mobile Fidelity US 2011, LP 180g)"),
+
+    # ── JOHN LENNON ──
+    "376138":   ("John Lennon", "Imagine (SW 3379, Apple Records US 1971, LP)"),
+    "2590105":  ("John Lennon", "Imagine (MFSL 1-277, Mobile Fidelity US 2003, LP 180g)"),
+
+    # ── THE CRANBERRIES ──
+    "501415":   ("The Cranberries", "No Need to Argue (524050-1, Island Records UK/EU 1994, LP)"),
+    "6986271":  ("The Cranberries", "No Need to Argue (PLAIN202, Plain Recordings US 2015, LP 180g)"),
+
+    # ── PINK FLOYD ──
+    "495681":   ("Pink Floyd", "The Wall (PC2 36183, Columbia US 1979, 2LP)"),
+    "8961614":  ("Pink Floyd", "The Wall (PFRLP11, Pink Floyd Records EU 2016, 2LP 180g)"),
+
+    # ── THE VERVE ──
+    "445878":   ("The Verve", "Urban Hymns (HUTLP 45, Hut Recordings/Virgin UK 1997, 2LP)"),
+    "9057753":  ("The Verve", "Urban Hymns (4787014, Virgin EMI EU 2016, 2LP 180g)"),
+
+    # ── R.E.M. ──
+    "2024524":  ("R.E.M.", "Out of Time (9 26496-1, Warner Bros. US 1991, LP)"),
+    "9359884":  ("R.E.M.", "Out of Time (Concord/Warner US/EU 2016, LP 180g 25th Anniversary)"),
+
+    # ── VAN DIK HOUT ──
+    "13488794": ("Van Dik Hout", "Van Dik Hout (Polydor/Universal NL 2019, 2LP 180g blauw jubileumeditie)"),
+
+    # ── BRYAN ADAMS ──
+    "1469334":  ("Bryan Adams", "Reckless (SP-5013, A&M Canada 1984, LP)"),
+    "6275103":  ("Bryan Adams", "Reckless (3783059, A&M UK/EU 2014, 2LP 180g 30th Anniversary)"),
+
+    # ── DIRE STRAITS ──
+    "382417":   ("Dire Straits", "Brothers in Arms (VERH 25, Vertigo UK 1985, LP)"),
+    "17896735": ("Dire Straits", "Brothers in Arms (Vertigo/Universal EU 2021, 2LP 180g 45RPM half-speed)"),
+
+    # ── THE SCENE ──
+    "864382":   ("The Scene", "Blauw (Phonogram NL 1990, LP)"),
+    "13670805": ("The Scene", "Blauw (Music On Vinyl/Universal NL 2019, LP reissue)"),
+
+    # ── LOUIS ARMSTRONG ──
+    "4194515":  ("Louis Armstrong", "What a Wonderful World (ABCS-650, ABC Records US 1968, LP stereo)"),
+
+    # ── NICKELBACK ──
+    "1982122":  ("Nickelback", "Silver Side Up (Roadrunner EU 2002, LP — eerste vinyl persing)"),
+    "10533002": ("Nickelback", "Silver Side Up (Roadrunner EU 2017, LP reissue)"),
+    "10518961": ("Nickelback", "All the Right Reasons (Roadrunner EU 2017, LP — eerste vinyl persing)"),
+
+    # ── SOFT CELL ──
+    "238877":   ("Soft Cell", "Non-Stop Erotic Cabaret (BIZL 1, Some Bizzare/Phonogram UK 1981, LP)"),
+    "6063431":  ("Soft Cell", "Non-Stop Erotic Cabaret (Mercury/Universal EU 2014, LP 180g)"),
+
+    # ── DEPECHE MODE ──
+    "1217497":  ("Depeche Mode", "Speak & Spell (STUMM 5, Mute Records UK 1981, LP)"),
+    "8953011":  ("Depeche Mode", "Speak & Spell (Sony Music/Mute EU 2016, LP 180g gatefold)"),
+
+    # ── FRANK SINATRA ──
+    "804778":   ("Frank Sinatra", "That's Life (F 1020, Reprise US 1966, LP mono)"),
+    "8212247":  ("Frank Sinatra", "That's Life (Reprise/Sinatra Centennial EU/US 2016, LP 180g)"),
+
+    # ── COOLIO ──
+    "1410402":  ("Coolio", "Gangsta's Paradise (TB 1141, Tommy Boy US 1995, LP)"),
+    "3480688":  ("Coolio", "Gangsta's Paradise (Tommy Boy/Island/Polydor EU 1995, LP)"),
+
+    # ── WHEATUS ──
+    "14950419": ("Wheatus", "Wheatus (Wheatus Records EU 2020, LP 180g turquoise RSD)"),
+
+    # ── EURYTHMICS ──
+    "66534":    ("Eurythmics", "Sweet Dreams (Are Made of This) (RCALP 6063, RCA UK 1983, LP)"),
+    "11860171": ("Eurythmics", "Sweet Dreams (Are Made of This) (RCA/Legacy/Sony EU 2018, LP 180g)"),
 }
 
 # ─── GENRE CATEGORISATIE ──────────────────────────────────────────────────────
@@ -1035,8 +1332,52 @@ GROUP_GENRES = {
     "BLØF":              "Nederlandstalig",
     "De Dijk":           "Nederlandstalig",
     "André Hazes":       "Nederlandstalig",
+    # Soul / R&B (aanvulling)
+    "Marvin Gaye & Tammi Terrell": "Soul / R&B",
+    # Nederlandstalig (aanvulling)
+    "Ramses Shaffy":               "Nederlandstalig",
+    "Drukwerk":                    "Nederlandstalig",
+    # Reggae (aanvulling)
+    "UB40":                        "Reggae",
+    # Rock (aanvulling)
+    "Sting":                       "Rock",
+    # Hip-Hop (aanvulling)
+    "Jay-Z & Kanye West":          "Hip-Hop",
+    "Stormzy":                     "Hip-Hop",
+    "Skepta":                      "Hip-Hop",
+    # Rock (aanvulling)
+    "KISS":                        "Rock",
+    "ZZ Top":                      "Rock",
+    "Radiohead":                   "Rock",
+    "Lynyrd Skynyrd":              "Rock",
+    "John Lennon":                 "Rock",
+    "The Cranberries":             "Rock",
+    "Pink Floyd":                  "Rock",
+    "The Verve":                   "Rock",
+    "Billy Joel":                  "Rock",
+    # Hard Rock / Metal (aanvulling)
+    "Foo Fighters":                "Hard Rock / Metal",
+    "Limp Bizkit":                 "Hard Rock / Metal",
+    # Rock (aanvulling batch 3)
+    "R.E.M.":                      "Rock",
+    "Bryan Adams":                 "Rock",
+    "Dire Straits":                "Rock",
+    "Nickelback":                  "Rock",
+    "The Verve":                   "Rock",
+    "Wheatus":                     "Rock",
+    "Soft Cell":                   "Pop",
+    "Depeche Mode":                "Pop",
+    "Eurythmics":                  "Pop",
+    # Nederlandstalig (aanvulling batch 3)
+    "Van Dik Hout":                "Nederlandstalig",
+    "The Scene":                   "Nederlandstalig",
+    # Jazz
+    "Louis Armstrong":             "Jazz",
+    "Frank Sinatra":               "Jazz",
+    # Hip-Hop (aanvulling batch 3)
+    "Coolio":                      "Hip-Hop",
 }
-GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Soul / R&B", "Reggae", "Ska", "Hip-Hop", "Rock & Roll", "Nederlandstalig"]
+GENRE_ORDER = ["Rock", "Hard Rock / Metal", "Pop", "Soul / R&B", "Reggae", "Ska", "Hip-Hop", "Rock & Roll", "Jazz", "Nederlandstalig"]
 
 # ─── CONDITIES ────────────────────────────────────────────────────────────────
 
@@ -2375,38 +2716,45 @@ def build_html(results, static=False, new_listings=None):
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#0F2245">
 <title>Vinyl Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{{
-    --navy:#0F2245;--navy2:#1a3460;--accent:#10B981;--accent-dim:#059669;
-    --bg:#F1F5F9;--surface:#fff;--border:#E2E8F0;
-    --text:#1E293B;--muted:#475569;--muted2:#94A3B8;
+    --navy:#0B1D3A;--navy2:#162d54;--accent:#10B981;--accent-dim:#059669;
+    --bg:#F0F4F8;--surface:#ffffff;--border:#DDE3EC;
+    --text:#0F172A;--muted:#5A6A84;--muted2:#94A3B8;
     --deal-bg:#D1FAE5;--deal-fg:#065F46;
     --warn-bg:#FFFBEB;--warn-bdr:#FDE68A;
     --purple:#7C3AED;--purple2:#6D28D9;
+    --shadow-sm:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+    --shadow-md:0 4px 8px rgba(0,0,0,.08),0 2px 4px rgba(0,0,0,.05);
+    --radius:12px;
   }}
   *{{box-sizing:border-box;margin:0;padding:0}}
-  body{{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  body{{font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
         font-size:14px;color:var(--text);display:flex;height:100vh;height:100dvh;
-        overflow:hidden;background:var(--bg)}}
+        overflow:hidden;background:var(--bg);-webkit-font-smoothing:antialiased}}
 
   /* ── Sidebar ── */
-  nav{{width:196px;min-width:196px;background:var(--navy);color:#fff;
-       display:flex;flex-direction:column;overflow-y:auto;flex-shrink:0}}
-  .nav-logo{{padding:18px 16px 14px;font-size:16px;font-weight:700;letter-spacing:-.2px;
-             border-bottom:1px solid rgba(255,255,255,.1);display:flex;align-items:center;gap:8px}}
-  .nav-logo-icon{{color:var(--accent);font-size:10px}}
+  nav{{width:200px;min-width:200px;background:var(--navy);color:#fff;
+       display:flex;flex-direction:column;overflow-y:auto;flex-shrink:0;
+       border-right:1px solid rgba(0,0,0,.15)}}
+  .nav-logo{{padding:20px 16px 16px;font-size:15px;font-weight:700;letter-spacing:-.3px;
+             border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;gap:10px}}
+  .nav-logo-icon{{color:var(--accent);font-size:20px;line-height:1;flex-shrink:0}}
   .nav-section{{padding:16px 16px 5px;font-size:10px;font-weight:600;
-                text-transform:uppercase;letter-spacing:.8px;color:rgba(255,255,255,.35)}}
-  .nav-item{{padding:9px 16px;cursor:pointer;font-size:13px;
-             border-left:3px solid transparent;transition:background .15s;
-             color:rgba(255,255,255,.7);display:flex;align-items:center;gap:8px}}
-  .nav-item:hover{{background:rgba(255,255,255,.07);color:#fff}}
-  .nav-item.active{{background:rgba(255,255,255,.12);border-left-color:var(--accent);
+                text-transform:uppercase;letter-spacing:.8px;color:rgba(255,255,255,.3)}}
+  .nav-item{{padding:9px 14px 9px 16px;cursor:pointer;font-size:13px;
+             border-left:3px solid transparent;transition:background .15s,color .15s;
+             color:rgba(255,255,255,.65);display:flex;align-items:center;gap:8px;border-radius:0}}
+  .nav-item:hover{{background:rgba(255,255,255,.08);color:rgba(255,255,255,.95)}}
+  .nav-item.active{{background:rgba(16,185,129,.15);border-left-color:var(--accent);
                    color:#fff;font-weight:600}}
-  .nav-icon{{width:14px;height:14px;opacity:.65;flex-shrink:0}}
+  .nav-icon{{width:14px;height:14px;opacity:.6;flex-shrink:0}}
   .nav-badge{{margin-left:auto;background:var(--accent);color:#fff;
-              font-size:10px;font-weight:700;padding:1px 6px;border-radius:10px}}
-  .nav-sep{{height:1px;background:rgba(255,255,255,.1);margin:6px 0}}
+              font-size:10px;font-weight:700;padding:1px 7px;border-radius:10px;min-width:20px;text-align:center}}
+  .nav-sep{{height:1px;background:rgba(255,255,255,.08);margin:8px 0}}
   /* ── Genre accordion ── */
   .nav-genre{{border:none}}
   .nav-genre summary{{
@@ -2426,16 +2774,18 @@ def build_html(results, static=False, new_listings=None):
   main{{flex:1;overflow-y:auto;background:var(--bg);display:flex;flex-direction:column}}
 
   /* ── Sticky top bar ── */
-  .topbar-wrap{{position:sticky;top:0;z-index:50;background:var(--bg)}}
+  .topbar-wrap{{position:sticky;top:0;z-index:50;background:var(--surface)}}
   .topbar{{padding:10px 24px;display:flex;align-items:center;justify-content:flex-end;
-           gap:8px;border-bottom:1px solid var(--border);background:var(--bg)}}
+           gap:8px;border-bottom:1px solid var(--border);background:var(--surface);
+           box-shadow:0 1px 0 var(--border)}}
   .add-panel{{padding:10px 24px;display:none;align-items:center;gap:10px;
               border-bottom:1px solid var(--border);background:var(--surface)}}
 
   /* ── Buttons ── */
-  .btn{{border:none;padding:7px 13px;border-radius:6px;font-size:12.5px;cursor:pointer;
-        font-weight:500;display:inline-flex;align-items:center;gap:5px;
-        transition:background .15s,opacity .15s;white-space:nowrap}}
+  .btn{{border:none;padding:8px 14px;border-radius:8px;font-size:12.5px;cursor:pointer;
+        font-weight:600;display:inline-flex;align-items:center;gap:6px;
+        transition:background .15s,opacity .15s,transform .1s;white-space:nowrap}}
+  .btn:active{{transform:scale(.97)}}
   .btn-pdf{{background:var(--navy);color:#fff}}
   .btn-pdf:hover{{background:var(--navy2)}}
   .btn-add{{background:var(--purple);color:#fff}}
@@ -2462,24 +2812,28 @@ def build_html(results, static=False, new_listings=None):
   .btn-x:hover{{color:var(--text)}}
 
   /* ── Page content ── */
-  .page{{padding:22px 24px 36px;flex:1}}
-  .page-header{{display:flex;align-items:baseline;gap:10px;margin-bottom:18px}}
-  h2{{color:var(--text);font-size:20px;font-weight:700;letter-spacing:-.3px}}
-  .sub{{color:var(--muted);font-size:12.5px}}
+  .page{{padding:24px 28px 40px;flex:1}}
+  .page-header{{display:flex;align-items:baseline;gap:12px;margin-bottom:22px;
+                padding-bottom:18px;border-bottom:1px solid var(--border)}}
+  h2{{color:var(--text);font-size:22px;font-weight:800;letter-spacing:-.5px}}
+  .sub{{color:var(--muted);font-size:12.5px;font-weight:400}}
   .muted{{color:var(--muted)}}
 
   /* ── Stat cards (home) ── */
-  .stat-grid{{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap}}
-  .stat-card{{background:var(--surface);border:1px solid var(--border);border-radius:8px;
-              padding:14px 18px;min-width:110px}}
-  .stat-card-accent{{border-color:#A7F3D0;background:#ECFDF5}}
-  .stat-val{{font-size:24px;font-weight:700;color:var(--text);line-height:1.1}}
+  .stat-grid{{display:flex;gap:12px;margin-bottom:22px;flex-wrap:wrap}}
+  .stat-card{{background:var(--surface);border:1px solid var(--border);border-radius:12px;
+              padding:18px 20px;min-width:120px;box-shadow:var(--shadow-sm);
+              border-top:3px solid var(--border)}}
+  .stat-card-accent{{border-color:#A7F3D0;border-top-color:var(--accent);background:#ECFDF5}}
+  .stat-val{{font-size:28px;font-weight:800;color:var(--text);line-height:1;
+             font-variant-numeric:tabular-nums;letter-spacing:-1px}}
   .stat-card-accent .stat-val{{color:#065F46}}
-  .stat-lbl{{font-size:11.5px;color:var(--muted);margin-top:3px}}
+  .stat-lbl{{font-size:11px;color:var(--muted);margin-top:6px;font-weight:500;
+             text-transform:uppercase;letter-spacing:.4px}}
 
   /* ── Card wrapper ── */
-  .card{{background:var(--surface);border:1px solid var(--border);border-radius:10px;
-         overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04)}}
+  .card{{background:var(--surface);border:1px solid var(--border);border-radius:12px;
+         overflow:hidden;box-shadow:var(--shadow-sm)}}
 
   /* ── Album blocks (inklapbaar via <details>) ── */
   details.album-block{{margin-bottom:10px}}
@@ -2550,9 +2904,9 @@ def build_html(results, static=False, new_listings=None):
   .album-body > .rb:last-child{{border-bottom:none}}
 
   /* ── Release cards ── */
-  .rb{{background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  .rb{{background:var(--surface);border:1px solid var(--border);border-radius:12px;
        padding:18px 20px;margin-bottom:12px;
-       box-shadow:0 1px 3px rgba(0,0,0,.04)}}
+       box-shadow:var(--shadow-sm)}}
   .rb-head{{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}}
   .rb-group{{background:var(--navy);color:#fff;font-size:10px;font-weight:700;
              padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.5px;
@@ -2595,19 +2949,19 @@ def build_html(results, static=False, new_listings=None):
   .best-label{{color:var(--muted);font-weight:500}}
 
   /* ── Tables ── */
-  table{{border-collapse:collapse;width:100%;font-size:12.5px}}
-  thead th{{background:#F8FAFC;color:var(--muted);padding:9px 12px;text-align:left;
-            font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;
-            border-bottom:1px solid var(--border)}}
+  table{{border-collapse:collapse;width:100%;font-size:13px}}
+  thead th{{background:#F6F8FB;color:var(--muted);padding:10px 14px;text-align:left;
+            font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;
+            border-bottom:2px solid var(--border)}}
   .th-r{{text-align:right!important}}
-  td{{padding:8px 12px;border-bottom:1px solid #F1F5F9;vertical-align:middle}}
+  td{{padding:10px 14px;border-bottom:1px solid #EEF2F7;vertical-align:middle}}
   tbody tr:last-child td{{border-bottom:none}}
   .td-num{{text-align:right;font-variant-numeric:tabular-nums}}
-  .td-title{{font-size:12.5px;color:var(--text)}}
+  .td-title{{font-size:13px;color:var(--text)}}
   .td-seller{{font-size:12px}}
-  .home-row{{cursor:pointer;transition:background .1s}}
-  .home-row:hover td{{background:#F8FAFC}}
-  .no-data{{color:var(--muted);font-style:italic;font-size:12.5px;padding:16px 12px}}
+  .home-row{{cursor:pointer;transition:background .12s}}
+  .home-row:hover td{{background:rgba(16,185,129,.04)}}
+  .no-data{{color:var(--muted);font-style:italic;font-size:13px;padding:20px 14px}}
 
   /* ── Badges ── */
   .badge{{display:inline-block;padding:2px 8px;border-radius:20px;
@@ -2648,16 +3002,16 @@ def build_html(results, static=False, new_listings=None):
   /* ── Mobile layout ── */
   @media(max-width:768px){{
     body{{display:block;overflow:hidden;height:100vh;height:100dvh}}
-    nav{{position:fixed;inset:0 auto 0 0;width:220px;min-width:220px;z-index:200;
+    nav{{position:fixed;inset:0 auto 0 0;width:224px;min-width:224px;z-index:200;
          transform:translateX(-100%);transition:transform .25s ease;
-         box-shadow:4px 0 20px rgba(0,0,0,.18)}}
+         box-shadow:4px 0 24px rgba(0,0,0,.22)}}
     nav.open{{transform:translateX(0)}}
     .hamburger{{display:flex}}
     main{{height:100vh;height:100dvh;overflow-y:auto;
           -webkit-overflow-scrolling:touch;width:100%}}
-    .topbar{{padding:10px 12px;gap:6px}}
+    .topbar{{padding:10px 14px;gap:6px}}
     .topbar .btn,.topbar a.btn{{font-size:11.5px;padding:6px 10px}}
-    .page{{padding:14px 12px 52px}}
+    .page{{padding:16px 14px 52px}}
     h2{{font-size:17px}}
     .sub{{font-size:11px}}
     .page-header{{flex-wrap:wrap;gap:4px}}
@@ -2741,17 +3095,21 @@ def build_html(results, static=False, new_listings=None):
   /* ── Dark mode ── */
   @media(prefers-color-scheme:dark){{
     :root{{
-      --bg:#0F172A;--surface:#1E293B;--border:#334155;
-      --text:#E2E8F0;--muted:#94A3B8;--muted2:#64748B;
+      --bg:#0B1120;--surface:#131C2E;--border:#1E2D45;
+      --text:#E8EFF8;--muted:#8A9AB5;--muted2:#4A5A75;
       --deal-bg:#064E3B;--deal-fg:#6EE7B7;
       --warn-bg:#451A03;--warn-bdr:#92400E;
+      --shadow-sm:0 1px 3px rgba(0,0,0,.3),0 1px 2px rgba(0,0,0,.2);
+      --shadow-md:0 4px 8px rgba(0,0,0,.35),0 2px 4px rgba(0,0,0,.2);
     }}
     .card{{box-shadow:0 1px 4px rgba(0,0,0,.4)}}
-    .topbar-wrap{{background:#1E293B;border-bottom-color:#334155}}
-    .filter-input,.filter-select{{background:#0F172A;color:#E2E8F0;border-color:#334155}}
-    table th{{background:#0F172A}}
-    .home-row:hover{{background:#1a2a3a}}
-    .nav-search{{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12)}}
+    .topbar-wrap{{background:var(--surface);border-bottom-color:var(--border)}}
+    .filter-input,.filter-select{{background:var(--bg);color:var(--text);border-color:var(--border)}}
+    table thead th{{background:#0d1628}}
+    .home-row:hover td{{background:rgba(16,185,129,.06)}}
+    .nav-search{{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1)}}
+    .stat-card{{background:#152035}}
+    .stat-card-accent{{background:#0d2a1a}}
   }}
 </style>
 </head>
@@ -3176,8 +3534,8 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
 
     # Thread-local curl_cffi sessies (Session is niet thread-safe om te delen)
     _local    = threading.local()
-    # Max 3 gelijktijdige HTML-scrapes — voorkomt Cloudflare rate-limiting
-    _html_sem = threading.Semaphore(3)
+    # Max 4 gelijktijdige HTML-scrapes — voorkomt Cloudflare rate-limiting
+    _html_sem = threading.Semaphore(4)
     # API-calls serialiseren met minimale tussentijd
     _api_lock  = threading.Lock()
     _api_last  = [0.0]
@@ -3213,20 +3571,21 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
         else:
             with _html_sem:
                 sales = scrape_history(release_id, cookies, _session())
-                time.sleep(1.5)
+            time.sleep(1.2)
             print(f"  Geschiedenis gescraped: {len(sales)} verkopen")
             with _sales_lock:
                 sales_cache[release_id] = {"fetched_at": today, "sales": sales}
                 save_cache(SALES_CACHE, sales_cache)
 
-        # Marktstatistieken API (gecached per dag)
-        stats_key = f"{release_id}_{today}"
-        stats = stats_cache.get(stats_key)
-        if not stats:
+        # Marktstatistieken API (gecached, 7 dagen TTL — zelfde als verkoop- en listingscache)
+        sc_stats = stats_cache.get(release_id, {})
+        if cache_is_fresh(sc_stats):
+            stats = sc_stats.get("stats")
+        else:
             stats = _throttled_api(release_id)
             if stats:
                 with _stats_lock:
-                    stats_cache[stats_key] = stats
+                    stats_cache[release_id] = {"fetched_at": today, "stats": stats}
                     save_cache(STATS_CACHE, stats_cache)
 
         # Marketplace listings (gecached 7 dagen; fresh scrape bij force of verlopen cache)
@@ -3238,7 +3597,7 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
         else:
             with _html_sem:
                 raw_listings = scrape_listings(release_id, cookies, _session())
-                time.sleep(1.5)
+            time.sleep(1.2)
             if raw_listings:
                 with _lst_lock:
                     listings_cache[release_id] = {"fetched_at": today, "listings": raw_listings}
@@ -3258,7 +3617,7 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
         }
 
     results = []
-    with ThreadPoolExecutor(max_workers=6) as pool:
+    with ThreadPoolExecutor(max_workers=12) as pool:
         futures = {
             pool.submit(_process, rid, grp, ttl): rid
             for rid, (grp, ttl) in RELEASES.items()
@@ -3463,10 +3822,6 @@ def run_server(initial_results, cookies, session):
     server = HTTPServer(("", PORT), Handler)
     _log(f"Server draait op http://localhost:{PORT}")
     _log(f"Telefoon/tablet:   http://{local_ip}:{PORT}")
-    try:
-        webbrowser.open(f"http://localhost:{PORT}")
-    except Exception:
-        pass
     try:
         server.serve_forever()
     except KeyboardInterrupt:
