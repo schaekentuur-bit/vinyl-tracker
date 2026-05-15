@@ -2127,15 +2127,17 @@ def _listing_key(release_id, listing):
     return f"{release_id}_{listing['seller']}_{listing['price']}_{listing['currency']}_{listing['media']}_{listing['sleeve']}"
 
 
-def compute_new_listings(results):
-    """Vergelijkt huidige listings met eerder geziene; retourneert nieuwe listings gesorteerd op % vs gem."""
-    seen   = load_cache(LISTINGS_SEEN_FILE)
-    today  = datetime.now().strftime("%Y-%m-%d")
-    cutoff = (datetime.now() - timedelta(days=LISTINGS_SEEN_DAYS)).strftime("%Y-%m-%d")
+def compute_new_listings(results, existing=None):
+    """Accumuleert nieuwe listings over refreshes heen.
+    Bestaande ongelezen items blijven staan; nieuwe worden toegevoegd.
+    Items verdwijnen alleen via /mark-read (gebruikersbevestiging)."""
+    seen          = load_cache(LISTINGS_SEEN_FILE)
+    today         = datetime.now().strftime("%Y-%m-%d")
+    cutoff        = (datetime.now() - timedelta(days=LISTINGS_SEEN_DAYS)).strftime("%Y-%m-%d")
+    existing      = existing or []
+    existing_keys = {nl["key"] for nl in existing}
 
-    new_listings = []
-    current_keys = {}
-
+    new_items = []
     for r in results:
         by_cond = {}
         for s in r["sales"]:
@@ -2145,8 +2147,7 @@ def compute_new_listings(results):
             if listing.get("rating_count", 0) < MIN_SELLER_RATINGS:
                 continue
             key = _listing_key(r["id"], listing)
-            current_keys[key] = today
-            if key in seen:
+            if key in seen or key in existing_keys:
                 continue
 
             eff_cond   = _effective_cond(listing["media"], listing["sleeve"])
@@ -2165,7 +2166,7 @@ def compute_new_listings(results):
             adj_total  = _non_eu_adjusted_total(total_eur) if not is_eu else total_eur
             pct        = (adj_total - avg) / avg * 100 if avg is not None else None
 
-            new_listings.append({
+            new_items.append({
                 "r":        r,
                 "listing":  listing,
                 "key":      key,
@@ -2177,15 +2178,16 @@ def compute_new_listings(results):
                 "is_eu":    is_eu,
             })
 
-    # Prune oude entries — GEEN automatisch markeren als gezien;
-    # dat gebeurt pas expliciet via /mark-read (gebruikersbevestiging).
+    # Prune oude entries uit seen file
     pruned = {k: v for k, v in seen.items() if v >= cutoff}
     if len(pruned) != len(seen):
         save_cache(LISTINGS_SEEN_FILE, pruned)
 
-    # Sorteer: laagste % vs gem eerst (beste deal), geen data achteraan
-    new_listings.sort(key=lambda x: (x["pct"] is None, x["pct"] or 0))
-    return new_listings
+    # Behoud bestaande ongelezen items, voeg nieuwe toe, sorteer op % vs gem
+    retained = [nl for nl in existing if nl["key"] not in seen]
+    combined  = retained + new_items
+    combined.sort(key=lambda x: (x["pct"] is None, x["pct"] or 0))
+    return combined
 
 
 def send_deals_email(deals, subject_prefix="Nieuwe deals"):
@@ -3687,7 +3689,8 @@ def _log(msg):
 
 
 def run_server(initial_results, cookies, session):
-    state = {"results": initial_results, "refreshing": False, "new_listings": []}
+    state = {"results": initial_results, "refreshing": False,
+             "new_listings": compute_new_listings(initial_results)}
 
     def _push_to_github():
         """Genereer docs/index.html lokaal en push alles naar GitHub Pages."""
@@ -3743,7 +3746,7 @@ def run_server(initial_results, cookies, session):
             _log("Vernieuwen gestart")
             results = scrape_all(cookies, session, force_listings=True, force_stats=True)
             state["results"] = results
-            state["new_listings"] = compute_new_listings(results)
+            state["new_listings"] = compute_new_listings(results, state.get("new_listings", []))
             _log("Scrapen klaar, email berekenen")
 
             deals = compute_deals(results)
