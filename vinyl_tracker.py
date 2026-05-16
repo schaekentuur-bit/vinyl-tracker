@@ -2541,7 +2541,7 @@ def build_html(results, static=False, new_listings=None):
                          if ld_fmt else '<td class="td-num muted">—</td>')
             rows += (
                 f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row" data-nl-key="{key}"'
-                f' data-group="{r["group"]}" data-cond="{nl_item["eff_cond"]}">'
+                f' data-group="{r["group"]}" data-title="{r["title"]}" data-cond="{nl_item["eff_cond"]}">'
                 f'<td><span class="rb-group">{r["group"]}</span></td>'
                 f'<td class="td-title">{r["title"]}{ri_badge}</td>'
                 f'<td><span class="badge bd-{mc}">{lst["media"]}</span>'
@@ -2572,7 +2572,7 @@ def build_html(results, static=False, new_listings=None):
           <span style="font-weight:400;color:var(--muted);font-size:12px">({len(items)})</span>
         </h3>
         <div class="filter-bar">
-          <input class="filter-input" type="search" placeholder="Zoek artiest..."
+          <input class="filter-input" type="search" placeholder="Zoek artiest of album..."
                  oninput="applyFilters('{tid}')" id="fi-{tid}-q" autocomplete="off">
           <select class="filter-select" onchange="applyFilters('{tid}')" id="fi-{tid}-cond">
             <option value="">Alle condities</option>
@@ -2692,11 +2692,16 @@ def build_html(results, static=False, new_listings=None):
             ordered_genres.append(g)
 
     nav_genres = ""
+    group_title_map = {}
+    for r in results:
+        group_title_map.setdefault(r["group"], []).append(r["title"])
     for genre in ordered_genres:
         items = ""
         for group in genre_groups[genre]:
+            titles_str = " | ".join(group_title_map.get(group, []))
             items += (
                 f'<div class="nav-item" data-page="{_gid(group)}" '
+                f'data-titles="{titles_str}" '
                 f'onclick="showPage(\'{_gid(group)}\')">{group}</div>\n'
             )
         nav_genres += f"""<details class="nav-genre">
@@ -2708,7 +2713,7 @@ def build_html(results, static=False, new_listings=None):
     <nav>
       <div class="nav-logo"><span class="nav-logo-icon">&#9679;</span> Vinyl</div>
       <div class="nav-search-wrap">
-        <input class="nav-search" type="search" placeholder="Zoek artiest..." oninput="filterNav(this.value)" autocomplete="off">
+        <input class="nav-search" type="search" placeholder="Zoek artiest of album..." oninput="filterNav(this.value)" autocomplete="off">
       </div>
       <div class="nav-item active" data-page="home" onclick="showPage('home')">
         <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2L2 9h2v9h5v-6h2v6h5V9h2z"/></svg>
@@ -3450,7 +3455,9 @@ function filterNav(q){{
   document.querySelectorAll('.nav-genre').forEach(function(det){{
     var anyVis=false;
     det.querySelectorAll('.nav-item').forEach(function(item){{
-      var show=!q||item.textContent.toLowerCase().includes(q);
+      var text=item.textContent.toLowerCase();
+      var titles=(item.getAttribute('data-titles')||'').toLowerCase();
+      var show=!q||text.includes(q)||titles.includes(q);
       item.style.display=show?'':'none';
       if(show)anyVis=true;
     }});
@@ -3496,8 +3503,9 @@ function applyFilters(tid){{
   var vis=0;
   rows.forEach(function(r){{
     var group=(r.getAttribute('data-group')||'').toLowerCase();
+    var title=(r.getAttribute('data-title')||'').toLowerCase();
     var rcond=r.getAttribute('data-cond')||'';
-    var show=(!q||group.includes(q))&&(!cond||rcond===cond);
+    var show=(!q||(group.includes(q)||title.includes(q)))&&(!cond||rcond===cond);
     r.style.display=show?'':'none';
     if(show)vis++;
   }});
