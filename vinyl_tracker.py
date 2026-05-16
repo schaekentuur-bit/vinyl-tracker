@@ -3260,7 +3260,7 @@ function _markReadServer(keys){{
       fetch('https://api.github.com/repos/schaekentuur-bit/vinyl-tracker/actions/workflows/vinyl.yml/dispatches',{{
         method:'POST',
         headers:{{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'}},
-        body:JSON.stringify({{ref:'master',inputs:{{force:'false',mark_read_keys:JSON.stringify(keys)}}}})
+        body:JSON.stringify({{ref:'master',inputs:{{mark_read_keys:JSON.stringify(keys)}}}})
       }});
     }});
 }}
@@ -3397,7 +3397,7 @@ function ghTrigger(token,force){{
   fetch('https://api.github.com/repos/schaekentuur-bit/vinyl-tracker/actions/workflows/vinyl.yml/dispatches',{{
     method:'POST',
     headers:{{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'}},
-    body:JSON.stringify({{ref:'master',inputs:{{force:force?'true':'false'}}}})
+    body:JSON.stringify({{ref:'master',inputs:{{}}}})
   }}).then(function(r){{
     if(r.status===204){{
       btn.textContent='⏳ Bezig…';

@@ -2,7 +2,7 @@ name: Vinyl Report
 
 on:
   schedule:
-    - cron: '0 7 * * *'   # elke dag om 07:00 UTC
+    - cron: '0 */2 * * *'  # elke 2 uur
   workflow_dispatch:
     inputs:
       mark_read_keys:
