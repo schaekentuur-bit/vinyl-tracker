@@ -2330,7 +2330,7 @@ def send_deals_email(deals, subject_prefix="Nieuwe deals"):
 
     try:
         import smtplib as _smtp
-        with _smtp.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+        with _smtp.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as smtp:
             smtp.login(EMAIL_FROM, EMAIL_PASS)
             smtp.send_message(msg)
         print(f"Email verstuurd: {subject}")

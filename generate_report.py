@@ -2,7 +2,7 @@
 GitHub Actions entrypoint.
 Scrapet Discogs, genereert docs/index.html en stuurt email bij nieuwe deals.
 """
-import os, base64, tempfile
+import os, base64, tempfile, sys, traceback
 
 # Cookies uit GitHub Secret decoderen naar tijdelijk bestand
 _cookies_b64 = os.getenv("DISCOGS_COOKIES_B64", "").lstrip("﻿").strip()
@@ -55,36 +55,58 @@ if _mark_keys_raw:
 
 force = os.getenv("FORCE_REFRESH", "false").strip().lower() == "true"
 print(f"Scrapen... (force_listings=True, force_stats={force})  [FORCE_REFRESH={os.getenv('FORCE_REFRESH','false')}]")
-results = scrape_all(cookies, session, force_listings=True, force_stats=force)
-print(f"{len(results)} releases verwerkt")
 
-new_listings = compute_new_listings(results)
-print(f"{len(new_listings)} nieuwe listings gevonden")
+# ── Fase 1: scrapen (kritiek — als dit faalt, stoppen we) ────────────────────
+try:
+    results = scrape_all(cookies, session, force_listings=True, force_stats=force)
+    print(f"{len(results)} releases verwerkt")
+except Exception:
+    print("KRITIEKE FOUT in scrape_all:")
+    traceback.print_exc()
+    sys.exit(1)
 
-html = build_html(results, static=True, new_listings=new_listings)
+# ── Fase 2: HTML genereren en opslaan (kritiek) ──────────────────────────────
+try:
+    new_listings = compute_new_listings(results)
+    print(f"{len(new_listings)} nieuwe listings gevonden")
 
-os.makedirs("docs", exist_ok=True)
-with open("docs/index.html", "w", encoding="utf-8") as f:
-    f.write(html)
-print("docs/index.html aangemaakt")
+    html = build_html(results, static=True, new_listings=new_listings)
 
-# Email bij nieuwe deals
-deals = compute_deals(results)
-seen  = load_cache(DEALS_SEEN_FILE)
-if not seen:
-    send_deals_email(deals, subject_prefix="Alle actieve deals")
-else:
-    new = find_new_deals(deals, seen)
-    send_deals_email(new, subject_prefix="Nieuwe deals")
+    os.makedirs("docs", exist_ok=True)
+    with open("docs/index.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    print("docs/index.html aangemaakt")
+except Exception:
+    print("KRITIEKE FOUT bij HTML-generatie:")
+    traceback.print_exc()
+    sys.exit(1)
 
-save_cache(DEALS_SEEN_FILE, {_deal_key(d): {
-    "price":     d["best"]["price"],
-    "currency":  d["best"]["currency"],
-    "shipping":  d["best"].get("shipping", 0.0),
-    "total_eur": d["best"].get("total_eur", d["best"]["price"]),
-    "disc":      d["disc"],
-    "tier":      d.get("tier", "beste"),
-    "seller":    d["best"]["seller"],
-    "title":     d["r"]["title"],
-    "group":     d["r"]["group"],
-} for d in deals})
+# ── Fase 3: email + cache opslaan (niet-kritiek — fout stopt het script niet) ─
+try:
+    deals = compute_deals(results)
+    seen  = load_cache(DEALS_SEEN_FILE)
+    if not seen:
+        send_deals_email(deals, subject_prefix="Alle actieve deals")
+    else:
+        new = find_new_deals(deals, seen)
+        send_deals_email(new, subject_prefix="Nieuwe deals")
+except Exception:
+    print("Waarschuwing: email-stap mislukt (niet-kritiek):")
+    traceback.print_exc()
+
+try:
+    deals = compute_deals(results)
+    save_cache(DEALS_SEEN_FILE, {_deal_key(d): {
+        "price":     d["best"]["price"],
+        "currency":  d["best"]["currency"],
+        "shipping":  d["best"].get("shipping", 0.0),
+        "total_eur": d["best"].get("total_eur", d["best"]["price"]),
+        "disc":      d["disc"],
+        "tier":      d.get("tier", "beste"),
+        "seller":    d["best"]["seller"],
+        "title":     d["r"]["title"],
+        "group":     d["r"]["group"],
+    } for d in deals})
+except Exception:
+    print("Waarschuwing: deals-cache opslaan mislukt (niet-kritiek):")
+    traceback.print_exc()
