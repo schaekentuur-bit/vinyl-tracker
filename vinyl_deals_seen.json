@@ -33,13 +33,13 @@
     "group": "2Pac"
   },
   "3183667_VG": {
-    "price": 75.0,
+    "price": 73.84,
     "currency": "CAD",
     "shipping": 0.0,
-    "total_eur": 46.88965301656768,
-    "disc": 6.226823333272042,
+    "total_eur": 46.164426383244766,
+    "disc": 7.373913825194547,
     "tier": "beste",
-    "seller": "deathofvinyl",
+    "seller": "Dee_and_Zee",
     "title": "Nevermind 20th Anniversary (B0015884-01, US 2011)",
     "group": "Nirvana"
   },
@@ -109,28 +109,6 @@
     "title": "Pablo Honey (Capitol US 2008, LP 180g)",
     "group": "Radiohead"
   },
-  "10996313_M": {
-    "price": 56.46,
-    "currency": "EUR",
-    "shipping": 0.0,
-    "total_eur": 56.46,
-    "disc": 18.8711508341356,
-    "tier": "goed",
-    "seller": "EmptyShelves",
-    "title": "Gang Signs & Prayer (MRKY001LP, #Merky Records UK 2017, 2LP)",
-    "group": "Stormzy"
-  },
-  "16231042_M": {
-    "price": 42.97,
-    "currency": "EUR",
-    "shipping": 7.99,
-    "total_eur": 50.96,
-    "disc": 18.843003175171944,
-    "tier": "goed",
-    "seller": "Lot.Of.Music",
-    "title": "Parachutes (0190295182502, Parlophone/Warner EU 2020, LP geel translucent)",
-    "group": "Coldplay"
-  },
   "317356_VG+": {
     "price": 120.0,
     "currency": "EUR",
@@ -197,17 +175,6 @@
     "title": "A Night at the Opera half-speed (00602547202697, EU 2015)",
     "group": "Queen"
   },
-  "7264539_VG+": {
-    "price": 65.0,
-    "currency": "EUR",
-    "shipping": 0.0,
-    "total_eur": 65.0,
-    "disc": 11.09501971196397,
-    "tier": "goed",
-    "seller": "Koes1953",
-    "title": "Beggars Banquet (SKL 4955, Decca UK 1968) [stereo]",
-    "group": "Rolling Stones"
-  },
   "7801798_VG+": {
     "price": 55.0,
     "currency": "EUR",
@@ -251,16 +218,5 @@
     "seller": "RoughTrade_EU",
     "title": "Blood Sugar Sex Magik (7599-26681-1, EU first pressing 1991)",
     "group": "RHCP"
-  },
-  "2103788_VG+": {
-    "price": 260.0,
-    "currency": "EUR",
-    "shipping": 0.0,
-    "total_eur": 260.0,
-    "disc": 4.5018793540409145,
-    "tier": "goed",
-    "seller": "lametralleta",
-    "title": "Dookie (1-45529, Reprise US 1994, LP)",
-    "group": "Green Day"
   }
 }

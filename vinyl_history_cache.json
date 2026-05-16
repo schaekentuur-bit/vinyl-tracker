@@ -3633,5 +3633,27 @@
       },
       "blocked_from_sale": false
     }
+  },
+  "66534": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 63,
+      "lowest_price": {
+        "value": 1.15,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "11860171": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 64,
+      "lowest_price": {
+        "value": 11.47,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
   }
 }
