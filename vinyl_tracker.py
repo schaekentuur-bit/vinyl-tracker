@@ -1747,11 +1747,24 @@ def scrape_listings_api(release_id):
         seller_obj   = item.get("seller", {})
         seller       = seller_obj.get("username", "?")
         rating_count = int(seller_obj.get("stats", {}).get("total", 0))
+        ships_from   = item.get("ships_from", "")
+        ship_obj     = item.get("shipping_price", {})
+        shipping     = float(ship_obj.get("value", 0.0)) if ship_obj else 0.0
+        ship_cur     = ship_obj.get("currency", currency) if ship_obj else currency
+        # Shipping mag een andere valuta hebben dan de listing; converteer naar EUR
+        shipping_eur = _to_eur(shipping, ship_cur)
+        total_eur    = _to_eur(price, currency) + shipping_eur
+        posted       = item.get("posted", "")
+        listed_date  = posted[:10] if posted else None
         if price > 0:
             listings.append({
                 "media": media, "sleeve": sleeve,
                 "price": price, "currency": currency,
+                "shipping": shipping,
+                "total_eur": total_eur,
                 "rating_count": rating_count, "seller": seller,
+                "ships_from": ships_from,
+                "listed_date": listed_date,
             })
     return listings
 
@@ -3641,9 +3654,9 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
                     stats_cache[release_id] = {"fetched_at": today, "stats": stats}
                     save_cache(STATS_CACHE, stats_cache)
 
-        # Marketplace listings (gecached 7 dagen; fresh scrape bij force of verlopen cache)
+        # Marketplace listings (gecached 1 dag; fresh scrape bij force of verlopen cache)
         lc_entry = listings_cache.get(release_id, {})
-        use_cache = (not force_listings) and cache_is_fresh(lc_entry, max_days=7) and lc_entry.get("listings")
+        use_cache = (not force_listings) and cache_is_fresh(lc_entry, max_days=1) and lc_entry.get("listings")
         if use_cache:
             raw_listings = lc_entry["listings"]
             print(f"  Listings cache: {len(raw_listings)} listings")
@@ -3657,8 +3670,16 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
                     save_cache(LISTINGS_CACHE, listings_cache)
                 print(f"  Listings gescraped: {len(raw_listings)} listings")
             else:
-                raw_listings = lc_entry.get("listings", [])
-                print(f"  Listings scrape leeg (Cloudflare?), cache bewaard: {len(raw_listings)} listings")
+                # HTML geblokkeerd (Cloudflare); probeer officiële API als fallback
+                raw_listings = scrape_listings_api(release_id)
+                if raw_listings:
+                    with _lst_lock:
+                        listings_cache[release_id] = {"fetched_at": today, "listings": raw_listings}
+                        save_cache(LISTINGS_CACHE, listings_cache)
+                    print(f"  Listings via API: {len(raw_listings)} listings")
+                else:
+                    raw_listings = lc_entry.get("listings", [])
+                    print(f"  Listings leeg (HTML + API), cache bewaard: {len(raw_listings)} listings")
 
         return {
             "id":       release_id,
