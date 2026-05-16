@@ -3877,12 +3877,12 @@ def run_server(initial_results, cookies, session):
             ts = datetime.now().strftime("%Y-%m-%d %H:%M")
             subprocess.run(["git", "-C", repo, "commit", "-m",
                             f"Lokale refresh {ts}"], check=True, capture_output=True)
-            # Fetch eerst zodat de tracking-ref actueel is; daarna force-with-lease.
-            # (GitHub Actions pusht dagelijks — zonder fetch krijg je 'stale info'.)
-            subprocess.run(["git", "-C", repo, "fetch", "origin"],
+            # Rebase op remote (GitHub Actions kan ondertussen commits gemaakt hebben).
+            # -X ours: bij conflict wint onze lokale versie (verse listings/HTML).
+            subprocess.run(["git", "-C", repo, "pull", "--rebase", "-X", "ours",
+                            "origin", "master"],
                            check=True, capture_output=True)
-            subprocess.run(["git", "-C", repo, "push", "--force-with-lease",
-                            "origin", "HEAD"],
+            subprocess.run(["git", "-C", repo, "push", "origin", "HEAD"],
                            check=True, capture_output=True)
             _log("Gepushed naar GitHub — live site is nu bijgewerkt")
         except subprocess.CalledProcessError as e:
