@@ -3622,8 +3622,8 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
     def _throttled_api(release_id):
         with _api_lock:
             gap = time.time() - _api_last[0]
-            if gap < 0.5:
-                time.sleep(0.5 - gap)
+            if gap < 1.0:
+                time.sleep(1.0 - gap)
             result = get_market_stats(release_id)
             _api_last[0] = time.time()
         return result
