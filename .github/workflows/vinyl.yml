@@ -5,6 +5,10 @@ on:
     - cron: '0 5,10,14,19 * * *'  # 07:00, 12:00, 16:00, 21:00 CEST (UTC+2)
   workflow_dispatch:
     inputs:
+      force_refresh:
+        description: 'Alles opnieuw ophalen (negeer stats-cache)'
+        required: false
+        default: 'false'
       mark_read_keys:
         description: 'JSON array van listing-keys om als gelezen te markeren'
         required: false
@@ -33,7 +37,7 @@ jobs:
           EMAIL_FROM:          ${{ secrets.EMAIL_FROM }}
           EMAIL_TO:            ${{ secrets.EMAIL_TO }}
           EMAIL_PASS:          ${{ secrets.EMAIL_PASS }}
-          FORCE_REFRESH:       ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
+          FORCE_REFRESH:       ${{ github.event.inputs.force_refresh || 'false' }}
           MARK_READ_KEYS:      ${{ github.event.inputs.mark_read_keys || '' }}
         run: python generate_report.py
 
