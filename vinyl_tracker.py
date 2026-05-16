@@ -2727,7 +2727,6 @@ def build_html(results, static=False, new_listings=None):
       <div class="nav-item" data-page="invest-listings" onclick="showPage('invest-listings')">
         <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M5 3a2 2 0 00-2 2v1H1v3a3 3 0 002.83 2.98A5 5 0 009 14.9V16H8a1 1 0 000 2h4a1 1 0 000-2h-1v-1.1A5 5 0 0016.17 11.98 3 3 0 0019 9V6h-2V5a2 2 0 00-2-2H5zm11 3h1v2.17A1 1 0 0116 9v-3zm-13 0V9a1 1 0 01-1-.83V6h1zm2-1h10v5a3 3 0 01-10 0V5z"/></svg>
         Beleggingen
-        {f'<span class="nav-badge" style="background:#92400E">{invest_release_count}</span>' if invest_all else ''}
       </div>
       <div class="nav-item" data-page="deals" onclick="showPage('deals')">
         <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/></svg>
