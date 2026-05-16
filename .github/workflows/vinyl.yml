@@ -5,14 +5,10 @@ on:
     - cron: '0 7 * * *'   # elke dag om 07:00 UTC
   workflow_dispatch:
     inputs:
-      force:
-        description: 'Forceer volledige refresh (cache negeren)'
+      mark_read_keys:
+        description: 'JSON array van listing-keys om als gelezen te markeren'
         required: false
-        default: 'false'
-        type: choice
-        options:
-          - 'false'
-          - 'true'
+        default: ''
 
 permissions:
   contents: write
@@ -37,7 +33,8 @@ jobs:
           EMAIL_FROM:          ${{ secrets.EMAIL_FROM }}
           EMAIL_TO:            ${{ secrets.EMAIL_TO }}
           EMAIL_PASS:          ${{ secrets.EMAIL_PASS }}
-          FORCE_REFRESH:       ${{ github.event.inputs.force || 'false' }}
+          FORCE_REFRESH:       ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
+          MARK_READ_KEYS:      ${{ github.event.inputs.mark_read_keys || '' }}
         run: python generate_report.py
 
       - name: Publiceer naar GitHub Pages
