@@ -1672,10 +1672,17 @@ def save_cache(path, data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
-def cache_is_fresh(entry, max_days=CACHE_DAYS):
+def cache_is_fresh(entry, max_days=CACHE_DAYS, max_hours=None):
     try:
-        fetched = datetime.strptime(entry.get("fetched_at", ""), "%Y-%m-%d")
-        return (datetime.now() - fetched).days < max_days
+        raw = entry.get("fetched_at", "")
+        try:
+            fetched = datetime.fromisoformat(raw)
+        except ValueError:
+            fetched = datetime.strptime(raw, "%Y-%m-%d")
+        age = datetime.now() - fetched
+        if max_hours is not None:
+            return age.total_seconds() < max_hours * 3600
+        return age.days < max_days
     except Exception:
         return False
 
@@ -3591,7 +3598,7 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
     listings_cache = load_cache(LISTINGS_CACHE)
     if force_stats:
         stats_cache = {}
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now().isoformat(timespec="seconds")
 
     # Thread-local curl_cffi sessies (Session is niet thread-safe om te delen)
     _local    = threading.local()
@@ -3649,9 +3656,9 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
                     stats_cache[release_id] = {"fetched_at": today, "stats": stats}
                     save_cache(STATS_CACHE, stats_cache)
 
-        # Marketplace listings (gecached 1 dag; fresh scrape bij force of verlopen cache)
+        # Marketplace listings (gecached 2 uur; fresh scrape bij force of verlopen cache)
         lc_entry = listings_cache.get(release_id, {})
-        use_cache = (not force_listings) and cache_is_fresh(lc_entry, max_days=1) and lc_entry.get("listings")
+        use_cache = (not force_listings) and cache_is_fresh(lc_entry, max_hours=2) and lc_entry.get("listings")
         if use_cache:
             raw_listings = lc_entry["listings"]
             print(f"  Listings cache: {len(raw_listings)} listings")
@@ -3665,8 +3672,13 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
                     save_cache(LISTINGS_CACHE, listings_cache)
                 print(f"  Listings gescraped: {len(raw_listings)} listings")
             else:
-                # HTML geblokkeerd (Cloudflare); probeer officiële API als fallback
-                raw_listings = scrape_listings_api(release_id)
+                # HTML geblokkeerd (Cloudflare); gebruik API met throttle om rate-limit te vermijden
+                with _api_lock:
+                    gap = time.time() - _api_last[0]
+                    if gap < 1.0:
+                        time.sleep(1.0 - gap)
+                    raw_listings = scrape_listings_api(release_id)
+                    _api_last[0] = time.time()
                 if raw_listings:
                     with _lst_lock:
                         listings_cache[release_id] = {"fetched_at": today, "listings": raw_listings}
