@@ -3243,5 +3243,395 @@
       },
       "blocked_from_sale": false
     }
+  },
+  "10996313": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 21,
+      "lowest_price": {
+        "value": 30.1,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "15841340": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 50,
+      "lowest_price": {
+        "value": 14.33,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "10305796": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 8,
+      "lowest_price": {
+        "value": 170.0,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "13713464": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 6,
+      "lowest_price": {
+        "value": 150.0,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "9603231": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 2,
+      "lowest_price": {
+        "value": 12.9,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "3333076": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 10,
+      "lowest_price": {
+        "value": 77.39,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "376138": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 162,
+      "lowest_price": {
+        "value": 2.66,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "2590105": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 38,
+      "lowest_price": {
+        "value": 34.4,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "501415": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 15,
+      "lowest_price": {
+        "value": 70.0,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "6986271": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 18,
+      "lowest_price": {
+        "value": 42.13,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "495681": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 109,
+      "lowest_price": {
+        "value": 14.9,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "8961614": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 115,
+      "lowest_price": {
+        "value": 28.67,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "445878": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 6,
+      "lowest_price": {
+        "value": 131.81,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "9057753": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 71,
+      "lowest_price": {
+        "value": 28.67,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "2024524": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 17,
+      "lowest_price": {
+        "value": 36.4,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "9359884": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 129,
+      "lowest_price": {
+        "value": 15.0,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "13488794": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 3,
+      "lowest_price": {
+        "value": 29.8,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "1469334": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 32,
+      "lowest_price": {
+        "value": 4.3,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "6275103": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 49,
+      "lowest_price": {
+        "value": 19.03,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "382417": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 79,
+      "lowest_price": {
+        "value": 3.44,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "17896735": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 94,
+      "lowest_price": {
+        "value": 30.51,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "864382": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 0,
+      "lowest_price": null,
+      "blocked_from_sale": false
+    }
+  },
+  "13670805": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 0,
+      "lowest_price": null,
+      "blocked_from_sale": false
+    }
+  },
+  "4194515": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 18,
+      "lowest_price": {
+        "value": 5.27,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "1982122": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 14,
+      "lowest_price": {
+        "value": 68.71,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "10533002": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 18,
+      "lowest_price": {
+        "value": 16.96,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "10518961": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 55,
+      "lowest_price": {
+        "value": 16.35,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "238877": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 80,
+      "lowest_price": {
+        "value": 3.44,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "6063431": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 32,
+      "lowest_price": {
+        "value": 13.76,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "1217497": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 13,
+      "lowest_price": {
+        "value": 29.95,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "8953011": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 98,
+      "lowest_price": {
+        "value": 21.3,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "804778": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 33,
+      "lowest_price": {
+        "value": 0.86,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "8212247": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 11,
+      "lowest_price": {
+        "value": 17.0,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "1410402": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 32,
+      "lowest_price": {
+        "value": 32.54,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "3480688": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 22,
+      "lowest_price": {
+        "value": 54.99,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
+  },
+  "14950419": {
+    "fetched_at": "2026-05-16",
+    "stats": {
+      "num_for_sale": 6,
+      "lowest_price": {
+        "value": 57.32,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
   }
 }
