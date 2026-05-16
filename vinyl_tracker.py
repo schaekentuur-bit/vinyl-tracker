@@ -3690,6 +3690,10 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
     _sales_lock = threading.Lock()
     _stats_lock = threading.Lock()
     _lst_lock   = threading.Lock()
+    # In GitHub Actions: Discogs website geblokkeerd (CF) en marketplace/search API verwijderd
+    _is_ga = os.getenv("GITHUB_ACTIONS", "").lower() == "true"
+    # Zodra de listings API 404 geeft, overslaan we hem voor alle volgende releases
+    _listing_api_dead = [False]
 
     def _session():
         if not hasattr(_local, "sess"):
@@ -3735,13 +3739,20 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
                     stats_cache[release_id] = {"fetched_at": today, "stats": stats}
                     save_cache(STATS_CACHE, stats_cache)
 
-        # Marketplace listings (gecached 2 uur; fresh scrape bij force of verlopen cache)
+        # Marketplace listings
         lc_entry = listings_cache.get(release_id, {})
         use_cache = (not force_listings) and cache_is_fresh(lc_entry, max_hours=2) and lc_entry.get("listings")
         if use_cache:
             raw_listings = lc_entry["listings"]
             print(f"  Listings cache: {len(raw_listings)} listings")
+        elif _is_ga:
+            # GitHub Actions: Discogs-website geblokkeerd door Cloudflare én
+            # marketplace/search API verwijderd door Discogs — gebruik cache.
+            # Ververs listings lokaal via `python vinyl_tracker.py`.
+            raw_listings = lc_entry.get("listings", [])
+            print(f"  Listings uit cache (GA: HTML+API niet beschikbaar): {len(raw_listings)}")
         else:
+            # Lokaal: HTML scraping proberen
             with _html_sem:
                 raw_listings = scrape_listings(release_id, cookies, _session())
             time.sleep(1.2)
@@ -3750,22 +3761,27 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
                     listings_cache[release_id] = {"fetched_at": today, "listings": raw_listings}
                     save_cache(LISTINGS_CACHE, listings_cache)
                 print(f"  Listings gescraped: {len(raw_listings)} listings")
-            else:
-                # HTML geblokkeerd (Cloudflare); gebruik API met throttle om rate-limit te vermijden
+            elif not _listing_api_dead[0]:
+                # API-fallback (één poging; als 404 → markeer als dood voor alle releases)
                 with _api_lock:
                     gap = time.time() - _api_last[0]
                     if gap < 1.0:
                         time.sleep(1.0 - gap)
-                    raw_listings = scrape_listings_api(release_id)
+                    api_result = scrape_listings_api(release_id)
                     _api_last[0] = time.time()
-                if raw_listings:
+                if api_result:
+                    raw_listings = api_result
                     with _lst_lock:
                         listings_cache[release_id] = {"fetched_at": today, "listings": raw_listings}
                         save_cache(LISTINGS_CACHE, listings_cache)
                     print(f"  Listings via API: {len(raw_listings)} listings")
                 else:
+                    _listing_api_dead[0] = True
                     raw_listings = lc_entry.get("listings", [])
                     print(f"  Listings leeg (HTML + API), cache bewaard: {len(raw_listings)} listings")
+            else:
+                raw_listings = lc_entry.get("listings", [])
+                print(f"  Listings cache (API onbeschikbaar): {len(raw_listings)} listings")
 
         return {
             "id":       release_id,
