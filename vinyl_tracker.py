@@ -2529,16 +2529,6 @@ def build_html(results, static=False, new_listings=None):
                 ri_cls  = _BADGE_MAP.get(ri_info[0], "rb-badge-orig")
                 ri_badge = (f'<br><span class="rb-badge {ri_cls}" style="font-size:9px;margin-left:0;margin-top:3px"'
                             f' title="{ri_info[1]}">{ri_info[0]}</span>')
-            ld = lst.get("listed_date")
-            if ld:
-                try:
-                    ld_fmt = datetime.strptime(ld, "%Y-%m-%d").strftime("%d/%m/%Y")
-                except ValueError:
-                    ld_fmt = ld
-            else:
-                ld_fmt = None
-            date_cell = (f'<td class="td-num muted" style="white-space:nowrap">{ld_fmt}</td>'
-                         if ld_fmt else '<td class="td-num muted">—</td>')
             rows += (
                 f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row" data-nl-key="{key}"'
                 f' data-group="{r["group"]}" data-title="{r["title"]}" data-cond="{nl_item["eff_cond"]}">'
@@ -2552,7 +2542,6 @@ def build_html(results, static=False, new_listings=None):
                 f'<td class="td-num"><strong>{_fmt_eur(eur_tot)}</strong>{brkdwn}{non_eu_badge}</td>'
                 f'<td class="td-num muted">{avg_cell}</td>'
                 + _nl_pct_cell(nl_item["pct"])
-                + date_cell
                 + f'<td class="td-seller">{lst["seller"]} <span class="muted">({lst["rating_count"]:,})</span></td>'
                 f'<td><button class="deal-dismiss" onclick="dismissNewListing(\'{key}\',event)" title="Verbergen">&#10005;</button></td>'
                 f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
@@ -2590,7 +2579,6 @@ def build_html(results, static=False, new_listings=None):
               <th class="th-r th-sort" onclick="sortTable('{tid}',3,this)">Prijs incl. verzend<span class="sort-icon"></span></th>
               <th class="th-r">Gem. verkoop</th>
               <th class="th-r th-sort" onclick="sortTable('{tid}',5,this)">% vs gem.<span class="sort-icon"></span></th>
-              <th class="th-r th-sort" onclick="sortTable('{tid}',6,this)">Geplaatst<span class="sort-icon"></span></th>
               <th>Verkoper</th><th></th><th></th>
             </tr></thead>
             <tbody>{rows_html}</tbody>
