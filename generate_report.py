@@ -54,7 +54,7 @@ if _mark_keys_raw:
         print(f"MARK_READ_KEYS parse fout: {_e}")
 
 force = os.getenv("FORCE_REFRESH", "false").strip().lower() == "true"
-print(f"Scrapen... (force_listings=True, force_stats={force})")
+print(f"Scrapen... (force_listings=True, force_stats={force})  [FORCE_REFRESH={os.getenv('FORCE_REFRESH','false')}]")
 results = scrape_all(cookies, session, force_listings=True, force_stats=force)
 print(f"{len(results)} releases verwerkt")
 

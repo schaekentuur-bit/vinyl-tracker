@@ -3123,21 +3123,64 @@ def build_html(results, static=False, new_listings=None):
   /* ── Dark mode ── */
   @media(prefers-color-scheme:dark){{
     :root{{
-      --bg:#0B1120;--surface:#131C2E;--border:#1E2D45;
+      --bg:#0B1120;--surface:#131C2E;--border:#253550;
       --text:#E8EFF8;--muted:#8A9AB5;--muted2:#4A5A75;
       --deal-bg:#064E3B;--deal-fg:#6EE7B7;
       --warn-bg:#451A03;--warn-bdr:#92400E;
       --shadow-sm:0 1px 3px rgba(0,0,0,.3),0 1px 2px rgba(0,0,0,.2);
       --shadow-md:0 4px 8px rgba(0,0,0,.35),0 2px 4px rgba(0,0,0,.2);
     }}
+    /* Hamburger lijnen zichtbaar op donkere topbar */
+    .hamburger span{{background:#CBD5E1}}
+    .hamburger:active{{background:rgba(255,255,255,.08)}}
     .card{{box-shadow:0 1px 4px rgba(0,0,0,.4)}}
     .topbar-wrap{{background:var(--surface);border-bottom-color:var(--border)}}
     .filter-input,.filter-select{{background:var(--bg);color:var(--text);border-color:var(--border)}}
-    table thead th{{background:#0d1628}}
+    /* Tabel */
+    table thead th{{background:#0d1628;color:var(--muted)}}
+    td{{border-bottom-color:var(--border)}}
     .home-row:hover td{{background:rgba(16,185,129,.06)}}
+    /* Condition boxes */
+    .cb{{background:#192236;border-color:var(--border)}}
+    /* Role headers */
+    .rb-role-invest{{background:#2d1700;color:#fbbf24;border-color:#92400e}}
+    .rb-role-listen{{background:#091a10;color:#6EE7B7;border-color:#064E3B}}
+    /* Release badges */
+    .rb-badge-first{{background:#3d2500;color:#fbbf24}}
+    .rb-badge-listen{{background:#082014;color:#6EE7B7}}
+    .rb-badge-limited{{background:#251648;color:#c4b5fd}}
+    .rb-badge-orig{{background:#071b2c;color:#93c5fd}}
+    .rb-badge-missing{{background:#2a1000;color:#fb923c}}
+    /* Staat-badges */
+    .bd-M,.bd-NM{{background:#064E3B;color:#6EE7B7}}
+    .bd-VGp{{background:#14532d;color:#86efac}}
+    .bd-VG{{background:#3d2800;color:#fbbf24}}
+    .bd-Gp{{background:#3a2200;color:#f59e0b}}
+    .bd-G{{background:#3d1010;color:#fca5a5}}
+    .bd-F{{background:#350a0a;color:#f87171}}
+    .bd-P{{background:#7f1d1d;color:#fecaca}}
+    .bd-Generic,.bd-NoCover{{background:#1e2d45;color:var(--muted)}}
+    /* Link-knop */
+    .btn-link{{background:#0f2744;color:#93c5fd;border-color:#1d4ed8}}
+    .btn-link:hover{{background:#163560}}
+    /* Deal dismiss */
+    .deal-dismiss:hover{{background:#3d1010;color:#f87171}}
+    /* Dismissed bar */
+    .dismissed-bar{{background:var(--surface)}}
+    /* Stat cards */
     .nav-search{{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1)}}
     .stat-card{{background:#152035}}
-    .stat-card-accent{{background:#0d2a1a}}
+    .stat-card-accent{{background:#0d2a1a;border-color:#10B981}}
+    .stat-card-accent .stat-val{{color:#6EE7B7}}
+    /* Dropdown menu (static site) */
+    #gh-menu{{background:var(--surface)!important;border-color:var(--border)!important;box-shadow:0 4px 24px rgba(0,0,0,.5)!important}}
+    #gh-menu button{{color:var(--text)!important}}
+    #gh-menu div{{border-color:var(--border)!important}}
+    /* Token modal */
+    #gh-modal > div{{background:var(--surface)!important}}
+    #gh-modal h3{{color:var(--text)!important}}
+    #gh-modal p{{color:var(--muted)!important}}
+    #gh-modal input{{background:var(--bg)!important;border-color:var(--border)!important;color:var(--text)!important}}
   }}
 </style>
 </head>
@@ -3396,7 +3439,7 @@ function ghTrigger(token,force){{
   fetch('https://api.github.com/repos/schaekentuur-bit/vinyl-tracker/actions/workflows/vinyl.yml/dispatches',{{
     method:'POST',
     headers:{{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'}},
-    body:JSON.stringify({{ref:'master',inputs:{{mark_read_keys:''}}}})
+    body:JSON.stringify({{ref:'master',inputs:{{force_refresh:force?'true':'false',mark_read_keys:''}}}})
   }}).then(function(r){{
     if(r.status===204){{
       btn.textContent='⏳ Bezig…';
@@ -3415,7 +3458,7 @@ function ghTrigger(token,force){{
   }});
 }}
 function ghPoll(token,n){{
-  if(n>80){{
+  if(n>240){{
     var btn=document.getElementById('gh-refresh-btn');
     btn.disabled=false; btn.textContent='⚠ Timeout — probeer opnieuw';
     return;
@@ -3430,9 +3473,12 @@ function ghPoll(token,n){{
     }}
     var btn=document.getElementById('gh-refresh-btn');
     if(!run||run.status==='queued'||run.status==='in_progress'){{
-      var mins=Math.floor(n*5/60);
-      btn.textContent='⏳ Bezig ('+(mins>0?mins+'min':'<1min')+')…';
-      setTimeout(function(){{ghPoll(token,n+1);}},5000);
+      var elapsed=Math.floor((Date.now()-_ghTriggerTime)/1000);
+      var mins=Math.floor(elapsed/60);
+      var secs=elapsed%60;
+      btn.textContent='⏳ Bezig ('+(mins>0?mins+'min ':'')+(mins>0||secs>0?secs+'s':'<1s')+')…';
+      var delay=elapsed<120?5000:10000;
+      setTimeout(function(){{ghPoll(token,n+1);}},delay);
     }}else if(run.conclusion==='success'){{
       btn.disabled=false; btn.textContent='✓ Klaar — herlaad';
       btn.onclick=function(){{window.location.reload();}};
