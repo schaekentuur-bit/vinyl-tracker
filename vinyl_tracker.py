@@ -3945,14 +3945,7 @@ def build_from_cache():
     results = []
     for release_id, (group, title) in RELEASES.items():
         sales        = sales_cache.get(release_id, {}).get("sales", [])
-        stats_key    = f"{release_id}_{today}"
-        # Probeer eerst vandaag, daarna meest recente beschikbare stats
-        stats = stats_cache.get(stats_key)
-        if not stats:
-            candidates = {k: v for k, v in stats_cache.items()
-                          if k.startswith(release_id + "_")}
-            if candidates:
-                stats = candidates[max(candidates)]
+        stats        = stats_cache.get(release_id, {}).get("stats") or {}
         lc_entry     = listings_cache.get(release_id, {})
         raw_listings = lc_entry.get("listings", [])
         results.append({
