@@ -1725,27 +1725,60 @@ def get_release_thumb(release_id):
 
 def scrape_listings_api(release_id):
     """Listings ophalen via officiële Discogs API — werkt ook vanuit GitHub Actions."""
+    # Poging 1: marketplace/search endpoint
     try:
         r = std_requests.get(
             "https://api.discogs.com/marketplace/search",
             headers=DISCOGS_HEADERS,
             params={
                 "release_id": release_id,
-                "status": "For Sale",
-                "sort": "price",
+                "status":     "For Sale",
+                "sort":       "price",
                 "sort_order": "asc",
-                "per_page": 50,
+                "per_page":   50,
             },
             timeout=15,
         )
-        r.raise_for_status()
-        data = r.json()
+        if r.status_code == 200:
+            data = r.json()
+        elif r.status_code == 404:
+            # Endpoint niet gevonden of geen listings — probeer alternatief
+            print(f"  marketplace/search 404 (body: {r.text[:120].strip()!r}) — probeer releases endpoint")
+            data = None
+        else:
+            print(f"  marketplace/search {r.status_code}: {r.text[:120].strip()!r}")
+            data = None
     except Exception as e:
-        print(f"  Listings API fout: {e}")
-        return []
+        print(f"  marketplace/search fout: {e}")
+        data = None
+
+    # Poging 2: /releases/{id}/marketplace als fallback
+    if data is None:
+        try:
+            r2 = std_requests.get(
+                f"https://api.discogs.com/marketplace/listings",
+                headers=DISCOGS_HEADERS,
+                params={
+                    "release_id": release_id,
+                    "status":     "For Sale",
+                    "sort":       "price",
+                    "sort_order": "asc",
+                    "per_page":   50,
+                },
+                timeout=15,
+            )
+            if r2.status_code == 200:
+                data = r2.json()
+                print(f"  releases-listings endpoint werkt (sleutels: {list(data.keys())[:5]})")
+            else:
+                print(f"  marketplace/listings {r2.status_code}: {r2.text[:120].strip()!r}")
+                return []
+        except Exception as e:
+            print(f"  marketplace/listings fout: {e}")
+            return []
 
     listings = []
-    for item in data.get("listings", []):
+    for item in data.get("listings", data.get("results", [])):
         media  = CONDITION_MAP.get(item.get("condition", ""),        item.get("condition", ""))
         sleeve = CONDITION_MAP.get(item.get("sleeve_condition", ""), item.get("sleeve_condition", "Generic"))
         price_obj    = item.get("price", {})

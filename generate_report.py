@@ -53,6 +53,9 @@ if _mark_keys_raw:
     except Exception as _e:
         print(f"MARK_READ_KEYS parse fout: {_e}")
 
+_token_ok = bool(os.getenv("DISCOGS_TOKEN", "").strip())
+print(f"Discogs token: {'aanwezig' if _token_ok else '*** ONTBREEKT — API-calls zullen mislukken ***'}")
+
 force = os.getenv("FORCE_REFRESH", "false").strip().lower() == "true"
 print(f"Scrapen... (force_listings=True, force_stats={force})  [FORCE_REFRESH={os.getenv('FORCE_REFRESH','false')}]")
 
