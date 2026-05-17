@@ -2601,24 +2601,17 @@ def compute_collection_value(item, sales_cache):
     if not sales:
         return None, 0, False
 
-    # Probeer exacte conditie-match, daarna alle verkopen
-    COND_ORDER = ["M", "NM", "VG+", "VG", "G+", "G", "F", "P"]
+    # Probeer exacte conditie-match, daarna alle beschikbare verkopen
     matches = [s for s in sales if s.get("media") == cond]
     exact   = bool(matches)
     if not matches:
-        matches = sales  # val terug op alle condities
+        matches = sales
 
     prices = [s["price"] for s in matches if s.get("price", 0) > 0]
     if not prices:
         return None, 0, False
 
-    # Gebruik mediaan van recente 20 verkopen
-    recent = sorted(matches, key=lambda s: s.get("date", ""), reverse=True)[:20]
-    recent_prices = [s["price"] for s in recent if s.get("price", 0) > 0]
-    if not recent_prices:
-        return None, 0, False
-
-    return sum(recent_prices) / len(recent_prices), len(recent_prices), exact
+    return sum(prices) / len(prices), len(prices), exact
 
 
 def _build_collection_page(collection_items, sales_cache):
@@ -2652,7 +2645,12 @@ def _build_collection_page(collection_items, sales_cache):
         pp_str  = "Cadeau" if is_free else (
             f"€ {pp:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".") if pp is not None else "—"
         )
-        mv_str  = f"€ {mv:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".") if mv is not None else "—"
+        if mv is not None:
+            mv_base = f"€ {mv:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+            cond_lbl = "exact" if exact else "mix"
+            mv_str  = f'{mv_base} <span class="mv-sales" title="{nsales} verkopen ({cond_lbl} conditie)">({nsales})</span>'
+        else:
+            mv_str = "—"
 
         if pp is not None:
             total_inv += pp
@@ -2690,8 +2688,8 @@ def _build_collection_page(collection_items, sales_cache):
             diff = None
             pct  = None
 
-        mv_hint  = "" if exact else " title='Schatting op basis van alle condities'"
-        mv_extra = "" if exact else " *"
+        mv_hint  = ""
+        mv_extra = ""
 
         rows.append({
             "artist": item["artist"], "title": item["title"],
@@ -2705,7 +2703,7 @@ def _build_collection_page(collection_items, sales_cache):
                 f'<td>{item["title"]}</td>'
                 f'<td><span class="badge bd-{cond_cls}">{cond}</span></td>'
                 f'<td class="td-num">{pp_str}</td>'
-                f'<td class="td-num"{mv_hint}>{mv_str}{mv_extra}</td>'
+                f'<td class="td-num">{mv_str}</td>'
                 f'<td class="td-num {diff_cls}">{diff_str}</td>'
                 f'<td class="td-num {diff_cls}" style="font-weight:600">{pct_str}</td>'
                 f'<td class="td-num muted">{date_str}</td>'
@@ -2770,7 +2768,7 @@ def _build_collection_page(collection_items, sales_cache):
           </tr></thead>
           <tbody>{table_rows}</tbody>
         </table>
-        <p class="muted" style="padding:8px 0 0;font-size:11px">* Schatting op basis van gemiddelde over alle condities</p>
+        <p class="muted" style="padding:8px 0 0;font-size:11px">Marktwaarde = gemiddelde van alle beschikbare Discogs-verkopen. Getal tussen haakjes = aantal verkopen (betrouwbaarheid). "mix" = andere condities meegenomen.</p>
       </div>
     </div>"""
 
@@ -3439,6 +3437,7 @@ def build_html(results, static=False, new_listings=None, collection=None):
   .col-lime{{color:#16A34A}}
   .col-orange{{color:#D97706}}
   .col-red{{color:#DC2626;font-weight:600}}
+  .mv-sales{{font-size:11px;color:var(--muted);font-weight:400;margin-left:3px}}
 
   /* ── Badges ── */
   .badge{{display:inline-block;padding:2px 8px;border-radius:20px;
