@@ -109,17 +109,6 @@
     "title": "Pablo Honey (Capitol US 2008, LP 180g)",
     "group": "Radiohead"
   },
-  "2334540_M": {
-    "price": 270.0,
-    "currency": "GBP",
-    "shipping": 0.0,
-    "total_eur": 310.16657093624355,
-    "disc": 19.477943133843144,
-    "tier": "goed",
-    "seller": "JamesHyman",
-    "title": "Time Flies... 1994-2009 (RKIDLP66, Big Brother UK 2010)",
-    "group": "Oasis"
-  },
   "317356_VG+": {
     "price": 120.0,
     "currency": "EUR",
@@ -130,6 +119,17 @@
     "seller": "Grow760",
     "title": "Ready to Die (78612-73000-1, US 1994)",
     "group": "Notorious B.I.G."
+  },
+  "2334540_M": {
+    "price": 270.0,
+    "currency": "GBP",
+    "shipping": 12.0,
+    "total_eur": 323.9517518667432,
+    "disc": 15.899185050902851,
+    "tier": "goed",
+    "seller": "JamesHyman",
+    "title": "Time Flies... 1994-2009 (RKIDLP66, Big Brother UK 2010)",
+    "group": "Oasis"
   },
   "268090_VG": {
     "price": 22.0,
