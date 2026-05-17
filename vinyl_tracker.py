@@ -74,18 +74,22 @@ def _non_eu_adjusted_total(total_eur: float) -> float:
 PORT               = 8765
 USER_RELEASES_FILE = "user_releases.json"
 THUMB_CACHE        = "vinyl_thumb_cache.json"
+MY_COLLECTION_FILE = "my_collection.json"
+COLLECTION_CACHE_DAYS = 1  # collectie dagelijks verversen
 
-EMAIL_FROM = os.getenv("EMAIL_FROM", "").lstrip("﻿").strip()
-EMAIL_TO   = os.getenv("EMAIL_TO",   "").lstrip("﻿").strip()
-EMAIL_PASS = os.getenv("EMAIL_PASS", "").lstrip("﻿").strip()
+EMAIL_FROM       = os.getenv("EMAIL_FROM",       "").lstrip("﻿").strip()
+EMAIL_TO         = os.getenv("EMAIL_TO",         "").lstrip("﻿").strip()
+EMAIL_PASS       = os.getenv("EMAIL_PASS",       "").lstrip("﻿").strip()
+DISCOGS_USERNAME = os.getenv("DISCOGS_USERNAME", "").lstrip("﻿").strip()
 
 # Lokale overrides uit config.py (staat in .gitignore, nooit op GitHub)
 try:
     import config as _cfg
-    DISCOGS_TOKEN = DISCOGS_TOKEN or getattr(_cfg, "DISCOGS_TOKEN", "")
-    EMAIL_FROM    = EMAIL_FROM    or getattr(_cfg, "EMAIL_FROM",    "")
-    EMAIL_TO      = EMAIL_TO      or getattr(_cfg, "EMAIL_TO",      "")
-    EMAIL_PASS    = EMAIL_PASS    or getattr(_cfg, "EMAIL_PASS",    "")
+    DISCOGS_TOKEN    = DISCOGS_TOKEN    or getattr(_cfg, "DISCOGS_TOKEN",    "")
+    EMAIL_FROM       = EMAIL_FROM       or getattr(_cfg, "EMAIL_FROM",       "")
+    EMAIL_TO         = EMAIL_TO         or getattr(_cfg, "EMAIL_TO",         "")
+    EMAIL_PASS       = EMAIL_PASS       or getattr(_cfg, "EMAIL_PASS",       "")
+    DISCOGS_USERNAME = DISCOGS_USERNAME or getattr(_cfg, "DISCOGS_USERNAME", "")
 except ImportError:
     pass
 
@@ -2371,13 +2375,419 @@ def send_deals_email(deals, subject_prefix="Nieuwe deals"):
         print(f"Email fout: {e}")
 
 
-def build_html(results, static=False, new_listings=None):
+# ─── MIJN COLLECTIE ───────────────────────────────────────────────────────────
+
+def get_discogs_username(token):
+    """Haal de ingelogde Discogs-gebruikersnaam op via het token."""
+    try:
+        r = std_requests.get(
+            "https://api.discogs.com/oauth/identity",
+            headers={"Authorization": f"Discogs token={token}",
+                     "User-Agent": "VinylTracker/1.0"},
+            timeout=10,
+        )
+        r.raise_for_status()
+        return r.json().get("username", "")
+    except Exception as e:
+        print(f"  Kon Discogs-gebruikersnaam niet ophalen: {e}")
+        return ""
+
+
+_DISCOGS_COND_MAP = {
+    "mint (m)":                       "M",
+    "near mint (nm or m-)":            "NM",
+    "very good plus (vg+)":            "VG+",
+    "very good (vg)":                  "VG",
+    "good plus (g+)":                  "G+",
+    "good (g)":                        "G",
+    "fair (f)":                        "F",
+    "poor (p)":                        "P",
+    "m":  "M",  "nm": "NM", "vg+": "VG+", "vg": "VG",
+    "g+": "G+", "g":  "G",  "f":   "F",   "p":  "P",
+}
+
+
+def _normalize_condition(raw):
+    """Vertaal Discogs lange conditienamen naar de korte codes (NM, VG+, enz.)."""
+    if not raw:
+        return ""
+    key = raw.strip().lower()
+    return _DISCOGS_COND_MAP.get(key, raw.strip())
+
+
+def fetch_discogs_collection(username, token):
+    """
+    Haal de volledige Discogs-collectie op voor `username`.
+    Geeft lijst van dicts terug: release_id, artist, title, condition,
+    purchase_price (€ of None), date_added.
+    """
+    headers = {"Authorization": f"Discogs token={token}",
+               "User-Agent": "VinylTracker/1.0"}
+
+    # 1. Collectievelden ophalen → zoek 'price paid' / 'betaald' veld-ID
+    price_field_id = None
+    try:
+        fr = std_requests.get(
+            f"https://api.discogs.com/users/{username}/collection/fields",
+            headers=headers, timeout=10,
+        )
+        fr.raise_for_status()
+        for f in fr.json().get("fields", []):
+            name_lower = f.get("name", "").lower()
+            if any(kw in name_lower for kw in ("price", "paid", "betaald", "prijs", "cost")):
+                price_field_id = f["id"]
+                print(f"  Collectie-veld gevonden: '{f['name']}' (id={price_field_id})")
+                break
+    except Exception as e:
+        print(f"  Collectievelden ophalen mislukt: {e}")
+
+    # 2. Alle collectie-items ophalen (gepagineerd)
+    items = []
+    page  = 1
+    while True:
+        try:
+            cr = std_requests.get(
+                f"https://api.discogs.com/users/{username}/collection/folders/0/releases",
+                headers=headers,
+                params={"per_page": 100, "page": page},
+                timeout=15,
+            )
+            cr.raise_for_status()
+            data  = cr.json()
+            batch = data.get("releases", [])
+            if not batch:
+                break
+            for item in batch:
+                bi      = item.get("basic_information", {})
+                rid     = str(bi.get("id", item.get("id", "")))
+                title   = bi.get("title", "?")
+                artists = bi.get("artists", [{}])
+                artist  = re.sub(r'\s*\(\d+\)$', '', artists[0].get("name", "?")).strip() if artists else "?"
+                date_added = item.get("date_added", "")[:10]
+
+                # Conditie uit notities (veld 1 = media-conditie in Discogs standaard)
+                notes   = {n["field_id"]: n["value"] for n in item.get("notes", [])}
+                condition = _normalize_condition(notes.get(1, ""))
+
+                # Aankoopprijs
+                purchase_price = None
+                if price_field_id and price_field_id in notes:
+                    raw = notes[price_field_id].replace(",", ".").strip()
+                    raw = re.sub(r"[^\d.]", "", raw)
+                    try:
+                        purchase_price = float(raw) if raw else None
+                    except ValueError:
+                        pass
+
+                items.append({
+                    "release_id":     rid,
+                    "artist":         artist,
+                    "title":          title,
+                    "condition":      condition,
+                    "purchase_price": purchase_price,
+                    "date_added":     date_added,
+                })
+
+            pages = data.get("pagination", {}).get("pages", 1)
+            if page >= pages:
+                break
+            page += 1
+            time.sleep(0.4)
+        except Exception as e:
+            print(f"  Collectie pagina {page} mislukt: {e}")
+            break
+
+    print(f"  {len(items)} items opgehaald uit Discogs-collectie")
+    return items
+
+
+def load_collection():
+    raw = load_cache(MY_COLLECTION_FILE)
+    return raw if isinstance(raw, dict) else {}
+
+
+def save_collection(data):
+    save_cache(MY_COLLECTION_FILE, data)
+
+
+def _collection_needs_refresh(data):
+    fetched = data.get("fetched_at", "")
+    if not fetched:
+        return True
+    try:
+        age = (datetime.now() - datetime.strptime(fetched, "%Y-%m-%d")).days
+        return age >= COLLECTION_CACHE_DAYS
+    except Exception:
+        return True
+
+
+MY_PRICES_FILE = "my_collection_prices.json"
+
+
+def load_price_overrides():
+    """Laad handmatig ingestelde aankoopprijzen uit my_collection_prices.json."""
+    return load_cache(MY_PRICES_FILE)
+
+
+def import_collection(force=False):
+    """
+    Laad de collectie uit cache of haal hem op via de Discogs API.
+    Voegt handmatige prijsoverschrijvingen toe uit my_collection_prices.json.
+    Geeft lijst van collectie-items terug.
+    """
+    data = load_collection()
+    if not force and not _collection_needs_refresh(data) and data.get("items"):
+        print(f"  Collectie geladen uit cache ({len(data['items'])} items)")
+        items = data["items"]
+    else:
+        username = DISCOGS_USERNAME
+        if not username and DISCOGS_TOKEN:
+            username = get_discogs_username(DISCOGS_TOKEN)
+        if not username:
+            print("  Geen Discogs-gebruikersnaam — collectie overgeslagen")
+            items = data.get("items", [])
+        else:
+            print(f"  Discogs-collectie ophalen voor '{username}'...")
+            items = fetch_discogs_collection(username, DISCOGS_TOKEN)
+            save_collection({"fetched_at": datetime.now().strftime("%Y-%m-%d"),
+                             "username": username,
+                             "items": items})
+
+    # Conditie normaliseren (backward compat: cache kan lange namen bevatten)
+    for item in items:
+        item["condition"] = _normalize_condition(item.get("condition", ""))
+
+    # Prijsoverschrijvingen toepassen (release_id → prijs)
+    overrides = load_price_overrides()
+    if overrides:
+        for item in items:
+            rid = item["release_id"]
+            if rid in overrides and item.get("purchase_price") is None:
+                try:
+                    v = overrides[rid]
+                    item["purchase_price"] = float(v) if v is not None else None
+                except (TypeError, ValueError):
+                    pass
+
+    # Nieuwe releases registreren in RELEASES zodat ze ook gescraped worden
+    user_rel  = load_cache(USER_RELEASES_FILE)
+    new_count = 0
+    for item in items:
+        rid = item["release_id"]
+        if rid not in RELEASES:
+            group = item["artist"]
+            title = item["title"]
+            RELEASES[rid] = (group, title)
+        if rid not in user_rel:
+            user_rel[rid] = [RELEASES[rid][0], RELEASES[rid][1]]
+            new_count += 1
+    if new_count:
+        save_cache(USER_RELEASES_FILE, user_rel)
+        print(f"  {new_count} collectie-releases toegevoegd aan tracker")
+
+    return items
+
+
+def compute_collection_value(item, sales_cache):
+    """
+    Bereken de huidige marktwaarde voor één collectie-item op basis van
+    recente verkoopprijzen uit de sales-cache.
+    Geeft (market_value, num_sales, is_exact_cond) terug.
+    """
+    rid   = item["release_id"]
+    cond  = item.get("condition", "")
+    entry = sales_cache.get(rid, {})
+    sales = entry.get("sales", [])
+    if not sales:
+        return None, 0, False
+
+    # Probeer exacte conditie-match, daarna alle verkopen
+    COND_ORDER = ["M", "NM", "VG+", "VG", "G+", "G", "F", "P"]
+    matches = [s for s in sales if s.get("media") == cond]
+    exact   = bool(matches)
+    if not matches:
+        matches = sales  # val terug op alle condities
+
+    prices = [s["price"] for s in matches if s.get("price", 0) > 0]
+    if not prices:
+        return None, 0, False
+
+    # Gebruik mediaan van recente 20 verkopen
+    recent = sorted(matches, key=lambda s: s.get("date", ""), reverse=True)[:20]
+    recent_prices = [s["price"] for s in recent if s.get("price", 0) > 0]
+    if not recent_prices:
+        return None, 0, False
+
+    return sum(recent_prices) / len(recent_prices), len(recent_prices), exact
+
+
+def _build_collection_page(collection_items, sales_cache):
+    """Bouw de HTML-pagina 'Mijn Collectie'."""
+    if not collection_items:
+        return """
+    <div class="page" id="mijn-collectie" style="display:none">
+      <div class="page-header"><h2>Mijn Collectie</h2></div>
+      <div class="card"><p class="no-data" style="padding:24px">
+        Geen collectie gevonden. Zet <code>DISCOGS_USERNAME</code> in je config.py
+        of voeg hem toe als GitHub Secret.
+      </p></div>
+    </div>"""
+
+    rows      = []
+    total_inv = 0.0
+    total_val = 0.0
+    unknown_price = 0
+    unknown_val   = 0
+
+    for item in collection_items:
+        mv, nsales, exact = compute_collection_value(item, sales_cache)
+        pp  = item.get("purchase_price")
+        cond = item.get("condition", "—") or "—"
+        cond_cls = cond.replace("+", "p").replace("-", "m")
+        date_str = item.get("date_added", "")[:10] or "—"
+        rid  = item["release_id"]
+        name = f"{item['artist']} — {item['title']}"
+
+        is_free = (pp == 0)
+        pp_str  = "Cadeau" if is_free else (
+            f"€ {pp:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".") if pp is not None else "—"
+        )
+        mv_str  = f"€ {mv:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".") if mv is not None else "—"
+
+        if pp is not None:
+            total_inv += pp
+        else:
+            unknown_price += 1
+
+        if mv is not None:
+            total_val += mv
+        else:
+            unknown_val += 1
+
+        if pp is not None and mv is not None:
+            diff = mv - pp
+            if is_free:
+                diff_str = f"+{mv:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+                pct_str  = "&#x221E;"   # ∞
+                diff_cls = "col-green"
+            else:
+                pct  = (diff / pp * 100) if pp > 0 else 0
+                diff_str = f"{'+' if diff >= 0 else ''}{diff:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+                pct_str  = f"{'+' if pct >= 0 else ''}{pct:.1f}%"
+                if pct >= 10:
+                    diff_cls = "col-green"
+                elif pct >= 0:
+                    diff_cls = "col-lime"
+                elif pct >= -15:
+                    diff_cls = "col-orange"
+                else:
+                    diff_cls = "col-red"
+            pct = None if is_free else pct
+        else:
+            diff_str = "—"
+            pct_str  = "—"
+            diff_cls = ""
+            diff = None
+            pct  = None
+
+        mv_hint  = "" if exact else " title='Schatting op basis van alle condities'"
+        mv_extra = "" if exact else " *"
+
+        rows.append({
+            "artist": item["artist"], "title": item["title"],
+            "cond": cond, "pp": pp, "mv": mv,
+            "diff": diff, "pct": pct,
+            "html": (
+                f'<tr data-group="{item["artist"]}" data-title="{item["title"]}" '
+                f'data-cond="{cond}" data-diff="{diff if diff is not None else ""}">'
+                f'<td><a href="https://www.discogs.com/release/{rid}" target="_blank" '
+                f'style="color:inherit;text-decoration:none">{item["artist"]}</a></td>'
+                f'<td>{item["title"]}</td>'
+                f'<td><span class="badge bd-{cond_cls}">{cond}</span></td>'
+                f'<td class="td-num">{pp_str}</td>'
+                f'<td class="td-num"{mv_hint}>{mv_str}{mv_extra}</td>'
+                f'<td class="td-num {diff_cls}">{diff_str}</td>'
+                f'<td class="td-num {diff_cls}" style="font-weight:600">{pct_str}</td>'
+                f'<td class="td-num muted">{date_str}</td>'
+                f'</tr>'
+            )
+        })
+
+    # Sorteer standaard op meeste winst
+    rows.sort(key=lambda x: (x["pct"] is None, -(x["pct"] or 0)))
+    table_rows = "\n".join(r["html"] for r in rows)
+
+    # Samenvattingscijfers
+    def _fmt(v):
+        s = f"€ {v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+        return s
+
+    total_diff = total_val - total_inv
+    total_pct  = (total_diff / total_inv * 100) if total_inv > 0 else 0
+    diff_sign  = "+" if total_diff >= 0 else ""
+    pct_sign   = "+" if total_pct  >= 0 else ""
+    diff_col   = "#10B981" if total_diff >= 0 else "#EF4444"
+
+    return f"""
+    <div class="page" id="mijn-collectie" style="display:none">
+      <div class="page-header">
+        <h2>Mijn Collectie</h2>
+        <span class="sub">{len(collection_items)} platen</span>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-val">{len(collection_items)}</div>
+          <div class="stat-lbl">Platen</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val" style="font-size:16px">{_fmt(total_inv)}</div>
+          <div class="stat-lbl">Totaal betaald</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val" style="font-size:16px">{_fmt(total_val)}</div>
+          <div class="stat-lbl">Huidige waarde</div>
+        </div>
+        <div class="stat-card" style="border-top:3px solid {diff_col}">
+          <div class="stat-val" style="font-size:16px;color:{diff_col}">{diff_sign}{_fmt(total_diff)}</div>
+          <div class="stat-lbl">Winst / Verlies</div>
+        </div>
+        <div class="stat-card" style="border-top:3px solid {diff_col}">
+          <div class="stat-val" style="color:{diff_col}">{pct_sign}{total_pct:.1f}%</div>
+          <div class="stat-lbl">Return</div>
+        </div>
+      </div>
+      <div class="card">
+        <table class="ov-table sortable-table" id="tbl-coll">
+          <thead><tr>
+            <th class="th-sort" onclick="sortCollTable(0,this)">Artiest</th>
+            <th class="th-sort" onclick="sortCollTable(1,this)">Album</th>
+            <th>Cond.</th>
+            <th class="th-sort th-r" onclick="sortCollTable(3,this)">Betaald</th>
+            <th class="th-sort th-r" onclick="sortCollTable(4,this)">Marktwaarde</th>
+            <th class="th-sort th-r" onclick="sortCollTable(5,this)">+/- €</th>
+            <th class="th-sort th-r" onclick="sortCollTable(6,this)">+/- %</th>
+            <th class="th-sort th-r" onclick="sortCollTable(7,this)">Datum</th>
+          </tr></thead>
+          <tbody>{table_rows}</tbody>
+        </table>
+        <p class="muted" style="padding:8px 0 0;font-size:11px">* Schatting op basis van gemiddelde over alle condities</p>
+      </div>
+    </div>"""
+
+
+def build_html(results, static=False, new_listings=None, collection=None):
     now    = datetime.now().strftime("%d/%m/%Y %H:%M")
     groups = list(dict.fromkeys(r["group"] for r in results))
     thumbs = load_cache(THUMB_CACHE)
 
     # ── Top Deals berekening (nodig voor home stats) ───────────────────────
     deals = compute_deals(results)
+
+    # ── Mijn Collectie pagina ──────────────────────────────────────────────
+    sales_cache       = load_cache(SALES_CACHE)
+    collection_items  = collection or []
+    collection_page   = _build_collection_page(collection_items, sales_cache)
+    coll_count        = len(collection_items)
 
     # ── Per-artiest pagina's ───────────────────────────────────────────────
     artist_pages = ""
@@ -2761,6 +3171,11 @@ def build_html(results, static=False, new_listings=None):
         Top Deals
         <span class="nav-badge">{len(deals)}</span>
       </div>
+      <div class="nav-item" data-page="mijn-collectie" onclick="showPage('mijn-collectie')">
+        <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>
+        Mijn Collectie
+        {f'<span class="nav-badge" style="background:#8B5CF6">{coll_count}</span>' if coll_count else ''}
+      </div>
       <div class="nav-sep"></div>
       {nav_genres}
     </nav>"""
@@ -3020,6 +3435,10 @@ def build_html(results, static=False, new_listings=None):
   .home-row{{cursor:pointer;transition:background .12s}}
   .home-row:hover td{{background:rgba(16,185,129,.04)}}
   .no-data{{color:var(--muted);font-style:italic;font-size:13px;padding:20px 14px}}
+  .col-green{{color:#059669;font-weight:600}}
+  .col-lime{{color:#16A34A}}
+  .col-orange{{color:#D97706}}
+  .col-red{{color:#DC2626;font-weight:600}}
 
   /* ── Badges ── */
   .badge{{display:inline-block;padding:2px 8px;border-radius:20px;
@@ -3240,6 +3659,7 @@ def build_html(results, static=False, new_listings=None):
   {new_listings_page}
   {invest_listings_page}
   {deals_page}
+  {collection_page}
   {artist_pages}
 </main>
 {"" if not static else """
@@ -3592,6 +4012,31 @@ function clearFilters(tid){{
   if(c)c.value='';
   applyFilters(tid);
 }}
+function sortCollTable(col,th){{
+  var tbody=document.querySelector('#tbl-coll tbody');
+  if(!tbody)return;
+  var rows=Array.from(tbody.querySelectorAll('tr'));
+  var asc=!th.classList.contains('asc');
+  document.querySelectorAll('#tbl-coll .th-sort').forEach(function(h){{h.classList.remove('asc','desc');}});
+  th.classList.add(asc?'asc':'desc');
+  var numCols=[3,4,5,6,7];
+  rows.sort(function(a,b){{
+    var ca=a.cells[col]?a.cells[col].textContent.trim():'';
+    var cb=b.cells[col]?b.cells[col].textContent.trim():'';
+    if(ca==='—'&&cb!=='—')return asc?1:-1;
+    if(cb==='—'&&ca!=='—')return asc?-1:1;
+    if(ca==='—'&&cb==='—')return 0;
+    if(numCols.indexOf(col)>=0){{
+      var na=parseFloat(ca.replace(/[^0-9.+-]/g,''));
+      var nb=parseFloat(cb.replace(/[^0-9.+-]/g,''));
+      if(isNaN(na))na=asc?Infinity:-Infinity;
+      if(isNaN(nb))nb=asc?Infinity:-Infinity;
+      return asc?na-nb:nb-na;
+    }}
+    return asc?ca.localeCompare(cb,'nl'):cb.localeCompare(ca,'nl');
+  }});
+  rows.forEach(function(r){{tbody.appendChild(r);}});
+}}
 </script>
 </body>
 </html>"""
@@ -3834,9 +4279,10 @@ def _log(msg):
         pass
 
 
-def run_server(initial_results, cookies, session):
+def run_server(initial_results, cookies, session, collection=None):
     state = {"results": initial_results, "refreshing": False,
-             "new_listings": compute_new_listings(initial_results)}
+             "new_listings": compute_new_listings(initial_results),
+             "collection": collection or []}
 
     def _push_to_github():
         """Genereer docs/index.html lokaal en push alles naar GitHub Pages."""
@@ -3847,7 +4293,8 @@ def run_server(initial_results, cookies, session):
         try:
             results = state.get("results") or build_from_cache()
             html = build_html(results, static=True,
-                              new_listings=state.get("new_listings", []))
+                              new_listings=state.get("new_listings", []),
+                              collection=state.get("collection", []))
             docs_dir = os.path.join(repo, "docs")
             os.makedirs(docs_dir, exist_ok=True)
             with open(os.path.join(docs_dir, "index.html"), "w", encoding="utf-8") as fh:
@@ -3863,7 +4310,7 @@ def run_server(initial_results, cookies, session):
             "generate_report.py",
             os.path.join("docs", "index.html"),
             SALES_CACHE, STATS_CACHE, LISTINGS_CACHE,
-            DEALS_SEEN_FILE, LISTINGS_SEEN_FILE, USER_RELEASES_FILE, THUMB_CACHE,
+            DEALS_SEEN_FILE, LISTINGS_SEEN_FILE, USER_RELEASES_FILE, THUMB_CACHE, MY_COLLECTION_FILE,
         ]
         existing = [f for f in files if os.path.exists(os.path.join(repo, f))]
         try:
@@ -3927,7 +4374,8 @@ def run_server(initial_results, cookies, session):
         def do_GET(self):
             if self.path in ("/", "/index.html"):
                 # HTML altijd vers genereren — nooit stale cache
-                html = build_html(state["results"], new_listings=state.get("new_listings", []))
+                html = build_html(state["results"], new_listings=state.get("new_listings", []),
+                                   collection=state.get("collection", []))
                 self._respond(200, "text/html; charset=utf-8", html.encode("utf-8"))
             elif self.path == "/refresh":
                 if not state["refreshing"]:
@@ -4071,8 +4519,9 @@ def main():
     print("Cache laden en server starten...\n")
 
     # Snelle start: cache inlezen, geen netwerk
-    results = build_from_cache()
-    run_server(results, cookies, session)
+    results    = build_from_cache()
+    collection = import_collection()
+    run_server(results, cookies, session, collection=collection)
 
 if __name__ == "__main__":
     main()

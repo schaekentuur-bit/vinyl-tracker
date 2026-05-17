@@ -33,6 +33,7 @@ jobs:
       - name: Genereer rapport
         env:
           DISCOGS_TOKEN:       ${{ secrets.DISCOGS_TOKEN }}
+          DISCOGS_USERNAME:    ${{ secrets.DISCOGS_USERNAME }}
           DISCOGS_COOKIES_B64: ${{ secrets.DISCOGS_COOKIES_B64 }}
           EMAIL_FROM:          ${{ secrets.EMAIL_FROM }}
           EMAIL_TO:            ${{ secrets.EMAIL_TO }}
@@ -53,6 +54,7 @@ jobs:
           git add vinyl_history_cache.json 2>/dev/null || true
           git add user_releases.json 2>/dev/null || true
           git add vinyl_thumb_cache.json 2>/dev/null || true
+          git add my_collection.json 2>/dev/null || true
           git status --short
           git diff --staged --quiet || git commit -m "Vinyl rapport $(date +'%Y-%m-%d %H:%M')"
           git push

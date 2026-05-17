@@ -23,7 +23,7 @@ from curl_cffi import requests as cf_requests
 from vinyl_tracker import (
     scrape_all, build_html, compute_deals,
     send_deals_email, find_new_deals,
-    compute_new_listings,
+    compute_new_listings, import_collection,
     load_cache, save_cache,
     DEALS_SEEN_FILE, LISTINGS_SEEN_FILE, _deal_key, RELEASES, USER_RELEASES_FILE
 )
@@ -73,7 +73,8 @@ try:
     new_listings = compute_new_listings(results)
     print(f"{len(new_listings)} nieuwe listings gevonden")
 
-    html = build_html(results, static=True, new_listings=new_listings)
+    collection = import_collection()
+    html = build_html(results, static=True, new_listings=new_listings, collection=collection)
 
     os.makedirs("docs", exist_ok=True)
     with open("docs/index.html", "w", encoding="utf-8") as f:
