@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-05-17",
+  "fetched_at": "2026-05-18",
   "username": "tuur00schaeken",
   "items": [
     {
       "release_id": "14186441",
       "artist": "The Beatles",
       "title": "Abbey Road",
-      "condition": "Mint (M)",
+      "condition": "M",
       "purchase_price": null,
       "date_added": "2026-05-15"
     },
@@ -14,7 +14,7 @@
       "release_id": "33663000",
       "artist": "Oasis",
       "title": "Time Flies... 1994-2009",
-      "condition": "M",
+      "condition": "",
       "purchase_price": null,
       "date_added": "2026-05-12"
     },
@@ -22,7 +22,7 @@
       "release_id": "6127871",
       "artist": "Oasis",
       "title": "(What's The Story) Morning Glory?",
-      "condition": "Mint (M)",
+      "condition": "M",
       "purchase_price": null,
       "date_added": "2026-05-16"
     },
@@ -30,7 +30,7 @@
       "release_id": "12773291",
       "artist": "Travis Scott",
       "title": "Astroworld",
-      "condition": "Very Good (VG)",
+      "condition": "VG",
       "purchase_price": null,
       "date_added": "2021-12-24"
     },
@@ -38,7 +38,7 @@
       "release_id": "22031233",
       "artist": "Flatbush Zombies",
       "title": "3001: A Laced Odyssey",
-      "condition": "Very Good Plus (VG+)",
+      "condition": "VG+",
       "purchase_price": null,
       "date_added": "2026-05-10"
     },
@@ -46,7 +46,7 @@
       "release_id": "14713017",
       "artist": "Juice WRLD",
       "title": "Goodbye & Good Riddance",
-      "condition": "Mint (M)",
+      "condition": "M",
       "purchase_price": null,
       "date_added": "2026-05-15"
     },
@@ -54,7 +54,7 @@
       "release_id": "21374590",
       "artist": "Kevin",
       "title": "Animal Stories",
-      "condition": "Mint (M)",
+      "condition": "M",
       "purchase_price": null,
       "date_added": "2026-05-15"
     },
@@ -62,7 +62,7 @@
       "release_id": "22865237",
       "artist": "Hef",
       "title": "Hefvermogen",
-      "condition": "Mint (M)",
+      "condition": "M",
       "purchase_price": null,
       "date_added": "2026-05-10"
     },
@@ -70,7 +70,7 @@
       "release_id": "22943018",
       "artist": "Hef",
       "title": "Hefvermogen 2 (Deluxe 10 CD Box)",
-      "condition": "VG",
+      "condition": "",
       "purchase_price": null,
       "date_added": "2026-05-10"
     },
@@ -78,7 +78,7 @@
       "release_id": "30188873",
       "artist": "Hef",
       "title": "Geit",
-      "condition": "Mint (M)",
+      "condition": "M",
       "purchase_price": null,
       "date_added": "2026-05-10"
     },
@@ -86,7 +86,7 @@
       "release_id": "30244973",
       "artist": "Hef",
       "title": "Ruman",
-      "condition": "Mint (M)",
+      "condition": "M",
       "purchase_price": null,
       "date_added": "2026-05-10"
     },
@@ -94,7 +94,7 @@
       "release_id": "30215912",
       "artist": "Hef",
       "title": "13 / Zes En Een Half",
-      "condition": "Near Mint (NM or M-)",
+      "condition": "NM",
       "purchase_price": null,
       "date_added": "2026-05-10"
     },
@@ -102,7 +102,7 @@
       "release_id": "10090232",
       "artist": "Joey Bada$$",
       "title": "All-Amerikkkan Bada$$",
-      "condition": "Mint (M)",
+      "condition": "M",
       "purchase_price": null,
       "date_added": "2021-12-24"
     },
@@ -110,7 +110,7 @@
       "release_id": "7055196",
       "artist": "Bob Marley",
       "title": "The Best Of Bob Marley",
-      "condition": "Mint (M)",
+      "condition": "M",
       "purchase_price": null,
       "date_added": "2021-12-24"
     }
