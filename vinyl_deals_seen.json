@@ -43,17 +43,6 @@
     "title": "Nevermind 20th Anniversary (B0015884-01, US 2011)",
     "group": "Nirvana"
   },
-  "223127_VG+": {
-    "price": 80.0,
-    "currency": "EUR",
-    "shipping": 9.0,
-    "total_eur": 89.0,
-    "disc": 4.455179817498664,
-    "tier": "beste",
-    "seller": "hiphopgermany.de",
-    "title": "The Infamous (07863 66480-1, US 1995)",
-    "group": "Mobb Deep"
-  },
   "676619_VG+": {
     "price": 45.0,
     "currency": "EUR",
@@ -75,6 +64,17 @@
     "seller": "Raysing",
     "title": "Insomniac (093624884576, Reprise US/EU 2021, LP 25th Anniversary)",
     "group": "Green Day"
+  },
+  "223127_VG+": {
+    "price": 80.0,
+    "currency": "EUR",
+    "shipping": 9.0,
+    "total_eur": 89.0,
+    "disc": 31.43150640957048,
+    "tier": "goed",
+    "seller": "hiphopgermany.de",
+    "title": "The Infamous (07863 66480-1, US 1995)",
+    "group": "Mobb Deep"
   },
   "2048352_NM": {
     "price": 70.0,
@@ -125,7 +125,7 @@
     "currency": "EUR",
     "shipping": 19.9,
     "total_eur": 139.9,
-    "disc": 18.030278863712564,
+    "disc": 19.237848153707198,
     "tier": "goed",
     "seller": "Grow760",
     "title": "Ready to Die (78612-73000-1, US 1994)",
@@ -180,22 +180,11 @@
     "currency": "EUR",
     "shipping": 7.5,
     "total_eur": 31.8,
-    "disc": 12.235985518775266,
+    "disc": 12.270167637655998,
     "tier": "goed",
     "seller": "sonic-vinyls",
     "title": "A Night at the Opera half-speed (00602547202697, EU 2015)",
     "group": "Queen"
-  },
-  "7801798_VG+": {
-    "price": 55.0,
-    "currency": "EUR",
-    "shipping": 20.0,
-    "total_eur": 75.0,
-    "disc": 10.815812356469197,
-    "tier": "goed",
-    "seller": "Maugof",
-    "title": "Abbey Road (PCS 7088, UK first pressing 1969)",
-    "group": "Beatles"
   },
   "16938279_M": {
     "price": 21.99,
@@ -208,6 +197,17 @@
     "title": "Shoot for the Stars Aim for the Moon (00602507306465, Victor Victor/Republic EU 2020, 2LP)",
     "group": "Pop Smoke"
   },
+  "7801798_VG+": {
+    "price": 55.0,
+    "currency": "EUR",
+    "shipping": 20.0,
+    "total_eur": 75.0,
+    "disc": 9.772839855636544,
+    "tier": "goed",
+    "seller": "Maugof",
+    "title": "Abbey Road (PCS 7088, UK first pressing 1969)",
+    "group": "Beatles"
+  },
   "474703_VG+": {
     "price": 18000.0,
     "currency": "JPY",
@@ -218,16 +218,5 @@
     "seller": "Tokyo_Atari",
     "title": "Demon Days (07243 873838 1 4, Parlophone UK 2005, 2LP gatefold)",
     "group": "Gorillaz"
-  },
-  "375491_VG+": {
-    "price": 80.0,
-    "currency": "EUR",
-    "shipping": 7.49,
-    "total_eur": 87.49,
-    "disc": 5.490291393232343,
-    "tier": "goed",
-    "seller": "RoughTrade_EU",
-    "title": "Blood Sugar Sex Magik (7599-26681-1, EU first pressing 1991)",
-    "group": "RHCP"
   }
 }
