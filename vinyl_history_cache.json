@@ -3759,5 +3759,16 @@
       },
       "blocked_from_sale": false
     }
+  },
+  "1203470": {
+    "fetched_at": "2026-05-19T16:39:17",
+    "stats": {
+      "num_for_sale": 236,
+      "lowest_price": {
+        "value": 18.83,
+        "currency": "EUR"
+      },
+      "blocked_from_sale": false
+    }
   }
 }
