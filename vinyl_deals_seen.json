@@ -76,17 +76,6 @@
     "title": "The Infamous (07863 66480-1, US 1995)",
     "group": "Mobb Deep"
   },
-  "21374590_M": {
-    "price": 35.0,
-    "currency": "EUR",
-    "shipping": 8.0,
-    "total_eur": 43.0,
-    "disc": 26.260432148165087,
-    "tier": "goed",
-    "seller": "MusicShopKore",
-    "title": "Animal Stories",
-    "group": "Kevin"
-  },
   "470912_VG+": {
     "price": 40.0,
     "currency": "GBP",
@@ -97,6 +86,17 @@
     "seller": "Arpadys2009",
     "title": "London Calling (CBS CLASH 3, CBS UK 1979, 2LP)",
     "group": "The Clash"
+  },
+  "21374590_M": {
+    "price": 35.88,
+    "currency": "EUR",
+    "shipping": 9.8,
+    "total_eur": 45.68000000000001,
+    "disc": 21.664570709957687,
+    "tier": "goed",
+    "seller": "vinyldigital.de",
+    "title": "Animal Stories",
+    "group": "Kevin"
   },
   "1635232_M": {
     "price": 40.99,
