@@ -76,6 +76,17 @@
     "title": "The Infamous (07863 66480-1, US 1995)",
     "group": "Mobb Deep"
   },
+  "470912_VG+": {
+    "price": 40.0,
+    "currency": "GBP",
+    "shipping": 17.5,
+    "total_eur": 66.53706403758477,
+    "disc": 24.682127303931967,
+    "tier": "goed",
+    "seller": "Arpadys2009",
+    "title": "London Calling (CBS CLASH 3, CBS UK 1979, 2LP)",
+    "group": "The Clash"
+  },
   "21374590_M": {
     "price": 35.88,
     "currency": "EUR",
@@ -97,6 +108,17 @@
     "seller": "Discopolis.AU",
     "title": "Life After Death (78612-73011-1, Bad Boy/Arista US 1997, 3LP)",
     "group": "Notorious B.I.G."
+  },
+  "383777_NM": {
+    "price": 325.0,
+    "currency": "USD",
+    "shipping": 30.0,
+    "total_eur": 306.16645105648985,
+    "disc": 19.838193106900697,
+    "tier": "goed",
+    "seller": "analogdurkee",
+    "title": "Appetite for Destruction (XXXG 24148, US Allied 1987)",
+    "group": "Guns N' Roses"
   },
   "317356_VG+": {
     "price": 120.0,
