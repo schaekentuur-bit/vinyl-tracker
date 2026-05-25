@@ -1672,13 +1672,22 @@ def scrape_listings(release_id, cookies, session):
 
 def load_cache(path):
     if os.path.exists(path):
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(path, encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            import shutil
+            backup = path + ".corrupt"
+            shutil.move(path, backup)
+            print(f"Waarschuwing: {path} is corrupt en hernoemd naar {backup}. Wordt opnieuw opgebouwd.")
     return {}
 
 def save_cache(path, data):
-    with open(path, "w", encoding="utf-8") as f:
+    # Schrijf eerst naar tijdelijk bestand, dan atomisch hernoemen (voorkomt halve writes)
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
+    os.replace(tmp, path)
 
 def cache_is_fresh(entry, max_days=CACHE_DAYS, max_hours=None):
     try:
@@ -2254,9 +2263,32 @@ def compute_new_listings(results, existing=None):
     if len(pruned) != len(seen):
         save_cache(LISTINGS_SEEN_FILE, pruned)
 
-    # Behoud bestaande ongelezen items, voeg nieuwe toe, sorteer op % vs gem
-    retained = [nl for nl in existing if nl["key"] not in seen]
-    combined  = retained + new_items
+    # Bouw lookup: release_id -> by_cond, zodat retained listings herberekend kunnen worden
+    by_cond_per_release = {}
+    for r in results:
+        bc = {}
+        for s in r["sales"]:
+            eff = _effective_cond(s["media"], s.get("sleeve", s["media"]))
+            bc.setdefault(eff, []).append(s)
+        by_cond_per_release[r["id"]] = bc
+
+    # Behoud bestaande ongelezen items; herbereken pct als het ontbrak maar nu wel kan
+    retained = []
+    for nl in existing:
+        if nl["key"] in seen:
+            continue
+        if nl["pct"] is None:
+            bc = by_cond_per_release.get(nl["r"]["id"], {})
+            cond_sales = bc.get(nl["eff_cond"], [])
+            if cond_sales:
+                prices_eur = [_to_eur(s["price"], s.get("currency", "EUR")) for s in cond_sales]
+                avg = sum(prices_eur) / len(prices_eur)
+                nl = dict(nl)
+                nl["avg"] = avg
+                nl["pct"] = (nl["adj_total"] - avg) / avg * 100
+        retained.append(nl)
+
+    combined = retained + new_items
     combined.sort(key=lambda x: (x["pct"] is None, x["pct"] or 0))
     return combined
 
