@@ -76,6 +76,17 @@
     "title": "The Infamous (07863 66480-1, US 1995)",
     "group": "Mobb Deep"
   },
+  "383777_NM": {
+    "price": 300.0,
+    "currency": "USD",
+    "shipping": 30.0,
+    "total_eur": 284.6054333764554,
+    "disc": 25.274496212035157,
+    "tier": "goed",
+    "seller": "analogdurkee",
+    "title": "Appetite for Destruction (XXXG 24148, US Allied 1987)",
+    "group": "Guns N' Roses"
+  },
   "470912_VG+": {
     "price": 40.0,
     "currency": "GBP",
@@ -108,17 +119,6 @@
     "seller": "Discopolis.AU",
     "title": "Life After Death (78612-73011-1, Bad Boy/Arista US 1997, 3LP)",
     "group": "Notorious B.I.G."
-  },
-  "383777_NM": {
-    "price": 325.0,
-    "currency": "USD",
-    "shipping": 30.0,
-    "total_eur": 306.16645105648985,
-    "disc": 19.838193106900697,
-    "tier": "goed",
-    "seller": "analogdurkee",
-    "title": "Appetite for Destruction (XXXG 24148, US Allied 1987)",
-    "group": "Guns N' Roses"
   },
   "317356_VG+": {
     "price": 120.0,
