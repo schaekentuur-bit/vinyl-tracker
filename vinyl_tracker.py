@@ -18,6 +18,7 @@ import re
 import json
 import os
 import time
+import html as _html_mod
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
@@ -34,8 +35,11 @@ STATS_CACHE        = "vinyl_history_cache.json"
 LISTINGS_CACHE     = "vinyl_listings_cache.json"
 DEALS_SEEN_FILE    = "vinyl_deals_seen.json"
 LISTINGS_SEEN_FILE = "vinyl_listings_seen.json"
+FAVORITES_FILE     = "vinyl_favorites.json"
 LISTINGS_SEEN_DAYS = 30   # geziene listings ouder dan N dagen worden gesneden
-CACHE_DAYS         = 7   # verkoopdata na X dagen opnieuw ophalen
+CACHE_DAYS         = 7   # marktstatistieken na X dagen opnieuw ophalen
+SALES_CACHE_DAYS   = 1   # verkoophistorie na X dagen opnieuw ophalen (1 = dagelijks vers)
+LISTINGS_CACHE_HOURS = 0 # marketplace listings: 0 = altijd verversen bij lokale run
 MIN_SELLER_RATINGS = 50  # minimaal aantal ratings voor een verkoper
 EU_COUNTRIES = {
     "Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic",
@@ -2207,7 +2211,8 @@ def compute_new_listings(results, existing=None):
     for r in results:
         by_cond = {}
         for s in r["sales"]:
-            by_cond.setdefault(s["media"], []).append(s)
+            eff = _effective_cond(s["media"], s.get("sleeve", s["media"]))
+            by_cond.setdefault(eff, []).append(s)
 
         for listing in r.get("listings", []):
             if listing.get("rating_count", 0) < MIN_SELLER_RATINGS:
@@ -2773,6 +2778,72 @@ def _build_collection_page(collection_items, sales_cache):
     </div>"""
 
 
+def _build_favorites_page(favorites):
+    """Bouw de HTML-pagina 'Favoriete Listings' op basis van vinyl_favorites.json."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    if not favorites:
+        rows_html = '<tr id="fav-empty"><td colspan="11" class="no-data">Geen favorieten opgeslagen. Like een listing via ♥ in Nieuwe Listings of Top Deals.</td></tr>'
+    else:
+        rows = []
+        for key, snap in sorted(favorites.items(), key=lambda x: x[1].get("added_at",""), reverse=True):
+            pct      = snap.get("pct")
+            total    = snap.get("total_eur", 0)
+            avg      = snap.get("avg")
+            pct_sign = "+" if pct is not None and pct > 0 else ""
+            pct_str  = f"{pct_sign}{pct:.0f}%" if pct is not None else "—"
+            pct_col  = "#10B981" if pct is not None and pct < -5 else ("#EF4444" if pct is not None and pct > 15 else "inherit")
+            avg_str  = f"€ {avg:,.2f}".replace(",","X").replace(".",",").replace("X",".") if avg else "—"
+            tot_str  = f"€ {total:,.2f}".replace(",","X").replace(".",",").replace("X",".")
+            eff      = snap.get("eff_cond","?")
+            ec_cls   = eff.replace("+","p").replace("-","m")
+            type_badge = ('<span style="background:#10B981;color:#fff;font-size:10px;font-weight:600;'
+                         'padding:1px 6px;border-radius:10px">Deal</span>' if snap.get("type") == "deal"
+                         else '<span style="background:#3B82F6;color:#fff;font-size:10px;font-weight:600;'
+                         'padding:1px 6px;border-radius:10px">Listing</span>')
+            rid      = snap.get("release_id","")
+            lhref    = f"https://www.discogs.com/sell/release/{rid}?sort=price%2Casc&limit=50"
+            key_safe = key.replace("'", "\\'")
+            rows.append(
+                f'<tr id="fav-row-{key}">'
+                f'<td><span class="rb-group">{snap.get("group","")}</span></td>'
+                f'<td class="td-title">{snap.get("title","")}</td>'
+                f'<td><span class="badge bd-{ec_cls}">{eff}</span></td>'
+                f'<td class="td-num"><strong>{tot_str}</strong></td>'
+                f'<td class="td-num muted">{avg_str}</td>'
+                f'<td class="td-num" style="font-weight:600;color:{pct_col}">{pct_str}</td>'
+                f'<td class="td-seller">{snap.get("seller","")}</td>'
+                f'<td>{type_badge}</td>'
+                f'<td class="muted" style="font-size:11px">{snap.get("added_at","")}</td>'
+                f'<td><button class="deal-dismiss" onclick="removeFavFromPage(\'{key_safe}\',event)" title="Verwijder uit favorieten">&#10005;</button></td>'
+                f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
+                f'</tr>'
+            )
+        if not rows:
+            rows_html = '<tr id="fav-empty"><td colspan="11" class="no-data">Geen favorieten opgeslagen.</td></tr>'
+        else:
+            rows_html = '<tr id="fav-empty" style="display:none"><td colspan="11" class="no-data">Geen favorieten opgeslagen.</td></tr>' + "\n".join(rows)
+
+    return f"""
+    <div class="page" id="favorieten" style="display:none">
+      <div class="page-header">
+        <h2>Favoriete Listings</h2>
+        <span class="sub">Gelikete listings van Nieuwe Listings en Top Deals</span>
+      </div>
+      <div class="card">
+        <table class="ov-table" id="fav-tbl">
+          <thead><tr>
+            <th>Artiest</th><th>Release</th><th>Conditie</th>
+            <th class="th-r">Prijs incl. verzend</th>
+            <th class="th-r">Gem. verkoop</th>
+            <th class="th-r">% vs gem.</th>
+            <th>Verkoper</th><th>Type</th><th>Datum</th><th></th><th></th>
+          </tr></thead>
+          <tbody id="fav-tbody">{rows_html}</tbody>
+        </table>
+      </div>
+    </div>"""
+
+
 def build_html(results, static=False, new_listings=None, collection=None):
     now    = datetime.now().strftime("%d/%m/%Y %H:%M")
     groups = list(dict.fromkeys(r["group"] for r in results))
@@ -2787,23 +2858,30 @@ def build_html(results, static=False, new_listings=None, collection=None):
     collection_page   = _build_collection_page(collection_items, sales_cache)
     coll_count        = len(collection_items)
 
+    # ── Favoriete Listings ────────────────────────────────────────────────
+    favorites         = load_cache(FAVORITES_FILE)
+    favorites_page    = _build_favorites_page(favorites)
+    fav_count         = len(favorites)
+    fav_saved_keys    = set(favorites.keys())  # voor fav-active check
+
     # ── Per-artiest pagina's ───────────────────────────────────────────────
-    artist_pages = ""
+    artist_parts = []
     for group in groups:
         gresult = [r for r in results if r["group"] == group]
         cards   = _build_release_cards(gresult, thumbs)
-        artist_pages += f"""
+        artist_parts.append(f"""
         <div class="page" id="{_gid(group)}" style="display:none">
           <div class="page-header">
             <h2>{group}</h2>
             <span class="sub">{len(gresult)} release(s)</span>
           </div>
           {cards}
-        </div>"""
+        </div>""")
+    artist_pages = "".join(artist_parts)
 
     # ── Home-overzicht pagina ──────────────────────────────────────────────
     releases_with_listings = sum(1 for r in results if r.get("listings"))
-    home_rows = ""
+    home_row_parts = []
     for r in results:
         best_for_release = get_best_listings(r.get("listings", []))
         by_cond = {}
@@ -2818,7 +2896,7 @@ def build_html(results, static=False, new_listings=None, collection=None):
         listing_cell = _fmt_eur(cheapest.get("total_eur", cheapest["price"])) if cheapest else "—"
         stats = r["stats"]
         gid   = _gid(r["group"])
-        home_rows += (
+        home_row_parts.append(
             f'<tr onclick="showPage(\'{gid}\')" class="home-row">'
             f'<td><span class="rb-group">{r["group"]}</span></td>'
             f'<td class="td-title">{r["title"]}</td>'
@@ -2827,6 +2905,7 @@ def build_html(results, static=False, new_listings=None, collection=None):
             f'<td class="td-num">{stats.get("num_for_sale","?")}</td>'
             f'</tr>'
         )
+    home_rows = "".join(home_row_parts)
     home_page = f"""
     <div class="page" id="home">
       <div class="page-header">
@@ -2869,8 +2948,8 @@ def build_html(results, static=False, new_listings=None, collection=None):
     # ── Top Deals pagina ───────────────────────────────────────────────────
     def _deal_rows_html(tier_deals, ref_label):
         if not tier_deals:
-            return f'<tr><td colspan="9" class="no-data">Geen deals gevonden.</td></tr>'
-        rows = ""
+            return f'<tr><td colspan="10" class="no-data">Geen deals gevonden.</td></tr>'
+        row_parts = []
         for d in tier_deals:
             b       = d["best"]
             r       = d["r"]
@@ -2900,8 +2979,20 @@ def build_html(results, static=False, new_listings=None, collection=None):
                             f' title="{ri_desc}">{ri_label}</span>')
             else:
                 ri_badge = ""
-            deal_key = f"{r['id']}_{d['cond']}"
-            rows += (
+            deal_key   = f"{r['id']}_{d['cond']}"
+            fav_key    = _listing_key(r["id"], b)
+            fav_active = "fav-active" if fav_key in fav_saved_keys else ""
+            fav_title  = "Verwijder uit favorieten" if fav_active else "Voeg toe aan favorieten"
+            _snap = {
+                "type": "deal", "added_at": datetime.now().strftime("%Y-%m-%d"),
+                "group": r["group"], "title": r["title"], "release_id": str(r["id"]),
+                "seller": b["seller"], "rating_count": b.get("rating_count", 0),
+                "media": b["media"], "sleeve": b["sleeve"], "eff_cond": d.get("eff_cond", d["cond"]),
+                "total_eur": eur_tot, "avg": d["avg"], "pct": -d["disc"],
+                "ships_from": b.get("ships_from", ""), "is_eu": b.get("_is_eu", True),
+            }
+            _snap_json = _html_mod.escape(json.dumps(_snap))
+            row_parts.append(
                 f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row" data-deal-key="{deal_key}">'
                 f'<td><span class="rb-group">{r["group"]}</span></td>'
                 f'<td class="td-title">{r["title"]}{ri_badge}</td>'
@@ -2915,11 +3006,12 @@ def build_html(results, static=False, new_listings=None, collection=None):
                 f'<td class="td-num">{ref_val}</td>'
                 f'<td class="td-num"><span class="deal-pct">-{d["disc"]:.0f}%</span></td>'
                 f'<td class="td-seller">{b["seller"]} <span class="muted">({b["rating_count"]:,})</span></td>'
+                f'<td><button class="fav-btn {fav_active}" data-fav-key="{fav_key}" data-snapshot="{_snap_json}" onclick="toggleFavorite(\'{fav_key}\',event)" title="{fav_title}">&#9829;</button></td>'
                 f'<td><button class="deal-dismiss" onclick="dismissDeal(\'{deal_key}\',event)" title="Verbergen">&#10005;</button></td>'
                 f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
                 f'</tr>'
             )
-        return rows
+        return "".join(row_parts)
 
     def _deal_table(tier_deals, ref_label):
         return f"""
@@ -2928,7 +3020,7 @@ def build_html(results, static=False, new_listings=None, collection=None):
             <thead><tr>
               <th>Artiest</th><th>Release</th><th>Disc / Hoes</th>
               <th class="th-r" title="Totaalprijs incl. verzending">Listing incl. verzend</th><th class="th-r">{ref_label}</th>
-              <th class="th-r" title="% goedkoper dan historische prijs (excl. verzending)">Korting vs. hist.</th><th>Verkoper</th><th></th><th></th>
+              <th class="th-r" title="% goedkoper dan historische prijs (excl. verzending)">Korting vs. hist.</th><th>Verkoper</th><th></th><th></th><th></th>
             </tr></thead>
             <tbody>{_deal_rows_html(tier_deals, ref_label)}</tbody>
           </table>
@@ -2948,9 +3040,9 @@ def build_html(results, static=False, new_listings=None, collection=None):
         sign  = "+" if pct > 0 else ""
         return f'<td class="td-num" style="font-weight:600;color:{color}">{sign}{pct:.0f}%</td>'
 
-    def _nl_rows(items):
+    def _nl_rows(items, with_snapshot=True):
         if not items:
-            return '<tr><td colspan="8" class="no-data">Geen nieuwe listings.</td></tr>'
+            return '<tr><td colspan="9" class="no-data">Geen nieuwe listings.</td></tr>'
         rows = ""
         for nl_item in items:
             r       = nl_item["r"]
@@ -2970,13 +3062,27 @@ def build_html(results, static=False, new_listings=None, collection=None):
                     f'border-radius:4px;white-space:nowrap;cursor:help">'
                     f'🌍 {lst["ships_from"]}</span>'
                 )
-            avg_cell = _fmt_eur(nl_item["avg"]) if nl_item["avg"] else "—"
-            ri_info  = RELEASE_INFO.get(str(r["id"])) or RELEASE_INFO.get(r["id"])
-            ri_badge = ""
+            avg_cell   = _fmt_eur(nl_item["avg"]) if nl_item["avg"] else "—"
+            ri_info    = RELEASE_INFO.get(str(r["id"])) or RELEASE_INFO.get(r["id"])
+            ri_badge   = ""
             if ri_info:
                 ri_cls  = _BADGE_MAP.get(ri_info[0], "rb-badge-orig")
                 ri_badge = (f'<br><span class="rb-badge {ri_cls}" style="font-size:9px;margin-left:0;margin-top:3px"'
                             f' title="{ri_info[1]}">{ri_info[0]}</span>')
+            fav_active = "fav-active" if key in fav_saved_keys else ""
+            fav_title  = "Verwijder uit favorieten" if fav_active else "Voeg toe aan favorieten"
+            if with_snapshot:
+                _snap = {
+                    "type": "listing", "added_at": datetime.now().strftime("%Y-%m-%d"),
+                    "group": r["group"], "title": r["title"], "release_id": str(r["id"]),
+                    "seller": lst["seller"], "rating_count": lst.get("rating_count", 0),
+                    "media": lst["media"], "sleeve": lst["sleeve"], "eff_cond": nl_item["eff_cond"],
+                    "total_eur": eur_tot, "avg": nl_item["avg"], "pct": nl_item["pct"],
+                    "ships_from": lst.get("ships_from", ""), "is_eu": nl_item["is_eu"],
+                }
+                snap_attr = f' data-snapshot="{_html_mod.escape(json.dumps(_snap))}"'
+            else:
+                snap_attr = ""
             rows += (
                 f'<tr onclick="showPage(\'{_gid(r["group"])}\')" class="home-row" data-nl-key="{key}"'
                 f' data-group="{r["group"]}" data-title="{r["title"]}" data-cond="{nl_item["eff_cond"]}">'
@@ -2991,6 +3097,7 @@ def build_html(results, static=False, new_listings=None, collection=None):
                 f'<td class="td-num muted">{avg_cell}</td>'
                 + _nl_pct_cell(nl_item["pct"])
                 + f'<td class="td-seller">{lst["seller"]} <span class="muted">({lst["rating_count"]:,})</span></td>'
+                f'<td><button class="fav-btn {fav_active}" data-fav-key="{key}"{snap_attr} onclick="toggleFavorite(\'{key}\',event)" title="{fav_title}">&#9829;</button></td>'
                 f'<td><button class="deal-dismiss" onclick="dismissNewListing(\'{key}\',event)" title="Verbergen">&#10005;</button></td>'
                 f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
                 f'</tr>'
@@ -3000,10 +3107,10 @@ def build_html(results, static=False, new_listings=None, collection=None):
     nl_invest = [x for x in nl if _is_investment(x["r"]["id"])]
     nl_overig  = [x for x in nl if not _is_investment(x["r"]["id"])]
 
-    def _nl_table(items, title, color, tid="tbl"):
+    def _nl_table(items, title, color, tid="tbl", with_snapshot=True):
         conds = sorted(set(x["eff_cond"] for x in items if x.get("eff_cond")))
         cond_opts = "\n".join(f'<option value="{c}">{c}</option>' for c in conds)
-        rows_html = _nl_rows(items)
+        rows_html = _nl_rows(items, with_snapshot=with_snapshot)
         return f"""
         <h3 style="margin:0 0 4px;font-size:15px;color:{color}">{title}
           <span style="font-weight:400;color:var(--muted);font-size:12px">({len(items)})</span>
@@ -3027,7 +3134,7 @@ def build_html(results, static=False, new_listings=None, collection=None):
               <th class="th-r th-sort" onclick="sortTable('{tid}',3,this)">Prijs incl. verzend<span class="sort-icon"></span></th>
               <th class="th-r">Gem. verkoop</th>
               <th class="th-r th-sort" onclick="sortTable('{tid}',5,this)">% vs gem.<span class="sort-icon"></span></th>
-              <th>Verkoper</th><th></th><th></th>
+              <th>Verkoper</th><th></th><th></th><th></th>
             </tr></thead>
             <tbody>{rows_html}</tbody>
           </table>
@@ -3054,7 +3161,8 @@ def build_html(results, static=False, new_listings=None, collection=None):
             continue
         by_cond = {}
         for s in r["sales"]:
-            by_cond.setdefault(s["media"], []).append(s)
+            eff = _effective_cond(s["media"], s.get("sleeve", s["media"]))
+            by_cond.setdefault(eff, []).append(s)
         for listing in r.get("listings", []):
             if listing.get("rating_count", 0) < MIN_SELLER_RATINGS:
                 continue
@@ -3089,7 +3197,7 @@ def build_html(results, static=False, new_listings=None, collection=None):
         <h2>&#127942; Beleggingen &mdash; Alle Listings</h2>
         <span class="sub">{now} &nbsp;&middot;&nbsp; {len(invest_all)} listings &nbsp;&middot;&nbsp; verkopers &ge;{MIN_SELLER_RATINGS} ratings &nbsp;&middot;&nbsp; gesorteerd op % vs gem.</span>
       </div>
-      {_nl_table(invest_all, "&#127942; Alle listings beleggingsplaten", "#92400E", "invest-all-tbl")}
+      {_nl_table(invest_all, "&#127942; Alle listings beleggingsplaten", "#92400E", "invest-all-tbl", with_snapshot=False)}
     </div>"""
 
     deals_page = f"""
@@ -3168,6 +3276,11 @@ def build_html(results, static=False, new_listings=None, collection=None):
         <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/></svg>
         Top Deals
         <span class="nav-badge">{len(deals)}</span>
+      </div>
+      <div class="nav-item" data-page="favorieten" onclick="showPage('favorieten')">
+        <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/></svg>
+        Favorieten
+        {f'<span class="nav-badge" id="fav-nav-badge" style="background:#EF4444">{fav_count}</span>' if fav_count else f'<span class="nav-badge" id="fav-nav-badge" style="background:#EF4444;display:none">0</span>'}
       </div>
       <div class="nav-item" data-page="mijn-collectie" onclick="showPage('mijn-collectie')">
         <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>
@@ -3458,6 +3571,10 @@ def build_html(results, static=False, new_listings=None, collection=None):
   .deal-dismiss{{background:none;border:none;color:#CBD5E1;cursor:pointer;
                  font-size:13px;padding:2px 6px;border-radius:4px;line-height:1}}
   .deal-dismiss:hover{{background:#FEE2E2;color:#EF4444}}
+  .fav-btn{{background:none;border:none;color:#CBD5E1;cursor:pointer;
+            font-size:16px;padding:2px 6px;border-radius:4px;line-height:1;transition:color .15s}}
+  .fav-btn:hover{{color:#F87171}}
+  .fav-btn.fav-active{{color:#EF4444}}
   .btn-mark-all{{background:#3B82F6;border:none;color:#fff;cursor:pointer;
                  font-size:12px;font-weight:600;padding:4px 12px;border-radius:6px;line-height:1.4}}
   .btn-mark-all:hover{{background:#2563EB}}
@@ -3656,8 +3773,15 @@ def build_html(results, static=False, new_listings=None, collection=None):
   </div>
   {home_page}
   {new_listings_page}
+<script>
+function doRefresh(){{var b=document.getElementById('rbtn');if(b){{b.disabled=true;b.textContent='Bezig...';}}window.location.href='/refresh';}}
+function doPush(){{var b=document.getElementById('pbtn');if(b){{b.disabled=true;b.textContent='Pushen...';}}fetch('/push').then(function(){{var t=0;var iv=setInterval(function(){{fetch('/status').then(function(r){{return r.json();}}).then(function(d){{t++;if(!d.pushing||t>30){{clearInterval(iv);if(b){{b.disabled=false;b.textContent='✓ Gepushed!';setTimeout(function(){{b.textContent='↹ Push GitHub';}},3000);}}}}}});}},1000);}});}}
+function toggleAdd(){{var p=document.getElementById('add-panel');if(!p)return;var open=p.style.display==='flex';p.style.display=open?'none':'flex';if(!open){{var u=document.getElementById('add-url');if(u){{u.focus();u.value='';}}}}}}
+function showPage(id){{document.querySelectorAll('.page').forEach(function(p){{p.style.display='none';}});var el=document.getElementById(id);if(el){{el.style.display='block';}}history.replaceState(null,'','#'+id);}}
+</script>
   {invest_listings_page}
   {deals_page}
+  {favorites_page}
   {collection_page}
   {artist_pages}
 </main>
@@ -3744,6 +3868,76 @@ if(_addUrl){{
 }}
 var initPage=(window.location.hash||'#home').slice(1);
 showPage(document.getElementById(initPage)?initPage:'home');
+var FAV_KEYS=new Set({json.dumps(list(favorites.keys()))});
+function updateFavBadge(){{
+  var b=document.getElementById('fav-nav-badge');
+  if(b){{b.textContent=FAV_KEYS.size;b.style.display=FAV_KEYS.size?'':'none';}}
+}}
+function toggleFavorite(key,e){{
+  e.stopPropagation();
+  var btn=e.currentTarget;
+  var snapshot=null;
+  try{{snapshot=JSON.parse(btn.dataset.snapshot||'null');}}catch(_){{}}
+  var adding=!FAV_KEYS.has(key);
+  document.querySelectorAll('.fav-btn[data-fav-key="'+key+'"]').forEach(function(b){{
+    b.classList.toggle('fav-active',adding);
+    b.title=adding?'Verwijder uit favorieten':'Voeg toe aan favorieten';
+  }});
+  if(adding){{FAV_KEYS.add(key);_addFavRow(key,snapshot);}}
+  else{{FAV_KEYS.delete(key);_removeFavRow(key);}}
+  updateFavBadge();
+  fetch('/toggle-favorite',{{method:'POST',headers:{{'Content-Type':'application/json'}},
+    body:JSON.stringify({{key:key,action:adding?'add':'remove',snapshot:snapshot}})
+  }});
+}}
+function _addFavRow(key,snap){{
+  if(!snap)return;
+  var tbody=document.getElementById('fav-tbody');if(!tbody)return;
+  var empty=document.getElementById('fav-empty');if(empty)empty.style.display='none';
+  if(document.getElementById('fav-row-'+key))return;
+  var pct=snap.pct!=null?(snap.pct>0?'+':'')+Math.round(snap.pct)+'%':'—';
+  var pctCol=snap.pct!=null?(snap.pct<-5?'#10B981':(snap.pct>15?'#EF4444':'inherit')):'inherit';
+  var avg=snap.avg?'€ '+snap.avg.toFixed(2).replace('.',','):'—';
+  var tot='€ '+snap.total_eur.toFixed(2).replace('.',',');
+  var rid=snap.release_id;
+  var lhref='https://www.discogs.com/sell/release/'+rid+'?sort=price%2Casc&limit=50';
+  var typeBadge=snap.type==='deal'?'<span style="background:#10B981;color:#fff;font-size:10px;font-weight:600;padding:1px 6px;border-radius:10px">Deal</span>':'<span style="background:#3B82F6;color:#fff;font-size:10px;font-weight:600;padding:1px 6px;border-radius:10px">Listing</span>';
+  var today=new Date().toISOString().slice(0,10);
+  var tr=document.createElement('tr');
+  tr.id='fav-row-'+key;
+  tr.innerHTML='<td><span class="rb-group">'+snap.group+'</span></td>'+
+    '<td class="td-title">'+snap.title+'</td>'+
+    '<td><span class="badge">'+snap.eff_cond+'</span></td>'+
+    '<td class="td-num"><strong>'+tot+'</strong></td>'+
+    '<td class="td-num muted">'+avg+'</td>'+
+    '<td class="td-num" style="font-weight:600;color:'+pctCol+'">'+pct+'</td>'+
+    '<td class="td-seller">'+snap.seller+'</td>'+
+    '<td>'+typeBadge+'</td>'+
+    '<td class="muted" style="font-size:11px">'+today+'</td>'+
+    '<td><button class="deal-dismiss" onclick="removeFavFromPage(\''+key+'\',event)" title="Verwijder">&#10005;</button></td>'+
+    '<td><a class="btn-link" href="'+lhref+'" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>';
+  tbody.insertBefore(tr,tbody.firstChild);
+}}
+function _removeFavRow(key){{
+  var row=document.getElementById('fav-row-'+key);if(row)row.remove();
+  var tbody=document.getElementById('fav-tbody');
+  var realRows=tbody?Array.from(tbody.rows).filter(function(r){{return r.id!=='fav-empty';}}).length:0;
+  var empty=document.getElementById('fav-empty');
+  if(empty)empty.style.display=realRows===0?'':'none';
+}}
+function removeFavFromPage(key,e){{
+  if(e)e.stopPropagation();
+  FAV_KEYS.delete(key);
+  document.querySelectorAll('.fav-btn[data-fav-key="'+key+'"]').forEach(function(btn){{
+    btn.classList.remove('fav-active');
+    btn.title='Voeg toe aan favorieten';
+  }});
+  _removeFavRow(key);
+  updateFavBadge();
+  fetch('/toggle-favorite',{{method:'POST',headers:{{'Content-Type':'application/json'}},
+    body:JSON.stringify({{key:key,action:'remove'}})
+  }});
+}}
 function _markReadServer(keys){{
   // Probeer lokale server; als dat mislukt, gebruik GitHub Actions (statische site)
   fetch('/mark-read',{{method:'POST',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{keys:keys}})}})
@@ -4158,19 +4352,22 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
     def _process(release_id, group, title):
         print(f">> {group} - {title}")
 
-        # Verkoophistorie (gecached, 7 dagen TTL)
+        # Verkoophistorie (gecached, SALES_CACHE_DAYS TTL)
         sc_entry = sales_cache.get(release_id, {})
-        if cache_is_fresh(sc_entry):
-            sales = sc_entry["sales"]
+        if _is_ga or cache_is_fresh(sc_entry, max_days=SALES_CACHE_DAYS):
+            sales = sc_entry.get("sales", [])
             print(f"  Geschiedenis cache: {len(sales)} verkopen")
         else:
             with _html_sem:
                 sales = scrape_history(release_id, cookies, _session())
             time.sleep(1.2)
             print(f"  Geschiedenis gescraped: {len(sales)} verkopen")
-            with _sales_lock:
-                sales_cache[release_id] = {"fetched_at": today, "sales": sales}
-                save_cache(SALES_CACHE, sales_cache)
+            if sales:
+                with _sales_lock:
+                    sales_cache[release_id] = {"fetched_at": today, "sales": sales}
+                    save_cache(SALES_CACHE, sales_cache)
+            else:
+                print(f"  Lege scrape — bestaande cache bewaard")
 
         # Marktstatistieken API (gecached, 7 dagen TTL — zelfde als verkoop- en listingscache)
         sc_stats = stats_cache.get(release_id, {})
@@ -4185,7 +4382,7 @@ def scrape_all(cookies, session, force_listings=False, force_stats=False):
 
         # Marketplace listings
         lc_entry = listings_cache.get(release_id, {})
-        use_cache = (not force_listings) and cache_is_fresh(lc_entry, max_hours=2) and lc_entry.get("listings")
+        use_cache = (not force_listings) and cache_is_fresh(lc_entry, max_hours=LISTINGS_CACHE_HOURS) and lc_entry.get("listings")
         if use_cache:
             raw_listings = lc_entry["listings"]
             print(f"  Listings cache: {len(raw_listings)} listings")
@@ -4337,7 +4534,7 @@ def run_server(initial_results, cookies, session, collection=None):
     def do_refresh():
         try:
             _log("Vernieuwen gestart")
-            results = scrape_all(cookies, session, force_listings=True, force_stats=True)
+            results = scrape_all(cookies, session, force_listings=True, force_stats=False)
             state["results"] = results
             state["new_listings"] = compute_new_listings(results, state.get("new_listings", []))
             _log("Scrapen klaar, email berekenen")
@@ -4444,6 +4641,25 @@ def run_server(initial_results, cookies, session, collection=None):
                         if nl["key"] not in keys
                     ]
                 resp = json.dumps({"ok": True}).encode()
+                self._respond(200, "application/json", resp)
+            elif self.path == "/toggle-favorite":
+                length = int(self.headers.get("Content-Length", 0))
+                body   = self.rfile.read(length)
+                try:
+                    data     = json.loads(body)
+                    key      = data.get("key", "")
+                    action   = data.get("action", "")
+                    snapshot = data.get("snapshot")
+                except Exception:
+                    self.send_response(400); self.end_headers(); return
+                if key and action:
+                    favs = load_cache(FAVORITES_FILE)
+                    if action == "add" and snapshot:
+                        favs[key] = snapshot
+                    elif action == "remove":
+                        favs.pop(key, None)
+                    save_cache(FAVORITES_FILE, favs)
+                resp = json.dumps({"ok": True, "count": len(load_cache(FAVORITES_FILE))}).encode()
                 self._respond(200, "application/json", resp)
             else:
                 self.send_response(404); self.end_headers()
