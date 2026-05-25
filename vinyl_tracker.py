@@ -2846,7 +2846,7 @@ def _build_favorites_page(favorites):
                 f'<td class="td-seller">{snap.get("seller","")}</td>'
                 f'<td>{type_badge}</td>'
                 f'<td class="muted" style="font-size:11px">{snap.get("added_at","")}</td>'
-                f'<td><button class="deal-dismiss" onclick="removeFavFromPage(\'{key_safe}\',event)" title="Verwijder uit favorieten">&#10005;</button></td>'
+                f'<td><button class="deal-dismiss" onclick="event.stopPropagation();removeFavFromPage(\'{key_safe}\',event)" title="Verwijder uit favorieten">&#10005;</button></td>'
                 f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
                 f'</tr>'
             )
@@ -3038,8 +3038,8 @@ def build_html(results, static=False, new_listings=None, collection=None):
                 f'<td class="td-num">{ref_val}</td>'
                 f'<td class="td-num"><span class="deal-pct">-{d["disc"]:.0f}%</span></td>'
                 f'<td class="td-seller">{b["seller"]} <span class="muted">({b["rating_count"]:,})</span></td>'
-                f'<td><button class="fav-btn {fav_active}" data-fav-key="{fav_key}" data-snapshot="{_snap_json}" onclick="toggleFavorite(\'{fav_key}\',event)" title="{fav_title}">&#9829;</button></td>'
-                f'<td><button class="deal-dismiss" onclick="dismissDeal(\'{deal_key}\',event)" title="Verbergen">&#10005;</button></td>'
+                f'<td><button class="fav-btn {fav_active}" data-fav-key="{fav_key}" data-snapshot="{_snap_json}" onclick="event.stopPropagation();toggleFavorite(\'{fav_key}\',event)" title="{fav_title}">&#9829;</button></td>'
+                f'<td><button class="deal-dismiss" onclick="event.stopPropagation();dismissDeal(\'{deal_key}\',event)" title="Verbergen">&#10005;</button></td>'
                 f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
                 f'</tr>'
             )
@@ -3129,8 +3129,8 @@ def build_html(results, static=False, new_listings=None, collection=None):
                 f'<td class="td-num muted">{avg_cell}</td>'
                 + _nl_pct_cell(nl_item["pct"])
                 + f'<td class="td-seller">{lst["seller"]} <span class="muted">({lst["rating_count"]:,})</span></td>'
-                f'<td><button class="fav-btn {fav_active}" data-fav-key="{key}"{snap_attr} onclick="toggleFavorite(\'{key}\',event)" title="{fav_title}">&#9829;</button></td>'
-                f'<td><button class="deal-dismiss" onclick="dismissNewListing(\'{key}\',event)" title="Verbergen">&#10005;</button></td>'
+                f'<td><button class="fav-btn {fav_active}" data-fav-key="{key}"{snap_attr} onclick="event.stopPropagation();toggleFavorite(\'{key}\',event)" title="{fav_title}">&#9829;</button></td>'
+                f'<td><button class="deal-dismiss" onclick="event.stopPropagation();dismissNewListing(\'{key}\',event)" title="Verbergen">&#10005;</button></td>'
                 f'<td><a class="btn-link" href="{lhref}" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>'
                 f'</tr>'
             )
