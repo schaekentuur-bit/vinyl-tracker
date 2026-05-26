@@ -750,6 +750,9 @@ document.addEventListener('DOMContentLoaded',function(){
       if(item){
         e.preventDefault();
         e.stopPropagation();
+        navEl.classList.remove('open');
+        var ov=document.getElementById('nav-overlay');
+        if(ov) ov.classList.remove('open');
         showPage(item.getAttribute('data-page'));
       }
     },{passive:false});
