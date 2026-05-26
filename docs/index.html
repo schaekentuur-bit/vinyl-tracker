@@ -737,7 +737,10 @@ function toggleNav(){var nav=document.querySelector('nav');var ov=document.getEl
 document.addEventListener('DOMContentLoaded',function(){
   var btn=document.querySelector('.hamburger');
   if(btn){
-    btn.addEventListener('touchend',function(e){e.preventDefault();toggleNav();},{passive:false});
+    btn.removeAttribute('onclick');
+    var _t=false;
+    btn.addEventListener('touchend',function(e){_t=true;e.preventDefault();e.stopPropagation();toggleNav();setTimeout(function(){_t=false;},300);},{passive:false});
+    btn.addEventListener('click',function(e){if(_t){_t=false;return;}e.stopPropagation();toggleNav();});
   }
 });
 </script>
