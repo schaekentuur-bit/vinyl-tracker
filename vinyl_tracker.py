@@ -3629,14 +3629,15 @@ def build_html(results, static=False, new_listings=None, collection=None):
 
   /* ── Mobile layout ── */
   @media(max-width:768px){{
-    body{{display:block;overflow:hidden;height:100vh;height:100dvh}}
+    html{{height:100%;overflow:hidden}}
+    body{{display:block;overflow:hidden;height:100%;width:100%}}
     nav{{position:fixed;inset:0 auto 0 0;width:224px;min-width:224px;z-index:200;
          transform:translateX(-100%);transition:transform .25s ease;
          box-shadow:4px 0 24px rgba(0,0,0,.22)}}
     nav.open{{transform:translateX(0)}}
     .hamburger{{display:flex}}
-    main{{height:100vh;height:100dvh;overflow-y:auto;
-          -webkit-overflow-scrolling:touch;width:100%}}
+    main{{height:100%;overflow-y:scroll;
+          -webkit-overflow-scrolling:touch;overscroll-behavior:contain;width:100%}}
     .topbar{{padding:10px 14px;gap:6px}}
     .topbar .btn,.topbar a.btn{{font-size:11.5px;padding:6px 10px}}
     .page{{padding:16px 14px 52px}}
@@ -3676,6 +3677,7 @@ def build_html(results, static=False, new_listings=None, collection=None):
 
   /* ── Print ── */
   @media print{{
+    html{{height:auto;overflow:visible}}
     body{{display:block;height:auto;overflow:visible}}
     nav,.topbar-wrap{{display:none}}
     main{{overflow:visible}}
