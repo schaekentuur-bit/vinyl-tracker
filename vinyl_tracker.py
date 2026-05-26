@@ -3386,11 +3386,14 @@ def build_html(results, static=False, new_listings=None, collection=None):
   .nav-genre[open] summary::after{{transform:rotate(270deg);opacity:.8}}
   .nav-genre summary:hover{{color:rgba(255,255,255,.7)}}
 
-  /* ── Main area ── */
-  main{{flex:1;overflow-y:auto;background:var(--bg);display:flex;flex-direction:column}}
+  /* ── Content wrapper (nav sibling, flex column) ── */
+  .content-wrap{{flex:1;display:flex;flex-direction:column;min-width:0;overflow:hidden}}
 
-  /* ── Sticky top bar ── */
-  .topbar-wrap{{position:sticky;top:0;z-index:50;background:var(--surface)}}
+  /* ── Main area ── */
+  main{{flex:1;overflow-y:auto;background:var(--bg);display:flex;flex-direction:column;min-height:0}}
+
+  /* ── Top bar ── */
+  .topbar-wrap{{background:var(--surface)}}
   .topbar{{padding:10px 24px;display:flex;align-items:center;justify-content:flex-end;
            gap:8px;border-bottom:1px solid var(--border);background:var(--surface);
            box-shadow:0 1px 0 var(--border)}}
@@ -3637,9 +3640,9 @@ def build_html(results, static=False, new_listings=None, collection=None):
          box-shadow:4px 0 24px rgba(0,0,0,.22)}}
     nav.open{{transform:translateX(0)}}
     .hamburger{{display:flex}}
-    .topbar-wrap{{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--surface)}}
-    main{{height:100%;overflow-y:scroll;
-          -webkit-overflow-scrolling:touch;overscroll-behavior:contain;width:100%;padding-top:64px}}
+    .content-wrap{{height:100%;display:flex;flex-direction:column}}
+    main{{flex:1;overflow-y:scroll;
+          -webkit-overflow-scrolling:touch;overscroll-behavior:contain;width:100%}}
     .topbar{{padding:10px 14px;gap:6px}}
     .topbar .btn,.topbar a.btn{{font-size:11.5px;padding:6px 10px}}
     .page{{padding:16px 14px 52px}}
@@ -3791,8 +3794,8 @@ def build_html(results, static=False, new_listings=None, collection=None):
 <body>
 <div class="nav-overlay" id="nav-overlay" onclick="toggleNav()"></div>
 {nav}
-<main>
-  <div class="topbar-wrap">
+<div class="content-wrap">
+<div class="topbar-wrap">
     {"" if not static else f'<div class="topbar"><button class="hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button><span class="sub" style="margin-right:auto">Snapshot: {now}</span><span style="display:inline-flex;gap:1px;position:relative"><button id="gh-refresh-btn" class="btn btn-refresh" style="border-radius:6px 0 0 6px" onclick="ghRefresh(false)">&#8635; Vernieuwen</button><button class="btn btn-refresh" style="border-radius:0 6px 6px 0;padding:6px 8px;border-left:1px solid rgba(255,255,255,.35)" onclick="ghToggleMenu()" aria-label="Opties">&#9662;</button><div id="gh-menu" style="display:none;position:absolute;right:0;top:calc(100% + 6px);background:#fff;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.18);z-index:110;min-width:220px;overflow:hidden;border:1px solid #E2E8F0"><button onclick="ghRefresh(false)" style="display:block;width:100%;text-align:left;padding:11px 16px;border:none;background:none;cursor:pointer;font-size:13px;color:#1E293B;font-weight:500">&#8635; Normaal vernieuwen</button><button onclick="ghRefresh(true)" style="display:block;width:100%;text-align:left;padding:11px 16px;border:none;background:none;cursor:pointer;font-size:13px;color:#DC2626;font-weight:500">&#9889; Alles ophalen (cache negeren)</button><div style="border-top:1px solid #F1F5F9"></div><button onclick="ghShowTokenModal()" style="display:block;width:100%;text-align:left;padding:11px 16px;border:none;background:none;cursor:pointer;font-size:13px;color:#64748B">&#128273; Token beheren</button></div></span><button class="btn btn-pdf" onclick="window.print()">&#128438; PDF</button></div>'}
     {"" if static else """<div class="topbar">
       <button class="hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -3806,7 +3809,8 @@ def build_html(results, static=False, new_listings=None, collection=None):
       <button class="btn-go" onclick="doAdd()">Toevoegen</button>
       <button class="btn-x" onclick="toggleAdd()" title="Sluiten">&#215;</button>
     </div>"""}
-  </div>
+</div>
+<main>
   {home_page}
   {new_listings_page}
 <script>
@@ -3822,6 +3826,7 @@ function toggleNav(){{var nav=document.querySelector('nav');var ov=document.getE
   {collection_page}
   {artist_pages}
 </main>
+</div>
 {"" if not static else """
 <div id="gh-modal" style="display:none;position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(15,23,42,.6);z-index:200;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(2px)">
   <div style="background:#fff;border-radius:14px;padding:24px 20px;max-width:380px;width:100%;box-shadow:0 12px 40px rgba(0,0,0,.25)">
