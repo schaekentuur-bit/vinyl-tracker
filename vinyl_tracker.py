@@ -3623,7 +3623,7 @@ def build_html(results, static=False, new_listings=None, collection=None):
   .hamburger span{{display:block;width:20px;height:2px;background:var(--navy);border-radius:2px}}
 
   /* ── Nav overlay (mobile) ── */
-  .nav-overlay{{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);
+  .nav-overlay{{display:none;position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.45);
                 z-index:199;-webkit-tap-highlight-color:transparent}}
   .nav-overlay.open{{display:block}}
 
@@ -3631,7 +3631,7 @@ def build_html(results, static=False, new_listings=None, collection=None):
   @media(max-width:768px){{
     html{{height:100%;overflow:hidden}}
     body{{display:block;overflow:hidden;height:100%;width:100%}}
-    nav{{position:fixed;inset:0 auto 0 0;width:224px;min-width:224px;z-index:200;
+    nav{{position:fixed;top:0;left:0;bottom:0;width:224px;min-width:224px;z-index:200;
          transform:translateX(-100%);transition:transform .25s ease;
          box-shadow:4px 0 24px rgba(0,0,0,.22)}}
     nav.open{{transform:translateX(0)}}
@@ -3820,7 +3820,7 @@ function showPage(id){{document.querySelectorAll('.page').forEach(function(p){{p
   {artist_pages}
 </main>
 {"" if not static else """
-<div id="gh-modal" style="display:none;position:fixed;inset:0;background:rgba(15,23,42,.6);z-index:200;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(2px)">
+<div id="gh-modal" style="display:none;position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(15,23,42,.6);z-index:200;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(2px)">
   <div style="background:#fff;border-radius:14px;padding:24px 20px;max-width:380px;width:100%;box-shadow:0 12px 40px rgba(0,0,0,.25)">
     <h3 style="margin:0 0 6px;font-size:15px;font-weight:700;color:#1E293B">GitHub token vereist</h3>
     <p style="margin:0 0 12px;font-size:12.5px;color:#64748B;line-height:1.5">Maak een <strong>Classic Personal Access Token</strong> aan met scope <code style="background:#F1F5F9;padding:1px 4px;border-radius:3px">workflow</code> op <a href="https://github.com/settings/tokens/new?scopes=workflow&description=Vinyl+Tracker" target="_blank" style="color:#10B981;font-weight:600">github.com/settings/tokens</a>. Het token wordt enkel in je browser bewaard (localStorage).</p>
