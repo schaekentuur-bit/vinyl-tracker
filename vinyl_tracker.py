@@ -3363,7 +3363,8 @@ def build_html(results, static=False, new_listings=None, collection=None):
                 text-transform:uppercase;letter-spacing:.8px;color:rgba(255,255,255,.3)}}
   .nav-item{{padding:9px 14px 9px 16px;cursor:pointer;font-size:13px;
              border-left:3px solid transparent;transition:background .15s,color .15s;
-             color:rgba(255,255,255,.65);display:flex;align-items:center;gap:8px;border-radius:0}}
+             color:rgba(255,255,255,.65);display:flex;align-items:center;gap:8px;border-radius:0;
+             touch-action:manipulation;-webkit-tap-highlight-color:transparent}}
   .nav-item:hover{{background:rgba(255,255,255,.08);color:rgba(255,255,255,.95)}}
   .nav-item.active{{background:rgba(16,185,129,.15);border-left-color:var(--accent);
                    color:#fff;font-weight:600}}
@@ -3819,6 +3820,29 @@ function doPush(){{var b=document.getElementById('pbtn');if(b){{b.disabled=true;
 function toggleAdd(){{var p=document.getElementById('add-panel');if(!p)return;var open=p.style.display==='flex';p.style.display=open?'none':'flex';if(!open){{var u=document.getElementById('add-url');if(u){{u.focus();u.value='';}}}}}}
 function showPage(id){{document.querySelectorAll('.page').forEach(function(p){{p.style.display='none';}});var el=document.getElementById(id);if(el){{el.style.display='block';}}history.replaceState(null,'','#'+id);}}
 function toggleNav(){{var nav=document.querySelector('nav');var ov=document.getElementById('nav-overlay');if(!nav||!ov)return;var open=nav.classList.toggle('open');ov.classList.toggle('open',open);}}
+document.addEventListener('DOMContentLoaded',function(){{
+  var btn=document.querySelector('.hamburger');
+  if(btn){{
+    btn.removeAttribute('onclick');
+    var _t=false;
+    btn.addEventListener('touchend',function(e){{_t=true;e.preventDefault();e.stopPropagation();toggleNav();setTimeout(function(){{_t=false;}},300);}},{{passive:false}});
+    btn.addEventListener('click',function(e){{if(_t){{_t=false;return;}}e.stopPropagation();toggleNav();}});
+  }}
+  var navEl=document.querySelector('nav');
+  if(navEl){{
+    navEl.addEventListener('touchend',function(e){{
+      var item=e.target.closest('.nav-item[data-page]');
+      if(item){{
+        e.preventDefault();
+        e.stopPropagation();
+        navEl.classList.remove('open');
+        var ov=document.getElementById('nav-overlay');
+        if(ov)ov.classList.remove('open');
+        showPage(item.getAttribute('data-page'));
+      }}
+    }},{{passive:false}});
+  }}
+}});
 </script>
   {invest_listings_page}
   {deals_page}
