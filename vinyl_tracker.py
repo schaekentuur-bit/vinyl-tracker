@@ -3618,7 +3618,8 @@ def build_html(results, static=False, new_listings=None, collection=None):
   .hamburger{{display:none;border:none;background:none;cursor:pointer;
               padding:10px;flex-direction:column;justify-content:center;
               align-items:center;gap:5px;min-width:44px;min-height:44px;
-              border-radius:6px;-webkit-tap-highlight-color:transparent}}
+              border-radius:6px;-webkit-tap-highlight-color:transparent;
+              touch-action:manipulation}}
   .hamburger:active{{background:rgba(0,0,0,.06)}}
   .hamburger span{{display:block;width:20px;height:2px;background:var(--navy);border-radius:2px}}
 
@@ -3812,6 +3813,7 @@ function doRefresh(){{var b=document.getElementById('rbtn');if(b){{b.disabled=tr
 function doPush(){{var b=document.getElementById('pbtn');if(b){{b.disabled=true;b.textContent='Pushen...';}}fetch('/push').then(function(){{var t=0;var iv=setInterval(function(){{fetch('/status').then(function(r){{return r.json();}}).then(function(d){{t++;if(!d.pushing||t>30){{clearInterval(iv);if(b){{b.disabled=false;b.textContent='✓ Gepushed!';setTimeout(function(){{b.textContent='↹ Push GitHub';}},3000);}}}}}});}},1000);}});}}
 function toggleAdd(){{var p=document.getElementById('add-panel');if(!p)return;var open=p.style.display==='flex';p.style.display=open?'none':'flex';if(!open){{var u=document.getElementById('add-url');if(u){{u.focus();u.value='';}}}}}}
 function showPage(id){{document.querySelectorAll('.page').forEach(function(p){{p.style.display='none';}});var el=document.getElementById(id);if(el){{el.style.display='block';}}history.replaceState(null,'','#'+id);}}
+function toggleNav(){{var nav=document.querySelector('nav');var ov=document.getElementById('nav-overlay');if(!nav||!ov)return;var open=nav.classList.toggle('open');ov.classList.toggle('open',open);}}
 </script>
   {invest_listings_page}
   {deals_page}
