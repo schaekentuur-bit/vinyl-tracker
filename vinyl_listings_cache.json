@@ -1,6 +1,6 @@
 {
   "517224": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -21,7 +21,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 341.8362964871597,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -69,7 +69,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 386.4983251739243,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -281,7 +281,7 @@
     ]
   },
   "2521407": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -386,7 +386,7 @@
         "currency": "AUD",
         "shipping": 0.0,
         "total_eur": 301.7241379310345,
-        "rating_count": 496,
+        "rating_count": 497,
         "seller": "Stacetone",
         "ships_from": "Australia",
         "listed_date": null
@@ -502,7 +502,7 @@
     ]
   },
   "939519": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -607,7 +607,7 @@
         "currency": "SEK",
         "shipping": 0.0,
         "total_eur": 277.8678275367017,
-        "rating_count": 120,
+        "rating_count": 121,
         "seller": "MonoVaxjo",
         "ships_from": "Sweden",
         "listed_date": null
@@ -691,7 +691,7 @@
         "currency": "GBP",
         "shipping": 6.95,
         "total_eur": 384.84725523158073,
-        "rating_count": 40422,
+        "rating_count": 40423,
         "seller": "johnmanshiprecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -703,7 +703,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 431.1603538606889,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -715,7 +715,7 @@
         "currency": "EUR",
         "shipping": 0.0,
         "total_eur": 400.0,
-        "rating_count": 7496,
+        "rating_count": 7497,
         "seller": "leclub33",
         "ships_from": "France",
         "listed_date": null
@@ -727,7 +727,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 436.31366486300783,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -871,7 +871,7 @@
         "currency": "GBP",
         "shipping": 17.95,
         "total_eur": 832.3459509593647,
-        "rating_count": 324,
+        "rating_count": 325,
         "seller": "Backroom.Music",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -915,7 +915,7 @@
     ]
   },
   "6127871": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -960,7 +960,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 40.540000000000006,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -1080,7 +1080,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 44.88,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -1380,7 +1380,7 @@
         "currency": "GBP",
         "shipping": 10.0,
         "total_eur": 52.15929511332676,
-        "rating_count": 3698,
+        "rating_count": 3699,
         "seller": "SHADOWPLAYSOUNDS",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -1388,7 +1388,7 @@
     ]
   },
   "12042641": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -1537,7 +1537,7 @@
     ]
   },
   "12864584": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -1642,7 +1642,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 44.79,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -1794,7 +1794,7 @@
     ]
   },
   "2334540": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -1955,7 +1955,7 @@
     ]
   },
   "33663000": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -1988,7 +1988,7 @@
         "currency": "EUR",
         "shipping": 9.9,
         "total_eur": 112.9,
-        "rating_count": 923,
+        "rating_count": 924,
         "seller": "VHV-Beauvais",
         "ships_from": "France",
         "listed_date": null
@@ -2452,7 +2452,7 @@
     ]
   },
   "34257205": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -2713,7 +2713,7 @@
         "currency": "USD",
         "shipping": 13.99,
         "total_eur": 92.58782100833119,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -2749,7 +2749,7 @@
         "currency": "GBP",
         "shipping": 8.0,
         "total_eur": 91.57729986667438,
-        "rating_count": 10351,
+        "rating_count": 10352,
         "seller": "CurlyKidRecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -2937,7 +2937,7 @@
     ]
   },
   "31323387": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -3186,7 +3186,7 @@
         "currency": "EUR",
         "shipping": 16.0,
         "total_eur": 76.0,
-        "rating_count": 9648,
+        "rating_count": 9649,
         "seller": "vinylstore.italy",
         "ships_from": "Italy",
         "listed_date": null
@@ -3218,7 +3218,7 @@
     ]
   },
   "420718": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -3295,7 +3295,7 @@
     ]
   },
   "375491": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -3616,7 +3616,7 @@
         "currency": "EUR",
         "shipping": 16.0,
         "total_eur": 116.0,
-        "rating_count": 9648,
+        "rating_count": 9649,
         "seller": "vinylstore.italy",
         "ships_from": "Italy",
         "listed_date": null
@@ -3852,7 +3852,7 @@
     ]
   },
   "1629020": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -3929,7 +3929,7 @@
     ]
   },
   "15276024": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -4178,7 +4178,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 35.14,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -4226,7 +4226,7 @@
         "currency": "EUR",
         "shipping": 8.99,
         "total_eur": 38.89,
-        "rating_count": 27910,
+        "rating_count": 27911,
         "seller": "diebrotfrau.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -4274,7 +4274,7 @@
         "currency": "EUR",
         "shipping": 8.9,
         "total_eur": 38.9,
-        "rating_count": 923,
+        "rating_count": 924,
         "seller": "VHV-Beauvais",
         "ships_from": "France",
         "listed_date": null
@@ -4418,7 +4418,7 @@
         "currency": "EUR",
         "shipping": 8.99,
         "total_eur": 40.84,
-        "rating_count": 27910,
+        "rating_count": 27911,
         "seller": "diebrotfrau.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -4450,7 +4450,7 @@
     ]
   },
   "8519678": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -4663,7 +4663,7 @@
         "currency": "EUR",
         "shipping": 11.99,
         "total_eur": 150.98000000000002,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -4771,7 +4771,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 185.17000000000002,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -4839,7 +4839,7 @@
     ]
   },
   "7801798": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "F",
@@ -5196,7 +5196,7 @@
         "currency": "GBP",
         "shipping": 6.95,
         "total_eur": 176.16370065503446,
-        "rating_count": 40422,
+        "rating_count": 40423,
         "seller": "johnmanshiprecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -5396,7 +5396,7 @@
     ]
   },
   "14186441": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -5861,7 +5861,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 37.81,
-        "rating_count": 27910,
+        "rating_count": 27911,
         "seller": "diebrotfrau.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -5893,7 +5893,7 @@
     ]
   },
   "2911293": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -6210,7 +6210,7 @@
     ]
   },
   "152946": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "P",
@@ -6651,7 +6651,7 @@
         "currency": "EUR",
         "shipping": 24.9,
         "total_eur": 42.8,
-        "rating_count": 1513,
+        "rating_count": 1514,
         "seller": "naznet",
         "ships_from": "Finland",
         "listed_date": null
@@ -6755,7 +6755,7 @@
     ]
   },
   "1549636": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -6776,7 +6776,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 171.7684445589625,
-        "rating_count": 10328,
+        "rating_count": 10329,
         "seller": "MediumRareLA",
         "ships_from": "United States",
         "listed_date": null
@@ -6964,7 +6964,7 @@
     ]
   },
   "459606": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -7297,7 +7297,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 72.14,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -7353,7 +7353,7 @@
     ]
   },
   "11118447": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -7506,7 +7506,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 62.69002834321053,
-        "rating_count": 10328,
+        "rating_count": 10329,
         "seller": "MediumRareLA",
         "ships_from": "United States",
         "listed_date": null
@@ -7626,7 +7626,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 38.34,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -7694,7 +7694,7 @@
     ]
   },
   "381988": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -7859,7 +7859,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 677.0799999999999,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -7879,7 +7879,7 @@
     ]
   },
   "612780": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -8316,7 +8316,7 @@
     ]
   },
   "439599": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -8709,7 +8709,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 125.07000000000001,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -8897,7 +8897,7 @@
     ]
   },
   "10130642": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -8974,7 +8974,7 @@
     ]
   },
   "7541569": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -9379,7 +9379,7 @@
         "currency": "GBP",
         "shipping": 10.0,
         "total_eur": 44.04382354646107,
-        "rating_count": 3698,
+        "rating_count": 3699,
         "seller": "SHADOWPLAYSOUNDS",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -9499,7 +9499,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 39.940000000000005,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -9519,7 +9519,7 @@
     ]
   },
   "23316872": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -9552,7 +9552,7 @@
         "currency": "GBP",
         "shipping": 20.0,
         "total_eur": 39.41800475334763,
-        "rating_count": 67,
+        "rating_count": 68,
         "seller": "Chris2020",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -9572,7 +9572,7 @@
     ]
   },
   "14031557": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -9689,7 +9689,7 @@
         "currency": "GBP",
         "shipping": 12.95,
         "total_eur": 40.51939018027941,
-        "rating_count": 324,
+        "rating_count": 325,
         "seller": "PFCPhil",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -9833,7 +9833,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 45.75,
-        "rating_count": 27910,
+        "rating_count": 27911,
         "seller": "diebrotfrau.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -9965,7 +9965,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 62.940000000000005,
-        "rating_count": 27910,
+        "rating_count": 27911,
         "seller": "diebrotfrau.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -10033,7 +10033,7 @@
     ]
   },
   "22048156": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -10078,7 +10078,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 30.54,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -10090,7 +10090,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 30.54,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -10146,7 +10146,7 @@
     ]
   },
   "3824539": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -10187,7 +10187,7 @@
     ]
   },
   "475606": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "F",
@@ -10544,7 +10544,7 @@
         "currency": "GBP",
         "shipping": 10.0,
         "total_eur": 40.56576430351863,
-        "rating_count": 3698,
+        "rating_count": 3699,
         "seller": "SHADOWPLAYSOUNDS",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -10648,7 +10648,7 @@
     ]
   },
   "4269045": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -10921,7 +10921,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 43.61,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -11041,7 +11041,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 96.94,
-        "rating_count": 27910,
+        "rating_count": 27911,
         "seller": "diebrotfrau.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -11049,7 +11049,7 @@
     ]
   },
   "455954": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -11178,7 +11178,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 49.81533968908357,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -11262,7 +11262,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 54.968650691402566,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -11286,7 +11286,7 @@
         "currency": "GBP",
         "shipping": 12.95,
         "total_eur": 37.041330937336966,
-        "rating_count": 324,
+        "rating_count": 325,
         "seller": "PFCPhil",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -11478,7 +11478,7 @@
         "currency": "GBP",
         "shipping": 10.0,
         "total_eur": 40.56576430351863,
-        "rating_count": 3698,
+        "rating_count": 3699,
         "seller": "SHADOWPLAYSOUNDS",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -11534,7 +11534,7 @@
     ]
   },
   "446814": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -11783,7 +11783,7 @@
         "currency": "EUR",
         "shipping": 5.99,
         "total_eur": 27.97,
-        "rating_count": 4814,
+        "rating_count": 4815,
         "seller": "runecosmic",
         "ships_from": "Sweden",
         "listed_date": null
@@ -11899,7 +11899,7 @@
     ]
   },
   "505097": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -12372,7 +12372,7 @@
     ]
   },
   "589920": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -12501,7 +12501,7 @@
         "currency": "GBP",
         "shipping": 5.5,
         "total_eur": 29.563503565010723,
-        "rating_count": 10351,
+        "rating_count": 10352,
         "seller": "CurlyKidRecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -12621,7 +12621,7 @@
         "currency": "GBP",
         "shipping": 6.95,
         "total_eur": 34.72262477537534,
-        "rating_count": 40422,
+        "rating_count": 40423,
         "seller": "johnmanshiprecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -12741,7 +12741,7 @@
         "currency": "GBP",
         "shipping": 10.0,
         "total_eur": 46.36252970842269,
-        "rating_count": 5230,
+        "rating_count": 5231,
         "seller": "ruffneckindian",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -12857,7 +12857,7 @@
     ]
   },
   "11967456": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -12938,7 +12938,7 @@
         "currency": "GBP",
         "shipping": 9.0,
         "total_eur": 30.14318010550113,
-        "rating_count": 2143,
+        "rating_count": 2144,
         "seller": "dwyerarma",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -13262,7 +13262,7 @@
         "currency": "GBP",
         "shipping": 6.95,
         "total_eur": 60.22839255695322,
-        "rating_count": 40422,
+        "rating_count": 40423,
         "seller": "johnmanshiprecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -13294,7 +13294,7 @@
     ]
   },
   "25210735": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -13327,7 +13327,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 29.262217641501334,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -13423,7 +13423,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 42.040000000000006,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -13467,7 +13467,7 @@
     ]
   },
   "400591": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "F",
@@ -13832,7 +13832,7 @@
     ]
   },
   "1949857": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -14381,7 +14381,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 30.439999999999998,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -14393,7 +14393,7 @@
         "currency": "EUR",
         "shipping": 15.0,
         "total_eur": 39.5,
-        "rating_count": 15374,
+        "rating_count": 15375,
         "seller": "alrapediscos",
         "ships_from": "Spain",
         "listed_date": null
@@ -14401,7 +14401,7 @@
     ]
   },
   "400587": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "F",
@@ -14706,7 +14706,7 @@
     ]
   },
   "534020": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -14819,7 +14819,7 @@
     ]
   },
   "36148198": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -14848,7 +14848,7 @@
     ]
   },
   "2520300": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -15049,7 +15049,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 28.439999999999998,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -15385,7 +15385,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 41.0,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -15417,7 +15417,7 @@
     ]
   },
   "21054706": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -15554,7 +15554,7 @@
     ]
   },
   "3336797": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -15619,7 +15619,7 @@
     ]
   },
   "28403278": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -15628,7 +15628,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 25.79232156660655,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -15780,7 +15780,7 @@
     ]
   },
   "383777": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -15813,7 +15813,7 @@
         "currency": "USD",
         "shipping": 39.99,
         "total_eur": 289.3755904835524,
-        "rating_count": 14490,
+        "rating_count": 14491,
         "seller": "GoingUndergroundrex",
         "ships_from": "United States",
         "listed_date": null
@@ -15953,7 +15953,7 @@
     ]
   },
   "1203470": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -16346,7 +16346,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 33.24,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -16454,7 +16454,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 40.98,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -16474,7 +16474,7 @@
     ]
   },
   "317356": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -16795,7 +16795,7 @@
         "currency": "EUR",
         "shipping": 8.0,
         "total_eur": 237.89,
-        "rating_count": 55308,
+        "rating_count": 55309,
         "seller": "MION.Berlin",
         "ships_from": "Germany",
         "listed_date": null
@@ -16855,7 +16855,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 328.46999999999997,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -16971,7 +16971,7 @@
     ]
   },
   "7492229": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -17076,7 +17076,7 @@
         "currency": "EUR",
         "shipping": 15.0,
         "total_eur": 42.9,
-        "rating_count": 410,
+        "rating_count": 411,
         "seller": "VLR",
         "ships_from": "Italy",
         "listed_date": null
@@ -17148,7 +17148,7 @@
         "currency": "GBP",
         "shipping": 17.85,
         "total_eur": 50.837632601008636,
-        "rating_count": 438,
+        "rating_count": 439,
         "seller": "DeadAirRecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -17208,7 +17208,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 39.98,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -17292,7 +17292,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 41.870000000000005,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -17480,7 +17480,7 @@
     ]
   },
   "34578556": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -17521,7 +17521,7 @@
     ]
   },
   "3975953": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -17730,7 +17730,7 @@
     ]
   },
   "8814849": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -17759,7 +17759,7 @@
     ]
   },
   "30551209": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -17836,7 +17836,7 @@
     ]
   },
   "23398166": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -18133,7 +18133,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 55.89,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -18141,7 +18141,7 @@
     ]
   },
   "397167": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -18158,7 +18158,7 @@
     ]
   },
   "25683820": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -18655,7 +18655,7 @@
     ]
   },
   "10559651": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "P",
@@ -18772,7 +18772,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 39.26822983767071,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -18864,7 +18864,7 @@
     ]
   },
   "402227": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -19109,7 +19109,7 @@
     ]
   },
   "382601": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -19402,7 +19402,7 @@
     ]
   },
   "22712903": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -19411,7 +19411,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 33.8,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -19471,7 +19471,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 36.98,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -19543,7 +19543,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 39.24,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -19611,7 +19611,7 @@
     ]
   },
   "1934367": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -19976,7 +19976,7 @@
     ]
   },
   "9847048": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -19997,7 +19997,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 51.515932319848844,
-        "rating_count": 10328,
+        "rating_count": 10329,
         "seller": "MediumRareLA",
         "ships_from": "United States",
         "listed_date": null
@@ -20341,7 +20341,7 @@
     ]
   },
   "2848009": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -20526,7 +20526,7 @@
     ]
   },
   "34780535": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -20547,7 +20547,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 53.800000000000004,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -20579,7 +20579,7 @@
     ]
   },
   "12927816": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -20596,7 +20596,7 @@
     ]
   },
   "4418438": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "P",
@@ -20965,7 +20965,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 33.75,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -21013,7 +21013,7 @@
         "currency": "GBP",
         "shipping": 10.0,
         "total_eur": 37.96881340212161,
-        "rating_count": 3698,
+        "rating_count": 3699,
         "seller": "SHADOWPLAYSOUNDS",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -21037,7 +21037,7 @@
         "currency": "EUR",
         "shipping": 7.5,
         "total_eur": 34.1,
-        "rating_count": 1604,
+        "rating_count": 1605,
         "seller": "IORR",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -21081,7 +21081,7 @@
     ]
   },
   "1862215": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -21122,7 +21122,7 @@
     ]
   },
   "65845": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -21155,7 +21155,7 @@
         "currency": "GBP",
         "shipping": 14.0,
         "total_eur": 19.697408845864008,
-        "rating_count": 4240,
+        "rating_count": 4241,
         "seller": "cordial-records",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -21463,7 +21463,7 @@
     ]
   },
   "746135": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -21504,7 +21504,7 @@
     ]
   },
   "3229870": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -21557,7 +21557,7 @@
     ]
   },
   "526351": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -21898,7 +21898,7 @@
     ]
   },
   "4065605": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -22107,7 +22107,7 @@
     ]
   },
   "1813006": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -22232,7 +22232,7 @@
     ]
   },
   "33831750": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -22337,7 +22337,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 39.5,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -22345,7 +22345,7 @@
     ]
   },
   "12895130": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -22398,7 +22398,7 @@
     ]
   },
   "3183667": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -22407,7 +22407,7 @@
         "currency": "CAD",
         "shipping": 0.0,
         "total_eur": 46.635990548439246,
-        "rating_count": 6553,
+        "rating_count": 6554,
         "seller": "deathofvinyl",
         "ships_from": "Canada",
         "listed_date": null
@@ -22611,7 +22611,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 214.14000000000001,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -22691,7 +22691,7 @@
     ]
   },
   "13672908": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -22864,7 +22864,7 @@
     ]
   },
   "16170729": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -22893,7 +22893,7 @@
     ]
   },
   "223127": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -23058,7 +23058,7 @@
         "currency": "GBP",
         "shipping": 15.0,
         "total_eur": 150.71590052750565,
-        "rating_count": 42941,
+        "rating_count": 42942,
         "seller": "Dobshizzle",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -23130,7 +23130,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 156.92000000000002,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -23238,7 +23238,7 @@
         "currency": "EUR",
         "shipping": 8.3,
         "total_eur": 228.29000000000002,
-        "rating_count": 55308,
+        "rating_count": 55309,
         "seller": "MION.Berlin",
         "ships_from": "Germany",
         "listed_date": null
@@ -23250,7 +23250,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 247.52,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -23298,7 +23298,7 @@
         "currency": "EUR",
         "shipping": 19.5,
         "total_eur": 274.5,
-        "rating_count": 885,
+        "rating_count": 886,
         "seller": "recordorium",
         "ships_from": "Italy",
         "listed_date": null
@@ -23402,7 +23402,7 @@
     ]
   },
   "7753999": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -23423,7 +23423,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 39.86,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -23579,7 +23579,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 49.480000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -23603,7 +23603,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 43.81173237138196,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -23843,7 +23843,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 49.86,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -23879,7 +23879,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 48.040000000000006,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -23935,7 +23935,7 @@
     ]
   },
   "13549135": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -23952,7 +23952,7 @@
     ]
   },
   "5305755": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -24045,7 +24045,7 @@
         "currency": "GBP",
         "shipping": 14.0,
         "total_eur": 27.812880412729697,
-        "rating_count": 4240,
+        "rating_count": 4241,
         "seller": "cordial-records",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -24141,7 +24141,7 @@
         "currency": "GBP",
         "shipping": 6.95,
         "total_eur": 28.925859370471276,
-        "rating_count": 40422,
+        "rating_count": 40423,
         "seller": "johnmanshiprecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -24213,7 +24213,7 @@
         "currency": "GBP",
         "shipping": 12.95,
         "total_eur": 40.51939018027941,
-        "rating_count": 324,
+        "rating_count": 325,
         "seller": "PFCPhil",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -24281,7 +24281,7 @@
     ]
   },
   "11827033": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -24442,7 +24442,7 @@
     ]
   },
   "3363252": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -24531,7 +24531,7 @@
     ]
   },
   "3214829": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -24560,7 +24560,7 @@
     ]
   },
   "2893139": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -24697,7 +24697,7 @@
     ]
   },
   "22645229": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -24918,7 +24918,7 @@
     ]
   },
   "7264539": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -25107,7 +25107,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 67.37,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -25271,7 +25271,7 @@
     ]
   },
   "31334893": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -25484,7 +25484,7 @@
         "currency": "EUR",
         "shipping": 11.99,
         "total_eur": 126.47999999999999,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -25544,7 +25544,7 @@
         "currency": "EUR",
         "shipping": 2.0,
         "total_eur": 130.78,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -25556,7 +25556,7 @@
         "currency": "EUR",
         "shipping": 2.0,
         "total_eur": 130.78,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -25568,7 +25568,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 135.71,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -25664,7 +25664,7 @@
         "currency": "EUR",
         "shipping": 20.95,
         "total_eur": 175.14,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -25768,7 +25768,7 @@
     ]
   },
   "1137475": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -25893,7 +25893,7 @@
     ]
   },
   "765072": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "F",
@@ -25962,7 +25962,7 @@
         "currency": "USD",
         "shipping": 34.0,
         "total_eur": 60.508460018895484,
-        "rating_count": 5053,
+        "rating_count": 5054,
         "seller": "rocknbilly",
         "ships_from": "United States",
         "listed_date": null
@@ -26042,7 +26042,7 @@
     ]
   },
   "6003779": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -26131,7 +26131,7 @@
     ]
   },
   "7435111": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -26268,7 +26268,7 @@
     ]
   },
   "468054": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -26585,7 +26585,7 @@
     ]
   },
   "1931909": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -26894,7 +26894,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 46.16507772910762,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -26966,7 +26966,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 47.23868418792408,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -27026,7 +27026,7 @@
         "currency": "GBP",
         "shipping": 5.5,
         "total_eur": 20.288678917164223,
-        "rating_count": 10351,
+        "rating_count": 10352,
         "seller": "CurlyKidRecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -27058,7 +27058,7 @@
     ]
   },
   "13314916": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -27219,7 +27219,7 @@
     ]
   },
   "10597886": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -27260,7 +27260,7 @@
     ]
   },
   "10752389": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -27289,7 +27289,7 @@
     ]
   },
   "13876606": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -27354,7 +27354,7 @@
     ]
   },
   "10873523": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -27443,7 +27443,7 @@
     ]
   },
   "13318697": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -27496,7 +27496,7 @@
     ]
   },
   "15624365": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -27609,7 +27609,7 @@
     ]
   },
   "485114": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -27882,7 +27882,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 229.9,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -27914,7 +27914,7 @@
     ]
   },
   "17277640": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -27935,7 +27935,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 26.38495233187323,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -28115,7 +28115,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 47.269999999999996,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -28219,7 +28219,7 @@
     ]
   },
   "10456142": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -28444,7 +28444,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 75.58189470067853,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -28452,7 +28452,7 @@
     ]
   },
   "8954977": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -28473,7 +28473,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 35.025337112428076,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -28545,7 +28545,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 54.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -28617,7 +28617,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 57.64,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -28665,7 +28665,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 66.89999999999999,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -28709,7 +28709,7 @@
     ]
   },
   "1198408": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -28802,7 +28802,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 133.85,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -28846,7 +28846,7 @@
     ]
   },
   "598810": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -28891,7 +28891,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 47.33,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -29191,7 +29191,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 116.12986343725844,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -29239,7 +29239,7 @@
         "currency": "EUR",
         "shipping": 8.99,
         "total_eur": 103.99,
-        "rating_count": 27910,
+        "rating_count": 27911,
         "seller": "diebrotfrau.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -29355,7 +29355,7 @@
     ]
   },
   "10395824": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -29376,7 +29376,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 38.38357811560595,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -29592,7 +29592,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 47.16,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -29736,7 +29736,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 61.6,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -29824,11 +29824,23 @@
         "seller": "sigfrid",
         "ships_from": "Italy",
         "listed_date": null
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 48.0,
+        "currency": "EUR",
+        "shipping": 27.15,
+        "total_eur": 75.15,
+        "rating_count": 1038,
+        "seller": "Time_of_Music",
+        "ships_from": "Italy",
+        "listed_date": null
       }
     ]
   },
   "15500018": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -29837,7 +29849,7 @@
         "currency": "EUR",
         "shipping": 8.94,
         "total_eur": 66.46000000000001,
-        "rating_count": 87137,
+        "rating_count": 87138,
         "seller": "WorldWide-Records",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -29881,7 +29893,7 @@
     ]
   },
   "11846916": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -30054,7 +30066,7 @@
     ]
   },
   "676619": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -30087,7 +30099,7 @@
         "currency": "USD",
         "shipping": 50.0,
         "total_eur": 124.53834922270893,
-        "rating_count": 2065,
+        "rating_count": 2066,
         "seller": "taangrecords",
         "ships_from": "United States",
         "listed_date": null
@@ -30303,7 +30315,7 @@
         "currency": "EUR",
         "shipping": 19.5,
         "total_eur": 162.82,
-        "rating_count": 885,
+        "rating_count": 886,
         "seller": "recordorium",
         "ships_from": "Italy",
         "listed_date": null
@@ -30387,7 +30399,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 166.46,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -30543,7 +30555,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 230.71,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -30555,7 +30567,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 246.31,
-        "rating_count": 378233,
+        "rating_count": 378235,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -30599,7 +30611,7 @@
     ]
   },
   "26032708": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -30616,7 +30628,7 @@
     ]
   },
   "18017281": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -30637,7 +30649,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 50.14,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -30657,7 +30669,7 @@
     ]
   },
   "15969889": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -30690,7 +30702,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 59.980000000000004,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -30698,7 +30710,7 @@
     ]
   },
   "16062321": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -30715,7 +30727,7 @@
     ]
   },
   "4731834": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -30756,7 +30768,7 @@
     ]
   },
   "370989": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -30909,7 +30921,7 @@
         "currency": "GBP",
         "shipping": 14.0,
         "total_eur": 30.14318010550113,
-        "rating_count": 42941,
+        "rating_count": 42942,
         "seller": "Dobshizzle",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -31053,7 +31065,7 @@
         "currency": "GBP",
         "shipping": 10.0,
         "total_eur": 31.290939655672133,
-        "rating_count": 3698,
+        "rating_count": 3699,
         "seller": "SHADOWPLAYSOUNDS",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -31197,7 +31209,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 36.94,
-        "rating_count": 27910,
+        "rating_count": 27911,
         "seller": "diebrotfrau.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -31257,7 +31269,7 @@
         "currency": "GBP",
         "shipping": 6.95,
         "total_eur": 38.20068401831778,
-        "rating_count": 40422,
+        "rating_count": 40423,
         "seller": "johnmanshiprecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -31281,7 +31293,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 37.82,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -31289,7 +31301,7 @@
     ]
   },
   "378607": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -31646,7 +31658,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 18.77,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -31766,7 +31778,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 20.52,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -31882,7 +31894,7 @@
     ]
   },
   "401145": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -31915,7 +31927,7 @@
         "currency": "GBP",
         "shipping": 8.2,
         "total_eur": 15.291867138136919,
-        "rating_count": 2451,
+        "rating_count": 2452,
         "seller": "bonirex",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -31927,7 +31939,7 @@
         "currency": "GBP",
         "shipping": 8.2,
         "total_eur": 15.291867138136919,
-        "rating_count": 2451,
+        "rating_count": 2452,
         "seller": "bonirex",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -32367,7 +32379,7 @@
     ]
   },
   "380614": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -32892,7 +32904,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 61.9,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -32904,7 +32916,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 62.76,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -32924,7 +32936,7 @@
     ]
   },
   "8688135": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -33085,7 +33097,7 @@
     ]
   },
   "441165": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -33690,7 +33702,7 @@
     ]
   },
   "27888051": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -33851,7 +33863,7 @@
     ]
   },
   "20031742": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -33916,7 +33928,7 @@
     ]
   },
   "3105488": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -33961,7 +33973,7 @@
         "currency": "GBP",
         "shipping": 17.85,
         "total_eur": 39.24410179120051,
-        "rating_count": 438,
+        "rating_count": 439,
         "seller": "DeadAirRecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -34081,7 +34093,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 30.078158550201845,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -34173,10 +34185,10 @@
       {
         "media": "M",
         "sleeve": "M",
-        "price": 27.24,
+        "price": 27.31,
         "currency": "EUR",
         "shipping": 12.5,
-        "total_eur": 39.739999999999995,
+        "total_eur": 39.81,
         "rating_count": 680,
         "seller": "We.Love.ProgMusic",
         "ships_from": "Romania",
@@ -34345,7 +34357,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 46.2,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -34405,7 +34417,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 37.34,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -34441,7 +34453,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 39.98,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -34453,7 +34465,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 38.839999999999996,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -34473,7 +34485,7 @@
     ]
   },
   "3105226": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -34602,7 +34614,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 29.86343725843855,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -34674,7 +34686,7 @@
         "currency": "EUR",
         "shipping": 7.5,
         "total_eur": 34.45,
-        "rating_count": 1604,
+        "rating_count": 1605,
         "seller": "IORR",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -34950,7 +34962,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 52.5,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -34962,7 +34974,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 44.800000000000004,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -35022,7 +35034,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 48.800000000000004,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -35030,7 +35042,7 @@
     ]
   },
   "4475809": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -35323,7 +35335,7 @@
     ]
   },
   "3102070": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -35664,10 +35676,10 @@
       {
         "media": "M",
         "sleeve": "M",
-        "price": 27.63,
+        "price": 27.69,
         "currency": "EUR",
         "shipping": 12.5,
-        "total_eur": 40.129999999999995,
+        "total_eur": 40.19,
         "rating_count": 680,
         "seller": "We.Love.ProgMusic",
         "ships_from": "Romania",
@@ -35868,7 +35880,7 @@
     ]
   },
   "9535494": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -36389,7 +36401,7 @@
     ]
   },
   "3102140": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -36898,7 +36910,7 @@
     ]
   },
   "27884982": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -36967,7 +36979,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 54.809999999999995,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -36999,7 +37011,7 @@
     ]
   },
   "3386133": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -37544,7 +37556,7 @@
     ]
   },
   "1615490": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "F",
@@ -37709,7 +37721,7 @@
         "currency": "GBP",
         "shipping": 16.0,
         "total_eur": 22.02770853863544,
-        "rating_count": 2642,
+        "rating_count": 2643,
         "seller": "lionalsvinyl1",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -38077,7 +38089,7 @@
     ]
   },
   "27084564": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -38206,7 +38218,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 40.980000000000004,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -38230,7 +38242,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 39.440000000000005,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -38242,7 +38254,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 41.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -38278,7 +38290,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 49.519999999999996,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -38358,7 +38370,7 @@
     ]
   },
   "26309384": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -38511,7 +38523,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 39.440000000000005,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -38523,7 +38535,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 41.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -38547,7 +38559,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 42.89,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -38627,7 +38639,7 @@
     ]
   },
   "204021": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -38836,7 +38848,7 @@
     ]
   },
   "474703": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -39213,7 +39225,7 @@
     ]
   },
   "20414716": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -39702,7 +39714,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 59.5,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -39734,7 +39746,7 @@
     ]
   },
   "32440584": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -40247,7 +40259,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 57.84,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -40279,7 +40291,7 @@
     ]
   },
   "1073329": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -40620,7 +40632,7 @@
     ]
   },
   "1559511": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -40725,7 +40737,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 75.55000000000001,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -40769,7 +40781,7 @@
     ]
   },
   "4126519": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -40874,7 +40886,7 @@
         "currency": "GBP",
         "shipping": 14.0,
         "total_eur": 42.31638745579966,
-        "rating_count": 16756,
+        "rating_count": 16757,
         "seller": "RuffBeatzBass2Dark",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -41114,7 +41126,7 @@
         "currency": "GBP",
         "shipping": 6.95,
         "total_eur": 60.22839255695322,
-        "rating_count": 40422,
+        "rating_count": 40423,
         "seller": "johnmanshiprecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -41302,7 +41314,7 @@
     ]
   },
   "4914174": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -41347,7 +41359,7 @@
         "currency": "GBP",
         "shipping": 15.0,
         "total_eur": 42.89606399629007,
-        "rating_count": 42941,
+        "rating_count": 42942,
         "seller": "Dobshizzle",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -41383,7 +41395,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 45.96,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -41403,7 +41415,7 @@
     ]
   },
   "470912": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -41628,7 +41640,7 @@
         "currency": "GBP",
         "shipping": 15.0,
         "total_eur": 86.95148107356096,
-        "rating_count": 16756,
+        "rating_count": 16757,
         "seller": "RuffBeatzBass2Dark",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -41760,7 +41772,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 95.5,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -41868,7 +41880,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 139.13939706261274,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -41912,7 +41924,7 @@
     ]
   },
   "2048710": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -42029,7 +42041,7 @@
         "currency": "GBP",
         "shipping": 17.0,
         "total_eur": 66.08312561590633,
-        "rating_count": 42941,
+        "rating_count": 42942,
         "seller": "Dobshizzle",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -42145,7 +42157,7 @@
     ]
   },
   "2048352": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -42450,7 +42462,7 @@
     ]
   },
   "367339": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -42695,7 +42707,7 @@
     ]
   },
   "25128898": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -43076,7 +43088,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 52.699999999999996,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -43228,7 +43240,7 @@
     ]
   },
   "4073023": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -43237,7 +43249,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 27.72481319247617,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -43425,7 +43437,7 @@
     ]
   },
   "3294598": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -43482,7 +43494,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 42.60070428583699,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -43602,7 +43614,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 73.64,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -43650,7 +43662,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 106.24000000000001,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -43670,7 +43682,7 @@
     ]
   },
   "9258657": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -43739,7 +43751,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 40.79704543502534,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -43943,7 +43955,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 63.01,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -43975,7 +43987,7 @@
     ]
   },
   "21976249": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -44248,7 +44260,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 57.05,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -44284,7 +44296,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 94.26264708408486,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -44316,7 +44328,7 @@
     ]
   },
   "9247160": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -44505,7 +44517,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 48.480000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -44745,7 +44757,7 @@
         "currency": "EUR",
         "shipping": 8.9,
         "total_eur": 48.9,
-        "rating_count": 923,
+        "rating_count": 924,
         "seller": "VHV-Beauvais",
         "ships_from": "France",
         "listed_date": null
@@ -44757,7 +44769,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 56.4,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -44873,7 +44885,7 @@
     ]
   },
   "26904353": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -45070,7 +45082,7 @@
     ]
   },
   "9258642": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -45199,7 +45211,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 40.771278880013746,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -45411,7 +45423,7 @@
     ]
   },
   "26783426": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -45428,7 +45440,7 @@
     ]
   },
   "12802012": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -45629,7 +45641,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 56.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -45665,7 +45677,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 59.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -45745,7 +45757,7 @@
     ]
   },
   "12800480": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -45814,7 +45826,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 40.98,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -45994,7 +46006,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 53.199999999999996,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -46078,7 +46090,7 @@
         "currency": "EUR",
         "shipping": 16.0,
         "total_eur": 55.0,
-        "rating_count": 9648,
+        "rating_count": 9649,
         "seller": "vinylstore.italy",
         "ships_from": "Italy",
         "listed_date": null
@@ -46222,7 +46234,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 47.040000000000006,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -46258,7 +46270,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 54.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -46290,7 +46302,7 @@
     ]
   },
   "6736792": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -46427,7 +46439,7 @@
     ]
   },
   "13377344": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -46676,7 +46688,7 @@
         "currency": "EUR",
         "shipping": 16.0,
         "total_eur": 65.0,
-        "rating_count": 9648,
+        "rating_count": 9649,
         "seller": "vinylstore.italy",
         "ships_from": "Italy",
         "listed_date": null
@@ -46684,7 +46696,7 @@
     ]
   },
   "27356088": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -46729,7 +46741,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 39.26822983767071,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -47013,7 +47025,7 @@
     ]
   },
   "20020801": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -47058,7 +47070,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 37.57622605857597,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -47150,7 +47162,7 @@
     ]
   },
   "12308370": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -47327,7 +47339,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 32.543158979644424,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -47579,7 +47591,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 37.34,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -47611,7 +47623,7 @@
     ]
   },
   "9480756": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -47748,7 +47760,7 @@
     ]
   },
   "22026808": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -48017,10 +48029,10 @@
       {
         "media": "M",
         "sleeve": "M",
-        "price": 65.0,
+        "price": 68.25,
         "currency": "EUR",
         "shipping": 17.0,
-        "total_eur": 82.0,
+        "total_eur": 85.25,
         "rating_count": 154,
         "seller": "LimitedVinylz",
         "ships_from": "Germany",
@@ -48029,7 +48041,7 @@
     ]
   },
   "30428033": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -48130,7 +48142,7 @@
     ]
   },
   "18582520": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -48163,7 +48175,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 223.31014343382293,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -48207,7 +48219,7 @@
     ]
   },
   "15227004": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -48312,7 +48324,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 31.85,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -48384,7 +48396,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 36.14,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -48476,7 +48488,7 @@
     ]
   },
   "16211818": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -48653,7 +48665,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 43.1,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -48713,7 +48725,7 @@
         "currency": "EUR",
         "shipping": 16.0,
         "total_eur": 46.0,
-        "rating_count": 9648,
+        "rating_count": 9649,
         "seller": "vinylstore.italy",
         "ships_from": "Italy",
         "listed_date": null
@@ -48845,7 +48857,7 @@
         "currency": "EUR",
         "shipping": 10.5,
         "total_eur": 45.5,
-        "rating_count": 1661,
+        "rating_count": 1662,
         "seller": "Art-and-Vinyl",
         "ships_from": "Belgium",
         "listed_date": null
@@ -48949,7 +48961,7 @@
     ]
   },
   "16578819": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -49018,7 +49030,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 38.62406596238083,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -49066,7 +49078,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 48.169999999999995,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -49102,7 +49114,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 56.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -49122,7 +49134,7 @@
     ]
   },
   "31489625": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -49139,7 +49151,7 @@
     ]
   },
   "16938279": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -49352,7 +49364,7 @@
         "currency": "EUR",
         "shipping": 8.95,
         "total_eur": 42.7,
-        "rating_count": 405,
+        "rating_count": 406,
         "seller": "Ammareal_Music",
         "ships_from": "France",
         "listed_date": null
@@ -49496,7 +49508,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 44.14,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -49636,7 +49648,7 @@
     ]
   },
   "16026374": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -49765,7 +49777,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 38.452288928970205,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -49837,7 +49849,7 @@
         "currency": "EUR",
         "shipping": 8.9,
         "total_eur": 76.9,
-        "rating_count": 923,
+        "rating_count": 924,
         "seller": "VHV-Beauvais",
         "ships_from": "France",
         "listed_date": null
@@ -49861,7 +49873,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 77.94999999999999,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -49881,7 +49893,7 @@
     ]
   },
   "31843496": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -49934,7 +49946,7 @@
     ]
   },
   "31828724": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -49963,7 +49975,7 @@
     ]
   },
   "7435327": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -50020,7 +50032,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 30.421712617023108,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -50196,7 +50208,7 @@
     ]
   },
   "9403008": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -50253,7 +50265,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 31.469552520827968,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -50373,7 +50385,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 42.98,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -50433,7 +50445,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 37.34,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -50441,7 +50453,7 @@
     ]
   },
   "9402676": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -50654,7 +50666,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 34.86,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -51010,7 +51022,7 @@
     ]
   },
   "22348948": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -51307,7 +51319,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 41.34,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -51471,7 +51483,7 @@
     ]
   },
   "27840414": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -51588,7 +51600,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 51.480000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -51668,7 +51680,7 @@
     ]
   },
   "9896622": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -51745,7 +51757,7 @@
     ]
   },
   "29085418": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -52006,7 +52018,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 38.11732371381947,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -52198,7 +52210,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 51.5,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -52218,7 +52230,7 @@
     ]
   },
   "10271326": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -52271,7 +52283,7 @@
     ]
   },
   "12270746": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -52324,7 +52336,7 @@
     ]
   },
   "23055125": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -52689,7 +52701,7 @@
     ]
   },
   "12274680": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -52710,7 +52722,7 @@
         "currency": "USD",
         "shipping": 10.99,
         "total_eur": 31.950528214377744,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -52734,7 +52746,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 46.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -52838,7 +52850,7 @@
     ]
   },
   "23100230": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -53167,7 +53179,7 @@
     ]
   },
   "238369": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "F",
@@ -53412,7 +53424,7 @@
     ]
   },
   "12824597": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -53445,7 +53457,7 @@
         "currency": "USD",
         "shipping": 13.99,
         "total_eur": 67.82616164218844,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -53717,7 +53729,7 @@
     ]
   },
   "960025": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -54038,7 +54050,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 207.5,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -54118,7 +54130,7 @@
     ]
   },
   "25119211": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -54183,10 +54195,10 @@
       {
         "media": "M",
         "sleeve": "M",
-        "price": 47.75,
+        "price": 47.5,
         "currency": "GBP",
         "shipping": 14.0,
-        "total_eur": 71.59005275056518,
+        "total_eur": 71.30021448031998,
         "rating_count": 57002,
         "seller": "Juno_Records",
         "ships_from": "United Kingdom",
@@ -54271,7 +54283,7 @@
         "currency": "EUR",
         "shipping": 11.99,
         "total_eur": 70.98,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -54367,7 +54379,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 67.64,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -54391,7 +54403,7 @@
         "currency": "EUR",
         "shipping": 11.99,
         "total_eur": 74.98,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -54639,7 +54651,7 @@
     ]
   },
   "13053315": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -54672,7 +54684,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 30.979987975607663,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -54708,7 +54720,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 46.480000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -54836,7 +54848,7 @@
     ]
   },
   "26584355": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -54893,7 +54905,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 29.61436055999313,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -54989,7 +55001,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 40.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -55073,7 +55085,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 42.940000000000005,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -55321,7 +55333,7 @@
     ]
   },
   "13208577": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -55450,7 +55462,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 65.74,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -55482,7 +55494,7 @@
     ]
   },
   "484030": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -55775,7 +55787,7 @@
     ]
   },
   "703741": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "P",
@@ -56020,7 +56032,7 @@
     ]
   },
   "7266689": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -56041,7 +56053,7 @@
         "currency": "EUR",
         "shipping": 14.98,
         "total_eur": 44.93,
-        "rating_count": 1187,
+        "rating_count": 1188,
         "seller": "Makev08",
         "ships_from": "Germany",
         "listed_date": null
@@ -56065,7 +56077,7 @@
         "currency": "GBP",
         "shipping": 17.85,
         "total_eur": 53.156338762970265,
-        "rating_count": 438,
+        "rating_count": 439,
         "seller": "DeadAirRecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -56233,7 +56245,7 @@
         "currency": "EUR",
         "shipping": 19.5,
         "total_eur": 77.37,
-        "rating_count": 885,
+        "rating_count": 886,
         "seller": "recordorium",
         "ships_from": "Italy",
         "listed_date": null
@@ -56281,7 +56293,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 84.30000000000001,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -56293,7 +56305,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 158.89375590483553,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -56313,7 +56325,7 @@
     ]
   },
   "16231042": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -56418,7 +56430,7 @@
         "currency": "GBP",
         "shipping": 17.85,
         "total_eur": 90.25563735435625,
-        "rating_count": 438,
+        "rating_count": 439,
         "seller": "DeadAirRecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -56454,7 +56466,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 116.79979386755993,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -56562,7 +56574,7 @@
         "currency": "GBP",
         "shipping": 15.95,
         "total_eur": 122.8218653991073,
-        "rating_count": 324,
+        "rating_count": 325,
         "seller": "Backroom.Music",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -56622,7 +56634,7 @@
         "currency": "EUR",
         "shipping": 19.5,
         "total_eur": 133.05,
-        "rating_count": 885,
+        "rating_count": 886,
         "seller": "recordorium",
         "ships_from": "Italy",
         "listed_date": null
@@ -56774,7 +56786,7 @@
     ]
   },
   "1044164": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -56879,7 +56891,7 @@
         "currency": "EUR",
         "shipping": 19.5,
         "total_eur": 91.95,
-        "rating_count": 885,
+        "rating_count": 886,
         "seller": "recordorium",
         "ships_from": "Italy",
         "listed_date": null
@@ -57247,7 +57259,7 @@
     ]
   },
   "10039232": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -57256,7 +57268,7 @@
         "currency": "EUR",
         "shipping": 16.0,
         "total_eur": 46.0,
-        "rating_count": 9648,
+        "rating_count": 9649,
         "seller": "vinylstore.italy",
         "ships_from": "Italy",
         "listed_date": null
@@ -57492,7 +57504,7 @@
     ]
   },
   "5709533": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -57533,7 +57545,7 @@
     ]
   },
   "589850": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -57586,7 +57598,7 @@
     ]
   },
   "22207354": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -57855,7 +57867,7 @@
     ]
   },
   "5699282": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -57966,18 +57978,6 @@
         "listed_date": null
       },
       {
-        "media": "M",
-        "sleeve": "NM",
-        "price": 25.0,
-        "currency": "EUR",
-        "shipping": 11.95,
-        "total_eur": 36.95,
-        "rating_count": 42,
-        "seller": "antonemusic",
-        "ships_from": "Spain",
-        "listed_date": null
-      },
-      {
         "media": "NM",
         "sleeve": "VG+",
         "price": 25.0,
@@ -57987,6 +57987,18 @@
         "rating_count": 164,
         "seller": "SoundOutRecords_",
         "ships_from": "Ireland",
+        "listed_date": null
+      },
+      {
+        "media": "M",
+        "sleeve": "NM",
+        "price": 25.0,
+        "currency": "EUR",
+        "shipping": 11.95,
+        "total_eur": 36.95,
+        "rating_count": 42,
+        "seller": "antonemusic",
+        "ships_from": "Spain",
         "listed_date": null
       },
       {
@@ -58332,7 +58344,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 48.47,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -58352,7 +58364,7 @@
     ]
   },
   "386005": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -58637,7 +58649,7 @@
         "currency": "EUR",
         "shipping": 14.98,
         "total_eur": 26.97,
-        "rating_count": 1187,
+        "rating_count": 1188,
         "seller": "Makev08",
         "ships_from": "Germany",
         "listed_date": null
@@ -58921,7 +58933,7 @@
     ]
   },
   "1464270": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -59250,7 +59262,7 @@
     ]
   },
   "16132613": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -59391,7 +59403,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 27.28678175727906,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -59463,7 +59475,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 37.8,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -59595,7 +59607,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 29.14,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -59747,7 +59759,7 @@
     ]
   },
   "693037": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -59816,7 +59828,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 14.89,
-        "rating_count": 27910,
+        "rating_count": 27911,
         "seller": "diebrotfrau.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -60032,7 +60044,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 17.46,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -60316,7 +60328,7 @@
     ]
   },
   "22336765": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -60333,7 +60345,7 @@
     ]
   },
   "6647916": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -60354,7 +60366,7 @@
         "currency": "EUR",
         "shipping": 7.5,
         "total_eur": 33.45,
-        "rating_count": 1604,
+        "rating_count": 1605,
         "seller": "IORR",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -60374,7 +60386,7 @@
     ]
   },
   "20433880": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -60391,7 +60403,7 @@
     ]
   },
   "22785002": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -60420,7 +60432,7 @@
     ]
   },
   "20619157": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -60441,7 +60453,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 34.82,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -60453,7 +60465,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 41.98,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -60513,7 +60525,7 @@
         "currency": "EUR",
         "shipping": 9.95,
         "total_eur": 43.64,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -60537,7 +60549,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 47.199999999999996,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -60545,7 +60557,7 @@
     ]
   },
   "26234072": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -60590,7 +60602,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 66.49,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -60598,7 +60610,7 @@
     ]
   },
   "10320776": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -60627,7 +60639,7 @@
     ]
   },
   "11745367": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -60661,7 +60673,7 @@
     ]
   },
   "2267945": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -60714,7 +60726,7 @@
     ]
   },
   "26449052": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -60803,7 +60815,7 @@
     ]
   },
   "2084461": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -60904,7 +60916,7 @@
     ]
   },
   "3469887": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -60937,7 +60949,7 @@
         "currency": "EUR",
         "shipping": 8.94,
         "total_eur": 58.43,
-        "rating_count": 87137,
+        "rating_count": 87138,
         "seller": "WorldWide-Records",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -60969,7 +60981,7 @@
     ]
   },
   "2375621": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -61130,7 +61142,7 @@
     ]
   },
   "30376355": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -61199,7 +61211,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 42.15,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -61207,7 +61219,7 @@
     ]
   },
   "1265189": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -61240,7 +61252,7 @@
         "currency": "EUR",
         "shipping": 8.94,
         "total_eur": 65.42,
-        "rating_count": 87137,
+        "rating_count": 87138,
         "seller": "WorldWide-Records",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -61392,7 +61404,7 @@
     ]
   },
   "21119311": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -61401,7 +61413,7 @@
         "currency": "EUR",
         "shipping": 8.94,
         "total_eur": 65.62,
-        "rating_count": 87137,
+        "rating_count": 87138,
         "seller": "WorldWide-Records",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -61445,7 +61457,7 @@
     ]
   },
   "22978889": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -61594,7 +61606,7 @@
     ]
   },
   "2103788": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -61743,7 +61755,7 @@
     ]
   },
   "1297507": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -62028,7 +62040,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 215.89000000000001,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -62052,7 +62064,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 241.09,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -62064,7 +62076,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 241.09,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -62108,7 +62120,7 @@
     ]
   },
   "1770697": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -62117,7 +62129,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 26.299063815167912,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -62413,7 +62425,7 @@
     ]
   },
   "1220700": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -62458,7 +62470,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 397.9,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -62466,7 +62478,7 @@
     ]
   },
   "17885617": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -62915,7 +62927,7 @@
     ]
   },
   "1827139": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -62924,7 +62936,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 32.61186979300868,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -62984,7 +62996,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 75.96000000000001,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -63028,7 +63040,7 @@
     ]
   },
   "1443701": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -63177,7 +63189,7 @@
     ]
   },
   "15703648": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -63342,7 +63354,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 49.34,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -63434,7 +63446,7 @@
     ]
   },
   "18825352": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -63503,7 +63515,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 32.25972687451688,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -63787,7 +63799,7 @@
     ]
   },
   "17650882": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -63828,7 +63840,7 @@
     ]
   },
   "9307146": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -63969,7 +63981,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 32.52598127630336,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -63993,7 +64005,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 33.8,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -64089,7 +64101,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 37.8,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -64161,7 +64173,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 37.34,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -64349,7 +64361,7 @@
     ]
   },
   "9299636": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -64394,7 +64406,7 @@
         "currency": "EUR",
         "shipping": 19.5,
         "total_eur": 71.75,
-        "rating_count": 885,
+        "rating_count": 886,
         "seller": "recordorium",
         "ships_from": "Italy",
         "listed_date": null
@@ -64406,7 +64418,7 @@
         "currency": "EUR",
         "shipping": 19.5,
         "total_eur": 74.99000000000001,
-        "rating_count": 885,
+        "rating_count": 886,
         "seller": "recordorium",
         "ships_from": "Italy",
         "listed_date": null
@@ -64478,7 +64490,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 106.52000000000001,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -64510,7 +64522,7 @@
     ]
   },
   "401816": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -64687,7 +64699,7 @@
         "currency": "EUR",
         "shipping": 9.0,
         "total_eur": 29.0,
-        "rating_count": 1610,
+        "rating_count": 1611,
         "seller": "Rotzinge",
         "ships_from": "Germany",
         "listed_date": null
@@ -64839,7 +64851,7 @@
     ]
   },
   "23005994": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -64896,7 +64908,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 33.81,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -65028,7 +65040,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 39.24,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -65108,7 +65120,7 @@
     ]
   },
   "2691711": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -65293,7 +65305,7 @@
     ]
   },
   "952645": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "F",
@@ -65374,7 +65386,7 @@
         "currency": "EUR",
         "shipping": 15.0,
         "total_eur": 21.0,
-        "rating_count": 8013,
+        "rating_count": 8014,
         "seller": "CristinaRecords",
         "ships_from": "Spain",
         "listed_date": null
@@ -65386,7 +65398,7 @@
         "currency": "EUR",
         "shipping": 15.5,
         "total_eur": 22.1,
-        "rating_count": 5443,
+        "rating_count": 5446,
         "seller": "TwistedVinyls",
         "ships_from": "Spain",
         "listed_date": null
@@ -65482,7 +65494,7 @@
         "currency": "EUR",
         "shipping": 15.5,
         "total_eur": 23.2,
-        "rating_count": 5443,
+        "rating_count": 5446,
         "seller": "TwistedVinyls",
         "ships_from": "Spain",
         "listed_date": null
@@ -65494,7 +65506,7 @@
         "currency": "EUR",
         "shipping": 15.5,
         "total_eur": 23.2,
-        "rating_count": 5443,
+        "rating_count": 5446,
         "seller": "TwistedVinyls",
         "ships_from": "Spain",
         "listed_date": null
@@ -65530,7 +65542,7 @@
         "currency": "EUR",
         "shipping": 15.5,
         "total_eur": 24.3,
-        "rating_count": 5443,
+        "rating_count": 5446,
         "seller": "TwistedVinyls",
         "ships_from": "Spain",
         "listed_date": null
@@ -65646,7 +65658,7 @@
     ]
   },
   "3100518": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -65687,7 +65699,7 @@
     ]
   },
   "361323": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -66020,7 +66032,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 176.96,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -66032,7 +66044,7 @@
         "currency": "GBP",
         "shipping": 15.0,
         "total_eur": 191.2932583618341,
-        "rating_count": 16756,
+        "rating_count": 16757,
         "seller": "RuffBeatzBass2Dark",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -66148,7 +66160,7 @@
     ]
   },
   "26658734": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -66165,7 +66177,7 @@
     ]
   },
   "28648639": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -66194,7 +66206,7 @@
     ]
   },
   "26918048": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -66223,7 +66235,7 @@
     ]
   },
   "1201387": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -66436,7 +66448,7 @@
         "currency": "EUR",
         "shipping": 8.0,
         "total_eur": 17.0,
-        "rating_count": 4327,
+        "rating_count": 4328,
         "seller": "JD-account",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -66624,7 +66636,7 @@
     ]
   },
   "24606677": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -66705,7 +66717,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 39.2,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -66729,7 +66741,7 @@
         "currency": "EUR",
         "shipping": 9.95,
         "total_eur": 39.94,
-        "rating_count": 19676,
+        "rating_count": 19677,
         "seller": "Kowa1",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -66737,7 +66749,7 @@
     ]
   },
   "2693688": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -67030,7 +67042,7 @@
     ]
   },
   "3925863": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -67039,7 +67051,7 @@
         "currency": "GBP",
         "shipping": 6.95,
         "total_eur": 60.22839255695322,
-        "rating_count": 40422,
+        "rating_count": 40423,
         "seller": "johnmanshiprecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -67071,7 +67083,7 @@
     ]
   },
   "735833": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -67388,7 +67400,7 @@
     ]
   },
   "6848587": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -67589,7 +67601,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 39.26822983767071,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -67721,7 +67733,7 @@
         "currency": "EUR",
         "shipping": 12.95,
         "total_eur": 51.040000000000006,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -67817,7 +67829,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 57.4,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -67885,7 +67897,7 @@
     ]
   },
   "4634884": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G",
@@ -67894,7 +67906,7 @@
         "currency": "GBP",
         "shipping": 12.95,
         "total_eur": 18.49168164164396,
-        "rating_count": 324,
+        "rating_count": 325,
         "seller": "PFCPhil",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -67998,7 +68010,7 @@
     ]
   },
   "634218": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -68567,7 +68579,7 @@
     ]
   },
   "1201716": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -68840,7 +68852,7 @@
         "currency": "EUR",
         "shipping": 20.0,
         "total_eur": 45.0,
-        "rating_count": 26,
+        "rating_count": 27,
         "seller": "ricardomurillo",
         "ships_from": "Spain",
         "listed_date": null
@@ -69052,7 +69064,7 @@
     ]
   },
   "9124039": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -69181,7 +69193,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 34.49282830885511,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -69337,7 +69349,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 55.84,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -69417,7 +69429,7 @@
     ]
   },
   "1066027": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -69606,7 +69618,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 47.23868418792408,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -69702,7 +69714,7 @@
         "currency": "GBP",
         "shipping": 10.0,
         "total_eur": 26.653527331748887,
-        "rating_count": 3698,
+        "rating_count": 3699,
         "seller": "SHADOWPLAYSOUNDS",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -69810,7 +69822,7 @@
         "currency": "GBP",
         "shipping": 6.95,
         "total_eur": 26.60715320850965,
-        "rating_count": 40422,
+        "rating_count": 40423,
         "seller": "johnmanshiprecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -69882,7 +69894,7 @@
         "currency": "GBP",
         "shipping": 6.95,
         "total_eur": 28.925859370471276,
-        "rating_count": 40422,
+        "rating_count": 40423,
         "seller": "johnmanshiprecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -69914,7 +69926,7 @@
     ]
   },
   "2689368": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "P",
@@ -70019,7 +70031,7 @@
         "currency": "EUR",
         "shipping": 8.94,
         "total_eur": 13.0,
-        "rating_count": 87137,
+        "rating_count": 87138,
         "seller": "WorldWide-Records",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -70163,7 +70175,7 @@
         "currency": "EUR",
         "shipping": 7.5,
         "total_eur": 15.63,
-        "rating_count": 1604,
+        "rating_count": 1605,
         "seller": "IORR",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -70175,7 +70187,7 @@
         "currency": "EUR",
         "shipping": 15.5,
         "total_eur": 24.3,
-        "rating_count": 5443,
+        "rating_count": 5446,
         "seller": "TwistedVinyls",
         "ships_from": "Spain",
         "listed_date": null
@@ -70231,7 +70243,7 @@
     ]
   },
   "2972649": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -70240,7 +70252,7 @@
         "currency": "EUR",
         "shipping": 2.95,
         "total_eur": 4.140000000000001,
-        "rating_count": 18853,
+        "rating_count": 18854,
         "seller": "VinylFarm.eu",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -70384,7 +70396,7 @@
         "currency": "EUR",
         "shipping": 7.5,
         "total_eur": 15.68,
-        "rating_count": 1604,
+        "rating_count": 1605,
         "seller": "IORR",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -70396,7 +70408,7 @@
         "currency": "EUR",
         "shipping": 15.5,
         "total_eur": 24.3,
-        "rating_count": 5443,
+        "rating_count": 5446,
         "seller": "TwistedVinyls",
         "ships_from": "Spain",
         "listed_date": null
@@ -70428,7 +70440,7 @@
     ]
   },
   "3351778": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -70449,7 +70461,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 94.40006871081337,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -70673,7 +70685,7 @@
     ]
   },
   "268090": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -71162,7 +71174,7 @@
         "currency": "USD",
         "shipping": 50.0,
         "total_eur": 207.85021042686594,
-        "rating_count": 2458,
+        "rating_count": 2459,
         "seller": "BIG.DAWG.RECORDS",
         "ships_from": "United States",
         "listed_date": null
@@ -71194,7 +71206,7 @@
     ]
   },
   "22556825": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -71419,7 +71431,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 53.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -71655,7 +71667,7 @@
     ]
   },
   "688267": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -71960,7 +71972,7 @@
     ]
   },
   "6102279": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -71989,7 +72001,7 @@
     ]
   },
   "625331": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -72118,7 +72130,7 @@
         "currency": "EUR",
         "shipping": 8.0,
         "total_eur": 31.99,
-        "rating_count": 55308,
+        "rating_count": 55309,
         "seller": "MION.Berlin",
         "ships_from": "Germany",
         "listed_date": null
@@ -72346,7 +72358,7 @@
         "currency": "USD",
         "shipping": 13.0,
         "total_eur": 71.2874688654127,
-        "rating_count": 13639,
+        "rating_count": 13640,
         "seller": "korushinkansen",
         "ships_from": "Japan",
         "listed_date": null
@@ -72366,7 +72378,7 @@
     ]
   },
   "5557406": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -72507,7 +72519,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 53.870000000000005,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -72519,7 +72531,7 @@
         "currency": "EUR",
         "shipping": 11.99,
         "total_eur": 63.480000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -72531,7 +72543,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 61.1,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -72575,7 +72587,7 @@
     ]
   },
   "840158": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -72940,7 +72952,7 @@
     ]
   },
   "2560004": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -73065,7 +73077,7 @@
     ]
   },
   "339574": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -73238,7 +73250,7 @@
     ]
   },
   "1635232": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -73271,7 +73283,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 48.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -73331,7 +73343,7 @@
         "currency": "USD",
         "shipping": 40.0,
         "total_eur": 81.58550201838015,
-        "rating_count": 10328,
+        "rating_count": 10329,
         "seller": "MediumRareLA",
         "ships_from": "United States",
         "listed_date": null
@@ -73559,7 +73571,7 @@
         "currency": "USD",
         "shipping": 38.0,
         "total_eur": 139.68049471785622,
-        "rating_count": 870,
+        "rating_count": 871,
         "seller": "YolisRecords",
         "ships_from": "United States",
         "listed_date": null
@@ -73579,7 +73591,7 @@
     ]
   },
   "2070894": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -73612,7 +73624,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 35.47195739929572,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -73788,7 +73800,7 @@
     ]
   },
   "15388111": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -73877,7 +73889,7 @@
     ]
   },
   "2034523": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -73894,7 +73906,7 @@
     ]
   },
   "4179730": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -74031,7 +74043,7 @@
     ]
   },
   "1634156": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -74180,7 +74192,7 @@
     ]
   },
   "2341640": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -74269,7 +74281,7 @@
     ]
   },
   "2206780": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -74650,7 +74662,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 427.37,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -74682,7 +74694,7 @@
     ]
   },
   "25133437": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -74727,7 +74739,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 40.659623808296836,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -74867,6 +74879,18 @@
       {
         "media": "M",
         "sleeve": "M",
+        "price": 33.5,
+        "currency": "GBP",
+        "shipping": 9.0,
+        "total_eur": 49.272505941684535,
+        "rating_count": 57002,
+        "seller": "Juno_Records",
+        "ships_from": "United Kingdom",
+        "listed_date": null
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
         "price": 38.95,
         "currency": "EUR",
         "shipping": 19.9,
@@ -74898,18 +74922,6 @@
         "rating_count": 33849,
         "seller": "decks.de",
         "ships_from": "Germany",
-        "listed_date": null
-      },
-      {
-        "media": "M",
-        "sleeve": "M",
-        "price": 34.25,
-        "currency": "GBP",
-        "shipping": 9.0,
-        "total_eur": 50.142020752420144,
-        "rating_count": 57002,
-        "seller": "Juno_Records",
-        "ships_from": "United Kingdom",
         "listed_date": null
       },
       {
@@ -74999,7 +75011,7 @@
     ]
   },
   "3782742": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -75152,7 +75164,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 182.52,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -75200,7 +75212,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 337.09999999999997,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -75220,7 +75232,7 @@
     ]
   },
   "10821533": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -75265,7 +75277,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 34.26092931375076,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -75421,7 +75433,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 53.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -75457,7 +75469,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 55.14,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -75505,7 +75517,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 60.78,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -75561,7 +75573,7 @@
     ]
   },
   "10996313": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -75758,7 +75770,7 @@
     ]
   },
   "10305796": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -75811,7 +75823,7 @@
     ]
   },
   "13713464": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -75864,7 +75876,7 @@
     ]
   },
   "9603231": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -75881,7 +75893,7 @@
     ]
   },
   "15841340": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -76034,7 +76046,7 @@
         "currency": "EUR",
         "shipping": 6.95,
         "total_eur": 31.939999999999998,
-        "rating_count": 2598,
+        "rating_count": 2599,
         "seller": "offbeat__records",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -76406,7 +76418,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 63.97,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -76414,7 +76426,7 @@
     ]
   },
   "2590105": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -76791,7 +76803,7 @@
     ]
   },
   "3333076": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -76880,7 +76892,7 @@
     ]
   },
   "376138": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -77173,7 +77185,7 @@
     ]
   },
   "501415": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -77310,7 +77322,7 @@
     ]
   },
   "6986271": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -77495,7 +77507,7 @@
     ]
   },
   "495681": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -77860,7 +77872,7 @@
     ]
   },
   "445878": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -77925,7 +77937,7 @@
     ]
   },
   "8961614": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -78434,7 +78446,7 @@
     ]
   },
   "9057753": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -78659,7 +78671,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 47.040000000000006,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -78683,7 +78695,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 54.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -78743,7 +78755,7 @@
         "currency": "GBP",
         "shipping": 17.85,
         "total_eur": 63.59051649179757,
-        "rating_count": 438,
+        "rating_count": 439,
         "seller": "DeadAirRecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -78755,7 +78767,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 52.760000000000005,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -78827,7 +78839,7 @@
         "currency": "EUR",
         "shipping": 7.5,
         "total_eur": 52.88,
-        "rating_count": 1604,
+        "rating_count": 1605,
         "seller": "IORR",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -78943,7 +78955,7 @@
     ]
   },
   "2024524": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -79104,7 +79116,7 @@
     ]
   },
   "9359884": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -79161,7 +79173,7 @@
         "currency": "EUR",
         "shipping": 20.0,
         "total_eur": 40.0,
-        "rating_count": 26,
+        "rating_count": 27,
         "seller": "ricardomurillo",
         "ships_from": "Spain",
         "listed_date": null
@@ -79233,7 +79245,7 @@
         "currency": "GBP",
         "shipping": 14.0,
         "total_eur": 39.41800475334763,
-        "rating_count": 16756,
+        "rating_count": 16757,
         "seller": "RuffBeatzBass2Dark",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -79281,7 +79293,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 30.24,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -79533,7 +79545,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 43.1,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -79649,7 +79661,7 @@
     ]
   },
   "1469334": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -79918,7 +79930,7 @@
     ]
   },
   "6275103": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -80083,7 +80095,7 @@
         "currency": "EUR",
         "shipping": 21.0,
         "total_eur": 58.0,
-        "rating_count": 9648,
+        "rating_count": 9649,
         "seller": "vinylstore.italy",
         "ships_from": "Italy",
         "listed_date": null
@@ -80143,7 +80155,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 56.4,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -80239,7 +80251,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 52.800000000000004,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -80347,7 +80359,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 60.800000000000004,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -80383,7 +80395,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 72.36,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -80415,7 +80427,7 @@
     ]
   },
   "17896735": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "G+",
@@ -80604,7 +80616,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 56.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -80880,7 +80892,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 57.78,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -80948,7 +80960,7 @@
     ]
   },
   "382417": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -81065,7 +81077,7 @@
         "currency": "GBP",
         "shipping": 14.0,
         "total_eur": 33.62123934844357,
-        "rating_count": 16756,
+        "rating_count": 16757,
         "seller": "RuffBeatzBass2Dark",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -81101,7 +81113,7 @@
         "currency": "GBP",
         "shipping": 14.0,
         "total_eur": 33.62123934844357,
-        "rating_count": 42941,
+        "rating_count": 42942,
         "seller": "Dobshizzle",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -81389,7 +81401,7 @@
         "currency": "GBP",
         "shipping": 12.7,
         "total_eur": 43.69601762216683,
-        "rating_count": 9263,
+        "rating_count": 9264,
         "seller": "zorbodan",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -81409,7 +81421,7 @@
     ]
   },
   "4194515": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -81586,7 +81598,7 @@
         "currency": "GBP",
         "shipping": 14.0,
         "total_eur": 56.796707437250014,
-        "rating_count": 4240,
+        "rating_count": 4241,
         "seller": "cordial-records",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -81618,7 +81630,7 @@
     ]
   },
   "1982122": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -81723,7 +81735,7 @@
         "currency": "EUR",
         "shipping": 19.5,
         "total_eur": 195.15,
-        "rating_count": 885,
+        "rating_count": 886,
         "seller": "recordorium",
         "ships_from": "Italy",
         "listed_date": null
@@ -81755,7 +81767,7 @@
     ]
   },
   "10533002": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -81764,7 +81776,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 23.799707979043205,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -81800,7 +81812,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 26.849999999999998,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -81904,7 +81916,7 @@
     ]
   },
   "238877": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -82309,7 +82321,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 22.98,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -82365,7 +82377,7 @@
     ]
   },
   "6063431": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -82686,7 +82698,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 49.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -82698,7 +82710,7 @@
         "currency": "EUR",
         "shipping": 11.26,
         "total_eur": 54.879999999999995,
-        "rating_count": 6703,
+        "rating_count": 6704,
         "seller": "DubstoreEU",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -82706,7 +82718,7 @@
     ]
   },
   "10518961": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -82823,7 +82835,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 28.939999999999998,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -82859,7 +82871,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 31.840000000000003,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -82871,7 +82883,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 32.84,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -83183,7 +83195,7 @@
         "currency": "EUR",
         "shipping": 16.0,
         "total_eur": 46.0,
-        "rating_count": 9648,
+        "rating_count": 9649,
         "seller": "vinylstore.italy",
         "ships_from": "Italy",
         "listed_date": null
@@ -83267,7 +83279,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 41.99,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -83287,7 +83299,7 @@
     ]
   },
   "1217497": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -83356,7 +83368,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 60.78,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -83368,7 +83380,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 64.7,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -83424,7 +83436,7 @@
     ]
   },
   "8953011": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -83457,7 +83469,7 @@
         "currency": "EUR",
         "shipping": 22.0,
         "total_eur": 44.0,
-        "rating_count": 6640,
+        "rating_count": 6641,
         "seller": "diskadik",
         "ships_from": "Greece",
         "listed_date": null
@@ -83625,7 +83637,7 @@
         "currency": "EUR",
         "shipping": 16.0,
         "total_eur": 43.0,
-        "rating_count": 9648,
+        "rating_count": 9649,
         "seller": "vinylstore.italy",
         "ships_from": "Italy",
         "listed_date": null
@@ -83957,7 +83969,7 @@
     ]
   },
   "804778": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "F",
@@ -84170,7 +84182,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 33.56,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -84214,7 +84226,7 @@
     ]
   },
   "8212247": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -84315,7 +84327,7 @@
     ]
   },
   "1410402": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -84420,7 +84432,7 @@
         "currency": "EUR",
         "shipping": 22.0,
         "total_eur": 97.0,
-        "rating_count": 6640,
+        "rating_count": 6641,
         "seller": "diskadik",
         "ships_from": "Greece",
         "listed_date": null
@@ -84644,7 +84656,7 @@
     ]
   },
   "14950419": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "NM",
@@ -84709,7 +84721,7 @@
     ]
   },
   "3480688": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -84766,7 +84778,7 @@
         "currency": "EUR",
         "shipping": 19.0,
         "total_eur": 78.9,
-        "rating_count": 7504,
+        "rating_count": 7505,
         "seller": "cdlpcollection",
         "ships_from": "Greece",
         "listed_date": null
@@ -84790,7 +84802,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 76.81,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -84838,7 +84850,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 102.10000000000001,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -84922,7 +84934,7 @@
         "currency": "EUR",
         "shipping": 5.9,
         "total_eur": 121.34,
-        "rating_count": 378233,
+        "rating_count": 378236,
         "seller": "recordsale-de",
         "ships_from": "Germany",
         "listed_date": null
@@ -84954,7 +84966,7 @@
     ]
   },
   "11860171": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -85191,7 +85203,7 @@
         "currency": "EUR",
         "shipping": 15.9,
         "total_eur": 39.9,
-        "rating_count": 584,
+        "rating_count": 585,
         "seller": "jukeboxtrovacd",
         "ships_from": "Italy",
         "listed_date": null
@@ -85491,7 +85503,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 37.98,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -85499,7 +85511,7 @@
     ]
   },
   "66534": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -85568,7 +85580,7 @@
         "currency": "GBP",
         "shipping": 5.5,
         "total_eur": 12.752883890788938,
-        "rating_count": 10351,
+        "rating_count": 10352,
         "seller": "CurlyKidRecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -86020,7 +86032,7 @@
     ]
   },
   "22031233": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -86229,7 +86241,7 @@
     ]
   },
   "12773291": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG",
@@ -86654,7 +86666,7 @@
     ]
   },
   "21374590": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -86695,7 +86707,7 @@
     ]
   },
   "14713017": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "VG+",
@@ -87240,7 +87252,7 @@
     ]
   },
   "30188873": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -87257,7 +87269,7 @@
     ]
   },
   "30244973": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -87274,7 +87286,7 @@
     ]
   },
   "30215912": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -87303,7 +87315,7 @@
     ]
   },
   "10090232": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -87384,7 +87396,7 @@
         "currency": "USD",
         "shipping": 7.99,
         "total_eur": 34.85356007901744,
-        "rating_count": 369702,
+        "rating_count": 369704,
         "seller": "C.C.Music",
         "ships_from": "United States",
         "listed_date": null
@@ -87600,7 +87612,7 @@
         "currency": "GBP",
         "shipping": 5.5,
         "total_eur": 38.82673468204741,
-        "rating_count": 10351,
+        "rating_count": 10352,
         "seller": "CurlyKidRecords",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -87672,7 +87684,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 42.040000000000006,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -87792,7 +87804,7 @@
         "currency": "EUR",
         "shipping": 12.99,
         "total_eur": 55.980000000000004,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -87800,7 +87812,7 @@
     ]
   },
   "7055196": {
-    "fetched_at": "2026-05-26T13:38:50",
+    "fetched_at": "2026-05-26T14:02:51",
     "listings": [
       {
         "media": "M",
@@ -88013,7 +88025,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 29.479999999999997,
-        "rating_count": 284912,
+        "rating_count": 284913,
         "seller": "www.hhv.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -88037,7 +88049,7 @@
         "currency": "EUR",
         "shipping": 5.95,
         "total_eur": 28.14,
-        "rating_count": 239203,
+        "rating_count": 239207,
         "seller": "groovesland",
         "ships_from": "Germany",
         "listed_date": null
@@ -88121,7 +88133,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 32.79,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -88133,7 +88145,7 @@
         "currency": "EUR",
         "shipping": 7.99,
         "total_eur": 32.79,
-        "rating_count": 38754,
+        "rating_count": 38755,
         "seller": "Lot.Of.Music",
         "ships_from": "Netherlands",
         "listed_date": null
@@ -88241,7 +88253,7 @@
         "currency": "EUR",
         "shipping": 7.9,
         "total_eur": 47.9,
-        "rating_count": 923,
+        "rating_count": 924,
         "seller": "VHV-Beauvais",
         "ships_from": "France",
         "listed_date": null
