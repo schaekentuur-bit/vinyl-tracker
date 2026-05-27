@@ -3830,9 +3830,14 @@ document.addEventListener('DOMContentLoaded',function(){{
   }}
   var navEl=document.querySelector('nav');
   if(navEl){{
+    var _ny=0,_nx=0;
+    navEl.addEventListener('touchstart',function(e){{_ny=e.touches[0].clientY;_nx=e.touches[0].clientX;}},{{passive:true}});
     navEl.addEventListener('touchend',function(e){{
       var item=e.target.closest('.nav-item[data-page]');
       if(item){{
+        var dy=Math.abs(e.changedTouches[0].clientY-_ny);
+        var dx=Math.abs(e.changedTouches[0].clientX-_nx);
+        if(dy>10||dx>10)return;
         e.preventDefault();
         e.stopPropagation();
         navEl.classList.remove('open');
