@@ -75,7 +75,6 @@ try:
 
     collection = import_collection()
     html = build_html(results, static=True, new_listings=new_listings, collection=collection)
-    html = html.replace('</body>', '<script src="ios-fixes.js"></script></body>', 1)
 
     os.makedirs("docs", exist_ok=True)
     with open("docs/index.html", "w", encoding="utf-8") as f:
