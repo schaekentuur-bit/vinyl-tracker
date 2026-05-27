@@ -3605,10 +3605,12 @@ def build_html(results, static=False, new_listings=None, collection=None):
   .deal-pct{{background:var(--deal-bg);color:var(--deal-fg);
              font-size:12px;font-weight:700;padding:2px 8px;border-radius:20px}}
   .deal-dismiss{{background:none;border:none;color:#CBD5E1;cursor:pointer;
-                 font-size:13px;padding:2px 6px;border-radius:4px;line-height:1}}
+                 font-size:13px;padding:6px;border-radius:4px;line-height:1;
+                 touch-action:manipulation;min-width:32px;min-height:32px}}
   .deal-dismiss:hover{{background:#FEE2E2;color:#EF4444}}
   .fav-btn{{background:none;border:none;color:#CBD5E1;cursor:pointer;
-            font-size:16px;padding:2px 6px;border-radius:4px;line-height:1;transition:color .15s}}
+            font-size:16px;padding:6px;border-radius:4px;line-height:1;
+            transition:color .15s;touch-action:manipulation;min-width:32px;min-height:32px}}
   .fav-btn:hover{{color:#F87171}}
   .fav-btn.fav-active{{color:#EF4444}}
   .btn-mark-all{{background:#3B82F6;border:none;color:#fff;cursor:pointer;
@@ -3945,10 +3947,10 @@ function updateFavBadge(){{
   if(b){{b.textContent=FAV_KEYS.size;b.style.display=FAV_KEYS.size?'':'none';}}
 }}
 function toggleFavorite(key,e){{
-  e.stopPropagation();
-  var btn=e.currentTarget;
+  if(e&&e.stopPropagation)e.stopPropagation();
+  var btn=document.querySelector('.fav-btn[data-fav-key="'+key+'"]');
   var snapshot=null;
-  try{{snapshot=JSON.parse(btn.dataset.snapshot||'null');}}catch(_){{}}
+  if(btn){{try{{snapshot=JSON.parse(btn.dataset.snapshot||'null');}}catch(_){{}}}}
   var adding=!FAV_KEYS.has(key);
   document.querySelectorAll('.fav-btn[data-fav-key="'+key+'"]').forEach(function(b){{
     b.classList.toggle('fav-active',adding);
@@ -4148,6 +4150,30 @@ document.addEventListener('DOMContentLoaded',function(){{
     if(row)row.style.display='none';
   }});
   _updateNlBar();
+  // iOS touch-delegatie voor dismiss- en fav-knoppen
+  var _gty=0,_gtx=0;
+  document.addEventListener('touchstart',function(e){{_gty=e.touches[0].clientY;_gtx=e.touches[0].clientX;}},{{passive:true}});
+  document.addEventListener('touchend',function(e){{
+    var dy=Math.abs(e.changedTouches[0].clientY-_gty);
+    var dx=Math.abs(e.changedTouches[0].clientX-_gtx);
+    if(dy>10||dx>10)return;
+    var dismiss=e.target.closest('.deal-dismiss');
+    if(dismiss){{
+      e.preventDefault();e.stopPropagation();
+      var row=dismiss.closest('tr');
+      var nlKey=row&&row.getAttribute('data-nl-key');
+      var dealKey=row&&row.getAttribute('data-deal-key');
+      if(nlKey)dismissNewListing(nlKey,e);
+      else if(dealKey)dismissDeal(dealKey,e);
+      else{{var rid=(row&&row.id)||'';if(rid.indexOf('fav-row-')===0)removeFavFromPage(rid.slice(8),e);}}
+      return;
+    }}
+    var favBtn=e.target.closest('.fav-btn');
+    if(favBtn){{
+      var key=favBtn.getAttribute('data-fav-key');
+      if(key){{e.preventDefault();e.stopPropagation();toggleFavorite(key,e);}}
+    }}
+  }},{{passive:false}});
 }});
 function ghTrigger(token,force){{
   var btn=document.getElementById('gh-refresh-btn');
