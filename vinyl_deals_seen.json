@@ -15,7 +15,7 @@
     "currency": "USD",
     "shipping": 77.0,
     "total_eur": 233.7372174959182,
-    "disc": 42.04392743666875,
+    "disc": 41.97839543499375,
     "tier": "beste",
     "seller": "2Hipps",
     "title": "Greatest Hits (INT4-90301, Death Row/Interscope US 1998, 4LP)",
@@ -48,7 +48,7 @@
     "currency": "EUR",
     "shipping": 9.0,
     "total_eur": 89.0,
-    "disc": 37.22564745127,
+    "disc": 37.21809347159461,
     "tier": "goed",
     "seller": "hiphopgermany.de",
     "title": "The Infamous (07863 66480-1, US 1995)",
@@ -70,11 +70,22 @@
     "currency": "EUR",
     "shipping": 20.0,
     "total_eur": 90.0,
-    "disc": 31.81264713044889,
+    "disc": 31.787914550828837,
     "tier": "goed",
     "seller": "vinylobus",
     "title": "Use Your Illusion II (GEF 24420, Geffen US 1991, 2LP)",
     "group": "Guns N' Roses"
+  },
+  "21374590_M": {
+    "price": 35.0,
+    "currency": "EUR",
+    "shipping": 8.0,
+    "total_eur": 43.0,
+    "disc": 26.260432148165087,
+    "tier": "goed",
+    "seller": "MusicShopKore",
+    "title": "Animal Stories",
+    "group": "Kevin"
   },
   "383777_NM": {
     "price": 300.0,
@@ -87,23 +98,12 @@
     "title": "Appetite for Destruction (XXXG 24148, US Allied 1987)",
     "group": "Guns N' Roses"
   },
-  "21374590_M": {
-    "price": 35.88,
-    "currency": "EUR",
-    "shipping": 9.8,
-    "total_eur": 45.68000000000001,
-    "disc": 21.664570709957687,
-    "tier": "goed",
-    "seller": "vinyldigital.de",
-    "title": "Animal Stories",
-    "group": "Kevin"
-  },
   "268090_VG": {
     "price": 22.0,
     "currency": "AUD",
     "shipping": 0.0,
     "total_eur": 13.479566203051283,
-    "disc": 20.6173654991187,
+    "disc": 20.601708615922774,
     "tier": "goed",
     "seller": "Discopolis.AU",
     "title": "Life After Death (78612-73011-1, Bad Boy/Arista US 1997, 3LP)",
@@ -120,17 +120,6 @@
     "title": "London Calling (CBS CLASH 3, CBS UK 1979, 2LP)",
     "group": "The Clash"
   },
-  "2334540_M": {
-    "price": 250.0,
-    "currency": "GBP",
-    "shipping": 21.0,
-    "total_eur": 312.8679951049436,
-    "disc": 19.32365622594267,
-    "tier": "goed",
-    "seller": "rmajma",
-    "title": "Time Flies... 1994-2009 (RKIDLP66, Big Brother UK 2010)",
-    "group": "Oasis"
-  },
   "501415_VG+": {
     "price": 110.0,
     "currency": "EUR",
@@ -142,16 +131,16 @@
     "title": "No Need to Argue (524050-1, Island Records UK/EU 1994, LP)",
     "group": "The Cranberries"
   },
-  "1635232_M": {
-    "price": 40.99,
+  "484030_VG+": {
+    "price": 100.0,
     "currency": "EUR",
-    "shipping": 7.99,
-    "total_eur": 48.980000000000004,
-    "disc": 16.960019728121825,
+    "shipping": 16.0,
+    "total_eur": 116.0,
+    "disc": 16.537755872935936,
     "tier": "goed",
-    "seller": "www.hhv.de",
-    "title": "Pablo Honey (Capitol US 2008, LP 180g)",
-    "group": "Radiohead"
+    "seller": "Tonetoaster_Records",
+    "title": "Parachutes (7243 5 27783 1 7, Parlophone/EMI EU 2000, LP)",
+    "group": "Coldplay"
   },
   "7264539_NM": {
     "price": 85.0,
@@ -164,12 +153,23 @@
     "title": "Beggars Banquet (SKL 4955, Decca UK 1968) [stereo]",
     "group": "Rolling Stones"
   },
+  "1635232_M": {
+    "price": 40.99,
+    "currency": "EUR",
+    "shipping": 7.99,
+    "total_eur": 48.980000000000004,
+    "disc": 13.972073417054531,
+    "tier": "goed",
+    "seller": "www.hhv.de",
+    "title": "Pablo Honey (Capitol US 2008, LP 180g)",
+    "group": "Radiohead"
+  },
   "2521407_M": {
     "price": 260.0,
     "currency": "EUR",
     "shipping": 7.5,
     "total_eur": 267.5,
-    "disc": 13.76231878307535,
+    "disc": 13.718883593065751,
     "tier": "goed",
     "seller": "Black-Plastic",
     "title": "Time Flies... 1994-2009 (88697722641, Big Brother EU 2010)",
@@ -180,7 +180,7 @@
     "currency": "EUR",
     "shipping": 20.0,
     "total_eur": 75.0,
-    "disc": 12.966535632950867,
+    "disc": 12.99871673107178,
     "tier": "goed",
     "seller": "Maugof",
     "title": "Abbey Road (PCS 7088, UK first pressing 1969)",
@@ -213,7 +213,7 @@
     "currency": "JPY",
     "shipping": 0.0,
     "total_eur": 97.02457956015523,
-    "disc": 9.822340627166536,
+    "disc": 9.815583905873023,
     "tier": "goed",
     "seller": "Tokyo_Atari",
     "title": "Demon Days (07243 873838 1 4, Parlophone UK 2005, 2LP gatefold)",
