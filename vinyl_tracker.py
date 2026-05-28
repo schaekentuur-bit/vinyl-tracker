@@ -3987,7 +3987,7 @@ function _addFavRow(key,snap){{
     '<td class="td-seller">'+snap.seller+'</td>'+
     '<td>'+typeBadge+'</td>'+
     '<td class="muted" style="font-size:11px">'+today+'</td>'+
-    '<td><button class="deal-dismiss" onclick="removeFavFromPage(\''+key+'\',event)" title="Verwijder">&#10005;</button></td>'+
+    '<td><button class="deal-dismiss" onclick="removeFavFromPage(\\''+key+'\\',event)" title="Verwijder">&#10005;</button></td>'+
     '<td><a class="btn-link" href="'+lhref+'" target="_blank" onclick="event.stopPropagation()">Koop &rarr;</a></td>';
   tbody.insertBefore(tr,tbody.firstChild);
 }}
