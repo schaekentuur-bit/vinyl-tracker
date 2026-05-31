@@ -3225,8 +3225,22 @@
     ]
   },
   "2911293": {
-    "fetched_at": "2026-05-29T23:09:30",
+    "fetched_at": "2026-05-31T10:32:49",
     "sales": [
+      {
+        "date": "2026-05-31",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 37.67,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-05-29",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 28.37,
+        "currency": "EUR"
+      },
       {
         "date": "2026-05-28",
         "media": "VG+",
@@ -3421,20 +3435,6 @@
         "media": "VG+",
         "sleeve": "VG+",
         "price": 48.59,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-05-10",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 21.49,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-05-09",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 128.14,
         "currency": "EUR"
       }
     ]
