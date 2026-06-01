@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-31",
+  "fetched_at": "2026-06-01",
   "username": "tuur00schaeken",
   "items": [
     {
@@ -57,6 +57,14 @@
       "condition": "M",
       "purchase_price": null,
       "date_added": "2026-05-15"
+    },
+    {
+      "release_id": "12442614",
+      "artist": "Michael Jackson",
+      "title": "Thriller",
+      "condition": "M",
+      "purchase_price": null,
+      "date_added": "2026-05-31"
     },
     {
       "release_id": "21374590",
