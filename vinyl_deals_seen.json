@@ -164,17 +164,6 @@
     "title": "Abbey Road (PCS 7088, UK first pressing 1969)",
     "group": "Beatles"
   },
-  "7541569_M": {
-    "price": 24.3,
-    "currency": "EUR",
-    "shipping": 7.5,
-    "total_eur": 31.8,
-    "disc": 12.364504868638605,
-    "tier": "goed",
-    "seller": "sonic-vinyls",
-    "title": "A Night at the Opera half-speed (00602547202697, EU 2015)",
-    "group": "Queen"
-  },
   "16938279_M": {
     "price": 21.99,
     "currency": "EUR",
@@ -196,16 +185,5 @@
     "seller": "Tokyo_Atari",
     "title": "Demon Days (07243 873838 1 4, Parlophone UK 2005, 2LP gatefold)",
     "group": "Gorillaz"
-  },
-  "939519_VG+": {
-    "price": 149.99,
-    "currency": "GBP",
-    "shipping": 15.5,
-    "total_eur": 191.39536228531776,
-    "disc": 8.674961691549717,
-    "tier": "goed",
-    "seller": "cordial-records",
-    "title": "Morning Glory (CRE LP 189, Damont, UK 1995)",
-    "group": "Oasis"
   }
 }
