@@ -15,7 +15,7 @@
     "currency": "USD",
     "shipping": 77.0,
     "total_eur": 237.20240690677596,
-    "disc": 41.18996057393298,
+    "disc": 41.15071026953292,
     "tier": "beste",
     "seller": "2Hipps",
     "title": "Greatest Hits (INT4-90301, Death Row/Interscope US 1998, 4LP)",
@@ -87,27 +87,27 @@
     "title": "Use Your Illusion II (GEF 24420, Geffen US 1991, 2LP)",
     "group": "Guns N' Roses"
   },
-  "676619_VG+": {
-    "price": 45.0,
-    "currency": "EUR",
-    "shipping": 16.0,
-    "total_eur": 61.0,
-    "disc": 30.60216839782023,
-    "tier": "goed",
-    "seller": "SonatineDischi",
-    "title": "All That You Can't Leave Behind (U212 / 524 653-1, Island Records EU 2000)",
-    "group": "U2"
-  },
   "268090_VG": {
     "price": 22.0,
     "currency": "AUD",
     "shipping": 0.0,
     "total_eur": 13.457303645705897,
-    "disc": 23.191020074752757,
+    "disc": 32.285519925506335,
     "tier": "goed",
     "seller": "Discopolis.AU",
     "title": "Life After Death (78612-73011-1, Bad Boy/Arista US 1997, 3LP)",
     "group": "Notorious B.I.G."
+  },
+  "676619_VG+": {
+    "price": 45.0,
+    "currency": "EUR",
+    "shipping": 16.0,
+    "total_eur": 61.0,
+    "disc": 31.061761880544726,
+    "tier": "goed",
+    "seller": "SonatineDischi",
+    "title": "All That You Can't Leave Behind (U212 / 524 653-1, Island Records EU 2000)",
+    "group": "U2"
   },
   "21374590_M": {
     "price": 35.88,
@@ -125,7 +125,7 @@
     "currency": "GBP",
     "shipping": 17.5,
     "total_eur": 66.35661777434133,
-    "disc": 19.387946724401907,
+    "disc": 18.634082676766123,
     "tier": "goed",
     "seller": "Arpadys2009",
     "title": "London Calling (CBS CLASH 3, CBS UK 1979, 2LP)",
@@ -145,9 +145,9 @@
   "484030_VG+": {
     "price": 99.0,
     "currency": "EUR",
-    "shipping": 11.0,
-    "total_eur": 110.0,
-    "disc": 15.160770340205298,
+    "shipping": 12.0,
+    "total_eur": 111.0,
+    "disc": 14.389504616025347,
     "tier": "goed",
     "seller": "normalkoeln",
     "title": "Parachutes (7243 5 27783 1 7, Parlophone/EMI EU 2000, LP)",
@@ -169,43 +169,21 @@
     "currency": "EUR",
     "shipping": 7.5,
     "total_eur": 267.5,
-    "disc": 13.414685765648226,
+    "disc": 13.37219440500212,
     "tier": "goed",
     "seller": "Black-Plastic",
     "title": "Time Flies... 1994-2009 (88697722641, Big Brother EU 2010)",
     "group": "Oasis"
-  },
-  "375491_VG+": {
-    "price": 75.0,
-    "currency": "EUR",
-    "shipping": 13.0,
-    "total_eur": 88.0,
-    "disc": 11.853298704272113,
-    "tier": "goed",
-    "seller": "kaster1202",
-    "title": "Blood Sugar Sex Magik (7599-26681-1, EU first pressing 1991)",
-    "group": "RHCP"
   },
   "7801798_VG+": {
     "price": 55.0,
     "currency": "EUR",
     "shipping": 20.0,
     "total_eur": 75.0,
-    "disc": 11.836700825623375,
+    "disc": 11.828165195983514,
     "tier": "goed",
     "seller": "Maugof",
     "title": "Abbey Road (PCS 7088, UK first pressing 1969)",
     "group": "Beatles"
-  },
-  "2334540_NM": {
-    "price": 240.0,
-    "currency": "GBP",
-    "shipping": 14.0,
-    "total_eur": 293.1231463423078,
-    "disc": 6.705461747246175,
-    "tier": "goed",
-    "seller": "Weston_House",
-    "title": "Time Flies... 1994-2009 (RKIDLP66, Big Brother UK 2010)",
-    "group": "Oasis"
   }
 }
