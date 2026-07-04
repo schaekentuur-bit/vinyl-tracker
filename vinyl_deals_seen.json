@@ -32,6 +32,39 @@
     "title": "Reggatta de Blanc (0082839479219, A&M EU 2008)",
     "group": "The Police"
   },
+  "439599_VG": {
+    "price": 20.0,
+    "currency": "EUR",
+    "shipping": 24.0,
+    "total_eur": 44.0,
+    "disc": 15.56323162540779,
+    "tier": "beste",
+    "seller": "memory_hotel",
+    "title": "Black Album (510 022-1, Vertigo, EU 1991)",
+    "group": "Metallica"
+  },
+  "6127871_VG+": {
+    "price": 22.0,
+    "currency": "EUR",
+    "shipping": 8.25,
+    "total_eur": 30.25,
+    "disc": 1.7538161740824916,
+    "tier": "beste",
+    "seller": "stevenwiltjer",
+    "title": "Morning Glory (RKIDLP73, EU reissue 2014)",
+    "group": "Oasis"
+  },
+  "8519678_VG+": {
+    "price": 75.0,
+    "currency": "EUR",
+    "shipping": 7.0,
+    "total_eur": 82.0,
+    "disc": 0.6060606060606061,
+    "tier": "beste",
+    "seller": "Black-Plastic",
+    "title": "Stadium Arcadium reissue (9362-44391-1, EU 2016)",
+    "group": "RHCP"
+  },
   "2048352_NM": {
     "price": 60.0,
     "currency": "EUR",
@@ -142,6 +175,17 @@
     "title": "Dressed to Kill (NBLP 7016, Casablanca US 1975, LP)",
     "group": "KISS"
   },
+  "2521407_M": {
+    "price": 260.0,
+    "currency": "EUR",
+    "shipping": 7.5,
+    "total_eur": 267.5,
+    "disc": 13.575215036794216,
+    "tier": "goed",
+    "seller": "Black-Plastic",
+    "title": "Time Flies... 1994-2009 (88697722641, Big Brother EU 2010)",
+    "group": "Oasis"
+  },
   "484030_VG+": {
     "price": 99.0,
     "currency": "EUR",
@@ -152,5 +196,27 @@
     "seller": "normalkoeln",
     "title": "Parachutes (7243 5 27783 1 7, Parlophone/EMI EU 2000, LP)",
     "group": "Coldplay"
+  },
+  "7801798_VG+": {
+    "price": 55.0,
+    "currency": "EUR",
+    "shipping": 20.0,
+    "total_eur": 75.0,
+    "disc": 10.916961410547433,
+    "tier": "goed",
+    "seller": "Maugof",
+    "title": "Abbey Road (PCS 7088, UK first pressing 1969)",
+    "group": "Beatles"
+  },
+  "33663000_M": {
+    "price": 95.0,
+    "currency": "EUR",
+    "shipping": 10.0,
+    "total_eur": 105.0,
+    "disc": 6.338528545986402,
+    "tier": "goed",
+    "seller": "Noiretfeu",
+    "title": "Time Flies... 1994-2009 RSD (RKIDLP150RSD, Worldwide 2025)",
+    "group": "Oasis"
   }
 }
