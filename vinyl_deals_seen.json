@@ -15,7 +15,7 @@
     "currency": "USD",
     "shipping": 77.0,
     "total_eur": 237.59608665269042,
-    "disc": 41.10133188547976,
+    "disc": 41.18849232664073,
     "tier": "beste",
     "seller": "2Hipps",
     "title": "Greatest Hits (INT4-90301, Death Row/Interscope US 1998, 4LP)",
@@ -98,6 +98,17 @@
     "title": "All That You Can't Leave Behind (U212 / 524 653-1, Island Records EU 2000)",
     "group": "U2"
   },
+  "7264539_VG+": {
+    "price": 49.99,
+    "currency": "EUR",
+    "shipping": 7.45,
+    "total_eur": 57.440000000000005,
+    "disc": 21.920327517551286,
+    "tier": "goed",
+    "seller": "Remy-Records",
+    "title": "Beggars Banquet (SKL 4955, Decca UK 1968) [stereo]",
+    "group": "Rolling Stones"
+  },
   "16938279_M": {
     "price": 18.69,
     "currency": "EUR",
@@ -114,7 +125,7 @@
     "currency": "GBP",
     "shipping": 17.5,
     "total_eur": 67.07886140923938,
-    "disc": 19.891170432111696,
+    "disc": 19.036384566514272,
     "tier": "goed",
     "seller": "Arpadys2009",
     "title": "London Calling (CBS CLASH 3, CBS UK 1979, 2LP)",
@@ -163,6 +174,17 @@
     "seller": "vinsNL",
     "title": "Beggars Banquet (SKL 4955, Decca UK 1968) [stereo]",
     "group": "Rolling Stones"
+  },
+  "6986271_M": {
+    "price": 63.0,
+    "currency": "EUR",
+    "shipping": 9.0,
+    "total_eur": 72.0,
+    "disc": 14.010782774858384,
+    "tier": "goed",
+    "seller": "freesty",
+    "title": "No Need to Argue (PLAIN202, Plain Recordings US 2015, LP 180g)",
+    "group": "The Cranberries"
   },
   "688267_NM": {
     "price": 234.36,
