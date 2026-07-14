@@ -35,13 +35,13 @@
   "20433880_NM": {
     "price": 19.0,
     "currency": "EUR",
-    "shipping": 24.0,
-    "total_eur": 44.0,
-    "disc": 16.666666666666664,
+    "shipping": 7.5,
+    "total_eur": 26.5,
+    "disc": 11.637212404134708,
     "tier": "beste",
-    "seller": "memory_hotel",
-    "title": "Black Album (510 022-1, Vertigo, EU 1991)",
-    "group": "Metallica"
+    "seller": "mschreijen",
+    "title": "Spijt Is Iets Voor Later (19439887541, Sony Music EU 2021, LP clear+CD)",
+    "group": "Racoon"
   },
   "8519678_VG+": {
     "price": 75.0,
@@ -178,9 +178,9 @@
   "6986271_M": {
     "price": 63.0,
     "currency": "EUR",
-    "shipping": 7.5,
-    "total_eur": 267.5,
-    "disc": 13.871248972151495,
+    "shipping": 9.0,
+    "total_eur": 72.0,
+    "disc": 14.091397207970397,
     "tier": "goed",
     "seller": "freesty",
     "title": "No Need to Argue (PLAIN202, Plain Recordings US 2015, LP 180g)",
@@ -202,18 +202,29 @@
     "currency": "EUR",
     "shipping": 20.0,
     "total_eur": 75.0,
-    "disc": 11.70873037154274,
+    "disc": 10.952804986642915,
     "tier": "goed",
     "seller": "Maugof",
     "title": "Abbey Road (PCS 7088, UK first pressing 1969)",
     "group": "Beatles"
+  },
+  "2521407_M": {
+    "price": 260.0,
+    "currency": "EUR",
+    "shipping": 7.5,
+    "total_eur": 267.5,
+    "disc": 10.669790334098844,
+    "tier": "goed",
+    "seller": "Black-Plastic",
+    "title": "Time Flies... 1994-2009 (88697722641, Big Brother EU 2010)",
+    "group": "Oasis"
   },
   "474703_VG": {
     "price": 77.59,
     "currency": "GBP",
     "shipping": 19.5,
     "total_eur": 113.73780209224137,
-    "disc": 10.002134786626371,
+    "disc": 8.967276388521547,
     "tier": "goed",
     "seller": "Lovebeat-Records",
     "title": "Demon Days (07243 873838 1 4, Parlophone UK 2005, 2LP gatefold)",
@@ -224,32 +235,10 @@
     "currency": "EUR",
     "shipping": 15.0,
     "total_eur": 80.0,
-    "disc": 5.930770926728893,
+    "disc": 5.328244726487379,
     "tier": "goed",
     "seller": "ComputerJazz",
     "title": "A Rush of Blood to the Head (7243 5 40504 1 1, Parlophone EU 2002, LP 180g)",
     "group": "Coldplay"
-  },
-  "676619_NM": {
-    "price": 99.0,
-    "currency": "EUR",
-    "shipping": 16.0,
-    "total_eur": 115.0,
-    "disc": 5.011667045243352,
-    "tier": "goed",
-    "seller": "dying-stereo",
-    "title": "All That You Can't Leave Behind (U212 / 524 653-1, Island Records EU 2000)",
-    "group": "U2"
-  },
-  "367339_VG+": {
-    "price": 199.0,
-    "currency": "EUR",
-    "shipping": 9.0,
-    "total_eur": 208.0,
-    "disc": 3.8372630605640237,
-    "tier": "goed",
-    "seller": "iSHES",
-    "title": "Rage Against the Machine (Z 52959, Epic US 1992, LP)",
-    "group": "Rage Against the Machine"
   }
 }
