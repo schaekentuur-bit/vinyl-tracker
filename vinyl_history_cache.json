@@ -687,11 +687,11 @@
     }
   },
   "20298550": {
-    "fetched_at": "2026-07-07T16:33:20",
+    "fetched_at": "2026-07-14T20:50:01",
     "stats": {
       "num_for_sale": 1,
       "lowest_price": {
-        "value": 30.8,
+        "value": 30.45,
         "currency": "EUR"
       },
       "blocked_from_sale": false
