@@ -11,29 +11,29 @@
     }
   },
   "517224": {
-    "fetched_at": "2026-07-07T12:28:50",
+    "fetched_at": "2026-07-14T12:45:50",
     "stats": {
       "num_for_sale": 27,
       "lowest_price": {
-        "value": 243.66,
+        "value": 199.0,
         "currency": "EUR"
       },
       "blocked_from_sale": false
     }
   },
   "6127871": {
-    "fetched_at": "2026-07-07T12:28:50",
+    "fetched_at": "2026-07-14T12:45:50",
     "stats": {
-      "num_for_sale": 124,
+      "num_for_sale": 120,
       "lowest_price": {
-        "value": 28.99,
+        "value": 29.0,
         "currency": "EUR"
       },
       "blocked_from_sale": false
     }
   },
   "12864584": {
-    "fetched_at": "2026-07-07T12:28:50",
+    "fetched_at": "2026-07-14T12:45:50",
     "stats": {
       "num_for_sale": 28,
       "lowest_price": {

@@ -879,20 +879,8 @@
     ]
   },
   "6127871": {
-    "fetched_at": "2026-07-09T22:23:46",
+    "fetched_at": "2026-07-14T12:45:50",
     "listings": [
-      {
-        "media": "VG+",
-        "sleeve": "NM",
-        "price": 28.99,
-        "currency": "EUR",
-        "shipping": 12.99,
-        "total_eur": 41.98,
-        "rating_count": 288015,
-        "seller": "www.hhv.de",
-        "ships_from": "Germany",
-        "listed_date": null
-      },
       {
         "media": "M",
         "sleeve": "M",
@@ -900,7 +888,7 @@
         "currency": "GBP",
         "shipping": 12.0,
         "total_eur": 43.344306081088995,
-        "rating_count": 1373,
+        "rating_count": 1374,
         "seller": "funkyfeet",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -912,7 +900,7 @@
         "currency": "EUR",
         "shipping": 26.95,
         "total_eur": 56.9,
-        "rating_count": 205,
+        "rating_count": 206,
         "seller": "JolietJakesJukebox",
         "ships_from": "Norway",
         "listed_date": null
@@ -924,21 +912,9 @@
         "currency": "EUR",
         "shipping": 11.5,
         "total_eur": 41.5,
-        "rating_count": 2747,
+        "rating_count": 2764,
         "seller": "specificrecordings",
         "ships_from": "France",
-        "listed_date": null
-      },
-      {
-        "media": "M",
-        "sleeve": "M",
-        "price": 30.0,
-        "currency": "EUR",
-        "shipping": 15.99,
-        "total_eur": 45.99,
-        "rating_count": 15,
-        "seller": "Kommerzgandalf",
-        "ships_from": "Germany",
         "listed_date": null
       },
       {
@@ -958,23 +934,11 @@
         "sleeve": "NM",
         "price": 28.0,
         "currency": "GBP",
-        "shipping": 17.5,
-        "total_eur": 53.30178180242025,
-        "rating_count": 8871,
+        "shipping": 20.5,
+        "total_eur": 56.81618499818423,
+        "rating_count": 8882,
         "seller": "Arpadys2009",
         "ships_from": "United Kingdom",
-        "listed_date": null
-      },
-      {
-        "media": "M",
-        "sleeve": "M",
-        "price": 33.99,
-        "currency": "EUR",
-        "shipping": 5.95,
-        "total_eur": 39.940000000000005,
-        "rating_count": 243885,
-        "seller": "groovesland",
-        "ships_from": "Germany",
         "listed_date": null
       },
       {
@@ -984,7 +948,7 @@
         "currency": "GBP",
         "shipping": 17.5,
         "total_eur": 54.46153485702236,
-        "rating_count": 9266,
+        "rating_count": 9280,
         "seller": "Beautiful-Vinyl",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -996,7 +960,7 @@
         "currency": "GBP",
         "shipping": 22.5,
         "total_eur": 60.318873516628976,
-        "rating_count": 1658,
+        "rating_count": 1662,
         "seller": "DETOUR-RECORDS",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -1008,7 +972,7 @@
         "currency": "GBP",
         "shipping": 10.0,
         "total_eur": 45.687241544931645,
-        "rating_count": 5833,
+        "rating_count": 5846,
         "seller": "Weston_House",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -1016,25 +980,13 @@
       {
         "media": "M",
         "sleeve": "M",
-        "price": 35.0,
+        "price": 34.59,
         "currency": "EUR",
-        "shipping": 15.0,
-        "total_eur": 50.0,
-        "rating_count": 802,
-        "seller": "AngelitaRecords",
-        "ships_from": "Spain",
-        "listed_date": null
-      },
-      {
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 35.0,
-        "currency": "EUR",
-        "shipping": 7.5,
-        "total_eur": 42.5,
-        "rating_count": 554,
-        "seller": "rjwissink66",
-        "ships_from": "Netherlands",
+        "shipping": 5.95,
+        "total_eur": 40.540000000000006,
+        "rating_count": 244254,
+        "seller": "groovesland",
+        "ships_from": "Germany",
         "listed_date": null
       },
       {
@@ -1068,7 +1020,7 @@
         "currency": "GBP",
         "shipping": 15.0,
         "total_eur": 52.71604793645959,
-        "rating_count": 2378,
+        "rating_count": 2381,
         "seller": "Ragzzz",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -1076,11 +1028,35 @@
       {
         "media": "M",
         "sleeve": "M",
+        "price": 35.0,
+        "currency": "EUR",
+        "shipping": 15.0,
+        "total_eur": 50.0,
+        "rating_count": 808,
+        "seller": "AngelitaRecords",
+        "ships_from": "Spain",
+        "listed_date": null
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 35.0,
+        "currency": "EUR",
+        "shipping": 7.5,
+        "total_eur": 42.5,
+        "rating_count": 555,
+        "seller": "rjwissink66",
+        "ships_from": "Netherlands",
+        "listed_date": null
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
         "price": 30.35,
         "currency": "GBP",
         "shipping": 12.9,
         "total_eur": 50.66597940559727,
-        "rating_count": 2259,
+        "rating_count": 2265,
         "seller": "Floyd1964",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -1092,7 +1068,7 @@
         "currency": "GBP",
         "shipping": 12.9,
         "total_eur": 50.66597940559727,
-        "rating_count": 2259,
+        "rating_count": 2265,
         "seller": "Floyd1964",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -1104,7 +1080,7 @@
         "currency": "GBP",
         "shipping": 12.9,
         "total_eur": 50.66597940559727,
-        "rating_count": 2259,
+        "rating_count": 2265,
         "seller": "Floyd1964",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -1116,7 +1092,7 @@
         "currency": "EUR",
         "shipping": 9.8,
         "total_eur": 45.68000000000001,
-        "rating_count": 74674,
+        "rating_count": 74684,
         "seller": "vinyldigital.de",
         "ships_from": "Germany",
         "listed_date": null
@@ -1128,21 +1104,9 @@
         "currency": "GBP",
         "shipping": 17.6,
         "total_eur": 56.93333177137636,
-        "rating_count": 2540,
+        "rating_count": 2543,
         "seller": "oldschoolraver55",
         "ships_from": "United Kingdom",
-        "listed_date": null
-      },
-      {
-        "media": "M",
-        "sleeve": "M",
-        "price": 36.89,
-        "currency": "EUR",
-        "shipping": 7.99,
-        "total_eur": 44.88,
-        "rating_count": 39470,
-        "seller": "Lot.Of.Music",
-        "ships_from": "Netherlands",
         "listed_date": null
       },
       {
@@ -1160,25 +1124,25 @@
       {
         "media": "M",
         "sleeve": "M",
-        "price": 37.5,
-        "currency": "EUR",
-        "shipping": 14.0,
-        "total_eur": 51.5,
-        "rating_count": 620,
-        "seller": "RSLRECORDS",
-        "ships_from": "Belgium",
+        "price": 31.99,
+        "currency": "GBP",
+        "shipping": 8.5,
+        "total_eur": 47.432728465494414,
+        "rating_count": 10520,
+        "seller": "CurlyKidRecords",
+        "ships_from": "United Kingdom",
         "listed_date": null
       },
       {
         "media": "M",
         "sleeve": "M",
-        "price": 31.99,
-        "currency": "GBP",
-        "shipping": 8.5,
-        "total_eur": 47.432728465494414,
-        "rating_count": 10498,
-        "seller": "CurlyKidRecords",
-        "ships_from": "United Kingdom",
+        "price": 37.5,
+        "currency": "EUR",
+        "shipping": 14.0,
+        "total_eur": 51.5,
+        "rating_count": 622,
+        "seller": "RSLRECORDS",
+        "ships_from": "Belgium",
         "listed_date": null
       },
       {
@@ -1200,7 +1164,7 @@
         "currency": "EUR",
         "shipping": 6.7,
         "total_eur": 44.7,
-        "rating_count": 8328,
+        "rating_count": 8339,
         "seller": "Palace-Records",
         "ships_from": "France",
         "listed_date": null
@@ -1224,7 +1188,7 @@
         "currency": "GBP",
         "shipping": 15.5,
         "total_eur": 57.58935370125229,
-        "rating_count": 835,
+        "rating_count": 840,
         "seller": "warwickmusic",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -1236,7 +1200,7 @@
         "currency": "GBP",
         "shipping": 15.5,
         "total_eur": 57.58935370125229,
-        "rating_count": 835,
+        "rating_count": 840,
         "seller": "warwickmusic",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -1248,7 +1212,7 @@
         "currency": "GBP",
         "shipping": 15.5,
         "total_eur": 57.58935370125229,
-        "rating_count": 835,
+        "rating_count": 840,
         "seller": "warwickmusic",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -1260,7 +1224,7 @@
         "currency": "GBP",
         "shipping": 15.5,
         "total_eur": 57.58935370125229,
-        "rating_count": 835,
+        "rating_count": 840,
         "seller": "warwickmusic",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -1296,7 +1260,7 @@
         "currency": "GBP",
         "shipping": 12.0,
         "total_eur": 53.887515668380914,
-        "rating_count": 9558,
+        "rating_count": 9561,
         "seller": "StevecaptainKirk",
         "ships_from": "United Kingdom",
         "listed_date": null
@@ -1308,7 +1272,7 @@
         "currency": "EUR",
         "shipping": 16.49,
         "total_eur": 56.39,
-        "rating_count": 189,
+        "rating_count": 190,
         "seller": "intro_p",
         "ships_from": "Germany",
         "listed_date": null
@@ -1320,21 +1284,9 @@
         "currency": "EUR",
         "shipping": 10.0,
         "total_eur": 49.99,
-        "rating_count": 10434,
+        "rating_count": 10453,
         "seller": "fonorama.be",
         "ships_from": "Belgium",
-        "listed_date": null
-      },
-      {
-        "media": "M",
-        "sleeve": "M",
-        "price": 40.99,
-        "currency": "EUR",
-        "shipping": 7.5,
-        "total_eur": 48.49,
-        "rating_count": 11876,
-        "seller": "SoundsHaarlem",
-        "ships_from": "Netherlands",
         "listed_date": null
       },
       {
@@ -1344,8 +1296,32 @@
         "currency": "GBP",
         "shipping": 13.0,
         "total_eur": 56.21873645490435,
-        "rating_count": 3852,
+        "rating_count": 3869,
         "seller": "SHADOWPLAYSOUNDS",
+        "ships_from": "United Kingdom",
+        "listed_date": null
+      },
+      {
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 34.99,
+        "currency": "GBP",
+        "shipping": 13.0,
+        "total_eur": 56.21873645490435,
+        "rating_count": 3869,
+        "seller": "SHADOWPLAYSOUNDS",
+        "ships_from": "United Kingdom",
+        "listed_date": null
+      },
+      {
+        "media": "M",
+        "sleeve": "M",
+        "price": 34.99,
+        "currency": "GBP",
+        "shipping": 20.6,
+        "total_eur": 65.12189121750642,
+        "rating_count": 1006,
+        "seller": "Damopt07",
         "ships_from": "United Kingdom",
         "listed_date": null
       }
