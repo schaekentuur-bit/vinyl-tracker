@@ -1,6 +1,6 @@
 {
   "939519": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-20",
@@ -215,7 +215,7 @@
     ]
   },
   "517224": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-19",
@@ -430,8 +430,15 @@
     ]
   },
   "6127871": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "M",
+        "sleeve": "M",
+        "price": 34.79,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-20",
         "media": "M",
@@ -634,18 +641,11 @@
         "sleeve": "M",
         "price": 34.01,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-05-20",
-        "media": "M",
-        "sleeve": "M",
-        "price": 34.01,
-        "currency": "EUR"
       }
     ]
   },
   "33663000": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-17",
@@ -819,14 +819,14 @@
         "date": "2025-10-30",
         "media": "M",
         "sleeve": "M",
-        "price": 96.69,
+        "price": 95.51,
         "currency": "EUR"
       },
       {
         "date": "2025-10-25",
         "media": "M",
         "sleeve": "M",
-        "price": 102.75,
+        "price": 102.14,
         "currency": "EUR"
       },
       {
@@ -860,7 +860,7 @@
     ]
   },
   "12864584": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-10",
@@ -1075,7 +1075,7 @@
     ]
   },
   "12042641": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-12",
@@ -1290,8 +1290,15 @@
     ]
   },
   "375491": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-24",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 132.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-07",
         "media": "NM",
@@ -1387,7 +1394,7 @@
         "date": "2026-06-02",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 72.73,
+        "price": 72.58,
         "currency": "EUR"
       },
       {
@@ -1493,13 +1500,6 @@
         "media": "NM",
         "sleeve": "VG+",
         "price": 125.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-04-20",
-        "media": "NM",
-        "sleeve": "VG+",
-        "price": 95.0,
         "currency": "EUR"
       }
     ]
@@ -1720,7 +1720,7 @@
     ]
   },
   "31323387": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-13",
@@ -1935,8 +1935,22 @@
     ]
   },
   "15276024": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-22",
+        "media": "M",
+        "sleeve": "M",
+        "price": 32.25,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-22",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 29.33,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-17",
         "media": "M",
@@ -2132,26 +2146,19 @@
         "sleeve": "M",
         "price": 25.14,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-03-28",
-        "media": "M",
-        "sleeve": "M",
-        "price": 28.19,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-03-17",
-        "media": "NM",
-        "sleeve": "VG",
-        "price": 22.88,
-        "currency": "EUR"
       }
     ]
   },
   "420718": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 61.6,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-17",
         "media": "VG+",
@@ -2354,18 +2361,11 @@
         "sleeve": "VG+",
         "price": 199.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-01-09",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 114.4,
-        "currency": "EUR"
       }
     ]
   },
   "8519678": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-02",
@@ -2580,7 +2580,7 @@
     ]
   },
   "1629020": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-16",
@@ -2719,7 +2719,7 @@
         "date": "2024-06-02",
         "media": "M",
         "sleeve": "VG+",
-        "price": 363.64,
+        "price": 362.89,
         "currency": "EUR"
       },
       {
@@ -2795,8 +2795,29 @@
     ]
   },
   "14186441": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-24",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 17.6,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-23",
+        "media": "M",
+        "sleeve": "M",
+        "price": 23.76,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-23",
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.75,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-19",
         "media": "NM",
@@ -2985,33 +3006,19 @@
         "sleeve": "M",
         "price": 34.89,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-06-10",
-        "media": "M",
-        "sleeve": "M",
-        "price": 25.75,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-08",
-        "media": "M",
-        "sleeve": "M",
-        "price": 26.99,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-07",
-        "media": "M",
-        "sleeve": "NM",
-        "price": 30.51,
-        "currency": "EUR"
       }
     ]
   },
   "7801798": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 26.99,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-14",
         "media": "NM",
@@ -3100,7 +3107,7 @@
         "date": "2026-02-13",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 65.91,
+        "price": 65.77,
         "currency": "EUR"
       },
       {
@@ -3214,24 +3221,38 @@
         "sleeve": "VG+",
         "price": 117.33,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-07-29",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 83.03,
-        "currency": "EUR"
       }
     ]
   },
   "2911293": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 30.8,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 19.35,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-22",
         "media": "NM",
         "sleeve": "NM",
         "price": 97.68,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-20",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 79.19,
         "currency": "EUR"
       },
       {
@@ -3415,33 +3436,33 @@
         "sleeve": "VG+",
         "price": 88.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-07-06",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 136.4,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-07-06",
-        "media": "VG",
-        "sleeve": "No Cover",
-        "price": 3.07,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-07-05",
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 7.81,
-        "currency": "EUR"
       }
     ]
   },
   "459606": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 57.2,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 35.2,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-24",
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 25.52,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-21",
         "media": "NM",
@@ -3630,32 +3651,11 @@
         "sleeve": "VG+",
         "price": 56.32,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-06-23",
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 35.19,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-22",
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 24.5,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-21",
-        "media": "VG+",
-        "sleeve": "NM",
-        "price": 52.79,
-        "currency": "EUR"
       }
     ]
   },
   "1549636": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-09",
@@ -3808,7 +3808,7 @@
         "date": "2025-10-28",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 194.68,
+        "price": 193.54,
         "currency": "EUR"
       },
       {
@@ -3870,8 +3870,36 @@
     ]
   },
   "439599": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "VG",
+        "sleeve": "G",
+        "price": 35.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-24",
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 85.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-23",
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 90.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-22",
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 70.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-11",
         "media": "VG+",
@@ -4053,39 +4081,11 @@
         "sleeve": "G+",
         "price": 80.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-05-06",
-        "media": "NM",
-        "sleeve": "VG+",
-        "price": 195.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-04-28",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 349.72,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-04-28",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 100.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-04-17",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 99.73,
-        "currency": "EUR"
       }
     ]
   },
   "381988": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-18",
@@ -4300,8 +4300,15 @@
     ]
   },
   "7541569": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 27.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-07",
         "media": "M",
@@ -4504,19 +4511,33 @@
         "sleeve": "M",
         "price": 44.57,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-12-22",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 20.0,
-        "currency": "EUR"
       }
     ]
   },
   "612780": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 33.46,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 9.39,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG+",
+        "sleeve": "F",
+        "price": 8.21,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-22",
         "media": "M",
@@ -4668,7 +4689,7 @@
         "date": "2026-06-25",
         "media": "NM",
         "sleeve": "VG+",
-        "price": 72.73,
+        "price": 72.58,
         "currency": "EUR"
       },
       {
@@ -4705,32 +4726,11 @@
         "sleeve": "VG+",
         "price": 29.33,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-06-11",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 17.31,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-08",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 17.59,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-08",
-        "media": "NM",
-        "sleeve": "M",
-        "price": 58.67,
-        "currency": "EUR"
       }
     ]
   },
   "400591": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-26",
@@ -4945,7 +4945,7 @@
     ]
   },
   "400587": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-21",
@@ -5160,7 +5160,7 @@
     ]
   },
   "534020": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-16",
@@ -5201,7 +5201,7 @@
         "date": "2025-10-10",
         "media": "G+",
         "sleeve": "VG",
-        "price": 97.34,
+        "price": 96.77,
         "currency": "EUR"
       },
       {
@@ -5243,7 +5243,7 @@
         "date": "2025-02-17",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 183.86,
+        "price": 182.78,
         "currency": "EUR"
       },
       {
@@ -5264,7 +5264,7 @@
         "date": "2025-01-11",
         "media": "NM",
         "sleeve": "NM",
-        "price": 136.36,
+        "price": 136.08,
         "currency": "EUR"
       },
       {
@@ -5375,7 +5375,7 @@
     ]
   },
   "3336797": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-07",
@@ -5514,7 +5514,7 @@
         "date": "2022-12-07",
         "media": "VG",
         "sleeve": "VG+",
-        "price": 86.52,
+        "price": 86.02,
         "currency": "EUR"
       },
       {
@@ -5590,8 +5590,22 @@
     ]
   },
   "1203470": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 43.07,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-24",
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-20",
         "media": "M",
@@ -5786,20 +5800,6 @@
         "media": "NM",
         "sleeve": "VG+",
         "price": 10.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-05-14",
-        "media": "M",
-        "sleeve": "M",
-        "price": 25.99,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-05-06",
-        "media": "M",
-        "sleeve": "M",
-        "price": 29.85,
         "currency": "EUR"
       }
     ]
@@ -6020,7 +6020,7 @@
     ]
   },
   "7492229": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-16",
@@ -6235,7 +6235,7 @@
     ]
   },
   "383777": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-19",
@@ -6437,7 +6437,7 @@
         "date": "2025-06-09",
         "media": "M",
         "sleeve": "NM",
-        "price": 379.16,
+        "price": 374.54,
         "currency": "EUR"
       },
       {
@@ -6450,7 +6450,7 @@
     ]
   },
   "317356": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-02",
@@ -6505,7 +6505,7 @@
         "date": "2026-05-15",
         "media": "G",
         "sleeve": "VG+",
-        "price": 43.26,
+        "price": 43.01,
         "currency": "EUR"
       },
       {
@@ -6540,7 +6540,7 @@
         "date": "2026-04-07",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 194.68,
+        "price": 193.54,
         "currency": "EUR"
       },
       {
@@ -6617,7 +6617,7 @@
         "date": "2026-01-24",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 152.5,
+        "price": 151.6,
         "currency": "EUR"
       },
       {
@@ -6645,7 +6645,7 @@
         "date": "2026-01-05",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 207.66,
+        "price": 206.44,
         "currency": "EUR"
       },
       {
@@ -6665,8 +6665,22 @@
     ]
   },
   "3975953": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 23.75,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 25.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-17",
         "media": "VG+",
@@ -6862,25 +6876,11 @@
         "sleeve": "VG+",
         "price": 37.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-05-13",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 29.92,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-05-13",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 30.76,
-        "currency": "EUR"
       }
     ]
   },
   "397167": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-30",
@@ -7095,8 +7095,22 @@
     ]
   },
   "402227": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 12.5,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-24",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 12.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-14",
         "media": "VG+",
@@ -7292,26 +7306,19 @@
         "sleeve": "VG+",
         "price": 25.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-07-01",
-        "media": "VG+",
-        "sleeve": "G+",
-        "price": 19.99,
-        "currency": "EUR"
-      },
-      {
-        "date": "2025-06-09",
-        "media": "NM",
-        "sleeve": "VG",
-        "price": 14.5,
-        "currency": "EUR"
       }
     ]
   },
   "382601": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-28",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 14.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-13",
         "media": "VG+",
@@ -7514,18 +7521,11 @@
         "sleeve": "F",
         "price": 8.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-01-24",
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 12.0,
-        "currency": "EUR"
       }
     ]
   },
   "12895130": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-06",
@@ -7740,7 +7740,7 @@
     ]
   },
   "13672908": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-04",
@@ -7914,7 +7914,7 @@
         "date": "2023-09-17",
         "media": "NM",
         "sleeve": "VG+",
-        "price": 130.26,
+        "price": 128.67,
         "currency": "EUR"
       },
       {
@@ -7955,8 +7955,22 @@
     ]
   },
   "223127": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-23",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 141.93,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-19",
+        "media": "G",
+        "sleeve": "G",
+        "price": 39.6,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-03",
         "media": "VG+",
@@ -8031,7 +8045,7 @@
         "date": "2026-05-26",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 135.19,
+        "price": 134.4,
         "currency": "EUR"
       },
       {
@@ -8045,7 +8059,7 @@
         "date": "2026-05-21",
         "media": "VG",
         "sleeve": "VG+",
-        "price": 78.95,
+        "price": 78.49,
         "currency": "EUR"
       },
       {
@@ -8059,7 +8073,7 @@
         "date": "2026-05-18",
         "media": "VG+",
         "sleeve": "NM",
-        "price": 195.56,
+        "price": 193.17,
         "currency": "EUR"
       },
       {
@@ -8094,7 +8108,7 @@
         "date": "2026-03-26",
         "media": "VG+",
         "sleeve": "VG",
-        "price": 173.72,
+        "price": 171.6,
         "currency": "EUR"
       },
       {
@@ -8152,25 +8166,11 @@
         "sleeve": "VG+",
         "price": 100.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-02-09",
-        "media": "M",
-        "sleeve": "M",
-        "price": 264.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-02-06",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 166.32,
-        "currency": "EUR"
       }
     ]
   },
   "16170729": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-21",
@@ -8516,8 +8516,64 @@
     ]
   },
   "152946": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 20.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 14.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG+",
+        "sleeve": "Not Graded",
+        "price": 14.9,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 12.99,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-24",
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 14.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-24",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 16.43,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-23",
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 15.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-22",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 24.95,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-21",
         "media": "VG+",
@@ -8671,68 +8727,40 @@
         "sleeve": "VG+",
         "price": 25.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-07-02",
-        "media": "G+",
-        "sleeve": "G+",
-        "price": 9.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-07-01",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 14.95,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-30",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 15.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-29",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 14.08,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-29",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 49.5,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-27",
-        "media": "VG",
-        "sleeve": "VG+",
-        "price": 11.44,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-26",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 14.08,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-24",
-        "media": "NM",
-        "sleeve": "VG+",
-        "price": 24.99,
-        "currency": "EUR"
       }
     ]
   },
   "1949857": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 26.11,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.79,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 19.9,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 22.88,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-19",
         "media": "M",
@@ -8914,39 +8942,11 @@
         "sleeve": "M",
         "price": 29.99,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-04-17",
-        "media": "M",
-        "sleeve": "M",
-        "price": 24.9,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-04-12",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 20.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-04-12",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 21.54,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-04-09",
-        "media": "M",
-        "sleeve": "M",
-        "price": 30.11,
-        "currency": "EUR"
       }
     ]
   },
   "8814849": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-05",
@@ -9161,8 +9161,15 @@
     ]
   },
   "10559651": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-22",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 28.16,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-09",
         "media": "NM",
@@ -9293,7 +9300,7 @@
         "date": "2026-04-20",
         "media": "NM",
         "sleeve": "NM",
-        "price": 86.8,
+        "price": 85.75,
         "currency": "EUR"
       },
       {
@@ -9365,19 +9372,54 @@
         "sleeve": "VG+",
         "price": 29.04,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-02-24",
-        "media": "M",
-        "sleeve": "M",
-        "price": 26.4,
-        "currency": "EUR"
       }
     ]
   },
   "1934367": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 94.16,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 13.2,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 15.4,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-25",
+        "media": "VG+",
+        "sleeve": "NM",
+        "price": 21.12,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-25",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 26.4,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-24",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 14.08,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-17",
         "media": "VG",
@@ -9545,53 +9587,11 @@
         "sleeve": "VG+",
         "price": 26.39,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-06-12",
-        "media": "VG",
-        "sleeve": "VG+",
-        "price": 12.32,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-10",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 14.95,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-05",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 17.6,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-04",
-        "media": "VG",
-        "sleeve": "VG+",
-        "price": 13.2,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-03",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 19.8,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-01",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 26.4,
-        "currency": "EUR"
       }
     ]
   },
   "2848009": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-19",
@@ -9806,7 +9806,7 @@
     ]
   },
   "34780535": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-14",
@@ -9916,8 +9916,15 @@
     ]
   },
   "4418438": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 16.43,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-25",
         "media": "M",
@@ -10120,18 +10127,11 @@
         "sleeve": "M",
         "price": 26.9,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-02-18",
-        "media": "M",
-        "sleeve": "M",
-        "price": 26.93,
-        "currency": "EUR"
       }
     ]
   },
   "3660230": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-02",
@@ -10199,7 +10199,7 @@
     ]
   },
   "65845": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-04-29",
@@ -10227,6 +10227,13 @@
         "media": "VG+",
         "sleeve": "VG+",
         "price": 5.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2025-01-11",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 4.5,
         "currency": "EUR"
       },
       {
@@ -10403,19 +10410,33 @@
         "sleeve": "VG+",
         "price": 3.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2019-07-06",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 4.99,
-        "currency": "EUR"
       }
     ]
   },
   "526351": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 45.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 30.79,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-22",
+        "media": "M",
+        "sleeve": "M",
+        "price": 105.6,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-21",
         "media": "NM",
@@ -10604,32 +10625,11 @@
         "sleeve": "VG+",
         "price": 39.6,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-06-11",
-        "media": "G+",
-        "sleeve": "VG",
-        "price": 13.2,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-10",
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 21.89,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-09",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 24.31,
-        "currency": "EUR"
       }
     ]
   },
   "1813006": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-21",
@@ -10663,7 +10663,7 @@
         "date": "2026-04-13",
         "media": "VG+",
         "sleeve": "NM",
-        "price": 1000.0,
+        "price": 997.94,
         "currency": "EUR"
       },
       {
@@ -10789,7 +10789,7 @@
         "date": "2025-08-28",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 738.8,
+        "price": 736.55,
         "currency": "EUR"
       },
       {
@@ -10831,7 +10831,7 @@
         "date": "2025-07-03",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 1406.91,
+        "price": 1389.76,
         "currency": "EUR"
       },
       {
@@ -10844,7 +10844,7 @@
     ]
   },
   "3183667": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-16",
@@ -11059,7 +11059,7 @@
     ]
   },
   "14914560": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-01-11",
@@ -11086,7 +11086,7 @@
         "date": "2021-08-18",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 113.56,
+        "price": 112.9,
         "currency": "EUR"
       },
       {
@@ -11099,7 +11099,7 @@
     ]
   },
   "9452213": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-13",
@@ -11314,7 +11314,7 @@
     ]
   },
   "12927816": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-03-16",
@@ -11424,8 +11424,15 @@
     ]
   },
   "11118447": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-22",
+        "media": "M",
+        "sleeve": "M",
+        "price": 21.11,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-19",
         "media": "M",
@@ -11628,18 +11635,11 @@
         "sleeve": "VG+",
         "price": 17.6,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-03-15",
-        "media": "M",
-        "sleeve": "M",
-        "price": 30.9,
-        "currency": "EUR"
       }
     ]
   },
   "2520300": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-12",
@@ -11854,7 +11854,7 @@
     ]
   },
   "21054706": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-07",
@@ -12069,7 +12069,7 @@
     ]
   },
   "28403278": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-18",
@@ -12096,14 +12096,14 @@
         "date": "2026-07-05",
         "media": "M",
         "sleeve": "M",
-        "price": 29.88,
+        "price": 29.51,
         "currency": "EUR"
       },
       {
         "date": "2026-06-11",
         "media": "M",
         "sleeve": "M",
-        "price": 26.62,
+        "price": 26.29,
         "currency": "EUR"
       },
       {
@@ -12284,7 +12284,7 @@
     ]
   },
   "34578556": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-01-12",
@@ -12310,7 +12310,7 @@
     ]
   },
   "30551209": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-07",
@@ -12364,7 +12364,7 @@
     ]
   },
   "23398166": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-08",
@@ -12579,7 +12579,7 @@
     ]
   },
   "25683820": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-10",
@@ -12794,7 +12794,7 @@
     ]
   },
   "20298550": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-01",
@@ -12827,7 +12827,7 @@
     ]
   },
   "22712903": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-27",
@@ -13042,7 +13042,7 @@
     ]
   },
   "22494431": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-04-23",
@@ -13208,8 +13208,15 @@
     ]
   },
   "9847048": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "M",
+        "sleeve": "M",
+        "price": 19.32,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-11",
         "media": "M",
@@ -13412,18 +13419,11 @@
         "sleeve": "Not Graded",
         "price": 10.56,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-06-08",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 14.04,
-        "currency": "EUR"
       }
     ]
   },
   "1862215": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-09-20",
@@ -13471,7 +13471,7 @@
         "date": "2024-01-20",
         "media": "M",
         "sleeve": "NM",
-        "price": 38.02,
+        "price": 37.56,
         "currency": "EUR"
       },
       {
@@ -13631,7 +13631,7 @@
     ]
   },
   "746135": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-08-01",
@@ -13818,7 +13818,7 @@
     ]
   },
   "3229870": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-05-13",
@@ -13935,8 +13935,15 @@
     ]
   },
   "7753999": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 37.86,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-19",
         "media": "VG+",
@@ -14139,18 +14146,11 @@
         "sleeve": "VG",
         "price": 30.76,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-03-27",
-        "media": "M",
-        "sleeve": "M",
-        "price": 32.84,
-        "currency": "EUR"
       }
     ]
   },
   "10130642": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-02-03",
@@ -14309,7 +14309,7 @@
     ]
   },
   "23316872": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-12",
@@ -14405,7 +14405,7 @@
     ]
   },
   "22048156": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-18",
@@ -14571,7 +14571,7 @@
     ]
   },
   "14031557": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-06",
@@ -14591,7 +14591,7 @@
         "date": "2026-04-10",
         "media": "VG",
         "sleeve": "G+",
-        "price": 8.15,
+        "price": 8.05,
         "currency": "EUR"
       },
       {
@@ -14786,7 +14786,7 @@
     ]
   },
   "3824539": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-09",
@@ -15001,7 +15001,7 @@
     ]
   },
   "475606": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-20",
@@ -15216,7 +15216,7 @@
     ]
   },
   "4269045": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-20",
@@ -15285,7 +15285,7 @@
         "date": "2026-03-13",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 24.18,
+        "price": 24.11,
         "currency": "EUR"
       },
       {
@@ -15431,8 +15431,15 @@
     ]
   },
   "455954": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 14.08,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-17",
         "media": "VG+",
@@ -15635,18 +15642,11 @@
         "sleeve": "VG+",
         "price": 14.08,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-02-09",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 22.28,
-        "currency": "EUR"
       }
     ]
   },
   "446814": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-08",
@@ -15861,7 +15861,7 @@
     ]
   },
   "589920": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-13",
@@ -16076,7 +16076,7 @@
     ]
   },
   "505097": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-15",
@@ -16096,7 +16096,7 @@
         "date": "2026-07-03",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 18.18,
+        "price": 18.14,
         "currency": "EUR"
       },
       {
@@ -16291,7 +16291,7 @@
     ]
   },
   "4732312": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2022-04-12",
@@ -16328,7 +16328,7 @@
     "sales": []
   },
   "11967456": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-04-20",
@@ -16543,7 +16543,7 @@
     ]
   },
   "25210735": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-18",
@@ -16626,7 +16626,7 @@
         "date": "2026-01-18",
         "media": "M",
         "sleeve": "M",
-        "price": 38.02,
+        "price": 37.56,
         "currency": "EUR"
       },
       {
@@ -16758,7 +16758,7 @@
     ]
   },
   "4065605": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-17",
@@ -16973,7 +16973,7 @@
     ]
   },
   "33831750": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-07",
@@ -17125,7 +17125,7 @@
     ]
   },
   "5305755": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-03",
@@ -17340,7 +17340,7 @@
     ]
   },
   "13549135": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2024-11-27",
@@ -17373,7 +17373,7 @@
     ]
   },
   "11827033": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-08",
@@ -17567,7 +17567,7 @@
     ]
   },
   "3363252": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-04-05",
@@ -17782,7 +17782,7 @@
     ]
   },
   "3214829": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-12",
@@ -17997,8 +17997,22 @@
     ]
   },
   "31334893": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-28",
+        "media": "M",
+        "sleeve": "M",
+        "price": 80.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-25",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 108.66,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-28",
         "media": "M",
@@ -18191,7 +18205,7 @@
     ]
   },
   "2893139": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-14",
@@ -18406,7 +18420,7 @@
     ]
   },
   "22645229": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-03",
@@ -18621,7 +18635,7 @@
     ]
   },
   "7264539": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-12-30",
@@ -18836,8 +18850,15 @@
     ]
   },
   "1137475": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 154.86,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-20",
         "media": "VG+",
@@ -19040,19 +19061,26 @@
         "sleeve": "VG+",
         "price": 117.33,
         "currency": "EUR"
-      },
-      {
-        "date": "2024-10-11",
-        "media": "VG",
-        "sleeve": "P",
-        "price": 26.15,
-        "currency": "EUR"
       }
     ]
   },
   "765072": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-24",
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 80.61,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-22",
+        "media": "G",
+        "sleeve": "VG",
+        "price": 14.48,
+        "currency": "EUR"
+      },
       {
         "date": "2026-05-14",
         "media": "VG",
@@ -19248,25 +19276,11 @@
         "sleeve": "G",
         "price": 6.1,
         "currency": "EUR"
-      },
-      {
-        "date": "2024-05-21",
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 22.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2024-04-18",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 20.24,
-        "currency": "EUR"
       }
     ]
   },
   "6003779": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-01-11",
@@ -19384,7 +19398,7 @@
         "date": "2022-11-07",
         "media": "G+",
         "sleeve": "VG",
-        "price": 168.4,
+        "price": 166.34,
         "currency": "EUR"
       },
       {
@@ -19481,8 +19495,22 @@
     ]
   },
   "468054": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 8.79,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-23",
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 9.39,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-19",
         "media": "VG+",
@@ -19641,7 +19669,7 @@
         "date": "2026-06-13",
         "media": "G+",
         "sleeve": "F",
-        "price": 5.6,
+        "price": 5.57,
         "currency": "EUR"
       },
       {
@@ -19678,25 +19706,11 @@
         "sleeve": "G+",
         "price": 4.4,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-06-04",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 8.36,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-03",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 4.4,
-        "currency": "EUR"
       }
     ]
   },
   "1931909": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-22",
@@ -19911,7 +19925,7 @@
     ]
   },
   "7435111": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-01-20",
@@ -20126,7 +20140,7 @@
     ]
   },
   "13314916": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-04-16",
@@ -20250,7 +20264,7 @@
     ]
   },
   "10597886": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-08",
@@ -20465,7 +20479,7 @@
     ]
   },
   "10752389": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-12",
@@ -20680,13 +20694,13 @@
     ]
   },
   "10873523": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-20",
         "media": "M",
         "sleeve": "M",
-        "price": 85.31,
+        "price": 85.05,
         "currency": "EUR"
       },
       {
@@ -20840,7 +20854,7 @@
         "date": "2024-12-07",
         "media": "NM",
         "sleeve": "NM",
-        "price": 55.0,
+        "price": 54.89,
         "currency": "EUR"
       },
       {
@@ -20895,7 +20909,7 @@
     ]
   },
   "13876606": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-01-30",
@@ -21096,7 +21110,7 @@
     ]
   },
   "13318697": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-12-22",
@@ -21311,7 +21325,7 @@
     ]
   },
   "15624365": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-12-09",
@@ -21526,8 +21540,15 @@
     ]
   },
   "17277640": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-22",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 20.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-05-21",
         "media": "M",
@@ -21730,24 +21751,17 @@
         "sleeve": "M",
         "price": 43.07,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-01-11",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 13.2,
-        "currency": "EUR"
       }
     ]
   },
   "485114": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-20",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 54.08,
+        "price": 53.76,
         "currency": "EUR"
       },
       {
@@ -21768,14 +21782,14 @@
         "date": "2026-06-08",
         "media": "NM",
         "sleeve": "NM",
-        "price": 81.73,
+        "price": 81.56,
         "currency": "EUR"
       },
       {
         "date": "2026-05-28",
         "media": "VG",
         "sleeve": "G",
-        "price": 81.37,
+        "price": 80.38,
         "currency": "EUR"
       },
       {
@@ -21943,7 +21957,7 @@
         "date": "2025-12-11",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 58.4,
+        "price": 58.06,
         "currency": "EUR"
       },
       {
@@ -21956,8 +21970,15 @@
     ]
   },
   "1198408": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-22",
+        "media": "M",
+        "sleeve": "M",
+        "price": 48.29,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-21",
         "media": "VG+",
@@ -22025,7 +22046,7 @@
         "date": "2025-06-01",
         "media": "VG+",
         "sleeve": "VG",
-        "price": 80.61,
+        "price": 80.37,
         "currency": "EUR"
       },
       {
@@ -22137,7 +22158,7 @@
         "date": "2023-02-11",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 90.91,
+        "price": 90.72,
         "currency": "EUR"
       },
       {
@@ -22160,18 +22181,11 @@
         "sleeve": "VG",
         "price": 75.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2022-11-24",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 99.0,
-        "currency": "EUR"
       }
     ]
   },
   "598810": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-19",
@@ -22198,7 +22212,7 @@
         "date": "2026-04-23",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 75.94,
+        "price": 75.01,
         "currency": "EUR"
       },
       {
@@ -22254,7 +22268,7 @@
         "date": "2025-12-22",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 86.8,
+        "price": 85.75,
         "currency": "EUR"
       },
       {
@@ -22386,8 +22400,15 @@
     ]
   },
   "8954977": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 27.48,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-14",
         "media": "M",
@@ -22590,18 +22611,11 @@
         "sleeve": "M",
         "price": 30.71,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-03-06",
-        "media": "M",
-        "sleeve": "M",
-        "price": 44.95,
-        "currency": "EUR"
       }
     ]
   },
   "10456142": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-15",
@@ -22816,8 +22830,15 @@
     ]
   },
   "10395824": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-24",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 30.76,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-19",
         "media": "M",
@@ -23020,18 +23041,11 @@
         "sleeve": "NM",
         "price": 17.6,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-12-14",
-        "media": "M",
-        "sleeve": "M",
-        "price": 37.75,
-        "currency": "EUR"
       }
     ]
   },
   "676619": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-15",
@@ -23246,7 +23260,7 @@
     ]
   },
   "11846916": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-03",
@@ -23448,7 +23462,7 @@
         "date": "2024-10-13",
         "media": "M",
         "sleeve": "M",
-        "price": 33.59,
+        "price": 33.18,
         "currency": "EUR"
       },
       {
@@ -23461,7 +23475,7 @@
     ]
   },
   "15500018": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2024-06-02",
@@ -23606,7 +23620,7 @@
     ]
   },
   "26032708": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-17",
@@ -23646,7 +23660,7 @@
     ]
   },
   "15969889": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-17",
@@ -23756,7 +23770,7 @@
     ]
   },
   "18017281": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2023-06-19",
@@ -23782,7 +23796,7 @@
     ]
   },
   "16062321": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2022-01-04",
@@ -23808,8 +23822,15 @@
     ]
   },
   "370989": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 14.08,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-20",
         "media": "VG",
@@ -24012,18 +24033,11 @@
         "sleeve": "VG+",
         "price": 17.59,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-02-20",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 14.08,
-        "currency": "EUR"
       }
     ]
   },
   "4731834": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-02-25",
@@ -24224,7 +24238,7 @@
     ]
   },
   "401145": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-07",
@@ -24439,7 +24453,7 @@
     ]
   },
   "378607": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-14",
@@ -24654,7 +24668,7 @@
     ]
   },
   "380614": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-09",
@@ -24873,7 +24887,7 @@
     "sales": []
   },
   "8688135": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-04",
@@ -24942,7 +24956,7 @@
         "date": "2025-08-30",
         "media": "VG+",
         "sleeve": "VG",
-        "price": 8.09,
+        "price": 8.07,
         "currency": "EUR"
       },
       {
@@ -24970,7 +24984,7 @@
         "date": "2025-02-15",
         "media": "VG",
         "sleeve": "VG",
-        "price": 5.37,
+        "price": 5.36,
         "currency": "EUR"
       },
       {
@@ -25026,7 +25040,7 @@
         "date": "2024-08-22",
         "media": "VG+",
         "sleeve": "VG",
-        "price": 7.73,
+        "price": 7.71,
         "currency": "EUR"
       },
       {
@@ -25047,14 +25061,14 @@
         "date": "2024-06-29",
         "media": "VG+",
         "sleeve": "VG",
-        "price": 9.09,
+        "price": 9.07,
         "currency": "EUR"
       },
       {
         "date": "2024-06-29",
         "media": "VG+",
         "sleeve": "VG",
-        "price": 9.09,
+        "price": 9.07,
         "currency": "EUR"
       },
       {
@@ -25068,27 +25082,27 @@
         "date": "2024-04-16",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 11.73,
+        "price": 11.7,
         "currency": "EUR"
       },
       {
         "date": "2024-04-07",
         "media": "NM",
         "sleeve": "VG+",
-        "price": 20.82,
+        "price": 20.78,
         "currency": "EUR"
       },
       {
         "date": "2023-12-04",
         "media": "VG",
         "sleeve": "VG",
-        "price": 3.55,
+        "price": 3.54,
         "currency": "EUR"
       }
     ]
   },
   "3105488": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-06",
@@ -25143,7 +25157,7 @@
         "date": "2025-12-28",
         "media": "M",
         "sleeve": "M",
-        "price": 19.56,
+        "price": 19.32,
         "currency": "EUR"
       },
       {
@@ -25303,8 +25317,15 @@
     ]
   },
   "441165": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 5.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-20",
         "media": "VG+",
@@ -25435,7 +25456,7 @@
         "date": "2026-04-01",
         "media": "VG",
         "sleeve": "VG",
-        "price": 5.45,
+        "price": 5.44,
         "currency": "EUR"
       },
       {
@@ -25463,7 +25484,7 @@
         "date": "2026-03-24",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 6.36,
+        "price": 6.35,
         "currency": "EUR"
       },
       {
@@ -25507,18 +25528,11 @@
         "sleeve": "VG",
         "price": 19.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-02-26",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 4.8,
-        "currency": "EUR"
       }
     ]
   },
   "27888051": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-02-01",
@@ -25537,8 +25551,15 @@
     ]
   },
   "20031742": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 10.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-08",
         "media": "VG+",
@@ -25571,7 +25592,7 @@
         "date": "2026-01-06",
         "media": "VG+",
         "sleeve": "VG",
-        "price": 6.72,
+        "price": 6.7,
         "currency": "EUR"
       },
       {
@@ -25654,8 +25675,15 @@
     ]
   },
   "3105226": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-23",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 16.8,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-22",
         "media": "M",
@@ -25793,7 +25821,7 @@
         "date": "2023-12-08",
         "media": "M",
         "sleeve": "M",
-        "price": 21.73,
+        "price": 21.46,
         "currency": "EUR"
       },
       {
@@ -25858,18 +25886,11 @@
         "sleeve": "M",
         "price": 17.9,
         "currency": "EUR"
-      },
-      {
-        "date": "2022-05-28",
-        "media": "M",
-        "sleeve": "M",
-        "price": 23.29,
-        "currency": "EUR"
       }
     ]
   },
   "4475809": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-16",
@@ -25931,7 +25952,7 @@
         "date": "2025-11-28",
         "media": "VG+",
         "sleeve": "VG",
-        "price": 4.03,
+        "price": 4.02,
         "currency": "EUR"
       },
       {
@@ -26084,7 +26105,7 @@
     ]
   },
   "3102070": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-26",
@@ -26299,7 +26320,7 @@
     ]
   },
   "9535494": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-30",
@@ -26333,7 +26354,7 @@
         "date": "2025-11-07",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 7.18,
+        "price": 7.17,
         "currency": "EUR"
       },
       {
@@ -26403,14 +26424,14 @@
         "date": "2024-12-28",
         "media": "VG+",
         "sleeve": "NM",
-        "price": 10.82,
+        "price": 10.8,
         "currency": "EUR"
       },
       {
         "date": "2024-12-03",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 9.09,
+        "price": 9.07,
         "currency": "EUR"
       },
       {
@@ -26459,7 +26480,7 @@
         "date": "2024-03-07",
         "media": "NM",
         "sleeve": "VG+",
-        "price": 13.64,
+        "price": 13.61,
         "currency": "EUR"
       },
       {
@@ -26514,7 +26535,7 @@
     ]
   },
   "3102140": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-21",
@@ -26646,7 +26667,7 @@
         "date": "2024-03-03",
         "media": "M",
         "sleeve": "M",
-        "price": 21.73,
+        "price": 21.46,
         "currency": "EUR"
       },
       {
@@ -26729,7 +26750,7 @@
     ]
   },
   "3386133": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-10",
@@ -26944,7 +26965,7 @@
     ]
   },
   "27084564": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-01-01",
@@ -26998,8 +27019,22 @@
     ]
   },
   "1615490": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 8.95,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-23",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 3.52,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-15",
         "media": "VG",
@@ -27195,25 +27230,11 @@
         "sleeve": "VG+",
         "price": 5.87,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-02-24",
-        "media": "NM",
-        "sleeve": "VG+",
-        "price": 7.04,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-02-23",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 7.63,
-        "currency": "EUR"
       }
     ]
   },
   "26309384": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-23",
@@ -27330,7 +27351,7 @@
     ]
   },
   "204021": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-21",
@@ -27545,8 +27566,15 @@
     ]
   },
   "20414716": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-22",
+        "media": "M",
+        "sleeve": "M",
+        "price": 35.82,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-17",
         "media": "M",
@@ -27749,24 +27777,31 @@
         "sleeve": "NM",
         "price": 30.79,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-02-17",
-        "media": "M",
-        "sleeve": "M",
-        "price": 29.33,
-        "currency": "EUR"
       }
     ]
   },
   "474703": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 140.8,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-25",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 164.27,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-16",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 97.34,
+        "price": 96.77,
         "currency": "EUR"
       },
       {
@@ -27957,26 +27992,19 @@
         "sleeve": "VG",
         "price": 136.3,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-10-28",
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 111.47,
-        "currency": "EUR"
-      },
-      {
-        "date": "2025-10-27",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 89.99,
-        "currency": "EUR"
       }
     ]
   },
   "32440584": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "M",
+        "sleeve": "M",
+        "price": 43.08,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-21",
         "media": "M",
@@ -28179,19 +28207,33 @@
         "sleeve": "M",
         "price": 38.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-02-01",
-        "media": "M",
-        "sleeve": "M",
-        "price": 36.96,
-        "currency": "EUR"
       }
     ]
   },
   "1073329": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 325.6,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-27",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 440.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-21",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 369.23,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-13",
         "media": "M",
@@ -28380,32 +28422,11 @@
         "sleeve": "NM",
         "price": 352.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-10-08",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 281.6,
-        "currency": "EUR"
-      },
-      {
-        "date": "2025-09-14",
-        "media": "M",
-        "sleeve": "M",
-        "price": 510.77,
-        "currency": "EUR"
-      },
-      {
-        "date": "2025-09-11",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 373.99,
-        "currency": "EUR"
       }
     ]
   },
   "1559511": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-05",
@@ -28620,8 +28641,15 @@
     ]
   },
   "4126519": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 18.77,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-04",
         "media": "VG+",
@@ -28824,18 +28852,11 @@
         "sleeve": "VG",
         "price": 12.32,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-02-12",
-        "media": "G+",
-        "sleeve": "G+",
-        "price": 15.24,
-        "currency": "EUR"
       }
     ]
   },
   "4914174": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-02",
@@ -29050,8 +29071,22 @@
     ]
   },
   "470912": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 70.4,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-25",
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 52.8,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-19",
         "media": "NM",
@@ -29247,25 +29282,11 @@
         "sleeve": "VG",
         "price": 79.2,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-03-22",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 111.94,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-03-11",
-        "media": "NM",
-        "sleeve": "VG+",
-        "price": 146.67,
-        "currency": "EUR"
       }
     ]
   },
   "2048710": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-04-18",
@@ -29285,7 +29306,7 @@
         "date": "2024-03-24",
         "media": "M",
         "sleeve": "M",
-        "price": 51.37,
+        "price": 51.07,
         "currency": "EUR"
       },
       {
@@ -29480,7 +29501,7 @@
     ]
   },
   "2048352": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-13",
@@ -29695,7 +29716,7 @@
     ]
   },
   "25128898": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-18",
@@ -29910,8 +29931,22 @@
     ]
   },
   "367339": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-23",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 660.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-22",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 237.16,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-13",
         "media": "VG+",
@@ -29958,7 +29993,7 @@
         "date": "2026-05-30",
         "media": "VG+",
         "sleeve": "VG",
-        "price": 161.15,
+        "price": 160.21,
         "currency": "EUR"
       },
       {
@@ -29972,14 +30007,14 @@
         "date": "2026-05-21",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 183.86,
+        "price": 182.78,
         "currency": "EUR"
       },
       {
         "date": "2026-05-15",
         "media": "VG",
         "sleeve": "VG",
-        "price": 118.97,
+        "price": 118.27,
         "currency": "EUR"
       },
       {
@@ -29993,7 +30028,7 @@
         "date": "2026-05-08",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 205.49,
+        "price": 204.29,
         "currency": "EUR"
       },
       {
@@ -30035,7 +30070,7 @@
         "date": "2026-03-16",
         "media": "VG",
         "sleeve": "VG",
-        "price": 120.92,
+        "price": 120.55,
         "currency": "EUR"
       },
       {
@@ -30084,7 +30119,7 @@
         "date": "2026-02-14",
         "media": "VG",
         "sleeve": "VG+",
-        "price": 135.19,
+        "price": 134.4,
         "currency": "EUR"
       },
       {
@@ -30098,35 +30133,35 @@
         "date": "2026-02-13",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 162.23,
+        "price": 161.28,
         "currency": "EUR"
       },
       {
         "date": "2026-02-12",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 173.05,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-02-10",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 173.05,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-01-25",
-        "media": "NM",
-        "sleeve": "VG+",
-        "price": 462.0,
+        "price": 172.03,
         "currency": "EUR"
       }
     ]
   },
   "4073023": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.49,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-24",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 43.05,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-21",
         "media": "M",
@@ -30322,26 +30357,19 @@
         "sleeve": "NM",
         "price": 21.38,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-05-27",
-        "media": "M",
-        "sleeve": "NM",
-        "price": 21.38,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-05-27",
-        "media": "M",
-        "sleeve": "M",
-        "price": 31.99,
-        "currency": "EUR"
       }
     ]
   },
   "3294598": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-22",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 28.16,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-17",
         "media": "M",
@@ -30544,18 +30572,11 @@
         "sleeve": "NM",
         "price": 33.09,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-11-13",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 22.0,
-        "currency": "EUR"
       }
     ]
   },
   "21976249": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-11",
@@ -30770,7 +30791,7 @@
     ]
   },
   "9258657": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-18",
@@ -30985,8 +31006,15 @@
     ]
   },
   "9247160": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-22",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 29.33,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-04",
         "media": "NM",
@@ -31096,7 +31124,7 @@
         "date": "2026-01-21",
         "media": "M",
         "sleeve": "M",
-        "price": 30.96,
+        "price": 30.59,
         "currency": "EUR"
       },
       {
@@ -31189,19 +31217,19 @@
         "sleeve": "NM",
         "price": 26.4,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-05-08",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 22.0,
-        "currency": "EUR"
       }
     ]
   },
   "9258642": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-22",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 24.64,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-15",
         "media": "M",
@@ -31404,19 +31432,19 @@
         "sleeve": "NM",
         "price": 26.39,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-08-23",
-        "media": "M",
-        "sleeve": "M",
-        "price": 37.28,
-        "currency": "EUR"
       }
     ]
   },
   "26904353": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-23",
+        "media": "M",
+        "sleeve": "M",
+        "price": 15.99,
+        "currency": "EUR"
+      },
       {
         "date": "2026-05-31",
         "media": "M",
@@ -31619,80 +31647,73 @@
         "sleeve": "VG+",
         "price": 14.08,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-09-26",
-        "media": "M",
-        "sleeve": "VG+",
-        "price": 14.96,
-        "currency": "EUR"
       }
     ]
   },
   "26783426": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-04-20",
         "media": "M",
         "sleeve": "M",
-        "price": 592.25,
+        "price": 589.87,
         "currency": "EUR"
       },
       {
         "date": "2026-04-02",
         "media": "M",
         "sleeve": "M",
-        "price": 657.95,
+        "price": 655.31,
         "currency": "EUR"
       },
       {
         "date": "2026-03-09",
         "media": "M",
         "sleeve": "M",
-        "price": 637.61,
+        "price": 635.05,
         "currency": "EUR"
       },
       {
         "date": "2026-03-04",
         "media": "M",
         "sleeve": "M",
-        "price": 552.85,
+        "price": 550.63,
         "currency": "EUR"
       },
       {
         "date": "2026-02-23",
         "media": "M",
         "sleeve": "M",
-        "price": 506.04,
+        "price": 504.01,
         "currency": "EUR"
       },
       {
         "date": "2026-02-16",
         "media": "M",
         "sleeve": "M",
-        "price": 455.38,
+        "price": 453.56,
         "currency": "EUR"
       },
       {
         "date": "2026-02-14",
         "media": "M",
         "sleeve": "M",
-        "price": 404.83,
+        "price": 403.21,
         "currency": "EUR"
       },
       {
         "date": "2026-02-01",
         "media": "M",
         "sleeve": "M",
-        "price": 354.23,
+        "price": 352.81,
         "currency": "EUR"
       },
       {
         "date": "2026-01-27",
         "media": "M",
         "sleeve": "M",
-        "price": 354.23,
+        "price": 352.81,
         "currency": "EUR"
       },
       {
@@ -31817,8 +31838,15 @@
     ]
   },
   "12802012": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-23",
+        "media": "NM",
+        "sleeve": "M",
+        "price": 17.6,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-06",
         "media": "M",
@@ -32021,18 +32049,11 @@
         "sleeve": "M",
         "price": 36.5,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-07-15",
-        "media": "M",
-        "sleeve": "M",
-        "price": 35.19,
-        "currency": "EUR"
       }
     ]
   },
   "12800480": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-12",
@@ -32247,7 +32268,7 @@
     ]
   },
   "6736792": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-24",
@@ -32462,7 +32483,7 @@
     ]
   },
   "27356088": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-08",
@@ -32677,7 +32698,7 @@
     ]
   },
   "13377344": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-03",
@@ -32892,7 +32913,7 @@
     ]
   },
   "12308370": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-03",
@@ -33107,8 +33128,22 @@
     ]
   },
   "20020801": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "VG+",
+        "sleeve": "G+",
+        "price": 13.2,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-22",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 20.2,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-18",
         "media": "NM",
@@ -33304,26 +33339,19 @@
         "sleeve": "M",
         "price": 30.49,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-01-06",
-        "media": "M",
-        "sleeve": "M",
-        "price": 34.23,
-        "currency": "EUR"
-      },
-      {
-        "date": "2024-12-26",
-        "media": "M",
-        "sleeve": "NM",
-        "price": 30.35,
-        "currency": "EUR"
       }
     ]
   },
   "22026808": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-20",
+        "media": "NM",
+        "sleeve": "M",
+        "price": 17.6,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-13",
         "media": "M",
@@ -33526,18 +33554,11 @@
         "sleeve": "NM",
         "price": 22.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-04-17",
-        "media": "M",
-        "sleeve": "M",
-        "price": 26.4,
-        "currency": "EUR"
       }
     ]
   },
   "9480756": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-20",
@@ -33752,8 +33773,15 @@
     ]
   },
   "30428033": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-22",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 101.2,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-16",
         "media": "VG+",
@@ -33956,24 +33984,31 @@
         "sleeve": "NM",
         "price": 70.4,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-12-07",
-        "media": "M",
-        "sleeve": "M",
-        "price": 92.4,
-        "currency": "EUR"
       }
     ]
   },
   "18582520": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
-        "date": "2026-07-18",
+        "date": "2026-07-27",
         "media": "M",
         "sleeve": "NM",
-        "price": 78.01,
+        "price": 132.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 110.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-24",
+        "media": "M",
+        "sleeve": "M",
+        "price": 220.0,
         "currency": "EUR"
       },
       {
@@ -34164,25 +34199,11 @@
         "sleeve": "NM",
         "price": 118.8,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-01-31",
-        "media": "M",
-        "sleeve": "VG+",
-        "price": 110.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-01-29",
-        "media": "M",
-        "sleeve": "NM",
-        "price": 200.0,
-        "currency": "EUR"
       }
     ]
   },
   "15227004": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-20",
@@ -34397,7 +34418,7 @@
     ]
   },
   "16211818": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-04-12",
@@ -34612,7 +34633,7 @@
     ]
   },
   "16578819": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-01-04",
@@ -34827,7 +34848,7 @@
     ]
   },
   "16938279": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-24",
@@ -34903,7 +34924,7 @@
         "date": "2024-01-02",
         "media": "M",
         "sleeve": "M",
-        "price": 42.37,
+        "price": 41.85,
         "currency": "EUR"
       },
       {
@@ -35042,7 +35063,7 @@
     ]
   },
   "31489625": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-16",
@@ -35075,7 +35096,7 @@
     ]
   },
   "16026374": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-11",
@@ -35290,8 +35311,15 @@
     ]
   },
   "31843496": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 92.4,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-18",
         "media": "NM",
@@ -35373,7 +35401,7 @@
         "date": "2026-04-17",
         "media": "M",
         "sleeve": "M",
-        "price": 202.42,
+        "price": 201.6,
         "currency": "EUR"
       },
       {
@@ -35494,18 +35522,11 @@
         "sleeve": "VG+",
         "price": 87.96,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-11-24",
-        "media": "M",
-        "sleeve": "M",
-        "price": 105.6,
-        "currency": "EUR"
       }
     ]
   },
   "31828724": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-21",
@@ -35720,8 +35741,15 @@
     ]
   },
   "7435327": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-22",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 35.2,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-10",
         "media": "M",
@@ -35924,18 +35952,11 @@
         "sleeve": "NM",
         "price": 19.23,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-09-17",
-        "media": "NM",
-        "sleeve": "VG+",
-        "price": 13.2,
-        "currency": "EUR"
       }
     ]
   },
   "22348948": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-11",
@@ -35990,7 +36011,7 @@
         "date": "2026-05-15",
         "media": "M",
         "sleeve": "M",
-        "price": 29.33,
+        "price": 28.98,
         "currency": "EUR"
       },
       {
@@ -36018,7 +36039,7 @@
         "date": "2026-04-08",
         "media": "M",
         "sleeve": "M",
-        "price": 29.33,
+        "price": 28.98,
         "currency": "EUR"
       },
       {
@@ -36150,8 +36171,15 @@
     ]
   },
   "9403008": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 17.6,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-03",
         "media": "M",
@@ -36354,19 +36382,26 @@
         "sleeve": "M",
         "price": 24.55,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-12-03",
-        "media": "NM",
-        "sleeve": "G+",
-        "price": 8.8,
-        "currency": "EUR"
       }
     ]
   },
   "9402676": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 29.61,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-23",
+        "media": "M",
+        "sleeve": "M",
+        "price": 40.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-20",
         "media": "NM",
@@ -36455,7 +36490,7 @@
         "date": "2025-08-12",
         "media": "M",
         "sleeve": "M",
-        "price": 27.16,
+        "price": 26.83,
         "currency": "EUR"
       },
       {
@@ -36562,25 +36597,11 @@
         "sleeve": "M",
         "price": 24.99,
         "currency": "EUR"
-      },
-      {
-        "date": "2024-08-07",
-        "media": "NM",
-        "sleeve": "VG+",
-        "price": 19.99,
-        "currency": "EUR"
-      },
-      {
-        "date": "2024-07-29",
-        "media": "M",
-        "sleeve": "M",
-        "price": 28.15,
-        "currency": "EUR"
       }
     ]
   },
   "27840414": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-02",
@@ -36795,7 +36816,7 @@
     ]
   },
   "29085418": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-07",
@@ -36822,7 +36843,7 @@
         "date": "2026-05-14",
         "media": "M",
         "sleeve": "M",
-        "price": 26.62,
+        "price": 26.29,
         "currency": "EUR"
       },
       {
@@ -37010,7 +37031,7 @@
     ]
   },
   "9896622": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-25",
@@ -37225,7 +37246,7 @@
     ]
   },
   "10271326": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-18",
@@ -37329,7 +37350,7 @@
         "date": "2026-01-08",
         "media": "NM",
         "sleeve": "NM",
-        "price": 100.0,
+        "price": 99.79,
         "currency": "EUR"
       },
       {
@@ -37440,7 +37461,7 @@
     ]
   },
   "12270746": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-15",
@@ -37565,7 +37586,7 @@
         "date": "2022-11-02",
         "media": "NM",
         "sleeve": "NM",
-        "price": 63.64,
+        "price": 63.51,
         "currency": "EUR"
       },
       {
@@ -37655,7 +37676,7 @@
     ]
   },
   "12274680": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-19",
@@ -37870,7 +37891,7 @@
     ]
   },
   "23055125": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-17",
@@ -37932,7 +37953,7 @@
         "date": "2026-01-04",
         "media": "M",
         "sleeve": "M",
-        "price": 9.78,
+        "price": 9.66,
         "currency": "EUR"
       },
       {
@@ -38085,7 +38106,7 @@
     ]
   },
   "23100230": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-21",
@@ -38300,13 +38321,13 @@
     ]
   },
   "238369": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-19",
         "media": "M",
         "sleeve": "M",
-        "price": 830.09,
+        "price": 825.22,
         "currency": "EUR"
       },
       {
@@ -38453,7 +38474,7 @@
         "date": "2025-10-25",
         "media": "VG+",
         "sleeve": "VG",
-        "price": 272.73,
+        "price": 272.16,
         "currency": "EUR"
       },
       {
@@ -38481,7 +38502,7 @@
         "date": "2025-09-28",
         "media": "VG+",
         "sleeve": "G+",
-        "price": 131.41,
+        "price": 130.64,
         "currency": "EUR"
       },
       {
@@ -38509,14 +38530,21 @@
         "date": "2025-09-09",
         "media": "NM",
         "sleeve": "VG+",
-        "price": 270.39,
+        "price": 268.8,
         "currency": "EUR"
       }
     ]
   },
   "25119211": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-23",
+        "media": "M",
+        "sleeve": "M",
+        "price": 59.69,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-18",
         "media": "M",
@@ -38535,14 +38563,14 @@
         "date": "2026-07-10",
         "media": "M",
         "sleeve": "M",
-        "price": 47.59,
+        "price": 47.31,
         "currency": "EUR"
       },
       {
         "date": "2026-06-29",
         "media": "M",
         "sleeve": "M",
-        "price": 48.89,
+        "price": 48.29,
         "currency": "EUR"
       },
       {
@@ -38719,18 +38747,11 @@
         "sleeve": "M",
         "price": 70.4,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-02-27",
-        "media": "M",
-        "sleeve": "NM",
-        "price": 59.83,
-        "currency": "EUR"
       }
     ]
   },
   "960025": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-08",
@@ -38785,7 +38806,7 @@
         "date": "2026-03-18",
         "media": "G",
         "sleeve": "VG",
-        "price": 34.64,
+        "price": 34.43,
         "currency": "EUR"
       },
       {
@@ -38890,7 +38911,7 @@
         "date": "2025-05-22",
         "media": "M",
         "sleeve": "VG+",
-        "price": 540.77,
+        "price": 537.6,
         "currency": "EUR"
       },
       {
@@ -38925,7 +38946,7 @@
         "date": "2025-03-04",
         "media": "G+",
         "sleeve": "VG+",
-        "price": 21.09,
+        "price": 20.97,
         "currency": "EUR"
       },
       {
@@ -38945,7 +38966,7 @@
     ]
   },
   "12824597": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-03",
@@ -38958,7 +38979,7 @@
         "date": "2026-06-28",
         "media": "M",
         "sleeve": "M",
-        "price": 74.96,
+        "price": 74.05,
         "currency": "EUR"
       },
       {
@@ -39160,8 +39181,15 @@
     ]
   },
   "26608835": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 8.8,
+        "currency": "EUR"
+      },
       {
         "date": "2026-05-22",
         "media": "NM",
@@ -39364,18 +39392,11 @@
         "sleeve": "M",
         "price": 12.32,
         "currency": "EUR"
-      },
-      {
-        "date": "2023-06-21",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 12.32,
-        "currency": "EUR"
       }
     ]
   },
   "26584355": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-22",
@@ -39388,7 +39409,7 @@
         "date": "2026-07-09",
         "media": "M",
         "sleeve": "M",
-        "price": 43.46,
+        "price": 42.93,
         "currency": "EUR"
       },
       {
@@ -39590,7 +39611,7 @@
     ]
   },
   "13053315": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-18",
@@ -39805,8 +39826,15 @@
     ]
   },
   "13208577": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "M",
+        "sleeve": "M",
+        "price": 28.83,
+        "currency": "EUR"
+      },
       {
         "date": "2025-11-09",
         "media": "M",
@@ -40009,18 +40037,11 @@
         "sleeve": "NM",
         "price": 61.56,
         "currency": "EUR"
-      },
-      {
-        "date": "2021-12-06",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 52.76,
-        "currency": "EUR"
       }
     ]
   },
   "484030": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-24",
@@ -40235,7 +40256,7 @@
     ]
   },
   "16231042": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-12",
@@ -40430,7 +40451,7 @@
         "date": "2026-01-02",
         "media": "M",
         "sleeve": "NM",
-        "price": 58.4,
+        "price": 58.06,
         "currency": "EUR"
       },
       {
@@ -40450,7 +40471,7 @@
     ]
   },
   "703741": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-24",
@@ -40665,7 +40686,7 @@
     ]
   },
   "7266689": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-13",
@@ -40880,8 +40901,15 @@
     ]
   },
   "1044164": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 148.72,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-17",
         "media": "NM",
@@ -41084,19 +41112,19 @@
         "sleeve": "VG+",
         "price": 55.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-05-04",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 80.0,
-        "currency": "EUR"
       }
     ]
   },
   "10039232": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-28",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 30.79,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-26",
         "media": "NM",
@@ -41299,19 +41327,19 @@
         "sleeve": "M",
         "price": 31.68,
         "currency": "EUR"
-      },
-      {
-        "date": "2024-12-14",
-        "media": "NM",
-        "sleeve": "VG+",
-        "price": 24.64,
-        "currency": "EUR"
       }
     ]
   },
   "5699282": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 17.6,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-12",
         "media": "NM",
@@ -41514,19 +41542,19 @@
         "sleeve": "M",
         "price": 8.8,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-10-29",
-        "media": "M",
-        "sleeve": "M",
-        "price": 40.0,
-        "currency": "EUR"
       }
     ]
   },
   "5709533": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 13.2,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-16",
         "media": "NM",
@@ -41587,7 +41615,7 @@
         "date": "2025-10-30",
         "media": "NM",
         "sleeve": "VG+",
-        "price": 18.01,
+        "price": 17.8,
         "currency": "EUR"
       },
       {
@@ -41729,18 +41757,11 @@
         "sleeve": "VG",
         "price": 13.2,
         "currency": "EUR"
-      },
-      {
-        "date": "2024-12-06",
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 12.32,
-        "currency": "EUR"
       }
     ]
   },
   "589850": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-12-18",
@@ -41955,8 +41976,15 @@
     ]
   },
   "22207354": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 32.38,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-16",
         "media": "M",
@@ -42159,19 +42187,61 @@
         "sleeve": "NM",
         "price": 29.03,
         "currency": "EUR"
-      },
-      {
-        "date": "2024-12-23",
-        "media": "M",
-        "sleeve": "M",
-        "price": 34.3,
-        "currency": "EUR"
       }
     ]
   },
   "386005": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 19.9,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG",
+        "sleeve": "No Cover",
+        "price": 4.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 10.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 35.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-24",
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 8.5,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-24",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 26.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-23",
+        "media": "NM",
+        "sleeve": "VG",
+        "price": 10.59,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-22",
         "media": "VG+",
@@ -42226,6 +42296,13 @@
         "media": "VG+",
         "sleeve": "VG+",
         "price": 18.5,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-09",
+        "media": "VG+",
+        "sleeve": "VG",
+        "price": 6.5,
         "currency": "EUR"
       },
       {
@@ -42325,68 +42402,19 @@
         "sleeve": "VG",
         "price": 8.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-06-06",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 18.99,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-04",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 10.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-03",
-        "media": "NM",
-        "sleeve": "G+",
-        "price": 8.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-03",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 20.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-02",
-        "media": "NM",
-        "sleeve": "VG+",
-        "price": 12.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-02",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 17.5,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-05-29",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 15.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-05-28",
-        "media": "VG+",
-        "sleeve": "NM",
-        "price": 20.72,
-        "currency": "EUR"
       }
     ]
   },
   "16132613": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 22.9,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-18",
         "media": "M",
@@ -42589,19 +42617,26 @@
         "sleeve": "M",
         "price": 21.9,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-03-19",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 22.0,
-        "currency": "EUR"
       }
     ]
   },
   "1464270": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 15.41,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-22",
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 5.26,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-21",
         "media": "VG+",
@@ -42797,26 +42832,19 @@
         "sleeve": "VG+",
         "price": 7.04,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-05-04",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 15.84,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-04-29",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 10.06,
-        "currency": "EUR"
       }
     ]
   },
   "693037": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-24",
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 6.96,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-21",
         "media": "NM",
@@ -42947,14 +42975,14 @@
         "date": "2026-02-13",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 7.55,
+        "price": 7.53,
         "currency": "EUR"
       },
       {
         "date": "2026-02-12",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 7.55,
+        "price": 7.53,
         "currency": "EUR"
       },
       {
@@ -43019,18 +43047,11 @@
         "sleeve": "VG+",
         "price": 11.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-12-25",
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 4.9,
-        "currency": "EUR"
       }
     ]
   },
   "3033070": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-06-23",
@@ -43189,7 +43210,7 @@
     ]
   },
   "10174337": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-07",
@@ -43306,7 +43327,7 @@
     ]
   },
   "22336765": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-29",
@@ -43409,7 +43430,7 @@
     ]
   },
   "6647916": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-04-16",
@@ -43547,7 +43568,7 @@
     ]
   },
   "20619157": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-12-15",
@@ -43629,7 +43650,7 @@
     ]
   },
   "20433880": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-24",
@@ -43690,7 +43711,7 @@
     ]
   },
   "22785002": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-01-16",
@@ -43800,8 +43821,15 @@
     ]
   },
   "26234072": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-23",
+        "media": "M",
+        "sleeve": "M",
+        "price": 39.8,
+        "currency": "EUR"
+      },
       {
         "date": "2026-05-25",
         "media": "M",
@@ -43833,7 +43861,7 @@
     ]
   },
   "10320776": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-06",
@@ -43971,7 +43999,7 @@
     ]
   },
   "11745367": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-15",
@@ -44067,7 +44095,7 @@
     ]
   },
   "27135846": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-25",
@@ -44114,8 +44142,15 @@
     ]
   },
   "26449052": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.95,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-20",
         "media": "M",
@@ -44217,7 +44252,7 @@
     ]
   },
   "2267945": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-01-02",
@@ -44432,7 +44467,7 @@
     ]
   },
   "2084461": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-02-13",
@@ -44647,7 +44682,7 @@
     ]
   },
   "3469887": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-02-28",
@@ -44862,7 +44897,7 @@
     ]
   },
   "2375621": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-01-19",
@@ -45077,7 +45112,7 @@
     ]
   },
   "30376355": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-06-25",
@@ -45096,7 +45131,7 @@
     ]
   },
   "1265189": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-10-05",
@@ -45311,7 +45346,7 @@
     ]
   },
   "21119311": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2024-09-21",
@@ -45526,7 +45561,7 @@
     ]
   },
   "22978889": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-18",
@@ -45734,8 +45769,15 @@
     ]
   },
   "2103788": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-22",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 227.03,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-20",
         "media": "VG",
@@ -45831,7 +45873,7 @@
         "date": "2025-07-17",
         "media": "NM",
         "sleeve": "NM",
-        "price": 811.16,
+        "price": 806.4,
         "currency": "EUR"
       },
       {
@@ -45938,19 +45980,26 @@
         "sleeve": "NM",
         "price": 176.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2024-10-01",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 352.0,
-        "currency": "EUR"
       }
     ]
   },
   "1770697": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.97,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 25.51,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-12",
         "media": "NM",
@@ -46146,25 +46195,11 @@
         "sleeve": "NM",
         "price": 16.33,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-04-17",
-        "media": "M",
-        "sleeve": "NM",
-        "price": 16.33,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-04-15",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 14.95,
-        "currency": "EUR"
       }
     ]
   },
   "1297507": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-11",
@@ -46296,7 +46331,7 @@
         "date": "2025-08-02",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 32.45,
+        "price": 32.26,
         "currency": "EUR"
       },
       {
@@ -46379,7 +46414,7 @@
     ]
   },
   "17885617": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-12",
@@ -46594,7 +46629,7 @@
     ]
   },
   "1220700": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-04-15",
@@ -46656,7 +46691,7 @@
         "date": "2025-06-11",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 84.24,
+        "price": 83.75,
         "currency": "EUR"
       },
       {
@@ -46698,7 +46733,7 @@
         "date": "2023-10-19",
         "media": "VG+",
         "sleeve": "VG",
-        "price": 71.38,
+        "price": 70.96,
         "currency": "EUR"
       },
       {
@@ -46726,7 +46761,7 @@
         "date": "2023-01-04",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 118.97,
+        "price": 118.27,
         "currency": "EUR"
       },
       {
@@ -46809,7 +46844,7 @@
     ]
   },
   "18825352": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-26",
@@ -47024,7 +47059,7 @@
     ]
   },
   "1827139": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-19",
@@ -47239,8 +47274,15 @@
     ]
   },
   "15703648": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "M",
+        "sleeve": "M",
+        "price": 48.88,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-27",
         "media": "NM",
@@ -47443,19 +47485,19 @@
         "sleeve": "M",
         "price": 45.99,
         "currency": "EUR"
-      },
-      {
-        "date": "2024-12-31",
-        "media": "M",
-        "sleeve": "NM",
-        "price": 28.71,
-        "currency": "EUR"
       }
     ]
   },
   "1443701": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 19.88,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-21",
         "media": "M",
@@ -47658,18 +47700,11 @@
         "sleeve": "VG",
         "price": 15.85,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-10-19",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 15.4,
-        "currency": "EUR"
       }
     ]
   },
   "9307146": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-16",
@@ -47766,7 +47801,7 @@
         "date": "2025-12-12",
         "media": "M",
         "sleeve": "M",
-        "price": 26.07,
+        "price": 25.76,
         "currency": "EUR"
       },
       {
@@ -47884,7 +47919,7 @@
     ]
   },
   "17650882": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-01",
@@ -48008,7 +48043,7 @@
     ]
   },
   "9299636": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-12",
@@ -48056,7 +48091,7 @@
         "date": "2025-08-31",
         "media": "M",
         "sleeve": "VG+",
-        "price": 31.82,
+        "price": 31.75,
         "currency": "EUR"
       },
       {
@@ -48223,8 +48258,15 @@
     ]
   },
   "401816": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-24",
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 12.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-13",
         "media": "NM",
@@ -48427,18 +48469,11 @@
         "sleeve": "NM",
         "price": 19.5,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-04-28",
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 4.49,
-        "currency": "EUR"
       }
     ]
   },
   "23005994": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-26",
@@ -48576,8 +48611,15 @@
     ]
   },
   "361323": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "G+",
+        "sleeve": "G+",
+        "price": 59.9,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-12",
         "media": "VG+",
@@ -48694,7 +48736,7 @@
         "date": "2026-01-21",
         "media": "M",
         "sleeve": "VG+",
-        "price": 248.79,
+        "price": 245.76,
         "currency": "EUR"
       },
       {
@@ -48743,7 +48785,7 @@
         "date": "2025-12-07",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 92.35,
+        "price": 91.22,
         "currency": "EUR"
       },
       {
@@ -48780,19 +48822,19 @@
         "sleeve": "VG+",
         "price": 79.2,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-11-04",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 178.46,
-        "currency": "EUR"
       }
     ]
   },
   "2691711": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-24",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 30.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-11",
         "media": "VG+",
@@ -48804,7 +48846,7 @@
         "date": "2026-06-21",
         "media": "M",
         "sleeve": "M",
-        "price": 53.54,
+        "price": 53.22,
         "currency": "EUR"
       },
       {
@@ -48937,7 +48979,7 @@
         "date": "2024-11-27",
         "media": "NM",
         "sleeve": "VG+",
-        "price": 18.64,
+        "price": 18.6,
         "currency": "EUR"
       },
       {
@@ -48995,19 +49037,19 @@
         "sleeve": "VG+",
         "price": 42.5,
         "currency": "EUR"
-      },
-      {
-        "date": "2024-07-11",
-        "media": "G+",
-        "sleeve": "G+",
-        "price": 14.6,
-        "currency": "EUR"
       }
     ]
   },
   "952645": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-23",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 8.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-21",
         "media": "VG",
@@ -49210,18 +49252,11 @@
         "sleeve": "VG+",
         "price": 7.5,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-02-28",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 7.99,
-        "currency": "EUR"
       }
     ]
   },
   "20794702": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-09-26",
@@ -49282,7 +49317,7 @@
     ]
   },
   "3100518": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-01-29",
@@ -49490,7 +49525,7 @@
     ]
   },
   "26658734": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-07-02",
@@ -49523,7 +49558,7 @@
     ]
   },
   "28648639": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-05-15",
@@ -49556,7 +49591,7 @@
     ]
   },
   "26918048": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-04-01",
@@ -49624,8 +49659,15 @@
     ]
   },
   "1201387": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-23",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 8.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-21",
         "media": "VG",
@@ -49828,18 +49870,11 @@
         "sleeve": "VG+",
         "price": 5.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-07-23",
-        "media": "NM",
-        "sleeve": "VG+",
-        "price": 7.0,
-        "currency": "EUR"
       }
     ]
   },
   "24606677": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-10-11",
@@ -49893,7 +49928,7 @@
     ]
   },
   "25287358": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-05-12",
@@ -49912,7 +49947,7 @@
     ]
   },
   "2693688": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-08",
@@ -50127,7 +50162,7 @@
     ]
   },
   "16254322": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-13",
@@ -50174,7 +50209,7 @@
     ]
   },
   "3925863": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-10-29",
@@ -50389,7 +50424,7 @@
     ]
   },
   "735833": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-18",
@@ -50608,7 +50643,7 @@
     "sales": []
   },
   "6848587": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-06",
@@ -50823,7 +50858,7 @@
     ]
   },
   "4634884": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-19",
@@ -50885,7 +50920,7 @@
         "date": "2026-03-05",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 8.64,
+        "price": 8.62,
         "currency": "EUR"
       },
       {
@@ -51038,8 +51073,15 @@
     ]
   },
   "634218": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-28",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 4.69,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-10",
         "media": "VG",
@@ -51242,18 +51284,11 @@
         "sleeve": "VG+",
         "price": 5.87,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-10-25",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 7.04,
-        "currency": "EUR"
       }
     ]
   },
   "1201716": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-10",
@@ -51315,7 +51350,7 @@
         "date": "2026-03-21",
         "media": "M",
         "sleeve": "VG+",
-        "price": 48.66,
+        "price": 48.38,
         "currency": "EUR"
       },
       {
@@ -51468,7 +51503,7 @@
     ]
   },
   "1066027": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-07",
@@ -51683,7 +51718,7 @@
     ]
   },
   "9124039": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-14",
@@ -51898,8 +51933,15 @@
     ]
   },
   "2689368": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-24",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 3.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-07",
         "media": "VG+",
@@ -52102,18 +52144,11 @@
         "sleeve": "VG+",
         "price": 2.99,
         "currency": "EUR"
-      },
-      {
-        "date": "2024-03-22",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 5.0,
-        "currency": "EUR"
       }
     ]
   },
   "2972649": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-08",
@@ -52328,8 +52363,22 @@
     ]
   },
   "3351778": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 89.69,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-23",
+        "media": "M",
+        "sleeve": "M",
+        "price": 105.6,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-14",
         "media": "NM",
@@ -52525,26 +52574,19 @@
         "sleeve": "NM",
         "price": 87.06,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-01-18",
-        "media": "M",
-        "sleeve": "NM",
-        "price": 87.06,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-01-04",
-        "media": "M",
-        "sleeve": "M",
-        "price": 151.87,
-        "currency": "EUR"
       }
     ]
   },
   "268090": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 61.6,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-07",
         "media": "VG",
@@ -52570,7 +52612,7 @@
         "date": "2026-06-09",
         "media": "VG+",
         "sleeve": "G+",
-        "price": 108.53,
+        "price": 107.21,
         "currency": "EUR"
       },
       {
@@ -52633,7 +52675,7 @@
         "date": "2026-04-08",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 71.38,
+        "price": 70.96,
         "currency": "EUR"
       },
       {
@@ -52747,18 +52789,11 @@
         "sleeve": "VG",
         "price": 3.51,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-01-24",
-        "media": "G+",
-        "sleeve": "VG+",
-        "price": 22.84,
-        "currency": "EUR"
       }
     ]
   },
   "22556825": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-12",
@@ -52973,7 +53008,7 @@
     ]
   },
   "688267": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-07",
@@ -53188,7 +53223,7 @@
     ]
   },
   "5557406": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-01-16",
@@ -53243,7 +53278,7 @@
         "date": "2024-04-29",
         "media": "M",
         "sleeve": "M",
-        "price": 45.45,
+        "price": 45.36,
         "currency": "EUR"
       },
       {
@@ -53403,7 +53438,7 @@
     ]
   },
   "625331": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-14",
@@ -53563,7 +53598,7 @@
         "date": "2026-01-15",
         "media": "G+",
         "sleeve": "G+",
-        "price": 14.71,
+        "price": 14.63,
         "currency": "EUR"
       },
       {
@@ -53618,7 +53653,7 @@
     ]
   },
   "6102279": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-02-18",
@@ -53777,7 +53812,7 @@
     ]
   },
   "840158": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-14",
@@ -53992,8 +54027,15 @@
     ]
   },
   "2560004": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "NM",
+        "sleeve": "VG",
+        "price": 30.8,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-13",
         "media": "M",
@@ -54196,18 +54238,11 @@
         "sleeve": "VG+",
         "price": 52.8,
         "currency": "EUR"
-      },
-      {
-        "date": "2024-05-13",
-        "media": "M",
-        "sleeve": "NM",
-        "price": 115.0,
-        "currency": "EUR"
       }
     ]
   },
   "339574": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-21",
@@ -54269,7 +54304,7 @@
         "date": "2026-04-01",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 109.09,
+        "price": 108.87,
         "currency": "EUR"
       },
       {
@@ -54422,7 +54457,7 @@
     ]
   },
   "1635232": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-15",
@@ -54512,7 +54547,7 @@
         "date": "2025-09-18",
         "media": "NM",
         "sleeve": "NM",
-        "price": 36.36,
+        "price": 36.29,
         "currency": "EUR"
       },
       {
@@ -54637,7 +54672,7 @@
     ]
   },
   "2070894": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-20",
@@ -54852,7 +54887,7 @@
     ]
   },
   "15388111": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-02",
@@ -55067,7 +55102,7 @@
     ]
   },
   "2034523": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-19",
@@ -55282,7 +55317,7 @@
     ]
   },
   "4179730": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-21",
@@ -55497,7 +55532,7 @@
     ]
   },
   "1634156": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-20",
@@ -55524,7 +55559,7 @@
         "date": "2026-06-13",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 71.38,
+        "price": 70.96,
         "currency": "EUR"
       },
       {
@@ -55712,7 +55747,7 @@
     ]
   },
   "2341640": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-12-27",
@@ -55927,7 +55962,7 @@
     ]
   },
   "2206780": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-04",
@@ -56142,7 +56177,7 @@
     ]
   },
   "25133437": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-12",
@@ -56357,7 +56392,7 @@
     ]
   },
   "3782742": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-11",
@@ -56454,7 +56489,7 @@
         "date": "2025-01-28",
         "media": "M",
         "sleeve": "M",
-        "price": 200.0,
+        "price": 199.59,
         "currency": "EUR"
       },
       {
@@ -56572,7 +56607,7 @@
     ]
   },
   "10821533": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-19",
@@ -56787,7 +56822,7 @@
     ]
   },
   "10996313": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-18",
@@ -56982,7 +57017,7 @@
         "date": "2025-06-27",
         "media": "M",
         "sleeve": "NM",
-        "price": 195.33,
+        "price": 192.95,
         "currency": "EUR"
       },
       {
@@ -57002,7 +57037,7 @@
     ]
   },
   "15841340": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-30",
@@ -57217,7 +57252,7 @@
     ]
   },
   "10305796": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-16",
@@ -57432,8 +57467,15 @@
     ]
   },
   "13713464": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-24",
+        "media": "NM",
+        "sleeve": "NM",
+        "price": 140.8,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-03",
         "media": "M",
@@ -57613,14 +57655,14 @@
         "date": "2025-03-20",
         "media": "NM",
         "sleeve": "NM",
-        "price": 135.8,
+        "price": 134.15,
         "currency": "EUR"
       },
       {
         "date": "2025-03-20",
         "media": "M",
         "sleeve": "M",
-        "price": 162.85,
+        "price": 160.87,
         "currency": "EUR"
       },
       {
@@ -57634,20 +57676,13 @@
         "date": "2025-02-06",
         "media": "M",
         "sleeve": "M",
-        "price": 127.45,
-        "currency": "EUR"
-      },
-      {
-        "date": "2025-01-22",
-        "media": "M",
-        "sleeve": "M",
-        "price": 176.0,
+        "price": 125.89,
         "currency": "EUR"
       }
     ]
   },
   "9603231": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-14",
@@ -57862,7 +57897,7 @@
     ]
   },
   "3333076": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-05",
@@ -57931,7 +57966,7 @@
         "date": "2025-07-25",
         "media": "M",
         "sleeve": "M",
-        "price": 168.4,
+        "price": 166.34,
         "currency": "EUR"
       },
       {
@@ -57973,7 +58008,7 @@
         "date": "2025-02-23",
         "media": "NM",
         "sleeve": "NM",
-        "price": 65.19,
+        "price": 64.39,
         "currency": "EUR"
       },
       {
@@ -58077,8 +58112,22 @@
     ]
   },
   "376138": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-28",
+        "media": "VG",
+        "sleeve": "VG",
+        "price": 4.4,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 8.79,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-20",
         "media": "G+",
@@ -58167,7 +58216,7 @@
         "date": "2026-06-03",
         "media": "G+",
         "sleeve": "G+",
-        "price": 4.47,
+        "price": 4.44,
         "currency": "EUR"
       },
       {
@@ -58274,25 +58323,11 @@
         "sleeve": "G",
         "price": 5.28,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-03-04",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 26.4,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-03-03",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 26.4,
-        "currency": "EUR"
       }
     ]
   },
   "2590105": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-18",
@@ -58507,8 +58542,15 @@
     ]
   },
   "501415": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 230.56,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-10",
         "media": "VG",
@@ -58711,19 +58753,19 @@
         "sleeve": "NM",
         "price": 246.15,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-10-03",
-        "media": "VG",
-        "sleeve": "VG",
-        "price": 75.0,
-        "currency": "EUR"
       }
     ]
   },
   "6986271": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 43.11,
+        "currency": "EUR"
+      },
       {
         "date": "2026-05-06",
         "media": "NM",
@@ -58926,19 +58968,26 @@
         "sleeve": "VG+",
         "price": 39.6,
         "currency": "EUR"
-      },
-      {
-        "date": "2022-11-28",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 105.6,
-        "currency": "EUR"
       }
     ]
   },
   "495681": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "G+",
+        "sleeve": "VG",
+        "price": 17.6,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-22",
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 17.59,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-19",
         "media": "G+",
@@ -59134,25 +59183,11 @@
         "sleeve": "VG+",
         "price": 55.0,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-05-21",
-        "media": "VG+",
-        "sleeve": "VG",
-        "price": 25.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-05-16",
-        "media": "VG",
-        "sleeve": "G+",
-        "price": 17.6,
-        "currency": "EUR"
       }
     ]
   },
   "8961614": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-20",
@@ -59367,8 +59402,15 @@
     ]
   },
   "445878": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-24",
+        "media": "G+",
+        "sleeve": "G+",
+        "price": 66.53,
+        "currency": "EUR"
+      },
       {
         "date": "2026-06-15",
         "media": "NM",
@@ -59492,7 +59534,7 @@
         "date": "2025-03-01",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 140.15,
+        "price": 138.44,
         "currency": "EUR"
       },
       {
@@ -59571,18 +59613,11 @@
         "sleeve": "VG+",
         "price": 158.4,
         "currency": "EUR"
-      },
-      {
-        "date": "2024-08-25",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 222.93,
-        "currency": "EUR"
       }
     ]
   },
   "9057753": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-18",
@@ -59714,7 +59749,7 @@
         "date": "2026-04-20",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 27.16,
+        "price": 26.83,
         "currency": "EUR"
       },
       {
@@ -59797,7 +59832,7 @@
     ]
   },
   "2024524": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-08",
@@ -60012,8 +60047,15 @@
     ]
   },
   "9359884": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.93,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-17",
         "media": "M",
@@ -60216,18 +60258,11 @@
         "sleeve": "NM",
         "price": 32.37,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-01-02",
-        "media": "M",
-        "sleeve": "M",
-        "price": 24.72,
-        "currency": "EUR"
       }
     ]
   },
   "13488794": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-11",
@@ -60414,7 +60449,7 @@
     ]
   },
   "1469334": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-25",
@@ -60629,8 +60664,15 @@
     ]
   },
   "6275103": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 32.85,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-20",
         "media": "NM",
@@ -60833,19 +60875,54 @@
         "sleeve": "M",
         "price": 31.95,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-02-11",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 16.5,
-        "currency": "EUR"
       }
     ]
   },
   "382417": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "G",
+        "sleeve": "F",
+        "price": 5.87,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-26",
+        "media": "VG",
+        "sleeve": "G+",
+        "price": 5.87,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-25",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 15.24,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-23",
+        "media": "NM",
+        "sleeve": "VG+",
+        "price": 23.47,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-23",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 23.47,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-22",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 17.59,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-18",
         "media": "NM",
@@ -61013,54 +61090,19 @@
         "sleeve": "NM",
         "price": 29.32,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-06-08",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 35.19,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-06",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 35.19,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-06",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 11.73,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-06",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 29.32,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-03",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 17.6,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-06-02",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 11.73,
-        "currency": "EUR"
       }
     ]
   },
   "17896735": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 52.79,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-18",
         "media": "NM",
@@ -61184,7 +61226,7 @@
         "date": "2026-05-02",
         "media": "NM",
         "sleeve": "NM",
-        "price": 38.18,
+        "price": 37.95,
         "currency": "EUR"
       },
       {
@@ -61263,18 +61305,11 @@
         "sleeve": "M",
         "price": 40.16,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-03-22",
-        "media": "M",
-        "sleeve": "M",
-        "price": 56.68,
-        "currency": "EUR"
       }
     ]
   },
   "864382": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-10-13",
@@ -61489,7 +61524,7 @@
     ]
   },
   "13670805": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-10-03",
@@ -61655,7 +61690,7 @@
     ]
   },
   "4194515": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-27",
@@ -61870,7 +61905,7 @@
     ]
   },
   "1982122": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-04-12",
@@ -62085,7 +62120,7 @@
     ]
   },
   "10533002": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-01",
@@ -62300,8 +62335,15 @@
     ]
   },
   "10518961": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "M",
+        "sleeve": "M",
+        "price": 22.29,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-15",
         "media": "M",
@@ -62504,18 +62546,11 @@
         "sleeve": "M",
         "price": 24.95,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-06-17",
-        "media": "M",
-        "sleeve": "M",
-        "price": 21.71,
-        "currency": "EUR"
       }
     ]
   },
   "6063431": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-02",
@@ -62730,8 +62765,15 @@
     ]
   },
   "238877": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-25",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 11.67,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-21",
         "media": "VG+",
@@ -62934,18 +62976,11 @@
         "sleeve": "VG+",
         "price": 19.95,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-03-06",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 17.6,
-        "currency": "EUR"
       }
     ]
   },
   "1217497": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-12-14",
@@ -63160,7 +63195,7 @@
     ]
   },
   "8953011": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-12",
@@ -63375,7 +63410,7 @@
     ]
   },
   "804778": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-17",
@@ -63389,6 +63424,13 @@
         "media": "VG+",
         "sleeve": "G+",
         "price": 1.19,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-02",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 5.28,
         "currency": "EUR"
       },
       {
@@ -63579,18 +63621,11 @@
         "sleeve": "VG+",
         "price": 4.18,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-03-09",
-        "media": "G+",
-        "sleeve": "VG",
-        "price": 3.99,
-        "currency": "EUR"
       }
     ]
   },
   "8212247": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-31",
@@ -63805,13 +63840,13 @@
     ]
   },
   "1410402": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-13",
         "media": "VG",
         "sleeve": "VG+",
-        "price": 32.45,
+        "price": 32.26,
         "currency": "EUR"
       },
       {
@@ -63874,7 +63909,7 @@
         "date": "2025-10-12",
         "media": "VG+",
         "sleeve": "VG+",
-        "price": 45.42,
+        "price": 45.16,
         "currency": "EUR"
       },
       {
@@ -64020,7 +64055,7 @@
     ]
   },
   "3480688": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-29",
@@ -64152,7 +64187,7 @@
         "date": "2023-06-17",
         "media": "VG+",
         "sleeve": "G+",
-        "price": 38.94,
+        "price": 38.71,
         "currency": "EUR"
       },
       {
@@ -64235,7 +64270,7 @@
     ]
   },
   "14950419": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-12-12",
@@ -64450,8 +64485,15 @@
     ]
   },
   "66534": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "VG+",
+        "sleeve": "VG+",
+        "price": 6.98,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-16",
         "media": "VG+",
@@ -64654,18 +64696,11 @@
         "sleeve": "VG+",
         "price": 8.8,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-01-09",
-        "media": "NM",
-        "sleeve": "VG",
-        "price": 10.55,
-        "currency": "EUR"
       }
     ]
   },
   "11860171": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-30",
@@ -64880,13 +64915,20 @@
     ]
   },
   "2521407": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 260.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-11",
         "media": "M",
         "sleeve": "M",
-        "price": 266.17,
+        "price": 262.93,
         "currency": "EUR"
       },
       {
@@ -65082,20 +65124,13 @@
         "date": "2022-03-06",
         "media": "VG",
         "sleeve": "VG+",
-        "price": 184.73,
-        "currency": "EUR"
-      },
-      {
-        "date": "2022-01-03",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 260.0,
+        "price": 184.17,
         "currency": "EUR"
       }
     ]
   },
   "34257205": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-01",
@@ -65310,7 +65345,7 @@
     ]
   },
   "2334540": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-22",
@@ -65525,8 +65560,22 @@
     ]
   },
   "12773291": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "VG",
+        "sleeve": "VG+",
+        "price": 15.0,
+        "currency": "EUR"
+      },
+      {
+        "date": "2026-07-27",
+        "media": "M",
+        "sleeve": "M",
+        "price": 23.92,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-15",
         "media": "M",
@@ -65722,26 +65771,19 @@
         "sleeve": "M",
         "price": 28.99,
         "currency": "EUR"
-      },
-      {
-        "date": "2026-01-03",
-        "media": "NM",
-        "sleeve": "NM",
-        "price": 16.72,
-        "currency": "EUR"
-      },
-      {
-        "date": "2026-01-03",
-        "media": "M",
-        "sleeve": "M",
-        "price": 29.32,
-        "currency": "EUR"
       }
     ]
   },
   "22031233": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-27",
+        "media": "M",
+        "sleeve": "NM",
+        "price": 52.8,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-06",
         "media": "VG+",
@@ -65944,18 +65986,11 @@
         "sleeve": "NM",
         "price": 52.78,
         "currency": "EUR"
-      },
-      {
-        "date": "2025-09-12",
-        "media": "VG+",
-        "sleeve": "VG+",
-        "price": 44.0,
-        "currency": "EUR"
       }
     ]
   },
   "14713017": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-06-23",
@@ -66010,7 +66045,7 @@
         "date": "2026-01-18",
         "media": "M",
         "sleeve": "M",
-        "price": 25.97,
+        "price": 25.65,
         "currency": "EUR"
       },
       {
@@ -66170,7 +66205,7 @@
     ]
   },
   "21374590": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2025-11-23",
@@ -66203,7 +66238,7 @@
     ]
   },
   "22865237": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2024-12-20",
@@ -66236,7 +66271,7 @@
     ]
   },
   "22943018": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2024-12-29",
@@ -66248,7 +66283,7 @@
     ]
   },
   "30188873": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-05-07",
@@ -66267,7 +66302,7 @@
     ]
   },
   "30244973": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-02-07",
@@ -66286,7 +66321,7 @@
     ]
   },
   "30215912": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-03-08",
@@ -66319,7 +66354,7 @@
     ]
   },
   "10090232": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-07-19",
@@ -66534,7 +66569,7 @@
     ]
   },
   "7055196": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
       {
         "date": "2026-02-02",
@@ -66749,8 +66784,15 @@
     ]
   },
   "12442614": {
-    "fetched_at": "2026-07-22T17:00:33",
+    "fetched_at": "2026-07-28T16:53:03",
     "sales": [
+      {
+        "date": "2026-07-26",
+        "media": "M",
+        "sleeve": "M",
+        "price": 24.0,
+        "currency": "EUR"
+      },
       {
         "date": "2026-07-12",
         "media": "M",
@@ -66952,13 +66994,6 @@
         "media": "M",
         "sleeve": "M",
         "price": 29.0,
-        "currency": "EUR"
-      },
-      {
-        "date": "2024-12-18",
-        "media": "M",
-        "sleeve": "M",
-        "price": 24.99,
         "currency": "EUR"
       }
     ]

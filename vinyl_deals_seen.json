@@ -3,8 +3,8 @@
     "price": 120.0,
     "currency": "AUD",
     "shipping": 0.0,
-    "total_eur": 73.5880296805053,
-    "disc": 56.21148320142617,
+    "total_eur": 73.56547327121137,
+    "disc": 56.22297026171474,
     "tier": "beste",
     "seller": "soundsforspace",
     "title": "Nevermind (DGC-24425, US origineel 1991)",
@@ -14,8 +14,8 @@
     "price": 195.0,
     "currency": "USD",
     "shipping": 77.0,
-    "total_eur": 238.05356205146157,
-    "disc": 41.0991194748944,
+    "total_eur": 239.28917040555996,
+    "disc": 40.45876259912781,
     "tier": "beste",
     "seller": "2Hipps",
     "title": "Greatest Hits (INT4-90301, Death Row/Interscope US 1998, 4LP)",
@@ -32,16 +32,16 @@
     "title": "Reggatta de Blanc (0082839479219, A&M EU 2008)",
     "group": "The Police"
   },
-  "20433880_NM": {
-    "price": 19.0,
-    "currency": "EUR",
-    "shipping": 7.5,
-    "total_eur": 26.5,
-    "disc": 11.637212404134708,
+  "474703_VG": {
+    "price": 77.59,
+    "currency": "GBP",
+    "shipping": 19.5,
+    "total_eur": 113.48918760958503,
+    "disc": 0.7961646769361669,
     "tier": "beste",
-    "seller": "mschreijen",
-    "title": "Spijt Is Iets Voor Later (19439887541, Sony Music EU 2021, LP clear+CD)",
-    "group": "Racoon"
+    "seller": "Lovebeat-Records",
+    "title": "Demon Days (07243 873838 1 4, Parlophone UK 2005, 2LP gatefold)",
+    "group": "Gorillaz"
   },
   "8519678_VG+": {
     "price": 75.0,
@@ -69,8 +69,8 @@
     "price": 16000.0,
     "currency": "JPY",
     "shipping": 0.0,
-    "total_eur": 86.23477417268514,
-    "disc": 33.456978791907375,
+    "total_eur": 85.87376556462002,
+    "disc": 33.70053801144964,
     "tier": "goed",
     "seller": "ExpatJPN_Music",
     "title": "All Eyez on Me (314-524 204-1, Death Row/Interscope US 1996, 4LP)",
@@ -86,6 +86,17 @@
     "seller": "SonatineDischi",
     "title": "All That You Can't Leave Behind (U212 / 524 653-1, Island Records EU 2000)",
     "group": "U2"
+  },
+  "339574_NM": {
+    "price": 190.0,
+    "currency": "EUR",
+    "shipping": 7.5,
+    "total_eur": 197.5,
+    "disc": 23.71361567112706,
+    "tier": "goed",
+    "seller": "Sampledelic",
+    "title": "Pablo Honey (PCS 7360, Parlophone UK 1993, LP)",
+    "group": "Radiohead"
   },
   "7264539_VG+": {
     "price": 49.99,
@@ -114,7 +125,7 @@
     "currency": "EUR",
     "shipping": 5.3,
     "total_eur": 23.990000000000002,
-    "disc": 20.628165928900643,
+    "disc": 20.5810502283105,
     "tier": "goed",
     "seller": "LaurentCamso",
     "title": "Shoot for the Stars Aim for the Moon (00602507306465, Victor Victor/Republic EU 2020, 2LP)",
@@ -142,38 +153,16 @@
     "title": "Gangsta's Paradise (TB 1141, Tommy Boy US 1995, LP)",
     "group": "Coolio"
   },
-  "470912_VG+": {
-    "price": 40.0,
-    "currency": "GBP",
-    "shipping": 20.5,
-    "total_eur": 71.27037979455282,
-    "disc": 16.82098453510791,
-    "tier": "goed",
-    "seller": "Arpadys2009",
-    "title": "London Calling (CBS CLASH 3, CBS UK 1979, 2LP)",
-    "group": "The Clash"
-  },
   "375491_VG+": {
     "price": 700.0,
     "currency": "SEK",
     "shipping": 160.0,
-    "total_eur": 77.86328655500226,
-    "disc": 16.23625568952754,
+    "total_eur": 77.74011299435028,
+    "disc": 16.357515696642803,
     "tier": "goed",
     "seller": "Mardamaniac",
     "title": "Blood Sugar Sex Magik (7599-26681-1, EU first pressing 1991)",
     "group": "RHCP"
-  },
-  "6986271_M": {
-    "price": 63.0,
-    "currency": "EUR",
-    "shipping": 9.0,
-    "total_eur": 72.0,
-    "disc": 14.926658001789232,
-    "tier": "goed",
-    "seller": "freesty",
-    "title": "No Need to Argue (PLAIN202, Plain Recordings US 2015, LP 180g)",
-    "group": "The Cranberries"
   },
   "7264539_NM": {
     "price": 85.0,
@@ -186,16 +175,38 @@
     "title": "Beggars Banquet (SKL 4955, Decca UK 1968) [stereo]",
     "group": "Rolling Stones"
   },
+  "15276024_NM": {
+    "price": 24.95,
+    "currency": "EUR",
+    "shipping": 7.25,
+    "total_eur": 32.2,
+    "disc": 14.376883531288762,
+    "tier": "goed",
+    "seller": "Freakyrecords",
+    "title": "By The Way reissue (093624814016, EU 2020)",
+    "group": "RHCP"
+  },
   "2590105_M": {
     "price": 10000.0,
     "currency": "JPY",
     "shipping": 0.0,
-    "total_eur": 53.89673385792821,
-    "disc": 12.726725996906707,
+    "total_eur": 53.671103477887506,
+    "disc": 13.02376150333864,
     "tier": "goed",
     "seller": "rock_bottom_records",
     "title": "Imagine (MFSL 1-277, Mobile Fidelity US 2003, LP 180g)",
     "group": "John Lennon"
+  },
+  "470912_VG+": {
+    "price": 40.0,
+    "currency": "GBP",
+    "shipping": 20.5,
+    "total_eur": 70.71887784921098,
+    "disc": 13.020574346755032,
+    "tier": "goed",
+    "seller": "Arpadys2009",
+    "title": "London Calling (CBS CLASH 3, CBS UK 1979, 2LP)",
+    "group": "The Clash"
   },
   "484030_VG+": {
     "price": 99.0,
@@ -213,33 +224,22 @@
     "currency": "EUR",
     "shipping": 20.0,
     "total_eur": 75.0,
-    "disc": 11.716813696318926,
+    "disc": 11.825726141078842,
     "tier": "goed",
     "seller": "Maugof",
     "title": "Abbey Road (PCS 7088, UK first pressing 1969)",
     "group": "Beatles"
   },
-  "2521407_M": {
-    "price": 260.0,
+  "6986271_M": {
+    "price": 63.0,
     "currency": "EUR",
-    "shipping": 7.5,
-    "total_eur": 267.5,
-    "disc": 10.987849297501521,
+    "shipping": 9.0,
+    "total_eur": 72.0,
+    "disc": 9.368411114957354,
     "tier": "goed",
-    "seller": "Black-Plastic",
-    "title": "Time Flies... 1994-2009 (88697722641, Big Brother EU 2010)",
-    "group": "Oasis"
-  },
-  "474703_VG": {
-    "price": 77.59,
-    "currency": "GBP",
-    "shipping": 19.5,
-    "total_eur": 114.37423428517577,
-    "disc": 9.498541982268234,
-    "tier": "goed",
-    "seller": "Lovebeat-Records",
-    "title": "Demon Days (07243 873838 1 4, Parlophone UK 2005, 2LP gatefold)",
-    "group": "Gorillaz"
+    "seller": "freesty",
+    "title": "No Need to Argue (PLAIN202, Plain Recordings US 2015, LP 180g)",
+    "group": "The Cranberries"
   },
   "339574_M": {
     "price": 399.9,
@@ -262,6 +262,17 @@
     "seller": "ComputerJazz",
     "title": "A Rush of Blood to the Head (7243 5 40504 1 1, Parlophone EU 2002, LP 180g)",
     "group": "Coldplay"
+  },
+  "439599_VG+": {
+    "price": 90.0,
+    "currency": "EUR",
+    "shipping": 13.0,
+    "total_eur": 103.0,
+    "disc": 5.774562650415879,
+    "tier": "goed",
+    "seller": "elgenioequivocado",
+    "title": "Black Album (510 022-1, Vertigo, EU 1991)",
+    "group": "Metallica"
   },
   "676619_NM": {
     "price": 99.0,
